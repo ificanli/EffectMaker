@@ -1,6 +1,81 @@
-
-# Beads / Dolt files (added by bd init)
+# Beads / Dolt
 .dolt/
 *.db
+*.sqlite
+*.sqlite3
+*.pkl
 .beads-credential-key
 .beads/proxieddb/
+
+# Local tooling and secrets
+.zcode/
+.env
+.env.*
+!.env.example
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Unity generated data
+**/Library/
+**/Temp/
+**/Logs/
+**/UserSettings/
+**/obj/
+**/Build/
+**/Builds/
+**/MemoryCaptures/
+**/*.csproj
+**/*.sln
+**/*.slnx
+**/*.userprefs
+
+# Generated local analysis and model data
+workspace/data/chroma/
+workspace/data/rag_index.pkl
+workspace/data/*.faiss
+workspace/data/*.index
+workspace/data/*cache*/
+**/model-cache/
+**/models/
+
+# Downloaded media and derived media evidence
+**/videos/
+**/audio/
+**/audio_segments/
+**/clips/
+**/*.mp4
+**/*.mkv
+**/*.mov
+**/*.avi
+**/*.webm
+**/*.wav
+**/*.mp3
+**/*.flac
+**/*.m4a
+**/*.aac
+
+# Archives and packaged local assets
+**/*.zip
+**/*.rar
+**/*.7z
+**/*.tar
+**/*.gz
+**/*.bz2
+**/*.unitypackage
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local generated verification output
+workspace/unity-verification/build.log

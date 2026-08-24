@@ -1,5 +1,14 @@
 # Project Instructions for AI Agents
 
+## Unity 工具规则
+
+本工程默认使用 Unity 官方 CLI（当前验证版本 `1.0.0-beta.6`）执行 Unity 相关工作：项目检查、Editor/模块管理、认证诊断、构建、测试和注册命令。能由 CLI 完成的操作必须优先使用 CLI。
+
+只有 CLI 不覆盖的实时 Unity Editor 操作，才使用 Unity MCP；使用 MCP 时必须记录原因、工具调用和结果。许可证、账号和外部服务需要用户授权时，不得绕过。
+
+所有 Unity 制作错误必须记录原始命令、错误文本、根因、修复、复验和预防措施；开工前先检索 `workspace/progress/ERROR_LOG.md`，同类错误不得重复犯。
+
+
 This file provides instructions and context for AI coding agents working on this project.
 
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:6cd5cc61 -->

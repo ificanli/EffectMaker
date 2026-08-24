@@ -1,5 +1,24 @@
 # Agent Instructions
 
+## Unity 工具规则
+
+本工程默认使用 Unity 官方 CLI（当前验证版本 `1.0.0-beta.6`）执行 Unity 相关工作：项目检查、Editor/模块管理、认证诊断、构建、测试和注册命令。能由 CLI 完成的操作必须优先使用 CLI。
+
+常用检查命令：
+
+```bash
+unity --version
+unity doctor
+unity editors --format json
+unity projects verify "<project-path>" --format json
+```
+
+只有 CLI 不覆盖的实时 Unity Editor 操作，才使用 Unity MCP；使用 MCP 时必须记录原因、工具调用和结果。Unity CLI、MCP 或 Editor 命令成功不等于视觉效果验证完成，必须保留运行日志、资源状态和人工质量判断。许可证、账号和外部服务需要用户授权时，不得绕过。
+
+详细规则见 [Unity CLI 使用指南](docs/30-操作指南/Unity CLI使用指南.md)、[错误沉淀与预防规范](docs/30-操作指南/错误沉淀与预防规范.md) 和 [AI、Unity CLI 与 Unity MCP 工作边界](docs/10-解释/AI与Unity-MCP工作边界.md)。
+
+所有 Unity 制作错误必须记录原始命令、错误文本、根因、修复、复验和预防措施；开工前先检索 `workspace/progress/ERROR_LOG.md`，同类错误不得重复犯。
+
 This project uses **bd** (beads) for issue tracking. Run `bd prime` for full workflow context.
 
 > **Architecture in one line:** Issues live in a local Dolt database
