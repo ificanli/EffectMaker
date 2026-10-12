@@ -1,0 +1,65 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_076_keyword_material_mat_guangleng_hit_jianshe",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 666438464,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_guangleng_hit/Mat/Mat_guangleng_hit_jianshe.mat",
+    "material_name": "Mat_guangleng_hit_jianshe",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/58/Tex_guangleng_hit_jianshe_582c3f581ce0a5cf.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [
+    {
+      "time_seconds": 0.75,
+      "from_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_guangleng_hit/Mat/Mat_guangleng_hit_jianshe.mat",
+      "to_material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/suipian_2.mat",
+      "same_shader_required": true
+    }
+  ],
+  "expected_signals": [
+    "material_instance_replaced"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "9c006064952b"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_097_negative_mat_tiebijiangjun_dilie_1",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1138700953,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/mat/Mat_tiebijiangjun_dilie 1.mat",
+    "material_name": "Mat_tiebijiangjun_dilie 1",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_aidawang_01_48f873439e9f9d63.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.dark_background",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/7c/Tex_cyjl_wenli_7cdf513e85c8774e.png",
+        "tags": [
+          "alpha.opaque",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 0.6,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.27,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_aidawang_01_48f873439e9f9d63.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/c6/suipian_c64b0fbc80da92da.png",
+      "from_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.mixed",
+        "alpha.structured",
+        "luma.dark_background",
+        "resolution.medium",
+        "role.noise_control",
+        "shape.square",
+        "size.256x256",
+        "slot.alpha_mask"
+      ],
+      "to_tags": []
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "texture_changed"
+  ],
+  "negative_mutation": {
+    "type": "incompatible_texture",
+    "severity": 0.73,
+    "reason": "Texture swap intentionally violates semantic slot tags."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "a7b59cdb5579"
+  }
+}

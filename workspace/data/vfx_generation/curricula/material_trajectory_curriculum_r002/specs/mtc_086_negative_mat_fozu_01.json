@@ -1,0 +1,102 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_086_negative_mat_fozu_01",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 888276903,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_01.mat",
+    "material_name": "Mat_fozu_01",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_fozu_01_d24378c61f45cc95.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "shape.rectangle",
+          "size.64x128",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/3d/wenli21_3d34548d4f644137.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.512x512"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.54,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_fozu_01_d24378c61f45cc95.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/b7/jiguangfangxing_b73b62a3e46c6b14.png",
+      "from_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "resolution.small",
+        "role.noise_control",
+        "shape.rectangle",
+        "size.64x128",
+        "slot.alpha_mask"
+      ],
+      "to_tags": [
+        "alpha.opaque",
+        "luma.bright_core",
+        "luma.flat",
+        "luma.low_contrast",
+        "luma.overbright_risk",
+        "resolution.small",
+        "shape.square",
+        "size.64x64"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "texture_changed"
+  ],
+  "negative_mutation": {
+    "type": "incompatible_texture",
+    "severity": 0.795,
+    "reason": "Texture swap intentionally violates semantic slot tags."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "29ba811e147d"
+  }
+}

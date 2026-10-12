@@ -1,0 +1,86 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_021_flow_distortion_mat_jinmianju_04",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 708271157,
+  "category": "flow_distortion",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_jinmianju/mat/Mat_jinmianju_04.mat",
+    "material_name": "Mat_jinmianju_04",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/eb/Tex_jinmianju_04_ebfd701c49a6fa44.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.mixed",
+          "alpha.structured",
+          "resolution.medium",
+          "role.color_control",
+          "role.noise_control",
+          "shape.vertical_strip",
+          "size.154x634",
+          "slot.alpha_mask",
+          "slot.ramp_map"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/3d/wenli21_3d34548d4f644137.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.512x512"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_Main_SpeedU",
+      "semantic": "flow_distortion",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        -2.601232
+      ],
+      "curve": "ease_in",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "material_property_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "9df0e8ed720e"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_089_negative_mat_juesejiesuo_04",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 992722178,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_juesejiesuo/mat/mat_juesejiesuo_04.mat",
+    "material_name": "mat_juesejiesuo_04",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/94/Tex_juesejiesuo_04_943507e83c3d9fba.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.dark_background",
+          "resolution.medium",
+          "shape.square",
+          "size.512x512"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_juesejiesuo_05_3a41e31f3371b4db.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [
+    {
+      "property_name": "_Dissolve_Value",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_in",
+      "start_time_seconds": 1.08,
+      "duration_seconds": 0.12,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "dissolve_parameter_changed",
+    "negative_trajectory",
+    "renderer_property_block_changed"
+  ],
+  "negative_mutation": {
+    "type": "late_peak",
+    "severity": 0.752,
+    "reason": "The peak occurs too late to establish readable timing."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "b8d561ab22b5"
+  }
+}

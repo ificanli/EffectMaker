@@ -1,0 +1,85 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_011_dissolve_yantuan_1",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1600256104,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/yantuan 1.mat",
+    "material_name": "yantuan 1",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/f1/yanchen5_f1f198d46000dac8.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "shape.rectangle",
+          "size.128x192"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+        "tags": [
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.rectangle",
+          "size.256x384",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.0,
+  "parameter_tracks": [
+    {
+      "property_name": "_key_Dissolve",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "linear",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.0,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "e43a6bf33ce2"
+  }
+}

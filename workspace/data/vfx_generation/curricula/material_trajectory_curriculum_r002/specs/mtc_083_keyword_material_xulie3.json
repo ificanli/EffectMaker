@@ -1,0 +1,62 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_083_keyword_material_xulie3",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 2000043219,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+    "material_name": "xulie3",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/2c/xulie4_1_2c070cb2ec7a7e82.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "shape.rectangle",
+          "size.512x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "explosion",
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [
+    {
+      "time_seconds": 0.75,
+      "from_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+      "to_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_zhuizongdan/Mat/Mat_zhuizongdan_wenli 6.mat",
+      "same_shader_required": true
+    }
+  ],
+  "expected_signals": [
+    "material_instance_replaced"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "3b3ccab23470"
+  }
+}

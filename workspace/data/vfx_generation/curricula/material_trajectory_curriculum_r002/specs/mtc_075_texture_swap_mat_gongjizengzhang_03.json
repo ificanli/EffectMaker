@@ -1,0 +1,94 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_075_texture_swap_mat_gongjizengzhang_03",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 1186005479,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_gongjizengzhang/Mat_gongjizengzhang_03.mat",
+    "material_name": "Mat_gongjizengzhang_03",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/8e/tex_jueseshengji_02_8e95eccd546a61d2.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "shape.square",
+          "size.76x80",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 2.0,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.9,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/8e/tex_jueseshengji_02_8e95eccd546a61d2.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/89/Tex_xingzhe_daoguang_89b5cdf03a62fea0.png",
+      "from_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.overbright_risk",
+        "resolution.small",
+        "role.noise_control",
+        "shape.square",
+        "size.76x80",
+        "slot.alpha_mask"
+      ],
+      "to_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.core_shape",
+        "role.noise_control",
+        "semantic.slash",
+        "shape.rectangle",
+        "size.512x256",
+        "slot.alpha_mask",
+        "slot.base_map"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "aa78258e29cc"
+  }
+}

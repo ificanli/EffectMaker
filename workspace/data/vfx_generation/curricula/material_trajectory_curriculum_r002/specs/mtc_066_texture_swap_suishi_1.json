@@ -1,0 +1,98 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_066_texture_swap_suishi_1",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 582771494,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suishi_1.mat",
+    "material_name": "suishi_1",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/f8/suishi_f82c997ca2bfc895.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle",
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.54,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/f8/suishi_f82c997ca2bfc895.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/4e/Tex_zhiyugeji_ring1_4ef52d737ad98ebc.png",
+      "from_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.flat",
+        "luma.low_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.noise_control",
+        "shape.square",
+        "size.256x256",
+        "slot.alpha_mask"
+      ],
+      "to_tags": [
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "motion.radial_expand",
+        "resolution.medium",
+        "role.impact_ring",
+        "role.noise_control",
+        "semantic.ring",
+        "shape.square",
+        "size.512x512",
+        "slot.alpha_mask"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "99074f8fe256"
+  }
+}

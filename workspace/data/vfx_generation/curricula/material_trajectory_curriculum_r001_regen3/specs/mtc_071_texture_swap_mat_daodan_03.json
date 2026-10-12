@@ -1,0 +1,125 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_071_texture_swap_mat_daodan_03",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1377332264,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_03.mat",
+    "material_name": "Mat_daodan_03",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/89/Mat_27_Xulie_02_899e75bee8cd14b5.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.rectangle",
+          "size.256x512",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.600x600",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "explosion",
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 2.0,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.9,
+      "property_name": "_DissolveTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/f1/yanchen5_f1f198d46000dac8.png",
+      "from_tags": [
+        "alpha.opaque",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "resolution.medium",
+        "shape.square",
+        "size.256x256"
+      ],
+      "to_tags": [
+        "alpha.gradient",
+        "alpha.sparse",
+        "luma.bright_core",
+        "luma.flat",
+        "luma.low_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "shape.rectangle",
+        "size.128x192"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "7ec22082374d"
+  }
+}

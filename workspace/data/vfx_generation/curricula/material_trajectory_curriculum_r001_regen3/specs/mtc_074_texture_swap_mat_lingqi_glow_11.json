@@ -1,0 +1,87 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_074_texture_swap_mat_lingqi_glow_11",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1802658394,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_jupan_fenlieglow/Mat/Mat_lingqi_glow 11.mat",
+    "material_name": "Mat_lingqi_glow 11",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/03/Tex_lingqi_glow_5_038ec300a0739d0e.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.edge_accent",
+          "role.hit_accent",
+          "semantic.spark",
+          "shape.square",
+          "size.256x256",
+          "slot.emission_map"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 2.0,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.9,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/03/Tex_lingqi_glow_5_038ec300a0739d0e.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/bd/eff_xulie_spark_08_bd57e35ab0c32f1e.png",
+      "from_tags": [
+        "alpha.opaque",
+        "luma.dark_background",
+        "luma.high_contrast",
+        "resolution.medium",
+        "role.edge_accent",
+        "role.hit_accent",
+        "semantic.spark",
+        "shape.square",
+        "size.256x256",
+        "slot.emission_map"
+      ],
+      "to_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "resolution.medium",
+        "role.edge_accent",
+        "role.hit_accent",
+        "role.noise_control",
+        "semantic.spark",
+        "shape.square",
+        "size.344x338",
+        "slot.alpha_mask",
+        "slot.emission_map"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "a2760d5e9193"
+  }
+}

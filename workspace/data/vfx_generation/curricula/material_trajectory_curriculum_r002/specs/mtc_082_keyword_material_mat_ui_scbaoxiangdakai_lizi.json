@@ -1,0 +1,62 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_082_keyword_material_mat_ui_scbaoxiangdakai_lizi",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 1140364400,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_huodeiguangxiao/Mat/Mat_UI_SCbaoxiangdakai_lizi.mat",
+    "material_name": "Mat_UI_SCbaoxiangdakai_lizi",
+    "shader_name": "UI/CustomUIDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/UI/CustomUIDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/aa/Tex_leiji_05_aaca954fccb1e183.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "shape.square",
+          "size.512x512"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle",
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [
+    {
+      "time_seconds": 0.4,
+      "from_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_huodeiguangxiao/Mat/Mat_UI_SCbaoxiangdakai_lizi.mat",
+      "to_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_huodeiguangxiao/Mat/Mat_UI_SCbaoxiangdakai_glow9.mat",
+      "same_shader_required": true
+    }
+  ],
+  "expected_signals": [
+    "material_instance_replaced"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "c0ac9ea0cc85",
+    "material_group": "b6acca897208"
+  }
+}

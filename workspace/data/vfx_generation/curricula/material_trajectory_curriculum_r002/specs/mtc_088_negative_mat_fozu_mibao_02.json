@@ -1,0 +1,100 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_088_negative_mat_fozu_mibao_02",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 538115499,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_fozu_mibao/Mat_fozu_mibao_02.mat",
+    "material_name": "Mat_fozu_mibao_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/f7/Tex_kapai_mask_011_f7aaf16f0083437e.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.flat",
+          "luma.low_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/bb/Tex_mask_02_bb59797dcc34a341.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.square",
+          "size.128x128",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_Dissolve",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "linear",
+      "start_time_seconds": 0.72,
+      "duration_seconds": 0.08,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "dissolve_parameter_changed",
+    "negative_trajectory",
+    "slot_property_block_changed"
+  ],
+  "negative_mutation": {
+    "type": "late_peak",
+    "severity": 0.65,
+    "reason": "The peak occurs too late to establish readable timing."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "1192c11ffa32"
+  }
+}

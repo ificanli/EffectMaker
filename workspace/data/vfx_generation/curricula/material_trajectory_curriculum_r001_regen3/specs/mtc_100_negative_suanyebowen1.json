@@ -1,0 +1,81 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_100_negative_suanyebowen1",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 323025575,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suanyebowen1.mat",
+    "material_name": "suanyebowen1",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/82/suanyebowen1_8295ed1bba3a398d.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.742x865",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [
+    {
+      "property_name": "_Dissolve_SpeedV",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "step",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.2,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "dissolve_parameter_changed",
+    "negative_trajectory",
+    "slot_property_block_changed"
+  ],
+  "negative_mutation": {
+    "type": "abrupt_jump",
+    "severity": 0.861,
+    "reason": "Parameter changes in one visible step instead of a readable transition."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "8288fb0d764d"
+  }
+}

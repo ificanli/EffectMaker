@@ -1,0 +1,78 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_009_dissolve_mat_bosswarntip_02",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 1167078016,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_WarnTip/Mat_BossWarnTip_02.mat",
+    "material_name": "Mat_BossWarnTip_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/26/common_img_bosswarnred_26453f0142dcb3fd.png",
+        "tags": [
+          "alpha.mixed",
+          "luma.dark_background",
+          "luma.low_contrast",
+          "resolution.large",
+          "role.color_control",
+          "shape.horizontal_strip",
+          "size.1086x268",
+          "slot.ramp_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [
+    {
+      "property_name": "_Dissolve_EdgeColor",
+      "semantic": "dissolve",
+      "value_kind": "color",
+      "start_value": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "end_value": [
+        0.747459,
+        1.667315,
+        0.436646,
+        1.779797
+      ],
+      "curve": "ease_in",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.2,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "195fa4f83f07"
+  }
+}

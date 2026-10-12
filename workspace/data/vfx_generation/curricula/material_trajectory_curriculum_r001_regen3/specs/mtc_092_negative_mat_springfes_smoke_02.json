@@ -1,0 +1,121 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_092_negative_mat_springfes_smoke_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 283690892,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_springfes/Mat_springfes_smoke_02.mat",
+    "material_name": "Mat_springfes_smoke_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/cc/yanwu5_ccaa99edd67b41d3.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.flat",
+          "luma.low_contrast",
+          "resolution.small",
+          "role.noise_control",
+          "shape.square",
+          "size.128x128",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/9f/light_9f1d2b7680c31ea9.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/61/Tex_noise_03_6153d48fa2ae7d1d.png",
+        "tags": [
+          "alpha.opaque",
+          "motion.dissolve_reveal",
+          "resolution.small",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.128x128",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "fire",
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle",
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [
+    {
+      "property_name": "_Distort_TilingOffset",
+      "semantic": "flow_distortion",
+      "value_kind": "vector",
+      "start_value": [
+        1.0,
+        1.0,
+        0.0,
+        0.02
+      ],
+      "end_value": [
+        6.534272,
+        -1.0712080000000004,
+        -0.30832000000000015,
+        -8.001352
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.8,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "renderer_property_block_changed"
+  ],
+  "negative_mutation": {
+    "type": "overshoot",
+    "severity": 0.792,
+    "reason": "Parameter exceeds the source material's usable range."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "0a258d871d23"
+  }
+}

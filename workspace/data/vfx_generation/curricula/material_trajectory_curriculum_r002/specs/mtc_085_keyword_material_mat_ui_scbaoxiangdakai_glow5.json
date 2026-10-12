@@ -1,0 +1,65 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_085_keyword_material_mat_ui_scbaoxiangdakai_glow5",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 162412601,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_huodeiguangxiao/Mat/Mat_UI_SCbaoxiangdakai_glow5.mat",
+    "material_name": "Mat_UI_SCbaoxiangdakai_glow5",
+    "shader_name": "UI/CustomUIDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/05/Tex_UI_SCbaoxiangdakai_glow1_05acd66b98fdc5ef.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.edge_accent",
+          "role.hit_accent",
+          "role.noise_control",
+          "semantic.spark",
+          "shape.square",
+          "size.64x64",
+          "slot.alpha_mask",
+          "slot.emission_map"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 0.6,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [
+    {
+      "time_seconds": 0.3,
+      "from_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_huodeiguangxiao/Mat/Mat_UI_SCbaoxiangdakai_glow5.mat",
+      "to_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_gs/Mat/Mat_UI_glow 1.mat",
+      "same_shader_required": true
+    }
+  ],
+  "expected_signals": [
+    "material_instance_replaced"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "c0ac9ea0cc85",
+    "material_group": "08f28805b821"
+  }
+}

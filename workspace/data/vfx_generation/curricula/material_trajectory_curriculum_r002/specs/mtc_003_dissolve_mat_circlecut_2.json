@@ -1,0 +1,75 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_003_dissolve_mat_circlecut_2",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 891300112,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_circlecut/mat/Mat_circlecut_2.mat",
+    "material_name": "Mat_circlecut_2",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/ab/Tex_circlecut_2_ab7e6cb6664c82f0.png",
+        "tags": [
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "motion.radial_expand",
+          "resolution.medium",
+          "role.impact_ring",
+          "semantic.ring",
+          "shape.square",
+          "size.512x512"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.0,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_Dissolve",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "linear",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.0,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "e2233710f97f"
+  }
+}

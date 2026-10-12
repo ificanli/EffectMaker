@@ -1,0 +1,86 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_093_negative_guangyun8",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 240425712,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangyun8.mat",
+    "material_name": "guangyun8",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/b2/guangyun14_b22d1da3989430d6.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.dark_background",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 2.0,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.9,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/b2/guangyun14_b22d1da3989430d6.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/12/Tex_jianxian_01_12d724cfbc05698e.png",
+      "from_tags": [
+        "alpha.gradient",
+        "alpha.sparse",
+        "luma.dark_background",
+        "resolution.medium",
+        "shape.square",
+        "size.256x256"
+      ],
+      "to_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.noise_control",
+        "shape.rectangle",
+        "size.128x256",
+        "slot.alpha_mask"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "texture_changed"
+  ],
+  "negative_mutation": {
+    "type": "incompatible_texture",
+    "severity": 0.886,
+    "reason": "Texture swap intentionally violates semantic slot tags."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "4ea22c27aa8a"
+  }
+}

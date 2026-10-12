@@ -1,0 +1,102 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_039_emission_alpha_mat_kun_13",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 1332819045,
+  "category": "emission_alpha",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_kun_13.mat",
+    "material_name": "Mat_kun_13",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/09/Tex_trail_04_091ec084c4e64e19.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "motion.uv_scroll_u",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "role.residual_trail",
+          "semantic.trail",
+          "shape.rectangle",
+          "size.256x128",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_Color",
+      "semantic": "emission_alpha",
+      "value_kind": "color",
+      "start_value": [
+        39.36734,
+        11.644815,
+        10.275122,
+        1.0
+      ],
+      "end_value": [
+        4.0,
+        4.0,
+        4.0,
+        1.0
+      ],
+      "curve": "linear",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": 0.0,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "material_property_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "cc655e415d73"
+  }
+}

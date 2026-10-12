@@ -1,0 +1,64 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_081_keyword_material_mat_kun_16",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 134768690,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/daqiang/Mat_kun_16.mat",
+    "material_name": "Mat_kun_16",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/b8/Tex_kun_14_b80800df39feb5ea.png",
+        "tags": []
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/9b/Tex_noise_01_9b96c5a0f6bc2b05.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.small",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.128x128",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 2.0,
+  "parameter_tracks": [],
+  "keyword_events": [
+    {
+      "time_seconds": 0.8,
+      "keyword": "_DISTORT",
+      "enabled": false
+    }
+  ],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "shader_keywords_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "636e39dfc0f6"
+  }
+}

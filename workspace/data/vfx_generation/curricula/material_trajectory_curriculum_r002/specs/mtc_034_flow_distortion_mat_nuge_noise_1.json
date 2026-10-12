@@ -1,0 +1,96 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_034_flow_distortion_mat_nuge_noise_1",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 1038192996,
+  "category": "flow_distortion",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/mat/Mat_nuge_Noise 1.mat",
+    "material_name": "Mat_nuge_Noise 1",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+        "tags": [
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/9b/Tex_jianxian_010_9bc5c97ee13fa308.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.rectangle",
+          "size.512x256"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/d0/wenli19_d049aec453c28ea4.png",
+        "tags": [
+          "alpha.opaque",
+          "resolution.large",
+          "shape.square",
+          "size.2048x2048"
+        ]
+      }
+    ],
+    "effect_families": [
+      "ice"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_key_Distort",
+      "semantic": "flow_distortion",
+      "value_kind": "float",
+      "start_value": [
+        1.0
+      ],
+      "end_value": [
+        -2.153356
+      ],
+      "curve": "ease_in",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "material_property_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "5b3cbca1d4c4"
+  }
+}

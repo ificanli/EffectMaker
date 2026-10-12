@@ -1,0 +1,82 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_020_dissolve_guangquan20",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1263707733,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan20.mat",
+    "material_name": "guangquan20",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/60/guangquan19_607fa7b9ec8be154.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 0.6,
+  "parameter_tracks": [
+    {
+      "property_name": "_Dissolve_EdgeColor",
+      "semantic": "dissolve",
+      "value_kind": "color",
+      "start_value": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "end_value": [
+        1.310948,
+        1.514023,
+        0.381562,
+        0.818284
+      ],
+      "curve": "linear",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.6,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "slot_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "c2d4bfec15fa"
+  }
+}

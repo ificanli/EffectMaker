@@ -1,0 +1,101 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_072_texture_swap_yantuan_3",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 832820752,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/yantuan 3.mat",
+    "material_name": "yantuan 3",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/f1/yanchen5_f1f198d46000dac8.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "shape.rectangle",
+          "size.128x192"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+        "tags": [
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.rectangle",
+          "size.256x384",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.36,
+      "property_name": "_DissolveTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/b0/Tex_SeverityTip_05_b08fb03b6aa3b5ea.png",
+      "from_tags": [
+        "alpha.mixed",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.noise_control",
+        "shape.rectangle",
+        "size.256x384",
+        "slot.alpha_mask"
+      ],
+      "to_tags": [
+        "alpha.opaque",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.flat",
+        "luma.low_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.color_control",
+        "role.noise_control",
+        "shape.horizontal_strip",
+        "size.440x22",
+        "slot.alpha_mask",
+        "slot.ramp_map"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "dcd28f18b197"
+  }
+}

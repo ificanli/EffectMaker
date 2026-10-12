@@ -1,0 +1,91 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_090_negative_mat_ui_shengji_glow",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "seed": 736692687,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_shengji/Mat/Mat_ui_shengji_glow.mat",
+    "material_name": "Mat_ui_shengji_glow",
+    "shader_name": "UI/CustomUIDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/UI/CustomUIDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/aa/Tex_leiji_05_aaca954fccb1e183.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "shape.square",
+          "size.512x512"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.0,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.45,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/aa/Tex_leiji_05_aaca954fccb1e183.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/79/jianbianguangzhu_798212fb3ab5e52d.png",
+      "from_tags": [
+        "alpha.gradient",
+        "alpha.sparse",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "shape.square",
+        "size.512x512"
+      ],
+      "to_tags": [
+        "alpha.mixed",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.flat",
+        "luma.low_contrast",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.color_control",
+        "role.noise_control",
+        "shape.vertical_strip",
+        "size.16x256",
+        "slot.alpha_mask",
+        "slot.ramp_map"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "texture_changed"
+  ],
+  "negative_mutation": {
+    "type": "incompatible_texture",
+    "severity": 0.714,
+    "reason": "Texture swap intentionally violates semantic slot tags."
+  },
+  "split_group": {
+    "shader_group": "c0ac9ea0cc85",
+    "material_group": "a9fb27f9417b"
+  }
+}
