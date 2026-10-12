@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-09-02T09:18:02.897818+00:00",
+  "eligible_count": 2,
+  "files": {
+    "judge_training_excluding_regression": "workspace/data/vfx_generation/regression/prefab_regression_gold_r001/judge_training_excluding_regression.jsonl",
+    "pseudo_propagation_records": "workspace/data/vfx_generation/regression/prefab_regression_gold_r001/pseudo_propagation_records.jsonl",
+    "regression_gold": "workspace/data/vfx_generation/regression/prefab_regression_gold_r001/regression_gold.jsonl",
+    "training_records": "workspace/data/vfx_generation/regression/prefab_regression_gold_r001/training_records.jsonl"
+  },
+  "freeze_id": "prefab_regression_gold_r001",
+  "frozen_count": 2,
+  "held_out_prefab_paths": [
+    "assets/vfxsourceingest/trains/trains_fx_all_001/artresources/fx/ui/fx_ui_jiyinsuo/eff/fx_ui_jiyinsuo.prefab",
+    "assets/vfxsourceingest/trains/trains_fx_all_001/bundles/battle/prefab/effect/boss/fx_tip_common_circle.prefab"
+  ],
+  "historical_training_audit": {
+    "affected_existing_models_must_not_use_this_regression_set": true,
+    "direct_regression_overlap_count": 2,
+    "filtered_count": 45,
+    "heldout_cluster_overlap_count": 2,
+    "input_count": 47,
+    "input_path": "workspace/data/vfx_generation/datasets/aesthetic_training_r006/judge_training.jsonl"
+  },
+  "minimum_recommended_size": 24,
+  "quality_gates": {
+    "heldout_prefabs_in_pseudo_propagation": 0,
+    "regression_clusters_in_training": 0,
+    "regression_prefabs_in_filtered_judge": 0,
+    "regression_records_trainable": 0,
+    "regression_samples_in_training": 0,
+    "schema_errors": 0
+  },
+  "regression_cluster_ids": [
+    "cluster_0389c9a9554d",
+    "cluster_384ec3798bc8"
+  ],
+  "regression_sample_ids": [
+    "sample_09685b91126acf1526e2",
+    "sample_dea27303d141a49a67e3"
+  ],
+  "schema_version": "vfx_prefab_regression_gold_manifest.v1",
+  "source_assignments": "workspace/data/vfx_generation/active_learning/prefab_active_r004/cluster_assignments.jsonl",
+  "source_dataset": "workspace/data/vfx_generation/datasets/prefab_five_layer_r001/dataset_manifest.json",
+  "status": "underfilled",
+  "target_size": 32
+}

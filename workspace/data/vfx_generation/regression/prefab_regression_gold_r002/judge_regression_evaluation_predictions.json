@@ -1,0 +1,124 @@
+{
+  "schema_version": "vfx_aesthetic_judge_predictions.v1",
+  "model_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/aesthetic_judge_partial_r004_regression_isolated/aesthetic_judge.joblib",
+  "model_version": "aesthetic_judge.1.1.0+c97d159e4029",
+  "available_tasks": [
+    "quality_score",
+    "core_readability",
+    "layer_separation",
+    "rhythm",
+    "material",
+    "composition"
+  ],
+  "blocked_tasks": {
+    "style_family": {
+      "status": "blocked",
+      "label_count": 39,
+      "group_count": 2,
+      "value_counts": {
+        "cartoon": 7,
+        "stylized": 26,
+        "ui_graphic": 6
+      },
+      "reasons": [
+        "each style class needs labels in 2 evaluation groups"
+      ]
+    }
+  },
+  "prediction_count": 2,
+  "policy": {
+    "label_source": "ai_pseudo_label",
+    "maximum_training_weight": 0.2,
+    "excluded_from_human_and_regression_evaluation": true
+  },
+  "predictions": [
+    {
+      "candidate_id": "trains_fx_220_fx_ui_jiyinsuo",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.062143,
+      "core_readability": 1.699958,
+      "layer_separation": 2.523829,
+      "rhythm": 0.0,
+      "material": 1.823186,
+      "composition": 0.634728,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+c97d159e4029",
+        "confidence": 0.532763,
+        "task_confidences": {
+          "quality_score": 0.656169,
+          "core_readability": 0.376303,
+          "layer_separation": 0.538859,
+          "rhythm": 0.453655,
+          "material": 0.752269,
+          "composition": 0.419322
+        },
+        "task_disagreements": {
+          "quality_score": 0.106159,
+          "core_readability": 0.237864,
+          "layer_separation": 0.150956,
+          "rhythm": 0.203045,
+          "material": 0.070126,
+          "composition": 0.139585
+        },
+        "model_disagreement": 0.151289,
+        "training_weight": 0.106553,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_259_fx_tip_common_circle",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.799228,
+      "core_readability": 0.452266,
+      "layer_separation": 1.623352,
+      "rhythm": 1.137281,
+      "material": 3.328602,
+      "composition": 0.15595,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+c97d159e4029",
+        "confidence": 0.532485,
+        "task_confidences": {
+          "quality_score": 0.639283,
+          "core_readability": 0.432433,
+          "layer_separation": 0.56414,
+          "rhythm": 0.348956,
+          "material": 0.782867,
+          "composition": 0.427229
+        },
+        "task_disagreements": {
+          "quality_score": 0.129161,
+          "core_readability": 0.124182,
+          "layer_separation": 0.111122,
+          "rhythm": 0.386975,
+          "material": 0.032304,
+          "composition": 0.123362
+        },
+        "model_disagreement": 0.151184,
+        "training_weight": 0.106497,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    }
+  ]
+}

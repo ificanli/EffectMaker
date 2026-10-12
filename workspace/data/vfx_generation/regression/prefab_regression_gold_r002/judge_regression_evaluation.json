@@ -1,0 +1,51 @@
+{
+  "schema_version": "vfx_aesthetic_judge_regression_evaluation.v1",
+  "created_at": "2026-09-02T09:22:35.632583+00:00",
+  "model_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/aesthetic_judge_partial_r004_regression_isolated/aesthetic_judge.joblib",
+  "model_version": "aesthetic_judge.1.1.0+c97d159e4029",
+  "training_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/regression/prefab_regression_gold_r002/judge_training_excluding_regression.jsonl",
+  "regression_input": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/regression/prefab_regression_gold_r002/judge_regression_rows.jsonl",
+  "prediction_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/regression/prefab_regression_gold_r002/judge_regression_evaluation_predictions.json",
+  "sample_count": 2,
+  "minimum_samples": 24,
+  "training_overlap_count": 0,
+  "available_tasks": [
+    "quality_score",
+    "core_readability",
+    "layer_separation",
+    "rhythm",
+    "material",
+    "composition"
+  ],
+  "blocked_tasks": [
+    "style_family"
+  ],
+  "metrics": {
+    "quality_score": {
+      "sample_count": 2,
+      "mae": 0.930685
+    },
+    "core_readability": {
+      "sample_count": 2,
+      "mae": 1.123846
+    },
+    "layer_separation": {
+      "sample_count": 2,
+      "mae": 0.573591
+    },
+    "rhythm": {
+      "sample_count": 2,
+      "mae": 0.56864
+    },
+    "material": {
+      "sample_count": 2,
+      "mae": 0.924106
+    },
+    "composition": {
+      "sample_count": 2,
+      "mae": 0.739389
+    }
+  },
+  "promotion_eligible": false,
+  "status": "underfilled"
+}
