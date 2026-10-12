@@ -1,0 +1,2410 @@
+{
+  "batch_id": "prefab_active_full_r006",
+  "created_at": "2026-09-03T12:00:44.885890+00:00",
+  "dataset_id": "prefab_five_layer_full_r007",
+  "eligible_count": 70,
+  "items": [
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:49.351702+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "explosion",
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "orange",
+            "yellow"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "explosion"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "validation",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0028_0cfb9af4e9af/capture_manifest.json",
+      "cluster_id": "cluster_854b625b5b13",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Explosions/NukeVerticalExplosion/NukeVerticalExplosionFire.prefab",
+      "priority_score": 0.3382,
+      "queue_index": 1,
+      "sample_id": "sample_0157ceaa6747b029d44e",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.3382,
+        "model_disagreement": 0.0,
+        "novelty": 0.346327,
+        "predicted_low": 0.906275,
+        "promotion_top": 0.093725,
+        "random_audit": 0.742488,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:48.499766+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "explosion",
+          "issues": [],
+          "observed_color_tags": [
+            "yellow"
+          ],
+          "observed_element_tags": [
+            "explosion"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "explosion"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0023_2597c594ebfe/capture_manifest.json",
+      "cluster_id": "cluster_7ceba24fb090",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Explosions/- Misc/SparkExplosion.prefab",
+      "priority_score": 0.344828,
+      "queue_index": 2,
+      "sample_id": "sample_040cd25e3170e5401caf",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.344828,
+        "model_disagreement": 0.0,
+        "novelty": 0.330595,
+        "predicted_low": 0.889851,
+        "promotion_top": 0.110149,
+        "random_audit": 0.832017,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:59.932403+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "gray",
+            "yellow"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "validation",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0045_ffb525a2135e/capture_manifest.json",
+      "cluster_id": "cluster_854b625b5b13",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Interactive/Emojis 2/EmojiCrazy.prefab",
+      "priority_score": 0.325252,
+      "queue_index": 3,
+      "sample_id": "sample_058c2181321097ce021b",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.325252,
+        "model_disagreement": 0.0,
+        "novelty": 0.313611,
+        "predicted_low": 0.905174,
+        "promotion_top": 0.094826,
+        "random_audit": 0.677885,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:03.208744+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "portal",
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "gray",
+            "white"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "portal"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0056_220a98023767/capture_manifest.json",
+      "cluster_id": "cluster_5d6ab364d66b",
+      "prefab_path": "Assets/Fantasy Portal FX/Prefabs/Portals/Portal Floating/SpherePortalFloating.prefab",
+      "priority_score": 0.303027,
+      "queue_index": 4,
+      "sample_id": "sample_07cc0778c880c6ef7b31",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.303027,
+        "model_disagreement": 0.0,
+        "novelty": 0.18101,
+        "predicted_low": 0.930521,
+        "promotion_top": 0.069479,
+        "random_audit": 0.733514,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:03.504672+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "slash",
+          "issues": [],
+          "observed_color_tags": [
+            "blue"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "slash"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "test",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/capture_manifest.json",
+      "cluster_id": "cluster_03c0b843a230",
+      "prefab_path": "Assets/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab",
+      "priority_score": 0.338468,
+      "queue_index": 5,
+      "sample_id": "sample_0d53ff02e6a144c86a58",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.338468,
+        "model_disagreement": 0.0,
+        "novelty": 0.371132,
+        "predicted_low": 0.962489,
+        "promotion_top": 0.037511,
+        "random_audit": 0.723661,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:53.731999+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "shield",
+          "issues": [],
+          "observed_color_tags": [
+            "blue"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "shield"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0019_a2ba5996c701/capture_manifest.json",
+      "cluster_id": "cluster_a2ba5996c701",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Shield/ShieldSoftBlue.prefab",
+      "priority_score": 0.379232,
+      "queue_index": 6,
+      "sample_id": "sample_124b5f9d1a66dc692b4c",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.379232,
+        "model_disagreement": 0.0,
+        "novelty": 0.45,
+        "predicted_low": 0.902795,
+        "promotion_top": 0.097205,
+        "random_audit": 0.943714,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:09.772603+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "explosion",
+          "issues": [],
+          "observed_color_tags": [
+            "yellow"
+          ],
+          "observed_element_tags": [
+            "explosion"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "explosion"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0015_f0356b8bd134/capture_manifest.json",
+      "cluster_id": "cluster_7ceba24fb090",
+      "prefab_path": "Assets/QFX/Imagy VFX/VFX_Prefabs/Dangerous Pumpkin/P_Explosion.prefab",
+      "priority_score": 0.308473,
+      "queue_index": 7,
+      "sample_id": "sample_1d0b68337759f8921438",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.308473,
+        "model_disagreement": 0.0,
+        "novelty": 0.330595,
+        "predicted_low": 0.993691,
+        "promotion_top": 0.006309,
+        "random_audit": 0.520382,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:06.233728+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "projectile",
+          "issues": [],
+          "observed_color_tags": [
+            "blue"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "projectile"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0016_9c1c3f65bc11/capture_manifest.json",
+      "cluster_id": "cluster_05348da51cc5",
+      "prefab_path": "Assets/Hovl Studio/Toon Projectiles 2/Prefabs/Projectile 7.prefab",
+      "priority_score": 0.335449,
+      "queue_index": 8,
+      "sample_id": "sample_3ad47344700f489c8561",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.335449,
+        "model_disagreement": 0.0,
+        "novelty": 0.281965,
+        "predicted_low": 0.977421,
+        "promotion_top": 0.022579,
+        "random_audit": 0.879275,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:50.883653+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "green"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "test",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0035_5eaa1f9173b3/capture_manifest.json",
+      "cluster_id": "cluster_2fc547b5292c",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Magic/Nova/MagicNovaGreen.prefab",
+      "priority_score": 0.255019,
+      "queue_index": 9,
+      "sample_id": "sample_3cd5bbe108d776e0bf6e",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.255019,
+        "model_disagreement": 0.0,
+        "novelty": 0.289263,
+        "predicted_low": 0.912725,
+        "promotion_top": 0.087275,
+        "random_audit": 0.028031,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:00.778683+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "laser",
+          "issues": [],
+          "observed_color_tags": [
+            "blue"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "laser"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0053_0766afe3b316/capture_manifest.json",
+      "cluster_id": "cluster_8bc9a6b67905",
+      "prefab_path": "Assets/ErbGameArt/3D Lasers Pack/Prefabs/Laser beam 2.prefab",
+      "priority_score": 0.256033,
+      "queue_index": 10,
+      "sample_id": "sample_41fa1560dc48dae174db",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.256033,
+        "model_disagreement": 0.0,
+        "novelty": 0.171115,
+        "predicted_low": 0.994802,
+        "promotion_top": 0.005198,
+        "random_audit": 0.315503,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:05.967037+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "projectile",
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "gray"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "projectile"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "validation",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0060_3cbe7e5158b1/capture_manifest.json",
+      "cluster_id": "cluster_05348da51cc5",
+      "prefab_path": "Assets/Hovl Studio/Toon Projectiles 2/Prefabs/Projectile 2.prefab",
+      "priority_score": 0.328762,
+      "queue_index": 11,
+      "sample_id": "sample_4592be2490e2c68bc10e",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.328762,
+        "model_disagreement": 0.0,
+        "novelty": 0.332948,
+        "predicted_low": 0.975478,
+        "promotion_top": 0.024522,
+        "random_audit": 0.709465,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:48.825156+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "explosion",
+          "issues": [],
+          "observed_color_tags": [
+            "gray",
+            "green",
+            "white"
+          ],
+          "observed_element_tags": [
+            "explosion"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "explosion"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0022_46a292164d69/capture_manifest.json",
+      "cluster_id": "cluster_2fc547b5292c",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Explosions/MegaExplosion/MegaExplosionGreen.prefab",
+      "priority_score": 0.28942,
+      "queue_index": 12,
+      "sample_id": "sample_4eaf55fa2e2125b1474b",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.28942,
+        "model_disagreement": 0.0,
+        "novelty": 0.433721,
+        "predicted_low": 0.834864,
+        "promotion_top": 0.165136,
+        "random_audit": 0.044189,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:55.723877+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "gray"
+          ],
+          "observed_element_tags": [
+            "smoke"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0044_8e80d90fde47/capture_manifest.json",
+      "cluster_id": "cluster_0b3ca9511c20",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Dust/DustDirtyPoof.prefab",
+      "priority_score": 0.273253,
+      "queue_index": 13,
+      "sample_id": "sample_52a5e381d77cab8d46d0",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.273253,
+        "model_disagreement": 0.0,
+        "novelty": 0.35825,
+        "predicted_low": 0.953371,
+        "promotion_top": 0.046629,
+        "random_audit": 0.092713,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:00.950336+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "laser",
+          "issues": [],
+          "observed_color_tags": [
+            "yellow"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "laser"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0048_d0cf4cb12594/capture_manifest.json",
+      "cluster_id": "cluster_854b625b5b13",
+      "prefab_path": "Assets/ErbGameArt/3D Lasers Pack/Prefabs/Laser beam 7.prefab",
+      "priority_score": 0.352111,
+      "queue_index": 14,
+      "sample_id": "sample_a5026b915818a9723cb6",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.352111,
+        "model_disagreement": 0.0,
+        "novelty": 0.639103,
+        "predicted_low": 0.994347,
+        "promotion_top": 0.005653,
+        "random_audit": 0.340083,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:56.447069+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "environment",
+          "issues": [],
+          "observed_color_tags": [
+            "orange",
+            "red"
+          ],
+          "observed_element_tags": [
+            "fire"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "environment"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0016_3648a8c32a6f/capture_manifest.json",
+      "cluster_id": "cluster_065fa8011e43",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Fireflies/FireFliesRed.prefab",
+      "priority_score": 0.319734,
+      "queue_index": 15,
+      "sample_id": "sample_ccb4287a1ba697c3cdae",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.319734,
+        "model_disagreement": 0.0,
+        "novelty": 0.60625,
+        "predicted_low": 0.946455,
+        "promotion_top": 0.053545,
+        "random_audit": 0.058063,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:51.572375+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "projectile",
+          "issues": [],
+          "observed_color_tags": [
+            "green",
+            "white"
+          ],
+          "observed_element_tags": [
+            "lightning"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "projectile"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0033_d0790d113628/capture_manifest.json",
+      "cluster_id": "cluster_2fc547b5292c",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Missiles/Lightning/LightningMissileGreen.prefab",
+      "priority_score": 0.299956,
+      "queue_index": 16,
+      "sample_id": "sample_cc3cedd239986e69f6bf",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.299956,
+        "model_disagreement": 0.0,
+        "novelty": 0.501043,
+        "predicted_low": 0.90619,
+        "promotion_top": 0.09381,
+        "random_audit": 0.050573,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:50.304543+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "aura",
+          "issues": [],
+          "observed_color_tags": [
+            "orange",
+            "yellow"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "aura"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "test",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0031_d25db86bdbcc/capture_manifest.json",
+      "cluster_id": "cluster_065fa8011e43",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Magic/Aura Soft/AuraSoftYellow.prefab",
+      "priority_score": 0.369766,
+      "queue_index": 17,
+      "sample_id": "sample_e023e172925c40babd5e",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.369766,
+        "model_disagreement": 0.0,
+        "novelty": 0.492593,
+        "predicted_low": 0.924417,
+        "promotion_top": 0.075583,
+        "random_audit": 0.774677,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:57.402656+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "green"
+          ],
+          "observed_element_tags": [
+            "smoke"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0041_f2f2fc05101f/capture_manifest.json",
+      "cluster_id": "cluster_2fc547b5292c",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Smoke/StinkyCloud.prefab",
+      "priority_score": 0.324213,
+      "queue_index": 18,
+      "sample_id": "sample_aa7cf8f4d27bc3d3f144",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.324213,
+        "model_disagreement": 0.0,
+        "novelty": 0.468039,
+        "predicted_low": 0.888264,
+        "promotion_top": 0.111736,
+        "random_audit": 0.350188,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:52.716421+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "muzzle",
+          "issues": [],
+          "observed_color_tags": [
+            "yellow"
+          ],
+          "observed_element_tags": [
+            "lightning"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "muzzle"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0032_40dceaf68f1d/capture_manifest.json",
+      "cluster_id": "cluster_40dceaf68f1d",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Muzzleflash/LightningMuzzle/LightningMuzzleYellow.prefab",
+      "priority_score": 0.299122,
+      "queue_index": 19,
+      "sample_id": "sample_ef3e9a8a60015fe3b1e4",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.299122,
+        "model_disagreement": 0.0,
+        "novelty": 0.45,
+        "predicted_low": 0.665517,
+        "promotion_top": 0.334483,
+        "random_audit": 0.023976,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:06.957215+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "blue"
+          ],
+          "observed_element_tags": [
+            "smoke"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0005_ef7eded6c0fd/capture_manifest.json",
+      "cluster_id": "cluster_05348da51cc5",
+      "prefab_path": "Assets/Lana Studio/Hyper Casual FX/Prefabs/Dust/Dust_permanently_blue.prefab",
+      "priority_score": 0.351319,
+      "queue_index": 20,
+      "sample_id": "sample_86963da369bbb8cf3dfe",
+      "selection_reason": "new_cluster",
+      "signals": {
+        "combined": 0.351319,
+        "model_disagreement": 0.0,
+        "novelty": 0.4469,
+        "predicted_low": 0.977707,
+        "promotion_top": 0.022293,
+        "random_audit": 0.70824,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:52.951140+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "muzzle",
+          "issues": [],
+          "observed_color_tags": [
+            "orange",
+            "yellow"
+          ],
+          "observed_element_tags": [
+            "fire"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "muzzle"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "validation",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0001_dd7258ac1a08/capture_manifest.json",
+      "cluster_id": "cluster_065fa8011e43",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Muzzleflash/MagicSoftMuzzle/MagicSoftMuzzleFire.prefab",
+      "priority_score": 0.309277,
+      "queue_index": 21,
+      "sample_id": "sample_562330ba3189517f51ea",
+      "selection_reason": "model_disagreement",
+      "signals": {
+        "combined": 0.309277,
+        "model_disagreement": 0.0,
+        "novelty": 0.439533,
+        "predicted_low": 0.946866,
+        "promotion_top": 0.053134,
+        "random_audit": 0.287138,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:51.127665+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "shield",
+          "issues": [],
+          "observed_color_tags": [
+            "purple"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "shield"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0036_0a9cd4ce48fb/capture_manifest.json",
+      "cluster_id": "cluster_465124b4600e",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Magic/Shield/MagicShieldPurple.prefab",
+      "priority_score": 0.264287,
+      "queue_index": 22,
+      "sample_id": "sample_6072013f97ba0097d198",
+      "selection_reason": "model_disagreement",
+      "signals": {
+        "combined": 0.264287,
+        "model_disagreement": 0.0,
+        "novelty": 0.258532,
+        "predicted_low": 0.897307,
+        "promotion_top": 0.102693,
+        "random_audit": 0.174462,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:00.843461+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "laser",
+          "issues": [],
+          "observed_color_tags": [
+            "blue"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "laser"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0052_41edf1a1b3cd/capture_manifest.json",
+      "cluster_id": "cluster_8bc9a6b67905",
+      "prefab_path": "Assets/ErbGameArt/3D Lasers Pack/Prefabs/Laser beam 6.prefab",
+      "priority_score": 0.319556,
+      "queue_index": 23,
+      "sample_id": "sample_61a1989d6b5f852a47a7",
+      "selection_reason": "model_disagreement",
+      "signals": {
+        "combined": 0.319556,
+        "model_disagreement": 0.0,
+        "novelty": 0.173134,
+        "predicted_low": 0.992659,
+        "promotion_top": 0.007341,
+        "random_audit": 0.945626,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:51.008498+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "shield",
+          "issues": [],
+          "observed_color_tags": [
+            "green"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "shield"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0039_0cc860330933/capture_manifest.json",
+      "cluster_id": "cluster_5c7410f49a76",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Magic/Shield/MagicShieldGreen.prefab",
+      "priority_score": 0.318257,
+      "queue_index": 24,
+      "sample_id": "sample_646155c1b53fb687fbf5",
+      "selection_reason": "model_disagreement",
+      "signals": {
+        "combined": 0.318257,
+        "model_disagreement": 0.0,
+        "novelty": 0.258479,
+        "predicted_low": 0.897307,
+        "promotion_top": 0.102693,
+        "random_audit": 0.714268,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:51.695192+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "projectile",
+          "issues": [],
+          "observed_color_tags": [
+            "orange",
+            "red"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "projectile"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0033_772a76e4262f/capture_manifest.json",
+      "cluster_id": "cluster_065fa8011e43",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Missiles/Mystic/MysticMissileOrange.prefab",
+      "priority_score": 0.267878,
+      "queue_index": 25,
+      "sample_id": "sample_6464a721c44c71211f47",
+      "selection_reason": "model_disagreement",
+      "signals": {
+        "combined": 0.267878,
+        "model_disagreement": 0.0,
+        "novelty": 0.369697,
+        "predicted_low": 0.951152,
+        "promotion_top": 0.048848,
+        "random_audit": 0.014961,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:52.151756+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "muzzle",
+          "issues": [],
+          "observed_color_tags": [
+            "purple"
+          ],
+          "observed_element_tags": [
+            "fire"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "muzzle"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0024_77b16b3b99de/capture_manifest.json",
+      "cluster_id": "cluster_b1a4d039e4d2",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Muzzleflash/- Misc/GunFire/GunFirePurple.prefab",
+      "priority_score": 0.268284,
+      "queue_index": 26,
+      "sample_id": "sample_9624a7186eacd6c8ec68",
+      "selection_reason": "promotion_top",
+      "signals": {
+        "combined": 0.268284,
+        "model_disagreement": 0.0,
+        "novelty": 0.315849,
+        "predicted_low": 0.82234,
+        "promotion_top": 0.17766,
+        "random_audit": 0.062312,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:06.687013+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "orange",
+            "red"
+          ],
+          "observed_element_tags": [
+            "fire"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0059_99917da8124e/capture_manifest.json",
+      "cluster_id": "cluster_96132bb93128",
+      "prefab_path": "Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_fire_red.prefab",
+      "priority_score": 0.321153,
+      "queue_index": 27,
+      "sample_id": "sample_6ccdecd74a48b1085b73",
+      "selection_reason": "promotion_top",
+      "signals": {
+        "combined": 0.321153,
+        "model_disagreement": 0.0,
+        "novelty": 0.39109,
+        "predicted_low": 0.851899,
+        "promotion_top": 0.148101,
+        "random_audit": 0.455304,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:07.193161+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "gray",
+            "purple"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0061_4d8c7ac69106/capture_manifest.json",
+      "cluster_id": "cluster_e62af0895ba0",
+      "prefab_path": "Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_magic_blue_pink.prefab",
+      "priority_score": 0.296392,
+      "queue_index": 28,
+      "sample_id": "sample_7603686ecd1343c60d9d",
+      "selection_reason": "promotion_top",
+      "signals": {
+        "combined": 0.296392,
+        "model_disagreement": 0.0,
+        "novelty": 0.225137,
+        "predicted_low": 0.894763,
+        "promotion_top": 0.105237,
+        "random_audit": 0.561024,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:53.854178+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "shield",
+          "issues": [],
+          "observed_color_tags": [
+            "green"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "shield"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0017_78faff29d54e/capture_manifest.json",
+      "cluster_id": "cluster_5c7410f49a76",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Shield/ShieldSoftGreen.prefab",
+      "priority_score": 0.298897,
+      "queue_index": 29,
+      "sample_id": "sample_ce5981115f87c56f5a4d",
+      "selection_reason": "promotion_top",
+      "signals": {
+        "combined": 0.298897,
+        "model_disagreement": 0.0,
+        "novelty": 0.258479,
+        "predicted_low": 0.898273,
+        "promotion_top": 0.101727,
+        "random_audit": 0.521153,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:58.194738+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "gray"
+          ],
+          "observed_element_tags": [
+            "water"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "validation",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0050_7f8bbd2a80d4/capture_manifest.json",
+      "cluster_id": "cluster_d4c03e01c543",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Water/Flowing/Sharp/WaterGeysirSharp.prefab",
+      "priority_score": 0.322283,
+      "queue_index": 30,
+      "sample_id": "sample_f6441cddb743a534e892",
+      "selection_reason": "predicted_low",
+      "signals": {
+        "combined": 0.322283,
+        "model_disagreement": 0.0,
+        "novelty": 0.189085,
+        "predicted_low": 0.994367,
+        "promotion_top": 0.005633,
+        "random_audit": 0.941841,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T12:00:01.529055+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": "portal",
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "gray"
+          ],
+          "observed_element_tags": [],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": "portal"
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "test",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0004_70c1f9898f8e/capture_manifest.json",
+      "cluster_id": "cluster_5d6ab364d66b",
+      "prefab_path": "Assets/Fantasy Portal FX/Prefabs/Portal Opening/Open Rectangular/RectNoisePortal2Open.prefab",
+      "priority_score": 0.295097,
+      "queue_index": 31,
+      "sample_id": "sample_b151988b53d7683e6e7b",
+      "selection_reason": "predicted_low",
+      "signals": {
+        "combined": 0.295097,
+        "model_disagreement": 0.0,
+        "novelty": 0.126986,
+        "predicted_low": 0.993,
+        "promotion_top": 0.007,
+        "random_audit": 0.793494,
+        "uncertainty": 0.35
+      }
+    },
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-03T11:59:58.627592+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "effect_type": null,
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "gray"
+          ],
+          "observed_element_tags": [
+            "water"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "type_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0045_0b671b542c87/capture_manifest.json",
+      "cluster_id": "cluster_d4c03e01c543",
+      "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Water/Flowing/Soft/WaterRippleSoft.prefab",
+      "priority_score": 0.310996,
+      "queue_index": 32,
+      "sample_id": "sample_974b2f0131b28615b933",
+      "selection_reason": "random_audit",
+      "signals": {
+        "combined": 0.310996,
+        "model_disagreement": 0.0,
+        "novelty": 0.128275,
+        "predicted_low": 0.972264,
+        "promotion_top": 0.027736,
+        "random_audit": 0.93954,
+        "uncertainty": 0.35
+      }
+    }
+  ],
+  "quality_gates": {
+    "already_gold_items": 0,
+    "cluster_split_leakage": 0,
+    "duplicate_queue_prefabs": 0,
+    "duplicate_queue_samples": 0,
+    "non_visual_items": 0,
+    "regression_items": 0
+  },
+  "review_budget": 32,
+  "review_rate": 0.06,
+  "schema_version": "vfx_prefab_active_learning_batch.v1",
+  "selection_mix": {
+    "model_disagreement": 0.15,
+    "new_cluster": 0.2,
+    "predicted_low": 0.05,
+    "promotion_top": 0.1,
+    "random_audit": 0.1,
+    "uncertainty": 0.4
+  },
+  "status": "pass"
+}
