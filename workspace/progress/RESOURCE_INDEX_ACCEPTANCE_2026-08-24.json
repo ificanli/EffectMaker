@@ -1,0 +1,50 @@
+{
+  "scan_command": "python -m workspace.tools.resource_index.cli scan --root resource --output workspace/data/resource_index --json",
+  "resource_root": "E:\\Unity特效人工智能学习\\resource",
+  "file_count": 37463,
+  "source_tree_fingerprint": "5600d16b842a276e145603a8a828900055ee41dfe35c5edda9d418464a917146",
+  "source_tree_fingerprint_algorithm": "For each regular file sorted by relative POSIX path casefold: SHA-256(relative_path UTF-8 + NUL + size ASCII + NUL + mtime_ns ASCII + LF).",
+  "reproducible_fingerprint_before_incremental_scan": "1442f69b2ccd4f7c30562f68fbd91bd94e50774379ace92671d25b7166fe0eb3",
+  "reproducible_fingerprint_after_incremental_scan": "1442f69b2ccd4f7c30562f68fbd91bd94e50774379ace92671d25b7166fe0eb3",
+  "source_tree_unchanged_before_after_incremental_scan": true,
+  "sqlite_total": 37463,
+  "sqlite_present": 37463,
+  "sqlite_missing": 0,
+  "jsonl_lines": 37463,
+  "scan_summary_initial_full_scan": {
+    "added": 37463,
+    "errors": 65,
+    "missing": 0,
+    "modified": 0,
+    "present": 37463,
+    "removed": 0,
+    "root": "resource",
+    "scanned": 37463,
+    "thumbnails_created": 36503,
+    "thumbnails_failed": 64,
+    "total": 37463,
+    "unchanged": 0
+  },
+  "scan_summary_final_incremental_retry": {
+    "added": 0,
+    "errors": 1,
+    "missing": 0,
+    "modified": 65,
+    "present": 37463,
+    "removed": 0,
+    "scanned": 37463,
+    "thumbnails_created": 65,
+    "thumbnails_failed": 0,
+    "total": 37463,
+    "unchanged": 37398
+  },
+  "final_exception": {
+    "relative_path": "y117/新贴图/破晓贴图/Tex/Glow/Ember_wyh.psd",
+    "error": "unpack_from requires a buffer of at least 2 bytes for unpacking 2 bytes at offset 0 (actual buffer size is 0)",
+    "source_modified": false,
+    "source_read_only": true
+  },
+  "resource_read_only_basis": "A before/after snapshot around the incremental scan recorded identical file count and reproducible path-size-mtime_ns fingerprint; scanner writes only to the output index directory.",
+  "status": "experimental",
+  "notes": "64 special-mode thumbnail errors were repaired by retry; one corrupt PSD remains explicitly recorded and the source file was not modified."
+}
