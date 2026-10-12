@@ -1,0 +1,483 @@
+{
+  "asset_bindings": {
+    "materials": [
+      "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat"
+    ],
+    "meshes": [
+      "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+    ]
+  },
+  "components": {
+    "animations": [],
+    "particle_systems": [
+      {
+        "component_id": "p0000",
+        "material_paths": [],
+        "mesh_paths": [
+          "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+        ],
+        "node_id": "n0001",
+        "parameters": {
+          "burst_particle_count": 1,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.65,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.12,
+            0.35,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 1.0,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+          "max_particles": 4,
+          "renderer_mode": "Mesh",
+          "serialized_modules": {
+            "layer_role": "outer_blade",
+            "profile": "layered_slash_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 10,
+          "start_color_rgba": [
+            0.55,
+            0.88,
+            1.0,
+            1.0
+          ],
+          "start_delay_max": 0.0,
+          "start_lifetime_max": 0.38,
+          "start_rotation_max": -0.04415227105452399,
+          "start_size_max": 0.9,
+          "start_speed_max": 0.0,
+          "texture_asset_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0001",
+        "material_paths": [],
+        "mesh_paths": [
+          "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+        ],
+        "node_id": "n0002",
+        "parameters": {
+          "burst_particle_count": 1,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.65,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.12,
+            0.35,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 1.0,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+          "max_particles": 4,
+          "renderer_mode": "Mesh",
+          "serialized_modules": {
+            "layer_role": "inner_support",
+            "profile": "layered_slash_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 9,
+          "start_color_rgba": [
+            0.55,
+            0.88,
+            1.0,
+            0.36000000000000004
+          ],
+          "start_delay_max": 0.01,
+          "start_lifetime_max": 0.32,
+          "start_rotation_max": -0.04415227105452399,
+          "start_size_max": 0.558,
+          "start_speed_max": 0.0,
+          "texture_asset_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0003",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0003",
+        "parameters": {
+          "burst_particle_count": 1,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.65,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.12,
+            0.35,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 0.25,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+          "max_particles": 2,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "contact_hit",
+            "profile": "layered_slash_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 12,
+          "start_color_rgba": [
+            0.9,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "start_delay_max": 0.065,
+          "start_lifetime_max": 0.17,
+          "start_rotation_max": 0.0,
+          "start_size_max": 0.98,
+          "start_speed_max": 0.0,
+          "texture_asset_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Hit_1.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0002",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0004",
+        "parameters": {
+          "burst_particle_count": 9,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.65,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.12,
+            0.35,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 0.25,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+          "max_particles": 16,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "direction_trail",
+            "profile": "layered_slash_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": true,
+          "shape_radius": 0.04,
+          "shape_type": "Cone",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 6,
+          "start_color_rgba": [
+            0.55,
+            0.88,
+            1.0,
+            0.42
+          ],
+          "start_delay_max": 0.18,
+          "start_lifetime_max": 0.32,
+          "start_rotation_max": 0.0,
+          "start_size_max": 0.26,
+          "start_speed_max": 2.1,
+          "texture_asset_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      }
+    ],
+    "renderers": [
+      {
+        "component_id": "r0000",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [
+          "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+        ],
+        "node_id": "n0001",
+        "parameters": {
+          "particle_render_mode": "Mesh",
+          "sorting_order": 10
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0001",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [
+          "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+        ],
+        "node_id": "n0002",
+        "parameters": {
+          "particle_render_mode": "Mesh",
+          "sorting_order": 9
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0002",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0003",
+        "parameters": {
+          "particle_render_mode": "Billboard",
+          "sorting_order": 12
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0003",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0004",
+        "parameters": {
+          "particle_render_mode": "Billboard",
+          "sorting_order": 6
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      }
+    ]
+  },
+  "condition": {
+    "effect_family": "slash",
+    "parent_prefab_path": null,
+    "prompt": "卡通冰蓝重斩，主刃与内弧层次清晰，接触点闪亮，尾迹在峰值后短暂残留并消散",
+    "seed": 20262373,
+    "style_family": "cartoon"
+  },
+  "graph_id": "pfg_169dfb59681804dfd4da",
+  "nodes": [
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.Transform"
+      ],
+      "depth": 0,
+      "hierarchy_path": "GeneratedRoot[0]",
+      "name": "GeneratedRoot",
+      "node_id": "n0000",
+      "parent_node_id": null,
+      "role": "root",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/OuterBlade[0]",
+      "name": "OuterBlade",
+      "node_id": "n0001",
+      "parent_node_id": "n0000",
+      "role": "core",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/InnerSupport[1]",
+      "name": "InnerSupport",
+      "node_id": "n0002",
+      "parent_node_id": "n0000",
+      "role": "support",
+      "sibling_index": 1,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/ContactHit[2]",
+      "name": "ContactHit",
+      "node_id": "n0003",
+      "parent_node_id": "n0000",
+      "role": "hit",
+      "sibling_index": 2,
+      "transform": {
+        "local_position": [
+          1.45,
+          -0.05,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/DirectionTrail[3]",
+      "name": "DirectionTrail",
+      "node_id": "n0004",
+      "parent_node_id": "n0000",
+      "role": "residual",
+      "sibling_index": 3,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.7071068,
+          0.0,
+          0.7071068
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "assumptions": [
+      "OuterBlade and InnerSupport use the real Hovl Slash4 Mesh.",
+      "DirectionTrail follows the attack axis under a verified professional Teacher rule.",
+      "ContactHit is an independent Billboard layer using an explicit hit texture.",
+      "ContactHit placement remains an AI proposal pending professional Teacher validation.",
+      "A QFX particle material avoids unmodeled Hovl custom vertex-stream requirements."
+    ],
+    "exporter": "prefab_graph_constrained.v1",
+    "source_dataset_id": "slash_family_adapter_r001",
+    "source_run_id": null
+  },
+  "reconstruction": {
+    "compiler_profile": "particle_v1",
+    "missing_fields": [],
+    "status": "reconstructable",
+    "unsupported_components": []
+  },
+  "root_node_id": "n0000",
+  "schema_version": "vfx_prefab_graph.v1",
+  "source": {
+    "prefab_path": null,
+    "source_example_id": null,
+    "source_kind": "generated"
+  },
+  "training": {
+    "aesthetic_label_source": "ai_hypothesis",
+    "eligible_tasks": [
+      "component_prediction",
+      "full_reconstruction",
+      "hierarchy_modeling",
+      "particle_parameter_modeling"
+    ],
+    "excluded_tasks": [
+      "aesthetic_preference"
+    ]
+  }
+}

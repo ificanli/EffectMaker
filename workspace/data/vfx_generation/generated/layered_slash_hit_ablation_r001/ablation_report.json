@@ -1,0 +1,439 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-03T23:14:28.328904+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "active_positive_difference_frame_count": 6.0,
+      "candidate_id": "slash_hit_pair_000_pfg_4b50436b0d56d860a247",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_4b50436b0d56d860a247",
+      "max_center_luminance_reduction": 0.30965134501457214,
+      "max_contact_luminance_gain": 0.1602817177772522,
+      "max_contact_peak_luminance_gain": 0.11967313289642334,
+      "mean_positive_contact_luminance_gain": 0.040162748760647245,
+      "mean_positive_delta_centroid_x": 0.8524753365986458,
+      "mean_positive_delta_centroid_y": 0.5321128501312767,
+      "mean_positive_delta_target_distance": 0.023556984866775904,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_000_pfg_4b50436b0d56d860a247",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 6.0,
+      "candidate_id": "slash_hit_pair_001_pfg_74da053ca7eb8d40ee5d",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_74da053ca7eb8d40ee5d",
+      "max_center_luminance_reduction": 0.31659165024757385,
+      "max_contact_luminance_gain": 0.09439671039581299,
+      "max_contact_peak_luminance_gain": 0.1225130558013916,
+      "mean_positive_contact_luminance_gain": 0.03249992926915487,
+      "mean_positive_delta_centroid_x": 0.8497958113291887,
+      "mean_positive_delta_centroid_y": 0.5289537046264856,
+      "mean_positive_delta_target_distance": 0.021025463513527173,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_001_pfg_74da053ca7eb8d40ee5d",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 5.0,
+      "candidate_id": "slash_hit_pair_002_pfg_b6b8e118b31a7ef6eff0",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_b6b8e118b31a7ef6eff0",
+      "max_center_luminance_reduction": 0.323496013879776,
+      "max_contact_luminance_gain": 0.158636212348938,
+      "max_contact_peak_luminance_gain": 0.1206284761428833,
+      "mean_positive_contact_luminance_gain": 0.0583928128083547,
+      "mean_positive_delta_centroid_x": 0.849328954223702,
+      "mean_positive_delta_centroid_y": 0.5383895788248945,
+      "mean_positive_delta_target_distance": 0.029213018291091176,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_002_pfg_b6b8e118b31a7ef6eff0",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 6.0,
+      "candidate_id": "slash_hit_pair_003_pfg_95cd5c3cd3ecd7a3396b",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_95cd5c3cd3ecd7a3396b",
+      "max_center_luminance_reduction": 0.2962709963321686,
+      "max_contact_luminance_gain": 0.1019737720489502,
+      "max_contact_peak_luminance_gain": 0.12494730949401855,
+      "mean_positive_contact_luminance_gain": 0.03035834857395717,
+      "mean_positive_delta_centroid_x": 0.8546598711795572,
+      "mean_positive_delta_centroid_y": 0.528327447378098,
+      "mean_positive_delta_target_distance": 0.017982905584388923,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_003_pfg_95cd5c3cd3ecd7a3396b",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 6.0,
+      "candidate_id": "slash_hit_pair_004_pfg_fa1083f917b12281b3a1",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_fa1083f917b12281b3a1",
+      "max_center_luminance_reduction": 0.33814117312431335,
+      "max_contact_luminance_gain": 0.2039204239845276,
+      "max_contact_peak_luminance_gain": 0.11985772848129272,
+      "mean_positive_contact_luminance_gain": 0.07943859696388245,
+      "mean_positive_delta_centroid_x": 0.8511394114111784,
+      "mean_positive_delta_centroid_y": 0.5350978215372425,
+      "mean_positive_delta_target_distance": 0.025376406429303184,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_004_pfg_fa1083f917b12281b3a1",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 5.0,
+      "candidate_id": "slash_hit_pair_005_pfg_6476fd697f1971b3d574",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_6476fd697f1971b3d574",
+      "max_center_luminance_reduction": 0.3169515132904053,
+      "max_contact_luminance_gain": 0.09124147891998291,
+      "max_contact_peak_luminance_gain": 0.12022674083709717,
+      "mean_positive_contact_luminance_gain": 0.030361814158303396,
+      "mean_positive_delta_centroid_x": 0.8438149993143153,
+      "mean_positive_delta_centroid_y": 0.4851239629951234,
+      "mean_positive_delta_target_distance": 0.0333124292089718,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_005_pfg_6476fd697f1971b3d574",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 5.0,
+      "candidate_id": "slash_hit_pair_006_pfg_8fdd98164e827632c084",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_8fdd98164e827632c084",
+      "max_center_luminance_reduction": 0.2968258559703827,
+      "max_contact_luminance_gain": 0.10704058408737183,
+      "max_contact_peak_luminance_gain": 0.12370789051055908,
+      "mean_positive_contact_luminance_gain": 0.035632054011027016,
+      "mean_positive_delta_centroid_x": 0.851103765347794,
+      "mean_positive_delta_centroid_y": 0.5316508484160547,
+      "mean_positive_delta_target_distance": 0.022367816082381024,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_006_pfg_8fdd98164e827632c084",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    },
+    {
+      "active_positive_difference_frame_count": 5.0,
+      "candidate_id": "slash_hit_pair_007_pfg_18710de93c1e8dec7467",
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[3].transform.local_position[0]",
+          "nodes[3].transform.local_position[1]"
+        ],
+        "expected_difference_prefix": "nodes[3].transform.local_position",
+        "only_hit_position_differs": true
+      },
+      "guided_graph_id": "pfg_18710de93c1e8dec7467",
+      "max_center_luminance_reduction": 0.3015895187854767,
+      "max_contact_luminance_gain": 0.06403720378875732,
+      "max_contact_peak_luminance_gain": 0.12500011920928955,
+      "mean_positive_contact_luminance_gain": 0.01770276576280594,
+      "mean_positive_delta_centroid_x": 0.8521567315782065,
+      "mean_positive_delta_centroid_y": 0.515516177287479,
+      "mean_positive_delta_target_distance": 0.014158001739391537,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "contact_bright_pixels_gain_luminance": true,
+        "contact_difference_has_frames": true,
+        "contact_region_gains_luminance": true,
+        "positive_difference_lands_near_contact": true
+      },
+      "source_candidate_id": "layered_slash_007_pfg_18710de93c1e8dec7467",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "center_compile_pass": true,
+        "center_prefab_api_readback_pass": true,
+        "center_texture_readback_matches_plan": true,
+        "controlled_graph_difference_only_hit_position": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_contact_hit_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_contact_focus_within_verified_pair"
+      }
+    }
+  ],
+  "run_id": "layered_slash_hit_ablation_r001",
+  "schema_version": "vfx_professional_slash_hit_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "slash_contact_hit_controller_only",
+      "contact_position": [
+        1.45,
+        -0.05,
+        0.0
+      ],
+      "effect_family": "slash",
+      "judgment_axis": "contact_focus",
+      "maximum_contact_centroid_distance": 0.12,
+      "minimum_contact_luminance_gain": 0.012,
+      "minimum_contact_peak_luminance_gain": 0.08,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/graphs/contact_aligned.json",
+      "status": "eligible",
+      "target_role": "hit"
+    },
+    "effect_family": "slash",
+    "expert_judgment": "刀光命中反馈应集中在真实接触点或受力端，成为局部视觉重点；不能把亮点堆在刀光中心而让落点失焦。",
+    "judgment_axes": [
+      "composition",
+      "contact_readability",
+      "layer_separation"
+    ],
+    "record_id": "professional_slash_contact_focus_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology slash contact-hit placement pairs only"
+}
