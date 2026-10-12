@@ -1,0 +1,976 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6892145430856402372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6892145430856402370}
+  - component: {fileID: 6892145430856402371}
+  m_Layer: 0
+  m_Name: GreenBall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6892145430856402370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6892145430856402372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1154345643776015921}
+  - {fileID: 3100172279417646663}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &6892145430856402371
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6892145430856402372}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 206830c02dbf2314a84b3b0e294cfae1, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4773266543729692899, guid: 206830c02dbf2314a84b3b0e294cfae1, type: 2}
+    value: {fileID: 1154345643776015934}
+  m_ExposedReferences:
+    m_References:
+    - 380912d2adf1f514085e864236f59af9: {fileID: 0}
+    - 4a9393fbf5f8c924680af7a557684014: {fileID: 0}
+    - 3ca0b72e2a51326489653babab6c1e67: {fileID: 0}
+    - 6779da6bbfa91524298eb477f1db0493: {fileID: 3100172279417646680}
+    - 60b2547cbf62f664da153e6159200fc3: {fileID: 0}
+    - 78bd6b7d2b2d0294b9d550c19760f1c6: {fileID: 0}
+    - 2bddafbd7914fa24f820e591a40a1dc7: {fileID: 1154345643776015922}
+    - c879844fcb875c943a9f1eb12a56235e: {fileID: 0}
+--- !u!1001 &3722274305833397948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6892145430856402370}
+    m_Modifications:
+    - target: {fileID: 955409434365042668, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 991100026698334847, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 991100026698334847, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428958401382387211, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Flare_StarImpact_Add
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770960926910156361, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636450687010, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636450687010, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636450687021, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzballAdditive_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636523832825, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAdd_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636523832830, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636523832830, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636523832831, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636585212272, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzballAdditive_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636585212277, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636585212277, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636617967434, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636617967434, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636617967435, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636617967541, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Circle_Generic_Hollow_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636761347786, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636761347786, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636761348405, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Spehere_Green_Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636824425328, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636824425328, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405636824425331, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Wind_Blade_Pickbook
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637117337112, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637117337117, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637117337117, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637117337118, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637121509833, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Spehere_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637121509838, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637121509838, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637238434328, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637238434328, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637238434329, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637238434331, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Circle_ChuinkyAdd
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928932, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: SB_Impact_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928953, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928953, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928954, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.2395043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.1419067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637475488613, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Circle_Generic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637475488634, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637475488634, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637728439892, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637728439894, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637728439915, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405637728439915, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405638341378242, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405638341378242, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778405638341378253, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Sphere_Texture
+      objectReference: {fileID: 0}
+    - target: {fileID: 2385360821947868030, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432238184162258096, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Smoke_Harsh_Add_SphericalErosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956423439835278996, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Tx_Smoke_directional_01_Alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012381650813894562, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679570808479139203, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Tx_Smoke_radial_03_Alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696504042716519569, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696504042716519582, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696504042716519582, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916698755761427614, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916698755761427614, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834689474965262007, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834689474965262007, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197610453737363773, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197610453737363773, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234034578187270505, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234034578187270505, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7416655391626101541, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7416655391626101541, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679657553721600827, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679657553721600827, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814357304456978968, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocks_Anime
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942446469632300719, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8959535133249585367, guid: 06165ba145031f2498451465d29dad9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glow_Pickbook_4x4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06165ba145031f2498451465d29dad9a, type: 3}
+--- !u!4 &3100172279417646663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1778405637385928955, guid: 06165ba145031f2498451465d29dad9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3722274305833397948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3100172279417646680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1778405637385928932, guid: 06165ba145031f2498451465d29dad9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3722274305833397948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7080413624971449002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6892145430856402370}
+    m_Modifications:
+    - target: {fileID: 925772431469780531, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 925772431469780531, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594438396913, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: ImpactLightrays_Blurry
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594438396915, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594509147951, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Spehere_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594509147952, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594509147952, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594658782505, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594658782506, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594658782506, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594658782507, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594831352651, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: GlowdotPickbook_Alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594831352652, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594831352652, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594952666187, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Circle_Generic_Hollow_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594952666188, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594952666188, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060594952666189, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595443144700, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: ImpactLightrays_Blurry
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595443144702, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595517100662, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Star_FourSides_Alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595517100664, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595517100667, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595517100667, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595582837432, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595582837437, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595582837437, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595873556489, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595873556490, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595873556490, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595873556491, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595956875392, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Spehere_Green_Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595956875397, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060595956875397, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596074287654, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Flare
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596074287656, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596074287659, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596074287659, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596090798829, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596090798830, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596090798830, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596090798831, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596328763176, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire_Add_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596328763178, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596328763181, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226060596328763181, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989465087931522433, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808069850996952, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808069850996954, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808069850996955, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808069850996955, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808070557905220, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Spehere_Green_Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808070557905223, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162808070557905223, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103640, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: SB_Loop_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103640, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103642, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103653, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094759103653, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094816000517, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094816000517, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094816000632, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728094816000634, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095054077299, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: FuzzAlpha_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095054077308, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095054077308, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095054077309, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095188145504, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBomb_Spehere_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095188145517, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095188145517, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095303061106, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Circle_Generic_Hollow_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095303061116, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095303061119, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728095303061119, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728096123450784, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire_Add_Soft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728096123450786, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728096123450797, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234728096123450797, guid: 55a69d828f343104cba6403fb84179c9,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55a69d828f343104cba6403fb84179c9, type: 3}
+--- !u!4 &1154345643776015921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8234728094759103643, guid: 55a69d828f343104cba6403fb84179c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 7080413624971449002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1154345643776015922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8234728094759103640, guid: 55a69d828f343104cba6403fb84179c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 7080413624971449002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1154345643776015934 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8234728094759103636, guid: 55a69d828f343104cba6403fb84179c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 7080413624971449002}
+  m_PrefabAsset: {fileID: 0}
