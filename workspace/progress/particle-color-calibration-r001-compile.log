@@ -1,0 +1,1198 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luxinyu" at "2026-09-07T03:04:25.3203103Z"
+[Licensing::Client] Code 1 while verifying Licensing Client signature (process Id: 50544, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.16.2'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-luxinyu"
+[Licensing::IpcConnector] LicenseClient-luxinyu channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luxinyu-2022.3.62" at "2026-09-07T03:04:25.3533056Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 26532, path: "C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.2+bdef8f5
+  Session Id:              72537af3ca904e4dab0193233ebeff76
+  Correlation Id:          bd2787cda33734d5246d206b672202d9
+  External correlation Id: 3158806733506156848
+  Machine Id:              UOJXh5QphUCWeQ208AN8hEEVPxk=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-luxinyu-2022.3.62" (connect: 0.00s, validation: 0.01s, handshake: 0.10s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luxinyu-2022.3.62-notifications" at "2026-09-07T03:04:25.4649035Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '2022.3/china_unity/release' branch; Version is '2022.3.62f3c1 (1623fc0bbb97) revision 1451004'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32609 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001
+-nographics
+-executeMethod
+EffectDemoParticleColorCalibration.PrepareAndCompile
+-prefabGraphBatchRequest
+E:\Unity特效人工智能学习\workspace\data\vfx_generation\generated\particle_color_calibration_r001\compile_request.json
+-logFile
+E:\Unity特效人工智能学习\workspace\progress\particle-color-calibration-r001-compile.log
+-hubSessionId
+9250b3f8-7da8-4fb9-b4a5-3bd659a5fc5a
+Successfully changed project path to: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001
+E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [37884]  Target information:
+
+Player connection [37884]  * "[IP] 172.16.130.102 [Port] 55506 [Flags] 2 [Guid] 1096895819 [EditorId] 1096895819 [Version] 1048832 [Id] WindowsEditor(7,LXY-130-102) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [37884]  * "[IP] 172.30.160.1 [Port] 55506 [Flags] 2 [Guid] 1096895819 [EditorId] 1096895819 [Version] 1048832 [Id] WindowsEditor(7,LXY-130-102) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [37884] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [37884] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[Package Manager] UpmClient::Connect -- Connected to IPC stream "Upm-18380" after 0.4 seconds.
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 53 packages:
+  Packages from [https://packages.unity.cn]:
+    com.unity.collab-proxy@2.12.4 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.collab-proxy@2.12.4)
+    com.unity.ide.rider@3.0.36 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ide.rider@3.0.36)
+    com.unity.ide.visualstudio@2.0.22 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ide.visualstudio@2.0.22)
+    com.unity.ide.vscode@1.2.5 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ide.vscode@1.2.5)
+    com.unity.test-framework@1.1.33 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.test-framework@1.1.33)
+    com.unity.textmeshpro@3.0.7 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.textmeshpro@3.0.7)
+    com.unity.timeline@1.7.7 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.timeline@1.7.7)
+    com.unity.visualscripting@1.9.4 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.visualscripting@1.9.4)
+    com.unity.ext.nunit@1.0.6 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ext.nunit@1.0.6)
+    com.unity.mathematics@1.2.6 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.mathematics@1.2.6)
+    com.unity.burst@1.8.21 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.burst@1.8.21)
+    com.unity.nuget.newtonsoft-json@3.2.1 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1)
+    com.unity.nuget.mono-cecil@1.11.6 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.6)
+    com.unity.searcher@4.9.2 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.searcher@4.9.2)
+  Built-in packages:
+    com.unity.ugui@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ugui@1.0.0)
+    com.unity.modules.ai@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.ai@1.0.0)
+    com.unity.modules.androidjni@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.androidjni@1.0.0)
+    com.unity.modules.animation@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.animation@1.0.0)
+    com.unity.modules.assetbundle@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.assetbundle@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.audio@1.0.0)
+    com.unity.modules.cloth@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.cloth@1.0.0)
+    com.unity.modules.director@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.director@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.physics@1.0.0)
+    com.unity.modules.physics2d@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.physics2d@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.terrain@1.0.0)
+    com.unity.modules.terrainphysics@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0)
+    com.unity.modules.tilemap@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.tilemap@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.ui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.uielements@1.0.0)
+    com.unity.modules.umbra@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.umbra@1.0.0)
+    com.unity.modules.unityanalytics@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0)
+    com.unity.modules.unitywebrequest@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0)
+    com.unity.modules.vehicles@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.vehicles@1.0.0)
+    com.unity.modules.video@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.video@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.vr@1.0.0)
+    com.unity.modules.wind@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.wind@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.xr@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.subsystems@1.0.0)
+    com.unity.shadergraph@14.0.12 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.shadergraph@14.0.12)
+  Embedded packages:
+    com.unity.pipeline@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.pipeline (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.pipeline)
+    com.unity.render-pipelines.universal@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal)
+    com.unity.render-pipelines.core@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.core (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.core)
+    com.unity.render-pipelines.universal-config@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal-config (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal-config)
+    com.xuanxuan.nb.fx@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.xuanxuan.nb.fx (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.xuanxuan.nb.fx)
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.26 seconds
+Refreshing native plugins compatible for Editor in 36.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f3c1 (1623fc0bbb97)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017625 seconds.
+- Loaded All Assemblies, in  0.338 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.285 seconds
+Domain Reload Profiling: 619ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (109ms)
+				TypeCache.ScanAssembly (93ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (285ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (214ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Application.AssetDatabase Initial Refresh Start
+GUID [7f27709c942d91541be1fd6aa5cb3d78] for asset 'Packages/com.unity.ugui/Runtime/EventSystem' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [b3cdabf2f1e76854d8aab5930305d70d] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [b180fd8310805e44dbbef545d0231418] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData/AxisEventData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData/AxisEventData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [91f495459b6e34f419ac123740d798b1] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData/BaseEventData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData/BaseEventData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [75df57ccb1e44c64085399277405e1ca] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData/PointerEventData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData/PointerEventData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [db7dd43fe1278a9459cd6036f096b91d] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventHandle.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventHandle.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2359c66dee10c454c97f6aea84e3fe22] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventInterfaces.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventInterfaces.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [76c392e42b5098c458856cdf6ecaaaa1] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventSystem.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [d0b148fe25e99eb48b9724523833bab1] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventTrigger.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3fa274f26b1574c40b949e114327022e] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventTriggerType.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventTriggerType.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [623c79a1e113b4941afdbfc88d19e8fd] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/ExecuteEvents.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [8e78f8a8575e4a04f8337a54e241cdc5] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1511ccae7919cfc46b603b9b337fdc94] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/BaseInput.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1ea10891dd782154ca0fb67bce9e6f72] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/BaseInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cbab8835092323a4389f2dc7d8f6c781] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/PointerInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/PointerInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [4f231c4fb786f3946a6b90b886c48677] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/StandaloneInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2d49b7c1bcd2e07499844da127be038d] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/TouchInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/TouchInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [4d2250412b81fe34abf39f246e274479] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/MoveDirection.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/MoveDirection.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [26570be2af04195458e6f1ac1f5c48e0] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/RaycasterManager.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/RaycasterManager.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [46646a5562f14984690c85ee7b946bc9] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [426106349a0ff964fa4e7178c1d3a4f5] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters/BaseRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters/BaseRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [56666c5a40171f54783dd416a44f42bf] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters/Physics2DRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters/Physics2DRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c49b4cc203aa6414fae5c798d1d0e7d6] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters/PhysicsRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters/PhysicsRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3550d8ec6f29ab34d895ae9a43d560c2] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/RaycastResult.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/RaycastResult.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [0aaa057ce5566e940b18a0ccd0344693] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIBehaviour.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5dc64c943466a44498be3b620c743b45] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIElements' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIElements' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [8a410b213209442fb15a69799f0240a5] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIElements/PanelEventHandler.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIElements/PanelEventHandler.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7a79c4e23d4d4b64bfa5fa9e6671a460] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIElements/PanelRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIElements/PanelRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [32e2186f4598cff489784aae586f2215] for asset 'Packages/com.unity.ugui/Runtime/Properties' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/Properties' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7d7bd4bcc815cfb44b9990c29dabdb9f] for asset 'Packages/com.unity.ugui/Runtime/Properties/AssemblyInfo.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/Properties/AssemblyInfo.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [742654cad2425334696ba6ed4495cfef] for asset 'Packages/com.unity.ugui/Runtime/UI' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5472815444de2ce45bf2053a4af04b9d] for asset 'Packages/com.unity.ugui/Runtime/UI/Animation' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Animation' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7be84a49bb2cd7e4a9ed097ba22794d0] for asset 'Packages/com.unity.ugui/Runtime/UI/Animation/CoroutineTween.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Animation/CoroutineTween.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [12c42068351bb084abde965d725b9887] for asset 'Packages/com.unity.ugui/Runtime/UI/Core' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c67ac6e40bbb6fe47a095b949b609ce0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/AnimationTriggers.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/AnimationTriggers.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [4e29b1a8efbd4b44bb3f3716e73f07ff] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Button.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Button.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [bfb788a43e03363419155b8af77da971] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/CanvasUpdateRegistry.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [83088ba2132cbc940b7ca0c679a02b0d] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/ColorBlock.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/ColorBlock.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [27ed3e221887b3544bd9d6505d4a789f] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [9f1026265f8e3d54fb6e9f082c43debf] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/ClipperRegistry.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/ClipperRegistry.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [67e3583b91179094094c6a188b232262] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/Clipping.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/Clipping.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [371b6b9c8adc50745ace66a6fdf67481] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/IClipRegion.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/IClipRegion.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c606041f02fc7d542b1429806872292b] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/RectangularVertexClipper.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/RectangularVertexClipper.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [bf87e20fb5440ec498f441167b5291f8] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/DefaultControls.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/DefaultControls.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [0d0b652f32a2cc243917e4028fa0f046] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Dropdown.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Dropdown.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [13cd966480ec3354bb318ee1aeccff6f] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/FontData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/FontData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [39ab466162988eb4f83443f911bbf5c8] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/FontUpdateTracker.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/FontUpdateTracker.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [a6238e9452bfc704f82ff36791fe1a45] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Graphic.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Graphic.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [dc42784cf147c0c48a680349fa168899] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/GraphicRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [445cdcfc747eba94288b97f5869aa2fb] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/GraphicRebuildTracker.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/GraphicRebuildTracker.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [69e3979b7029e8a4da2d96b714ba5c3a] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/GraphicRegistry.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/GraphicRegistry.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [928dc55e2c8c3ee4dad33b6d561cb6ea] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/IGraphicEnabledDisabled.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/IGraphicEnabledDisabled.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [fe87c0e1cc204ed48ad3b37840f39efc] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Image.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Image.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [ceb629fc661813d40986b4abbefe72c6] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/IMask.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/IMask.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [61a20120cddc53849bbc10fc805ffe3e] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/IMaskable.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/IMaskable.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [d199490a83bb2b844b9695cbf13b01ef] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/InputField.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/InputField.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1999349e7f492c947bb6eb70f624382e] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [86710e43de46f6f4bac7c8e50813a599] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/AspectRatioFitter.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/AspectRatioFitter.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [0cd44c1031e13a943bb63640046fad76] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/CanvasScaler.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3245ec927659c4140ac4f8d17403cc18] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/ContentSizeFitter.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/ContentSizeFitter.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [8a8695521f0d02e499659fee002a26c2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/GridLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/GridLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [30649d3a9faa99c48a7b1166b86bf2a0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [a5c214e5846a99242b348c37e49b2f59] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [368d3a0498e78014da578aa5f45e2797] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/ILayoutElement.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/ILayoutElement.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [306cc8c2b49d7114eaa3623786fc2126] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutElement.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutElement.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cb7c939a806f03341b682c180dc13f08] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [006633c8a6f4ae94aa9babf72234e1a2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutRebuilder.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutRebuilder.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [82bf3f737dec0be43a60891958a8da87] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutUtility.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutUtility.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [59f8146938fff824cb5fd77236b75775] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/VerticalLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/VerticalLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [31a19414c41e5ae4aae2af33fee712f6] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Mask.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [976acc75bfafe594cb01142ba21947be] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaskableGraphic.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaskableGraphic.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7bd96d76711152648a736c4d28d865f2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaskUtilities.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaskUtilities.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7c6295db74da28645bf49db58b7c9c65] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaterialModifiers' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaterialModifiers' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [20ff4283f687e044087714f82c4d6d3f] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [828075bc53f2de84982a943870529b7b] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Misc.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Misc.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5ebeb75bd91642048bb3f6c1939fde66] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MultipleDisplayUtilities.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [61d491d99e9292c4a81d7d01a74781ea] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Navigation.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Navigation.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1344c3c82d62a2a41a3576d8abb8e3ea] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/RawImage.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3312d7739989d2b4e91e6319e9a96d76] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/RectMask2D.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2a4db7a114972834c8e4117be1d82ba3] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Scrollbar.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Scrollbar.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1aa08ab6e0800fa44ae55d278d1423e3] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/ScrollRect.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7a98125502f715b4b83cfb77b434e436] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Selectable.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Selectable.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [b9ba34e0b1884454fbc4257260e22b64] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SetPropertyUtility.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SetPropertyUtility.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [67db9e8f0e2ae9c40bc1e2b64352a6b4] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Slider.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [f8ed4321a98682942b9980996131cf26] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SpecializedCollections' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SpecializedCollections' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [a8604e8f13b3be84b8bc0c1507d8f3f6] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SpecializedCollections/IndexedSet.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SpecializedCollections/IndexedSet.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [25b01819c6e1649428db2a9b274cf364] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SpriteState.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SpriteState.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [69ae55f76840b2849ba56cfb53a17df0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/StencilMaterial.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/StencilMaterial.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5f7201a12d95ffc409449d95f23cf332] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Text.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Text.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [9085046f02f69544eb97fd06b6048fe2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Toggle.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Toggle.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2fafe2cfe61f6974895a912c3755e8f1] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/ToggleGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/ToggleGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [d63dd1a776d383248a21ec2a8a6e7868] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Utility' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Utility' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [fcae021c30eccf74790a4e816ba97c19] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Utility/ReflectionMethodsCache.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Utility/ReflectionMethodsCache.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c459424081436584c8cec10767f9ac38] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Utility/VertexHelper.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Utility/VertexHelper.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cfa73a847eeff06448bb50a8ac6a94e0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [718966f960cb50643986195e5fe953ca] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/BaseMeshEffect.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/BaseMeshEffect.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [85f3c3a3c2623cd4da1661b0479e2ef2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [e19747de3f5aca642ab2be37e372fb86] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/Outline.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/Outline.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [020ee4c1798a3d243a4b8cbfee6cac2d] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/PositionAsUV1.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/PositionAsUV1.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cfabb0440166ab443bba8876756fdfa9] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/Shadow.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/Shadow.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2bafac87e7f4b9b418d9448d219b01ab] for asset 'Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UnityEngine.UI.asmdef' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\Unity��Ч�˹�����ѧϰ\workspace\unity-render-staging\EffectDemoPromptHumanR001\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 67.4400ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll"
+DisplayProgressbar: Compiling Scripts
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@1.11.6\Mono.Cecil.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@1.8.21\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 108.9723ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\Tools\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aEDbg.dag.json" "Library/Bee/1900b0aEDbg-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001
+ExitCode: 4 Duration: 2s237ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aEDbg-inputdata.json
+[550/705    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (1.24 seconds), 2 items updated, 549 evaluated
+ExitCode: 0 Duration: 0s660ms
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aEDbg.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 2.6412ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 120 defines and 257 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 118 defines and 277 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@1.8.21\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 117.9050ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 510.0205ms
+ExitCode: 0 Duration: 1s992ms
+Finished compiling graph: 709 nodes, 9938 flattened edges (7930 ToBuild, 116 ToUse), maximum node priority 693
+[368/705    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.rsp
+[374/705    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.rsp
+[549/705    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[697/705    0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll (+2 others)
+[698/705    0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll (+2 others)
+[699/705    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 118 defines and 277 references
+
+processors: Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[700/705    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 120 defines and 257 references
+
+processors: Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[701/705    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[702/705    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[703/705    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[704/705    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.90 seconds), 11 items updated, 705 evaluated
+AssetDatabase: script compilation time: 5.817901s
+Begin MonoManager ReloadAssembly
+Total cache size 267692060
+Total cache size after purge 267692060
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.192 seconds
+Refreshing native plugins compatible for Editor in 13.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start importing Assets/Editor/EffectDemoParticleColorCalibration.cs using Guid(e39266b6a6e65314b91a216f7337686e) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f9d3a0b9b4ad2d21de5a0da31d51cffa') in 0.013694 seconds
+Start importing Assets/Editor/EffectDemoPrefabGraphCompiler.cs using Guid(b5007e0be7556504eb11c711d34449b9) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '882771cb6efcee366d44a24dfa25b1f2') in 0.003461 seconds
+Start importing Assets/Editor/EffectDemoPrefabGraphSourceExporter.cs using Guid(5b1570dc759e8ff418f0778af4af8e49) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3e9aeeba385e493929586c7f343ae1c9') in 0.003523 seconds
+Start importing Assets/Editor/EffectDemoPrefabGraphReadback.cs using Guid(4fa7742abf6a16e4d9f67c1ebf660485) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e59d37515bf8eddb702e0c268342fef4') in 0.003191 seconds
+Start importing Assets/VFXCapture/EffectDemoParticleColorGradient.cs using Guid(7faa7c868a348344f977e0349759b573) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9718a84e809d17080c83b187d7fc9c80') in 0.005633 seconds
+Refreshing native plugins compatible for Editor in 14.93 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Start HTTP server: port:7801
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.565 seconds
+Domain Reload Profiling: 6746ms
+	BeginReloadAssembly (194ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (886ms)
+		LoadAssemblies (702ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (305ms)
+			TypeCache.Refresh (264ms)
+				TypeCache.ScanAssembly (241ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (5566ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5327ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (5079ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Script 'Library/PackageCache/com.unity.mathematics@1.2.6/Tests/Unity.Mathematics.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.timeline@1.7.7/DocCodeExamples/DocCodeExamples.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/UnityEngine.UI.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.textmeshpro@3.0.7/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 40.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7cf4042b5560d1c46bb1bc4c0616f64c): Total: 17.250 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=1457 (actual=5, local cache=1452, cache server=0)
+		Asset DB Process Time: managed=3 ms, native=3217 ms
+		Asset DB Callback time: managed=1105 ms, native=54 ms
+		Scripting: domain reloads=1, domain reload time=6942 ms, compile time=5820 ms, other=106 ms
+		Project Asset Count: scripts=8582, non-scripts=6614
+		Asset File Changes: new=4, changed=5, moved=0, deleted=2
+		Scan Filter Count: 0
+	InvokeBeforeRefreshCallbacks: 4.185ms
+	ApplyChangesToAssetFolders: 0.092ms
+	Scan: 327.085ms
+	OnSourceAssetsModified: 4.477ms
+	UnregisterDeletedAssets: 0.015ms
+	GetAllGuidsForCategorization: 3.306ms
+	CategorizeAssets: 291.371ms
+	ImportOutOfDateAssets: 5815.194ms (-192.580ms without children)
+		ImportManagerImport: 142.948ms (8.718ms without children)
+			ImportInProcess: 134.131ms
+			UpdateCategorizedAssets: 0.098ms
+		CompileScripts: 5819.963ms
+		ReloadNativeAssets: 0.060ms
+		UnloadImportedAssets: 29.980ms
+		ReloadImportedAssets: 0.567ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 10.627ms
+		InitializingProgressBar: 0.002ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 3.626ms
+	PostProcessAllAssets: 1109.240ms
+	Hotreload: 42.217ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 1.127ms
+	PersistCurrentRevisions: 2.052ms
+	UnloadStreamsEnd: 0.265ms
+	GenerateScriptTypeHashes: 5.974ms
+	Untracked: 9649.246ms
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Scanning for USB devices : 4.096ms
+Initializing Unity extensions:
+Script 'Library/PackageCache/com.unity.mathematics@1.2.6/Tests/Unity.Mathematics.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.timeline@1.7.7/DocCodeExamples/DocCodeExamples.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/UnityEngine.UI.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.textmeshpro@3.0.7/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-EffectDemo
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ProgressiveSceneManager::Cancel()
+Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 157 unused Assets / (4.5 MB). Loaded Objects now: 6055.
+Memory consumption went from 187.7 MB to 183.2 MB.
+Total: 13.204800 ms (FindLiveObjects: 0.944400 ms CreateObjectMapping: 0.658400 ms MarkObjects: 8.572000 ms  DeleteObjects: 3.025200 ms)
+
+Start importing Assets/Generated/ParticleColorCalibrationAssetsR001 using Guid(f1f72976d9fee0f43aca5177165e8e68) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'faf092537a1e1d20e33500b09f63434f') in 0.006640 seconds
+Refreshing native plugins compatible for Editor in 17.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fe1ed8faa442be048a615f3e37a0a71e): Total: 2.409 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=424 ms
+		Asset DB Callback time: managed=1 ms, native=1982 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=8583, non-scripts=6614
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 3
+	InvokeBeforeRefreshCallbacks: 0.001ms
+	ApplyChangesToAssetFolders: 0.071ms
+	Scan: 7.922ms
+	OnSourceAssetsModified: 0.445ms
+	GetAllGuidsForCategorization: 3.608ms
+	CategorizeAssets: 42.777ms
+	ImportOutOfDateAssets: 332.747ms (5.068ms without children)
+		ImportManagerImport: 320.212ms (2.376ms without children)
+			ImportInProcess: 317.795ms
+			UpdateCategorizedAssets: 0.041ms
+		ReloadNativeAssets: 0.035ms
+		UnloadImportedAssets: 0.670ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 4.497ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 2.264ms
+	PostProcessAllAssets: 1966.130ms
+	Hotreload: 18.015ms
+	GatherAllCurrentPrimaryArtifactRevisions: 1.262ms
+	UnloadStreamsBegin: 0.355ms
+	PersistCurrentRevisions: 0.701ms
+	UnloadStreamsEnd: 0.262ms
+	Untracked: 35.127ms
+Start importing Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat using Guid(8582ea4bdc675404fab3b56af9445593) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd23797d2d0e19f3f2c6a0728ea87649e') in 0.008139 seconds
+Refreshing native plugins compatible for Editor in 16.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7f0a219effcfefe42aef4c4bb3e0be33): Total: 0.181 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat using Guid(8582ea4bdc675404fab3b56af9445593) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cc86a0f97545e9ae84a6cdae0ce693bd') in 0.005155 seconds
+Refreshing native plugins compatible for Editor in 14.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f53291fa1598e124fa89f02845f5441d): Total: 0.107 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001 using Guid(9929d9510d48674478b412221a4e9a58) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ea4a1f8a8e98fe941c753f98391154e1') in 0.017907 seconds
+Refreshing native plugins compatible for Editor in 14.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ff7ce7cc99643a04fbbf07f49f5b5899): Total: 0.132 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/white_legacy using Guid(7c2aaf3cf7b791e4d8ce0c08cf100f67) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3e8c151b63f8640d0a4786d8ede8ed60') in 0.002830 seconds
+Refreshing native plugins compatible for Editor in 16.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c5484e473b678b84bb04ff00969291ee): Total: 0.074 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/white_independent using Guid(3fcf8df01edd29846a2d803f83e68de8) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd525999feeb18a5789d55929df9904b2') in 0.002953 seconds
+Refreshing native plugins compatible for Editor in 15.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=254ed99633f6aa54f9b80eb398fce418): Total: 0.076 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/white_independent/Materials using Guid(22dcf3af7525270458e7d5426086ef8e) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0e00567a6995edffe75b3da9ccac776c') in 0.003014 seconds
+Refreshing native plugins compatible for Editor in 16.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c9c868e8c7a55214f8e17c8ba4b2a13d): Total: 0.133 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/white_independent/Materials/pfg_09a420002a53d9a44b62_p0000.mat using Guid(e22e1570294aaba40a88418eb005c133) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a58ddcebf8a818770488b32d40adf24b') in 0.004598 seconds
+Refreshing native plugins compatible for Editor in 14.55 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4b447ccc7d3c0984b9863412c2ca1989): Total: 0.160 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/white_independent/GeneratedRoot.prefab using Guid(e9c7339aed1113a419ad71ec02643ba5) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1704cb68a3db44ea50ca1458ce145ffa') in 0.012360 seconds
+Refreshing native plugins compatible for Editor in 15.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0be543aec4fde03439aebba7082cdc91): Total: 0.109 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/white_independent/Materials/pfg_09a420002a53d9a44b62_p0000.mat using Guid(e22e1570294aaba40a88418eb005c133) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f38b9e68a553049372b97af54d7ceb55') in 0.004505 seconds
+Refreshing native plugins compatible for Editor in 14.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0ec6159a2ab83ba48b4cd5f87f00e636): Total: 0.094 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=0b2d4d8b183087b4c82c9480f09abae9): Total: 0.017 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/gray_legacy using Guid(2ddb7682dd73c7548a2fed6bb54b1b20) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd250afffab333c597ba1dedfc2beb425') in 0.004234 seconds
+Refreshing native plugins compatible for Editor in 16.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=32189da5b98397040b42c5b377507ada): Total: 0.092 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/gray_independent using Guid(575295a2f7ba40a4cb262af4d0c932b4) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1c5c68134352cdd455aabd0b21656b61') in 0.003555 seconds
+Refreshing native plugins compatible for Editor in 16.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=332b475ca1a0df945a6ffeb0ebbedad3): Total: 0.169 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/gray_independent/Materials using Guid(3326d0b49edd33240a39ba25ba76c12c) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '52cebaa40def1653b4c96dd31dd49103') in 0.004627 seconds
+Refreshing native plugins compatible for Editor in 21.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=15d8d71203bd8ea49b46e1abfd232fdb): Total: 1.513 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1483 ms
+		Asset DB Callback time: managed=2 ms, native=27 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=8590, non-scripts=6617
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeBeforeRefreshCallbacks: 0.001ms
+	ApplyChangesToAssetFolders: 0.087ms
+	Scan: 5.753ms
+	OnSourceAssetsModified: 0.226ms
+	GetAllGuidsForCategorization: 1.389ms
+	CategorizeAssets: 17.971ms
+	ImportOutOfDateAssets: 1441.984ms (2.763ms without children)
+		ImportManagerImport: 1430.663ms (2.779ms without children)
+			ImportInProcess: 1427.850ms
+			UpdateCategorizedAssets: 0.035ms
+		ReloadNativeAssets: 0.033ms
+		UnloadImportedAssets: 0.778ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 4.465ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.004ms
+		OnDemandSchedulerStart: 3.276ms
+	PostProcessAllAssets: 7.351ms
+	Hotreload: 22.334ms
+	GatherAllCurrentPrimaryArtifactRevisions: 1.472ms
+	UnloadStreamsBegin: 0.240ms
+	PersistCurrentRevisions: 0.719ms
+	UnloadStreamsEnd: 0.288ms
+	Untracked: 13.495ms
+Start importing Assets/Generated/ParticleColorCalibrationR001/gray_independent/Materials/pfg_35b4f0c8bb682624ca47_p0000.mat using Guid(d87742159a560b74cafde3807408fbe1) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '09562493d5086b348dc5b2a3040b1932') in 0.004502 seconds
+Refreshing native plugins compatible for Editor in 16.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=391b4211d34b7584688172c95a50011a): Total: 1.811 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1785 ms
+		Asset DB Callback time: managed=3 ms, native=22 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=8590, non-scripts=6618
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 6
+	InvokeBeforeRefreshCallbacks: 0.001ms
+	ApplyChangesToAssetFolders: 0.170ms
+	Scan: 8.681ms
+	OnSourceAssetsModified: 0.218ms
+	GetAllGuidsForCategorization: 0.820ms
+	CategorizeAssets: 16.043ms
+	ImportOutOfDateAssets: 1739.899ms (2.203ms without children)
+		ImportManagerImport: 1729.087ms (1274.596ms without children)
+			ImportInProcess: 454.372ms
+			UpdateCategorizedAssets: 0.119ms
+		ReloadNativeAssets: 0.032ms
+		UnloadImportedAssets: 0.491ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 3.882ms
+		InitializingProgressBar: 0.010ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 4.192ms
+	PostProcessAllAssets: 7.842ms
+	Hotreload: 17.261ms
+	GatherAllCurrentPrimaryArtifactRevisions: 3.315ms
+	UnloadStreamsBegin: 0.583ms
+	PersistCurrentRevisions: 0.976ms
+	UnloadStreamsEnd: 0.356ms
+	Untracked: 14.974ms
+Start importing Assets/Generated/ParticleColorCalibrationR001/gray_independent/GeneratedRoot.prefab using Guid(8e30da15205e2d9459e3ebbf0cdcaef4) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '954dbe615fbb555bee7641b6a84eb4f6') in 0.371247 seconds
+Refreshing native plugins compatible for Editor in 16.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ede313d857e14dc4f8dd488ed8494301): Total: 0.493 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=468 ms
+		Asset DB Callback time: managed=1 ms, native=23 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=8590, non-scripts=6619
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeBeforeRefreshCallbacks: 0.001ms
+	ApplyChangesToAssetFolders: 0.158ms
+	Scan: 9.332ms
+	OnSourceAssetsModified: 0.149ms
+	GetAllGuidsForCategorization: 0.799ms
+	CategorizeAssets: 17.552ms
+	ImportOutOfDateAssets: 422.138ms (2.340ms without children)
+		ImportManagerImport: 413.566ms (3.968ms without children)
+			ImportInProcess: 409.366ms
+			UpdateCategorizedAssets: 0.232ms
+		ReloadNativeAssets: 0.022ms
+		UnloadImportedAssets: 0.705ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 3.254ms
+		InitializingProgressBar: 0.013ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 2.238ms
+	PostProcessAllAssets: 6.753ms
+	Hotreload: 17.423ms
+	GatherAllCurrentPrimaryArtifactRevisions: 1.732ms
+	UnloadStreamsBegin: 0.453ms
+	PersistCurrentRevisions: 0.579ms
+	UnloadStreamsEnd: 0.230ms
+	Untracked: 15.246ms
+Start importing Assets/Generated/ParticleColorCalibrationR001/gray_independent/Materials/pfg_35b4f0c8bb682624ca47_p0000.mat using Guid(d87742159a560b74cafde3807408fbe1) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cc084ad84de80900484486d9be48fc41') in 0.004489 seconds
+Refreshing native plugins compatible for Editor in 15.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=779cfa701b118664eb6a682689bfe9be): Total: 0.103 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=4be10e457bcfe274d8e9a771bdfac15e): Total: 0.016 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/blue_legacy using Guid(7a4b128b137a11a4ebbe85a1b3ab940c) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b65e1ea9261760634b2750f75a77b592') in 0.002739 seconds
+Refreshing native plugins compatible for Editor in 15.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d117c451e3117394da567bcb1c6f875d): Total: 0.109 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/blue_independent using Guid(6351b47530336554e91114a172e95f96) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1acb2e0241aa7bbe53ec3d6335826414') in 0.002750 seconds
+Refreshing native plugins compatible for Editor in 16.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=05239a9666250c243afa20fd4d480999): Total: 0.101 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/blue_independent/Materials using Guid(0812b9861fd7c6b47abcd6114de40159) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5997f7ced7f9292455c9edf64a8acfd9') in 0.004380 seconds
+Refreshing native plugins compatible for Editor in 18.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=49de53c20db0ee5459943d4dd9eff396): Total: 0.912 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=883 ms
+		Asset DB Callback time: managed=2 ms, native=26 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=8593, non-scripts=6619
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeBeforeRefreshCallbacks: 0.001ms
+	ApplyChangesToAssetFolders: 0.087ms
+	Scan: 4.971ms
+	OnSourceAssetsModified: 0.075ms
+	GetAllGuidsForCategorization: 0.916ms
+	CategorizeAssets: 17.604ms
+	ImportOutOfDateAssets: 841.637ms (19.110ms without children)
+		ImportManagerImport: 808.118ms (1.570ms without children)
+			ImportInProcess: 806.516ms
+			UpdateCategorizedAssets: 0.033ms
+		ReloadNativeAssets: 0.019ms
+		UnloadImportedAssets: 0.641ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 4.807ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.003ms
+		OnDemandSchedulerStart: 8.939ms
+	PostProcessAllAssets: 8.335ms
+	Hotreload: 19.943ms
+	GatherAllCurrentPrimaryArtifactRevisions: 1.027ms
+	UnloadStreamsBegin: 0.248ms
+	PersistCurrentRevisions: 1.306ms
+	UnloadStreamsEnd: 0.352ms
+	Untracked: 15.341ms
+Start importing Assets/Generated/ParticleColorCalibrationR001/blue_independent/Materials/pfg_fed0e7fb0690275f58fe_p0000.mat using Guid(f0275ee7d35440c49864404776e214fd) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4109767e829581c06ef33952290c8afd') in 0.059392 seconds
+Refreshing native plugins compatible for Editor in 15.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1480bf94e4a335243a641875340bc0fd): Total: 0.139 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/blue_independent/GeneratedRoot.prefab using Guid(a1e02ee2bb3c4a34ba76eca9216348a6) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '879bf2638a0e0237c32050de2fce9102') in 0.010886 seconds
+Refreshing native plugins compatible for Editor in 16.38 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2dfc0973db47a714194e20a2957e5212): Total: 0.103 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/blue_independent/Materials/pfg_fed0e7fb0690275f58fe_p0000.mat using Guid(f0275ee7d35440c49864404776e214fd) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '89eb8df13a6a6419ae99f3ebe174fe55') in 0.004373 seconds
+Refreshing native plugins compatible for Editor in 16.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9f6c19f99dd6b9640a23156b83894d96): Total: 0.124 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=d47d22158f720d24d99d222ce3792f54): Total: 0.017 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_legacy_qfx using Guid(700f219598a428048bf483c72a6b3473) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ec2a06deb6b563c52f3d1d13b83d2805') in 0.004146 seconds
+Refreshing native plugins compatible for Editor in 15.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cbe227ebe7af1be47ad1ea22186be041): Total: 0.077 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_qfx using Guid(3d6f17676a1db4641b39f0e388c3fc24) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd332a0be9b0ac96655de6a1b314221b4') in 0.004994 seconds
+Refreshing native plugins compatible for Editor in 872.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e9095313b38aa0f46a1afc652ef470bb): Total: 0.960 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=79 ms
+		Asset DB Callback time: managed=1 ms, native=878 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=8595, non-scripts=6621
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 4
+	InvokeBeforeRefreshCallbacks: 0.001ms
+	ApplyChangesToAssetFolders: 0.213ms
+	Scan: 5.736ms
+	OnSourceAssetsModified: 0.230ms
+	GetAllGuidsForCategorization: 1.901ms
+	CategorizeAssets: 19.484ms
+	ImportOutOfDateAssets: 31.800ms (1.937ms without children)
+		ImportManagerImport: 24.445ms (2.115ms without children)
+			ImportInProcess: 22.295ms
+			UpdateCategorizedAssets: 0.035ms
+		ReloadNativeAssets: 0.025ms
+		UnloadImportedAssets: 0.509ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.688ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 2.193ms
+	PostProcessAllAssets: 6.101ms
+	Hotreload: 873.093ms
+	GatherAllCurrentPrimaryArtifactRevisions: 2.868ms
+	UnloadStreamsBegin: 0.420ms
+	PersistCurrentRevisions: 0.605ms
+	UnloadStreamsEnd: 0.337ms
+	Untracked: 16.758ms
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_qfx/Materials using Guid(1ccf01de32a2e8649865c0043af06ee2) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '91d412bd27abe49f7886623a6c1336a7') in 0.003135 seconds
+Refreshing native plugins compatible for Editor in 16.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=59d0b32ca65d5704e9c455f3d50c264c): Total: 0.073 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_qfx/Materials/pfg_49f253a4ab34f348cda9_p0000.mat using Guid(205be410206451842b784eb6bffcb2f1) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7e3da4b68db3eb435894d6573579788b') in 0.003948 seconds
+Refreshing native plugins compatible for Editor in 13.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ef2238df36205a546a4d027c6bae08f7): Total: 0.120 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_qfx/Materials/pfg_49f253a4ab34f348cda9_p0001.mat using Guid(7a945da86fec6b24ba0c7a79cae1ad59) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6cfa496c7c69f6024a48016f62cc2138') in 0.005373 seconds
+Refreshing native plugins compatible for Editor in 14.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3e8ea4565c7c1d84b80ea1d526e1c26c): Total: 0.083 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_qfx/GeneratedRoot.prefab using Guid(df1cab3503f351a40b733bcd8406978e) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b5d802df89da74b194b2b4f350e3b063') in 0.015258 seconds
+Refreshing native plugins compatible for Editor in 15.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=791316748b78b13468e34436c2307b73): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=e9471cfbc5fecde49a7427ad9dcf2721): Total: 0.015 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp using Guid(ad78d1ecbfa6a37439f91e710fa7e204) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a45c6b5980404eb4c72f216be7aab063') in 0.003304 seconds
+Refreshing native plugins compatible for Editor in 13.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=af2fd9e45591ca64dac83f78c49f62b3): Total: 0.073 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp/Materials using Guid(23c7f540c26350f48ab0d7e24614d558) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd00ebf7a30eea162c29f1a5d65f84c4e') in 0.004572 seconds
+Refreshing native plugins compatible for Editor in 13.65 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b6f24ba006981e944a02897283e9c62f): Total: 0.175 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp/Materials/pfg_2e5d9ed36df699993db9_p0000.mat using Guid(44939feab84332549910f25ac09bc3bc) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a3f5de3978356d89a21eb4cc27851fb4') in 0.004657 seconds
+Refreshing native plugins compatible for Editor in 14.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=dae42b5c30e7cdb458ab526d0814ab76): Total: 0.088 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp/Materials/pfg_2e5d9ed36df699993db9_p0001.mat using Guid(f9bf430597253934bb4e73af5e6a0693) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ea89b24c457cb3eabc5d5bbadd147db8') in 0.003759 seconds
+Refreshing native plugins compatible for Editor in 14.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=28572d26f25f93143afd40b1abf0cad8): Total: 0.067 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp/GeneratedRoot.prefab using Guid(0fb2ee4ddbca5ff4f9a67d7d1d87fdee) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '902ffdeb06ff57b5d2481f633784969c') in 0.012245 seconds
+Refreshing native plugins compatible for Editor in 14.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3c0cadfb4da59cf46aef4f4684045871): Total: 0.079 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp/Materials/pfg_2e5d9ed36df699993db9_p0000.mat using Guid(44939feab84332549910f25ac09bc3bc) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1b0908ce27b5bbddde525df1d5a1c938') in 0.003837 seconds
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_independent_urp/Materials/pfg_2e5d9ed36df699993db9_p0001.mat using Guid(f9bf430597253934bb4e73af5e6a0693) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a7c9e24a61d01408341a7fa09e4e74e2') in 0.003093 seconds
+Refreshing native plugins compatible for Editor in 14.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d161066010e2a634d8afb26572949fe4): Total: 0.076 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=2f5ee7676bad4734e85422dd5412f64f): Total: 0.016 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_core_only using Guid(5fc12a4f51cc8464ab75286e2df173c8) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a408c9dc6c9a37f9c7369f10420c09cf') in 0.004216 seconds
+Refreshing native plugins compatible for Editor in 14.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ded31477eb606454d935198334dede1f): Total: 0.069 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_core_only/Materials using Guid(c7e40320c788f394bb8ff4e648b5c80c) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e4ea275b3a083ac6ffb5176e539a1495') in 0.004349 seconds
+Refreshing native plugins compatible for Editor in 14.38 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5fb841c942c25e64081c1307a65e0eb3): Total: 0.104 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_core_only/Materials/pfg_a2bbeb983449f81e3774_p0000.mat using Guid(97cc2e8130d3d9c41a49da3f5ebb487b) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7321c8b683c620fd590300895120952a') in 0.004158 seconds
+Refreshing native plugins compatible for Editor in 14.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9bc86106a554f44438849d7393e5192a): Total: 0.076 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_core_only/GeneratedRoot.prefab using Guid(f46c67858daddb44e999fcb519e25ede) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '98e0aa59c67138ac1df282ec2c2376f7') in 0.010803 seconds
+Refreshing native plugins compatible for Editor in 17.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=38be6854fb798e74ca2079cde393a5e0): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_core_only/Materials/pfg_a2bbeb983449f81e3774_p0000.mat using Guid(97cc2e8130d3d9c41a49da3f5ebb487b) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'aa27248a2d40bcd860bf69c6c3521413') in 0.004531 seconds
+Refreshing native plugins compatible for Editor in 17.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c7793e7a940a43a45af0902aed78d802): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1d52e54223cf66f43bb8b69d1525f3de): Total: 0.018 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_support_only using Guid(c7ff9b2420553b540a2e1707b0b27c91) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '20530f5c8c2fd626cfc2d90b5c06ade7') in 0.004294 seconds
+Refreshing native plugins compatible for Editor in 14.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=082c69e946283564c93bf1a8864abf6b): Total: 0.092 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_support_only/Materials using Guid(a97b5080b1169194f9911a439b90e4fc) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd8ad8bc0d06e982e255335eb13b693cf') in 0.004361 seconds
+Refreshing native plugins compatible for Editor in 17.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=866ae1ee647a64245aa5dd03fee98e11): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_support_only/Materials/pfg_b0a4c570753c9fa58259_p0001.mat using Guid(f2cc507c6b5e52b4b868659ff91da2f5) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e5d252358f132d6cc00dfc6fa7bfed8d') in 0.004101 seconds
+Refreshing native plugins compatible for Editor in 16.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0547c7d6f52e4ad4f9873a3ae8378393): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_support_only/GeneratedRoot.prefab using Guid(80fffcfff0405de4e8ca6ff19fbb705c) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b4f0b904182f9cbde73e11cb5394e020') in 0.011679 seconds
+Refreshing native plugins compatible for Editor in 15.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=dbc642044c269ca4aa713ae51eecd29f): Total: 0.198 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Generated/ParticleColorCalibrationR001/lightning_support_only/Materials/pfg_b0a4c570753c9fa58259_p0001.mat using Guid(f2cc507c6b5e52b4b868659ff91da2f5) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b187ca162288602fe08fb48ee7e5cbb6') in 0.005451 seconds
+Refreshing native plugins compatible for Editor in 14.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f26e4dbc290538041a71f7d956b7257a): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=8349e3d02fb5469409d17525043b2bd0): Total: 0.015 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+InvalidOperationException: PrefabGraph batch has 4 failures: Assets/Generated/ParticleColorCalibrationR001/white_legacy/GeneratedRoot.prefab: Particle gradient mode must be Blend or Fixed. | Assets/Generated/ParticleColorCalibrationR001/gray_legacy/GeneratedRoot.prefab: Particle gradient mode must be Blend or Fixed. | Assets/Generated/ParticleColorCalibrationR001/blue_legacy/GeneratedRoot.prefab: Particle gradient mode must be Blend or Fixed. | Assets/Generated/ParticleColorCalibrationR001/lightning_legacy_qfx/GeneratedRoot.prefab: Particle gradient mode must be Blend or Fixed.
+  at EffectDemoPrefabGraphCompiler.CompileBatchFromCommandLine () [0x001b0] in E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Assets\Editor\EffectDemoPrefabGraphCompiler.cs:262 
+  at EffectDemoParticleColorCalibration.PrepareAndCompile () [0x000ec] in E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Assets\Editor\EffectDemoParticleColorCalibration.cs:48 
+
+(Filename: Assets/Editor/EffectDemoPrefabGraphCompiler.cs Line: 262)
+
+executeMethod method EffectDemoParticleColorCalibration.PrepareAndCompile threw exception.
+Exiting without the bug reporter. Application will terminate with return code 1
