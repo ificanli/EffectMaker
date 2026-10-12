@@ -1,0 +1,578 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-04T00:09:01.780858+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.9234375,
+        "overexposed_visible_ratio": 0.025077466311162356,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_000_pfg_0c060328e7f347dfbfbc/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.135517578125,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_000_pfg_0c060328e7f347dfbfbc",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_0c060328e7f347dfbfbc",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.3796875,
+        "overexposed_visible_ratio": 0.021992810397271637,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_000_pfg_0c060328e7f347dfbfbc/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.13243408203125,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.54375,
+      "inner_alpha": 0.28,
+      "inner_size": 0.49299999999999994,
+      "outer_alpha": 1.0,
+      "outer_size": 0.85,
+      "overexposed_visible_reduction": 0.0030846559138907187,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_000_pfg_0c060328e7f347dfbfbc",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.965625,
+        "overexposed_visible_ratio": 0.028112588499395613,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_001_pfg_e467d079005e98f4c774/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.1413818359375,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_001_pfg_e467d079005e98f4c774",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_e467d079005e98f4c774",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.375,
+        "overexposed_visible_ratio": 0.024165829411453652,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_001_pfg_e467d079005e98f4c774/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.13850830078125,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.590625,
+      "inner_alpha": 0.32,
+      "inner_size": 0.558,
+      "outer_alpha": 1.0,
+      "outer_size": 0.9,
+      "overexposed_visible_reduction": 0.00394675908794196,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_001_pfg_e467d079005e98f4c774",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.990625,
+        "overexposed_visible_ratio": 0.027578891540705384,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_002_pfg_300f90ef9b792bc87a68/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.1473046875,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_002_pfg_300f90ef9b792bc87a68",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_300f90ef9b792bc87a68",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.3796875,
+        "overexposed_visible_ratio": 0.024529320466968083,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_002_pfg_300f90ef9b792bc87a68/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.144716796875,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.6109374999999999,
+      "inner_alpha": 0.36000000000000004,
+      "inner_size": 0.6269999999999999,
+      "outer_alpha": 1.0,
+      "outer_size": 0.95,
+      "overexposed_visible_reduction": 0.003049571073737302,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_002_pfg_300f90ef9b792bc87a68",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 1.0,
+        "overexposed_visible_ratio": 0.023947971230397103,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_003_pfg_3f417ff2c0ebe91a1d4c/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.15240966796875,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_003_pfg_3f417ff2c0ebe91a1d4c",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_3f417ff2c0ebe91a1d4c",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.359375,
+        "overexposed_visible_ratio": 0.020207635085424672,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_003_pfg_3f417ff2c0ebe91a1d4c/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.14932861328125,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.640625,
+      "inner_alpha": 0.28,
+      "inner_size": 0.7,
+      "outer_alpha": 1.0,
+      "outer_size": 1.0,
+      "overexposed_visible_reduction": 0.0037403361449724302,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_003_pfg_3f417ff2c0ebe91a1d4c",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.9296875,
+        "overexposed_visible_ratio": 0.027648711199053055,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_004_pfg_2c767a7446f6e8bc01b9/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.13819091796875,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_004_pfg_2c767a7446f6e8bc01b9",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_2c767a7446f6e8bc01b9",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.38125,
+        "overexposed_visible_ratio": 0.023262119076022124,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_004_pfg_2c767a7446f6e8bc01b9/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.1350732421875,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.5484375,
+      "inner_alpha": 0.32,
+      "inner_size": 0.49299999999999994,
+      "outer_alpha": 1.0,
+      "outer_size": 0.85,
+      "overexposed_visible_reduction": 0.004386592123030931,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_004_pfg_2c767a7446f6e8bc01b9",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.9703125,
+        "overexposed_visible_ratio": 0.030647187376318552,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_005_pfg_3c392901fc979c1291d7/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.14187744140625,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_005_pfg_3c392901fc979c1291d7",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_3c392901fc979c1291d7",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.3859375,
+        "overexposed_visible_ratio": 0.02633054202725903,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_005_pfg_3c392901fc979c1291d7/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.1393603515625,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.5843750000000001,
+      "inner_alpha": 0.36000000000000004,
+      "inner_size": 0.558,
+      "outer_alpha": 1.0,
+      "outer_size": 0.9,
+      "overexposed_visible_reduction": 0.004316645349059522,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_005_pfg_3c392901fc979c1291d7",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.990625,
+        "overexposed_visible_ratio": 0.022285073389574292,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_006_pfg_33beea72db26a4ffe3cf/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.15019775390625,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_006_pfg_33beea72db26a4ffe3cf",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_33beea72db26a4ffe3cf",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.365625,
+        "overexposed_visible_ratio": 0.019590619043672826,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_006_pfg_33beea72db26a4ffe3cf/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.14730224609375,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.625,
+      "inner_alpha": 0.28,
+      "inner_size": 0.6269999999999999,
+      "outer_alpha": 1.0,
+      "outer_size": 0.95,
+      "overexposed_visible_reduction": 0.002694454345901466,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_006_pfg_33beea72db26a4ffe3cf",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 1.0,
+        "overexposed_visible_ratio": 0.025095936160305712,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_baselines/slash_layer_pair_007_pfg_15d5de1eec2d150d060d/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.15205322265625,
+        "visible_width_ratio": 1.0
+      },
+      "candidate_id": "slash_layer_pair_007_pfg_15d5de1eec2d150d060d",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_inner_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_15d5de1eec2d150d060d",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.3625,
+        "overexposed_visible_ratio": 0.021827902323827017,
+        "path": "workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/runtime_captures/slash_layer_pair_007_pfg_15d5de1eec2d150d060d/captures/frame_003_0_075.png",
+        "time_seconds": 0.07500000298023224,
+        "visible_area_ratio": 0.14886962890625,
+        "visible_width_ratio": 1.0
+      },
+      "high_luma_width_reduction": 0.6375,
+      "inner_alpha": 0.32,
+      "inner_size": 0.7,
+      "outer_alpha": 1.0,
+      "outer_size": 1.0,
+      "overexposed_visible_reduction": 0.0032680338364786954,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "outer_is_brighter": true,
+        "outer_is_longer": true,
+        "outer_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_slash_007_pfg_15d5de1eec2d150d060d",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_inner_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_outer_inner_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_layer_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 1.0
+    }
+  ],
+  "run_id": "layered_slash_layer_ablation_r002",
+  "schema_version": "vfx_professional_slash_layer_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "slash_outer_inner_rule_controller_only",
+      "effect_family": "slash",
+      "judgment_axis": "outer_inner_hierarchy",
+      "minimum_high_luma_width_reduction": 0.01,
+      "minimum_outer_inner_alpha_ratio": 2.0,
+      "minimum_outer_inner_size_ratio": 1.2,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/graphs/outer_dominant.json",
+      "status": "eligible",
+      "target_role": "core_support"
+    },
+    "effect_family": "slash",
+    "expert_judgment": "刀光外侧主刃应更亮、更长，内侧辅助层应缩短并削弱，避免内外同长同亮。",
+    "judgment_axes": [
+      "core_readability",
+      "layer_separation",
+      "composition"
+    ],
+    "record_id": "professional_slash_outer_inner_hierarchy_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/reproduction_report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology slash outer/inner hierarchy pairs only"
+}

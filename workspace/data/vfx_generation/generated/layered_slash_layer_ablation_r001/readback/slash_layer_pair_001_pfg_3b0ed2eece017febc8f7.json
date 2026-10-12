@@ -1,0 +1,282 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_3dc33a412db5a2123964",
+    "source": {
+        "source_kind": "generated",
+        "prefab_path": "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/GeneratedRoot.prefab",
+        "source_example_id": ""
+    },
+    "root_node_id": "n0000",
+    "nodes": [
+        {
+            "node_id": "n0000",
+            "name": "GeneratedRoot",
+            "role": "root",
+            "sibling_index": 0,
+            "depth": 0,
+            "parent_node_id": "",
+            "hierarchy_path": "GeneratedRoot[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0001",
+            "name": "OuterBlade",
+            "role": "core",
+            "sibling_index": 0,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedRoot[0]/OuterBlade[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0002",
+            "name": "InnerSupport",
+            "role": "support",
+            "sibling_index": 1,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedRoot[0]/InnerSupport[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "components": {
+        "particle_systems": [
+            {
+                "component_id": "p0000",
+                "node_id": "n0001",
+                "parameters": {
+                    "duration_seconds": 0.6499999761581421,
+                    "start_delay_max": 0.0,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 4,
+                    "start_lifetime_max": 0.36000001430511477,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.8999999761581421,
+                    "start_rotation_max": -0.05397675558924675,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.550000011920929,
+                        0.8799999952316284,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        0.12000000476837158,
+                        0.3500000238418579,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 0.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Mesh",
+                    "sorting_order": 10,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/Materials/pfg_3dc33a412db5a2123964_p0000.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+                ]
+            },
+            {
+                "component_id": "p0001",
+                "node_id": "n0002",
+                "parameters": {
+                    "duration_seconds": 0.6499999761581421,
+                    "start_delay_max": 0.009999999776482582,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 4,
+                    "start_lifetime_max": 0.3199999928474426,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.8999999761581421,
+                    "start_rotation_max": -0.05397675558924675,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.550000011920929,
+                        0.8799999952316284,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        0.12000000476837158,
+                        0.3500000238418579,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 0.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Mesh",
+                    "sorting_order": 9,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/Materials/pfg_3dc33a412db5a2123964_p0001.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+                ]
+            }
+        ],
+        "renderers": [
+            {
+                "component_id": "r0000",
+                "node_id": "n0001",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Mesh",
+                    "sorting_order": 10
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/Materials/pfg_3dc33a412db5a2123964_p0000.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+                ]
+            },
+            {
+                "component_id": "r0001",
+                "node_id": "n0002",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Mesh",
+                    "sorting_order": 9
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/Materials/pfg_3dc33a412db5a2123964_p0001.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+                ]
+            }
+        ],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [
+            "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/Materials/pfg_3dc33a412db5a2123964_p0000.mat",
+            "Assets/Generated/LayeredSlashLayerAblationR001/slash_layer_pair_001_pfg_3b0ed2eece017febc8f7/Materials/pfg_3dc33a412db5a2123964_p0001.mat"
+        ],
+        "meshes": [
+            "Assets/Hovl Studio/Sword slash VFX/Models/Slash4.fbx"
+        ]
+    },
+    "reconstruction": {
+        "status": "reconstructable",
+        "compiler_profile": "particle_v1",
+        "missing_fields": [],
+        "unsupported_components": []
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "full_reconstruction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference"
+        ],
+        "aesthetic_label_source": "ai_hypothesis"
+    },
+    "provenance": {
+        "source_dataset_id": "slash_family_adapter_r001",
+        "source_run_id": "",
+        "exporter": "prefab_graph_readback.v1",
+        "assumptions": [
+            "Graph exported through Unity AssetDatabase and component APIs.",
+            "Material and mesh paths point to the compiled Prefab output assets."
+        ]
+    }
+}

@@ -1,0 +1,514 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-03T23:38:01.140774+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "candidate_id": "slash_residual_pair_000_pfg_0c060328e7f347dfbfbc",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_0c060328e7f347dfbfbc",
+      "last_visible_time_gain_seconds": 0.44519999623298645,
+      "late_active_frame_ratio_gain": 0.38461538461538464,
+      "late_visible_area_mean_gain": 0.00042555588942307695,
+      "late_window_start_seconds": 0.36000000000000004,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 13.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_000_pfg_0c060328e7f347dfbfbc",
+      "staged_late": {
+        "active_frame_ratio": 0.38461538461538464,
+        "frame_count": 13.0,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "visible_area_mean": 0.00042555588942307695
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_001_pfg_e467d079005e98f4c774",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_e467d079005e98f4c774",
+      "last_visible_time_gain_seconds": 0.4645000100135803,
+      "late_active_frame_ratio_gain": 0.4166666666666667,
+      "late_visible_area_mean_gain": 0.0007098388671875,
+      "late_window_start_seconds": 0.38000000000000006,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 12.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_001_pfg_e467d079005e98f4c774",
+      "staged_late": {
+        "active_frame_ratio": 0.4166666666666667,
+        "frame_count": 12.0,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "visible_area_mean": 0.0007098388671875
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_002_pfg_300f90ef9b792bc87a68",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_300f90ef9b792bc87a68",
+      "last_visible_time_gain_seconds": 0.44519999623298645,
+      "late_active_frame_ratio_gain": 0.2727272727272727,
+      "late_visible_area_mean_gain": 0.00041348544034090914,
+      "late_window_start_seconds": 0.4,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 11.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_002_pfg_300f90ef9b792bc87a68",
+      "staged_late": {
+        "active_frame_ratio": 0.2727272727272727,
+        "frame_count": 11.0,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "visible_area_mean": 0.00041348544034090914
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_003_pfg_3f417ff2c0ebe91a1d4c",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_3f417ff2c0ebe91a1d4c",
+      "last_visible_time_gain_seconds": 0.4645000100135803,
+      "late_active_frame_ratio_gain": 0.46153846153846156,
+      "late_visible_area_mean_gain": 0.0005305363581730769,
+      "late_window_start_seconds": 0.36000000000000004,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 13.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_003_pfg_3f417ff2c0ebe91a1d4c",
+      "staged_late": {
+        "active_frame_ratio": 0.46153846153846156,
+        "frame_count": 13.0,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "visible_area_mean": 0.0005305363581730769
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_004_pfg_2c767a7446f6e8bc01b9",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_2c767a7446f6e8bc01b9",
+      "last_visible_time_gain_seconds": 0.44519999623298645,
+      "late_active_frame_ratio_gain": 0.3333333333333333,
+      "late_visible_area_mean_gain": 0.00048177083333333335,
+      "late_window_start_seconds": 0.38000000000000006,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 12.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_004_pfg_2c767a7446f6e8bc01b9",
+      "staged_late": {
+        "active_frame_ratio": 0.3333333333333333,
+        "frame_count": 12.0,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "visible_area_mean": 0.00048177083333333335
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_005_pfg_3c392901fc979c1291d7",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_3c392901fc979c1291d7",
+      "last_visible_time_gain_seconds": 0.4645000100135803,
+      "late_active_frame_ratio_gain": 0.36363636363636365,
+      "late_visible_area_mean_gain": 0.0006904740767045456,
+      "late_window_start_seconds": 0.4,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 11.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_005_pfg_3c392901fc979c1291d7",
+      "staged_late": {
+        "active_frame_ratio": 0.36363636363636365,
+        "frame_count": 11.0,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "visible_area_mean": 0.0006904740767045456
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_006_pfg_33beea72db26a4ffe3cf",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_33beea72db26a4ffe3cf",
+      "last_visible_time_gain_seconds": 0.44519999623298645,
+      "late_active_frame_ratio_gain": 0.38461538461538464,
+      "late_visible_area_mean_gain": 0.00044452373798076927,
+      "late_window_start_seconds": 0.36000000000000004,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 13.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_006_pfg_33beea72db26a4ffe3cf",
+      "staged_late": {
+        "active_frame_ratio": 0.38461538461538464,
+        "frame_count": 13.0,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "visible_area_mean": 0.00044452373798076927
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    },
+    {
+      "candidate_id": "slash_residual_pair_007_pfg_15d5de1eec2d150d060d",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[3].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_lifetime_max"
+        ],
+        "only_residual_timing_differs": true
+      },
+      "guided_graph_id": "pfg_15d5de1eec2d150d060d",
+      "last_visible_time_gain_seconds": 0.4645000100135803,
+      "late_active_frame_ratio_gain": 0.4166666666666667,
+      "late_visible_area_mean_gain": 0.0005472819010416667,
+      "late_window_start_seconds": 0.38000000000000006,
+      "premature_late": {
+        "active_frame_ratio": 0.0,
+        "frame_count": 12.0,
+        "last_visible_time_seconds": 0.0,
+        "visible_area_mean": 0.0
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "last_visible_time_gain": true,
+        "late_active_ratio_gain": true,
+        "late_visible_area_gain": true
+      },
+      "source_candidate_id": "layered_slash_007_pfg_15d5de1eec2d150d060d",
+      "staged_late": {
+        "active_frame_ratio": 0.4166666666666667,
+        "frame_count": 12.0,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "visible_area_mean": 0.0005472819010416667
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_residual_timing": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "premature_compile_pass": true,
+        "premature_prefab_api_readback_pass": true,
+        "premature_texture_readback_matches_plan": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_residual_timing_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_residual_timing_within_verified_pair"
+      }
+    }
+  ],
+  "run_id": "layered_slash_residual_ablation_r001",
+  "schema_version": "vfx_professional_slash_residual_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "slash_residual_timing_controller_only",
+      "effect_family": "slash",
+      "judgment_axis": "readable_then_fade",
+      "minimum_last_visible_time_gain_seconds": 0.06,
+      "minimum_late_active_ratio_gain": 0.15,
+      "minimum_late_visible_area_gain": 5e-05,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/graphs/staged_residual.json",
+      "status": "eligible",
+      "target_role": "residual"
+    },
+    "effect_family": "slash",
+    "expert_judgment": "刀光应先保留可读的关键瞬间，再进入慢速消失；过早结束或从出现到消失同速都会削弱收尾。",
+    "judgment_axes": [
+      "rhythm",
+      "readability",
+      "layer_separation"
+    ],
+    "record_id": "professional_slash_readable_then_fade_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology slash residual timing pairs only"
+}

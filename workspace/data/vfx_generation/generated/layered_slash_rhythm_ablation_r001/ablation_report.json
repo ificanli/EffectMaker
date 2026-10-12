@@ -1,0 +1,592 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-03T23:54:34.762688+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.08819986979166668,
+        "hit_window_contact_peak": 0.9087892174720764,
+        "last_visible_time_seconds": 0.30970001220703125,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_000_pfg_0c060328e7f347dfbfbc",
+      "early_visible_reduction": 0.0013037109375000078,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_0c060328e7f347dfbfbc",
+      "guided_rhythm": {
+        "early_visible_mean": 0.08689615885416667,
+        "hit_window_contact_peak": 0.9937419891357422,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "late_active_ratio": 0.38461538461538464
+      },
+      "last_visible_time_gain_seconds": 0.1354999840259552,
+      "late_active_ratio_gain": 0.38461538461538464,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_000_pfg_0c060328e7f347dfbfbc",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9937419891357422,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.09601399739583333,
+        "hit_window_contact_peak": 0.9158017635345459,
+        "last_visible_time_seconds": 0.32899999618530273,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_001_pfg_e467d079005e98f4c774",
+      "early_visible_reduction": 0.0013598632812499845,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_e467d079005e98f4c774",
+      "guided_rhythm": {
+        "early_visible_mean": 0.09465413411458334,
+        "hit_window_contact_peak": 0.9950016736984253,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "late_active_ratio": 0.46153846153846156
+      },
+      "last_visible_time_gain_seconds": 0.1355000138282776,
+      "late_active_ratio_gain": 0.46153846153846156,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_001_pfg_e467d079005e98f4c774",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9950016736984253,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.10333740234375,
+        "hit_window_contact_peak": 0.9125906825065613,
+        "last_visible_time_seconds": 0.3483999967575073,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_002_pfg_300f90ef9b792bc87a68",
+      "early_visible_reduction": 0.0014575195312499928,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_300f90ef9b792bc87a68",
+      "guided_rhythm": {
+        "early_visible_mean": 0.1018798828125,
+        "hit_window_contact_peak": 0.9946750998497009,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "late_active_ratio": 0.38461538461538464
+      },
+      "last_visible_time_gain_seconds": 0.09679999947547913,
+      "late_active_ratio_gain": 0.38461538461538464,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_002_pfg_300f90ef9b792bc87a68",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9946750998497009,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.10868082682291667,
+        "hit_window_contact_peak": 0.9153717756271362,
+        "last_visible_time_seconds": 0.30970001220703125,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_003_pfg_3f417ff2c0ebe91a1d4c",
+      "early_visible_reduction": 0.0009993489583333404,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_3f417ff2c0ebe91a1d4c",
+      "guided_rhythm": {
+        "early_visible_mean": 0.10768147786458333,
+        "hit_window_contact_peak": 0.9949793815612793,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "late_active_ratio": 0.46153846153846156
+      },
+      "last_visible_time_gain_seconds": 0.15479999780654907,
+      "late_active_ratio_gain": 0.46153846153846156,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_003_pfg_3f417ff2c0ebe91a1d4c",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9949793815612793,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.09015462239583333,
+        "hit_window_contact_peak": 0.9094343781471252,
+        "last_visible_time_seconds": 0.32899999618530273,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_004_pfg_2c767a7446f6e8bc01b9",
+      "early_visible_reduction": 0.0032283528645833254,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_2c767a7446f6e8bc01b9",
+      "guided_rhythm": {
+        "early_visible_mean": 0.08692626953125,
+        "hit_window_contact_peak": 0.99461430311203,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "late_active_ratio": 0.38461538461538464
+      },
+      "last_visible_time_gain_seconds": 0.11620000004768372,
+      "late_active_ratio_gain": 0.38461538461538464,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_004_pfg_2c767a7446f6e8bc01b9",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.99461430311203,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.09622802734375001,
+        "hit_window_contact_peak": 0.9181812405586243,
+        "last_visible_time_seconds": 0.3483999967575073,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_005_pfg_3c392901fc979c1291d7",
+      "early_visible_reduction": 0.0014648437500000278,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_3c392901fc979c1291d7",
+      "guided_rhythm": {
+        "early_visible_mean": 0.09476318359374998,
+        "hit_window_contact_peak": 0.9962249398231506,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "late_active_ratio": 0.46153846153846156
+      },
+      "last_visible_time_gain_seconds": 0.116100013256073,
+      "late_active_ratio_gain": 0.46153846153846156,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_005_pfg_3c392901fc979c1291d7",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9962249398231506,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.10460774739583334,
+        "hit_window_contact_peak": 0.9029653072357178,
+        "last_visible_time_seconds": 0.30970001220703125,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_006_pfg_33beea72db26a4ffe3cf",
+      "early_visible_reduction": 0.0028930664062500194,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_33beea72db26a4ffe3cf",
+      "guided_rhythm": {
+        "early_visible_mean": 0.10171468098958332,
+        "hit_window_contact_peak": 0.9918514490127563,
+        "last_visible_time_seconds": 0.44519999623298645,
+        "late_active_ratio": 0.38461538461538464
+      },
+      "last_visible_time_gain_seconds": 0.1354999840259552,
+      "late_active_ratio_gain": 0.38461538461538464,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_006_pfg_33beea72db26a4ffe3cf",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9918514490127563,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "early_visible_mean": 0.10889241536458333,
+        "hit_window_contact_peak": 0.9159114360809326,
+        "last_visible_time_seconds": 0.32899999618530273,
+        "late_active_ratio": 0.0
+      },
+      "candidate_id": "slash_rhythm_pair_007_pfg_15d5de1eec2d150d060d",
+      "early_visible_reduction": 0.0009529622395833132,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_15d5de1eec2d150d060d",
+      "guided_rhythm": {
+        "early_visible_mean": 0.10793945312500001,
+        "hit_window_contact_peak": 0.9946974515914917,
+        "last_visible_time_seconds": 0.4645000100135803,
+        "late_active_ratio": 0.46153846153846156
+      },
+      "last_visible_time_gain_seconds": 0.1355000138282776,
+      "late_active_ratio_gain": 0.46153846153846156,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staged_hit_peak_is_readable": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_overlap": true
+      },
+      "source_candidate_id": "layered_slash_007_pfg_15d5de1eec2d150d060d",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.065,
+        "residual": 0.18,
+        "support": 0.01
+      },
+      "staged_hit_window_contact_peak": 0.9946974515914917,
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_staged_rhythm_within_verified_pair"
+      }
+    }
+  ],
+  "run_id": "layered_slash_rhythm_ablation_r001",
+  "schema_version": "vfx_professional_slash_rhythm_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "slash_staged_rhythm_controller_only",
+      "effect_family": "slash",
+      "judgment_axis": "staged_rhythm",
+      "minimum_early_visible_reduction": 5e-05,
+      "minimum_hit_window_contact_peak": 0.2,
+      "minimum_last_visible_time_gain_seconds": 0.06,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/graphs/staged_layers.json",
+      "required_delay_order": [
+        "core",
+        "support",
+        "hit",
+        "residual"
+      ],
+      "status": "eligible",
+      "target_role": "multi_layer"
+    },
+    "effect_family": "slash",
+    "expert_judgment": "刀光应先建立主体，再快速进入命中峰值和可读窗口，最后由较弱残留收尾；四层不能全部同时起播和同时消失。",
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation",
+      "contact_readability"
+    ],
+    "record_id": "professional_slash_staged_rhythm_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology slash staged-rhythm pairs only"
+}
