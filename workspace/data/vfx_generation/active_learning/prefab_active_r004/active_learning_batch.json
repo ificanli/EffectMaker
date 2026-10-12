@@ -1,0 +1,102 @@
+{
+  "batch_id": "prefab_active_r004",
+  "created_at": "2026-09-02T09:13:12.508377+00:00",
+  "dataset_id": "prefab_five_layer_r001",
+  "eligible_count": 1,
+  "items": [
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-02T08:29:55.137215+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "white"
+          ],
+          "observed_element_tags": [
+            "lightning"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/capture_manifest.json",
+      "cluster_id": "cluster_9faaa64da81c",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/eff/Fx_rayline_body.prefab",
+      "priority_score": 0.34712,
+      "queue_index": 1,
+      "sample_id": "sample_a12c13e3ee26b4caad58",
+      "selection_reason": "uncertainty",
+      "signals": {
+        "combined": 0.34712,
+        "model_disagreement": 0.0,
+        "novelty": 0.45,
+        "predicted_low": 0.840464,
+        "promotion_top": 0.159536,
+        "random_audit": 0.591431,
+        "uncertainty": 0.35
+      }
+    }
+  ],
+  "quality_gates": {
+    "already_gold_items": 0,
+    "cluster_split_leakage": 0,
+    "duplicate_queue_prefabs": 0,
+    "duplicate_queue_samples": 0,
+    "non_visual_items": 0,
+    "regression_items": 0
+  },
+  "review_budget": 1,
+  "review_rate": 0.06,
+  "schema_version": "vfx_prefab_active_learning_batch.v1",
+  "selection_mix": {
+    "model_disagreement": 0.15,
+    "new_cluster": 0.2,
+    "predicted_low": 0.05,
+    "promotion_top": 0.1,
+    "random_audit": 0.1,
+    "uncertainty": 0.4
+  },
+  "status": "pass"
+}
