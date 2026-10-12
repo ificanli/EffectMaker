@@ -1,0 +1,58 @@
+{
+  "adapter": {
+    "generator_family": "particle_v1",
+    "name": "slash.adapter",
+    "specialized_metrics": [],
+    "version": "prompt_graph_profile_mlp.v1"
+  },
+  "effect_family": "slash",
+  "effect_type": "slash",
+  "generation": {
+    "candidate_id": "prompt_graph_generation_001_004_pfg_f106c2fd0ca91e61d13e",
+    "generator": "prompt_graph_generator",
+    "generator_version": "prompt_graph_profile_mlp.v1",
+    "graph_id": "pfg_f106c2fd0ca91e61d13e",
+    "parent_candidate_id": null,
+    "profile_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prompt_graph_profile_r004/prompt_graph_profile_model.pt",
+    "run_id": "slash_r002",
+    "seed": 20261204,
+    "structure_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prefab_graph_multitask_r001/prefab_graph_multitask.pt"
+  },
+  "layers": [
+    {
+      "constraints": [
+        "ai_hypothesis_only",
+        "unity_runtime_validation_required"
+      ],
+      "material_parameters": {
+        "asset_plan_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_graph_dual_family_r001/slash_r002/candidates/prompt_graph_generation_001_004_pfg_f106c2fd0ca91e61d13e/asset_route_plan.json",
+        "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+        "texture_profile": "spark"
+      },
+      "role": "core_blade",
+      "shape_parameters": {
+        "shape_radius": 0.08000000000000002,
+        "shape_type": "Circle",
+        "start_size_max": 1.6
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 12,
+        "duration_seconds": 0.7600000000000001,
+        "start_lifetime_max": 0.5
+      },
+      "topology": "particle_v1"
+    }
+  ],
+  "negative_prompt": "长拖尾",
+  "prompt": "写实青色刀光，快速爆发，标准性能，不要长拖尾",
+  "render_plan": {
+    "camera": "PromptGraphRuntimeCamera",
+    "resolution": "512x512",
+    "scene": "PromptGraphRuntimeCapture",
+    "time_points_seconds": [],
+    "unity_project": "UnityDemo/EffectDemo"
+  },
+  "schema_version": "vfxspec.v1",
+  "training_scope": "ai_hypothesis_only; no human aesthetic label"
+}

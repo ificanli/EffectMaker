@@ -1,0 +1,851 @@
+{
+  "condition": {
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_family": "explosion",
+    "performance_tier": "standard",
+    "prompt": "写实蓝色能量爆炸，短时爆发，明确冲击，不要长拖尾",
+    "seed": 20261007,
+    "style_family": "realistic"
+  },
+  "created_at": "2026-09-03T14:40:49.252015+00:00",
+  "graph_id": "pfg_de536f096f8a15f98c8e",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_85cef102fc42300a",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fd321165405e2b94d455",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.590027,
+            "family": 24.0,
+            "neural_probability": 0.999983,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 130.589331,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.590027
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_5ba0ef910bd15f49",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_6cd608912516c6958f4a",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.403737,
+            "family": 24.0,
+            "neural_probability": 0.999958,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 130.402073,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.403737
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f0fdae10f3280d078612",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.1024x1024",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_284c19c0999b9c82",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_c7dcbe725ede6c9548ef",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.201512,
+            "family": 24.0,
+            "neural_probability": 0.999984,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 130.200878,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.201512
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f94e30197df4e14878f7",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flare31.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_603bbc69c44c94cc",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_f716a35716535c0c957b",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.651155,
+            "family": 24.0,
+            "neural_probability": 0.999893,
+            "pairing": 32.0,
+            "performance": -2.0,
+            "pipeline": 4.0,
+            "rank_total": 124.646863,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 104.651155
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_1b61b818f2ddeb9ca051",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/SmokeAnim1.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.smoke",
+              "shape.square",
+              "size.2048x2048",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "node_id": "n0001",
+      "selected_candidate_id": "material_candidate_284c19c0999b9c82",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_e76a85e11b86898e",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_cf6c8adf28b2688de18e",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/mat/Mat_nuge_03.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.832973,
+            "family": 0.0,
+            "neural_probability": 0.99897,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 114.791765,
+            "role": 30.0,
+            "slot": 24.0,
+            "style": 0,
+            "total": 94.832973
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=support",
+            "texture_property=_DissolveTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_0124c84dfcf5756b49f7",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+            "tags": [
+              "alpha.mixed",
+              "alpha.structured",
+              "luma.high_contrast",
+              "motion.dissolve_reveal",
+              "resolution.medium",
+              "role.noise_control",
+              "semantic.noise",
+              "shape.square",
+              "size.256x256",
+              "slot.alpha_mask",
+              "slot.dissolve_map",
+              "slot.distortion_map"
+            ]
+          },
+          "texture_property_name": "_DissolveTex"
+        },
+        {
+          "candidate_id": "material_candidate_983853cc3c09c6da",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_cc214efd28777179f43e",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Lightning Blast/P_VolumeSplash.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.878707,
+            "family": 0.0,
+            "neural_probability": 0.995819,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 106.711449,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 86.878707
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=support",
+            "texture_property=_NoiseTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_f7676f1d37bd78f1a64b",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/CutoutAB",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_CutoutAB.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_76f3a5024235a3098ff3",
+            "binding_status": "project_bindable",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png",
+            "tags": [
+              "alpha.mixed",
+              "motion.dissolve_reveal",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.noise_control",
+              "semantic.noise",
+              "shape.square",
+              "size.256x256",
+              "slot.dissolve_map",
+              "slot.distortion_map"
+            ]
+          },
+          "texture_property_name": "_NoiseTex"
+        },
+        {
+          "candidate_id": "material_candidate_f122090cd0b5e4f8",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_be2b68c904f856410564",
+            "path": "Assets/MasterStylizedProjectiles/Materials/WindBullet/Flash35bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.942668,
+            "family": 24.0,
+            "neural_probability": 0.999789,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 102.934245,
+            "role": 10.0,
+            "slot": 8.0,
+            "style": 0,
+            "total": 82.942668
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=support",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_20b6553e40e805b9aeae",
+            "binding_status": "project_bindable",
+            "path": "Assets/MasterStylizedProjectiles/Texture/WindBullet/Spike.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.512x512",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_a21b789ae036f707",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_d20fcbbeba17ef9f96cd",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Glow2bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.28396,
+            "family": 24.0,
+            "neural_probability": 0.999749,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 102.273915,
+            "role": 10.0,
+            "slot": 8.0,
+            "style": 0,
+            "total": 82.28396
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=support",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_1f66a55f240de966498c",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Glow2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "quality.license_unknown",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.128x128",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0001",
+      "layer_role": "support",
+      "node_id": "n0002",
+      "selected_candidate_id": "material_candidate_f122090cd0b5e4f8",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_c709b125e451c0dd",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_c3ea553c1b17b9717aa6",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_jybxdakai/Mat/Mat_jybxdakai_glow1.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.998104,
+            "family": 24.0,
+            "neural_probability": 0.99987,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 120.992921,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 100.998104
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_32470d7c5e8e315b395b",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/32/Tex_jybxdakai_glow1_32470d7c5e8e315b.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.64x64",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_6e35e7ffdc7146d0",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_9b6a740175fbfd204387",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_guangleng_hit/Mat/Mat_guangleng_hit_glow.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.950976,
+            "family": 24.0,
+            "neural_probability": 0.999859,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 120.945321,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 100.950976
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_b0d3e9a69acd938f9f67",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/b0/Tex_jybxdakai_glow3_b0d3e9a69acd938f.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.32x32",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_adecbd9ea17571bf",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_09074f6caf320ad135b2",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_xiaoming/mat/Mat_xiaoming_glow.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.917318,
+            "family": 24.0,
+            "neural_probability": 0.999782,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 120.908594,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 100.917318
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_7c05c232ec11da029a67",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/7c/Tex_xiaoming_glow_7c05c232ec11da02.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.128x128",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_c14b6fac5a9dceb9",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fd35f242183a4e6c4fc1",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_jupan_fenlieglow/Mat/Mat_feishan_glow9.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.889404,
+            "family": 24.0,
+            "neural_probability": 0.999945,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "rank_total": 120.887206,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 100.889404
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=explosion",
+            "style_family=realistic",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_634dd3969824cb411b24",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/63/Tex_feishan_glow2_634dd3969824cb41.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.flat",
+              "luma.low_contrast",
+              "luma.overbright_risk",
+              "resolution.large",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.rectangle",
+              "size.1024x512",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0002",
+      "layer_role": "hit",
+      "node_id": "n0003",
+      "selected_candidate_id": "material_candidate_adecbd9ea17571bf",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_de536f096f8a15f98c8e",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 3,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 3
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "neural_asset_pair_ranking": true,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

@@ -1,0 +1,91 @@
+{
+    "schema_version": "vfx_prefab_graph_compile_result.v1",
+    "created_at": "2026-09-03T14:41:45.3353529Z",
+    "graph_id": "pfg_85ab5512260a3c0e21c5",
+    "status": "pass",
+    "output_prefab_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/GeneratedRoot.prefab",
+    "source_prefab_read": false,
+    "node_count": 4,
+    "particle_system_count": 3,
+    "generated_material_paths": [
+        "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0000.mat",
+        "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0001.mat",
+        "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0002.mat"
+    ],
+    "generated_texture_paths": [],
+    "bound_texture_paths": [
+        "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png",
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Star_2.png",
+        "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png"
+    ],
+    "generated_shader_names": [
+        "Common/ColorDefault",
+        "QFX/IFX/Distortion/FresnelDistortion",
+        "QFX/ProjectilesFX/Particles"
+    ],
+    "material_template_paths": [
+        "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Dark Paralysis/P_Distortion.mat",
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Kawaii/MFX_Star.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_trail04.mat"
+    ],
+    "material_texture_readbacks": [
+        {
+            "renderer_name": "GeneratedLayer_01",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0000.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_DistortTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_01",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0000.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_01",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0000.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MaskTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0001.mat",
+            "shader_name": "QFX/IFX/Distortion/FresnelDistortion",
+            "property_name": "_DistortionTexture",
+            "texture_path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0001.mat",
+            "shader_name": "QFX/IFX/Distortion/FresnelDistortion",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0001.mat",
+            "shader_name": "QFX/IFX/Distortion/FresnelDistortion",
+            "property_name": "_Noise",
+            "texture_path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_8.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_03",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0002.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_EmissionMap",
+            "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Glow/FX_Glow_1.TGA"
+        },
+        {
+            "renderer_name": "GeneratedLayer_03",
+            "material_path": "Assets/Generated/PromptAssetNeuralRealisticExplosionR001/explosion/candidate_001/Materials/pfg_85ab5512260a3c0e21c5_p0002.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Star_2.png"
+        }
+    ],
+    "planned_texture_readback_match": true,
+    "error": ""
+}

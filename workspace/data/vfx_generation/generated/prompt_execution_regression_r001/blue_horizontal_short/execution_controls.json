@@ -1,0 +1,144 @@
+{
+  "after_execution_sha256": "5f299cf37f0d3209730f8170cc1ae73e3b427fa74bb06bf8d5b6cc5da3195bed",
+  "applied_controls": [
+    "color",
+    "direction",
+    "duration"
+  ],
+  "before_execution_sha256": "222323f6fe9182085f5285c91fb83fdc7df27cf299dd195cfffade1f102714bd",
+  "field_changes": [
+    {
+      "after": [
+        0.18,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "before": [
+        0.843137,
+        0.933333,
+        1.0,
+        1.0
+      ],
+      "component_id": "p0000",
+      "control": "color",
+      "field": "start_color_rgba"
+    },
+    {
+      "after": [
+        0.18,
+        0.5,
+        1.0,
+        0.0
+      ],
+      "before": [
+        0.843137,
+        0.933333,
+        1.0,
+        0.0
+      ],
+      "component_id": "p0000",
+      "control": "color",
+      "field": "end_color_rgba"
+    },
+    {
+      "after": [
+        0.108,
+        0.3,
+        0.6,
+        0.627451
+      ],
+      "before": [
+        0.141176,
+        0.290196,
+        0.6,
+        0.627451
+      ],
+      "component_id": "p0001",
+      "control": "color",
+      "field": "start_color_rgba"
+    },
+    {
+      "after": [
+        0.108,
+        0.3,
+        0.6,
+        0.0
+      ],
+      "before": [
+        0.141176,
+        0.290196,
+        0.6,
+        0.0
+      ],
+      "component_id": "p0001",
+      "control": "color",
+      "field": "end_color_rgba"
+    },
+    {
+      "after": 0.0,
+      "before": 1.5707963,
+      "component_id": "p0000",
+      "control": "direction",
+      "field": "start_rotation_max"
+    },
+    {
+      "after": 0.0,
+      "before": 1.5707963,
+      "component_id": "p0001",
+      "control": "direction",
+      "field": "start_rotation_max"
+    },
+    {
+      "after": 0.12352941,
+      "before": 0.14,
+      "component_id": "p0000",
+      "control": "duration",
+      "field": "start_lifetime_max"
+    },
+    {
+      "after": 0.22058824,
+      "before": 0.25,
+      "component_id": "p0000",
+      "control": "duration",
+      "field": "duration_seconds"
+    },
+    {
+      "after": 0.00882353,
+      "before": 0.01,
+      "component_id": "p0001",
+      "control": "duration",
+      "field": "start_delay_max"
+    },
+    {
+      "after": 0.14117647,
+      "before": 0.16,
+      "component_id": "p0001",
+      "control": "duration",
+      "field": "start_lifetime_max"
+    },
+    {
+      "after": 0.24705882,
+      "before": 0.28,
+      "component_id": "p0001",
+      "control": "duration",
+      "field": "duration_seconds"
+    }
+  ],
+  "full_prompt_understanding": false,
+  "implementation": "bounded_rule_based_executor_not_trained_planner",
+  "inferred_parameter_step_ids": [
+    "step_005",
+    "step_009"
+  ],
+  "prompt": "风格化蓝色横向闪电，持续0.15秒",
+  "schema_version": "vfx_prompt_execution_controls.v1",
+  "target_visual_duration_seconds": 0.15,
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false
+  },
+  "unresolved_intents": [
+    "style_requires_visual_validation:stylized"
+  ]
+}

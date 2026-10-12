@@ -1,0 +1,106 @@
+{
+  "adapter": {
+    "generator_family": "multi_particle",
+    "name": "explosion.adapter",
+    "specialized_metrics": [],
+    "version": "prompt_graph_profile_mlp.v1"
+  },
+  "effect_family": "explosion",
+  "effect_type": "explosion",
+  "generation": {
+    "candidate_id": "prompt_graph_generation_001_000_pfg_a11a1918f62e9040fcbe",
+    "generator": "prompt_graph_generator",
+    "generator_version": "prompt_graph_profile_mlp.v1",
+    "graph_id": "pfg_a11a1918f62e9040fcbe",
+    "parent_candidate_id": null,
+    "profile_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prompt_graph_profile_r004/prompt_graph_profile_model.pt",
+    "run_id": "explosion",
+    "seed": 20261000,
+    "structure_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prefab_graph_multitask_r001/prefab_graph_multitask.pt"
+  },
+  "layers": [
+    {
+      "constraints": [
+        "ai_hypothesis_only",
+        "unity_runtime_validation_required"
+      ],
+      "material_parameters": {
+        "asset_plan_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_graph_dual_family_r001/explosion/candidates/prompt_graph_generation_001_000_pfg_a11a1918f62e9040fcbe/asset_route_plan.json",
+        "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+        "texture_profile": "soft_disc"
+      },
+      "role": "core_flash",
+      "shape_parameters": {
+        "shape_radius": 0.08000000000000002,
+        "shape_type": "Sphere",
+        "start_size_max": 0.8
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 16,
+        "duration_seconds": 1.35,
+        "start_lifetime_max": 0.5
+      },
+      "topology": "multi_particle"
+    },
+    {
+      "constraints": [
+        "ai_hypothesis_only",
+        "unity_runtime_validation_required"
+      ],
+      "material_parameters": {
+        "asset_plan_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_graph_dual_family_r001/explosion/candidates/prompt_graph_generation_001_000_pfg_a11a1918f62e9040fcbe/asset_route_plan.json",
+        "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+        "texture_profile": "spark"
+      },
+      "role": "shockwave_ring",
+      "shape_parameters": {
+        "shape_radius": 0.08000000000000002,
+        "shape_type": "Circle",
+        "start_size_max": 1.7280000000000002
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 16,
+        "duration_seconds": 1.35,
+        "start_lifetime_max": 0.5
+      },
+      "topology": "multi_particle"
+    },
+    {
+      "constraints": [
+        "ai_hypothesis_only",
+        "unity_runtime_validation_required"
+      ],
+      "material_parameters": {
+        "asset_plan_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_graph_dual_family_r001/explosion/candidates/prompt_graph_generation_001_000_pfg_a11a1918f62e9040fcbe/asset_route_plan.json",
+        "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+        "texture_profile": "spark"
+      },
+      "role": "debris_burst",
+      "shape_parameters": {
+        "shape_radius": 0.08000000000000002,
+        "shape_type": "Box",
+        "start_size_max": 0.9279999999999999
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 16,
+        "duration_seconds": 1.35,
+        "start_lifetime_max": 0.5
+      },
+      "topology": "multi_particle"
+    }
+  ],
+  "negative_prompt": "长拖尾",
+  "prompt": "卡通橙色爆炸冲击，中等节奏，标准性能，不要长拖尾",
+  "render_plan": {
+    "camera": "PromptGraphRuntimeCamera",
+    "resolution": "512x512",
+    "scene": "PromptGraphRuntimeCapture",
+    "time_points_seconds": [],
+    "unity_project": "UnityDemo/EffectDemo"
+  },
+  "schema_version": "vfxspec.v1",
+  "training_scope": "ai_hypothesis_only; no human aesthetic label"
+}

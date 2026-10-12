@@ -1,0 +1,32 @@
+{
+  "schema_version": "effectdemo_source_render_requests.v1",
+  "run_id": "prompt_execution_urp_pipeline_mismatch_negative",
+  "scene": "PromptExecutionRegression",
+  "camera": "PromptExecutionCamera",
+  "width": 640,
+  "height": 640,
+  "expected_render_pipeline_type": "IntentionalMismatchForRegression",
+  "sampling_mode": "adaptive_runtime",
+  "sampling": {
+    "target_intervals": 20,
+    "short_effect_target_intervals": 20,
+    "min_interval_seconds": 0.005,
+    "max_interval_seconds": 0.01,
+    "max_duration_seconds": 0.3,
+    "include_zero": true,
+    "duration_sources": ["particle_system"]
+  },
+  "requests": [{
+    "candidate_id": "blue_vertical_short_pipeline_mismatch",
+    "random_seed_key": "prompt_execution_regression:20260907",
+    "prefab_path": "Assets/Generated/PromptExecutionRegressionUrpR002/blue_vertical_short/GeneratedRoot.prefab",
+    "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_execution_regression_urp_r002/pipeline_mismatch_negative/captures",
+    "capture_manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_execution_regression_urp_r002/pipeline_mismatch_negative/capture_manifest.json",
+    "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_execution_regression_urp_r002/pipeline_mismatch_negative/material_timeline.json",
+    "source_script_fidelity": "generated_graph_no_source_scripts",
+    "capture_category": "lightning",
+    "forced_camera_view": "front",
+    "force_orthographic": true,
+    "forced_orthographic_size": 3.2
+  }]
+}

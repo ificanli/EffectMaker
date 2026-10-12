@@ -1,0 +1,66 @@
+{
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "asset_plan_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_graph_generation_r001/lightning/candidates/prompt_graph_generation_001_000_pfg_da442a1b50e1d474e565/asset_route_plan.json",
+      "asset_plan_status": "pass",
+      "candidate_id": "prompt_graph_generation_001_000_pfg_da442a1b50e1d474e565",
+      "capture_manifest_path": null,
+      "compile_result_path": null,
+      "grammar_valid": true,
+      "graph_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/prompt_graph_generation_r001/lightning/candidates/prompt_graph_generation_001_000_pfg_da442a1b50e1d474e565/graph.json",
+      "graph_schema_valid": true,
+      "max_visible_area_ratio": null,
+      "parent_prefab_path": null,
+      "profile": "particle_v1",
+      "profile_probability": 0.9970870614051819,
+      "runtime_visibility_status": "not_run",
+      "training_scope": "prompt_condition_ai_hypothesis_only",
+      "unity_compile_status": "not_run"
+    }
+  ],
+  "created_at": "2026-09-02T05:03:39.708966+00:00",
+  "model": {
+    "predicted_profile": "particle_v1",
+    "profile_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prompt_graph_profile_r001/prompt_graph_profile_model.pt",
+    "profile_probability": 0.9970870614051819,
+    "structure_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prefab_graph_multitask_r001/prefab_graph_multitask.pt",
+    "supervision_status": "ai_hypothesis_only"
+  },
+  "prompt_condition": {
+    "candidate_count": 4,
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_families": [
+      "lightning"
+    ],
+    "motion_keywords": [
+      "impact"
+    ],
+    "negative_constraints": [
+      "长拖尾"
+    ],
+    "performance_tier": "standard",
+    "prompt_id": "prompt_graph_generation_001",
+    "schema_version": "vfx_prompt_condition.v1",
+    "seed": 20260902,
+    "source_categories": [
+      "battle"
+    ],
+    "style_family": "realistic",
+    "text": "写实蓝色雷电，快速爆发，标准性能，不要长拖尾",
+    "timing_profile": "fast_impact"
+  },
+  "quality_gates": {
+    "asset_plan_pass_count": 1,
+    "grammar_valid_count": 1,
+    "human_aesthetic_labels_used": 0,
+    "runtime_visible_count": 0,
+    "schema_valid_count": 1,
+    "unity_compile_pass_count": 0
+  },
+  "run_id": "lightning",
+  "schema_version": "vfx_prompt_graph_generation_manifest.v1",
+  "status": "generated_pending_unity"
+}
