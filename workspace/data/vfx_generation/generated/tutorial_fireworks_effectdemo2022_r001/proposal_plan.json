@@ -1,0 +1,276 @@
+{
+  "created_at": "2026-09-04T03:58:25.275577+00:00",
+  "intent": {
+    "color_keywords": [
+      "orange",
+      "red"
+    ],
+    "direction": "unspecified",
+    "effect_family": "fire",
+    "hit_placement": "unspecified",
+    "shape_keywords": [],
+    "style_family": "stylized",
+    "timing_keywords": []
+  },
+  "layers": [
+    {
+      "layer_role": "core",
+      "procedure_step_ids": [
+        "procedure_fireworks_layered_lifecycle_r001:step_003"
+      ],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Carry the hot core and primary flame silhouette.",
+      "renderer_modes": [
+        "Billboard",
+        "Mesh"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "color_control",
+          "emission_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ],
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any": [
+          [
+            "role.core_shape",
+            "slot.base_map",
+            "slot.alpha_mask"
+          ],
+          [
+            "role.core_shape",
+            "luma.bright_core"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "flipbook_flame",
+        "mesh_flame",
+        "stacked_billboards"
+      ]
+    },
+    {
+      "layer_role": "support",
+      "procedure_step_ids": [
+        "procedure_fireworks_layered_lifecycle_r001:step_001",
+        "procedure_fireworks_layered_lifecycle_r001:step_002"
+      ],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Add turbulent tongues and darker separation.",
+      "renderer_modes": [
+        "Billboard",
+        "Mesh"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "color_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion",
+            "distortion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error"
+        ],
+        "required_any": [
+          [
+            "role.noise_control",
+            "slot.dissolve_map",
+            "slot.distortion_map"
+          ],
+          [
+            "semantic.trail"
+          ],
+          [
+            "semantic.trail",
+            "semantic.spark"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "turbulence_layer",
+        "dark_flame_layer",
+        "heat_distortion"
+      ]
+    },
+    {
+      "layer_role": "hit",
+      "procedure_step_ids": [
+        "procedure_fireworks_layered_lifecycle_r001:step_004"
+      ],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Accentuate ignition or contact.",
+      "renderer_modes": [
+        "Billboard"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "color_control",
+          "emission_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ]
+        ],
+        "requires_vertex_stream_contract": false
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any": [
+          [
+            "role.hit_accent",
+            "role.impact_ring",
+            "semantic.spark"
+          ],
+          [
+            "semantic.spark",
+            "role.hit_accent"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "ignition_flash",
+        "ember_burst",
+        "contact_flame"
+      ]
+    },
+    {
+      "layer_role": "residual",
+      "procedure_step_ids": [
+        "procedure_fireworks_layered_lifecycle_r001:step_005"
+      ],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Leave smoke, embers or heat distortion.",
+      "renderer_modes": [
+        "Billboard"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "color_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "uv_motion",
+            "dissolve_control",
+            "cutout_control"
+          ]
+        ],
+        "requires_vertex_stream_contract": false
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any": [
+          [
+            "role.residual_trail",
+            "semantic.trail",
+            "semantic.smoke"
+          ],
+          [
+            "role.residual_trail",
+            "semantic.smoke",
+            "semantic.spark"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "smoke_column",
+        "embers",
+        "heat_haze"
+      ]
+    }
+  ],
+  "plan_id": "proposal_33c1817cc84ed5e1da62",
+  "procedure_context": {
+    "applied_step_ids": [
+      "procedure_fireworks_layered_lifecycle_r001:step_001",
+      "procedure_fireworks_layered_lifecycle_r001:step_002",
+      "procedure_fireworks_layered_lifecycle_r001:step_003",
+      "procedure_fireworks_layered_lifecycle_r001:step_004",
+      "procedure_fireworks_layered_lifecycle_r001:step_005",
+      "procedure_fireworks_layered_lifecycle_r001:step_006",
+      "procedure_fireworks_layered_lifecycle_r001:step_007",
+      "procedure_fireworks_layered_lifecycle_r001:step_008",
+      "procedure_fireworks_layered_lifecycle_r001:step_009"
+    ],
+    "matched_procedure_ids": [
+      "procedure_fireworks_layered_lifecycle_r001"
+    ],
+    "required": true,
+    "status": "candidate",
+    "target_verified_procedure_ids": [],
+    "timing_relationships": [
+      "ascent_precedes_core",
+      "core_precedes_radial_branches",
+      "residual_starts_after_core"
+    ]
+  },
+  "prompt": "风格化橙红烟花，先上升，再爆炸，峰值后留下暗红火星",
+  "schema_version": "vfx_proposal_plan.v1",
+  "seed": 20260904,
+  "selection_policy": {
+    "joint_shader_material_texture_ranking": true,
+    "no_single_template_for_all_roles": true,
+    "prompt_controls_proposal": true,
+    "role_specific_shader_plan": true,
+    "verified_assets_only": true,
+    "whole_batch_absolute_quality_gate": true
+  },
+  "status": "blocked",
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false,
+    "proposal_failure_supervision": false,
+    "reason": "Plan only; requires a target-verified tutorial procedure, asset contract audit, Unity execution and absolute quality acceptance."
+  }
+}

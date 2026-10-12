@@ -1,0 +1,55 @@
+{
+  "scope": "generated_color_probe_source_roundtrip_not_external_prefab_generalization",
+  "status": "failed",
+  "cases": [
+    {
+      "case_id": "tutorial_fixed",
+      "gates": {
+        "source_export": true,
+        "source_recompile": true,
+        "source_readback": true,
+        "same_simulation_schedule": true,
+        "actual_urp": true,
+        "valid_frames": true,
+        "pixel_identical": true
+      },
+      "compared_frame_count": 41,
+      "maximum_channel_difference": 0,
+      "maximum_mean_absolute_difference": 0.0
+    },
+    {
+      "case_id": "tutorial_blend_control",
+      "gates": {
+        "source_export": true,
+        "source_recompile": true,
+        "source_readback": true,
+        "same_simulation_schedule": true,
+        "actual_urp": true,
+        "valid_frames": true,
+        "pixel_identical": false
+      },
+      "compared_frame_count": 41,
+      "maximum_channel_difference": 5,
+      "maximum_mean_absolute_difference": 0.024436848958333333
+    },
+    {
+      "case_id": "alpha_only_control",
+      "gates": {
+        "source_export": true,
+        "source_recompile": true,
+        "source_readback": true,
+        "same_simulation_schedule": true,
+        "actual_urp": true,
+        "valid_frames": true,
+        "pixel_identical": true
+      },
+      "compared_frame_count": 41,
+      "maximum_channel_difference": 0,
+      "maximum_mean_absolute_difference": 0.0
+    }
+  ],
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "blend_capture_repeatability_diagnostic",
+  "comparisons": [
+    {
+      "left": "original_a",
+      "right": "original_b",
+      "compared_frames": 41,
+      "maximum_channel_difference": 13,
+      "maximum_mean_absolute_difference": 0.07738199869791666
+    },
+    {
+      "left": "original_a",
+      "right": "source_recompiled",
+      "compared_frames": 41,
+      "maximum_channel_difference": 13,
+      "maximum_mean_absolute_difference": 0.07738199869791666
+    },
+    {
+      "left": "original_b",
+      "right": "source_recompiled",
+      "compared_frames": 41,
+      "maximum_channel_difference": 3,
+      "maximum_mean_absolute_difference": 0.00711669921875
+    },
+    {
+      "left": "previous_original",
+      "right": "original_a",
+      "compared_frames": 41,
+      "maximum_channel_difference": 13,
+      "maximum_mean_absolute_difference": 0.09231770833333333
+    }
+  ],
+  "positive_training_eligible": false
+}

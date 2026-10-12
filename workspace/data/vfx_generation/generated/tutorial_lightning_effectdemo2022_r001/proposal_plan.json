@@ -1,0 +1,303 @@
+{
+  "created_at": "2026-09-04T04:37:27.694068+00:00",
+  "intent": {
+    "color_keywords": [
+      "blue",
+      "white"
+    ],
+    "direction": "unspecified",
+    "effect_family": "lightning",
+    "hit_placement": "unspecified",
+    "shape_keywords": [
+      "hard_edge"
+    ],
+    "style_family": "stylized",
+    "timing_keywords": [
+      "instant_pulse"
+    ]
+  },
+  "layers": [
+    {
+      "layer_role": "core",
+      "procedure_step_ids": [
+        "procedure_lightning_shape_lifecycle_r001:step_001",
+        "procedure_lightning_shape_lifecycle_r001:step_002",
+        "procedure_lightning_shape_lifecycle_r001:step_004",
+        "procedure_lightning_shape_lifecycle_r001:step_005",
+        "procedure_lightning_shape_lifecycle_r001:step_006",
+        "procedure_lightning_shape_lifecycle_r001:step_007"
+      ],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords",
+        "shape_keywords"
+      ],
+      "purpose": "Carry the main bolt and instantaneous pulse.",
+      "renderer_modes": [
+        "Mesh",
+        "Trail"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "forbidden": [
+          "radial_mask",
+          "spherical_distortion"
+        ],
+        "required_all": [
+          "color_control",
+          "cutout_control",
+          "emission_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ],
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any": [
+          [
+            "role.core_shape",
+            "slot.base_map",
+            "slot.alpha_mask"
+          ],
+          [
+            "semantic.lightning",
+            "role.core_shape"
+          ],
+          [
+            "semantic.lightning",
+            "luma.bright_core"
+          ],
+          [
+            "semantic.lightning"
+          ],
+          [
+            "semantic.lightning",
+            "shape.horizontal_strip"
+          ],
+          [
+            "semantic.lightning"
+          ],
+          [
+            "slot.alpha_mask",
+            "alpha.gradient"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "single_bolt_strip",
+        "segmented_bolt",
+        "procedural_line"
+      ]
+    },
+    {
+      "layer_role": "support",
+      "procedure_step_ids": [
+        "procedure_lightning_shape_lifecycle_r001:step_003",
+        "procedure_lightning_shape_lifecycle_r001:step_009"
+      ],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords",
+        "shape_keywords"
+      ],
+      "purpose": "Add thinner branches without obscuring the main bolt.",
+      "renderer_modes": [
+        "Mesh",
+        "Trail"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "forbidden": [
+          "radial_mask",
+          "spherical_distortion"
+        ],
+        "required_all": [
+          "color_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion",
+            "distortion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error"
+        ],
+        "required_any": [
+          [
+            "role.noise_control",
+            "slot.dissolve_map",
+            "slot.distortion_map"
+          ],
+          [
+            "semantic.lightning"
+          ],
+          [
+            "semantic.lightning"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "branch_strip",
+        "fork_cluster",
+        "secondary_line"
+      ]
+    },
+    {
+      "layer_role": "hit",
+      "procedure_step_ids": [],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Concentrate the electrical contact point.",
+      "renderer_modes": [
+        "Billboard"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "forbidden": [],
+        "required_all": [
+          "color_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ]
+        ],
+        "requires_vertex_stream_contract": false
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any": [
+          [
+            "role.hit_accent",
+            "role.impact_ring",
+            "semantic.spark"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "contact_flash",
+        "electric_ring",
+        "spark_cluster"
+      ]
+    },
+    {
+      "layer_role": "residual",
+      "procedure_step_ids": [],
+      "prompt_controls": [
+        "style_family",
+        "color_keywords",
+        "timing_keywords"
+      ],
+      "purpose": "Leave short-lived residual sparks after the main pulse.",
+      "renderer_modes": [
+        "Stretch",
+        "Trail"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "forbidden": [],
+        "required_all": [
+          "color_control",
+          "opacity_control"
+        ],
+        "required_any": [
+          [
+            "uv_motion",
+            "dissolve_control",
+            "cutout_control"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any": [
+          [
+            "role.residual_trail",
+            "semantic.trail",
+            "semantic.smoke"
+          ]
+        ]
+      },
+      "topology_candidates": [
+        "residual_sparks",
+        "fading_branches",
+        "surface_arcs"
+      ]
+    }
+  ],
+  "plan_id": "proposal_e419bf5255b6ed37b915",
+  "procedure_context": {
+    "applied_step_ids": [
+      "procedure_lightning_shape_lifecycle_r001:step_001",
+      "procedure_lightning_shape_lifecycle_r001:step_002",
+      "procedure_lightning_shape_lifecycle_r001:step_003",
+      "procedure_lightning_shape_lifecycle_r001:step_004",
+      "procedure_lightning_shape_lifecycle_r001:step_005",
+      "procedure_lightning_shape_lifecycle_r001:step_006",
+      "procedure_lightning_shape_lifecycle_r001:step_007",
+      "procedure_lightning_shape_lifecycle_r001:step_008",
+      "procedure_lightning_shape_lifecycle_r001:step_009"
+    ],
+    "matched_procedure_ids": [
+      "procedure_lightning_shape_lifecycle_r001"
+    ],
+    "required": true,
+    "status": "candidate",
+    "target_verified_procedure_ids": [],
+    "timing_relationships": [
+      "brightness_changes_within_lifetime",
+      "main_bolt_is_short_lived",
+      "outline_follows_main_bolt"
+    ]
+  },
+  "prompt": "风格化蓝白短促闪电，硬朗主电流和轻微粗细变化",
+  "schema_version": "vfx_proposal_plan.v1",
+  "seed": 20260907,
+  "selection_policy": {
+    "joint_shader_material_texture_ranking": true,
+    "no_single_template_for_all_roles": true,
+    "prompt_controls_proposal": true,
+    "role_specific_shader_plan": true,
+    "verified_assets_only": true,
+    "whole_batch_absolute_quality_gate": true
+  },
+  "status": "blocked",
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false,
+    "proposal_failure_supervision": false,
+    "reason": "Plan only; requires a target-verified tutorial procedure, asset contract audit, Unity execution and absolute quality acceptance."
+  }
+}

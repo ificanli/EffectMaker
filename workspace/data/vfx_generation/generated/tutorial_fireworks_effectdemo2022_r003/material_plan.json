@@ -1,0 +1,1415 @@
+{
+  "condition": {
+    "color_keywords": [
+      "orange",
+      "red"
+    ],
+    "effect_family": "fire",
+    "performance_tier": "standard",
+    "prompt": "风格化橙红烟花，先上升，再爆炸，峰值后留下暗红火星",
+    "seed": 20260906,
+    "style_family": "stylized"
+  },
+  "created_at": "2026-09-04T04:25:01.556089+00:00",
+  "graph_id": "pfg_d8c03bc59b741f5feb05",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_887137e1fd1eb8e2",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fd321165405e2b94d455",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.229105,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.229105
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_e62f3434f1e4a5d5",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_bed5ecff05ccdaf08823",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_trail04.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.188868,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.188868
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_e02b71d2b713b182",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_cac19d8cc71075bc0dc7",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_01.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.184478,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.184478
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MaskTex"
+        },
+        {
+          "candidate_id": "proposal_asset_ce5fc92815a7ad21",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_26fbd5da273f007d1ef2",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_03.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.082182,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.082182
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "support",
+      "node_id": "n0001",
+      "selected_candidate_id": "proposal_asset_887137e1fd1eb8e2",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_3e5d2f7587d6b8dd",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_bed5ecff05ccdaf08823",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_trail04.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.188868,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.188868
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_25308e0b457a5c2f",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fd321165405e2b94d455",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.229105,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.229105
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_7a403af62895b1e4",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_cac19d8cc71075bc0dc7",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_01.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.184478,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.184478
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MaskTex"
+        },
+        {
+          "candidate_id": "proposal_asset_65aa0c1cdd968418",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_26fbd5da273f007d1ef2",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_03.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.082182,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.082182
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0001",
+      "layer_role": "support",
+      "node_id": "n0002",
+      "selected_candidate_id": "proposal_asset_3e5d2f7587d6b8dd",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_42c1dfe429e9794b",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_c7dcbe725ede6c9548ef",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.894426,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 24.0,
+            "style": 8.0,
+            "total": 136.894426
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0002"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f94e30197df4e14878f7",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flare31.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_f6edd2ab807b7d89",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_6cd608912516c6958f4a",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.758899,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 32.0,
+            "slot": 18.0,
+            "style": 8.0,
+            "total": 122.758899
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0002"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f0fdae10f3280d078612",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.1024x1024",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_e545f31eaed5c7fc",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_a47a05f1a9c151ca20a8",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21cg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.563368,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 32.0,
+            "slot": 18.0,
+            "style": 8.0,
+            "total": 122.563368
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0002"
+          ],
+          "shader": {
+            "asset_id": "shader_5ea0012bd0d5dabe96a0",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Add_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f0fdae10f3280d078612",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.1024x1024",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_9ed39dae7fa75c51",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_e627f6e538442e5f72b6",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.23052,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 32.0,
+            "slot": 18.0,
+            "style": 8.0,
+            "total": 122.23052
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0002"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_bb87bc6dbe579bf172ef",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash31.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.512x512",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0002",
+      "layer_role": "core",
+      "node_id": "n0003",
+      "selected_candidate_id": "proposal_asset_42c1dfe429e9794b",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_938a56add15547cc",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_e627f6e538442e5f72b6",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.820612,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 32.0,
+            "slot": 18.0,
+            "style": 8.0,
+            "total": 122.820612
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=hit",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0003"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_bb87bc6dbe579bf172ef",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash31.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.512x512",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_946324e38b0fc973",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_c7dcbe725ede6c9548ef",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.381066,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 24.0,
+            "style": 8.0,
+            "total": 136.381066
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=hit",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0003"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f94e30197df4e14878f7",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flare31.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_c28844c462cd3137",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_a47a05f1a9c151ca20a8",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21cg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.496746,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 32.0,
+            "slot": 18.0,
+            "style": 8.0,
+            "total": 122.496746
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=hit",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0003"
+          ],
+          "shader": {
+            "asset_id": "shader_5ea0012bd0d5dabe96a0",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Add_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f0fdae10f3280d078612",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.1024x1024",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_c82fa29ef4cc679f",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_6cd608912516c6958f4a",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.358626,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 32.0,
+            "slot": 18.0,
+            "style": 8.0,
+            "total": 122.358626
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=hit",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0003"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f0fdae10f3280d078612",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.1024x1024",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0003",
+      "layer_role": "hit",
+      "node_id": "n0004",
+      "selected_candidate_id": "proposal_asset_938a56add15547cc",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_16f5b4bec87dd6f1",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_26fbd5da273f007d1ef2",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_03.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.159404,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.159404
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=residual",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0004"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_475b27c5d2157ac9",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fd321165405e2b94d455",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.864146,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.864146
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=residual",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0004"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_c83f8d91cc53e375",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_bed5ecff05ccdaf08823",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_trail04.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.369408,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.369408
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=residual",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0004"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_68f922384755dd4e",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_cac19d8cc71075bc0dc7",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_01.mat"
+          },
+          "scores": {
+            "color": 3.0,
+            "diversity": 0.088392,
+            "family": 10.0,
+            "pairing": 47.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 40.0,
+            "slot": 18.0,
+            "style": 0,
+            "total": 125.088392
+          },
+          "selection_basis": [
+            "original Unity Material-Shader-Texture binding is preserved",
+            "layer_role=residual",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "no arbitrary cross-material texture replacement",
+            "component_id=p0004"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MaskTex"
+        }
+      ],
+      "component_id": "p0004",
+      "layer_role": "residual",
+      "node_id": "n0005",
+      "selected_candidate_id": "proposal_asset_16f5b4bec87dd6f1",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_d8c03bc59b741f5feb05",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 5,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 5
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "neural_asset_pair_ranking": false,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

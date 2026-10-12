@@ -1,0 +1,272 @@
+{
+  "graph_id": "pfg_f804f1895c8f340000f6",
+  "schema_version": "vfx_prefab_graph.v1",
+  "source": {
+    "source_kind": "generated",
+    "prefab_path": null,
+    "source_example_id": null
+  },
+  "condition": {
+    "prompt": "风格化蓝白纵向闪电，持续0.3秒",
+    "effect_family": "lightning",
+    "style_family": "stylized",
+    "seed": 20260907,
+    "parent_prefab_path": null
+  },
+  "root_node_id": "n0000",
+  "nodes": [
+    {
+      "node_id": "n0000",
+      "name": "GeneratedRoot",
+      "role": "root",
+      "sibling_index": 0,
+      "depth": 0,
+      "parent_node_id": null,
+      "hierarchy_path": "GeneratedRoot[0]",
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.Transform"
+      ],
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "node_id": "n0001",
+      "name": "MainBolt",
+      "role": "core",
+      "sibling_index": 0,
+      "depth": 1,
+      "parent_node_id": "n0000",
+      "hierarchy_path": "GeneratedRoot[0]/MainBolt[0]",
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "components": {
+    "particle_systems": [
+      {
+        "component_id": "p0000",
+        "node_id": "n0001",
+        "parameters": {
+          "serialized_modules": {
+            "profile": "tutorial_procedure_particle_v1",
+            "layer_role": "core",
+            "procedure_id": "procedure_lightning_shape_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_001",
+              "step_004",
+              "step_005",
+              "step_006",
+              "step_010"
+            ]
+          },
+          "duration_seconds": 0.53571429,
+          "start_delay_max": 0.0,
+          "looping": false,
+          "simulation_space": "Local",
+          "max_particles": 16,
+          "start_lifetime_max": 0.3,
+          "start_speed_max": 0.0,
+          "start_size_max": 0.25821505012945895,
+          "start_size_3d": true,
+          "start_size_x_max": 4.8,
+          "start_size_y_max": 0.75,
+          "start_size_z_max": 1.0,
+          "start_rotation_max": 1.57079633,
+          "gravity_modifier_max": 0.0,
+          "start_color_rgba": [
+            0.713,
+            0.825,
+            1.0,
+            1.0
+          ],
+          "end_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "color_over_lifetime_gradient": {
+            "mode": "Blend",
+            "color_keys": [
+              {
+                "time": 0.0,
+                "rgb": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              {
+                "time": 0.18,
+                "rgb": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "time": 0.32,
+                "rgb": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              {
+                "time": 0.56,
+                "rgb": [
+                  0.12,
+                  0.12,
+                  0.12
+                ]
+              },
+              {
+                "time": 0.72,
+                "rgb": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              {
+                "time": 1.0,
+                "rgb": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            ],
+            "alpha_keys": [
+              {
+                "time": 0.0,
+                "alpha": 1.0
+              },
+              {
+                "time": 0.84,
+                "alpha": 0.4
+              },
+              {
+                "time": 1.0,
+                "alpha": 0.0
+              }
+            ]
+          },
+          "material_color_mode": "preserve_template",
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "burst_particle_count": 1,
+          "shape_enabled": false,
+          "shape_type": "disabled",
+          "shape_radius": 0.0,
+          "color_over_lifetime_enabled": true,
+          "size_over_lifetime_enabled": true,
+          "end_size_multiplier": 1.0,
+          "renderer_mode": "Billboard",
+          "sorting_order": 12,
+          "texture_profile": null,
+          "shader_profile": null,
+          "material_template_path": "Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat",
+          "texture_asset_path": "Assets/Epic Toon FX/Textures/lightning1.png",
+          "texture_property_name": "_BaseMap"
+        },
+        "material_paths": [],
+        "mesh_paths": []
+      }
+    ],
+    "renderers": [
+      {
+        "component_id": "r0000",
+        "node_id": "n0001",
+        "renderer_type": "ParticleSystemRenderer",
+        "enabled": true,
+        "parameters": {
+          "particle_render_mode": "Billboard",
+          "sorting_order": 12,
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ]
+        },
+        "material_paths": [],
+        "mesh_paths": []
+      }
+    ],
+    "animations": []
+  },
+  "asset_bindings": {
+    "materials": [
+      "Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat"
+    ],
+    "meshes": []
+  },
+  "reconstruction": {
+    "status": "reconstructable",
+    "compiler_profile": "particle_v1",
+    "missing_fields": [],
+    "unsupported_components": []
+  },
+  "training": {
+    "eligible_tasks": [
+      "component_prediction",
+      "hierarchy_modeling",
+      "particle_parameter_modeling",
+      "full_reconstruction"
+    ],
+    "excluded_tasks": [
+      "aesthetic_preference",
+      "prompt_condition"
+    ],
+    "aesthetic_label_source": "ai_hypothesis"
+  },
+  "provenance": {
+    "source_dataset_id": "tutorial_procedure_generation_r001",
+    "source_run_id": "tutorial_lightning_fixed_color_r001",
+    "exporter": "prefab_graph_constrained.v1",
+    "assumptions": [
+      "Layer order and bounded parameters come from a traceable ProcedureSpec.",
+      "Material, Shader and Texture remain unbound until contract-aware asset routing passes.",
+      "Technical execution does not imply professional visual acceptance."
+    ]
+  }
+}

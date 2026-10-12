@@ -1,0 +1,235 @@
+{
+  "schema_version": "vfx_procedure_spec.v1",
+  "procedure_id": "procedure_lightning_shape_lifecycle_r001",
+  "title": "闪电贴图、主轮廓、粗细层次与短生命周期制作",
+  "source": {
+    "source_type": "production_tutorial",
+    "source_path": "knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/transcripts/part03.zh.srt",
+    "source_status": "partially_verified",
+    "timecodes": ["00:00:02-00:00:50", "00:02:30-00:02:50", "00:05:33-00:06:37", "00:13:31-00:15:10", "00:25:18-00:25:30"],
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/visual/middle/part03_0800.jpg",
+      "workspace/data/vfx_generation/procedures/procedure_lightning_shape_lifecycle_r001/evidence/contact_sheet.jpg",
+      "knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/visual/material_color_audit_20260907/contact_flicker_native_0902_000_0902_767.jpg",
+      "knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/visual/material_color_audit_20260907/detail_gradient_modes.png"
+    ]
+  },
+  "applicability": {
+    "effect_families": ["lightning"],
+    "effect_types": ["bolt", "lightning_strike", "lightning_cluster"],
+    "style_families": ["stylized", "cartoon", "unspecified"],
+    "elements": ["lightning", "energy"]
+  },
+  "prerequisites": {
+    "unity_versions": ["2019.4_series_observed_exact_patch_unknown"],
+    "render_pipelines": ["unknown_source_pipeline"],
+    "required_capabilities": ["texture_authoring", "particle_system", "color_over_lifetime", "mask_texture", "layer_duplication"],
+    "required_assets": ["lightning_shape_texture", "soft_edge_mask"]
+  },
+  "steps": [
+    {
+      "step_id": "step_001",
+      "order": 1,
+      "action": "bind_texture",
+      "target_role": "core",
+      "target_layer": "MainBolt",
+      "instruction": "准备简单闪电形状贴图；闪电没有唯一固定形态，但轮廓必须具有硬朗、折线化和非均匀特征。",
+      "parameter_ranges": [
+        {"name": "source_texture_width", "unit": "pixels", "minimum": 1024, "maximum": 1024, "value": 1024},
+        {"name": "source_texture_height", "unit": "pixels", "minimum": 1024, "maximum": 1024, "value": 1024}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.lightning", "role.core_shape"],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["part03.zh.srt:00:00:02-00:00:50", "part03.zh.srt:00:02:30-00:02:50"]
+    },
+    {
+      "step_id": "step_002",
+      "order": 2,
+      "action": "bind_texture",
+      "authoring_stage": "texture_authoring",
+      "target_role": "core",
+      "target_layer": "LightningShapeTexture",
+      "instruction": "在 Photoshop 参考分析与贴图制作中保留光柱感、锐边和非均匀形体；该片段不是 Unity 创建发光层或设置 Emission 的证据。",
+      "parameter_ranges": [],
+      "required_shader_features": [],
+      "required_texture_tags": ["semantic.lightning", "luma.bright_core"],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["part03.zh.srt:00:05:33-00:05:53", "evidence/contact_sheet.jpg"]
+    },
+    {
+      "step_id": "step_003",
+      "order": 3,
+      "action": "bind_texture",
+      "authoring_stage": "texture_authoring",
+      "target_role": "core",
+      "target_layer": "LightningShapeTexture",
+      "instruction": "Photoshop 中复制图层、Ctrl+I 像素反相、最小值滤镜加粗，再用 Ctrl+T 自由变换形成粗细变化；不能据此要求复制 Unity 粒子对象。",
+      "parameter_ranges": [],
+      "required_shader_features": [],
+      "required_texture_tags": ["semantic.lightning"],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["part03.zh.srt:00:05:54-00:06:37"]
+    },
+    {
+      "step_id": "step_004",
+      "order": 4,
+      "action": "configure_timing",
+      "target_role": "core",
+      "target_layer": "MainBolt",
+      "instruction": "区分 Main.Duration、Start Lifetime 与 Emission：827到843秒示范中 Duration 保持1，Start Lifetime左字段从0.5改为0.15，右字段0.2；Rate over Time由0改为10，Burst仍在。这是操作快照，不是完整最终配置。",
+      "parameter_ranges": [],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.lightning"],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["part03.zh.srt:00:13:31-00:13:43"]
+    },
+    {
+      "step_id": "step_005",
+      "order": 5,
+      "action": "configure_particle",
+      "target_role": "core",
+      "target_layer": "MainBolt",
+      "instruction": "闪电过细时调整宽度，但保留非均匀的轮廓变化；该片段的精确 Inspector 字段和数值待画面复核。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 0.2, "maximum": 0.3, "value": 0.25},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.0, "maximum": 0.0, "value": 0.0},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.1, "maximum": 0.18, "value": 0.14},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 0.0, "maximum": 0.0, "value": 0.0},
+        {"name": "start_size_x", "unit": "units", "minimum": 4.0, "maximum": 5.5, "value": 4.8},
+        {"name": "start_size_y", "unit": "units", "minimum": 0.55, "maximum": 0.95, "value": 0.75},
+        {"name": "start_size_z", "unit": "units", "minimum": 1.0, "maximum": 1.0, "value": 1.0},
+        {"name": "start_rotation_radians", "unit": "radians", "minimum": 1.5707963, "maximum": 1.5707963, "value": 1.5707963},
+        {"name": "burst_count", "unit": "particles", "minimum": 1, "maximum": 1, "value": 1},
+        {"name": "end_size_multiplier", "unit": "ratio", "minimum": 1.0, "maximum": 1.0, "value": 1.0},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#D7EEFFFF"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.lightning", "shape.horizontal_strip"],
+      "evidence_status": "inferred",
+      "evidence_refs": ["part03.zh.srt:00:13:47-00:13:52"]
+    },
+    {
+      "step_id": "step_006",
+      "order": 6,
+      "action": "configure_timing",
+      "target_role": "core",
+      "target_layer": "MainBolt",
+      "instruction": "Color over Lifetime 使用 Fixed 模式的黑白分段。连续画面包含仍覆盖背景的黑色形体，不是仅将Alpha归零；完整源颜色键位置及Alpha键值尚未恢复。",
+      "parameter_ranges": [
+        {"name": "color_over_lifetime", "unit": "boolean", "minimum": null, "maximum": null, "value": true},
+        {"name": "gradient_mode", "unit": "Unity_GradientMode", "minimum": null, "maximum": null, "value": "Fixed"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.lightning"],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["part03.zh.srt:00:14:28-00:15:10"]
+    },
+    {
+      "step_id": "step_007",
+      "order": 7,
+      "action": "configure_shader",
+      "authoring_stage": "material_setup",
+      "target_role": "support",
+      "target_layer": "SourceQiTrail",
+      "instruction": "1518到1526秒为qi (1)/trail002的Dong/Add_uv材质选择RGB灰度Mask fx_mask_010，意图虚化切边；不是MainBolt/lightning001的Shader证据，未确认具体采样通道、Alpha Clip或切边消除程度。",
+      "parameter_ranges": [],
+      "required_shader_features": ["opacity_control"],
+      "required_texture_tags": [],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["part03.zh.srt:00:25:18-00:25:30", "knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/visual/material_color_audit_20260907/audit_report.md"]
+    },
+    {
+      "step_id": "step_008",
+      "order": 8,
+      "action": "validate_visual",
+      "target_role": "composition",
+      "target_layer": "composition",
+      "instruction": "检查主闪电的硬朗轮廓、非均匀粗细、亮黑亮短促闪动；qi辅助对象的Mask效果另行验证，不混入主体合格条件。",
+      "parameter_ranges": [],
+      "required_shader_features": [],
+      "required_texture_tags": [],
+      "evidence_status": "tutorial_fact",
+      "evidence_refs": ["evidence/contact_sheet.jpg"]
+    },
+    {
+      "step_id": "step_009",
+      "order": 9,
+      "action": "configure_particle",
+      "target_role": "support",
+      "target_layer": "OutlineVariation",
+      "instruction": "EffectDemo 2022 首轮工程映射：支撑层略宽、略暗、轻微延后，只用于验证教程的粗细层次，不声称是课程原始 Inspector 数值。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 0.22, "maximum": 0.32, "value": 0.28},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.01, "maximum": 0.01, "value": 0.01},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.12, "maximum": 0.2, "value": 0.16},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 0.0, "maximum": 0.0, "value": 0.0},
+        {"name": "start_size_x", "unit": "units", "minimum": 4.2, "maximum": 5.8, "value": 5.0},
+        {"name": "start_size_y", "unit": "units", "minimum": 0.8, "maximum": 1.3, "value": 1.05},
+        {"name": "start_size_z", "unit": "units", "minimum": 1.0, "maximum": 1.0, "value": 1.0},
+        {"name": "start_rotation_radians", "unit": "radians", "minimum": 1.5707963, "maximum": 1.5707963, "value": 1.5707963},
+        {"name": "burst_count", "unit": "particles", "minimum": 1, "maximum": 1, "value": 1},
+        {"name": "end_size_multiplier", "unit": "ratio", "minimum": 1.0, "maximum": 1.0, "value": 1.0},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#244A99A0"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.lightning"],
+      "evidence_status": "inferred",
+      "evidence_refs": ["part03.zh.srt:00:05:54-00:06:37", "evidence/contact_sheet.jpg"]
+    },
+    {
+      "step_id": "step_010",
+      "order": 10,
+      "action": "configure_timing",
+      "authoring_stage": "unity_setup",
+      "target_role": "core",
+      "target_layer": "MainBolt",
+      "instruction": "工程验证参数：依据Unity Fixed实际采样语义设置首段白、短黑、再白，并令Alpha恒为1隔离颜色机制，结束由粒子寿命控制；时间位置、灰色值和Alpha均为工程假设，不是源完整曲线。",
+      "parameter_ranges": [{
+        "name": "color_over_lifetime_gradient", "unit": "normalized_gradient", "minimum": null, "maximum": null,
+        "value": {
+          "mode": "Fixed",
+          "color_keys": [
+            {"time": 0.0, "rgb": [1.0, 1.0, 1.0]},
+            {"time": 0.18, "rgb": [1.0, 1.0, 1.0]},
+            {"time": 0.32, "rgb": [0.0, 0.0, 0.0]},
+            {"time": 0.56, "rgb": [1.0, 1.0, 1.0]},
+            {"time": 0.72, "rgb": [0.12, 0.12, 0.12]},
+            {"time": 1.0, "rgb": [1.0, 1.0, 1.0]}
+          ],
+          "alpha_keys": [{"time": 0.0, "alpha": 1.0}, {"time": 1.0, "alpha": 1.0}]
+        }
+      }],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.lightning"],
+      "evidence_status": "inferred",
+      "evidence_refs": ["knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/visual/material_color_audit_20260907/audit_report.md"]
+    }
+  ],
+  "output_contract": {
+    "required_roles": ["core"],
+    "layer_sequence": ["MainBolt"],
+    "layer_roles": {
+      "MainBolt": "core"
+    },
+    "timing_relationships": ["main_bolt_is_short_lived", "visible_black_white_flicker_within_lifetime"],
+    "quality_signals": ["hard_irregular_silhouette", "nonuniform_width", "readable_light_column", "short_pulse", "black_shape_occludes_background"]
+  },
+  "validation": {
+    "source_reproduction_status": "partial",
+    "target_project_reproduction_status": "pending",
+    "runtime_evidence_paths": [
+      "knowledge/sources/SRC-2026-GAMEVFX-001/episode_01雷之呼吸/clips/part03_middle.mp4",
+      "workspace/data/vfx_generation/procedures/procedure_lightning_shape_lifecycle_r001/evidence/contact_sheet.jpg"
+    ],
+    "visual_quality_status": "pending",
+    "known_limits": ["automatic_transcript_contains_recognition_errors", "2019.4_series_observed_exact_patch_and_pipeline_unknown", "source_stretched_billboard_and_emission_not_fully_reproduced", "full_source_gradient_keys_not_recovered", "step_009_is_optional_legacy_engineering_layer_not_a_source_requirement", "mask_is_for_qi_trail_not_main_bolt", "exact_source_texture_not_reconstructed", "not_a_complete_tutorial_reproduction"]
+  },
+  "training_eligibility": {
+    "procedure_retrieval": true,
+    "planner_constraint": true,
+    "controller_sft": false,
+    "positive_generation_supervision": false,
+    "reason": "The production tutorial provides traceable causal steps and visual evidence, but exact Inspector values and EffectDemo 2022 reproduction remain pending."
+  }
+}

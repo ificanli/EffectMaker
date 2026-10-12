@@ -1,0 +1,545 @@
+{
+  "condition": {
+    "color_keywords": [
+      "blue",
+      "white"
+    ],
+    "effect_family": "lightning",
+    "performance_tier": "standard",
+    "prompt": "风格化蓝白短促闪电，硬朗主电流和轻微粗细变化",
+    "seed": 20260907,
+    "style_family": "stylized"
+  },
+  "created_at": "2026-09-04T04:37:27.810153+00:00",
+  "graph_id": "pfg_ead25b63f1b0b8e5a618",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_b4ea1eba0031c4f5",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_57ea579a872242c2ca05",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Soul Crystal/GO_Crystal.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.574609,
+            "family": 10.0,
+            "pairing": 20.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 8.0,
+            "total": 73.574609
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_2bb5549b937ae875a1da",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/CutoutEmissionAB_CullBack",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_CutoutEmissionAB_CullBack.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_c9778f6a21f686f066cf",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning1.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_0fbd5806d287bb23",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_57ea579a872242c2ca05",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Soul Crystal/GO_Crystal.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.021829,
+            "family": 10.0,
+            "pairing": 20.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 8.0,
+            "total": 73.021829
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_2bb5549b937ae875a1da",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/CutoutEmissionAB_CullBack",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_CutoutEmissionAB_CullBack.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_dcf4d7d4316369f7fb4f",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_f436623eca93ec84",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_98cceae4d8042e10f97d",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Sakura Strike/P_ImpactSphere.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.954837,
+            "family": 10.0,
+            "pairing": 15.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 8.0,
+            "total": 68.954837
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_c49e378e0fec1046d414",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/GlowCutout",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_GlowCutout.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_c9778f6a21f686f066cf",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning1.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_9756e35bd71d5250",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fa55d34fa687019e2bad",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Void Grenade/P_CenterGlow Black.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.757825,
+            "family": 10.0,
+            "pairing": 15.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 8.0,
+            "total": 68.757825
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=core",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0000"
+          ],
+          "shader": {
+            "asset_id": "shader_c49e378e0fec1046d414",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/GlowCutout",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_GlowCutout.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_dcf4d7d4316369f7fb4f",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "node_id": "n0001",
+      "selected_candidate_id": "proposal_asset_b4ea1eba0031c4f5",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "proposal_asset_e50522807e84f01e",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_29ce962d544ba6f4a06d",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail80bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.99766,
+            "family": 10.0,
+            "pairing": 15.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 12.0,
+            "total": 72.99766
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_c9778f6a21f686f066cf",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning1.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "proposal_asset_be523b0f33922d0a",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_57ea579a872242c2ca05",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Soul Crystal/GO_Crystal.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.21371,
+            "family": 10.0,
+            "pairing": 20.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 8.0,
+            "total": 73.21371
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_2bb5549b937ae875a1da",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/CutoutEmissionAB_CullBack",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_CutoutEmissionAB_CullBack.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_c9778f6a21f686f066cf",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning1.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_NoiseTex"
+        },
+        {
+          "candidate_id": "proposal_asset_c576d1df7743d7c8",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_57ea579a872242c2ca05",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Soul Crystal/GO_Crystal.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.110325,
+            "family": 10.0,
+            "pairing": 20.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 8.0,
+            "total": 73.110325
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_2bb5549b937ae875a1da",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/CutoutEmissionAB_CullBack",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_CutoutEmissionAB_CullBack.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_dcf4d7d4316369f7fb4f",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_NoiseTex"
+        },
+        {
+          "candidate_id": "proposal_asset_3c30be799eb742eb",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_cfef81df18a1b8b96b15",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Waves22cg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.99654,
+            "family": 10.0,
+            "pairing": 15.0,
+            "performance": 4.0,
+            "pipeline": 3.0,
+            "role": 16.0,
+            "slot": 12.0,
+            "style": 12.0,
+            "total": 72.99654
+          },
+          "selection_basis": [
+            "controlled texture rebind passed Shader property and semantic contracts",
+            "layer_role=support",
+            "shader capability contract passed",
+            "texture semantic contract passed",
+            "Unity compile, readback and runtime validation remain required",
+            "component_id=p0001"
+          ],
+          "shader": {
+            "asset_id": "shader_5ea0012bd0d5dabe96a0",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Add_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_dcf4d7d4316369f7fb4f",
+            "binding_status": "project_bindable",
+            "path": "Assets/Epic Toon FX/Textures/lightning2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.noise_control",
+              "semantic.lightning",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0001",
+      "layer_role": "support",
+      "node_id": "n0002",
+      "selected_candidate_id": "proposal_asset_e50522807e84f01e",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_ead25b63f1b0b8e5a618",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 2,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 2
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "neural_asset_pair_ranking": false,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

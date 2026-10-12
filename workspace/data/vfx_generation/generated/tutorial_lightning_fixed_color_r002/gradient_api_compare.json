@@ -1,0 +1,360 @@
+{
+    "unity_version": "2022.3.62f3c1",
+    "color_space": "Linear",
+    "cases": [
+        {
+            "case_id": "before_fixed_alpha_curve",
+            "particles": [
+                {
+                    "name": "MainBolt",
+                    "start_color": [
+                        0.7129999995231628,
+                        0.824999988079071,
+                        1.0,
+                        1.0
+                    ],
+                    "lifetime": {
+                        "mode": "Fixed",
+                        "color_keys": [
+                            {
+                                "time": 0.0,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "time": 0.17999541759490968,
+                                "rgb": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            },
+                            {
+                                "time": 0.3199969530105591,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "time": 0.5600060820579529,
+                                "rgb": [
+                                    0.11999999731779099,
+                                    0.11999999731779099,
+                                    0.11999999731779099
+                                ]
+                            },
+                            {
+                                "time": 0.7199969291687012,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "time": 1.0,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ],
+                        "alpha_keys": [
+                            {
+                                "time": 0.0,
+                                "alpha": 1.0
+                            },
+                            {
+                                "time": 0.8399938941001892,
+                                "alpha": 0.4000000059604645
+                            },
+                            {
+                                "time": 1.0,
+                                "alpha": 0.0
+                            }
+                        ]
+                    },
+                    "initial_vertex_color_product": [
+                        0.7129999995231628,
+                        0.824999988079071,
+                        1.0,
+                        1.0
+                    ],
+                    "shader": "Universal Render Pipeline/Particles/Unlit",
+                    "material": "Assets/Generated/TutorialLightningFixedColorR001/tutorial_fixed/Materials/pfg_1e674b30689fdfd87b98_p0000.mat",
+                    "material_colors": [
+                        {
+                            "name": "_BaseColor",
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "name": "_EmissionColor",
+                            "rgba": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "name": "_Color",
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "vertex_streams": [
+                        "Position",
+                        "Color",
+                        "UV"
+                    ],
+                    "lifetime_samples": [
+                        {
+                            "time": 0.0,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "time": 0.10000000149011612,
+                            "rgba": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                0.4000000059604645
+                            ]
+                        },
+                        {
+                            "time": 0.25,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                0.4000000059604645
+                            ]
+                        },
+                        {
+                            "time": 0.5,
+                            "rgba": [
+                                0.11999999731779099,
+                                0.11999999731779099,
+                                0.11999999731779099,
+                                0.4000000059604645
+                            ]
+                        },
+                        {
+                            "time": 0.800000011920929,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                0.4000000059604645
+                            ]
+                        },
+                        {
+                            "time": 1.0,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "case_id": "after_fixed_constant_alpha",
+            "particles": [
+                {
+                    "name": "MainBolt",
+                    "start_color": [
+                        0.7129999995231628,
+                        0.824999988079071,
+                        1.0,
+                        1.0
+                    ],
+                    "lifetime": {
+                        "mode": "Fixed",
+                        "color_keys": [
+                            {
+                                "time": 0.0,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "time": 0.17999541759490968,
+                                "rgb": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            },
+                            {
+                                "time": 0.3199969530105591,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "time": 0.5600060820579529,
+                                "rgb": [
+                                    0.11999999731779099,
+                                    0.11999999731779099,
+                                    0.11999999731779099
+                                ]
+                            },
+                            {
+                                "time": 0.7199969291687012,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            },
+                            {
+                                "time": 1.0,
+                                "rgb": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ]
+                            }
+                        ],
+                        "alpha_keys": [
+                            {
+                                "time": 0.0,
+                                "alpha": 1.0
+                            },
+                            {
+                                "time": 1.0,
+                                "alpha": 1.0
+                            }
+                        ]
+                    },
+                    "initial_vertex_color_product": [
+                        0.7129999995231628,
+                        0.824999988079071,
+                        1.0,
+                        1.0
+                    ],
+                    "shader": "Universal Render Pipeline/Particles/Unlit",
+                    "material": "Assets/Generated/TutorialLightningFixedColorR002/tutorial_fixed/Materials/pfg_db3bd3af17a5f5793c97_p0000.mat",
+                    "material_colors": [
+                        {
+                            "name": "_BaseColor",
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "name": "_EmissionColor",
+                            "rgba": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "name": "_Color",
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ],
+                    "vertex_streams": [
+                        "Position",
+                        "Color",
+                        "UV"
+                    ],
+                    "lifetime_samples": [
+                        {
+                            "time": 0.0,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "time": 0.10000000149011612,
+                            "rgba": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "time": 0.25,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "time": 0.5,
+                            "rgba": [
+                                0.11999999731779099,
+                                0.11999999731779099,
+                                0.11999999731779099,
+                                1.0
+                            ]
+                        },
+                        {
+                            "time": 0.800000011920929,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "time": 1.0,
+                            "rgba": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,636 @@
+{
+  "asset_bindings": {
+    "materials": [
+      "Assets/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat",
+      "Assets/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_trail04.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_03.mat"
+    ],
+    "meshes": []
+  },
+  "components": {
+    "animations": [],
+    "particle_systems": [
+      {
+        "component_id": "p0000",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0001",
+        "parameters": {
+          "burst_particle_count": 1,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 1.0,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            1.0,
+            0.839216,
+            0.360784,
+            0.0
+          ],
+          "end_size_multiplier": 0.35,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat",
+          "max_particles": 16,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "support",
+            "procedure_id": "procedure_fireworks_layered_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_001"
+            ],
+            "profile": "tutorial_procedure_particle_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 8,
+          "start_color_rgba": [
+            1.0,
+            0.839216,
+            0.360784,
+            1.0
+          ],
+          "start_delay_max": 0.0,
+          "start_lifetime_max": 0.825,
+          "start_rotation_max": 1.923830828687913,
+          "start_size_3d": false,
+          "start_size_max": 0.18558994110076904,
+          "start_size_x_max": 0.18,
+          "start_size_y_max": 0.18,
+          "start_size_z_max": 0.18,
+          "start_speed_max": 6.3,
+          "texture_asset_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0001",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0002",
+        "parameters": {
+          "burst_particle_count": 24,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.9,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            1.0,
+            0.541176,
+            0.196078,
+            0.0
+          ],
+          "end_size_multiplier": 0.35,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_trail04.mat",
+          "max_particles": 48,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "support",
+            "procedure_id": "procedure_fireworks_layered_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_002"
+            ],
+            "profile": "tutorial_procedure_particle_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 8,
+          "start_color_rgba": [
+            1.0,
+            0.541176,
+            0.196078,
+            1.0
+          ],
+          "start_delay_max": 0.15,
+          "start_lifetime_max": 0.5249999999999999,
+          "start_rotation_max": 0.24613760943379015,
+          "start_size_3d": false,
+          "start_size_max": 0.11074544494197212,
+          "start_size_x_max": 0.11000000000000001,
+          "start_size_y_max": 0.11000000000000001,
+          "start_size_z_max": 0.11000000000000001,
+          "start_speed_max": 0.575,
+          "texture_asset_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0002",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0003",
+        "parameters": {
+          "burst_particle_count": 16,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.45,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 0.15,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat",
+          "max_particles": 32,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "core",
+            "procedure_id": "procedure_fireworks_layered_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_003"
+            ],
+            "profile": "tutorial_procedure_particle_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 12,
+          "start_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "start_delay_max": 0.75,
+          "start_lifetime_max": 0.335,
+          "start_rotation_max": 3.7773351677627045,
+          "start_size_3d": true,
+          "start_size_max": 0.47507885324693483,
+          "start_size_x_max": 0.475,
+          "start_size_y_max": 0.475,
+          "start_size_z_max": 0.475,
+          "start_speed_max": 1.1,
+          "texture_asset_path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flare31.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0003",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0004",
+        "parameters": {
+          "burst_particle_count": 64,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 1.5,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            1.0,
+            0.415686,
+            0.141176,
+            0.0
+          ],
+          "end_size_multiplier": 0.1,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat",
+          "max_particles": 128,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "hit",
+            "procedure_id": "procedure_fireworks_layered_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_004"
+            ],
+            "profile": "tutorial_procedure_particle_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": true,
+          "shape_radius": 0.35,
+          "shape_type": "Sphere",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 10,
+          "start_color_rgba": [
+            1.0,
+            0.415686,
+            0.141176,
+            1.0
+          ],
+          "start_delay_max": 0.78,
+          "start_lifetime_max": 1.1,
+          "start_rotation_max": 4.8729581222412115,
+          "start_size_3d": false,
+          "start_size_max": 0.16337455310527166,
+          "start_size_x_max": 0.16999999999999998,
+          "start_size_y_max": 0.16999999999999998,
+          "start_size_z_max": 0.16999999999999998,
+          "start_speed_max": 4.2,
+          "texture_asset_path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash31.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0004",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0005",
+        "parameters": {
+          "burst_particle_count": 20,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 2.1,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.478431,
+            0.141176,
+            0.078431,
+            0.0
+          ],
+          "end_size_multiplier": 0.55,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_03.mat",
+          "max_particles": 40,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "residual",
+            "procedure_id": "procedure_fireworks_layered_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_005"
+            ],
+            "profile": "tutorial_procedure_particle_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 4,
+          "start_color_rgba": [
+            0.478431,
+            0.141176,
+            0.078431,
+            1.0
+          ],
+          "start_delay_max": 0.82,
+          "start_lifetime_max": 1.5,
+          "start_rotation_max": 1.2481011875317276,
+          "start_size_3d": false,
+          "start_size_max": 0.1086704087090888,
+          "start_size_x_max": 0.10500000000000001,
+          "start_size_y_max": 0.10500000000000001,
+          "start_size_z_max": 0.10500000000000001,
+          "start_speed_max": 0.775,
+          "texture_asset_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      }
+    ],
+    "renderers": [
+      {
+        "component_id": "r0000",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0001",
+        "parameters": {
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ],
+          "particle_render_mode": "Billboard",
+          "sorting_order": 8
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0001",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0002",
+        "parameters": {
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ],
+          "particle_render_mode": "Billboard",
+          "sorting_order": 8
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0002",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0003",
+        "parameters": {
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ],
+          "particle_render_mode": "Billboard",
+          "sorting_order": 12
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0003",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0004",
+        "parameters": {
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ],
+          "particle_render_mode": "Billboard",
+          "sorting_order": 10
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0004",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0005",
+        "parameters": {
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ],
+          "particle_render_mode": "Billboard",
+          "sorting_order": 4
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      }
+    ]
+  },
+  "condition": {
+    "effect_family": "fire",
+    "parent_prefab_path": null,
+    "prompt": "风格化橙红烟花，先上升，再爆炸，峰值后留下暗红火星",
+    "seed": 20260906,
+    "style_family": "stylized"
+  },
+  "graph_id": "pfg_21fa0d3b7dcefeea4574",
+  "nodes": [
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.Transform"
+      ],
+      "depth": 0,
+      "hierarchy_path": "GeneratedRoot[0]",
+      "name": "GeneratedRoot",
+      "node_id": "n0000",
+      "parent_node_id": null,
+      "role": "root",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/Launch[0]",
+      "name": "Launch",
+      "node_id": "n0001",
+      "parent_node_id": "n0000",
+      "role": "support",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/AscentTrail[1]",
+      "name": "AscentTrail",
+      "node_id": "n0002",
+      "parent_node_id": "n0000",
+      "role": "support",
+      "sibling_index": 1,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/ExplosionCore[2]",
+      "name": "ExplosionCore",
+      "node_id": "n0003",
+      "parent_node_id": "n0000",
+      "role": "core",
+      "sibling_index": 2,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/RadialBranches[3]",
+      "name": "RadialBranches",
+      "node_id": "n0004",
+      "parent_node_id": "n0000",
+      "role": "hit",
+      "sibling_index": 3,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/Residue[4]",
+      "name": "Residue",
+      "node_id": "n0005",
+      "parent_node_id": "n0000",
+      "role": "residual",
+      "sibling_index": 4,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "assumptions": [
+      "Layer order and bounded parameters come from a traceable ProcedureSpec.",
+      "Material, Shader and Texture remain unbound until contract-aware asset routing passes.",
+      "Technical execution does not imply professional visual acceptance."
+    ],
+    "exporter": "prefab_graph_constrained.v1",
+    "source_dataset_id": "tutorial_procedure_generation_r001",
+    "source_run_id": "procedure_fireworks_layered_lifecycle_r001"
+  },
+  "reconstruction": {
+    "compiler_profile": "particle_v1",
+    "missing_fields": [],
+    "status": "reconstructable",
+    "unsupported_components": []
+  },
+  "root_node_id": "n0000",
+  "schema_version": "vfx_prefab_graph.v1",
+  "source": {
+    "prefab_path": null,
+    "source_example_id": null,
+    "source_kind": "generated"
+  },
+  "training": {
+    "aesthetic_label_source": "ai_hypothesis",
+    "eligible_tasks": [
+      "component_prediction",
+      "hierarchy_modeling",
+      "particle_parameter_modeling",
+      "full_reconstruction"
+    ],
+    "excluded_tasks": [
+      "aesthetic_preference",
+      "prompt_condition"
+    ]
+  }
+}

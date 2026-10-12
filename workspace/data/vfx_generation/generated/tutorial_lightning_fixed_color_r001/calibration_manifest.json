@@ -1,0 +1,110 @@
+{
+  "run_id": "tutorial_lightning_fixed_color_r001",
+  "source_procedure": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\procedures\\procedure_lightning_shape_lifecycle_r001\\procedure_spec.json",
+  "prompt": "风格化蓝白纵向闪电，持续0.3秒",
+  "execution_controls": {
+    "schema_version": "vfx_prompt_execution_controls.v1",
+    "implementation": "bounded_rule_based_executor_not_trained_planner",
+    "prompt": "风格化蓝白纵向闪电，持续0.3秒",
+    "applied_controls": [
+      "color",
+      "direction",
+      "duration"
+    ],
+    "unresolved_intents": [
+      "style_requires_visual_validation:stylized"
+    ],
+    "target_visual_duration_seconds": 0.3,
+    "field_changes": [
+      {
+        "component_id": "p0000",
+        "field": "start_color_rgba",
+        "before": [
+          0.843137,
+          0.933333,
+          1.0,
+          1.0
+        ],
+        "after": [
+          0.713,
+          0.825,
+          1.0,
+          1.0
+        ],
+        "control": "color"
+      },
+      {
+        "component_id": "p0000",
+        "field": "start_rotation_max",
+        "before": 1.5707963,
+        "after": 1.57079633,
+        "control": "direction"
+      },
+      {
+        "component_id": "p0000",
+        "field": "start_lifetime_max",
+        "before": 0.14,
+        "after": 0.3,
+        "control": "duration"
+      },
+      {
+        "component_id": "p0000",
+        "field": "duration_seconds",
+        "before": 0.25,
+        "after": 0.53571429,
+        "control": "duration"
+      }
+    ],
+    "before_execution_sha256": "51369823f1d075ef031f2735919cca30f37dbf9bc909ae99a1b20ddad8ea965c",
+    "after_execution_sha256": "3cb86a3c9d45c35caaa7e810c99cf807e611cace4f618bea19d529af85ea8e9b",
+    "full_prompt_understanding": false,
+    "training_eligibility": {
+      "controller_sft": false,
+      "positive_generation_supervision": false
+    },
+    "inferred_parameter_step_ids": [
+      "step_005",
+      "step_009",
+      "step_010"
+    ]
+  },
+  "material_recipe": {
+    "selection": "explicit_calibrated_probe_not_automatic_asset_ranking",
+    "template": "Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat",
+    "shader": "Universal Render Pipeline/Particles/Unlit",
+    "reference_run": "particle_color_calibration_r002"
+  },
+  "cases": [
+    {
+      "case_id": "tutorial_fixed",
+      "prefab_path": "Assets/Generated/TutorialLightningFixedColorR001/tutorial_fixed/GeneratedRoot.prefab",
+      "graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\graph.json",
+      "compile_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\compile_result.json",
+      "readback_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\readback_result.json",
+      "readback_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\readback.json",
+      "capture_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\capture_manifest.json"
+    },
+    {
+      "case_id": "tutorial_blend_control",
+      "prefab_path": "Assets/Generated/TutorialLightningFixedColorR001/tutorial_blend_control/GeneratedRoot.prefab",
+      "graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\graph.json",
+      "compile_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\compile_result.json",
+      "readback_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\readback_result.json",
+      "readback_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\readback.json",
+      "capture_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\capture_manifest.json"
+    },
+    {
+      "case_id": "alpha_only_control",
+      "prefab_path": "Assets/Generated/TutorialLightningFixedColorR001/alpha_only_control/GeneratedRoot.prefab",
+      "graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\graph.json",
+      "compile_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\compile_result.json",
+      "readback_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\readback_result.json",
+      "readback_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\readback.json",
+      "capture_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\capture_manifest.json"
+    }
+  ],
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false
+  }
+}

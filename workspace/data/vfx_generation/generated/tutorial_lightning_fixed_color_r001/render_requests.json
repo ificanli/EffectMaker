@@ -1,0 +1,67 @@
+{
+  "schema_version": "effectdemo_source_render_requests.v1",
+  "run_id": "tutorial_lightning_fixed_color_r001",
+  "scene": "ParticleColorCalibration",
+  "camera": "CalibrationCamera",
+  "width": 640,
+  "height": 480,
+  "background_color_rgba": [
+    0.22,
+    0.22,
+    0.22,
+    1.0
+  ],
+  "sampling_mode": "adaptive_runtime",
+  "sampling": {
+    "target_intervals": 24,
+    "short_effect_target_intervals": 24,
+    "min_interval_seconds": 0.005,
+    "max_interval_seconds": 0.01,
+    "max_duration_seconds": 0.4,
+    "include_zero": true,
+    "duration_sources": [
+      "particle_system"
+    ]
+  },
+  "requests": [
+    {
+      "candidate_id": "tutorial_fixed",
+      "random_seed_key": "particle_color_calibration_20260907",
+      "prefab_path": "Assets/Generated/TutorialLightningFixedColorR001/tutorial_fixed/GeneratedRoot.prefab",
+      "capture_dir": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\captures",
+      "capture_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\capture_manifest.json",
+      "material_timeline_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_fixed\\material_timeline.json",
+      "source_script_fidelity": "generated_graph_no_source_scripts",
+      "capture_category": "lightning",
+      "force_orthographic": true,
+      "forced_camera_view": "front",
+      "forced_orthographic_size": 3.2
+    },
+    {
+      "candidate_id": "tutorial_blend_control",
+      "random_seed_key": "particle_color_calibration_20260907",
+      "prefab_path": "Assets/Generated/TutorialLightningFixedColorR001/tutorial_blend_control/GeneratedRoot.prefab",
+      "capture_dir": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\captures",
+      "capture_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\capture_manifest.json",
+      "material_timeline_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\tutorial_blend_control\\material_timeline.json",
+      "source_script_fidelity": "generated_graph_no_source_scripts",
+      "capture_category": "lightning",
+      "force_orthographic": true,
+      "forced_camera_view": "front",
+      "forced_orthographic_size": 3.2
+    },
+    {
+      "candidate_id": "alpha_only_control",
+      "random_seed_key": "particle_color_calibration_20260907",
+      "prefab_path": "Assets/Generated/TutorialLightningFixedColorR001/alpha_only_control/GeneratedRoot.prefab",
+      "capture_dir": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\captures",
+      "capture_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\capture_manifest.json",
+      "material_timeline_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r001\\alpha_only_control\\material_timeline.json",
+      "source_script_fidelity": "generated_graph_no_source_scripts",
+      "capture_category": "lightning",
+      "force_orthographic": true,
+      "forced_camera_view": "front",
+      "forced_orthographic_size": 3.2
+    }
+  ]
+}

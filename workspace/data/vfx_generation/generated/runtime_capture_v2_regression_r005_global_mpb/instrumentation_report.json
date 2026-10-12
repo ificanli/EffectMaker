@@ -1,0 +1,58 @@
+{
+  "negative_controls": [
+    {
+      "category": "ground",
+      "full_visual_training_eligible": false,
+      "global_shader_state_status": "not_instrumented_unknown_shader"
+    },
+    {
+      "category": "instant",
+      "full_visual_training_eligible": false,
+      "global_shader_state_status": "not_instrumented_unknown_shader"
+    },
+    {
+      "category": "moving",
+      "full_visual_training_eligible": false,
+      "global_shader_state_status": "not_instrumented_missing_global_write"
+    },
+    {
+      "category": "ui",
+      "full_visual_training_eligible": false,
+      "global_shader_state_status": "not_instrumented_unknown_shader"
+    }
+  ],
+  "probe": {
+    "full_visual_training_eligible": true,
+    "global_shader_delta_count": 10,
+    "global_shader_state_status": "instrumented",
+    "global_shader_value_count": 1,
+    "has_unenumerated_property_block_values": false,
+    "invalid_frame_count": 0,
+    "signal_counts": {
+      "dissolve_parameter_changed": 10,
+      "material_instance_replaced": 1,
+      "material_property_changed": 11,
+      "shader_global_changed": 10,
+      "shader_keywords_changed": 1,
+      "slot_property_block_changed": 20,
+      "texture_changed": 1
+    },
+    "valid_frame_count": 11,
+    "visual_evidence_status": "full_visual_evidence"
+  },
+  "quality_gates": {
+    "dissolve_covered": true,
+    "keyword_covered": true,
+    "material_replace_covered": true,
+    "mpb_covered": true,
+    "negative_controls_not_full": true,
+    "probe_full_visual": true,
+    "regression_pass": true,
+    "shader_global_covered": true,
+    "texture_covered": true
+  },
+  "regression_status": "pass",
+  "schema_version": "effectdemo_dynamic_material_instrumentation_report.v1",
+  "source_regression": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r005_global_mpb/regression_report.json",
+  "status": "pass"
+}
