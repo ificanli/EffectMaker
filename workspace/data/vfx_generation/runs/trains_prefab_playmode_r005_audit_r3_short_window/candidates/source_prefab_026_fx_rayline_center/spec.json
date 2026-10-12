@@ -1,0 +1,134 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: Fx_rayline_center.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "sample_trn_fx_all_001",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trains_prefab_playmode_r005_audit_r3_short_window",
+    "candidate_id": "source_prefab_026_fx_rayline_center",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/eff/Fx_rayline_center.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+          "texture_tag_index_status": "loaded",
+          "texture_tag_index_record_count": 36550,
+          "texture_tagging_status": "required_for_slot_selection",
+          "selection_basis": [
+            "shader paths come from resolved material dependency edges",
+            "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+            "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+          ],
+          "prefab_material_count": 2,
+          "resolved_material_count": 1,
+          "missing_material_selection_count": 1,
+          "missing_material_paths": [
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/mat/Mat_rayline_circle.mat"
+          ],
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan5.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            }
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "SourceIngestBatchScene",
+    "camera": "SourceIngestReviewCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [],
+    "sampling_mode": "adaptive_runtime",
+    "sampling_plan": {
+      "target_intervals": 10,
+      "min_interval_seconds": 0.02,
+      "max_interval_seconds": 0.1,
+      "max_duration_seconds": 3.0,
+      "include_zero": true,
+      "duration_sources": [
+        "particle_system",
+        "animator",
+        "animation",
+        "playable_director"
+      ]
+    },
+    "material_state_capture": {
+      "required": true,
+      "timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_026_fx_rayline_center/material_timeline.json",
+      "source_script_fidelity": "no_ignored_script_dependencies",
+      "ignored_script_dependency_count": 0,
+      "ignored_script_paths": []
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: Fx_Jiatelin_kaiqiang.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_IGNORE_EFFECT_PREFABS_003",
+    "case_id": "sample_trn_ignore_effect_prefabs_003",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trn_ignore_effect_prefabs_003_r001",
+    "candidate_id": "source_prefab_009_fx_jiatelin_kaiqiang",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/IgnoreEffectPrefab/Fx_Jiatelin_kaiqiang.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "texture_tag_index_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_ignore_effect_prefabs_003/texture_tags.jsonl",
+          "texture_tag_index_status": "loaded",
+          "texture_tag_index_record_count": 84,
+          "texture_tagging_status": "required_for_slot_selection",
+          "selection_basis": [
+            "shader paths come from resolved material dependency edges",
+            "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+            "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+          ],
+          "prefab_material_count": 5,
+          "resolved_material_count": 5,
+          "missing_material_selection_count": 0,
+          "missing_material_paths": [],
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/__Materials/Mat_27_Glow_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/guangyun/magic_orb.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/guangyun/magic_orb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "8d5a3325f814b5c1838ea0736b0fbbd526f4142fa1c82acdcf93b962c54d5166",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.512x512",
+                    "slot.alpha_mask"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 512,
+                  "height": 512
+                }
+              ],
+              "tagged_texture_count": 1,
+              "untagged_texture_count": 0,
+              "slot_role_hints": [
+                "alpha_mask"
+              ],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/__Materials/Mat_27_Glow_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/guangyun/shj_4.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/guangyun/shj_4.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "b092a6903fe21f2faed69065d8dc6fd323769923dfe38fac5ca3472d1449e3b5",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.alpha_mask"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 128,
+                  "height": 128
+                }
+              ],
+              "tagged_texture_count": 1,
+              "untagged_texture_count": 0,
+              "slot_role_hints": [
+                "alpha_mask"
+              ],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/__Materials/Mat_27_somke_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/_noise/Tex_27_Noise_02.png",
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/guangyun/shj_5.png",
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/yanwu/yanchen.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/_noise/Tex_27_Noise_02.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "19bc74da8d6d0612ca8088b00f651a0a7fe2e8bdcef675479e56268fa7543691",
+                  "tags": [
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask",
+                    "dissolve_map",
+                    "distortion_map"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/guangyun/shj_5.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "87189f363012e2420cc40d5f1ddfb71f2c60076125856fb48d197fd59b057659",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.alpha_mask"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/yanwu/yanchen.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "a37d79e2ac08b7a3e55537bd57e1d1ac0619243783b6c7e0bc265e06d0c75cf3",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "tagged_texture_count": 3,
+              "untagged_texture_count": 0,
+              "slot_role_hints": [
+                "alpha_mask",
+                "dissolve_map",
+                "distortion_map"
+              ],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/daqiang/Mat_jiatelin_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/_noise/Tex_27_Noise_01.png",
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/daqiang/Tex_jiatelin_01.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/_noise/Tex_27_Noise_01.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "d5ad2595b22f05cf543192aba55c43d19f4846f238636110662bd9fc311dc9d5",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "slot_roles": [
+                    "dissolve_map",
+                    "distortion_map"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/daqiang/Tex_jiatelin_01.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "8298d93d34e12059b5c3a4203771c064bcbc1d811cc77318c5627813553b49a9",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.alpha_mask"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 128,
+                  "height": 128
+                }
+              ],
+              "tagged_texture_count": 2,
+              "untagged_texture_count": 0,
+              "slot_role_hints": [
+                "alpha_mask",
+                "dissolve_map",
+                "distortion_map"
+              ],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/daqiang/Mat_jiatelin_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/_noise/Tex_27_Noise_01.png",
+                "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/daqiang/Tex_jiatelin_02.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/_noise/Tex_27_Noise_01.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "d5ad2595b22f05cf543192aba55c43d19f4846f238636110662bd9fc311dc9d5",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "slot_roles": [
+                    "dissolve_map",
+                    "distortion_map"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_003/ArtResources/Effect/daqiang/Tex_jiatelin_02.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": "asset_id",
+                  "tag_source": "texture_tag_index",
+                  "asset_id": "16c667a0df81c038992ace28abc3ace5ecd66c5a243c1849ab7415573e9307e6",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.alpha_mask"
+                  ],
+                  "slot_roles": [
+                    "alpha_mask"
+                  ],
+                  "license_status": "local_reference_only",
+                  "thumbnail_status": null,
+                  "width": 128,
+                  "height": 128
+                }
+              ],
+              "tagged_texture_count": 2,
+              "untagged_texture_count": 0,
+              "slot_role_hints": [
+                "alpha_mask",
+                "dissolve_map",
+                "distortion_map"
+              ],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            }
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "SourceIngestBatchScene",
+    "camera": "SourceIngestReviewCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [
+      0.0,
+      0.08,
+      0.16,
+      0.32,
+      0.64
+    ]
+  }
+}
