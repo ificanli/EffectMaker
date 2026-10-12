@@ -1,0 +1,62 @@
+{
+    "schema_version": "vfx_prefab_graph_compile_result.v1",
+    "created_at": "2026-09-03T22:46:09.1385471Z",
+    "graph_id": "pfg_ef81131d089b8e795b24",
+    "status": "pass",
+    "output_prefab_path": "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/GeneratedRoot.prefab",
+    "source_prefab_read": false,
+    "node_count": 5,
+    "particle_system_count": 4,
+    "generated_material_paths": [
+        "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0000.mat",
+        "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0001.mat",
+        "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0003.mat",
+        "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0002.mat"
+    ],
+    "generated_texture_paths": [],
+    "bound_texture_paths": [
+        "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Hit_1.png"
+    ],
+    "generated_shader_names": [
+        "QFX/ProjectilesFX/Particles",
+        "QFX/ProjectilesFX/Particles",
+        "QFX/ProjectilesFX/Particles",
+        "QFX/ProjectilesFX/Particles"
+    ],
+    "material_template_paths": [
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat"
+    ],
+    "material_texture_readbacks": [
+        {
+            "renderer_name": "ContactHit",
+            "material_path": "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0003.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Hit_1.png"
+        },
+        {
+            "renderer_name": "DirectionTrail",
+            "material_path": "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0002.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png"
+        },
+        {
+            "renderer_name": "InnerSupport",
+            "material_path": "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0001.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png"
+        },
+        {
+            "renderer_name": "OuterBlade",
+            "material_path": "Assets/Generated/LayeredSlashFamilyR007/layered_slash_002_pfg_ef81131d089b8e795b24/Materials/pfg_ef81131d089b8e795b24_p0000.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png"
+        }
+    ],
+    "planned_texture_readback_match": true,
+    "error": ""
+}
