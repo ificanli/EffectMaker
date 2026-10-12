@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unity VFX 智能制作 | 阶段汇报与架构</title>
+  <style>
+    :root {
+      --ink: #e9eef4;
+      --muted: #9aa8b6;
+      --dim: #6f7e8c;
+      --bg: #10151b;
+      --panel: #171e26;
+      --panel-2: #1d2731;
+      --line: #2b3946;
+      --cyan: #49c7d6;
+      --yellow: #f3c969;
+      --coral: #ee8d72;
+      --green: #7cc58e;
+      --blue: #83a9f4;
+      --shadow: 0 12px 32px rgba(0, 0, 0, .24);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.65 "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+    a { color: inherit; }
+    code, pre, .mono { font-family: Consolas, "Cascadia Code", monospace; }
+    code { color: var(--yellow); overflow-wrap: anywhere; }
+
+    .app {
+      display: grid;
+      grid-template-columns: 248px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 26px 18px;
+      border-right: 1px solid var(--line);
+      background: #121920;
+    }
+    .brand {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    .brand-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .brand strong { display: block; font-size: 14px; letter-spacing: .02em; }
+    .brand small { display: block; color: var(--dim); font-size: 11px; }
+    .nav-title {
+      margin: 20px 10px 8px;
+      color: var(--dim);
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    nav a {
+      display: block;
+      padding: 8px 10px;
+      border-left: 2px solid transparent;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    nav a:hover, nav a:focus-visible {
+      border-left-color: var(--cyan);
+      background: var(--panel-2);
+      color: var(--ink);
+      outline: none;
+    }
+    .side-note {
+      margin-top: 26px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      background: #151d25;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .side-note b { color: var(--green); }
+
+    main { min-width: 0; }
+    .content { max-width: 1240px; margin: 0 auto; padding: 0 34px 70px; }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      gap: 26px;
+      align-items: flex-end;
+      padding: 52px 0 34px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      margin: 0 0 9px;
+      color: var(--cyan);
+      font-size: 12px;
+      letter-spacing: .13em;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 760px; margin-bottom: 12px; font-size: clamp(28px, 4vw, 48px); line-height: 1.15; letter-spacing: 0; }
+    h2 { margin-bottom: 9px; font-size: 25px; line-height: 1.25; }
+    h3 { margin-bottom: 7px; font-size: 17px; }
+    .hero p { max-width: 760px; margin-bottom: 0; color: var(--muted); font-size: 16px; }
+    .hero-status { min-width: 205px; padding: 14px; border: 1px solid var(--line); background: var(--panel); }
+    .hero-status span { display: block; color: var(--dim); font-size: 11px; }
+    .hero-status strong { display: block; margin: 4px 0; color: var(--yellow); font-size: 17px; }
+    .hero-status small { color: var(--muted); }
+
+    section { scroll-margin-top: 18px; padding: 42px 0; border-bottom: 1px solid var(--line); }
+    .section-head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-end; margin-bottom: 23px; }
+    .section-head p { max-width: 650px; margin-bottom: 0; color: var(--muted); }
+    .callout {
+      padding: 16px 18px;
+      border-left: 3px solid var(--yellow);
+      background: #20242a;
+      color: var(--muted);
+    }
+    .callout strong { color: var(--ink); }
+    .callout.warn { border-left-color: var(--coral); }
+    .callout.good { border-left-color: var(--green); }
+    .panel, .callout, .hero-status, .section-head, .state, .role, .next-step { min-width: 0; }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(130px, 1fr));
+      gap: 10px;
+    }
+    .flow-node {
+      min-height: 116px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--cyan);
+      background: var(--panel);
+      color: var(--ink);
+      text-align: left;
+      cursor: pointer;
+      transition: border-color .15s, background .15s, transform .15s;
+    }
+    .flow-node:hover, .flow-node:focus-visible, .flow-node.active {
+      border-color: var(--yellow);
+      background: var(--panel-2);
+      outline: none;
+      transform: translateY(-2px);
+    }
+    .flow-node .num { display: block; margin-bottom: 8px; color: var(--cyan); font: 12px Consolas, monospace; }
+    .flow-node strong { display: block; margin-bottom: 5px; font-size: 15px; }
+    .flow-node small { display: block; color: var(--muted); line-height: 1.45; }
+    .flow-detail {
+      min-height: 100px;
+      margin-top: 14px;
+      padding: 17px 19px;
+      border: 1px solid var(--line);
+      background: #141b22;
+    }
+    .flow-detail strong { color: var(--yellow); }
+    .flow-detail p { margin: 5px 0 0; color: var(--muted); }
+
+    .two-col { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); gap: 18px; }
+    .panel { padding: 19px; border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); }
+    .panel > :last-child { margin-bottom: 0; }
+    .code-block {
+      max-height: 560px;
+      overflow: auto;
+      margin: 0;
+      padding: 18px;
+      border: 1px solid #334451;
+      background: #0d1217;
+      color: #c4d2de;
+      font-size: 12px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .code-key { color: var(--cyan); }
+    .code-value { color: var(--yellow); }
+    .spec-list { display: grid; gap: 9px; }
+    .spec-item {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid var(--line);
+      background: #19222b;
+      color: var(--muted);
+      text-align: left;
+      cursor: pointer;
+    }
+    .spec-item:hover, .spec-item:focus-visible, .spec-item.active { border-color: var(--cyan); color: var(--ink); outline: none; }
+    .spec-item b { display: block; margin-bottom: 2px; color: var(--yellow); font: 13px Consolas, monospace; }
+    .spec-item span { display: block; font-size: 13px; }
+    .spec-explain { min-height: 112px; margin-top: 12px; padding: 13px; border-left: 2px solid var(--cyan); background: #121920; color: var(--muted); font-size: 13px; }
+
+    .evidence-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+    figure { margin: 0; min-width: 0; }
+    figure img { display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: #080b0e; object-fit: cover; }
+    figure img.material-proof { object-fit: contain; }
+    figcaption { padding-top: 9px; color: var(--muted); font-size: 12px; }
+    figcaption b { display: block; margin-bottom: 3px; color: var(--ink); font-size: 13px; }
+    .source { color: var(--dim); font: 10px/1.35 Consolas, monospace; word-break: break-all; }
+
+    .role-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .role { padding: 17px; border: 1px solid var(--line); background: var(--panel); }
+    .role .role-tag { display: inline-block; margin-bottom: 12px; padding: 3px 7px; border: 1px solid currentColor; color: var(--cyan); font: 11px Consolas, monospace; }
+    .role:nth-child(2) .role-tag { color: var(--blue); }
+    .role:nth-child(3) .role-tag { color: var(--coral); }
+    .role:nth-child(4) .role-tag { color: var(--yellow); }
+    .role p { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+    .role em { display: block; margin-top: 10px; color: var(--dim); font-size: 12px; font-style: normal; }
+
+    .input-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .input-card { min-width: 0; padding: 17px; border: 1px solid var(--line); border-top: 3px solid var(--cyan); background: var(--panel); }
+    .input-card:nth-child(2) { border-top-color: var(--yellow); }
+    .input-card:nth-child(3) { border-top-color: var(--blue); }
+    .input-card:nth-child(4) { border-top-color: var(--coral); }
+    .input-card .input-kind { display: block; margin-bottom: 8px; color: var(--dim); font: 11px Consolas, monospace; letter-spacing: .05em; }
+    .input-card h3 { margin-bottom: 9px; }
+    .input-card p { margin-bottom: 11px; color: var(--muted); font-size: 13px; }
+    .input-card dl { margin: 0; }
+    .input-card dt { margin-top: 10px; color: var(--ink); font-size: 12px; font-weight: 700; }
+    .input-card dd { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+    .input-card code { font-size: 11px; }
+
+    .approved-example { margin-top: 16px; padding: 18px; border: 1px solid var(--line); background: #141b22; }
+    .approved-example h3 { margin-bottom: 10px; }
+    .approved-flow { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+    .approved-flow span { padding: 6px 8px; border: 1px solid var(--line); background: var(--panel-2); color: var(--muted); font-size: 12px; }
+    .approved-flow b { color: var(--cyan); font-weight: 400; }
+
+    .priority-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 14px; margin-top: 16px; }
+    .priority-list { display: grid; gap: 8px; }
+    .priority-item { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 12px; align-items: start; padding: 12px 13px; border: 1px solid var(--line); background: var(--panel); }
+    .priority-item .priority-level { color: var(--cyan); font: 11px Consolas, monospace; line-height: 1.4; }
+    .priority-item strong { display: block; margin-bottom: 2px; }
+    .priority-item span { display: block; color: var(--muted); font-size: 13px; }
+    .not-needed { padding: 15px; border-left: 3px solid var(--coral); background: #242027; color: var(--muted); }
+    .not-needed strong { color: var(--ink); }
+
+    .tool-grid, .repo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .tool-card, .repo-card { min-width: 0; padding: 16px; border: 1px solid var(--line); background: var(--panel); }
+    .tool-card .tool-kind, .repo-card .repo-kind { display: block; margin-bottom: 8px; color: var(--dim); font: 11px Consolas, monospace; letter-spacing: .05em; }
+    .tool-card h3, .repo-card h3 { margin-bottom: 7px; font-size: 16px; }
+    .tool-card p, .repo-card p { margin-bottom: 10px; color: var(--muted); font-size: 13px; }
+    .tool-card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 12px; }
+    .tool-card li + li { margin-top: 3px; }
+    .repo-card a { color: var(--yellow); text-decoration: none; overflow-wrap: anywhere; }
+    .repo-card a:hover, .repo-card a:focus-visible { color: var(--cyan); text-decoration: underline; outline: none; }
+    .repo-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 9px; }
+    .repo-meta span { padding: 3px 6px; border: 1px solid var(--line); color: var(--muted); font: 11px Consolas, monospace; }
+    .repo-decision { display: inline-block; margin-top: 3px; padding: 4px 7px; border: 1px solid currentColor; color: var(--cyan); font: 11px Consolas, monospace; }
+    .repo-decision.study { color: var(--yellow); }
+    .repo-decision.conditional { color: var(--green); }
+    .repo-decision.blocked { color: var(--coral); }
+    .tool-note { margin-top: 16px; padding: 15px; border-left: 3px solid var(--blue); background: #17202a; color: var(--muted); }
+    .tool-note strong { color: var(--ink); }
+
+    .concept-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .concept-table th, .concept-table td { padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    .concept-table th { color: var(--dim); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+    .concept-table td:first-child { width: 20%; color: var(--yellow); font-family: Consolas, monospace; }
+    .concept-table td:nth-child(2) { width: 35%; color: var(--ink); }
+    .concept-table td:last-child { color: var(--muted); }
+
+    .glossary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; }
+    .term {
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      cursor: pointer;
+    }
+    .term:hover, .term:focus-visible, .term.active { border-color: var(--cyan); outline: none; }
+    .term b { display: block; margin-bottom: 4px; color: var(--yellow); }
+    .term span { display: block; color: var(--muted); font-size: 13px; }
+    .term-detail { min-height: 72px; margin-top: 14px; padding: 15px; border-left: 2px solid var(--yellow); background: #141b22; color: var(--muted); }
+
+    .state-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .state { padding: 16px; border: 1px solid var(--line); background: var(--panel); }
+    .state .state-label { color: var(--dim); font-size: 12px; }
+    .state strong { display: block; margin: 6px 0; font-size: 19px; }
+    .state p { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+    .state.green strong { color: var(--green); }
+    .state.yellow strong { color: var(--yellow); }
+    .state.coral strong { color: var(--coral); }
+    .state.blue strong { color: var(--blue); }
+
+    .next-list { display: grid; gap: 10px; counter-reset: next; }
+    .next-step { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 13px; align-items: start; padding: 14px; border: 1px solid var(--line); background: var(--panel); }
+    .next-step::before { counter-increment: next; content: counter(next, decimal-leading-zero); color: var(--cyan); font: 12px Consolas, monospace; }
+    .next-step strong { display: block; margin-bottom: 3px; }
+    .next-step span { color: var(--muted); font-size: 13px; }
+    footer { padding-top: 24px; color: var(--dim); font-size: 12px; }
+
+    @media (max-width: 1000px) {
+      .flow { grid-template-columns: repeat(3, minmax(130px, 1fr)); }
+      .evidence-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .input-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tool-grid, .repo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .glossary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 760px) {
+      .app { display: block; }
+      .sidebar { position: relative; height: auto; min-width: 0; overflow: hidden; padding: 17px 18px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .brand { margin-bottom: 12px; }
+      .nav-title, .side-note { display: none; }
+      nav { display: flex; width: 100%; min-width: 0; gap: 3px; overflow-x: auto; padding-bottom: 2px; }
+      nav a { flex: 0 0 auto; padding: 6px 9px; border-left: 0; border-bottom: 2px solid transparent; white-space: nowrap; font-size: 12px; }
+      nav a:hover, nav a:focus-visible { border-left: 0; border-bottom-color: var(--cyan); }
+      .content { padding: 0 17px 45px; }
+      .hero { display: block; padding: 34px 0 26px; }
+      .hero-status { margin-top: 20px; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 9px; }
+      .two-col { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: repeat(2, minmax(125px, 1fr)); }
+      .state-grid { grid-template-columns: 1fr; }
+      .priority-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .flow, .evidence-grid, .role-grid, .input-grid, .tool-grid, .repo-grid, .glossary { grid-template-columns: 1fr; }
+      h1 { font-size: 31px; }
+      .concept-table { display: table; width: 100%; min-width: 0; table-layout: fixed; white-space: normal; word-break: break-word; font-size: 12px; }
+      .concept-table th, .concept-table td { padding: 8px 6px; }
+      .concept-table td:first-child { width: 21%; }
+      .concept-table td:nth-child(2) { width: 39%; }
+      .concept-table td:last-child { width: 40%; }
+    }
+  </style>
+  <link rel="stylesheet" href="vfx_guide_assets/report.css">
+</head>
+<body class="report-mode">
+  <header class="guide-topbar">
+    <strong>Unity VFX / 智能制作</strong>
+    <div class="view-switch" aria-label="网站视图">
+      <a href="#report" data-guide-view="report" aria-current="page">阶段汇报</a>
+      <a href="#architecture" data-guide-view="architecture">架构说明</a>
+    </div>
+  </header>
+
+  <main id="report" class="report-page">
+    <header>
+      <p class="report-kicker">项目阶段汇报 · 截至 2026-09-07</p>
+      <h1>Unity VFX 智能制作</h1>
+      <p class="report-lead">目标：输入 Prompt 或 Prompt + 参考图，产出可编辑、可验证的 Unity 特效。先做透限定类型，再逐步扩展到更多特效族。</p>
+      <div class="report-conclusion">
+        <strong>数据和执行底座已建立，成品生成能力仍待突破。</strong>
+        <p>已经能把限定参数传到真实画面，并用教程校准制作机制；尚未训练出能稳定从零生成完整特效的正式模型。</p>
+      </div>
+      <nav class="report-nav" aria-label="汇报章节">
+        <a href="#report-foundation">累计建设</a>
+        <a href="#report-results">本阶段进展</a>
+        <a href="#report-case">闪电案例</a>
+        <a href="#report-next">下一步计划</a>
+      </nav>
+      <dl class="report-metrics">
+        <div><dt>Prefab 结构样本</dt><dd>2,115</dd><small>历史累计 · 不等于可用成品</small></div>
+        <div><dt>贴图索引记录</dt><dd>38,376</dd><small>历史累计 · 含本地参考库</small></div>
+        <div class="metric-progress"><dt>本阶段颜色校准</dt><dd>11 / 11</dd><small>编译与回读通过 · 446 有效帧</small></div>
+        <div class="metric-pending"><dt>正式制作 Planner SFT 样本</dt><dd>0</dd><small>尚未形成合格过程正例</small></div>
+      </dl>
+    </header>
+
+    <section id="report-foundation">
+      <div class="report-section-head">
+        <div><h2>已经做了什么</h2><p>历史累计底座。工程工具、训练实验与成品能力分别验收。</p></div>
+        <span class="report-tag">可复用的基础设施</span>
+      </div>
+      <table class="report-table">
+        <colgroup><col class="topic-col"><col><col class="evidence-col"></colgroup>
+        <thead><tr><th scope="col">模块</th><th scope="col">已形成的能力</th><th scope="col">证据 / 当前边界</th></tr></thead>
+        <tbody>
+          <tr><td>资产与数据接入</td><td><p>导入 Prefab 及材质、贴图、Mesh、Shader 依赖；建立来源、标签和结构索引。</p><small>2,115 份结构样本；38,376 条贴图、599 条 Shader、2,138 条材质记录。参考资产和可绑定资产分开。</small></td><td><a href="data/vfx_generation/datasets/prefab_graph_full_r002/dataset_manifest.json" target="_blank" rel="noopener">结构数据清单</a><br><a href="data/vfx_generation/asset_registry/asset_registry_r003/registry_manifest.json" target="_blank" rel="noopener">资产注册表</a><br><small>2026-09-02 快照；非质量合格数量</small></td></tr>
+          <tr><td>运行捕获与反馈</td><td><p>Play Mode 连续帧、材质动态状态追踪、技术过滤、中文语义复核和 WebGL 播放通路。</p><small>五层数据中有 102 条视觉特征、1,188 条 AI 伪标签、32 条人工金标；无法判断、材质错误不进入正向监督。</small></td><td><a href="data/vfx_generation/datasets/prefab_five_layer_full_r009/dataset_manifest.json" target="_blank" rel="noopener">五层数据清单</a><br><small>2026-09-03 快照；未知脚本仍有捕获盲区</small></td></tr>
+          <tr><td>结构化制作执行</td><td><p>制作计划与 PrefabGraph 经 Unity API 编译成可编辑 Prefab，再回读字段核对。</p><small>把“文件生成成功”和“实际画面符合目标”拆开检查，保留失败版本与执行差异。</small></td><td><a href="#tools">执行工具与边界</a><br><small>不等于所有源 Prefab 可完整重建</small></td></tr>
+          <tr><td>教程学习与模型实验</td><td><p>资料转为制作步骤和判断规则；已有结构预测、局部排序的神经网络训练实验。</p><small>例如闪电脉冲排序使用 AdamW 与成对损失，但测试仅 2 对，不能外推为通用审美或开放生成能力。</small></td><td><a href="data/vfx_generation/models/professional_lightning_pulse_rule_ranker_r001/metrics.json" target="_blank" rel="noopener">局部训练指标</a><br><a href="data/vfx_generation/models/vfx_controller_r001/training_preflight.json" target="_blank" rel="noopener">正式模型训练门禁</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="report-results">
+      <div class="report-section-head">
+        <div><h2>本阶段解决了什么</h2><p>从“配置看起来正确”，推进到“运行结果有证据”。</p></div>
+        <span class="report-tag">2026-09-07 验证</span>
+      </div>
+      <div class="report-results">
+        <article class="report-result"><h3>Prompt 参数真正影响画面</h3><p>同资产、同种子对照下，蓝色可变红色、纵向可变横向，明确时长改变实际可见结束时间。真实 URP 的 4 组编译与回读通过，218 帧有效。</p><a href="data/vfx_generation/generated/prompt_execution_regression_urp_r002/regression_report.json" target="_blank" rel="noopener">参数执行对照</a></article>
+        <article class="report-result"><h3>修复颜色压暗与材质通道</h3><p>灰色原先在三个通道重复相乘，0.5 变成 0.125；独立通道后保留 0.5。11 组编译与回读通过，446 帧有效，旧格式兼容。</p><a href="data/vfx_generation/generated/particle_color_calibration_r002/calibration_report.json" target="_blank" rel="noopener">颜色校准报告</a></article>
+        <article class="report-result"><h3>纠正教程理解与验证环境</h3><p>区分 Photoshop 图层与 Unity 对象、黑色形体与透明消失。定位 UPM 环境变量缺失，恢复真实 URP 实例，管线不匹配的画面禁止用于正向训练。</p><a href="data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/calibration_manifest.json" target="_blank" rel="noopener">制作步骤与明确假设</a></article>
+        <article class="report-result"><h3>形成一个可查看的局部案例</h3><p>蓝白闪电实现亮、黑、再亮，3 个机制对照共 123 帧。已有可编辑 Prefab；Fixed 源重建的 41 帧逐像素一致，连续渐变重复性仍待校准。</p><a href="#report-case">查看实录与制作迭代</a></article>
+      </div>
+      <p class="report-disclaimer">本阶段已有实验记录：555 项 Python 测试通过，两个工程 CLI 结构检查均为 0 错误、0 警告。这些是工具与工程验收，不是特效成品的质量分。</p>
+    </section>
+
+    <section id="report-case">
+      <div class="report-section-head">
+        <div><h2>案例：0.3 秒蓝白闪电</h2><p>教程局部机制 → 明确材质配方 → Unity Prefab → 连续帧验证。</p></div>
+        <span class="report-tag pending">局部机制通过 · 非成品验收</span>
+      </div>
+      <div class="report-case-layout">
+        <div>
+          <div id="report-player" class="report-player" data-state="loading" aria-busy="true">
+            <div class="report-player-head"><strong>Unity 实录 · 帧序列回放</strong><span>含明暗闪烁 · 非实时 WebGL</span></div>
+            <div class="report-screen">
+              <img id="report-frame" width="640" height="480" alt="蓝白闪电 Unity 实录" hidden>
+              <div class="report-loading" aria-hidden="true">Unity 捕获画面</div>
+            </div>
+            <div class="report-toolbar">
+              <button type="button" id="report-play" class="report-icon primary" title="播放" aria-label="播放" data-replay-control disabled><img src="vfx_guide_assets/icons/play.svg" alt=""></button>
+              <button type="button" id="report-previous" class="report-icon" title="上一帧" aria-label="上一帧" data-replay-control disabled><img src="vfx_guide_assets/icons/chevron-left.svg" alt=""></button>
+              <button type="button" id="report-next-frame" class="report-icon" title="下一帧" aria-label="下一帧" data-replay-control disabled><img src="vfx_guide_assets/icons/chevron-right.svg" alt=""></button>
+              <button type="button" id="report-reset" class="report-icon" title="回到首帧" aria-label="回到首帧" data-replay-control disabled><img src="vfx_guide_assets/icons/rotate-ccw.svg" alt=""></button>
+              <label>速度 <select id="report-speed" data-replay-control disabled><option value="0.1">0.1 倍</option><option value="0.25" selected>0.25 倍</option><option value="0.5">0.5 倍</option><option value="1">原速</option></select></label>
+              <label><input id="report-loop" type="checkbox" data-replay-control disabled>循环</label>
+            </div>
+            <div class="report-seek">
+              <input id="report-seek" type="range" min="0" max="40" value="0" step="1" aria-label="实录时间轴" data-replay-control disabled>
+              <div class="report-timestamps"><output id="report-time" aria-live="off">载入中</output><output id="report-frame-number" aria-live="off"></output></div>
+            </div>
+            <div class="report-player-state"><span id="report-player-status" role="status">正在载入 Unity 实录</span><button id="report-retry" type="button" class="report-retry" hidden><img src="vfx_guide_assets/icons/rotate-ccw.svg" alt="">重试</button></div>
+          </div>
+          <div class="report-keyframes" aria-label="关键时刻">
+            <button type="button" data-report-time="0" data-replay-control disabled>0.00 秒 · 起始</button>
+            <button type="button" data-report-time="0.071" data-replay-control disabled>0.07 秒 · 黑形体</button>
+            <button type="button" data-report-time="0.111" data-replay-control disabled>0.11 秒 · 再亮</button>
+            <button type="button" data-report-time="0.311" data-replay-control disabled>0.31 秒 · 结束后</button>
+          </div>
+        </div>
+        <div class="report-case-meta">
+          <h3>实际输入</h3>
+          <blockquote>风格化蓝白纵向闪电，持续0.3秒</blockquote>
+          <label for="report-case-select" class="report-mode-label">机制对照</label>
+          <select id="report-case-select"><option value="tutorial_fixed">亮黑亮切换</option><option value="tutorial_blend_control">连续渐变</option><option value="alpha_only_control">透明度对照</option></select>
+          <p id="report-case-note" class="report-case-note">离散颜色键保留可见的黑色形体，0.3 秒寿命结束后消失。</p>
+          <dl>
+            <dt>执行方式</dt><dd>规则化参数控制 + 显式配方，非训练模型从零生成</dd>
+            <dt>材质 / 贴图</dt><dd>URP Particles/Unlit 中性模板 + 现有 lightning1 贴图</dd>
+            <dt>运行环境</dt><dd>Unity 2022.3.62f3c1 / URP 14.0.12 / Linear</dd>
+            <dt>捕获范围</dt><dd>0–0.4 秒，每 0.01 秒一帧，共 41 帧；含结束后的空背景</dd>
+            <dt>导出结果</dt><dd>一个粒子系统、一个 Renderer，可编辑 Prefab</dd>
+          </dl>
+          <p class="report-limit">已证明颜色与明暗切换机制可执行。尚未证明完整教程复现、专业审美合格、风格理解、自动选材或通用 Prompt 生成；本案例不进入正式正向 SFT。</p>
+          <div class="report-evidence"><a id="report-manifest-link" href="data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/tutorial_fixed/capture_manifest.json" target="_blank" rel="noopener">捕获记录</a><a href="data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/tutorial_color_report.json" target="_blank" rel="noopener">机制验证报告</a><a href="data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/temporal_contact_sheet.png" target="_blank" rel="noopener">连续帧联系图</a></div>
+        </div>
+      </div>
+      <div class="report-prefab">
+        <div><strong>案例 Prefab · 亮黑亮版本 · EffectDemo 2022</strong><code id="report-prefab-path">E:\Unity特效人工智能学习\UnityDemo\EffectDemo\Assets\Generated\TutorialLightningFixedColorR003\tutorial_fixed\GeneratedRoot.prefab</code><small id="report-copy-status" role="status"></small></div>
+        <button id="report-copy" type="button" class="report-icon" title="复制 Prefab 路径" aria-label="复制 Prefab 路径"><img src="vfx_guide_assets/icons/copy.svg" alt=""></button>
+      </div>
+      <h3>制作迭代：为什么不只是增加训练轮数</h3>
+      <p class="report-disclaimer">下列为制作过程的不同版本，不是严格单变量视觉对照；均展示约 0.01 秒的真实捕获画面。</p>
+      <div class="report-iterations">
+        <figure><img loading="lazy" width="640" height="480" src="data/vfx_generation/generated/particle_color_calibration_r002/lightning_legacy_qfx/captures/frame_001_0_010.png" alt="旧方案：重复颜色乘法与原 QFX 材质下的闪电"><figcaption><strong>01 · 原方案</strong>颜色重复相乘，主体偏暗；原模板的黑色内芯仍在。</figcaption></figure>
+        <figure><img loading="lazy" width="640" height="480" src="data/vfx_generation/generated/particle_color_calibration_r002/lightning_independent_qfx/captures/frame_001_0_010.png" alt="中间方案：独立颜色通道，但仍使用原 QFX 材质"><figcaption><strong>02 · 只修颜色</strong>颜色通道改善，但材质配方仍不能形成目标主轮廓。</figcaption></figure>
+        <figure><img loading="lazy" width="640" height="480" src="data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/tutorial_fixed/captures/frame_001_0_010.png" alt="当前方案：中性 URP 模板下可见的蓝白闪电"><figcaption><strong>03 · 明确配方 + 生命周期</strong>主轮廓可见，亮黑亮机制有连续帧证据；仍是局部样例。</figcaption></figure>
+      </div>
+      <p class="report-calibration"><strong>受控数值对照：</strong>灰色输入 0.5，旧乘法结果 0.125，修复后 0.5；前景红通道均值由 23 变为 124。先把制作执行做正确，再让模型学习有效变化。</p>
+    </section>
+
+    <section id="report-next">
+      <div class="report-section-head">
+        <div><h2>未来要做什么</h2><p>近期先交付少数类型的可控候选与成功率证据，不承诺一步训练统一全能模型。</p></div>
+        <span class="report-tag pending">按验收门槛推进</span>
+      </div>
+      <div class="report-milestones">
+        <article class="report-milestone"><p class="report-kicker">第一步 · 当前优先</p><h3>把正确配方接入正常生成入口</h3><p>让 Shader、材质模板、贴图通道与顶点流共同参与检索和验证；处理连续渐变捕获的小幅波动。</p><p class="acceptance">验收：普通 MaterialPlan 能复用已验证配方，不依赖案例路径硬编码；重复捕获误差有可靠边界。</p></article>
+        <article class="report-milestone"><p class="report-kicker">第二步 · 制作方法</p><h3>完成完整教程复现与过程数据</h3><p>从闪电继续，把形体、材质、层次与完整节奏逐层复现，再扩展刀光与爆炸。区分原始证据、工程推断和验证结论。</p><p class="acceptance">验收：完整动态效果与源教程对照通过，每一步可追溯；质量失败与无法判断分别处理。</p></article>
+        <article class="report-milestone"><p class="report-kicker">第三步 · 正式训练</p><h3>训练受约束的制作 Planner 与评分器</h3><p>结合合格教程过程、Prefab 结构、资产配方和正负反馈；以已有模型做语义规划，训练项目专用模块。</p><p class="acceptance">验收：真实权重、无来源泄漏的数据切分、未见 Prompt 评测；优于规则与检索基线才晋级。</p></article>
+        <article class="report-milestone"><p class="report-kicker">第四步 · 成品验证</p><h3>用独立 Prompt 衡量生成能力</h3><p>优先验证闪电、刀光、爆炸三类；再接入参考图约束。按类型和风格统计，不用单个成功案例代表整体能力。</p><p class="acceptance">验收：报告有效生成率、条件命中率、动态完整率、整体通过率与平均迭代次数；不合格时允许全部拒绝。</p></article>
+      </div>
+      <div class="report-conclusion"><strong>下一次汇报应拿出的证据</strong><p>正常入口复用正确配方、一个完整教程复现，以及一组固定 Prompt 的结果对照。人工继续低频修正用途和语义标签，专业质量依据教程与动态对照验证。</p></div>
+    </section>
+    <footer class="report-footer">
+      <p>本页是截至 2026-09-07 的证据快照；历史累计不计为本周新增。任务记录：vfx-2df.43；原架构与工具说明仍保留。</p>
+      <p>资源仅在本地演示，第三方贴图与教程不因进入工程而自动获得公开再分发授权。案例沿用 EffectDemo 2022 训练链路，不混用 Unity 6 工程。</p>
+      <p><a href="#architecture">完整架构说明</a> · <a href="#tools">工具与插件</a> · <a href="#status">详细状态</a></p>
+    </footer>
+    <noscript><p>JavaScript 未启用，实录控制不可用。上方制作迭代图片与原始证据仍可查看。</p></noscript>
+  </main>
+
+  <div class="app" id="architecture" hidden>
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">VFX</div>
+        <div><strong>架构导览</strong><small>maintained workspace guide</small></div>
+      </div>
+      <div class="nav-title">阅读顺序</div>
+      <nav aria-label="页面章节">
+        <a href="#start">先记住一句话</a>
+        <a href="#flow">闭环地图</a>
+        <a href="#spec">spec.json</a>
+        <a href="#evidence">真实画面对照</a>
+        <a href="#inputs">输入资料</a>
+        <a href="#tools">工具插件</a>
+        <a href="#roles">层级职责</a>
+        <a href="#automation">自动与人工</a>
+        <a href="#transfer">跨族迁移</a>
+        <a href="#status">当前状态</a>
+        <a href="#next">下一步</a>
+      </nav>
+        <div class="side-note"><b>当前边界</b><br>权威工程：<code>UnityDemo/EffectDemo</code><br>目标 Unity 2022 / URP 14<br>R002 实测：2022.3.62f3c1，URP 实例已验证<br>PrefabGraph 2115；Teacher 15；窄轴模型 16。<br>窄轴通过 ≠ 整体生成合格。</div>
+    </aside>
+
+    <main>
+      <div class="content">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">UNITY VFX / WORKSPACE CONCEPTS</p>
+            <h1>先理解数据怎样流动，再决定改哪一个 Unity 参数。</h1>
+          <p>这页把 Prompt、VFXSpec、PrefabGraph、Unity 编译/执行、五层数据、主动学习和语义修正串起来。技术数据自动覆盖全部 Prefab；非专业人工只确认用途与播放状态，审美由专业视频、教程、专家对照和 Unity 复刻训练的 Teacher/Judge 负责。</p>
+          </div>
+        <div class="hero-status"><span>2026-09-07 制作校准</span><strong>颜色通道与教程黑白闪机制已验证</strong><small>R003 已有可查看 Prefab；完整教程、自动选材与正式生成模型仍在推进</small></div>
+        </header>
+
+        <section id="start">
+          <div class="section-head">
+            <div><p class="eyebrow">01 / ONE SENTENCE</p><h2>先记住一句话</h2></div>
+          </div>
+          <div class="callout warn"><strong>当前还不是 Prompt 驱动的正式生成模型。</strong> 现有族生成器主要是固定拓扑、固定资产和窄参数采样；局部 Teacher 只能当约束和排序信号，不能把一批整体不合格的候选变成合格成品。当前主线是补齐通用 ProposalPlan、资产能力检索、Shader/顶点流执行契约和整体质量否决门。</div>
+          <div style="height:14px"></div>
+          <div class="two-col">
+            <div class="panel"><h3>旧方式</h3><p style="color:var(--muted)">在一个场景里反复改颜色、尺寸、生命周期和偏移。每次只看一个版本，很难知道到底是哪一个变化带来了改善，也容易把失败基础继续修补下去。</p></div>
+            <div class="panel"><h3>新方式</h3><p style="color:var(--muted)">把每个版本保存为候选规格和 seed。候选之间可以横向比较，人工意见可以被记录，下一轮可以继承“为什么保留/为什么拒绝”。</p></div>
+          </div>
+        </section>
+
+        <section id="flow">
+          <div class="section-head">
+            <div><p class="eyebrow">02 / PIPELINE</p><h2>闭环地图</h2></div>
+            <p>点击任意节点，看它的输入、输出和当前工程对应文件。</p>
+          </div>
+          <div class="flow" role="group" aria-label="生成闭环步骤">
+            <button class="flow-node active" data-flow="reference"><span class="num">01</span><strong>参考目标</strong><small>视频、帧、视觉约束</small></button>
+            <button class="flow-node" data-flow="prompt"><span class="num">02</span><strong>Prompt</strong><small>说清楚要生成什么</small></button>
+            <button class="flow-node" data-flow="spec"><span class="num">03</span><strong>ProposalPlan / VFXSpec</strong><small>Prompt 先转为形体、资产和执行契约</small></button>
+            <button class="flow-node" data-flow="candidate"><span class="num">04</span><strong>Candidate</strong><small>一个 seed 的候选版本</small></button>
+            <button class="flow-node" data-flow="unity"><span class="num">05</span><strong>Unity</strong><small>把规格变成真实画面</small></button>
+            <button class="flow-node" data-flow="render"><span class="num">06</span><strong>Render</strong><small>自适应连续帧与状态证据</small></button>
+            <button class="flow-node" data-flow="auto"><span class="num">07</span><strong>Auto Eval</strong><small>先淘汰明显错误</small></button>
+            <button class="flow-node" data-flow="human"><span class="num">08</span><strong>语义反馈</strong><small>用途、类型、播放状态</small></button>
+            <button class="flow-node" data-flow="mutation"><span class="num">09</span><strong>Mutation</strong><small>带着理由生成下一轮</small></button>
+          </div>
+          <div class="flow-detail" id="flow-detail"><strong>参考目标</strong><p>它提供轮廓、层次、风格、峰值和收束等验收依据，但不能恢复隐藏的 Shader、贴图通道、Mesh 拓扑或原工程参数。参考证据与 Unity 运行真值必须分开记录。</p></div>
+        </section>
+
+        <section id="spec">
+          <div class="section-head">
+            <div><p class="eyebrow">03 / DATA OBJECT</p><h2>VFXSpec 与 MaterialTrajectorySpec</h2></div>
+            <p>VFXSpec 描述完整候选意图；MaterialTrajectorySpec 是已经落地的材质状态子规格，绑定真实资产并能被 Unity 执行。</p>
+          </div>
+          <div class="two-col">
+            <div class="panel">
+              <pre class="code-block">{
+  <span class="code-key">"schema_version"</span>: <span class="code-value">"material_trajectory_spec.v1"</span>,
+  <span class="code-key">"trajectory_id"</span>: <span class="code-value">"mtc_001_dissolve_mat_nuge_03"</span>,
+  <span class="code-key">"category"</span>: <span class="code-value">"dissolve"</span>,
+  <span class="code-key">"label"</span>: <span class="code-value">"positive"</span>,
+  <span class="code-key">"source_asset"</span>: {
+    <span class="code-key">"material_path"</span>: <span class="code-value">"Assets/.../Mat_nuge_03.mat"</span>,
+    <span class="code-key">"shader_name"</span>: <span class="code-value">"Common/ColorDefault"</span>,
+    <span class="code-key">"texture_bindings"</span>: [{
+      <span class="code-key">"property_name"</span>: <span class="code-value">"_MainTex"</span>,
+      <span class="code-key">"texture_path"</span>: <span class="code-value">"Assets/.../texture.png"</span>,
+      <span class="code-key">"tags"</span>: [<span class="code-value">"slot.alpha_mask"</span>]
+    }]
+  },
+  <span class="code-key">"style_profile"</span>: {<span class="code-key">"family"</span>: <span class="code-value">"unknown"</span>},
+  <span class="code-key">"control_scope"</span>: <span class="code-value">"renderer_mpb"</span>,
+  <span class="code-key">"duration_seconds"</span>: <span class="code-value">0.6</span>,
+  <span class="code-key">"parameter_tracks"</span>: [{
+    <span class="code-key">"property_name"</span>: <span class="code-value">"_Dissolve_Value"</span>,
+    <span class="code-key">"value_kind"</span>: <span class="code-value">"float"</span>,
+    <span class="code-key">"curve"</span>: <span class="code-value">"smoothstep"</span>,
+    <span class="code-key">"start_value"</span>: [0], <span class="code-key">"end_value"</span>: [1]
+  }],
+  <span class="code-key">"expected_signals"</span>: [
+    <span class="code-value">"renderer_property_block_changed"</span>,
+    <span class="code-value">"dissolve_parameter_changed"</span>
+  ],
+  <span class="code-key">"split_group"</span>: {
+    <span class="code-key">"shader_group"</span>: <span class="code-value">"a2d49f234dad"</span>,
+    <span class="code-key">"material_group"</span>: <span class="code-value">"..."</span>
+  }
+}</pre>
+            </div>
+            <div>
+              <div class="spec-list">
+                <button class="spec-item active" data-spec="source"><b>source_asset</b><span>绑定真实 Material、Shader、Texture 和语义标签，不再从文件名猜资源。</span></button>
+                <button class="spec-item" data-spec="scope"><b>control_scope</b><span>明确写入 Material、Renderer MPB 或指定 Slot MPB，三者不能混用。</span></button>
+                <button class="spec-item" data-spec="tracks"><b>parameter_tracks</b><span>记录属性、值类型、曲线、范围和时间；同一 seed 可重复执行。</span></button>
+                <button class="spec-item" data-spec="events"><b>runtime events</b><span>记录 Keyword、Texture Swap 与 Material Replace 的发生时间和目标。</span></button>
+                <button class="spec-item" data-spec="signals"><b>expected_signals + split_group</b><span>规定运行后必须出现的信号，并防止同 Material/Shader 泄漏到不同数据划分。</span></button>
+              </div>
+              <div class="spec-explain" id="spec-explain"><strong>source_asset：</strong>R002 先通过 Unity Shader API r3 审计，再从 642 个候选 Material 中生成规格。YAML 历史字段不再自动视为可执行属性。</div>
+            </div>
+          </div>
+          <div style="height:16px"></div>
+          <div class="callout warn"><strong>关键限制：</strong>MaterialTrajectorySpec 已能证明材质状态在 Unity 中真实发生，但它还不是完整 VFXSpec。Particle、Mesh、Core / Support / Hit 分层、镜头和完整节奏仍需后续 adapter。</div>
+        </section>
+
+        <section id="evidence">
+          <div class="section-head">
+            <div><p class="eyebrow">04 / PIXEL EVIDENCE</p><h2>为什么必须看真实画面</h2></div>
+            <p>参考目标与 R002 运行证据并列展示。文件存在、信号命中或 CLI 成功，都不能自动变成人工审美结论。</p>
+          </div>
+          <div class="evidence-grid">
+            <figure>
+              <img src="vfx_guide_assets/reference_peak.jpg" alt="BV198v6BoE9h 0.60 秒参考峰值帧">
+              <figcaption><b>参考 / 0.60s 峰值</b>黄白主刃、蓝青包围弧、紫粉命中和场景锚点共同构成画面。</figcaption>
+              <div class="source">reference_peak.jpg</div>
+            </figure>
+            <figure>
+              <img src="vfx_guide_assets/reference_tail.jpg" alt="BV198v6BoE9h 0.90 秒参考收束帧">
+              <figcaption><b>参考 / 0.90s 收束</b>主体消退后留下断续冷色残影，不是完整同形色带。</figcaption>
+              <div class="source">reference_tail.jpg</div>
+            </figure>
+            <figure>
+              <img class="material-proof" src="data/vfx_generation/runs/material_trajectory_r002_full_r001/candidates/mtc_002_dissolve_mat_fozu_06/frames/frame_000_0_000.png" alt="R002 可见材质轨迹样本">
+              <figcaption><b>历史材质 R002 / 图像资格待复核</b>稳定 Quad 上可见，但旧捕获缺少实际管线实例记录，需复核后才能用于目标 URP 图像监督。</figcaption>
+              <div class="source">mtc_002_dissolve_mat_fozu_06</div>
+            </figure>
+            <figure>
+              <img class="material-proof" src="data/vfx_generation/runs/material_trajectory_r002_full_r001/candidates/mtc_003_dissolve_mat_circlecut_2/frames/frame_000_0_000.png" alt="R002 near blank 材质状态样本">
+              <figcaption><b>R002 / 仅状态监督</b>Timeline 有效但稳定 Quad 上 near-blank；保留材质状态真值，禁止进入图像条件监督。</figcaption>
+              <div class="source">mtc_003_dissolve_mat_circlecut_2</div>
+            </figure>
+            <figure>
+              <img class="material-proof" src="data/vfx_generation/generated/professional_teacher_explosion_core_r006/runtime_captures/empty_core/captures/frame_006_0_298.png" alt="专业 Teacher 爆炸空核心对照帧">
+              <figcaption><b>Teacher R006 / 空核心</b>Support 与 Hit 保持可见，但中心缺少明确体积。</figcaption>
+              <div class="source">professional_explosion_core_readability_r001 / baseline</div>
+            </figure>
+            <figure>
+              <img class="material-proof" src="data/vfx_generation/generated/professional_teacher_explosion_core_r006/runtime_captures/reinforced_core/captures/frame_006_0_298.png" alt="专业 Teacher 爆炸强化核心对照帧">
+              <figcaption><b>Teacher R006 / 强化核心</b>同时间、同镜头、同外围层；中心亮度与局部对比度均提升约 0.243。</figcaption>
+              <div class="source">professional_explosion_core_readability_r001 / guided</div>
+            </figure>
+          </div>
+          <div style="height:16px"></div>
+          <div class="callout"><strong>历史证据复核：</strong>旧批次记录 100 条状态有效、72 条达到可见面积阈值、28 条 near-blank。这些统计保留追溯用途；未记录实际 Pipeline 的旧图像和 Teacher 对照不能自动沿用目标 URP 训练资格，需重新核验。最新参数对照为 prompt_execution_regression_urp_r002。</div>
+          <figure style="margin:20px 0 0">
+            <img src="data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/temporal_contact_sheet.png" alt="R003 Fixed、Blend和Alpha-only闪电连续帧对照" style="display:block;width:100%;height:auto;aspect-ratio:1280/450">
+            <figcaption><b>最新局部机制 / R003</b>上排为先亮、短黑、再亮；中排为连续渐变；下排仅改变透明度。三候选共123有效URP帧，未标为专业成品或SFT正例。</figcaption>
+          </figure>
+        </section>
+
+        <section id="inputs">
+          <div class="section-head">
+            <div><p class="eyebrow">05 / INPUT MAP</p><h2>四类资料分别给系统什么</h2></div>
+            <p>Prefab、优秀视频、制作教程和评价课程不是同一种“训练数据”。它们分别提供来源资产、目标画面、制作因果和评价语言。</p>
+          </div>
+          <div class="input-grid">
+            <article class="input-card">
+              <span class="input-kind">SOURCE ASSET</span>
+              <h3>给我的 Prefab</h3>
+              <p>提供真实可编辑结构：层级、粒子、材质、Shader、贴图、Mesh、时间资产和依赖关系。</p>
+              <dl>
+                <dt>进入系统后</dt><dd><code>SourceAssetSpec</code>、材质/贴图检索、可复用层和 Unity 渲染候选。</dd>
+                <dt>不能证明</dt><dd>它实际好看、适合目标风格、运行正常，或能直接成为新设计。</dd>
+                <dt>升级门槛</dt><dd>依赖闭包 -> Unity 实渲 -> 多帧审核 -> 授权确认 -> 专业 Teacher 审美标签。</dd>
+              </dl>
+            </article>
+            <article class="input-card">
+              <span class="input-kind">TARGET OUTPUT</span>
+              <h3>网上好的特效视频</h3>
+              <p>提供“最后要长什么样”的视觉目标：轮廓、层次、动作、镜头、风格、峰值和收束。</p>
+              <dl>
+                <dt>进入系统后</dt><dd><code>ReferenceSpec</code>、关键帧、时间轴、参考 seed 和视觉审核目标。</dd>
+                <dt>不能证明</dt><dd>原始 Mesh、Shader、贴图通道、材质数值、Prefab 层级或许可证。</dd>
+                <dt>升级门槛</dt><dd>确认目标片段 -> 实际逐帧观察 -> 明确可见事实 -> 绑定时间点与来源。</dd>
+              </dl>
+            </article>
+            <article class="input-card">
+              <span class="input-kind">CAUSAL PROCEDURE</span>
+              <h3>特效制作教程</h3>
+              <p>提供“为什么这么做”的因果和制作顺序：层如何拆、参数如何联动、Shader/Mask/UV 如何服务效果。</p>
+              <dl>
+                <dt>进入系统后</dt><dd><code>ProcedureSpec</code>、adapter 字段、Unity 编译器规则和可复用制作步骤。</dd>
+                <dt>不能证明</dt><dd>教程作者的原工程资产、完整 Inspector 数值或步骤在当前版本必然有效。</dd>
+                <dt>升级门槛</dt><dd>记录教程事实与假设边界 -> 在目标 Unity 版本复现 -> 真实截图验证。</dd>
+              </dl>
+            </article>
+            <article class="input-card">
+              <span class="input-kind">QUALITY LANGUAGE</span>
+              <h3>特效评价课程</h3>
+              <p>提供“什么算好”的评价语言：主体可读性、层级职责、节奏、材质、构图和典型失败模式。</p>
+              <dl>
+                <dt>进入系统后</dt><dd><code>CritiqueRubric</code>、人工反馈字段、失败标签、排序/奖励模型目标。</dd>
+                <dt>不能证明</dt><dd>任何具体资产、具体参数、Shader 实现或某个候选已经合格。</dd>
+                <dt>升级门槛</dt><dd>把评价语转成可观察维度，并在真实候选 A/B 审核中记录一致的偏好。</dd>
+              </dl>
+            </article>
+          </div>
+          <div class="approved-example">
+            <h3>真正可训练的最小单位：<code>ApprovedExample</code></h3>
+            <div class="approved-flow">
+              <span>ReferenceSpec<br>目标画面</span><b>+</b>
+              <span>SourceAssetSpec<br>可选的可信来源</span><b>+</b>
+              <span>ProcedureSpec<br>可复现制作逻辑</span><b>+</b>
+              <span>CritiqueRubric<br>评价标准</span><b>+</b>
+              <span>Unity Render Evidence<br>真实多帧截图与运行状态</span><b>+</b>
+              <span>Professional Teacher<br>专家规则与验证对照</span><b>=</b>
+              <span><strong>ApprovedExample</strong><br>可用于排序、变异和训练</span>
+            </div>
+          </div>
+          <div class="priority-grid">
+            <div>
+              <h3>当前最需要的，不是更多原始资料</h3>
+              <div class="priority-list">
+                <div class="priority-item"><span class="priority-level">DONE</span><div><strong>正式 TrainingExample</strong><span>100 条状态监督和 72 条图像监督已经组装；Material/Shader overlap 均为 0，审美标签保持 0。</span></div></div>
+                <div class="priority-item"><span class="priority-level">P0 / NOW</span><div><strong>教程 ProcedureSpec + 通用提案契约</strong><span>制作教程先教分层顺序、Shader/贴图用途、参数范围和失败修正；Prompt 再实际控制 TopologyPlan、ShaderPlan、TexturePlan 和 TimingPlan。</span></div></div>
+                <div class="priority-item"><span class="priority-level">DONE</span><div><strong>三族专业 Teacher</strong><span>爆炸六轴、刀光五轴、雷电层级/命中/脉冲/余电，共 15 条专业规则完成 Unity 受控复刻。</span></div></div>
+                <div class="priority-item"><span class="priority-level">DONE</span><div><strong>窄轴 Ranker</strong><span>当前共 16 个 PyTorch 成对 MLP；雷电层级、命中与瞬时脉冲均已完成独立回归，所有模型都不冒充通用审美模型。</span></div></div>
+              </div>
+            </div>
+            <aside class="not-needed"><strong>当前不应优先做：</strong><br><br>继续导入大量未渲染 Prefab、只下载更多视频、把教程口述当参数真相，或用自动规则给未看过的效果下“好看”结论。它们会增加素材量，不会增加可学习的质量信号。</aside>
+          </div>
+        </section>
+
+        <section id="tools">
+          <div class="section-head">
+            <div><p class="eyebrow">06 / TOOLS AND REFERENCES</p><h2>工具、插件与 GitHub 参考库</h2></div>
+            <p>这里把已实际使用的工具、已安装的 agent skills 和仅供参考的 GitHub 项目分开。高 Star 是筛选信号，不是安装许可或兼容性证明。</p>
+          </div>
+          <div class="callout"><strong>先区分四层：</strong>Unity UPM 包改变工程运行时；workspace 工具实现当前数据流水线；agent skill 约束 Codex 的工作方法；GitHub 参考仓库只提供源码、样例或思路。它们不能混称为“已经安装的插件”。</div>
+          <div style="height:16px"></div>
+          <div class="tool-grid">
+            <article class="tool-card">
+              <span class="tool-kind">ACTIVE / UNITY RUNTIME</span>
+              <h3>Unity CLI + Pipeline</h3>
+              <p>权威工程为 <code>UnityDemo/EffectDemo</code>。当前包清单为 URP <code>14.0.12</code>；隔离运行使用 Unity <code>2022.3.62f3c1</code>。已修复批处理缺失 ALLUSERSPROFILE 引发的 UPM 崩溃，R002 在实际 UniversalRenderPipeline 实例下完成捕获。</p>
+              <ul><li>项目校验、编译和批处理执行</li><li>Play Mode 状态快照与 Camera.Render</li><li>CLI 不覆盖时才记录并使用 MCP</li></ul>
+            </article>
+            <article class="tool-card">
+              <span class="tool-kind">ACTIVE / ASSET TRUTH</span>
+              <h3>Source Ingest + Audit r3</h3>
+              <p><code>vfx_source_ingest</code> 保留依赖闭包；Material Binding Audit r3 从 Unity API 读取当前 Shader 属性。</p>
+              <ul><li>保留 Prefab -> Material -> Shader -> Texture</li><li>730 Material / 36,343 Shader 属性</li><li>排除 YAML 中已失效的历史字段</li></ul>
+            </article>
+            <article class="tool-card">
+              <span class="tool-kind">ACTIVE / UNITY EXECUTOR</span>
+              <h3>MaterialTrajectory Executor</h3>
+              <p><code>EffectDemoMaterialTrajectoryExecutor</code> 按精确时间执行三种 scope、六种 curve 和运行时事件。</p>
+              <ul><li>Material / Renderer MPB / Slot MPB</li><li>Keyword / Texture Swap / Material Replace</li><li>100/100 expected signals 对账通过</li></ul>
+            </article>
+            <article class="tool-card">
+              <span class="tool-kind">ACTIVE / EVIDENCE GATES</span>
+              <h3>Timeline + Manifest + Visual Gate</h3>
+              <p><code>material_trajectory_executor.py</code> 校验 Result、Timeline、资源生命周期和图像可见面积。</p>
+              <ul><li>1100/1100 帧与 301 项 Schema 通过</li><li>100 状态有效 / 72 图像可用</li><li>28 near-blank 自动隔离</li></ul>
+            </article>
+            <article class="tool-card">
+              <span class="tool-kind">ACTIVE / DATASET</span>
+              <h3>TrainingExample Assembler</h3>
+              <p><code>material_trajectory_dataset.py</code> 已将 Spec、Result、Timeline、视觉资格和 SplitGroup 组装为正式训练数据。</p>
+              <ul><li>状态任务 100 / 图像任务 72</li><li>严格划分 93 / 1 / 6，group overlap 为 0</li><li>审美加载被禁止，直到出现人工标签</li></ul>
+            </article>
+            <article class="tool-card">
+              <span class="tool-kind">ACTIVE / FIVE-LAYER LEARNING</span>
+              <h3>Active Learning + Partial Judge</h3>
+              <p><code>prefab_active_learning.py</code> 与 <code>prefab_active_review.py</code> 负责去重聚类和用途语义修正；爆炸六轴、刀光五轴和雷电层级/命中已分别训练窄轴排序头。</p>
+              <ul><li>2115 个 Prefab / 117 条 visual dynamics</li><li>专业 Teacher 15 条 / 窄轴 MLP 16 个</li><li>命中类统一为 impact / 命中+爆点</li></ul>
+            </article>
+          </div>
+          <div class="tool-note"><strong>当前瓶颈不再只是数据量：</strong>2115 个 Graph、15 条 Teacher 和 16 个窄轴模型可以继续复用，但它们前面缺少真正的 Prompt 条件提案层，后面缺少整体绝对质量门。新失败默认回流为训练数据，只有动作空间或执行契约缺失才改架构。</div>
+          <div style="height:28px"></div>
+          <div class="section-head">
+            <div><p class="eyebrow">GITHUB SNAPSHOT / 2026-08-28</p><h3>高星或高相关参考项目</h3></div>
+            <p>Star、许可证和归档状态来自公开 GitHub 页面快照；数值会变化。默认动作是研究，不是安装。</p>
+          </div>
+          <div class="repo-grid">
+            <article class="repo-card"><span class="repo-kind">OFFICIAL RENDERING SOURCE</span><h3><a href="https://github.com/Unity-Technologies/Graphics">Unity-Technologies/Graphics</a></h3><div class="repo-meta"><span>2,983 stars</span><span>Other / NOASSERTION</span></div><p>SRP、URP、HDRP、Shader Graph 与 Visual Effect Graph 的官方源码参考。</p><span class="repo-decision study">STUDY</span><p>当前任务只参考 Unity 2022 / URP 14 对应实现；不要把整个仓库嵌入工程。</p></article>
+            <article class="repo-card"><span class="repo-kind">UI PARTICLES</span><h3><a href="https://github.com/mob-sakai/ParticleEffectForUGUI">mob-sakai/ParticleEffectForUGUI</a></h3><div class="repo-meta"><span>5,970 stars</span><span>MIT</span></div><p>uGUI 粒子渲染、遮罩和排序方案。</p><span class="repo-decision conditional">ADOPT CONDITIONALLY</span><p>仅当产品需要 UI 粒子时评估；它不替代世界空间 Particle System 或 VFX Graph。</p></article>
+            <article class="repo-card"><span class="repo-kind">URP SAMPLE</span><h3><a href="https://github.com/Unity-Technologies/BoatAttack">Unity-Technologies/BoatAttack</a></h3><div class="repo-meta"><span>2,781 stars</span><span>Other / NOASSERTION</span></div><p>官方 URP 示例工程，可研究光照、体积感和渲染样例组织。</p><span class="repo-decision study">STUDY</span><p>不作为项目依赖或资产来源直接导入。</p></article>
+            <article class="repo-card"><span class="repo-kind">POST PROCESS IDEAS</span><h3><a href="https://github.com/keijiro/Kino">keijiro/Kino</a></h3><div class="repo-meta"><span>2,409 stars</span><span>License unspecified</span></div><p>Unity 自定义后处理效果集合，适合研究峰值、扭曲与镜头表现思路。</p><span class="repo-decision blocked">DO NOT INSTALL YET</span><p>需按 Unity 2022 / URP 14 Volume 能力针对性移植和验证后才能采用。</p></article>
+            <article class="repo-card"><span class="repo-kind">PROCEDURAL CONTROL</span><h3><a href="https://github.com/keijiro/Klak">keijiro/Klak</a></h3><div class="repo-meta"><span>2,002 stars</span><span>MIT</span></div><p>Unity 创意编码组件库，适合研究程序化控制、调制与数据驱动行为。</p><span class="repo-decision study">STUDY</span><p>先验证 Unity 2022 API 与包结构，不直接作为生产依赖。</p></article>
+            <article class="repo-card"><span class="repo-kind">SHADER UTILITY</span><h3><a href="https://github.com/keijiro/NoiseShader">keijiro/NoiseShader</a></h3><div class="repo-meta"><span>1,382 stars</span><span>MIT</span></div><p>Unity 噪声 Shader 函数库，可参考 Flow、Dissolve、扰动等基础函数。</p><span class="repo-decision study">SELECTIVE PORT</span><p>只移植经过 Unity 2022 / URP 14 编译验证的单个函数或 Custom Function Node。</p></article>
+            <article class="repo-card"><span class="repo-kind">GPU FLUID STUDY</span><h3><a href="https://github.com/keijiro/StableFluids">keijiro/StableFluids</a></h3><div class="repo-meta"><span>1,172 stars</span><span>Unlicense</span></div><p>Unity GPU Stable Fluids 示例，适合未来水系、烟雾或体积感 adapter。</p><span class="repo-decision study">STUDY</span><p>与当前刀光和 Prefab 渲染瓶颈无关，后置研究。</p></article>
+            <article class="repo-card"><span class="repo-kind">URP SHADER GRAPH</span><h3><a href="https://github.com/Cyanilux/URP_ShaderGraphCustomLighting">Cyanilux/URP_ShaderGraphCustomLighting</a></h3><div class="repo-meta"><span>778 stars</span><span>MIT</span></div><p>URP Shader Graph 自定义光照函数与子图，相关性高于绝对 Star 数。</p><span class="repo-decision conditional">SELECTIVE PORT</span><p>每个函数都必须在 Unity 2022.3.16f1c1 / URP 14.0.9 单独编译、截图和性能验证。</p></article>
+          </div>
+          <div class="tool-note"><strong>维护来源：</strong>完整快照见 <code>workspace/data/vfx_generation/reports/github_vfx_reference_snapshot_2026-08-28.json</code>；当前 agent skills 的安装与使用边界见 <code>reports/plugin_installation_plan.md</code>。以上均为参考或条件采用，未在本轮安装任何 GitHub 仓库。</div>
+        </section>
+
+        <section id="roles">
+          <div class="section-head">
+            <div><p class="eyebrow">07 / RESPONSIBILITY</p><h2>层级为什么要分职责</h2></div>
+            <p>层不是“多加几层就更丰富”。每一层都应该有关闭后可预期的变化。</p>
+          </div>
+          <div class="role-grid">
+            <article class="role"><span class="role-tag">core</span><h3>主体</h3><p>负责一眼能读出的核心意图。刀光可以是弧，护盾可以是壳，爆炸可以是体积，不能把“主体”固定成一种形状。</p><em>关闭后：技能主要意图应消失。</em></article>
+            <article class="role"><span class="role-tag">support</span><h3>支撑 / 氛围</h3><p>负责空气感、包围感、流动、尺度和空间关系，不应复制主体成为职责相同的第二层。</p><em>关闭后：主体仍应独立可读。</em></article>
+            <article class="role"><span class="role-tag">hit</span><h3>命中强调</h3><p>负责短时局部爆发、尖刺、碎片、冲击环或接触点，位置和寿命必须服务动作。</p><em>关闭后：主体结构不应被破坏。</em></article>
+            <article class="role"><span class="role-tag">residual</span><h3>收束残留</h3><p>负责峰值后的方向性余韵，通常更碎、更淡、更短，不是把整条主体延长显示。</p><em>关闭后：节奏仍应有收束。</em></article>
+          </div>
+        </section>
+
+        <section id="automation">
+          <div class="section-head">
+            <div><p class="eyebrow">08 / GATES</p><h2>哪些事情机器做，哪些必须人做</h2></div>
+            <p>自动评价的边界很重要：它负责节省复看时间，不负责替你宣布“好看”。</p>
+          </div>
+          <table class="concept-table">
+            <thead><tr><th>环节</th><th>机器可以做</th><th>机器不能可靠替代</th></tr></thead>
+            <tbody>
+              <tr><td>硬过滤</td><td>检查文件、时间点、场景/相机、Console、可见面积、过曝、帧间变化。</td><td>判断刀尖是否有审美力度、形体是否像参考。</td></tr>
+              <tr><td>类型评分</td><td>按特效族读取对应参数，例如刀光看方向，火焰看根部，护盾看包围关系，材质轨迹看状态信号。</td><td>从参数准确推断最终审美效果；规格和执行分数都只是可解释证据。</td></tr>
+              <tr><td>语义人工</td><td>分开保存特效元素、特效类型和播放状态。</td><td>把火焰/冰霜与刀光/法阵混在一个枚举，或填写审美分数。</td></tr>
+              <tr><td>专业 Teacher</td><td>从专家原话、时间码、前后对比和 Unity 复刻生成审美监督。</td><td>把字幕关键词或知名来源直接当高质量标签。</td></tr>
+              <tr><td>视觉验收</td><td>提供可追溯的参考图、候选图和前后对比。</td><td>在没有实际图像输入时声称“效果更好”。</td></tr>
+            </tbody>
+          </table>
+          <div style="height:17px"></div>
+          <div class="glossary" aria-label="术语快捷解释">
+            <button class="term active" data-term="hard"><b>硬过滤</b><span>淘汰明显不能用的候选。</span></button>
+            <button class="term" data-term="prior"><b>规格先验</b><span>根据参数做的可解释预估。</span></button>
+            <button class="term" data-term="feedback"><b>结构化反馈</b><span>把人的选择写成机器可读记录。</span></button>
+            <button class="term" data-term="pairwise"><b>成对偏好</b><span>记录 A 是否优于 B，以及原因。</span></button>
+            <button class="term" data-term="manifest"><b>Manifest</b><span>记录一次运行的证据索引。</span></button>
+            <button class="term" data-term="adapter"><b>Adapter</b><span>特效族自己的形体和评分规则。</span></button>
+          </div>
+          <div class="term-detail" id="term-detail"><strong>硬过滤：</strong>比如没有截图、Unity 有错误、主体完全不可见，机器可以直接拒绝；但“这条弧线不够像参考”仍然要由人看图判断。</div>
+        </section>
+
+        <section id="transfer">
+          <div class="section-head">
+            <div><p class="eyebrow">09 / TRANSFER BOUNDARY</p><h2>跨特效共享流程，不共享未经验证的审美</h2></div>
+            <p>刀光、火、雷和护盾复用相同的证据管线，但每个族仍要通过专业资料和 Unity 复刻独立证明主体、节奏、材质和偏好。</p>
+          </div>
+          <div class="two-col">
+            <div class="panel"><h3>可共享的底座</h3><ul><li>资产闭包、<code>m_Texture</code> 与 Material GUID 门禁</li><li>Prefab/Particle/Renderer 结构、时间采样与资源审计</li><li>空帧、上下文依赖、固定镜头主体过小等技术路由</li><li>Prompt、seed、VFXSpec、候选回放和反馈追溯格式</li></ul></div>
+            <div class="panel"><h3>必须由目标族重学</h3><ul><li>Slash 的弧线与命中切面</li><li>Fire 的体积、热扰动与上升流</li><li>Lightning 的分叉、跳点与脉冲</li><li>Shield 的曲面覆盖、受击涟漪与防护反馈</li></ul></div>
+          </div>
+          <div style="height:14px"></div>
+          <div class="callout warn"><strong>迁移门槛：</strong>目标族先通过资产闭包、独立/上下文技术路由和真实回放；之后同 Prompt 生成 4 到 8 个同族候选，由专业 Teacher 或专家对照提供目标族偏好。Slash 的“好看”不能替代 Fire、Lightning 或 Shield 的“好看”。</div>
+        </section>
+
+        <section id="status">
+          <div class="section-head">
+            <div><p class="eyebrow">09 / LIVE STATE</p><h2>当前工程真实状态</h2></div>
+            <p>以下历史统计来自工作区文件和 Beads；旧 visual/Teacher 资格仍待管线实例复核。本次真实 URP 对照结果单独列在下方，不将参数通过写成整体成品合格。</p>
+          </div>
+          <div class="state-grid">
+            <div class="state green"><span class="state-label">MaterialTrajectory R002</span><strong>100 / 100 状态有效</strong><p>三种 scope、六种 curve、Keyword、Texture Swap 与 Material Replace 已在 Unity 2022 Play Mode 对账。</p></div>
+            <div class="state green"><span class="state-label">PrefabGraph 结构模型</span><strong>2115 Graph · 337 结构簇</strong><p>无泄漏分区为 1169/444/502；next-token test 83.81%，multitask masked component 97.42%，审美标签消费为 0。</p></div>
+            <div class="state green"><span class="state-label">五层 Prefab 数据</span><strong>2115 Prefab · 32 双维 human gold</strong><p>当前正式数据：technical 2115、visual 102、AI pseudo 1188、元素+类型 human gold 32；错误洋红和旧单维记录不进入正式监督，命中类只有 impact。</p></div>
+            <div class="state yellow"><span class="state-label">资产注册 + MaterialPlan</span><strong>38376 Texture · 599 Shader</strong><p>1225 个 usable Material；路径、编译和贴图回读门已有，但 Shader 功能、材质参数、贴图通道、Renderer 模式和顶点流还未完成联合语义门禁。</p></div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="state-grid">
+            <div class="state yellow"><span class="state-label">Prefab Capture v2</span><strong>117 动态记录 · full visual 1</strong><p>Shader global 和 MPB 追踪已用受控探针验证；未知脚本/属性仍保持 partial，错误洋红只进技术排除。</p></div>
+            <div class="state yellow"><span class="state-label">Graph 往返 R002</span><strong>10 / 10 严格通过</strong><p>无 parent Graph 经 Unity API 创建 Prefab，再由 Unity API 回读；Schema 错误 0、字段差异 0。</p></div>
+             <div class="state green"><span class="state-label">主动学习</span><strong>92 簇 · 当前队列 32</strong><p>70 个可评价候选中按不确定性、新簇、模型分歧和晋级审计抽样；元素与类型独立标注，错误洋红、重复和 split 泄漏均为 0。</p></div>
+            <div class="state green"><span class="state-label">Professional Teacher + Judge</span><strong>Teacher 15 · 窄轴 MLP 16</strong><p>雷电 Hierarchy/Impact/Pulse 已训练，Residual Teacher 已 verified。</p></div>
+            <div class="state yellow"><span class="state-label">制作教程 ProcedureSpec</span><strong>2 条流程 · SFT 0</strong><p>烟花分层复现和真实闪电制作教程已进入检索约束；目标 EffectDemo 2022 完整复现与专业视觉验收尚未通过，因此不进入 Controller 正向 SFT。</p></div>
+          </div>
+          <div style="height:15px"></div>
+          <div class="callout warn"><strong>当前准确位置：</strong>颜色校准11候选、446有效帧通过：灰色不再被重复乘三次，完整颜色/Alpha键与材质色可保留。教程视频已纠正Photoshop图层和Unity对象混淆；R003以明确URP模板完成首段亮、黑、再亮，Prefab已回到EffectDemo。R002 Fixed源重建41帧像素一致，Blend原样重拍仍有小幅波动，保持待校准。下一步把已验证配方接入正常自动选材；制作Planner未训练，正式过程SFT仍为0。</div>
+        </section>
+
+        <section id="next">
+          <div class="section-head">
+            <div><p class="eyebrow">10 / NEXT ACTION</p><h2>接下来应该发生什么</h2></div>
+        <p>已有 Prefab、Material、Teacher 和窄轴模型都作为底层数据与约束保留。主线先把 Prompt 转成可学习、可检索、可执行的 ProposalPlan，再由 Unity 执行和整体质量门判定是进入正样本还是负样本。</p>
+          </div>
+          <div class="next-list">
+           <div class="next-step"><div><strong>将制作教程转为 ProcedureSpec</strong><span>抽取有序步骤、层职责、Shader/贴图功能、参数范围、失败修正和验证证据；在目标 Unity 工程复现后才升级为 Planner 训练监督。</span></div></div>
+           <div class="next-step"><div><strong>完成通用 ProposalPlan</strong><span>合并 Prompt、ProcedureSpec 与 Prefab 结构先验，输出 TopologyPlan、ShaderPlan、TexturePlan、ParameterPlan 和 TimingPlan；各族只提供可插拔操作子。</span></div></div>
+            <div class="next-step"><div><strong>补齐资产与执行契约</strong><span>Material/Shader/Texture/Mesh 必须按层职责联合检索；Particle vertex streams、Shader properties/keywords、MPB 和材质动态参数必须进入 PrefabGraph 编译与回读。</span></div></div>
+          <div class="next-step"><div><strong>将已验证材质配方接入正常生成入口</strong><span>独立颜色与Fixed机制已验证；把包内URP Shader、模板状态、贴图通道和顶点流配方交给正常MaterialPlan检索。校准示例仍是明确实验选材，不能冒充自动排序已正确。</span></div></div>
+          <div class="next-step"><div><strong>建立整体绝对质量门</strong><span>局部 Teacher 可以排序同轴候选，但不能直接批准成品。一批候选全部不合格时必须全部拒绝，不强行选 Top-1。</span></div></div>
+          <div class="next-step"><div><strong>定义失败分流</strong><span>普通质量失败进训练负例；动作空间缺失才扩展操作子；Shader/顶点流等执行缺失修执行器；不再按每个测试手工改架构。</span></div></div>
+          <div class="next-step"><div><strong>扩展 Capture v2 与低频语义确认</strong><span>新 Prefab 自动完成技术处理和动态捕获；人工只修正新簇、高分歧和随机审计样本的元素与类型。</span></div></div>
+          <div class="next-step"><div><strong>迁移现有三族</strong><span>刀光只作首个接口验证，雷电和爆炸紧随迁移；三族共用 Planner、资产检索、执行契约和整体门，只保留必要的族操作子差异。</span></div></div>
+          </div>
+        </section>
+
+        <footer>
+          维护入口：<code>E:\Unity特效人工智能学习\workspace\vfx_generation_architecture.html</code><br>
+          数据入口：<code>E:\Unity特效人工智能学习\workspace\data\vfx_generation\README.md</code><br>
+          任务台账：<code>vfx-2df</code>；本页只解释概念和当前状态，不替代 Beads、实验记录或实际视觉验收。
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="vfx_guide_assets/report_player.js"></script>
+  <script>
+    const flowText = {
+      reference: ["参考目标", "它提供验收依据：连续帧、峰值、收束、方向和层次。它不能凭空恢复作者隐藏的 Shader、贴图通道或 Mesh 拓扑。"],
+      prompt: ["Prompt", "用自然语言规定想要的视觉意图和负向约束，例如不要闭合环、不要矩形贴片。它是搜索目标，不是 Unity 参数表。"],
+      spec: ["ProposalPlan / VFXSpec", "Prompt 先拆成可检查的形体、层职责、Shader、材质、贴图、参数和时序计划；计划通过资产能力与执行契约后，才能编译为 VFXSpec/PrefabGraph。"],
+      candidate: ["Candidate", "同一 Prompt 下的一种具体方案。candidate_id 和 seed 让它可以被复现、横向比较，并在下一轮作为 parent。"],
+      unity: ["Unity", "EffectDemo 2022 在 Play Mode 中执行规格和真实 Prefab。已有路径、编译和回读证据只能证明技术存活；Shader 功能、Material 参数、Texture 通道和 Particle vertex streams 还要逐层对账。"],
+      render: ["Render", "Prefab 按 Particle/Animation/Timeline 实际时长自适应采样；128 条增量捕获得到 2877 个有效帧，错误洋红主导前景的 12 条只进入技术排除。"],
+      auto: ["Auto Eval", "检查 Schema、保存后贴图回读、缺帧、可见面积、裁切与材质保真。空帧只进入技术负样本，不进入审美判断。"],
+      human: ["语义反馈", "只复核主动学习挑出的少量 Capture v2 动态样本；特效元素可多选，特效类型单选，两边都可新增标签。无法播放和无法判断只进入排除记录，审美由专业资料 Teacher 负责。"],
+      mutation: ["Mutation", "普通质量失败直接变成 Planner/Judge 训练负例；只有 ProposalPlan 无法表达的通用能力，或 Unity 执行契约缺失，才允许修改架构。"]
+    };
+    const flowDetail = document.getElementById("flow-detail");
+    document.querySelectorAll("[data-flow]").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-flow]").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        const [title, body] = flowText[button.dataset.flow];
+        flowDetail.innerHTML = `<strong>${title}</strong><p>${body}</p>`;
+      });
+    });
+
+    const specText = {
+      source: "<strong>source_asset：</strong>记录真实 Material、Shader、Texture 路径和 Texture tags。R002 先经过 Unity Shader API r3 审计，避免使用 YAML 陈旧字段。",
+      scope: "<strong>control_scope：</strong>Material 会创建运行时实例；Renderer MPB 和 Slot MPB 保持共享材质不变。Timeline 必须能区分三种来源。",
+      tracks: "<strong>parameter_tracks：</strong>当前支持 float、int、color、vector 与六种曲线；R002 真实运行覆盖 float、color、vector，尚无可用 int 样本。",
+      events: "<strong>runtime events：</strong>R002 实际执行 Keyword 2 次、Texture Swap 16 次、Material Replace 8 次，并逐帧记录变化。",
+      signals: "<strong>expected_signals + split_group：</strong>expected 必须与投影后的 actual 严格相等；Material 与 Shader group 用于后续无泄漏划分。"
+    };
+    const specExplain = document.getElementById("spec-explain");
+    document.querySelectorAll("[data-spec]").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-spec]").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        specExplain.innerHTML = specText[button.dataset.spec];
+      });
+    });
+
+    const termText = {
+      hard: "<strong>硬过滤：</strong>比如没有截图、Unity 有错误、主体完全不可见，机器可以直接拒绝；但“这条弧线不够像参考”仍然要由人看图判断。",
+      prior: "<strong>规格先验：</strong>根据控制点、尖端类型、宽度曲线等参数做的可解释预估。它可以辅助排序，但不是模型看懂了最终像素。",
+      feedback: "<strong>结构化反馈：</strong>把选择、分数、保留部件、拒绝原因和下一轮变异写成 JSONL，后续程序才能读取。",
+      pairwise: "<strong>成对偏好：</strong>直接比较 A 和 B 哪个更好，并记录原因。它通常比孤立地给一个候选打分更适合指导搜索。",
+      manifest: "<strong>Manifest：</strong>一次运行的索引，连接候选、时间点、截图、场景、相机、Console 和校验结果。它是证据目录，不是视觉评价本身。",
+      adapter: "<strong>Adapter：</strong>特效族适配器。它让刀光拥有尖端/方向维度，让火焰拥有翻腾/根部亮度维度，避免一套规则评价所有特效。"
+    };
+    const termDetail = document.getElementById("term-detail");
+    document.querySelectorAll("[data-term]").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-term]").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        termDetail.innerHTML = termText[button.dataset.term];
+      });
+    });
+  </script>
+</body>
+</html>
