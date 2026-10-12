@@ -1,0 +1,55 @@
+{
+  "schema_version": "effect_family_map.v1",
+  "universal_capabilities": [
+    "readability",
+    "shape_language",
+    "layer_roles",
+    "temporal_rhythm",
+    "material_behavior",
+    "spatial_integration",
+    "camera_readability",
+    "performance_budget"
+  ],
+  "effect_families": {
+    "slash": {
+      "generator_families": ["curve_mesh", "blade_band", "trail_residual", "impact_shards"],
+      "specialized_metrics": ["sharpness", "attack_direction", "width_profile", "tip_quality", "residual_flow"],
+      "starter_curriculum": "SlashArc-Pref-001"
+    },
+    "fire": {
+      "generator_families": ["flame_blob", "tongue_particles", "ember_sparks", "smoke_afterburn"],
+      "specialized_metrics": ["turbulence", "root_brightness", "edge_breakup", "heat_layering"],
+      "starter_curriculum": "FireShape-Pref-001"
+    },
+    "lightning": {
+      "generator_families": ["branch_path", "jump_flash", "contact_arc", "afterimage_line"],
+      "specialized_metrics": ["branch_readability", "instant_peak", "path_energy", "randomness_control"],
+      "starter_curriculum": "LightningPath-Pref-001"
+    },
+    "shield": {
+      "generator_families": ["sphere_surface", "ring_shell", "hex_pattern", "impact_ripple"],
+      "specialized_metrics": ["wrap_volume", "impact_response", "surface_readability", "transparent_sorting"],
+      "starter_curriculum": "ShieldImpact-Pref-001"
+    },
+    "smoke": {
+      "generator_families": ["soft_particle_cluster", "volume_billboard", "curl_noise_field", "dissipation_plume"],
+      "specialized_metrics": ["volume_feel", "soft_edge", "occlusion_balance", "dissipation_quality"],
+      "starter_curriculum": "SmokeVolume-Pref-001"
+    },
+    "explosion": {
+      "generator_families": ["core_flash", "shockwave_ring", "debris_burst", "fire_smoke_residual"],
+      "specialized_metrics": ["impact_peak", "scale_readability", "inner_outer_layering", "residual_direction"],
+      "starter_curriculum": "ExplosionBurst-Pref-001"
+    },
+    "magic_circle": {
+      "generator_families": ["ground_ring", "rune_layer", "radial_mask", "warning_pulse"],
+      "specialized_metrics": ["symbol_density", "ground_attachment", "reveal_timing", "layer_clarity"],
+      "starter_curriculum": "MagicCircle-Pref-001"
+    },
+    "water": {
+      "generator_families": ["water_blade", "splash_cluster", "ripple_ring", "flow_trail"],
+      "specialized_metrics": ["flow_direction", "transparency_layering", "foam_edge", "gravity_return"],
+      "starter_curriculum": "WaterFlow-Pref-001"
+    }
+  }
+}
