@@ -1,0 +1,55 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_7856e8d0d9357b508c16",
+    "source": {
+        "source_kind": "generated",
+        "prefab_path": "Assets/VFXGenerated/PrefabGraph/RoundtripR001/Effect_10.prefab",
+        "source_example_id": ""
+    },
+    "condition": {
+        "prompt": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+        "effect_family": "explosion",
+        "style_family": "cartoon",
+        "seed": 20261010,
+        "parent_prefab_path": ""
+    },
+    "root_node_id": "n0000",
+    "nodes": [],
+    "components": {
+        "particle_systems": [],
+        "renderers": [],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [],
+        "meshes": []
+    },
+    "reconstruction": {
+        "status": "reconstructable",
+        "compiler_profile": "particle_v1",
+        "missing_fields": [],
+        "unsupported_components": []
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "full_reconstruction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition"
+        ],
+        "aesthetic_label_source": "ai_hypothesis"
+    },
+    "provenance": {
+        "source_dataset_id": "generated_seed",
+        "source_run_id": "",
+        "exporter": "prefab_graph_readback.v1",
+        "assumptions": [
+            "Graph exported through Unity AssetDatabase and component APIs.",
+            "Material and mesh paths point to the compiled Prefab output assets."
+        ]
+    }
+}

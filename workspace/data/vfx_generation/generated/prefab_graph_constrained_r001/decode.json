@@ -1,0 +1,1717 @@
+{
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate_id": "pfg_c7a6829c4551ee27aa5a",
+      "grammar": {
+        "mask_events": [
+          {
+            "allowed_family": [
+              "<PREFAB>"
+            ],
+            "position": 0,
+            "state_before": "after_prefab",
+            "token": "<PREFAB>"
+          },
+          {
+            "allowed_family": [
+              "RECON_STRUCTURE_ONLY"
+            ],
+            "position": 1,
+            "state_before": "after_prefab",
+            "token": "RECON_STRUCTURE_ONLY"
+          },
+          {
+            "allowed_family": [
+              "<NODE>"
+            ],
+            "position": 2,
+            "state_before": "need_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_0"
+            ],
+            "position": 3,
+            "state_before": "node_header",
+            "token": "DEPTH_0"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_0"
+            ],
+            "position": 4,
+            "state_before": "node_header",
+            "token": "SIBLING_0"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 5,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 6,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 7,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 8,
+            "state_before": "after_node",
+            "token": "</PREFAB>"
+          }
+        ],
+        "masked_invalid_token_count": 106,
+        "selection_mode": "neural_ranked_valid_templates",
+        "valid": true
+      },
+      "graph": {
+        "asset_bindings": {
+          "materials": [],
+          "meshes": []
+        },
+        "components": {
+          "animations": [],
+          "particle_systems": [],
+          "renderers": []
+        },
+        "condition": {
+          "effect_family": "unknown",
+          "parent_prefab_path": null,
+          "prompt": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+          "seed": 20260901,
+          "style_family": "cartoon"
+        },
+        "graph_id": "pfg_c7a6829c4551ee27aa5a",
+        "nodes": [
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.Transform"
+            ],
+            "depth": 0,
+            "hierarchy_path": "GeneratedRoot[0]",
+            "name": "GeneratedRoot",
+            "node_id": "n0000",
+            "parent_node_id": null,
+            "role": "root",
+            "sibling_index": 0,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        ],
+        "provenance": {
+          "assumptions": [
+            "Constrained decoder emits a structure-only graph with safe default particle parameters.",
+            "No source or parent Prefab is read."
+          ],
+          "exporter": "prefab_graph.v1",
+          "source_dataset_id": "constrained_decode",
+          "source_run_id": null
+        },
+        "reconstruction": {
+          "compiler_profile": "none",
+          "missing_fields": [
+            "asset_plan",
+            "full_particle_curves"
+          ],
+          "status": "structure_only",
+          "unsupported_components": []
+        },
+        "root_node_id": "n0000",
+        "schema_version": "vfx_prefab_graph.v1",
+        "source": {
+          "prefab_path": null,
+          "source_example_id": null,
+          "source_kind": "generated"
+        },
+        "training": {
+          "aesthetic_label_source": "ai_hypothesis",
+          "eligible_tasks": [
+            "hierarchy_modeling",
+            "component_prediction"
+          ],
+          "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition",
+            "full_reconstruction"
+          ]
+        }
+      },
+      "profile": "root_only",
+      "score": -8.14919021714013,
+      "tokens": [
+        "<PREFAB>",
+        "RECON_STRUCTURE_ONLY",
+        "<NODE>",
+        "DEPTH_0",
+        "SIBLING_0",
+        "ACTIVE_1",
+        "COMP_TRANSFORM",
+        "</NODE>",
+        "</PREFAB>"
+      ],
+      "training_scope": "structure_only; no aesthetic or human preference supervision"
+    },
+    {
+      "candidate_id": "pfg_3154810fb1fbc9d7c712",
+      "grammar": {
+        "mask_events": [
+          {
+            "allowed_family": [
+              "<PREFAB>"
+            ],
+            "position": 0,
+            "state_before": "after_prefab",
+            "token": "<PREFAB>"
+          },
+          {
+            "allowed_family": [
+              "RECON_STRUCTURE_ONLY"
+            ],
+            "position": 1,
+            "state_before": "after_prefab",
+            "token": "RECON_STRUCTURE_ONLY"
+          },
+          {
+            "allowed_family": [
+              "<NODE>"
+            ],
+            "position": 2,
+            "state_before": "need_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_0"
+            ],
+            "position": 3,
+            "state_before": "node_header",
+            "token": "DEPTH_0"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_0"
+            ],
+            "position": 4,
+            "state_before": "node_header",
+            "token": "SIBLING_0"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 5,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 6,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 7,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 8,
+            "state_before": "after_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_1"
+            ],
+            "position": 9,
+            "state_before": "node_header",
+            "token": "DEPTH_1"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_0"
+            ],
+            "position": 10,
+            "state_before": "node_header",
+            "token": "SIBLING_0"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 11,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEM"
+            ],
+            "position": 12,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEM"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 13,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 14,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "<PARTICLE>"
+            ],
+            "position": 15,
+            "state_before": "node_components",
+            "token": "<PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "SIM_LOCAL"
+            ],
+            "position": 16,
+            "state_before": "particle_body",
+            "token": "SIM_LOCAL"
+          },
+          {
+            "allowed_family": [
+              "LOOP_0"
+            ],
+            "position": 17,
+            "state_before": "particle_body",
+            "token": "LOOP_0"
+          },
+          {
+            "allowed_family": [
+              "SHAPE_BOX"
+            ],
+            "position": 18,
+            "state_before": "particle_body",
+            "token": "SHAPE_BOX"
+          },
+          {
+            "allowed_family": [
+              "RENDER_BILLBOARD"
+            ],
+            "position": 19,
+            "state_before": "particle_body",
+            "token": "RENDER_BILLBOARD"
+          },
+          {
+            "allowed_family": [
+              "LIFETIME_LOG2_-1"
+            ],
+            "position": 20,
+            "state_before": "particle_body",
+            "token": "LIFETIME_LOG2_-1"
+          },
+          {
+            "allowed_family": [
+              "SIZE_LOG2_0"
+            ],
+            "position": 21,
+            "state_before": "particle_body",
+            "token": "SIZE_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "SPEED_LOG2_0"
+            ],
+            "position": 22,
+            "state_before": "particle_body",
+            "token": "SPEED_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "MATERIALS_0"
+            ],
+            "position": 23,
+            "state_before": "particle_body",
+            "token": "MATERIALS_0"
+          },
+          {
+            "allowed_family": [
+              "</PARTICLE>"
+            ],
+            "position": 24,
+            "state_before": "particle_body",
+            "token": "</PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "<RENDERER>"
+            ],
+            "position": 25,
+            "state_before": "node_components",
+            "token": "<RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "TYPE_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 26,
+            "state_before": "renderer_body",
+            "token": "TYPE_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "ENABLED_1"
+            ],
+            "position": 27,
+            "state_before": "renderer_body",
+            "token": "ENABLED_1"
+          },
+          {
+            "allowed_family": [
+              "</RENDERER>"
+            ],
+            "position": 28,
+            "state_before": "renderer_body",
+            "token": "</RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 29,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 30,
+            "state_before": "after_node",
+            "token": "</PREFAB>"
+          }
+        ],
+        "masked_invalid_token_count": 106,
+        "selection_mode": "neural_ranked_valid_templates",
+        "valid": true
+      },
+      "graph": {
+        "asset_bindings": {
+          "materials": [],
+          "meshes": []
+        },
+        "components": {
+          "animations": [],
+          "particle_systems": [
+            {
+              "component_id": "p0000",
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0001",
+              "parameters": {
+                "burst_particle_count": 16,
+                "color_over_lifetime_enabled": true,
+                "duration_seconds": 0.8,
+                "emission_enabled": true,
+                "emission_rate_over_time_max": 0.0,
+                "end_color_rgba": [
+                  0.05,
+                  0.25,
+                  1.0,
+                  0.0
+                ],
+                "end_size_multiplier": 0.05,
+                "looping": false,
+                "max_particles": 64,
+                "renderer_mode": "Billboard",
+                "serialized_modules": {
+                  "profile": "constrained_structure_default"
+                },
+                "shape_enabled": true,
+                "shape_radius": 0.1,
+                "shape_type": "Box",
+                "simulation_space": "Local",
+                "size_over_lifetime_enabled": true,
+                "sorting_order": 2,
+                "start_color_rgba": [
+                  0.35,
+                  0.75,
+                  1.0,
+                  0.9
+                ],
+                "start_lifetime_max": 0.5,
+                "start_size_max": 1.0,
+                "start_speed_max": 1.0
+              }
+            }
+          ],
+          "renderers": [
+            {
+              "component_id": "r0000",
+              "enabled": true,
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0001",
+              "parameters": {
+                "particle_render_mode": "Billboard",
+                "sorting_order": 2
+              },
+              "renderer_type": "ParticleSystemRenderer"
+            }
+          ]
+        },
+        "condition": {
+          "effect_family": "unknown",
+          "parent_prefab_path": null,
+          "prompt": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+          "seed": 20260901,
+          "style_family": "cartoon"
+        },
+        "graph_id": "pfg_3154810fb1fbc9d7c712",
+        "nodes": [
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.Transform"
+            ],
+            "depth": 0,
+            "hierarchy_path": "GeneratedRoot[0]",
+            "name": "GeneratedRoot",
+            "node_id": "n0000",
+            "parent_node_id": null,
+            "role": "root",
+            "sibling_index": 0,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.ParticleSystem",
+              "UnityEngine.ParticleSystemRenderer",
+              "UnityEngine.Transform"
+            ],
+            "depth": 1,
+            "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_01[0]",
+            "name": "GeneratedLayer_01",
+            "node_id": "n0001",
+            "parent_node_id": "n0000",
+            "role": "core",
+            "sibling_index": 0,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        ],
+        "provenance": {
+          "assumptions": [
+            "Constrained decoder emits a structure-only graph with safe default particle parameters.",
+            "No source or parent Prefab is read."
+          ],
+          "exporter": "prefab_graph.v1",
+          "source_dataset_id": "constrained_decode",
+          "source_run_id": null
+        },
+        "reconstruction": {
+          "compiler_profile": "none",
+          "missing_fields": [
+            "asset_plan",
+            "full_particle_curves"
+          ],
+          "status": "structure_only",
+          "unsupported_components": []
+        },
+        "root_node_id": "n0000",
+        "schema_version": "vfx_prefab_graph.v1",
+        "source": {
+          "prefab_path": null,
+          "source_example_id": null,
+          "source_kind": "generated"
+        },
+        "training": {
+          "aesthetic_label_source": "ai_hypothesis",
+          "eligible_tasks": [
+            "hierarchy_modeling",
+            "component_prediction"
+          ],
+          "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition",
+            "full_reconstruction"
+          ]
+        }
+      },
+      "profile": "particle_v1",
+      "score": -25.143693337740842,
+      "tokens": [
+        "<PREFAB>",
+        "RECON_STRUCTURE_ONLY",
+        "<NODE>",
+        "DEPTH_0",
+        "SIBLING_0",
+        "ACTIVE_1",
+        "COMP_TRANSFORM",
+        "</NODE>",
+        "<NODE>",
+        "DEPTH_1",
+        "SIBLING_0",
+        "ACTIVE_1",
+        "COMP_PARTICLESYSTEM",
+        "COMP_PARTICLESYSTEMRENDERER",
+        "COMP_TRANSFORM",
+        "<PARTICLE>",
+        "SIM_LOCAL",
+        "LOOP_0",
+        "SHAPE_BOX",
+        "RENDER_BILLBOARD",
+        "LIFETIME_LOG2_-1",
+        "SIZE_LOG2_0",
+        "SPEED_LOG2_0",
+        "MATERIALS_0",
+        "</PARTICLE>",
+        "<RENDERER>",
+        "TYPE_PARTICLESYSTEMRENDERER",
+        "ENABLED_1",
+        "</RENDERER>",
+        "</NODE>",
+        "</PREFAB>"
+      ],
+      "training_scope": "structure_only; no aesthetic or human preference supervision"
+    },
+    {
+      "candidate_id": "pfg_2c5be66c72862ae23976",
+      "grammar": {
+        "mask_events": [
+          {
+            "allowed_family": [
+              "<PREFAB>"
+            ],
+            "position": 0,
+            "state_before": "after_prefab",
+            "token": "<PREFAB>"
+          },
+          {
+            "allowed_family": [
+              "RECON_STRUCTURE_ONLY"
+            ],
+            "position": 1,
+            "state_before": "after_prefab",
+            "token": "RECON_STRUCTURE_ONLY"
+          },
+          {
+            "allowed_family": [
+              "<NODE>"
+            ],
+            "position": 2,
+            "state_before": "need_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_0"
+            ],
+            "position": 3,
+            "state_before": "node_header",
+            "token": "DEPTH_0"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_0"
+            ],
+            "position": 4,
+            "state_before": "node_header",
+            "token": "SIBLING_0"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 5,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 6,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 7,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 8,
+            "state_before": "after_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_1"
+            ],
+            "position": 9,
+            "state_before": "node_header",
+            "token": "DEPTH_1"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_0"
+            ],
+            "position": 10,
+            "state_before": "node_header",
+            "token": "SIBLING_0"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 11,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEM"
+            ],
+            "position": 12,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEM"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 13,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 14,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "<PARTICLE>"
+            ],
+            "position": 15,
+            "state_before": "node_components",
+            "token": "<PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "SIM_LOCAL"
+            ],
+            "position": 16,
+            "state_before": "particle_body",
+            "token": "SIM_LOCAL"
+          },
+          {
+            "allowed_family": [
+              "LOOP_0"
+            ],
+            "position": 17,
+            "state_before": "particle_body",
+            "token": "LOOP_0"
+          },
+          {
+            "allowed_family": [
+              "SHAPE_SPHERE"
+            ],
+            "position": 18,
+            "state_before": "particle_body",
+            "token": "SHAPE_SPHERE"
+          },
+          {
+            "allowed_family": [
+              "RENDER_BILLBOARD"
+            ],
+            "position": 19,
+            "state_before": "particle_body",
+            "token": "RENDER_BILLBOARD"
+          },
+          {
+            "allowed_family": [
+              "LIFETIME_LOG2_-1"
+            ],
+            "position": 20,
+            "state_before": "particle_body",
+            "token": "LIFETIME_LOG2_-1"
+          },
+          {
+            "allowed_family": [
+              "SIZE_LOG2_0"
+            ],
+            "position": 21,
+            "state_before": "particle_body",
+            "token": "SIZE_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "SPEED_LOG2_0"
+            ],
+            "position": 22,
+            "state_before": "particle_body",
+            "token": "SPEED_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "MATERIALS_0"
+            ],
+            "position": 23,
+            "state_before": "particle_body",
+            "token": "MATERIALS_0"
+          },
+          {
+            "allowed_family": [
+              "</PARTICLE>"
+            ],
+            "position": 24,
+            "state_before": "particle_body",
+            "token": "</PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "<RENDERER>"
+            ],
+            "position": 25,
+            "state_before": "node_components",
+            "token": "<RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "TYPE_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 26,
+            "state_before": "renderer_body",
+            "token": "TYPE_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "ENABLED_1"
+            ],
+            "position": 27,
+            "state_before": "renderer_body",
+            "token": "ENABLED_1"
+          },
+          {
+            "allowed_family": [
+              "</RENDERER>"
+            ],
+            "position": 28,
+            "state_before": "renderer_body",
+            "token": "</RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 29,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 30,
+            "state_before": "after_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_1"
+            ],
+            "position": 31,
+            "state_before": "node_header",
+            "token": "DEPTH_1"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_1"
+            ],
+            "position": 32,
+            "state_before": "node_header",
+            "token": "SIBLING_1"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 33,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEM"
+            ],
+            "position": 34,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEM"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 35,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 36,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "<PARTICLE>"
+            ],
+            "position": 37,
+            "state_before": "node_components",
+            "token": "<PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "SIM_LOCAL"
+            ],
+            "position": 38,
+            "state_before": "particle_body",
+            "token": "SIM_LOCAL"
+          },
+          {
+            "allowed_family": [
+              "LOOP_0"
+            ],
+            "position": 39,
+            "state_before": "particle_body",
+            "token": "LOOP_0"
+          },
+          {
+            "allowed_family": [
+              "SHAPE_CIRCLE"
+            ],
+            "position": 40,
+            "state_before": "particle_body",
+            "token": "SHAPE_CIRCLE"
+          },
+          {
+            "allowed_family": [
+              "RENDER_BILLBOARD"
+            ],
+            "position": 41,
+            "state_before": "particle_body",
+            "token": "RENDER_BILLBOARD"
+          },
+          {
+            "allowed_family": [
+              "LIFETIME_LOG2_-1"
+            ],
+            "position": 42,
+            "state_before": "particle_body",
+            "token": "LIFETIME_LOG2_-1"
+          },
+          {
+            "allowed_family": [
+              "SIZE_LOG2_1"
+            ],
+            "position": 43,
+            "state_before": "particle_body",
+            "token": "SIZE_LOG2_1"
+          },
+          {
+            "allowed_family": [
+              "SPEED_LOG2_0"
+            ],
+            "position": 44,
+            "state_before": "particle_body",
+            "token": "SPEED_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "MATERIALS_0"
+            ],
+            "position": 45,
+            "state_before": "particle_body",
+            "token": "MATERIALS_0"
+          },
+          {
+            "allowed_family": [
+              "</PARTICLE>"
+            ],
+            "position": 46,
+            "state_before": "particle_body",
+            "token": "</PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "<RENDERER>"
+            ],
+            "position": 47,
+            "state_before": "node_components",
+            "token": "<RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "TYPE_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 48,
+            "state_before": "renderer_body",
+            "token": "TYPE_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "ENABLED_1"
+            ],
+            "position": 49,
+            "state_before": "renderer_body",
+            "token": "ENABLED_1"
+          },
+          {
+            "allowed_family": [
+              "</RENDERER>"
+            ],
+            "position": 50,
+            "state_before": "renderer_body",
+            "token": "</RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 51,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 52,
+            "state_before": "after_node",
+            "token": "<NODE>"
+          },
+          {
+            "allowed_family": [
+              "DEPTH_1"
+            ],
+            "position": 53,
+            "state_before": "node_header",
+            "token": "DEPTH_1"
+          },
+          {
+            "allowed_family": [
+              "SIBLING_2"
+            ],
+            "position": 54,
+            "state_before": "node_header",
+            "token": "SIBLING_2"
+          },
+          {
+            "allowed_family": [
+              "ACTIVE_1"
+            ],
+            "position": 55,
+            "state_before": "node_header",
+            "token": "ACTIVE_1"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEM"
+            ],
+            "position": 56,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEM"
+          },
+          {
+            "allowed_family": [
+              "COMP_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 57,
+            "state_before": "node_components",
+            "token": "COMP_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "COMP_TRANSFORM"
+            ],
+            "position": 58,
+            "state_before": "node_components",
+            "token": "COMP_TRANSFORM"
+          },
+          {
+            "allowed_family": [
+              "<PARTICLE>"
+            ],
+            "position": 59,
+            "state_before": "node_components",
+            "token": "<PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "SIM_LOCAL"
+            ],
+            "position": 60,
+            "state_before": "particle_body",
+            "token": "SIM_LOCAL"
+          },
+          {
+            "allowed_family": [
+              "LOOP_0"
+            ],
+            "position": 61,
+            "state_before": "particle_body",
+            "token": "LOOP_0"
+          },
+          {
+            "allowed_family": [
+              "SHAPE_BOX"
+            ],
+            "position": 62,
+            "state_before": "particle_body",
+            "token": "SHAPE_BOX"
+          },
+          {
+            "allowed_family": [
+              "RENDER_BILLBOARD"
+            ],
+            "position": 63,
+            "state_before": "particle_body",
+            "token": "RENDER_BILLBOARD"
+          },
+          {
+            "allowed_family": [
+              "LIFETIME_LOG2_-1"
+            ],
+            "position": 64,
+            "state_before": "particle_body",
+            "token": "LIFETIME_LOG2_-1"
+          },
+          {
+            "allowed_family": [
+              "SIZE_LOG2_0"
+            ],
+            "position": 65,
+            "state_before": "particle_body",
+            "token": "SIZE_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "SPEED_LOG2_0"
+            ],
+            "position": 66,
+            "state_before": "particle_body",
+            "token": "SPEED_LOG2_0"
+          },
+          {
+            "allowed_family": [
+              "MATERIALS_0"
+            ],
+            "position": 67,
+            "state_before": "particle_body",
+            "token": "MATERIALS_0"
+          },
+          {
+            "allowed_family": [
+              "</PARTICLE>"
+            ],
+            "position": 68,
+            "state_before": "particle_body",
+            "token": "</PARTICLE>"
+          },
+          {
+            "allowed_family": [
+              "<RENDERER>"
+            ],
+            "position": 69,
+            "state_before": "node_components",
+            "token": "<RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "TYPE_PARTICLESYSTEMRENDERER"
+            ],
+            "position": 70,
+            "state_before": "renderer_body",
+            "token": "TYPE_PARTICLESYSTEMRENDERER"
+          },
+          {
+            "allowed_family": [
+              "ENABLED_1"
+            ],
+            "position": 71,
+            "state_before": "renderer_body",
+            "token": "ENABLED_1"
+          },
+          {
+            "allowed_family": [
+              "</RENDERER>"
+            ],
+            "position": 72,
+            "state_before": "renderer_body",
+            "token": "</RENDERER>"
+          },
+          {
+            "allowed_family": [
+              "</NODE>"
+            ],
+            "position": 73,
+            "state_before": "node_components",
+            "token": "</NODE>"
+          },
+          {
+            "allowed_family": [
+              "<NODE>",
+              "</PREFAB>"
+            ],
+            "position": 74,
+            "state_before": "after_node",
+            "token": "</PREFAB>"
+          }
+        ],
+        "masked_invalid_token_count": 106,
+        "selection_mode": "neural_ranked_valid_templates",
+        "valid": true
+      },
+      "graph": {
+        "asset_bindings": {
+          "materials": [],
+          "meshes": []
+        },
+        "components": {
+          "animations": [],
+          "particle_systems": [
+            {
+              "component_id": "p0000",
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0001",
+              "parameters": {
+                "burst_particle_count": 16,
+                "color_over_lifetime_enabled": true,
+                "duration_seconds": 0.8,
+                "emission_enabled": true,
+                "emission_rate_over_time_max": 0.0,
+                "end_color_rgba": [
+                  0.05,
+                  0.25,
+                  1.0,
+                  0.0
+                ],
+                "end_size_multiplier": 0.05,
+                "looping": false,
+                "max_particles": 64,
+                "renderer_mode": "Billboard",
+                "serialized_modules": {
+                  "profile": "constrained_structure_default"
+                },
+                "shape_enabled": true,
+                "shape_radius": 0.1,
+                "shape_type": "Sphere",
+                "simulation_space": "Local",
+                "size_over_lifetime_enabled": true,
+                "sorting_order": 2,
+                "start_color_rgba": [
+                  0.35,
+                  0.75,
+                  1.0,
+                  0.9
+                ],
+                "start_lifetime_max": 0.5,
+                "start_size_max": 1.0,
+                "start_speed_max": 1.0
+              }
+            },
+            {
+              "component_id": "p0001",
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0002",
+              "parameters": {
+                "burst_particle_count": 16,
+                "color_over_lifetime_enabled": true,
+                "duration_seconds": 0.8,
+                "emission_enabled": true,
+                "emission_rate_over_time_max": 0.0,
+                "end_color_rgba": [
+                  0.05,
+                  0.25,
+                  1.0,
+                  0.0
+                ],
+                "end_size_multiplier": 0.05,
+                "looping": false,
+                "max_particles": 64,
+                "renderer_mode": "Billboard",
+                "serialized_modules": {
+                  "profile": "constrained_structure_default"
+                },
+                "shape_enabled": true,
+                "shape_radius": 0.1,
+                "shape_type": "Circle",
+                "simulation_space": "Local",
+                "size_over_lifetime_enabled": true,
+                "sorting_order": 2,
+                "start_color_rgba": [
+                  0.35,
+                  0.75,
+                  1.0,
+                  0.9
+                ],
+                "start_lifetime_max": 0.5,
+                "start_size_max": 2.0,
+                "start_speed_max": 1.0
+              }
+            },
+            {
+              "component_id": "p0002",
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0003",
+              "parameters": {
+                "burst_particle_count": 16,
+                "color_over_lifetime_enabled": true,
+                "duration_seconds": 0.8,
+                "emission_enabled": true,
+                "emission_rate_over_time_max": 0.0,
+                "end_color_rgba": [
+                  0.05,
+                  0.25,
+                  1.0,
+                  0.0
+                ],
+                "end_size_multiplier": 0.05,
+                "looping": false,
+                "max_particles": 64,
+                "renderer_mode": "Billboard",
+                "serialized_modules": {
+                  "profile": "constrained_structure_default"
+                },
+                "shape_enabled": true,
+                "shape_radius": 0.1,
+                "shape_type": "Box",
+                "simulation_space": "Local",
+                "size_over_lifetime_enabled": true,
+                "sorting_order": 2,
+                "start_color_rgba": [
+                  0.35,
+                  0.75,
+                  1.0,
+                  0.9
+                ],
+                "start_lifetime_max": 0.5,
+                "start_size_max": 1.0,
+                "start_speed_max": 1.0
+              }
+            }
+          ],
+          "renderers": [
+            {
+              "component_id": "r0000",
+              "enabled": true,
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0001",
+              "parameters": {
+                "particle_render_mode": "Billboard",
+                "sorting_order": 2
+              },
+              "renderer_type": "ParticleSystemRenderer"
+            },
+            {
+              "component_id": "r0001",
+              "enabled": true,
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0002",
+              "parameters": {
+                "particle_render_mode": "Billboard",
+                "sorting_order": 2
+              },
+              "renderer_type": "ParticleSystemRenderer"
+            },
+            {
+              "component_id": "r0002",
+              "enabled": true,
+              "material_paths": [],
+              "mesh_paths": [],
+              "node_id": "n0003",
+              "parameters": {
+                "particle_render_mode": "Billboard",
+                "sorting_order": 2
+              },
+              "renderer_type": "ParticleSystemRenderer"
+            }
+          ]
+        },
+        "condition": {
+          "effect_family": "unknown",
+          "parent_prefab_path": null,
+          "prompt": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+          "seed": 20260901,
+          "style_family": "cartoon"
+        },
+        "graph_id": "pfg_2c5be66c72862ae23976",
+        "nodes": [
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.Transform"
+            ],
+            "depth": 0,
+            "hierarchy_path": "GeneratedRoot[0]",
+            "name": "GeneratedRoot",
+            "node_id": "n0000",
+            "parent_node_id": null,
+            "role": "root",
+            "sibling_index": 0,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.ParticleSystem",
+              "UnityEngine.ParticleSystemRenderer",
+              "UnityEngine.Transform"
+            ],
+            "depth": 1,
+            "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_01[0]",
+            "name": "GeneratedLayer_01",
+            "node_id": "n0001",
+            "parent_node_id": "n0000",
+            "role": "core",
+            "sibling_index": 0,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.ParticleSystem",
+              "UnityEngine.ParticleSystemRenderer",
+              "UnityEngine.Transform"
+            ],
+            "depth": 1,
+            "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_02[1]",
+            "name": "GeneratedLayer_02",
+            "node_id": "n0002",
+            "parent_node_id": "n0000",
+            "role": "support",
+            "sibling_index": 1,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "active_self": true,
+            "component_types": [
+              "UnityEngine.ParticleSystem",
+              "UnityEngine.ParticleSystemRenderer",
+              "UnityEngine.Transform"
+            ],
+            "depth": 1,
+            "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_03[2]",
+            "name": "GeneratedLayer_03",
+            "node_id": "n0003",
+            "parent_node_id": "n0000",
+            "role": "hit",
+            "sibling_index": 2,
+            "transform": {
+              "local_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "local_rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "local_scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          }
+        ],
+        "provenance": {
+          "assumptions": [
+            "Constrained decoder emits a structure-only graph with safe default particle parameters.",
+            "No source or parent Prefab is read."
+          ],
+          "exporter": "prefab_graph.v1",
+          "source_dataset_id": "constrained_decode",
+          "source_run_id": null
+        },
+        "reconstruction": {
+          "compiler_profile": "none",
+          "missing_fields": [
+            "asset_plan",
+            "full_particle_curves"
+          ],
+          "status": "structure_only",
+          "unsupported_components": []
+        },
+        "root_node_id": "n0000",
+        "schema_version": "vfx_prefab_graph.v1",
+        "source": {
+          "prefab_path": null,
+          "source_example_id": null,
+          "source_kind": "generated"
+        },
+        "training": {
+          "aesthetic_label_source": "ai_hypothesis",
+          "eligible_tasks": [
+            "hierarchy_modeling",
+            "component_prediction"
+          ],
+          "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition",
+            "full_reconstruction"
+          ]
+        }
+      },
+      "profile": "multi_particle",
+      "score": -78.88800056278706,
+      "tokens": [
+        "<PREFAB>",
+        "RECON_STRUCTURE_ONLY",
+        "<NODE>",
+        "DEPTH_0",
+        "SIBLING_0",
+        "ACTIVE_1",
+        "COMP_TRANSFORM",
+        "</NODE>",
+        "<NODE>",
+        "DEPTH_1",
+        "SIBLING_0",
+        "ACTIVE_1",
+        "COMP_PARTICLESYSTEM",
+        "COMP_PARTICLESYSTEMRENDERER",
+        "COMP_TRANSFORM",
+        "<PARTICLE>",
+        "SIM_LOCAL",
+        "LOOP_0",
+        "SHAPE_SPHERE",
+        "RENDER_BILLBOARD",
+        "LIFETIME_LOG2_-1",
+        "SIZE_LOG2_0",
+        "SPEED_LOG2_0",
+        "MATERIALS_0",
+        "</PARTICLE>",
+        "<RENDERER>",
+        "TYPE_PARTICLESYSTEMRENDERER",
+        "ENABLED_1",
+        "</RENDERER>",
+        "</NODE>",
+        "<NODE>",
+        "DEPTH_1",
+        "SIBLING_1",
+        "ACTIVE_1",
+        "COMP_PARTICLESYSTEM",
+        "COMP_PARTICLESYSTEMRENDERER",
+        "COMP_TRANSFORM",
+        "<PARTICLE>",
+        "SIM_LOCAL",
+        "LOOP_0",
+        "SHAPE_CIRCLE",
+        "RENDER_BILLBOARD",
+        "LIFETIME_LOG2_-1",
+        "SIZE_LOG2_1",
+        "SPEED_LOG2_0",
+        "MATERIALS_0",
+        "</PARTICLE>",
+        "<RENDERER>",
+        "TYPE_PARTICLESYSTEMRENDERER",
+        "ENABLED_1",
+        "</RENDERER>",
+        "</NODE>",
+        "<NODE>",
+        "DEPTH_1",
+        "SIBLING_2",
+        "ACTIVE_1",
+        "COMP_PARTICLESYSTEM",
+        "COMP_PARTICLESYSTEMRENDERER",
+        "COMP_TRANSFORM",
+        "<PARTICLE>",
+        "SIM_LOCAL",
+        "LOOP_0",
+        "SHAPE_BOX",
+        "RENDER_BILLBOARD",
+        "LIFETIME_LOG2_-1",
+        "SIZE_LOG2_0",
+        "SPEED_LOG2_0",
+        "MATERIALS_0",
+        "</PARTICLE>",
+        "<RENDERER>",
+        "TYPE_PARTICLESYSTEMRENDERER",
+        "ENABLED_1",
+        "</RENDERER>",
+        "</NODE>",
+        "</PREFAB>"
+      ],
+      "training_scope": "structure_only; no aesthetic or human preference supervision"
+    }
+  ],
+  "checkpoint_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prefab_graph_next_token_r002/prefab_graph_next_token.pt",
+  "created_at": "2026-09-01T11:03:57.061684+00:00",
+  "model_version": "prefab_graph_gru_next_token.v1",
+  "profiles": [
+    "root_only",
+    "particle_v1",
+    "multi_particle"
+  ],
+  "schema_version": "vfx_prefab_graph_constrained_decode.v1",
+  "status": "pass"
+}

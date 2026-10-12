@@ -1,0 +1,92 @@
+{
+  "candidate_count": 3,
+  "capture_root": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/captures",
+  "compile_status_counts": {
+    "pass": 3
+  },
+  "created_at": "2026-09-01T11:14:21.984577+00:00",
+  "quality_gates": {
+    "all_capture_frames_valid": true,
+    "all_compile_pass": true,
+    "all_no_parent_source_read": true,
+    "expected_profiles": [
+      "root_only",
+      "particle_v1",
+      "multi_particle"
+    ],
+    "particle_candidates_have_generated_assets": true,
+    "profiles_present": [
+      "multi_particle",
+      "particle_v1",
+      "root_only"
+    ],
+    "unity_render_errors_empty": true
+  },
+  "rows": [
+    {
+      "asset_plan_path": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/asset_plans/asset_plan_pfg_4556a0d8e58b332bbc18.json",
+      "candidate_id": "pfg_4556a0d8e58b332bbc18",
+      "compile_status": "pass",
+      "frame_count": 9,
+      "generated_material_count": 3,
+      "generated_texture_count": 3,
+      "graph_path": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/graphs/pfg_4556a0d8e58b332bbc18.json",
+      "node_count": 4,
+      "parent_prefab_path": null,
+      "particle_system_count": 3,
+      "prefab_path": "Assets/VFXGenerated/PrefabGraph/AssetUpgradeR001/multi_particle/GeneratedRoot.prefab",
+      "profile": "multi_particle",
+      "render_error": "",
+      "shader_names": [
+        "Common/ColorDefault"
+      ],
+      "source_prefab_read": false,
+      "valid_frame_count": 9,
+      "visual_expectation": "visible_candidate"
+    },
+    {
+      "asset_plan_path": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/asset_plans/asset_plan_pfg_0519627aabe22293ee84.json",
+      "candidate_id": "pfg_0519627aabe22293ee84",
+      "compile_status": "pass",
+      "frame_count": 9,
+      "generated_material_count": 1,
+      "generated_texture_count": 1,
+      "graph_path": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/graphs/pfg_0519627aabe22293ee84.json",
+      "node_count": 2,
+      "parent_prefab_path": null,
+      "particle_system_count": 1,
+      "prefab_path": "Assets/VFXGenerated/PrefabGraph/AssetUpgradeR001/particle_v1/GeneratedRoot.prefab",
+      "profile": "particle_v1",
+      "render_error": "",
+      "shader_names": [
+        "Common/ColorDefault"
+      ],
+      "source_prefab_read": false,
+      "valid_frame_count": 9,
+      "visual_expectation": "visible_candidate"
+    },
+    {
+      "asset_plan_path": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/asset_plans/asset_plan_pfg_4f4fdbd1e7483a7456d9.json",
+      "candidate_id": "pfg_4f4fdbd1e7483a7456d9",
+      "compile_status": "pass",
+      "frame_count": 9,
+      "generated_material_count": 0,
+      "generated_texture_count": 0,
+      "graph_path": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/graphs/pfg_4f4fdbd1e7483a7456d9.json",
+      "node_count": 1,
+      "parent_prefab_path": null,
+      "particle_system_count": 0,
+      "prefab_path": "Assets/VFXGenerated/PrefabGraph/AssetUpgradeR001/root_only/GeneratedRoot.prefab",
+      "profile": "root_only",
+      "render_error": "",
+      "shader_names": [],
+      "source_prefab_read": false,
+      "valid_frame_count": 9,
+      "visual_expectation": "no_particle_visual"
+    }
+  ],
+  "schema_version": "vfx_prefab_graph_asset_upgrade_report.v1",
+  "status": "pass",
+  "training_scope": "technical asset routing and compiler validation; AI hypotheses only; no human aesthetic or preference labels",
+  "upgrade_manifest": "workspace/data/vfx_generation/generated/prefab_graph_asset_upgrade_r001/upgrade_manifest.json"
+}

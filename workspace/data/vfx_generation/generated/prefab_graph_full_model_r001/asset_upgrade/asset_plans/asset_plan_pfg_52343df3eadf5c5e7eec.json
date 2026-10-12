@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "asset_id": "447ce7d26a464bb5a5410dc035e9a571",
+      "asset_role": "material_template",
+      "authorization_status": "local_source_unconfirmed",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+      "selection_basis": [
+        "Unity material binding audit",
+        "explicit SrcAlpha/OneMinusSrcAlpha/ZWriteOff configuration",
+        "material is present in EffectDemo 2022"
+      ],
+      "selection_mode": "audited_local_template",
+      "sha256": "d0015648f66fb1e7aca7d8b24944ae8d682bba6b53b90143576455a5ee24b686",
+      "shader_name": "Common/ColorDefault",
+      "texture_profile": null
+    },
+    {
+      "asset_id": null,
+      "asset_role": "generated_texture",
+      "authorization_status": "generated",
+      "path": null,
+      "selection_basis": [
+        "deterministic Texture2D profile: spark",
+        "generated inside Unity compiler after asset-plan validation"
+      ],
+      "selection_mode": "deterministic_generated",
+      "sha256": null,
+      "shader_name": null,
+      "texture_profile": "spark"
+    }
+  ],
+  "candidate_id": "pfg_52343df3eadf5c5e7eec",
+  "parent_prefab_path": null,
+  "plan_id": "asset_plan_pfg_52343df3eadf5c5e7eec",
+  "schema_version": "vfx_prefab_asset_plan.v1",
+  "selection_basis": [
+    "No parent Prefab is read.",
+    "Audited material template is cloned into a new output material.",
+    "Generated textures are not source assets and are created by the compiler."
+  ],
+  "status": "pass",
+  "training_scope": "technical_asset_routing; no aesthetic or human preference supervision"
+}

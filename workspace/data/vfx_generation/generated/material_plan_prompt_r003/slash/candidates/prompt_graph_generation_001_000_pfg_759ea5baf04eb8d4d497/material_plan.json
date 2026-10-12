@@ -1,0 +1,301 @@
+{
+  "condition": {
+    "color_keywords": [
+      "cyan"
+    ],
+    "effect_family": "slash",
+    "performance_tier": "standard",
+    "prompt": "写实青色刀光，清楚刃带与尖端，短促命中，不要闭合圆环，标准性能",
+    "seed": 20261140,
+    "style_family": "realistic"
+  },
+  "created_at": "2026-09-02T11:51:28.474028+00:00",
+  "graph_id": "pfg_759ea5baf04eb8d4d497",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_289b44deb98f615c",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_6d8c50ccae4723a66419",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tianqiongxingzhe/mat/Mat_tqxz_fire 1.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.999994,
+            "family": 24.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 78.999994
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_0babf837604e54e6f681",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/0b/Tex_chuanjia_trail_02_0babf837604e54e6.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.medium",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.256x128",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_dd3434533ffad0cc",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_21cdcc65c937356431f9",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Double Attack Shuriken/GO_AbilityUi.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.999985,
+            "family": 24.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 78.999985
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable"
+          ],
+          "shader": {
+            "asset_id": "shader_902cf193355977fb9aa1",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Particles/Alpha Blended",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Particles/IFX_Particles_AB.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_3a21fc794934642bc6ac",
+            "binding_status": "project_bindable",
+            "path": "Assets/Piloto Studio/Textures/Trail_RibbonLightWindy.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.flat",
+              "luma.low_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.1024x512",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_c5168656c31e658d",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_64f21b1f9d7fd99da328",
+            "path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Demon/MFX_Glow.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.999968,
+            "family": 24.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 78.999968
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable"
+          ],
+          "shader": {
+            "asset_id": "shader_6b77fab622007b5e857e",
+            "binding_status": "project_bindable",
+            "name": "QFX/ProjectilesFX/Particles",
+            "path": "Assets/QFX/ProjectilesFX/VFX_Resources/Shaders/PFX_Particles.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_fcd25173bb5c9e0a54b9",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail81.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_0a7263290c5fd1e6",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_afba8ee808283b6f0575",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Enemy/Fx_boss/Mat/Mat_zombie_boss_daoguang.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.999908,
+            "family": 24.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 78.999908
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_b47c35d162988f6d0df0",
+            "binding_status": "project_bindable",
+            "path": "Assets/MasterStylizedProjectiles/Texture/SwordBeam/RingSlash.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.flat",
+              "luma.low_contrast",
+              "luma.overbright_risk",
+              "motion.radial_expand",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.core_shape",
+              "role.impact_ring",
+              "role.noise_control",
+              "semantic.ring",
+              "semantic.slash",
+              "shape.square",
+              "size.512x512",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "node_id": "n0001",
+      "selected_candidate_id": "material_candidate_289b44deb98f615c",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_759ea5baf04eb8d4d497",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 1,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 1
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

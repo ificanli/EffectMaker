@@ -1,0 +1,300 @@
+{
+  "condition": {
+    "color_keywords": [
+      "cyan"
+    ],
+    "effect_family": "slash",
+    "performance_tier": "standard",
+    "prompt": "写实青色刀光，清楚刃带与尖端，短促命中，不要闭合圆环，标准性能",
+    "seed": 20261241,
+    "style_family": "realistic"
+  },
+  "created_at": "2026-09-02T11:58:44.013336+00:00",
+  "graph_id": "pfg_f35de6be42e1fd5ee12e",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_9c4487e15239a733",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_a768b462c3873b0879e6",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_chuanjia_trail_04.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.846799,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.846799
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_0babf837604e54e6f681",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/0b/Tex_chuanjia_trail_02_0babf837604e54e6.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.medium",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.256x128",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_ecae42d49e9a6700",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_43490a81c1732e5d6046",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Crack12bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.818405,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.818405
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_cf551b7ffbd8f4d1c911",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Crack12.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.core_shape",
+              "role.noise_control",
+              "semantic.slash",
+              "shape.rectangle",
+              "size.256x128",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_978d941099fb6725",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_30e9344c87ddb53f73e1",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Enemy/Fx_boss/Mat/Mat_zombie_boss_daoguang1.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.775518,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.775518
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_13a02526036166fb5b15",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/13/Tex_zombie_boss_daoguang1_13a02526036166fb.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.noise_control",
+              "semantic.slash",
+              "shape.horizontal_strip",
+              "size.512x143",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_edc7892f59bdb5bf",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_3e7a9d914bcf22c3b28c",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Crack11bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.769737,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.769737
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=slash",
+            "style_family=realistic",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_c4dc6e38460687da0648",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Crack11.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.core_shape",
+              "role.noise_control",
+              "semantic.slash",
+              "shape.rectangle",
+              "size.512x256",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "node_id": "n0001",
+      "selected_candidate_id": "material_candidate_ecae42d49e9a6700",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_f35de6be42e1fd5ee12e",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 1,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 1
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

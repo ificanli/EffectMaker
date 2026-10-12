@@ -1,0 +1,312 @@
+{
+  "condition": {
+    "color_keywords": [
+      "orange"
+    ],
+    "effect_family": "fire",
+    "performance_tier": "standard",
+    "prompt": "卡通橙色火焰爆发，快速起势，清晰核心与烟尘残留，标准性能",
+    "seed": 20261222,
+    "style_family": "cartoon"
+  },
+  "created_at": "2026-09-02T11:58:45.487320+00:00",
+  "graph_id": "pfg_36c802b45b1ed3efb4f7",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_5ba0ef910bd15f49",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_6cd608912516c6958f4a",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.882343,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.882343
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=fire",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f0fdae10f3280d078612",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.square",
+              "size.1024x1024",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_85cef102fc42300a",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_fd321165405e2b94d455",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_trail_02.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.541009,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.541009
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=fire",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_d21132ecbab961e969b5",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_starchain_trail_02_d21132ecbab961e9.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "resolution.small",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.spark",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_284c19c0999b9c82",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_c7dcbe725ede6c9548ef",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.040729,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 110.040729
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=fire",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_f94e30197df4e14878f7",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flare31.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.spark",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.emission_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_603bbc69c44c94cc",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_f716a35716535c0c957b",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.104153,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": -2.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 105.104153
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=fire",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_1b61b818f2ddeb9ca051",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/SmokeAnim1.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.large",
+              "role.core_shape",
+              "role.noise_control",
+              "semantic.slash",
+              "semantic.smoke",
+              "shape.square",
+              "size.2048x2048",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "node_id": "n0001",
+      "selected_candidate_id": "material_candidate_284c19c0999b9c82",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_36c802b45b1ed3efb4f7",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 1,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 1
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

@@ -1,0 +1,58 @@
+{
+  "adapter": {
+    "generator_family": "particle_v1",
+    "name": "lightning.adapter",
+    "specialized_metrics": [],
+    "version": "prompt_graph_profile_mlp.v1"
+  },
+  "effect_family": "lightning",
+  "effect_type": "lightning",
+  "generation": {
+    "candidate_id": "prompt_graph_generation_001_000_pfg_5a33f9429aa027dcc2a4",
+    "generator": "prompt_graph_generator",
+    "generator_version": "prompt_graph_profile_mlp.v1",
+    "graph_id": "pfg_5a33f9429aa027dcc2a4",
+    "parent_candidate_id": null,
+    "profile_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prompt_graph_profile_r004/prompt_graph_profile_model.pt",
+    "run_id": "lightning",
+    "seed": 20261230,
+    "structure_checkpoint": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/prefab_graph_multitask_r001/prefab_graph_multitask.pt"
+  },
+  "layers": [
+    {
+      "constraints": [
+        "ai_hypothesis_only",
+        "unity_runtime_validation_required"
+      ],
+      "material_parameters": {
+        "asset_plan_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/material_plan_prompt_r004/lightning/candidates/prompt_graph_generation_001_000_pfg_5a33f9429aa027dcc2a4/material_plan.json",
+        "material_template_path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail68bcg.mat",
+        "texture_profile": null
+      },
+      "role": "core",
+      "shape_parameters": {
+        "shape_radius": 0.08000000000000002,
+        "shape_type": "Sphere",
+        "start_size_max": 0.8
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 8,
+        "duration_seconds": 0.7200000000000001,
+        "start_lifetime_max": 0.5
+      },
+      "topology": "particle_v1"
+    }
+  ],
+  "negative_prompt": "长拖尾",
+  "prompt": "风格化蓝色雷电冲击，尖锐分叉，快速爆发，不要长拖尾",
+  "render_plan": {
+    "camera": "PromptGraphRuntimeCamera",
+    "resolution": "512x512",
+    "scene": "PromptGraphRuntimeCapture",
+    "time_points_seconds": [],
+    "unity_project": "UnityDemo/EffectDemo"
+  },
+  "schema_version": "vfxspec.v1",
+  "training_scope": "ai_hypothesis_only; no human aesthetic label"
+}

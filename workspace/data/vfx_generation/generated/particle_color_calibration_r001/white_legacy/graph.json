@@ -1,0 +1,205 @@
+{
+  "graph_id": "pfg_e79c9319b7431dcd85da",
+  "asset_bindings": {
+    "materials": [
+      "Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat"
+    ],
+    "meshes": []
+  },
+  "components": {
+    "animations": [],
+    "particle_systems": [
+      {
+        "component_id": "p0000",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0001",
+        "parameters": {
+          "burst_particle_count": 1,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 0.3,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "end_size_multiplier": 1.0,
+          "gravity_modifier_max": 0.0,
+          "looping": false,
+          "material_template_path": "Assets/Generated/ParticleColorCalibrationAssetsR001/NeutralUrpParticles.mat",
+          "max_particles": 16,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "layer_role": "core",
+            "procedure_id": "procedure_lightning_shape_lifecycle_r001",
+            "procedure_step_ids": [
+              "step_001",
+              "step_002",
+              "step_004",
+              "step_005",
+              "step_006",
+              "step_007"
+            ],
+            "profile": "tutorial_procedure_particle_v1"
+          },
+          "shader_profile": null,
+          "shape_enabled": false,
+          "shape_radius": 0.0,
+          "shape_type": "disabled",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 12,
+          "start_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "start_delay_max": 0.0,
+          "start_lifetime_max": 0.25,
+          "start_rotation_max": 0.0,
+          "start_size_3d": true,
+          "start_size_max": 0.25821505012945895,
+          "start_size_x_max": 2.0,
+          "start_size_y_max": 2.0,
+          "start_size_z_max": 1.0,
+          "start_speed_max": 0.0,
+          "texture_asset_path": null,
+          "texture_profile": null,
+          "texture_property_name": null
+        }
+      }
+    ],
+    "renderers": [
+      {
+        "component_id": "r0000",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0001",
+        "parameters": {
+          "active_vertex_streams": [
+            "Position",
+            "Color",
+            "UV"
+          ],
+          "particle_render_mode": "Billboard",
+          "sorting_order": 12
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      }
+    ]
+  },
+  "condition": {
+    "effect_family": "lightning",
+    "parent_prefab_path": null,
+    "prompt": "color calibration white_legacy; diagnostic only",
+    "seed": 20260907,
+    "style_family": "stylized"
+  },
+  "nodes": [
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.Transform"
+      ],
+      "depth": 0,
+      "hierarchy_path": "GeneratedRoot[0]",
+      "name": "GeneratedRoot",
+      "node_id": "n0000",
+      "parent_node_id": null,
+      "role": "root",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/MainBolt[0]",
+      "name": "MainBolt",
+      "node_id": "n0001",
+      "parent_node_id": "n0000",
+      "role": "core",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "assumptions": [
+      "Layer order and bounded parameters come from a traceable ProcedureSpec.",
+      "Material, Shader and Texture remain unbound until contract-aware asset routing passes.",
+      "Technical execution does not imply professional visual acceptance."
+    ],
+    "exporter": "prefab_graph_constrained.v1",
+    "source_dataset_id": "tutorial_procedure_generation_r001",
+    "source_run_id": "particle_color_calibration_r001"
+  },
+  "reconstruction": {
+    "compiler_profile": "particle_v1",
+    "missing_fields": [],
+    "status": "reconstructable",
+    "unsupported_components": []
+  },
+  "root_node_id": "n0000",
+  "schema_version": "vfx_prefab_graph.v1",
+  "source": {
+    "prefab_path": null,
+    "source_example_id": null,
+    "source_kind": "generated"
+  },
+  "training": {
+    "aesthetic_label_source": "ai_hypothesis",
+    "eligible_tasks": [
+      "component_prediction",
+      "hierarchy_modeling",
+      "particle_parameter_modeling",
+      "full_reconstruction"
+    ],
+    "excluded_tasks": [
+      "aesthetic_preference",
+      "prompt_condition"
+    ]
+  }
+}
