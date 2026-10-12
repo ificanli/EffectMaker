@@ -1,0 +1,47 @@
+{
+  "schema_version": "vfx_controller_dataset.v1",
+  "created_at": "2026-09-01T03:16:15.917707+00:00",
+  "dataset_id": "course_controller_r003",
+  "source_count": 2,
+  "candidate_count": 2,
+  "course_prior_count": 1,
+  "controller_example_count": 2,
+  "sft_example_count": 0,
+  "excluded_count": 2,
+  "exclusion_counts": {
+    "course_prior_requires_human_visual_confirmation": 1,
+    "course_prior_requires_unity_reproduction": 1,
+    "missing_human_prompt_condition_feedback": 1,
+    "overall_not_positive": 1,
+    "prompt_condition_not_fully_judgable": 1
+  },
+  "files": {
+    "controller_examples": "controller_examples.jsonl",
+    "minimind_sft": "minimind_sft.jsonl",
+    "exclusions": "controller_exclusions.jsonl"
+  },
+  "training_gate": {
+    "status": "no_eligible_examples",
+    "reason": "no candidate has complete, human-confirmed, positive Prompt-condition supervision",
+    "positive_sft_ready": false,
+    "minimum_sft_examples": 32
+  },
+  "family_counts": {
+    "explosion": 1,
+    "fire": 1
+  },
+  "sft_family_counts": {},
+  "source_kind_counts": {
+    "course_prior": 1,
+    "variation": 1
+  },
+  "policy": {
+    "not_visible_is_not_training_data": true,
+    "unknown_prompt_condition_is_not_positive_training": true,
+    "technical_pass_is_not_aesthetic_acceptance": true,
+    "minimind_role": "controller_planner_only",
+    "asset_generation_role": "family_adapters_and_unity_executor",
+    "course_prior_is_not_training_example": true
+  },
+  "status": "pass"
+}

@@ -1,0 +1,2104 @@
+{
+  "schema_version": "vfx_aesthetic_judge_predictions.v1",
+  "model_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/models/aesthetic_judge_partial_r002/aesthetic_judge.joblib",
+  "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+  "available_tasks": [
+    "quality_score",
+    "core_readability",
+    "layer_separation",
+    "rhythm",
+    "material",
+    "composition"
+  ],
+  "blocked_tasks": {
+    "style_family": {
+      "status": "blocked",
+      "label_count": 41,
+      "group_count": 2,
+      "value_counts": {
+        "cartoon": 7,
+        "stylized": 27,
+        "ui_graphic": 7
+      },
+      "reasons": [
+        "each style class needs labels in 2 evaluation groups"
+      ]
+    }
+  },
+  "prediction_count": 47,
+  "policy": {
+    "label_source": "ai_pseudo_label",
+    "maximum_training_weight": 0.2,
+    "excluded_from_human_and_regression_evaluation": true
+  },
+  "predictions": [
+    {
+      "candidate_id": "trains_fx_002_fx_bdsx_bignzhui",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.452755,
+      "core_readability": 2.476899,
+      "layer_separation": 2.176594,
+      "rhythm": 0.321455,
+      "material": 3.305819,
+      "composition": 0.824872,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.568515,
+        "task_confidences": {
+          "quality_score": 0.689168,
+          "core_readability": 0.363764,
+          "layer_separation": 0.624026,
+          "rhythm": 0.520353,
+          "material": 0.76243,
+          "composition": 0.451347
+        },
+        "task_disagreements": {
+          "quality_score": 0.068515,
+          "core_readability": 0.252476,
+          "layer_separation": 0.023943,
+          "rhythm": 0.101415,
+          "material": 0.044759,
+          "composition": 0.06005
+        },
+        "model_disagreement": 0.09186,
+        "training_weight": 0.113703,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_004_fx_bosstips",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.851741,
+      "core_readability": 1.717799,
+      "layer_separation": 1.170995,
+      "rhythm": 0.994588,
+      "material": 4.841437,
+      "composition": 1.299584,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.571186,
+        "task_confidences": {
+          "quality_score": 0.655223,
+          "core_readability": 0.427409,
+          "layer_separation": 0.598123,
+          "rhythm": 0.527096,
+          "material": 0.770879,
+          "composition": 0.448385
+        },
+        "task_disagreements": {
+          "quality_score": 0.114394,
+          "core_readability": 0.121686,
+          "layer_separation": 0.06446,
+          "rhythm": 0.08977,
+          "material": 0.034174,
+          "composition": 0.066218
+        },
+        "model_disagreement": 0.081784,
+        "training_weight": 0.114237,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_005_eff_glow_box_blue",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.179241,
+      "core_readability": 0.36246,
+      "layer_separation": 2.586369,
+      "rhythm": 1.130603,
+      "material": 4.257396,
+      "composition": 0.372691,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.572823,
+        "task_confidences": {
+          "quality_score": 0.667578,
+          "core_readability": 0.413957,
+          "layer_separation": 0.619166,
+          "rhythm": 0.50483,
+          "material": 0.762037,
+          "composition": 0.469369
+        },
+        "task_disagreements": {
+          "quality_score": 0.097696,
+          "core_readability": 0.149331,
+          "layer_separation": 0.031545,
+          "rhythm": 0.12822,
+          "material": 0.045252,
+          "composition": 0.022518
+        },
+        "model_disagreement": 0.079094,
+        "training_weight": 0.114565,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_006_eff_glow_box_green",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.215311,
+      "core_readability": 0.966965,
+      "layer_separation": 2.544746,
+      "rhythm": 0.595599,
+      "material": 4.14285,
+      "composition": 0.352062,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.585712,
+        "task_confidences": {
+          "quality_score": 0.69674,
+          "core_readability": 0.438389,
+          "layer_separation": 0.609169,
+          "rhythm": 0.5439,
+          "material": 0.776199,
+          "composition": 0.449873
+        },
+        "task_disagreements": {
+          "quality_score": 0.05828,
+          "core_readability": 0.099124,
+          "layer_separation": 0.047182,
+          "rhythm": 0.060752,
+          "material": 0.027509,
+          "composition": 0.063119
+        },
+        "model_disagreement": 0.059328,
+        "training_weight": 0.117142,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_007_eff_glow_box_orange",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.19931,
+      "core_readability": 1.024148,
+      "layer_separation": 2.668544,
+      "rhythm": 0.637071,
+      "material": 3.957194,
+      "composition": 0.358279,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.587699,
+        "task_confidences": {
+          "quality_score": 0.693909,
+          "core_readability": 0.437205,
+          "layer_separation": 0.612412,
+          "rhythm": 0.547732,
+          "material": 0.780276,
+          "composition": 0.454662
+        },
+        "task_disagreements": {
+          "quality_score": 0.062107,
+          "core_readability": 0.101556,
+          "layer_separation": 0.042109,
+          "rhythm": 0.054134,
+          "material": 0.022401,
+          "composition": 0.053146
+        },
+        "model_disagreement": 0.055909,
+        "training_weight": 0.11754,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_008_eff_glow_box_yellow",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.197682,
+      "core_readability": 0.777669,
+      "layer_separation": 2.910898,
+      "rhythm": 0.604619,
+      "material": 3.976466,
+      "composition": 0.514305,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.578377,
+        "task_confidences": {
+          "quality_score": 0.672325,
+          "core_readability": 0.418688,
+          "layer_separation": 0.615008,
+          "rhythm": 0.528496,
+          "material": 0.772462,
+          "composition": 0.463284
+        },
+        "task_disagreements": {
+          "quality_score": 0.09128,
+          "core_readability": 0.139608,
+          "layer_separation": 0.03805,
+          "rhythm": 0.087353,
+          "material": 0.03219,
+          "composition": 0.035191
+        },
+        "model_disagreement": 0.070612,
+        "training_weight": 0.115675,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_014_fx_cirrus",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 1.968497,
+      "core_readability": 1.095896,
+      "layer_separation": 1.891581,
+      "rhythm": 1.017155,
+      "material": 2.979246,
+      "composition": 1.052644,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.5263,
+        "task_confidences": {
+          "quality_score": 0.626061,
+          "core_readability": 0.417864,
+          "layer_separation": 0.558434,
+          "rhythm": 0.434476,
+          "material": 0.752743,
+          "composition": 0.368222
+        },
+        "task_disagreements": {
+          "quality_score": 0.15381,
+          "core_readability": 0.141302,
+          "layer_separation": 0.126538,
+          "rhythm": 0.249714,
+          "material": 0.056896,
+          "composition": 0.233162
+        },
+        "model_disagreement": 0.160237,
+        "training_weight": 0.10526,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_015_fx_com_hero_show",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.706996,
+      "core_readability": 2.536624,
+      "layer_separation": 4.868208,
+      "rhythm": 2.56508,
+      "material": 4.210898,
+      "composition": 1.700285,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.51915,
+        "task_confidences": {
+          "quality_score": 0.633163,
+          "core_readability": 0.363241,
+          "layer_separation": 0.578295,
+          "rhythm": 0.390711,
+          "material": 0.774172,
+          "composition": 0.375316
+        },
+        "task_disagreements": {
+          "quality_score": 0.144211,
+          "core_readability": 0.253551,
+          "layer_separation": 0.095473,
+          "rhythm": 0.325291,
+          "material": 0.030048,
+          "composition": 0.218387
+        },
+        "model_disagreement": 0.177827,
+        "training_weight": 0.10383,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_016_fx_com_sheilder",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.886841,
+      "core_readability": 1.071479,
+      "layer_separation": 2.970804,
+      "rhythm": 1.016097,
+      "material": 4.943841,
+      "composition": 2.854256,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.517393,
+        "task_confidences": {
+          "quality_score": 0.599517,
+          "core_readability": 0.375821,
+          "layer_separation": 0.565694,
+          "rhythm": 0.449323,
+          "material": 0.73186,
+          "composition": 0.382141
+        },
+        "task_disagreements": {
+          "quality_score": 0.189688,
+          "core_readability": 0.227699,
+          "layer_separation": 0.115182,
+          "rhythm": 0.224074,
+          "material": 0.083061,
+          "composition": 0.204174
+        },
+        "model_disagreement": 0.17398,
+        "training_weight": 0.103479,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_024_fx_conecold",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.17951,
+      "core_readability": 1.412989,
+      "layer_separation": 2.940104,
+      "rhythm": 3.946696,
+      "material": 3.946943,
+      "composition": 1.009496,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.54364,
+        "task_confidences": {
+          "quality_score": 0.710412,
+          "core_readability": 0.405304,
+          "layer_separation": 0.593618,
+          "rhythm": 0.367309,
+          "material": 0.756531,
+          "composition": 0.428668
+        },
+        "task_disagreements": {
+          "quality_score": 0.0398,
+          "core_readability": 0.167112,
+          "layer_separation": 0.071506,
+          "rhythm": 0.365703,
+          "material": 0.05215,
+          "composition": 0.107281
+        },
+        "model_disagreement": 0.133925,
+        "training_weight": 0.108728,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_051_fx_player_bullet_1_hit",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.767118,
+      "core_readability": 1.469906,
+      "layer_separation": 2.446829,
+      "rhythm": 2.498626,
+      "material": 2.506439,
+      "composition": 0.617888,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.535641,
+        "task_confidences": {
+          "quality_score": 0.646092,
+          "core_readability": 0.43174,
+          "layer_separation": 0.56983,
+          "rhythm": 0.379531,
+          "material": 0.756669,
+          "composition": 0.429987
+        },
+        "task_disagreements": {
+          "quality_score": 0.126736,
+          "core_readability": 0.112787,
+          "layer_separation": 0.108714,
+          "rhythm": 0.344597,
+          "material": 0.051977,
+          "composition": 0.104534
+        },
+        "model_disagreement": 0.141557,
+        "training_weight": 0.107128,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_053_fx_pomoarrow_bow",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.398943,
+      "core_readability": 1.956517,
+      "layer_separation": 4.384529,
+      "rhythm": 2.000192,
+      "material": 2.960488,
+      "composition": 2.122371,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.580282,
+        "task_confidences": {
+          "quality_score": 0.714792,
+          "core_readability": 0.463774,
+          "layer_separation": 0.622924,
+          "rhythm": 0.479564,
+          "material": 0.770655,
+          "composition": 0.429986
+        },
+        "task_disagreements": {
+          "quality_score": 0.033881,
+          "core_readability": 0.046959,
+          "layer_separation": 0.025667,
+          "rhythm": 0.171852,
+          "material": 0.034455,
+          "composition": 0.104535
+        },
+        "model_disagreement": 0.069558,
+        "training_weight": 0.116056,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_058_fx_rayline_target",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.589298,
+      "core_readability": 0.952906,
+      "layer_separation": 2.132156,
+      "rhythm": 2.458105,
+      "material": 3.847458,
+      "composition": 0.11061,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.590793,
+        "task_confidences": {
+          "quality_score": 0.71687,
+          "core_readability": 0.459425,
+          "layer_separation": 0.623372,
+          "rhythm": 0.521986,
+          "material": 0.769043,
+          "composition": 0.454061
+        },
+        "task_disagreements": {
+          "quality_score": 0.031073,
+          "core_readability": 0.055895,
+          "layer_separation": 0.024967,
+          "rhythm": 0.098595,
+          "material": 0.036474,
+          "composition": 0.054397
+        },
+        "model_disagreement": 0.050233,
+        "training_weight": 0.118159,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_059_fx_rollinglog_dt",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.147025,
+      "core_readability": 1.66181,
+      "layer_separation": 3.928612,
+      "rhythm": 1.372188,
+      "material": 2.54309,
+      "composition": 1.134808,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.561467,
+        "task_confidences": {
+          "quality_score": 0.708372,
+          "core_readability": 0.444638,
+          "layer_separation": 0.563768,
+          "rhythm": 0.540041,
+          "material": 0.719547,
+          "composition": 0.392436
+        },
+        "task_disagreements": {
+          "quality_score": 0.042559,
+          "core_readability": 0.086282,
+          "layer_separation": 0.118194,
+          "rhythm": 0.067416,
+          "material": 0.098487,
+          "composition": 0.182735
+        },
+        "model_disagreement": 0.099279,
+        "training_weight": 0.112293,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_061_fx_scan01",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.252378,
+      "core_readability": 1.848925,
+      "layer_separation": 2.450812,
+      "rhythm": 1.347128,
+      "material": 3.9459,
+      "composition": 1.822605,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.585113,
+        "task_confidences": {
+          "quality_score": 0.716432,
+          "core_readability": 0.427917,
+          "layer_separation": 0.606742,
+          "rhythm": 0.539081,
+          "material": 0.770568,
+          "composition": 0.449938
+        },
+        "task_disagreements": {
+          "quality_score": 0.031664,
+          "core_readability": 0.120644,
+          "layer_separation": 0.050978,
+          "rhythm": 0.069074,
+          "material": 0.034563,
+          "composition": 0.062985
+        },
+        "model_disagreement": 0.061651,
+        "training_weight": 0.117023,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_063_fx_scan_sub",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.829085,
+      "core_readability": 1.780652,
+      "layer_separation": 4.878396,
+      "rhythm": 1.595898,
+      "material": 3.820465,
+      "composition": 2.732274,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.517299,
+        "task_confidences": {
+          "quality_score": 0.589038,
+          "core_readability": 0.469804,
+          "layer_separation": 0.535333,
+          "rhythm": 0.322647,
+          "material": 0.784661,
+          "composition": 0.40231
+        },
+        "task_disagreements": {
+          "quality_score": 0.203851,
+          "core_readability": 0.034567,
+          "layer_separation": 0.162671,
+          "rhythm": 0.442828,
+          "material": 0.016906,
+          "composition": 0.162171
+        },
+        "model_disagreement": 0.170499,
+        "training_weight": 0.10346,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_065_fx_shiquwu_green",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.507378,
+      "core_readability": 1.338355,
+      "layer_separation": 1.242088,
+      "rhythm": 0.801957,
+      "material": 4.469619,
+      "composition": 1.203368,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.557161,
+        "task_confidences": {
+          "quality_score": 0.631274,
+          "core_readability": 0.423656,
+          "layer_separation": 0.588895,
+          "rhythm": 0.515795,
+          "material": 0.741817,
+          "composition": 0.441528
+        },
+        "task_disagreements": {
+          "quality_score": 0.146765,
+          "core_readability": 0.1294,
+          "layer_separation": 0.078893,
+          "rhythm": 0.109285,
+          "material": 0.070585,
+          "composition": 0.080498
+        },
+        "model_disagreement": 0.102571,
+        "training_weight": 0.111432,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_069_fx_starchain",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.268109,
+      "core_readability": 1.778228,
+      "layer_separation": 4.421915,
+      "rhythm": 0.367998,
+      "material": 4.01779,
+      "composition": 0.716131,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.553088,
+        "task_confidences": {
+          "quality_score": 0.676271,
+          "core_readability": 0.453875,
+          "layer_separation": 0.578317,
+          "rhythm": 0.485041,
+          "material": 0.720555,
+          "composition": 0.404469
+        },
+        "task_disagreements": {
+          "quality_score": 0.085946,
+          "core_readability": 0.0673,
+          "layer_separation": 0.095439,
+          "rhythm": 0.162393,
+          "material": 0.097225,
+          "composition": 0.157676
+        },
+        "model_disagreement": 0.110996,
+        "training_weight": 0.110618,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_077_fx_train_cart_1_attack",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.828992,
+      "core_readability": 1.403358,
+      "layer_separation": 1.660505,
+      "rhythm": 2.765567,
+      "material": 3.595169,
+      "composition": 0.806713,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.592548,
+        "task_confidences": {
+          "quality_score": 0.713698,
+          "core_readability": 0.469575,
+          "layer_separation": 0.633405,
+          "rhythm": 0.491709,
+          "material": 0.785717,
+          "composition": 0.461186
+        },
+        "task_disagreements": {
+          "quality_score": 0.03536,
+          "core_readability": 0.035038,
+          "layer_separation": 0.009274,
+          "rhythm": 0.150879,
+          "material": 0.015584,
+          "composition": 0.03956
+        },
+        "model_disagreement": 0.047616,
+        "training_weight": 0.11851,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_078_fx_train_cart_3_attack",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.108895,
+      "core_readability": 1.620997,
+      "layer_separation": 1.834104,
+      "rhythm": 2.874813,
+      "material": 3.855578,
+      "composition": 0.821053,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.592227,
+        "task_confidences": {
+          "quality_score": 0.719559,
+          "core_readability": 0.473056,
+          "layer_separation": 0.624211,
+          "rhythm": 0.492358,
+          "material": 0.784591,
+          "composition": 0.459585
+        },
+        "task_disagreements": {
+          "quality_score": 0.027438,
+          "core_readability": 0.027884,
+          "layer_separation": 0.023655,
+          "rhythm": 0.149758,
+          "material": 0.016995,
+          "composition": 0.042893
+        },
+        "model_disagreement": 0.048104,
+        "training_weight": 0.118445,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_082_fx_train_engine_speed_up",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.641395,
+      "core_readability": 1.712074,
+      "layer_separation": 1.653978,
+      "rhythm": 2.112294,
+      "material": 2.56094,
+      "composition": 1.230282,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.584439,
+        "task_confidences": {
+          "quality_score": 0.699394,
+          "core_readability": 0.460915,
+          "layer_separation": 0.623442,
+          "rhythm": 0.500097,
+          "material": 0.766462,
+          "composition": 0.456323
+        },
+        "task_disagreements": {
+          "quality_score": 0.054692,
+          "core_readability": 0.052832,
+          "layer_separation": 0.024857,
+          "rhythm": 0.136394,
+          "material": 0.039707,
+          "composition": 0.049687
+        },
+        "model_disagreement": 0.059695,
+        "training_weight": 0.116888,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_083_fx_train_gallop_end",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.730568,
+      "core_readability": 1.851138,
+      "layer_separation": 1.722089,
+      "rhythm": 2.237587,
+      "material": 2.540653,
+      "composition": 1.291084,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.585237,
+        "task_confidences": {
+          "quality_score": 0.702316,
+          "core_readability": 0.463011,
+          "layer_separation": 0.62442,
+          "rhythm": 0.498428,
+          "material": 0.765371,
+          "composition": 0.457874
+        },
+        "task_disagreements": {
+          "quality_score": 0.050743,
+          "core_readability": 0.048525,
+          "layer_separation": 0.023327,
+          "rhythm": 0.139276,
+          "material": 0.041074,
+          "composition": 0.046456
+        },
+        "model_disagreement": 0.058234,
+        "training_weight": 0.117047,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_084_fx_train_gallop_hit_on_enemy",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.16666,
+      "core_readability": 1.233398,
+      "layer_separation": 2.606278,
+      "rhythm": 2.094091,
+      "material": 4.068009,
+      "composition": 1.284728,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.585454,
+        "task_confidences": {
+          "quality_score": 0.708409,
+          "core_readability": 0.436599,
+          "layer_separation": 0.606444,
+          "rhythm": 0.526248,
+          "material": 0.779151,
+          "composition": 0.455871
+        },
+        "task_disagreements": {
+          "quality_score": 0.042508,
+          "core_readability": 0.102801,
+          "layer_separation": 0.051444,
+          "rhythm": 0.091235,
+          "material": 0.02381,
+          "composition": 0.050628
+        },
+        "model_disagreement": 0.060404,
+        "training_weight": 0.117091,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_086_fx_train_level_up_1",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.602978,
+      "core_readability": 1.510611,
+      "layer_separation": 3.978043,
+      "rhythm": 1.07126,
+      "material": 4.125494,
+      "composition": 1.051934,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.584961,
+        "task_confidences": {
+          "quality_score": 0.695309,
+          "core_readability": 0.442894,
+          "layer_separation": 0.608872,
+          "rhythm": 0.525452,
+          "material": 0.77638,
+          "composition": 0.460861
+        },
+        "task_disagreements": {
+          "quality_score": 0.060214,
+          "core_readability": 0.089866,
+          "layer_separation": 0.047646,
+          "rhythm": 0.09261,
+          "material": 0.027282,
+          "composition": 0.040238
+        },
+        "model_disagreement": 0.059642,
+        "training_weight": 0.116992,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_087_fx_train_level_up_2",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.757633,
+      "core_readability": 1.702385,
+      "layer_separation": 3.978384,
+      "rhythm": 1.412957,
+      "material": 3.84889,
+      "composition": 1.218825,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.585097,
+        "task_confidences": {
+          "quality_score": 0.703503,
+          "core_readability": 0.435208,
+          "layer_separation": 0.609993,
+          "rhythm": 0.522484,
+          "material": 0.77901,
+          "composition": 0.460386
+        },
+        "task_disagreements": {
+          "quality_score": 0.049139,
+          "core_readability": 0.10566,
+          "layer_separation": 0.045894,
+          "rhythm": 0.097734,
+          "material": 0.023986,
+          "composition": 0.041226
+        },
+        "model_disagreement": 0.060606,
+        "training_weight": 0.117019,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_115_fx_zombie_angry",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.046149,
+      "core_readability": 0.519689,
+      "layer_separation": 0.792461,
+      "rhythm": 1.298995,
+      "material": 4.170594,
+      "composition": 0.394435,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.560723,
+        "task_confidences": {
+          "quality_score": 0.688679,
+          "core_readability": 0.447343,
+          "layer_separation": 0.606105,
+          "rhythm": 0.452546,
+          "material": 0.721229,
+          "composition": 0.448438
+        },
+        "task_disagreements": {
+          "quality_score": 0.069175,
+          "core_readability": 0.080724,
+          "layer_separation": 0.051974,
+          "rhythm": 0.218509,
+          "material": 0.09638,
+          "composition": 0.066108
+        },
+        "model_disagreement": 0.097145,
+        "training_weight": 0.112145,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_118_fx_aidawang_baozha",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.03312,
+      "core_readability": 1.041864,
+      "layer_separation": 5.0,
+      "rhythm": 1.038287,
+      "material": 4.003831,
+      "composition": 1.009681,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.512586,
+        "task_confidences": {
+          "quality_score": 0.641605,
+          "core_readability": 0.347994,
+          "layer_separation": 0.551357,
+          "rhythm": 0.372304,
+          "material": 0.772812,
+          "composition": 0.389447
+        },
+        "task_disagreements": {
+          "quality_score": 0.1328,
+          "core_readability": 0.284884,
+          "layer_separation": 0.137608,
+          "rhythm": 0.357077,
+          "material": 0.031752,
+          "composition": 0.18896
+        },
+        "model_disagreement": 0.188847,
+        "training_weight": 0.102517,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_121_fx_pvp_aidawang_baozha",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.045426,
+      "core_readability": 2.207608,
+      "layer_separation": 4.924229,
+      "rhythm": 1.02513,
+      "material": 3.966755,
+      "composition": 2.06483,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.221195,
+        "task_confidences": {
+          "quality_score": 0.243783,
+          "core_readability": 0.026654,
+          "layer_separation": 0.318206,
+          "rhythm": 0.243476,
+          "material": 0.49505,
+          "composition": 0.0
+        },
+        "task_disagreements": {
+          "quality_score": 0.6705,
+          "core_readability": 0.945227,
+          "layer_separation": 0.502285,
+          "rhythm": 0.579547,
+          "material": 0.379757,
+          "composition": 1.0
+        },
+        "model_disagreement": 0.679553,
+        "training_weight": 0.044239,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_139_fx_xiaoming_luanwu",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.237874,
+      "core_readability": 0.935934,
+      "layer_separation": 3.556509,
+      "rhythm": 0.942312,
+      "material": 3.978877,
+      "composition": 1.909499,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.562498,
+        "task_confidences": {
+          "quality_score": 0.700673,
+          "core_readability": 0.453345,
+          "layer_separation": 0.568678,
+          "rhythm": 0.456308,
+          "material": 0.775138,
+          "composition": 0.420845
+        },
+        "task_disagreements": {
+          "quality_score": 0.052964,
+          "core_readability": 0.06839,
+          "layer_separation": 0.110516,
+          "rhythm": 0.212011,
+          "material": 0.028838,
+          "composition": 0.123571
+        },
+        "model_disagreement": 0.099382,
+        "training_weight": 0.1125,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_144_fx_daozhang_skill_02",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.276349,
+      "core_readability": 0.847017,
+      "layer_separation": 1.629275,
+      "rhythm": 0.112253,
+      "material": 4.315793,
+      "composition": 1.107779,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.559945,
+        "task_confidences": {
+          "quality_score": 0.653982,
+          "core_readability": 0.436919,
+          "layer_separation": 0.593319,
+          "rhythm": 0.498127,
+          "material": 0.756127,
+          "composition": 0.421195
+        },
+        "task_disagreements": {
+          "quality_score": 0.116072,
+          "core_readability": 0.102145,
+          "layer_separation": 0.071973,
+          "rhythm": 0.139797,
+          "material": 0.052656,
+          "composition": 0.122842
+        },
+        "model_disagreement": 0.100914,
+        "training_weight": 0.111989,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_155_fx_hundouluo_skill_02",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.384616,
+      "core_readability": 1.699431,
+      "layer_separation": 3.227844,
+      "rhythm": 1.0784,
+      "material": 3.626988,
+      "composition": 0.569006,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.57781,
+        "task_confidences": {
+          "quality_score": 0.698023,
+          "core_readability": 0.421694,
+          "layer_separation": 0.618581,
+          "rhythm": 0.526108,
+          "material": 0.775284,
+          "composition": 0.427172
+        },
+        "task_disagreements": {
+          "quality_score": 0.056546,
+          "core_readability": 0.133432,
+          "layer_separation": 0.032461,
+          "rhythm": 0.091477,
+          "material": 0.028655,
+          "composition": 0.110396
+        },
+        "model_disagreement": 0.075494,
+        "training_weight": 0.115562,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_156_fx_hundouluo_skill_03",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.741806,
+      "core_readability": 2.395069,
+      "layer_separation": 3.051202,
+      "rhythm": 1.576595,
+      "material": 3.968405,
+      "composition": 1.534905,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.550336,
+        "task_confidences": {
+          "quality_score": 0.689166,
+          "core_readability": 0.462855,
+          "layer_separation": 0.5704,
+          "rhythm": 0.497751,
+          "material": 0.70713,
+          "composition": 0.374716
+        },
+        "task_disagreements": {
+          "quality_score": 0.068518,
+          "core_readability": 0.048846,
+          "layer_separation": 0.107821,
+          "rhythm": 0.140445,
+          "material": 0.114044,
+          "composition": 0.219637
+        },
+        "model_disagreement": 0.116552,
+        "training_weight": 0.110067,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_167_fx_xianrenzhang_skill_01",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.513234,
+      "core_readability": 1.81919,
+      "layer_separation": 2.818968,
+      "rhythm": 2.133455,
+      "material": 3.778063,
+      "composition": 1.672437,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.537409,
+        "task_confidences": {
+          "quality_score": 0.666458,
+          "core_readability": 0.460476,
+          "layer_separation": 0.607085,
+          "rhythm": 0.302371,
+          "material": 0.759753,
+          "composition": 0.428313
+        },
+        "task_disagreements": {
+          "quality_score": 0.09921,
+          "core_readability": 0.053736,
+          "layer_separation": 0.050442,
+          "rhythm": 0.477842,
+          "material": 0.048113,
+          "composition": 0.108019
+        },
+        "model_disagreement": 0.13956,
+        "training_weight": 0.107482,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_180_fx_jianxian_yujian",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.022713,
+      "core_readability": 1.46599,
+      "layer_separation": 3.746377,
+      "rhythm": 0.298639,
+      "material": 3.965136,
+      "composition": 0.509022,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.561268,
+        "task_confidences": {
+          "quality_score": 0.713016,
+          "core_readability": 0.441897,
+          "layer_separation": 0.588676,
+          "rhythm": 0.519458,
+          "material": 0.725904,
+          "composition": 0.378656
+        },
+        "task_disagreements": {
+          "quality_score": 0.036282,
+          "core_readability": 0.091915,
+          "layer_separation": 0.079236,
+          "rhythm": 0.10296,
+          "material": 0.090523,
+          "composition": 0.211432
+        },
+        "model_disagreement": 0.102058,
+        "training_weight": 0.112254,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_195_fx_chongneng_jiesuo",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.030378,
+      "core_readability": 1.393213,
+      "layer_separation": 2.179871,
+      "rhythm": 2.356215,
+      "material": 3.888745,
+      "composition": 1.129798,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.594893,
+        "task_confidences": {
+          "quality_score": 0.708706,
+          "core_readability": 0.460523,
+          "layer_separation": 0.616877,
+          "rhythm": 0.533637,
+          "material": 0.788941,
+          "composition": 0.460671
+        },
+        "task_disagreements": {
+          "quality_score": 0.042107,
+          "core_readability": 0.05364,
+          "layer_separation": 0.035125,
+          "rhythm": 0.078474,
+          "material": 0.011545,
+          "composition": 0.040631
+        },
+        "model_disagreement": 0.043587,
+        "training_weight": 0.118979,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_196_fx_chongneng_jiesuo_1",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.075117,
+      "core_readability": 1.457256,
+      "layer_separation": 2.114291,
+      "rhythm": 2.492413,
+      "material": 3.894237,
+      "composition": 1.154542,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.596038,
+        "task_confidences": {
+          "quality_score": 0.713589,
+          "core_readability": 0.461987,
+          "layer_separation": 0.620676,
+          "rhythm": 0.528421,
+          "material": 0.786261,
+          "composition": 0.465291
+        },
+        "task_disagreements": {
+          "quality_score": 0.035506,
+          "core_readability": 0.050631,
+          "layer_separation": 0.029183,
+          "rhythm": 0.087482,
+          "material": 0.014901,
+          "composition": 0.031011
+        },
+        "model_disagreement": 0.041452,
+        "training_weight": 0.119208,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_220_fx_ui_jiyinsuo",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 1.417743,
+      "core_readability": 0.719147,
+      "layer_separation": 2.199673,
+      "rhythm": 0.0,
+      "material": 1.973119,
+      "composition": 0.286272,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.564639,
+        "task_confidences": {
+          "quality_score": 0.682429,
+          "core_readability": 0.394512,
+          "layer_separation": 0.606729,
+          "rhythm": 0.483044,
+          "material": 0.760596,
+          "composition": 0.460525
+        },
+        "task_disagreements": {
+          "quality_score": 0.077623,
+          "core_readability": 0.18929,
+          "layer_separation": 0.050998,
+          "rhythm": 0.165842,
+          "material": 0.047058,
+          "composition": 0.040936
+        },
+        "model_disagreement": 0.095291,
+        "training_weight": 0.112928,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_221_fx_ui_jiyinsuo_jihuo",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.177267,
+      "core_readability": 2.032641,
+      "layer_separation": 2.646271,
+      "rhythm": 1.800907,
+      "material": 3.163137,
+      "composition": 1.81477,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.548926,
+        "task_confidences": {
+          "quality_score": 0.637044,
+          "core_readability": 0.413159,
+          "layer_separation": 0.592383,
+          "rhythm": 0.486522,
+          "material": 0.760117,
+          "composition": 0.404333
+        },
+        "task_disagreements": {
+          "quality_score": 0.138965,
+          "core_readability": 0.15097,
+          "layer_separation": 0.073438,
+          "rhythm": 0.159837,
+          "material": 0.047658,
+          "composition": 0.15796
+        },
+        "model_disagreement": 0.121471,
+        "training_weight": 0.109785,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_225_fx_ui_kaixiang_1",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.046307,
+      "core_readability": 1.109787,
+      "layer_separation": 2.7232,
+      "rhythm": 0.634931,
+      "material": 3.987976,
+      "composition": 0.445692,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.578134,
+        "task_confidences": {
+          "quality_score": 0.705487,
+          "core_readability": 0.426907,
+          "layer_separation": 0.59906,
+          "rhythm": 0.515632,
+          "material": 0.784601,
+          "composition": 0.437116
+        },
+        "task_disagreements": {
+          "quality_score": 0.046458,
+          "core_readability": 0.12272,
+          "layer_separation": 0.062994,
+          "rhythm": 0.109567,
+          "material": 0.016982,
+          "composition": 0.089687
+        },
+        "model_disagreement": 0.074735,
+        "training_weight": 0.115627,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_238_fx_ui_niudan_kaijiang",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.210874,
+      "core_readability": 2.369389,
+      "layer_separation": 4.093717,
+      "rhythm": 2.314308,
+      "material": 3.748066,
+      "composition": 1.266598,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.524326,
+        "task_confidences": {
+          "quality_score": 0.656783,
+          "core_readability": 0.365568,
+          "layer_separation": 0.573732,
+          "rhythm": 0.403298,
+          "material": 0.766804,
+          "composition": 0.379771
+        },
+        "task_disagreements": {
+          "quality_score": 0.112286,
+          "core_readability": 0.248769,
+          "layer_separation": 0.10261,
+          "rhythm": 0.303554,
+          "material": 0.039279,
+          "composition": 0.209111
+        },
+        "model_disagreement": 0.169268,
+        "training_weight": 0.104865,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "trains_fx_259_fx_tip_common_circle",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.306688,
+      "core_readability": 0.722578,
+      "layer_separation": 1.247561,
+      "rhythm": 1.12913,
+      "material": 4.302208,
+      "composition": 0.627554,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.550777,
+        "task_confidences": {
+          "quality_score": 0.681736,
+          "core_readability": 0.42514,
+          "layer_separation": 0.591909,
+          "rhythm": 0.473248,
+          "material": 0.682691,
+          "composition": 0.449937
+        },
+        "task_disagreements": {
+          "quality_score": 0.07856,
+          "core_readability": 0.126351,
+          "layer_separation": 0.074178,
+          "rhythm": 0.182759,
+          "material": 0.144663,
+          "composition": 0.062987
+        },
+        "model_disagreement": 0.111583,
+        "training_weight": 0.110155,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c001",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.775379,
+      "core_readability": 1.146376,
+      "layer_separation": 4.640174,
+      "rhythm": 2.832732,
+      "material": 3.777698,
+      "composition": 0.902741,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.559987,
+        "task_confidences": {
+          "quality_score": 0.705288,
+          "core_readability": 0.379494,
+          "layer_separation": 0.608905,
+          "rhythm": 0.53977,
+          "material": 0.717478,
+          "composition": 0.408988
+        },
+        "task_disagreements": {
+          "quality_score": 0.046727,
+          "core_readability": 0.220152,
+          "layer_separation": 0.047595,
+          "rhythm": 0.067884,
+          "material": 0.10108,
+          "composition": 0.148264
+        },
+        "model_disagreement": 0.105283,
+        "training_weight": 0.111997,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c002",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 2.691667,
+      "core_readability": 1.320843,
+      "layer_separation": 3.722779,
+      "rhythm": 3.37645,
+      "material": 3.833692,
+      "composition": 1.13324,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.556953,
+        "task_confidences": {
+          "quality_score": 0.678185,
+          "core_readability": 0.405094,
+          "layer_separation": 0.598143,
+          "rhythm": 0.498161,
+          "material": 0.713859,
+          "composition": 0.448277
+        },
+        "task_disagreements": {
+          "quality_score": 0.083359,
+          "core_readability": 0.167543,
+          "layer_separation": 0.064428,
+          "rhythm": 0.139736,
+          "material": 0.105614,
+          "composition": 0.066444
+        },
+        "model_disagreement": 0.104521,
+        "training_weight": 0.111391,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c003",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.604457,
+      "core_readability": 2.902934,
+      "layer_separation": 4.281195,
+      "rhythm": 4.290503,
+      "material": 3.448932,
+      "composition": 2.576075,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.543419,
+        "task_confidences": {
+          "quality_score": 0.69614,
+          "core_readability": 0.368395,
+          "layer_separation": 0.596276,
+          "rhythm": 0.4875,
+          "material": 0.720903,
+          "composition": 0.391303
+        },
+        "task_disagreements": {
+          "quality_score": 0.059091,
+          "core_readability": 0.242959,
+          "layer_separation": 0.067349,
+          "rhythm": 0.158148,
+          "material": 0.096788,
+          "composition": 0.185095
+        },
+        "model_disagreement": 0.134905,
+        "training_weight": 0.108684,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c004",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.516561,
+      "core_readability": 2.230026,
+      "layer_separation": 4.759709,
+      "rhythm": 3.503093,
+      "material": 3.544385,
+      "composition": 2.232683,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.554281,
+        "task_confidences": {
+          "quality_score": 0.689298,
+          "core_readability": 0.408005,
+          "layer_separation": 0.615264,
+          "rhythm": 0.483689,
+          "material": 0.725841,
+          "composition": 0.40359
+        },
+        "task_disagreements": {
+          "quality_score": 0.068339,
+          "core_readability": 0.161562,
+          "layer_separation": 0.037648,
+          "rhythm": 0.164729,
+          "material": 0.090602,
+          "composition": 0.159506
+        },
+        "model_disagreement": 0.113731,
+        "training_weight": 0.110856,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c005",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.410981,
+      "core_readability": 2.330112,
+      "layer_separation": 4.906275,
+      "rhythm": 4.42237,
+      "material": 2.319376,
+      "composition": 2.696783,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.563747,
+        "task_confidences": {
+          "quality_score": 0.687829,
+          "core_readability": 0.441023,
+          "layer_separation": 0.585821,
+          "rhythm": 0.513236,
+          "material": 0.737819,
+          "composition": 0.416755
+        },
+        "task_disagreements": {
+          "quality_score": 0.070324,
+          "core_readability": 0.093712,
+          "layer_separation": 0.083701,
+          "rhythm": 0.113705,
+          "material": 0.075595,
+          "composition": 0.13209
+        },
+        "model_disagreement": 0.094854,
+        "training_weight": 0.112749,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c006",
+      "group_id": "group:97d62152bd227ef46eb6",
+      "quality_score": 3.000954,
+      "core_readability": 2.069716,
+      "layer_separation": 2.689871,
+      "rhythm": 4.574834,
+      "material": 3.075917,
+      "composition": 2.458509,
+      "ai_pseudo_label": {
+        "label_source": "ai_pseudo_label",
+        "model_version": "aesthetic_judge.1.1.0+b2dba5e34a60",
+        "confidence": 0.553193,
+        "task_confidences": {
+          "quality_score": 0.713407,
+          "core_readability": 0.430616,
+          "layer_separation": 0.528292,
+          "rhythm": 0.508219,
+          "material": 0.751243,
+          "composition": 0.387383
+        },
+        "task_disagreements": {
+          "quality_score": 0.035753,
+          "core_readability": 0.115097,
+          "layer_separation": 0.173683,
+          "rhythm": 0.122368,
+          "material": 0.058776,
+          "composition": 0.193258
+        },
+        "model_disagreement": 0.116489,
+        "training_weight": 0.110639,
+        "expires_with_model_version": true,
+        "eligible_tasks": [
+          "aesthetic_judge_semisupervision",
+          "active_learning_priority"
+        ],
+        "excluded_tasks": [
+          "human_gold",
+          "regression_evaluation",
+          "model_promotion",
+          "preference_training"
+        ]
+      }
+    }
+  ]
+}

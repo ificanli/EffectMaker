@@ -1,0 +1,101 @@
+{
+  "schema_version": "material_trajectory_training_dataset.v1",
+  "created_at": "2026-08-28T12:31:44.664323+00:00",
+  "dataset_id": "material_trajectory_r002_training_r001",
+  "curriculum_id": "material_trajectory_curriculum_r002",
+  "source": {
+    "curriculum_manifest_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/manifest.json",
+    "run_manifest_path": "workspace/data/vfx_generation/runs/material_trajectory_r002_full_r001/run_manifest.json",
+    "run_id": "material_trajectory_r002_full_r001"
+  },
+  "example_count": 100,
+  "material_state_example_count": 100,
+  "image_conditioned_example_count": 72,
+  "aesthetic_preference_example_count": 0,
+  "label_counts": {
+    "negative": 15,
+    "positive": 85
+  },
+  "category_counts": {
+    "dissolve": 20,
+    "emission_alpha": 15,
+    "flow_distortion": 15,
+    "keyword_material": 10,
+    "mpb": 15,
+    "negative": 15,
+    "texture_swap": 10
+  },
+  "split_strategy": {
+    "name": "strict_shader_material_components.v1",
+    "seed": 20260828,
+    "target_ratios": {
+      "train": 0.8,
+      "validation": 0.1,
+      "test": 0.1
+    },
+    "component_count": 3,
+    "shader_group_sizes": {
+      "a2d49f234dad": 93,
+      "bf7064ee1fa6": 1,
+      "c0ac9ea0cc85": 6
+    },
+    "imbalance_warning": "Strict Shader-group isolation is severely imbalanced because one Shader group dominates the curriculum; do not report balanced holdout metrics from this split."
+  },
+  "splits": {
+    "train": {
+      "example_count": 93,
+      "material_state_count": 93,
+      "image_conditioned_count": 67,
+      "shader_group_count": 1,
+      "material_group_count": 86
+    },
+    "validation": {
+      "example_count": 1,
+      "material_state_count": 1,
+      "image_conditioned_count": 0,
+      "shader_group_count": 1,
+      "material_group_count": 1
+    },
+    "test": {
+      "example_count": 6,
+      "material_state_count": 6,
+      "image_conditioned_count": 5,
+      "shader_group_count": 1,
+      "material_group_count": 6
+    }
+  },
+  "leakage_checks": {
+    "material_group_overlap_count": 0,
+    "shader_group_overlap_count": 0,
+    "passed": true
+  },
+  "training_eligibility": {
+    "material_state": "ready",
+    "image_conditioned": "feature_only",
+    "aesthetic_preference": "not_ready_no_human_labels",
+    "image_validation_split_empty": true
+  },
+  "files": {
+    "examples": "workspace/data/vfx_generation/datasets/material_trajectory_r002_training_r001/examples.jsonl",
+    "material_state_examples": "workspace/data/vfx_generation/datasets/material_trajectory_r002_training_r001/material_state_examples.jsonl",
+    "image_conditioned_examples": "workspace/data/vfx_generation/datasets/material_trajectory_r002_training_r001/image_conditioned_examples.jsonl",
+    "split_assignments": "workspace/data/vfx_generation/datasets/material_trajectory_r002_training_r001/split_assignments.jsonl",
+    "split_directory": "workspace/data/vfx_generation/datasets/material_trajectory_r002_training_r001/splits"
+  },
+  "quality_gates": {
+    "source_spec_schema_errors": 0,
+    "source_result_schema_errors": 0,
+    "source_timeline_schema_errors": 0,
+    "base_training_example_schema_errors": 0,
+    "material_training_example_schema_errors": 0,
+    "expected_actual_signal_mismatches": 0,
+    "missing_render_files": 0
+  },
+  "limitations": [
+    "No R002 human aesthetic or style-match labels exist; examples must not train an aesthetic preference model.",
+    "Only three Shader groups exist with a 93/6/1 distribution, so strict Shader isolation is severely imbalanced.",
+    "The image-conditioned validation split is empty because the singleton validation Shader has no visible stable-Quad sample.",
+    "Twenty-eight near-blank candidates are material-state-only until context renderers reproduce their required Mesh, Particle, UI, or Prefab inputs."
+  ],
+  "status": "pass"
+}
