@@ -1,0 +1,424 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_9fbfb9fe88b44a42ea9c",
+    "source": {
+        "source_kind": "unity_audit",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+        "source_example_id": "trains_fx_016_fx_com_sheilder"
+    },
+    "root_node_id": "n0000",
+    "nodes": [
+        {
+            "node_id": "n0000",
+            "name": "Fx_com_sheilder",
+            "role": "root",
+            "sibling_index": 0,
+            "depth": 0,
+            "parent_node_id": "",
+            "hierarchy_path": "Fx_com_sheilder[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0001",
+            "name": "node",
+            "role": "unclassified",
+            "sibling_index": 0,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "Fx_com_sheilder[0]/node[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0002",
+            "name": "di",
+            "role": "unclassified",
+            "sibling_index": 1,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "Fx_com_sheilder[0]/node[0]/di[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0003",
+            "name": "dun (5)",
+            "role": "unclassified",
+            "sibling_index": 2,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "Fx_com_sheilder[0]/node[0]/dun (5)[2]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    2.4000000953674318,
+                    2.4000000953674318,
+                    2.4000000953674318
+                ]
+            }
+        },
+        {
+            "node_id": "n0004",
+            "name": "wenli",
+            "role": "unclassified",
+            "sibling_index": 0,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "Fx_com_sheilder[0]/node[0]/wenli[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.1603870391845704,
+                    1.1603870391845704,
+                    1.1603870391845704
+                ]
+            }
+        }
+    ],
+    "components": {
+        "particle_systems": [
+            {
+                "component_id": "p0000",
+                "node_id": "n0004",
+                "parameters": {
+                    "duration_seconds": 1.0,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 10,
+                    "start_lifetime_max": 1.0,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.10000000149011612,
+                    "start_color_rgba": [
+                        0.17254900932312013,
+                        0.5449022054672241,
+                        1.0,
+                        0.545098066329956
+                    ],
+                    "end_color_rgba": [
+                        0.17254900932312013,
+                        0.5449022054672241,
+                        1.0,
+                        0.545098066329956
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": false,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Mesh",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": false,
+                        "color_over_lifetime": false,
+                        "size_over_lifetime": false,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/VFXSourceIngest/Shared/Meshes/95/mod_yuan1_9507a0d70720cf7b.fbx"
+                ]
+            },
+            {
+                "component_id": "p0001",
+                "node_id": "n0002",
+                "parameters": {
+                    "duration_seconds": 1.0,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 1.0,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 1.2999999523162842,
+                    "start_color_rgba": [
+                        0.34509801864624026,
+                        0.6347423195838928,
+                        1.0,
+                        0.3019607961177826
+                    ],
+                    "end_color_rgba": [
+                        0.34509801864624026,
+                        0.6347423195838928,
+                        1.0,
+                        0.3019607961177826
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": false,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": false,
+                        "color_over_lifetime": false,
+                        "size_over_lifetime": false,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0002",
+                "node_id": "n0003",
+                "parameters": {
+                    "duration_seconds": 1.0,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 1.0,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.6000000238418579,
+                    "start_color_rgba": [
+                        0.18039214611053468,
+                        0.5492159128189087,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        0.18039214611053468,
+                        0.5492159128189087,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": false,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 2,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": false,
+                        "color_over_lifetime": false,
+                        "size_over_lifetime": false,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "renderers": [
+            {
+                "component_id": "r0000",
+                "node_id": "n0004",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Mesh",
+                    "sorting_order": 0
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/VFXSourceIngest/Shared/Meshes/95/mod_yuan1_9507a0d70720cf7b.fbx"
+                ]
+            },
+            {
+                "component_id": "r0001",
+                "node_id": "n0002",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 0
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0002",
+                "node_id": "n0003",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 2
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat"
+        ],
+        "meshes": [
+            "Assets/VFXSourceIngest/Shared/Meshes/95/mod_yuan1_9507a0d70720cf7b.fbx"
+        ]
+    },
+    "reconstruction": {
+        "status": "structure_only",
+        "compiler_profile": "none",
+        "missing_fields": [],
+        "unsupported_components": [
+            "ParticleSystemWithoutParticleSystemRenderer"
+        ]
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition",
+            "full_reconstruction"
+        ],
+        "aesthetic_label_source": "none"
+    },
+    "provenance": {
+        "source_dataset_id": "prefab_structure_r005c_training_r005",
+        "source_run_id": "",
+        "exporter": "prefab_graph_source_unity.v1",
+        "assumptions": [
+            "All values were read through Unity AssetDatabase and component APIs.",
+            "Source labels and directories are not aesthetic supervision.",
+            "Unsupported or missing runtime context is retained as an explicit reconstruction limitation."
+        ]
+    }
+}

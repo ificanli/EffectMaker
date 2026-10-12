@@ -1,0 +1,31 @@
+{
+    "schema_version": "vfx_prefab_graph_readback_result.v1",
+    "created_at": "2026-09-02T03:46:29.9541873Z",
+    "graph_id": "pfg_ae76e59bdd1eaa23671a",
+    "input_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\prefab_graph_source_export_r001\\graphs\\trains_fx_017_fx_qiangkouhuo.json",
+    "prefab_path": "Assets/VFXGenerated/PrefabGraph/SourceReconstructionR001/trains_fx_017_fx_qiangkouhuo/FX_qiangkouhuo.prefab",
+    "output_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\prefab_graph_source_export_r001\\recompile_roundtrip_graphs\\trains_fx_017_fx_qiangkouhuo.json",
+    "status": "mismatch",
+    "unity_api_readback": true,
+    "source_prefab_instantiated": false,
+    "node_count": 7,
+    "particle_system_count": 6,
+    "renderer_count": 6,
+    "material_paths": [
+        "Assets/VFXGenerated/PrefabGraph/SourceReconstructionR001/trains_fx_017_fx_qiangkouhuo/Materials/pfg_ae76e59bdd1eaa23671a_p0000.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hexinbao.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_01.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_02.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_juesejiesuo/mat/mat_juesejiesuo_01.mat"
+    ],
+    "mesh_paths": [],
+    "differences": [
+        "particle[n0005].parameters differ"
+    ],
+    "allowed_normalizations": [
+        "node[n0000].parent_node_id: Unity JsonUtility serializes the root null parent as an empty string",
+        "particle[n0000].material_paths: generated output material replaces template binding"
+    ],
+    "error": "InvalidOperationException: Unity API readback differs from input Graph."
+}

@@ -1,0 +1,65 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "debris.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "core",
+      "debris texture",
+      "debris material",
+      "burst count",
+      "speed",
+      "lifetime",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T18:29:11.755478+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "爆裂时应增加从核心向外展开的小型分支或碎片，不能只有单一过曝主体。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/02_fire_burst/01_00300.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/02_fire_burst/02_00432.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/02_fire_burst/03_00564.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/02_fire_burst/04_00699.jpg"
+    ],
+    "judgment_axes": [
+      "layer_separation",
+      "composition",
+      "core_readability"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP008",
+    "timecodes": [
+      "00:05:53-00:11:14"
+    ],
+    "title": "第08集作业点评：火鸟/凤凰爆炸主体与碎片分支"
+  },
+  "rule_id": "professional_explosion_debris_branches_r001",
+  "schema_version": "vfx_professional_debris_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_explosion_debris_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_explosion_family_r007/candidates/layered_explosion_000_pfg_5efe7653edda83cd1dee/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/compile_results/no_debris.json",
+      "graph_id": "pfg_011ac47845378eeb97f3",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/graphs/no_debris.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionDebrisR001/no_debris/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/readback/no_debris.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/readback_results/no_debris.json",
+      "variant": "no_debris"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/compile_results/radial_debris.json",
+      "graph_id": "pfg_347231f28deb2d4fdd5d",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/graphs/radial_debris.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionDebrisR001/radial_debris/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/readback/radial_debris.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/readback_results/radial_debris.json",
+      "variant": "radial_debris"
+    }
+  ]
+}

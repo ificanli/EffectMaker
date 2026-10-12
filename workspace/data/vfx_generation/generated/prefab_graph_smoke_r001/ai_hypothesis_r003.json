@@ -1,0 +1,37 @@
+{
+  "schema_version": "vfx_ai_hypothesis.v1",
+  "run_id": "prefab_graph_smoke_r001_render_r003",
+  "source_graph_id": "pfg_ec7fe5ad89222483d2cd",
+  "source_label": "ai_hypothesis",
+  "not_human_feedback": true,
+  "observed_technical_evidence": {
+    "valid_frame_count": 9,
+    "peak_visible_area_ratio": 0.01860809326171875,
+    "peak_bbox_area_ratio": 0.14505386352539062,
+    "peak_time_seconds": 0.3,
+    "temporal_delta_mean": 0.0021160983014851814,
+    "generated_texture_count": 3
+  },
+  "hypothesis": {
+    "diagnosis": [
+      "The generated Texture2D assets are bound, but the particle material is still visually opaque at the core.",
+      "The peak is dynamic and centered, but the detectable bright area remains below the 0.04 technical visibility target."
+    ],
+    "controlled_changes": [
+      "Configure URP particle material surface, source blend, destination blend, ZWrite, queue, and transparent keyword.",
+      "Increase only the three layer size, burst, speed, and radius values using visible_burst_r003."
+    ],
+    "acceptance_gate": {
+      "minimum_peak_visible_area_ratio": 0.04,
+      "requires_valid_frames": 9,
+      "requires_no_parent_prefab": true,
+      "requires_generated_texture_assets": 3
+    }
+  },
+  "training_eligibility": {
+    "human_aesthetic": false,
+    "preference_training": false,
+    "prompt_condition_training": false,
+    "structure_compiler_diagnostic": true
+  }
+}

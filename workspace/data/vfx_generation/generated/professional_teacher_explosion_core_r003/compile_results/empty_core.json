@@ -1,0 +1,70 @@
+{
+    "schema_version": "vfx_prefab_graph_compile_result.v1",
+    "created_at": "2026-09-03T15:17:12.8821611Z",
+    "graph_id": "pfg_08a233e9a64330b2b637",
+    "status": "pass",
+    "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/GeneratedRoot.prefab",
+    "source_prefab_read": false,
+    "node_count": 4,
+    "particle_system_count": 3,
+    "generated_material_paths": [
+        "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0000.mat",
+        "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0001.mat",
+        "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0002.mat"
+    ],
+    "generated_texture_paths": [],
+    "bound_texture_paths": [
+        "Assets/Hovl Studio/Toon Projectiles 2/Textures/Glow2.png",
+        "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+        "Assets/VFXSourceIngest/Shared/Textures/13/eff_glow_138_13e7b7e98538dfeb.png"
+    ],
+    "generated_shader_names": [
+        "VFX/YOYO Shader URP",
+        "Common/ColorDefault",
+        "ERB/Particles/Blend_CenterGlow"
+    ],
+    "material_template_paths": [
+        "Assets/Hovl Studio/Toon Projectiles 2/Materials/Glow2bcg.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_06.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_mibaoshengcheng/mat/mat_mibaoshengcheng_02.mat"
+    ],
+    "material_texture_readbacks": [
+        {
+            "renderer_name": "GeneratedLayer_01",
+            "material_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0000.mat",
+            "shader_name": "VFX/YOYO Shader URP",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/13/eff_glow_138_13e7b7e98538dfeb.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0001.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_DissolveTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0001.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MaskTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/29/wenli22_Rotate91_298fcc67d2cedcc3.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_03",
+            "material_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0002.mat",
+            "shader_name": "ERB/Particles/Blend_CenterGlow",
+            "property_name": "_Flow",
+            "texture_path": "Assets/Hovl Studio/Sword slash VFX/Textures/Noise34.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_03",
+            "material_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR003/empty_core/Materials/pfg_08a233e9a64330b2b637_p0002.mat",
+            "shader_name": "ERB/Particles/Blend_CenterGlow",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Glow2.png"
+        }
+    ],
+    "planned_texture_readback_match": true,
+    "error": ""
+}

@@ -1,0 +1,635 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_92f4e0a874e1e56f2e40",
+    "source": {
+        "source_kind": "generated",
+        "prefab_path": "Assets/VFXGenerated/PrefabGraph/SourceReconstructionR001/trains_fx_019_fx_qiangkouhuo_2/FX_qiangkouhuo_2.prefab",
+        "source_example_id": "trains_fx_019_fx_qiangkouhuo_2"
+    },
+    "root_node_id": "n0000",
+    "nodes": [
+        {
+            "node_id": "n0000",
+            "name": "FX_qiangkouhuo_2",
+            "role": "root",
+            "sibling_index": 0,
+            "depth": 0,
+            "parent_node_id": "",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0001",
+            "name": "GameObject",
+            "role": "unclassified",
+            "sibling_index": 0,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]/GameObject[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                "local_scale": [
+                    0.30000001192092898,
+                    0.30000001192092898,
+                    0.30000001192092898
+                ]
+            }
+        },
+        {
+            "node_id": "n0002",
+            "name": "fire",
+            "role": "unclassified",
+            "sibling_index": 4,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]/GameObject[0]/fire[4]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.7071068286895752,
+                    0.7071068286895752
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0003",
+            "name": "flash",
+            "role": "unclassified",
+            "sibling_index": 3,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]/GameObject[0]/flash[3]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.7071068286895752,
+                    0.7071068286895752
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0004",
+            "name": "glow",
+            "role": "support",
+            "sibling_index": 2,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]/GameObject[0]/glow[2]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    -0.5,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.7071068286895752,
+                    0.7071068286895752
+                ],
+                "local_scale": [
+                    0.6999998092651367,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0005",
+            "name": "glow_3",
+            "role": "support",
+            "sibling_index": 0,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]/GameObject[0]/glow_3[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    -0.15000002086162568,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    -0.8660255074501038,
+                    0.0,
+                    0.4999999701976776,
+                    0.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0006",
+            "name": "lizi",
+            "role": "unclassified",
+            "sibling_index": 1,
+            "depth": 2,
+            "parent_node_id": "n0001",
+            "hierarchy_path": "FX_qiangkouhuo_2[0]/GameObject[0]/lizi[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    -0.3070000112056732,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    -0.5,
+                    -0.5,
+                    0.5,
+                    0.5
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "components": {
+        "particle_systems": [
+            {
+                "component_id": "p0000",
+                "node_id": "n0000",
+                "parameters": {
+                    "duration_seconds": 5.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 5.0,
+                    "start_speed_max": 5.0,
+                    "start_size_max": 1.0,
+                    "start_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_enabled": false,
+                    "emission_rate_over_time_max": 10.0,
+                    "burst_particle_count": 0,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": false,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/SourceReconstructionR001/trains_fx_019_fx_qiangkouhuo_2/Materials/pfg_92f4e0a874e1e56f2e40_p0000.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0001",
+                "node_id": "n0005",
+                "parameters": {
+                    "duration_seconds": 0.5,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 1,
+                    "start_lifetime_max": 0.20000000298023225,
+                    "start_speed_max": -1.0,
+                    "start_size_max": 1.5,
+                    "start_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        0.15566039085388184,
+                        0.15566039085388184,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 1,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_02.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0002",
+                "node_id": "n0006",
+                "parameters": {
+                    "duration_seconds": 5.0,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 5,
+                    "start_lifetime_max": 0.30000001192092898,
+                    "start_speed_max": 25.0,
+                    "start_size_max": 0.30000001192092898,
+                    "start_color_rgba": [
+                        1.0,
+                        0.4945005774497986,
+                        0.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 5,
+                    "shape_enabled": true,
+                    "shape_type": "Cone",
+                    "shape_radius": 0.30000001192092898,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.0,
+                    "renderer_mode": "Stretch",
+                    "sorting_order": 2,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hexinbao.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0003",
+                "node_id": "n0004",
+                "parameters": {
+                    "duration_seconds": 0.30000001192092898,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 1,
+                    "start_lifetime_max": 0.20000000298023225,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 6.0,
+                    "start_color_rgba": [
+                        1.0,
+                        0.4820754826068878,
+                        0.2783018946647644,
+                        0.19607843458652497
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_juesejiesuo/mat/mat_juesejiesuo_01.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0004",
+                "node_id": "n0003",
+                "parameters": {
+                    "duration_seconds": 0.30000001192092898,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 1,
+                    "start_lifetime_max": 0.10000000149011612,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 1.5,
+                    "start_color_rgba": [
+                        1.0,
+                        0.9057397842407227,
+                        0.5235849022865295,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 3,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0005",
+                "node_id": "n0002",
+                "parameters": {
+                    "duration_seconds": 0.30000001192092898,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 0.10000000149011612,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.5,
+                    "start_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        0.799237847328186,
+                        0.31603771448135378,
+                        1.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 1,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_04.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "renderers": [
+            {
+                "component_id": "r0000",
+                "node_id": "n0000",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": false,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 0
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/SourceReconstructionR001/trains_fx_019_fx_qiangkouhuo_2/Materials/pfg_92f4e0a874e1e56f2e40_p0000.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0001",
+                "node_id": "n0005",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 1
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_02.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0002",
+                "node_id": "n0006",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Stretch",
+                    "sorting_order": 2
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hexinbao.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0003",
+                "node_id": "n0004",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 0
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_juesejiesuo/mat/mat_juesejiesuo_01.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0004",
+                "node_id": "n0003",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 3
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0005",
+                "node_id": "n0002",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 1
+                },
+                "material_paths": [
+                    "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_04.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [
+            "Assets/VFXGenerated/PrefabGraph/SourceReconstructionR001/trains_fx_019_fx_qiangkouhuo_2/Materials/pfg_92f4e0a874e1e56f2e40_p0000.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hexinbao.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_02.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/Mat_qiangkouhuo_04.mat",
+            "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_juesejiesuo/mat/mat_juesejiesuo_01.mat"
+        ],
+        "meshes": []
+    },
+    "reconstruction": {
+        "status": "reconstructable",
+        "compiler_profile": "particle_v1",
+        "missing_fields": [],
+        "unsupported_components": []
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "full_reconstruction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition"
+        ],
+        "aesthetic_label_source": "none"
+    },
+    "provenance": {
+        "source_dataset_id": "prefab_structure_r005c_training_r005",
+        "source_run_id": "",
+        "exporter": "prefab_graph_readback.v1",
+        "assumptions": [
+            "Graph exported through Unity AssetDatabase and component APIs.",
+            "Material and mesh paths point to the compiled Prefab output assets."
+        ]
+    }
+}

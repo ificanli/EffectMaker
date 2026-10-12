@@ -1,0 +1,366 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_15374098b5dc20177c16",
+    "source": {
+        "source_kind": "generated",
+        "prefab_path": "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/GeneratedBlueImpact.prefab",
+        "source_example_id": ""
+    },
+    "condition": {
+        "prompt": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+        "effect_family": "explosion",
+        "style_family": "cartoon",
+        "seed": 20262007,
+        "parent_prefab_path": ""
+    },
+    "root_node_id": "n0000",
+    "nodes": [
+        {
+            "node_id": "n0000",
+            "name": "GeneratedBlueImpact",
+            "role": "root",
+            "sibling_index": 0,
+            "depth": 0,
+            "parent_node_id": "",
+            "hierarchy_path": "GeneratedBlueImpact[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0001",
+            "name": "Core",
+            "role": "core",
+            "sibling_index": 0,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedBlueImpact[0]/Core[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0002",
+            "name": "Support",
+            "role": "support",
+            "sibling_index": 1,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedBlueImpact[0]/Support[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0003",
+            "name": "Sparks",
+            "role": "hit",
+            "sibling_index": 2,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedBlueImpact[0]/Sparks[2]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "components": {
+        "particle_systems": [
+            {
+                "component_id": "p0000",
+                "node_id": "n0001",
+                "parameters": {
+                    "duration_seconds": 0.800000011920929,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 144,
+                    "start_lifetime_max": 0.4399999976158142,
+                    "start_speed_max": 0.5,
+                    "start_size_max": 4.800000190734863,
+                    "start_color_rgba": [
+                        0.550000011920929,
+                        0.8999999761581421,
+                        1.0,
+                        0.9674933552742004
+                    ],
+                    "end_color_rgba": [
+                        0.050000011920928958,
+                        0.3500000238418579,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 72,
+                    "shape_enabled": true,
+                    "shape_type": "Sphere",
+                    "shape_radius": 0.07999999821186066,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.05000000074505806,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 3,
+                    "texture_profile": "soft_disc",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0000.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0001",
+                "node_id": "n0002",
+                "parameters": {
+                    "duration_seconds": 0.800000011920929,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 224,
+                    "start_lifetime_max": 0.699999988079071,
+                    "start_speed_max": 2.4000000953674318,
+                    "start_size_max": 2.0999999046325685,
+                    "start_color_rgba": [
+                        0.05000000074505806,
+                        0.41999998688697817,
+                        1.0,
+                        0.7200000286102295
+                    ],
+                    "end_color_rgba": [
+                        0.019999999552965165,
+                        0.08000001311302185,
+                        0.3500000238418579,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 112,
+                    "shape_enabled": true,
+                    "shape_type": "Sphere",
+                    "shape_radius": 0.2800000011920929,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.05000000074505806,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 2,
+                    "texture_profile": "soft_disc",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0001.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0002",
+                "node_id": "n0003",
+                "parameters": {
+                    "duration_seconds": 0.800000011920929,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 320,
+                    "start_lifetime_max": 0.7799999713897705,
+                    "start_speed_max": 5.0,
+                    "start_size_max": 0.23999999463558198,
+                    "start_color_rgba": [
+                        0.7200000286102295,
+                        0.949999988079071,
+                        1.0,
+                        0.9200000166893005
+                    ],
+                    "end_color_rgba": [
+                        0.10000002384185791,
+                        0.44999998807907107,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 160,
+                    "shape_enabled": true,
+                    "shape_type": "Sphere",
+                    "shape_radius": 0.20000000298023225,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.05000000074505806,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 4,
+                    "texture_profile": "spark",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/mat/Mat_fozu_03.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0002.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "renderers": [
+            {
+                "component_id": "r0000",
+                "node_id": "n0001",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 3
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0000.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0001",
+                "node_id": "n0002",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 2
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0001.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0002",
+                "node_id": "n0003",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 4
+                },
+                "material_paths": [
+                    "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0002.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [
+            "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0000.mat",
+            "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0001.mat",
+            "Assets/VFXGenerated/PrefabGraph/RoundtripR002/Effect_07/Materials/pfg_15374098b5dc20177c16_p0002.mat"
+        ],
+        "meshes": []
+    },
+    "reconstruction": {
+        "status": "reconstructable",
+        "compiler_profile": "particle_v1",
+        "missing_fields": [],
+        "unsupported_components": []
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "full_reconstruction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition"
+        ],
+        "aesthetic_label_source": "ai_hypothesis"
+    },
+    "provenance": {
+        "source_dataset_id": "generated_seed",
+        "source_run_id": "",
+        "exporter": "prefab_graph_readback.v1",
+        "assumptions": [
+            "Graph exported through Unity AssetDatabase and component APIs.",
+            "Material and mesh paths point to the compiled Prefab output assets."
+        ]
+    }
+}

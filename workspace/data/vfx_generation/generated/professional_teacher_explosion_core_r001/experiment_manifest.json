@@ -1,0 +1,66 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "core.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "graph topology",
+      "support parameters",
+      "hit parameters",
+      "material paths",
+      "texture paths",
+      "shader paths",
+      "timing",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T15:06:18.506477+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "爆炸需要核心体积与外扩元素；外围细节不能替代核心，中心空会削弱主体体积和力量感。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-001/visual_check/03_explosion_core/09m29.00s.jpg",
+      "knowledge/sources/SRC-2026-001/visual_check/03_explosion_core/09m41.00s.jpg",
+      "knowledge/sources/SRC-2026-001/visual_check/03_explosion_core/10m30.00s.jpg",
+      "knowledge/sources/SRC-2026-001/visual_check/03_explosion_core/11m30.00s.jpg"
+    ],
+    "judgment_axes": [
+      "core_readability",
+      "layer_separation",
+      "composition"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-001",
+    "source_url": "https://www.bilibili.com/video/BV1xmQnBaE6b/",
+    "timecodes": [
+      "00:09:29-00:12:07"
+    ],
+    "title": "20260415点评-一定要练基本功"
+  },
+  "rule_id": "professional_explosion_core_readability_r001",
+  "schema_version": "vfx_professional_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_explosion_core_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/prompt_asset_aware_full_r003/candidates/prompt_graph_generation_001_004_pfg_5ee621c7c2c032cdcdf4/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/compile_results/empty_core.json",
+      "graph_id": "pfg_3add9b1dec2d5827c6e4",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/graphs/empty_core.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR001/empty_core/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/readback/empty_core.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/readback_results/empty_core.json",
+      "variant": "empty_core"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/compile_results/reinforced_core.json",
+      "graph_id": "pfg_68ad5a94d002cb9f99a8",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/graphs/reinforced_core.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR001/reinforced_core/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/readback/reinforced_core.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r001/readback_results/reinforced_core.json",
+      "variant": "reinforced_core"
+    }
+  ]
+}

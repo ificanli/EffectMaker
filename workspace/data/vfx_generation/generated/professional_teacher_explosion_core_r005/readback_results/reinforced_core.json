@@ -1,0 +1,30 @@
+{
+    "schema_version": "vfx_prefab_graph_readback_result.v1",
+    "created_at": "2026-09-03T15:27:11.8418648Z",
+    "graph_id": "pfg_b76c06ae59cdb2bc32c6",
+    "input_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\professional_teacher_explosion_core_r005\\graphs\\reinforced_core.json",
+    "prefab_path": "Assets/Generated/ProfessionalTeacherExplosionCoreR005/reinforced_core/GeneratedRoot.prefab",
+    "output_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\professional_teacher_explosion_core_r005\\readback\\reinforced_core.json",
+    "status": "mismatch",
+    "unity_api_readback": true,
+    "source_prefab_instantiated": false,
+    "node_count": 4,
+    "particle_system_count": 3,
+    "renderer_count": 3,
+    "material_paths": [
+        "Assets/Generated/ProfessionalTeacherExplosionCoreR005/reinforced_core/Materials/pfg_b76c06ae59cdb2bc32c6_p0000.mat",
+        "Assets/Generated/ProfessionalTeacherExplosionCoreR005/reinforced_core/Materials/pfg_b76c06ae59cdb2bc32c6_p0001.mat",
+        "Assets/Generated/ProfessionalTeacherExplosionCoreR005/reinforced_core/Materials/pfg_b76c06ae59cdb2bc32c6_p0002.mat"
+    ],
+    "mesh_paths": [],
+    "differences": [
+        "particle[n0001].parameters differ"
+    ],
+    "allowed_normalizations": [
+        "node[n0000].parent_node_id: Unity JsonUtility serializes the root null parent as an empty string",
+        "particle[n0001].material_paths: generated output material replaces template binding",
+        "particle[n0002].material_paths: generated output material replaces template binding",
+        "particle[n0003].material_paths: generated output material replaces template binding"
+    ],
+    "error": "InvalidOperationException: Unity API readback differs from input Graph."
+}

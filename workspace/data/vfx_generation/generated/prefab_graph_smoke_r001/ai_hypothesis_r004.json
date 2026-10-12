@@ -1,0 +1,39 @@
+{
+  "schema_version": "vfx_ai_hypothesis.v1",
+  "run_id": "prefab_graph_smoke_r001_render_r004",
+  "source_graph_id": "pfg_1d267987896b10a1d8e5",
+  "source_label": "ai_hypothesis",
+  "not_human_feedback": true,
+  "observed_technical_evidence": {
+    "valid_frame_count": 9,
+    "peak_visible_area_ratio": 0.032199859619140625,
+    "peak_bbox_area_ratio": 0.16983413696289062,
+    "peak_time_seconds": 0.1,
+    "temporal_delta_mean": 0.004077733628037095,
+    "generated_texture_count": 3,
+    "actual_shader_family": "Particles/Standard Unlit"
+  },
+  "hypothesis": {
+    "diagnosis": [
+      "The visible-area target is still not met despite a larger burst.",
+      "Saved material properties show legacy particle defaults (_SrcBlend=One, _DstBlend=Zero, _ZWrite=1), so texture alpha cannot shape the particle silhouette."
+    ],
+    "controlled_changes": [
+      "Set the legacy hidden blend fields unconditionally and enable _ALPHABLEND_ON only for non-URP particle shaders.",
+      "Increase only the three layer size, burst, speed, and radius values using visible_burst_r004."
+    ],
+    "acceptance_gate": {
+      "minimum_peak_visible_area_ratio": 0.04,
+      "requires_valid_frames": 9,
+      "requires_no_parent_prefab": true,
+      "requires_generated_texture_assets": 3,
+      "requires_transparent_material": true
+    }
+  },
+  "training_eligibility": {
+    "human_aesthetic": false,
+    "preference_training": false,
+    "prompt_condition_training": false,
+    "structure_compiler_diagnostic": true
+  }
+}

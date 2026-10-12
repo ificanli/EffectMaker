@@ -1,0 +1,35 @@
+{
+  "schema_version": "vfx_ai_hypothesis.v1",
+  "run_id": "prefab_graph_smoke_r001_render_r002",
+  "source_graph_id": "pfg_445279ba9e74fb2338dd",
+  "source_prefab_read": false,
+  "source_label": "ai_hypothesis",
+  "not_human_feedback": true,
+  "observed_technical_evidence": {
+    "valid_frame_count": 9,
+    "peak_visible_area_ratio": 0.0056,
+    "active_window_seconds": [0.1, 0.5],
+    "particle_system_count": 3
+  },
+  "hypothesis": {
+    "diagnosis": [
+      "The generated Prefab runs and has temporal change, but the core occupies too little of the review frame.",
+      "Materials use the default untextured particle appearance, producing square particle silhouettes."
+    ],
+    "controlled_changes": [
+      "Increase Core, Support, and Sparks size and burst count using visible_burst_r002.",
+      "Generate and bind soft_disc or spark Texture2D assets per material."
+    ],
+    "acceptance_gate": {
+      "minimum_peak_visible_area_ratio": 0.04,
+      "requires_valid_frames": 9,
+      "requires_no_parent_prefab": true
+    }
+  },
+  "training_eligibility": {
+    "human_aesthetic": false,
+    "preference_training": false,
+    "prompt_condition_training": false,
+    "structure_compiler_diagnostic": true
+  }
+}

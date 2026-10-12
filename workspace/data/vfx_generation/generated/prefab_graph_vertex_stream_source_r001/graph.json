@@ -1,0 +1,855 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_5b7d7f902fb3b9202229",
+    "source": {
+        "source_kind": "unity_audit",
+        "prefab_path": "Assets/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab",
+        "source_example_id": "source_sword_slash_1_vertex_stream"
+    },
+    "root_node_id": "n0000",
+    "nodes": [
+        {
+            "node_id": "n0000",
+            "name": "Sword Slash 1",
+            "role": "root",
+            "sibling_index": 0,
+            "depth": 0,
+            "parent_node_id": "",
+            "hierarchy_path": "Sword Slash 1[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0001",
+            "name": "Distortion(Delete for Mobile)",
+            "role": "unclassified",
+            "sibling_index": 2,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "Sword Slash 1[0]/Distortion(Delete for Mobile)[2]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0002",
+            "name": "Hit",
+            "role": "hit",
+            "sibling_index": 3,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "Sword Slash 1[0]/Hit[3]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    2.0789999961853029,
+                    0.0,
+                    1.3009999990463257
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.9545789957046509,
+                    0.0,
+                    0.29795804619789126
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0003",
+            "name": "Smoke",
+            "role": "unclassified",
+            "sibling_index": 0,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "Sword Slash 1[0]/Smoke[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    -0.5416752696037293,
+                    0.45451945066452029,
+                    0.45451945066452029,
+                    0.5416752696037293
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0004",
+            "name": "Sparks",
+            "role": "hit",
+            "sibling_index": 1,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "Sword Slash 1[0]/Sparks[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0005",
+            "name": "Flare",
+            "role": "unclassified",
+            "sibling_index": 0,
+            "depth": 2,
+            "parent_node_id": "n0002",
+            "hierarchy_path": "Sword Slash 1[0]/Hit[3]/Flare[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    1.600000023841858
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    -8.881784197001253e-16,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0006",
+            "name": "SparksCore",
+            "role": "core",
+            "sibling_index": 1,
+            "depth": 2,
+            "parent_node_id": "n0002",
+            "hierarchy_path": "Sword Slash 1[0]/Hit[3]/SparksCore[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    -0.8500000238418579
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "components": {
+        "particle_systems": [
+            {
+                "component_id": "p0000",
+                "node_id": "n0000",
+                "parameters": {
+                    "duration_seconds": 2.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 0.30000001192092898,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 1.0,
+                    "start_size_3d": false,
+                    "start_size_x_max": 1.0,
+                    "start_size_y_max": 1.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Mesh",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": false,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": false,
+                        "rotation_over_lifetime": true,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Models/Slash3.fbx"
+                ]
+            },
+            {
+                "component_id": "p0001",
+                "node_id": "n0003",
+                "parameters": {
+                    "duration_seconds": 4.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 1.0,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 1.5,
+                    "start_size_3d": false,
+                    "start_size_x_max": 1.5,
+                    "start_size_y_max": 1.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.0,
+                        0.048411112278699878,
+                        0.12264150381088257,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": true,
+                    "shape_type": "Circle",
+                    "shape_radius": 3.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": false,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Stretch",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": true,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": false,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": true
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0002",
+                "node_id": "n0004",
+                "parameters": {
+                    "duration_seconds": 4.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 1.0,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.10000000149011612,
+                    "start_size_3d": false,
+                    "start_size_x_max": 0.10000000149011612,
+                    "start_size_y_max": 1.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.07075470685958862,
+                        0.3499857485294342,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        0.08018869161605835,
+                        0.300639271736145,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": true,
+                    "shape_type": "Cone",
+                    "shape_radius": 2.700000047683716,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.0,
+                    "renderer_mode": "Stretch",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": true,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": true,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": true
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0003",
+                "node_id": "n0001",
+                "parameters": {
+                    "duration_seconds": 2.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 0.30000001192092898,
+                    "start_speed_max": 4.0,
+                    "start_size_max": 3.0,
+                    "start_size_3d": false,
+                    "start_size_x_max": 3.0,
+                    "start_size_y_max": 1.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 6.283185005187988,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.239215686917305
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 10,
+                    "shape_enabled": true,
+                    "shape_type": "Circle",
+                    "shape_radius": 1.5,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": true,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": true,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0004",
+                "node_id": "n0002",
+                "parameters": {
+                    "duration_seconds": 2.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 0.10000000149011612,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 4.0,
+                    "start_size_3d": false,
+                    "start_size_x_max": 4.0,
+                    "start_size_y_max": 1.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 6.283185005187988,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.25916698575019839,
+                        0.37576407194137576,
+                        0.6037735939025879,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        0.2850456237792969,
+                        0.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": false,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": true,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0005",
+                "node_id": "n0005",
+                "parameters": {
+                    "duration_seconds": 2.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 0.10000000149011612,
+                    "start_speed_max": 20.0,
+                    "start_size_max": 8.0,
+                    "start_size_3d": true,
+                    "start_size_x_max": 8.0,
+                    "start_size_y_max": 4.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.18396228551864625,
+                        0.6512660384178162,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 1.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 1.0,
+                    "renderer_mode": "Stretch",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": false,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": true,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0006",
+                "node_id": "n0006",
+                "parameters": {
+                    "duration_seconds": 2.0,
+                    "start_delay_max": 0.0,
+                    "looping": true,
+                    "simulation_space": "Local",
+                    "max_particles": 1000,
+                    "start_lifetime_max": 0.30000001192092898,
+                    "start_speed_max": 100.0,
+                    "start_size_max": 0.07000000029802323,
+                    "start_size_3d": false,
+                    "start_size_x_max": 0.07000000029802323,
+                    "start_size_y_max": 1.0,
+                    "start_size_z_max": 1.0,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.07058823853731156,
+                        0.3490196168422699,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        0.0,
+                        0.049153804779052737,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 15,
+                    "shape_enabled": true,
+                    "shape_type": "Cone",
+                    "shape_radius": 0.009999999776482582,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.0,
+                    "renderer_mode": "Stretch",
+                    "sorting_order": 0,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "",
+                    "serialized_modules": {
+                        "emission": true,
+                        "shape": true,
+                        "color_over_lifetime": true,
+                        "size_over_lifetime": true,
+                        "rotation_over_lifetime": false,
+                        "texture_sheet_animation": false,
+                        "velocity_over_lifetime": false
+                    }
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "renderers": [
+            {
+                "component_id": "r0000",
+                "node_id": "n0000",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Mesh",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV",
+                        "Custom1XY",
+                        "UV2",
+                        "Custom2XY"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat"
+                ],
+                "mesh_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Models/Slash3.fbx"
+                ]
+            },
+            {
+                "component_id": "r0001",
+                "node_id": "n0003",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Stretch",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0002",
+                "node_id": "n0004",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Stretch",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0003",
+                "node_id": "n0001",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0004",
+                "node_id": "n0002",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0005",
+                "node_id": "n0005",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Stretch",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0006",
+                "node_id": "n0006",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Stretch",
+                    "sorting_order": 0,
+                    "active_vertex_streams": [
+                        "Position",
+                        "Normal",
+                        "Color",
+                        "UV"
+                    ]
+                },
+                "material_paths": [
+                    "Assets/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [
+            "Assets/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat",
+            "Assets/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat",
+            "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat",
+            "Assets/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat",
+            "Assets/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat",
+            "Assets/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat"
+        ],
+        "meshes": [
+            "Assets/Hovl Studio/Sword slash VFX/Models/Slash3.fbx"
+        ]
+    },
+    "reconstruction": {
+        "status": "structure_only",
+        "compiler_profile": "none",
+        "missing_fields": [],
+        "unsupported_components": [
+            "ParticleSystem.rotation_over_lifetime",
+            "ParticleSystem.velocity_over_lifetime"
+        ]
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference",
+            "prompt_condition",
+            "full_reconstruction"
+        ],
+        "aesthetic_label_source": "none"
+    },
+    "provenance": {
+        "source_dataset_id": "prefab_graph_vertex_stream_source_r001",
+        "source_run_id": "",
+        "exporter": "prefab_graph_source_unity.v1",
+        "assumptions": [
+            "All values were read through Unity AssetDatabase and component APIs.",
+            "Source labels and directories are not aesthetic supervision.",
+            "Unsupported or missing runtime context is retained as an explicit reconstruction limitation."
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "core.texture_asset_path"
+    ],
+    "held_constant": [
+      "core material",
+      "particle parameters",
+      "color",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T19:13:20.662432+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "火焰不能只是一整块高亮贴片；应保留中心高亮、外部暗色、可识别轮廓和软边结构。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep007/visual_check/07_fire_layers/01_03660.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep007/visual_check/07_fire_layers/02_03838.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep007/visual_check/11_fire_shape/02_06237.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep007/visual_check/11_fire_shape/03_06534.jpg"
+    ],
+    "judgment_axes": [
+      "material",
+      "core_readability",
+      "composition"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP007",
+    "timecodes": [
+      "01:01:14-01:09:43",
+      "01:41:37-01:45:20"
+    ],
+    "title": "第07集作业点评：火焰核心、边缘和暗部"
+  },
+  "rule_id": "professional_explosion_core_texture_structure_r001",
+  "schema_version": "vfx_professional_explosion_material_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_explosion_material_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_explosion_family_r009/candidates/layered_explosion_000_pfg_3ffd91183fb66e130977/graph.json",
+  "status": "prepared",
+  "texture_audit": {
+    "flat_texture": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Glow/FX_Glow_1.TGA",
+    "structured_texture": "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_xingzhe_fire3_0e15be311470531b.png",
+    "structured_texture_is_single_frame": true
+  },
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/compile_results/flat_glow.json",
+      "graph_id": "pfg_9387cf4600d6e4f90e5c",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/graphs/flat_glow.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionMaterialR001/flat_glow/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/readback/flat_glow.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/readback_results/flat_glow.json",
+      "variant": "flat_glow"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/compile_results/structured_flame.json",
+      "graph_id": "pfg_fc08a1d58c38d6534cbd",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/graphs/structured_flame.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionMaterialR001/structured_flame/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/readback/structured_flame.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/readback_results/structured_flame.json",
+      "variant": "structured_flame"
+    }
+  ]
+}
