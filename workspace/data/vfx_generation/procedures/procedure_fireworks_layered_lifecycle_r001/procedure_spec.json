@@ -1,0 +1,221 @@
+{
+  "schema_version": "vfx_procedure_spec.v1",
+  "procedure_id": "procedure_fireworks_layered_lifecycle_r001",
+  "title": "烟花发射、上升、爆炸、放射与残留分层制作",
+  "source": {
+    "source_type": "tutorial_reproduction",
+    "source_path": "knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md",
+    "source_status": "verified",
+    "timecodes": [],
+    "frame_paths": []
+  },
+  "applicability": {
+    "effect_families": ["fire", "explosion"],
+    "effect_types": ["fireworks", "radial_burst"],
+    "style_families": ["stylized", "cartoon", "unspecified"],
+    "elements": ["fire", "spark", "smoke"]
+  },
+  "prerequisites": {
+    "unity_versions": ["6000.5.9f1"],
+    "render_pipelines": ["URP 17.5.0"],
+    "required_capabilities": ["particle_system", "burst_emission", "shape_module", "transparent_particle_material", "play_mode_capture"],
+    "required_assets": []
+  },
+  "steps": [
+    {
+      "step_id": "step_001",
+      "order": 1,
+      "action": "create_layer",
+      "target_role": "support",
+      "target_layer": "Launch",
+      "instruction": "创建 Launch，把发射运动从上升轨迹和爆炸层中分离。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 1.0, "maximum": 1.0, "value": 1.0},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.0, "maximum": 0.0, "value": 0.0},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.65, "maximum": 1.0, "value": null},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 5.6, "maximum": 7.0, "value": null},
+        {"name": "start_size", "unit": "units", "minimum": 0.14, "maximum": 0.22, "value": null},
+        {"name": "burst_count", "unit": "particles", "minimum": 1, "maximum": 1, "value": 1},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#FFD65CFF"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.trail"],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    },
+    {
+      "step_id": "step_002",
+      "order": 2,
+      "action": "configure_particle",
+      "target_role": "support",
+      "target_layer": "AscentTrail",
+      "instruction": "创建 AscentTrail，在 Launch 后 0.15 秒用更小粒子跟随。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 0.9, "maximum": 0.9, "value": 0.9},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.15, "maximum": 0.15, "value": 0.15},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.35, "maximum": 0.7, "value": null},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 0.35, "maximum": 0.8, "value": null},
+        {"name": "start_size", "unit": "units", "minimum": 0.08, "maximum": 0.14, "value": null},
+        {"name": "burst_count", "unit": "particles", "minimum": 24, "maximum": 24, "value": 24},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#FF8A32FF"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["semantic.trail", "semantic.spark"],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    },
+    {
+      "step_id": "step_003",
+      "order": 3,
+      "action": "create_layer",
+      "target_role": "core",
+      "target_layer": "ExplosionCore",
+      "instruction": "创建短寿命 ExplosionCore，作为爆炸峰值的白亮中心。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 0.45, "maximum": 0.45, "value": 0.45},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.75, "maximum": 0.75, "value": 0.75},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.22, "maximum": 0.45, "value": null},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 0.8, "maximum": 1.4, "value": null},
+        {"name": "start_size", "unit": "units", "minimum": 0.35, "maximum": 0.6, "value": null},
+        {"name": "start_size_x", "unit": "units", "minimum": 0.35, "maximum": 0.6, "value": null},
+        {"name": "start_size_y", "unit": "units", "minimum": 0.35, "maximum": 0.6, "value": null},
+        {"name": "start_size_z", "unit": "units", "minimum": 0.35, "maximum": 0.6, "value": null},
+        {"name": "burst_count", "unit": "particles", "minimum": 16, "maximum": 16, "value": 16},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#FFFFFFFF"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control", "emission_control"],
+      "required_texture_tags": ["role.core_shape", "luma.bright_core"],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    },
+    {
+      "step_id": "step_004",
+      "order": 4,
+      "action": "create_layer",
+      "target_role": "hit",
+      "target_layer": "RadialBranches",
+      "instruction": "创建 Sphere Shape 的 RadialBranches，在核心后 0.03 秒开始径向放射。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 1.5, "maximum": 1.5, "value": 1.5},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.78, "maximum": 0.78, "value": 0.78},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.7, "maximum": 1.5, "value": null},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 3.2, "maximum": 5.2, "value": null},
+        {"name": "start_size", "unit": "units", "minimum": 0.12, "maximum": 0.22, "value": null},
+        {"name": "burst_count", "unit": "particles", "minimum": 64, "maximum": 64, "value": 64},
+        {"name": "shape_type", "unit": "enum", "minimum": null, "maximum": null, "value": "Sphere"},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#FF6A24FF"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control", "emission_control"],
+      "required_texture_tags": ["semantic.spark", "role.hit_accent"],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    },
+    {
+      "step_id": "step_005",
+      "order": 5,
+      "action": "create_layer",
+      "target_role": "residual",
+      "target_layer": "Residue",
+      "instruction": "创建更慢、更小、更暗的 Residue，在峰值后进入并延长收尾。",
+      "parameter_ranges": [
+        {"name": "duration_seconds", "unit": "seconds", "minimum": 2.1, "maximum": 2.1, "value": 2.1},
+        {"name": "start_delay_seconds", "unit": "seconds", "minimum": 0.82, "maximum": 0.82, "value": 0.82},
+        {"name": "start_lifetime_seconds", "unit": "seconds", "minimum": 0.9, "maximum": 2.1, "value": null},
+        {"name": "start_speed", "unit": "units_per_second", "minimum": 0.45, "maximum": 1.1, "value": null},
+        {"name": "start_size", "unit": "units", "minimum": 0.07, "maximum": 0.14, "value": null},
+        {"name": "burst_count", "unit": "particles", "minimum": 20, "maximum": 20, "value": 20},
+        {"name": "color", "unit": "rgba_hex", "minimum": null, "maximum": null, "value": "#7A2414FF"}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": ["role.residual_trail", "semantic.smoke", "semantic.spark"],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    },
+    {
+      "step_id": "step_006",
+      "order": 6,
+      "action": "configure_shader",
+      "target_role": "composition",
+      "target_layer": "composition",
+      "instruction": "为五层按职责绑定透明粒子材质，关闭 ZWrite 并回读 Shader、颜色、Emission 和混合参数。",
+      "parameter_ranges": [
+        {"name": "render_queue", "unit": "queue", "minimum": 3000, "maximum": 3000, "value": 3000},
+        {"name": "z_write", "unit": "boolean", "minimum": null, "maximum": null, "value": false}
+      ],
+      "required_shader_features": ["opacity_control", "color_control"],
+      "required_texture_tags": [],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    },
+    {
+      "step_id": "step_007",
+      "order": 7,
+      "action": "compose_layers",
+      "target_role": "composition",
+      "target_layer": "composition",
+      "instruction": "保持 Launch -> AscentTrail -> ExplosionCore -> RadialBranches -> Residue 的先后关系，不将所有层同时播放。",
+      "parameter_ranges": [],
+      "required_shader_features": [],
+      "required_texture_tags": [],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#目的"]
+    },
+    {
+      "step_id": "step_008",
+      "order": 8,
+      "action": "validate_runtime",
+      "target_role": "composition",
+      "target_layer": "composition",
+      "instruction": "进入 Play Mode 并显式播放所有层，在上升、峰值和残留时段分别截图，回读粒子参数与材质引用。",
+      "parameter_ranges": [
+        {"name": "capture_time_ascent", "unit": "seconds", "minimum": 0.65, "maximum": 0.65, "value": 0.65},
+        {"name": "capture_time_peak", "unit": "seconds", "minimum": 0.9, "maximum": 0.9, "value": 0.9},
+        {"name": "capture_time_residual", "unit": "seconds", "minimum": 1.6, "maximum": 1.6, "value": 1.6}
+      ],
+      "required_shader_features": [],
+      "required_texture_tags": [],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#证据"]
+    },
+    {
+      "step_id": "step_009",
+      "order": 9,
+      "action": "performance_check",
+      "target_role": "composition",
+      "target_layer": "composition",
+      "instruction": "记录 draw call、SetPass、三角形、CPU 和 GPU 帧时；编辑器数据只作基线，不代替目标设备测试。",
+      "parameter_ranges": [],
+      "required_shader_features": [],
+      "required_texture_tags": [],
+      "evidence_status": "unity_verified",
+      "evidence_refs": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md#实际执行"]
+    }
+  ],
+  "output_contract": {
+    "required_roles": ["core", "support", "hit", "residual"],
+    "layer_sequence": ["Launch", "AscentTrail", "ExplosionCore", "RadialBranches", "Residue"],
+    "layer_roles": {
+      "Launch": "support",
+      "AscentTrail": "support",
+      "ExplosionCore": "core",
+      "RadialBranches": "hit",
+      "Residue": "residual"
+    },
+    "timing_relationships": ["ascent_precedes_core", "core_precedes_radial_branches", "residual_starts_after_core"],
+    "quality_signals": ["visible_ascent", "distinct_peak", "radial_expansion", "late_residual", "material_bindings_complete", "runtime_frames_change"]
+  },
+  "validation": {
+    "source_reproduction_status": "verified",
+    "target_project_reproduction_status": "pending",
+    "runtime_evidence_paths": ["knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md"],
+    "visual_quality_status": "technically_visible",
+    "known_limits": ["verified_in_unity_6000.5.9f1_urp17_not_effectdemo_2022", "source_summary_does_not_preserve_motion_direction_or_transform_mapping", "no_external_texture_or_custom_shader", "not_professional_visual_acceptance", "editor_performance_is_not_target_device_performance"]
+  },
+  "training_eligibility": {
+    "procedure_retrieval": true,
+    "planner_constraint": true,
+    "controller_sft": false,
+    "positive_generation_supervision": false,
+    "reason": "Verified procedural evidence may constrain planning, but target EffectDemo 2022 reproduction and professional visual acceptance are pending."
+  }
+}
