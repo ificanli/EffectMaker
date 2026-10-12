@@ -1,0 +1,433 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-04T00:09:25.903427+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "aligned_horizontal_span": 0.0830073232594496,
+      "aligned_horizontal_vertical_ratio": 30.462535835113655,
+      "aligned_signed_x_displacement": 0.028331839600610476,
+      "aligned_vertical_span": 0.0027248986659793584,
+      "candidate_id": "slash_direction_pair_000_pfg_0c060328e7f347dfbfbc",
+      "depth_horizontal_span": 0.18998746572300212,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_0c060328e7f347dfbfbc",
+      "horizontal_span_gain": -0.10698014246355253,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.10483248077782104,
+      "paired_difference_horizontal_vertical_ratio": 11.975938704218096,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_000_pfg_0c060328e7f347dfbfbc",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.06969764508716114,
+      "aligned_horizontal_vertical_ratio": 5.11807772118274,
+      "aligned_signed_x_displacement": 0.04210779226833805,
+      "aligned_vertical_span": 0.013617934092461315,
+      "candidate_id": "slash_direction_pair_001_pfg_e467d079005e98f4c774",
+      "depth_horizontal_span": 0.19131719366342798,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_e467d079005e98f4c774",
+      "horizontal_span_gain": -0.12161954857626683,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.10169367592646988,
+      "paired_difference_horizontal_vertical_ratio": 12.81063010738452,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_001_pfg_e467d079005e98f4c774",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.06642299069968849,
+      "aligned_horizontal_vertical_ratio": 4.103301403402354,
+      "aligned_signed_x_displacement": 0.06588741408532162,
+      "aligned_vertical_span": 0.016187694777822614,
+      "candidate_id": "slash_direction_pair_002_pfg_300f90ef9b792bc87a68",
+      "depth_horizontal_span": 0.1669079622368268,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_300f90ef9b792bc87a68",
+      "horizontal_span_gain": -0.10048497153713831,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.12673917343737207,
+      "paired_difference_horizontal_vertical_ratio": 6.629673104910882,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_002_pfg_300f90ef9b792bc87a68",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.08237401465746108,
+      "aligned_horizontal_vertical_ratio": 9.667314531295462,
+      "aligned_signed_x_displacement": 0.04231625156708618,
+      "aligned_vertical_span": 0.008520878718779268,
+      "candidate_id": "slash_direction_pair_003_pfg_3f417ff2c0ebe91a1d4c",
+      "depth_horizontal_span": 0.15588890102189812,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_3f417ff2c0ebe91a1d4c",
+      "horizontal_span_gain": -0.07351488636443704,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.1067499666054792,
+      "paired_difference_horizontal_vertical_ratio": 7.329982032439538,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_003_pfg_3f417ff2c0ebe91a1d4c",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.0715217879828709,
+      "aligned_horizontal_vertical_ratio": 2.8423904089759984,
+      "aligned_signed_x_displacement": 0.03955647791618344,
+      "aligned_vertical_span": 0.025162549014031255,
+      "candidate_id": "slash_direction_pair_004_pfg_2c767a7446f6e8bc01b9",
+      "depth_horizontal_span": 0.21232768762802928,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_2c767a7446f6e8bc01b9",
+      "horizontal_span_gain": -0.14080589964515838,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.0967920367266154,
+      "paired_difference_horizontal_vertical_ratio": 15.04715047014134,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_004_pfg_2c767a7446f6e8bc01b9",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.061365091735018584,
+      "aligned_horizontal_vertical_ratio": 4.473813553590781,
+      "aligned_signed_x_displacement": 0.060526498331124,
+      "aligned_vertical_span": 0.013716506287072605,
+      "candidate_id": "slash_direction_pair_005_pfg_3c392901fc979c1291d7",
+      "depth_horizontal_span": 0.19645435976523207,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_3c392901fc979c1291d7",
+      "horizontal_span_gain": -0.13508926803021348,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.10948227833228807,
+      "paired_difference_horizontal_vertical_ratio": 6.124498469600544,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_005_pfg_3c392901fc979c1291d7",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.08208846338449349,
+      "aligned_horizontal_vertical_ratio": 10.179375366590058,
+      "aligned_signed_x_displacement": 0.03600227171552095,
+      "aligned_vertical_span": 0.008064194553029036,
+      "candidate_id": "slash_direction_pair_006_pfg_33beea72db26a4ffe3cf",
+      "depth_horizontal_span": 0.17751989909536664,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_33beea72db26a4ffe3cf",
+      "horizontal_span_gain": -0.09543143571087315,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.0992206395139203,
+      "paired_difference_horizontal_vertical_ratio": 4.875837479725526,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_006_pfg_33beea72db26a4ffe3cf",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    },
+    {
+      "aligned_horizontal_span": 0.07096133678257577,
+      "aligned_horizontal_vertical_ratio": 7.570679463292166,
+      "aligned_signed_x_displacement": 0.05612658335102705,
+      "aligned_vertical_span": 0.009373179399107423,
+      "candidate_id": "slash_direction_pair_007_pfg_15d5de1eec2d150d060d",
+      "depth_horizontal_span": 0.15250949032501104,
+      "graph_comparison": {
+        "difference_paths": [
+          "nodes[4].transform.local_rotation[1]",
+          "nodes[4].transform.local_rotation[3]"
+        ],
+        "expected_difference_prefix": "nodes[4].transform.local_rotation",
+        "only_trail_rotation_differs": true
+      },
+      "guided_graph_id": "pfg_15d5de1eec2d150d060d",
+      "horizontal_span_gain": -0.08154815354243528,
+      "paired_difference_active_frame_count": 12.0,
+      "paired_difference_horizontal_span": 0.12173622951186841,
+      "paired_difference_horizontal_vertical_ratio": 21.17471971208493,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "paired_difference_has_motion_frames": true,
+        "paired_difference_is_axis_dominant": true,
+        "paired_difference_moves_horizontally": true
+      },
+      "source_candidate_id": "layered_slash_007_pfg_15d5de1eec2d150d060d",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_trail_rotation": true,
+        "depth_compile_pass": true,
+        "depth_prefab_api_readback_pass": true,
+        "depth_texture_readback_matches_plan": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "slash_directional_trail_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_slash_direction_alignment_within_verified_pair"
+      }
+    }
+  ],
+  "run_id": "layered_slash_direction_ablation_r002",
+  "schema_version": "vfx_professional_slash_direction_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "slash_directional_trail_controller_only",
+      "effect_family": "slash",
+      "judgment_axis": "directional_trail",
+      "minimum_horizontal_centroid_span": 0.05,
+      "minimum_horizontal_span_gain": 0.04,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/graphs/attack_aligned.json",
+      "status": "eligible",
+      "target_role": "residual"
+    },
+    "effect_family": "slash",
+    "expert_judgment": "刀光拖带与能量扩散应沿攻击方向真正离开原位置，不能朝镜头运动或停在原地堆叠。",
+    "judgment_axes": [
+      "composition",
+      "rhythm",
+      "layer_separation"
+    ],
+    "record_id": "professional_slash_directional_trail_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/reproduction_report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology slash direction-trail pairs only"
+}
