@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>VFX.library 连续画面复核</title>
+<style>
+body { font-family: sans-serif; margin: 1.5rem; background: #171717; color: #eee; }
+main { max-width: 1100px; margin: auto; }
+img { display: block; width: min(100%, 900px); height: 520px; object-fit: contain; background: #000; }
+button, select, textarea, input { margin: .25rem; padding: .45rem; }
+textarea { width: min(100%, 900px); min-height: 4rem; display: block; }
+#meta { white-space: pre-wrap; margin: .75rem 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>VFX.library 连续画面复核</h1>
+<div id="meta"></div>
+<img id="frame" alt="当前证据帧">
+<div>
+<button id="previous">上一个样本</button><button id="next">下一个样本</button>
+<button id="play">播放</button><button id="step">下一帧</button>
+<select id="label"></select><button id="save">保存观察</button>
+</div>
+<label>主题状态 <input id="theme_status" value="pending"></label>
+<label>置信度 <select id="confidence"><option>low</option><option>medium</option><option>high</option></select></label>
+<textarea id="borrowable_points" placeholder="可借鉴点"></textarea>
+<textarea id="limitations" placeholder="局限"></textarea>
+<textarea id="do_not_use_reason" placeholder="不采用理由"></textarea>
+<textarea id="counterexample" placeholder="反例"></textarea>
+<script>
+let manifest, index = 0, timer = null;
+const labels = ['start', 'quarter', 'middle', 'three-quarter', 'end'];
+const image = document.querySelector('#frame');
+const labelSelect = document.querySelector('#label');
+labels.forEach(label => labelSelect.add(new Option(label, label)));
+async function load() { manifest = await (await fetch('/api/manifest')).json(); render(); }
+function render() {
+ const sample = manifest.samples[index];
+ document.querySelector('#meta').textContent = `样本 ${index + 1}/${manifest.samples.length}\n路径：${sample.relative_path}\nSHA：${sample.sha256}\n文件名候选主题：${sample.theme_candidate || 'unclassified'}\n${manifest.disclaimer}`;
+ labelSelect.onchange = () => showFrame(labelSelect.value);
+ showFrame(labelSelect.value);
+}
+function showFrame(label) {
+ const sample = manifest.samples[index]; const frame = sample.frames.find(item => item.label === label);
+ image.src = frame && frame.available ? frame.url : ''; image.alt = `${sample.relative_path} ${label}`;
+}
+document.querySelector('#previous').onclick = () => { index = (index - 1 + manifest.samples.length) % manifest.samples.length; render(); };
+document.querySelector('#next').onclick = () => { index = (index + 1) % manifest.samples.length; render(); };
+document.querySelector('#step').onclick = () => { labelSelect.selectedIndex = (labelSelect.selectedIndex + 1) % labels.length; showFrame(labelSelect.value); };
+document.querySelector('#play').onclick = () => { if (timer) { clearInterval(timer); timer = null; } else { timer = setInterval(() => document.querySelector('#step').click(), 700); } };
+document.querySelector('#save').onclick = async () => {
+ const sample = manifest.samples[index];
+ const payload = { relative_path: sample.relative_path, sha256: sample.sha256, label: labelSelect.value,
+ theme_status: document.querySelector('#theme_status').value, confidence: document.querySelector('#confidence').value,
+ borrowable_points: document.querySelector('#borrowable_points').value, limitations: document.querySelector('#limitations').value,
+ do_not_use_reason: document.querySelector('#do_not_use_reason').value, counterexample: document.querySelector('#counterexample').value };
+ const response = await fetch('/api/observations', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) });
+ alert(response.ok ? '已保存' : '保存失败：' + await response.text());
+};
+load();
+</script>
+</main>
+</body>
+</html>

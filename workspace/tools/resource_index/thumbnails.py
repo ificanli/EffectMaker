@@ -45,16 +45,25 @@ def create_thumbnail(
         _validate_output_paths(source_path, destination_path, output_path)
         with Image.open(source_path) as image:
             image.load()
-            image.thumbnail((size, size), Image.Resampling.LANCZOS)
-            thumbnail = _to_rgb_on_checkerboard(image)
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            thumbnail.save(output_path, format="PNG")
-            thumbnail.close()
+            working_image = image.convert("RGBA" if _has_transparency(image) else "RGB")
+            try:
+                working_image.thumbnail((size, size), Image.Resampling.LANCZOS)
+                thumbnail = _to_rgb_on_checkerboard(working_image)
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                thumbnail.save(output_path, format="PNG")
+                if thumbnail is not working_image:
+                    thumbnail.close()
+            finally:
+                working_image.close()
         return relative_path.as_posix(), None
     except Image.DecompressionBombError as error:
         return None, str(error)
     except (OSError, ValueError, SyntaxError) as error:
         return None, str(error)
+
+
+def _has_transparency(image: Image.Image) -> bool:
+    return image.mode in ("RGBA", "LA", "P") or "transparency" in image.info
 
 
 def _validate_output_paths(source_path: Path, destination_path: Path, output_path: Path) -> None:

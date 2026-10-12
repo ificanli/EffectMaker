@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sqlite3
 import sys
 from pathlib import Path
 
@@ -106,7 +107,7 @@ def main(argv: list[str] | None = None) -> int:
             store.close()
         _print(value, args.as_json)
         return 0
-    except (OSError, ValueError, RuntimeError) as error:
+    except (OSError, ValueError, RuntimeError, sqlite3.Error) as error:
         print(f"error: {error}", file=sys.stderr)
         return 2
 

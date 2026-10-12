@@ -44,7 +44,9 @@ def scan_resources(config: ScanConfig) -> dict[str, int | str]:
                 previous = store.get_by_path(relative)
                 if (previous is not None and not config.force_hash
                         and previous.size_bytes == stat.st_size
-                        and previous.modified_time == stat.st_mtime):
+                        and previous.modified_time == stat.st_mtime
+                        and previous.thumbnail_status != "error"
+                        and previous.error is None):
                     records.append(previous)
                     counts["unchanged"] += 1
                     continue
@@ -107,10 +109,14 @@ def scan_resources(config: ScanConfig) -> dict[str, int | str]:
                     error=f"{type(error).__name__}: {error}",
                 ))
 
+        previous_present_paths = {
+            record.relative_path
+            for record in store.query()
+            if getattr(record, "status", "present") == "present"
+        }
         store.upsert_assets(records)
-        before = store.stats()
         store.mark_missing(seen_paths, _scan_id(records))
-        counts["removed"] = before["present"] - len(seen_paths)
+        counts["removed"] = len(previous_present_paths - set(seen_paths))
         store.export_jsonl(output / "assets.jsonl")
         summary = {**counts, **store.stats(), "root": str(config.root)}
         (output / "scan_summary.json").write_text(
