@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from PIL import Image
 
@@ -60,11 +61,56 @@ class ThumbnailTests(unittest.TestCase):
             self.assertNotEqual(thumbnail.getpixel((1, 1)), (0, 0, 0))
             self.assertNotEqual(thumbnail.getpixel((0, 0)), thumbnail.getpixel((1, 1)))
 
+    def test_special_pillow_modes_are_converted_before_thumbnail_resize(self):
+        fixtures = {
+            "P": (Image.new("P", (8, 4)), ".png"),
+            "LA": (Image.new("LA", (8, 4), (128, 200)), ".png"),
+            "I;16": (Image.new("I;16", (8, 4), 1024), ".png"),
+        }
+        original_thumbnail = Image.Image.thumbnail
+        resized_modes = []
+
+        def reject_unsafe_modes(image, *args, **kwargs):
+            resized_modes.append(image.mode)
+            if image.mode not in ("RGB", "RGBA"):
+                raise ValueError("image has wrong mode")
+            return original_thumbnail(image, *args, **kwargs)
+
+        try:
+            with patch.object(Image.Image, "thumbnail", reject_unsafe_modes):
+                for mode, (image, suffix) in fixtures.items():
+                    with self.subTest(mode=mode):
+                        source = self.source / f"{mode.replace(';', '-')}{suffix}"
+                        image.save(source)
+                        relative_path, error = create_thumbnail(
+                            source, self.destination, f"mode-{mode.replace(';', '-')}", size=4
+                        )
+
+                        self.assertIsNone(error)
+                        self.assertIsNotNone(relative_path)
+                        with Image.open(self.destination / relative_path) as thumbnail:
+                            self.assertEqual(thumbnail.mode, "RGB")
+                            self.assertEqual(thumbnail.size, (4, 2))
+            self.assertEqual(resized_modes, ["RGBA", "RGBA", "RGB"])
+        finally:
+            for image, _ in fixtures.values():
+                image.close()
+
     def test_unsupported_or_corrupt_asset_returns_error_without_raising(self):
         source = self.source / "not-image.bin"
         source.write_bytes(b"not an image")
 
         relative_path, error = create_thumbnail(source, self.destination, "bad-id")
+
+        self.assertIsNone(relative_path)
+        self.assertIsInstance(error, str)
+        self.assertTrue(error)
+        self.assertFalse(self.destination.exists())
+
+        source = self.source / "corrupt.psd"
+        source.write_bytes(b"8BPS\\x00\\x01truncated")
+
+        relative_path, error = create_thumbnail(source, self.destination, "corrupt-psd")
 
         self.assertIsNone(relative_path)
         self.assertIsInstance(error, str)

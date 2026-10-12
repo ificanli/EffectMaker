@@ -7,8 +7,9 @@ from unittest.mock import patch
 
 from PIL import Image
 
-from workspace.tools.resource_index.models import ScanConfig
+from workspace.tools.resource_index.models import AssetRecord, ScanConfig
 from workspace.tools.resource_index.scanner import scan_resources
+from workspace.tools.resource_index.store import ResourceIndexStore
 
 
 class ScannerTests(unittest.TestCase):
@@ -56,18 +57,18 @@ class ScannerTests(unittest.TestCase):
         second = scan_resources(ScanConfig(root=self.source, output_dir=self.output))
         self.assertEqual(second["scanned"], 6)
         self.assertEqual(second["added"], 0)
-        self.assertEqual(second["modified"], 0)
-        self.assertEqual(second["unchanged"], 6)
-        self.assertEqual(second["errors"], 0)
+        self.assertEqual(second["modified"], 1)
+        self.assertEqual(second["unchanged"], 5)
+        self.assertEqual(second["errors"], 1)
 
         (self.source / "new.png").write_bytes(b"new image bytes")
         (self.source / "notes.txt").write_text("changed notes", encoding="utf-8")
         (self.source / "mesh.fbx").unlink()
         third = scan_resources(ScanConfig(root=self.source, output_dir=self.output))
         self.assertEqual(third["added"], 1)
-        self.assertEqual(third["modified"], 1)
+        self.assertEqual(third["modified"], 2)
         self.assertEqual(third["removed"], 1)
-        self.assertEqual(third["unchanged"], 4)
+        self.assertEqual(third["unchanged"], 3)
         rows = {
             item["relative_path"]: item
             for item in map(
@@ -79,6 +80,26 @@ class ScannerTests(unittest.TestCase):
         self.assertTrue(
             all(row["status"] == "present" for path, row in rows.items() if path != "mesh.fbx")
         )
+
+    def test_removed_count_recovers_when_a_missing_file_is_restored(self):
+        (self.source / "a.txt").write_text("a", encoding="utf-8")
+        (self.source / "b.txt").write_text("b", encoding="utf-8")
+        scan_resources(ScanConfig(root=self.source, output_dir=self.output))
+
+        (self.source / "b.txt").unlink()
+        removed_scan = scan_resources(ScanConfig(root=self.source, output_dir=self.output))
+        self.assertEqual(removed_scan["removed"], 1)
+
+        (self.source / "b.txt").write_text("b", encoding="utf-8")
+        restored_scan = scan_resources(ScanConfig(root=self.source, output_dir=self.output))
+        self.assertEqual(restored_scan["removed"], 0)
+        store = ResourceIndexStore(self.output / "assets.sqlite3")
+        try:
+            restored = store.get_by_path("b.txt")
+        finally:
+            store.close()
+        self.assertIsNotNone(restored)
+        self.assertEqual(restored.status, "present")
 
     def test_stat_failure_records_error_and_scan_continues_without_restat(self):
         failing_path = self.source / "notes.txt"
@@ -123,6 +144,58 @@ class ScannerTests(unittest.TestCase):
     def test_rejects_output_inside_source(self):
         with self.assertRaises(ValueError):
             scan_resources(ScanConfig(root=self.source, output_dir=self.source / "generated"))
+
+    def test_retries_unchanged_thumbnail_errors_without_rehashing_other_unchanged_assets(self):
+        special_path = self.source / "fire" / "palette.png"
+        special_image = Image.new("P", (8, 4))
+        special_image.save(special_path)
+        special_image.close()
+
+        special_stat = special_path.stat()
+        notes_stat = (self.source / "notes.txt").stat()
+        store = ResourceIndexStore(self.output / "assets.sqlite3")
+        try:
+            store.upsert_assets([
+                AssetRecord(
+                    asset_id=hashlib.sha256(b"fire/palette.png").hexdigest(),
+                    relative_path="fire/palette.png", asset_type="texture",
+                    extension=".png", size_bytes=special_stat.st_size,
+                    modified_time=special_stat.st_mtime, mode="P",
+                    thumbnail_status="error", error="image has wrong mode",
+                ),
+                AssetRecord(
+                    asset_id=hashlib.sha256(b"notes.txt").hexdigest(),
+                    relative_path="notes.txt", asset_type="document",
+                    extension=".txt", size_bytes=notes_stat.st_size,
+                    modified_time=notes_stat.st_mtime, sha256="unchanged-hash",
+                ),
+            ])
+        finally:
+            store.close()
+
+        from workspace.tools.resource_index import scanner
+        original_extract = scanner.extract_metadata
+        extracted_paths = []
+
+        def track_extract(path, asset_type):
+            extracted_paths.append(path)
+            return original_extract(path, asset_type)
+
+        with patch.object(scanner, "extract_metadata", side_effect=track_extract):
+            result = scan_resources(ScanConfig(root=self.source, output_dir=self.output))
+
+        self.assertEqual(result["unchanged"], 1)
+        self.assertGreaterEqual(result["modified"], 1)
+        self.assertGreaterEqual(result["thumbnails_created"], 1)
+        self.assertNotIn(self.source / "notes.txt", extracted_paths)
+        store = ResourceIndexStore(self.output / "assets.sqlite3")
+        try:
+            record = store.get_by_path("fire/palette.png")
+        finally:
+            store.close()
+        self.assertIsNotNone(record)
+        self.assertNotEqual(record.thumbnail_status, "error")
+        self.assertIsNone(record.error)
 
 
 if __name__ == "__main__":

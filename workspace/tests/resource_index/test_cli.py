@@ -1,8 +1,10 @@
 import contextlib
+import gc
 import io
 import json
 import tempfile
 import unittest
+import warnings
 from pathlib import Path
 from unittest.mock import patch
 
@@ -71,6 +73,19 @@ class CliTests(unittest.TestCase):
         groups = json.loads(text)
         self.assertEqual(groups[0]["count"], 2)
         self.assertEqual(groups[0]["paths"], ["slash/copy.png", "slash/spark.png"])
+
+    def test_stats_reports_corrupt_database_without_traceback(self):
+        self.output.mkdir(parents=True)
+        (self.output / "assets.sqlite3").write_bytes(b"not a sqlite database")
+        stdout = io.StringIO()
+        stderr = io.StringIO()
+        with warnings.catch_warnings(), contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            warnings.simplefilter("ignore", ResourceWarning)
+            code = main(["stats", "--output", str(self.output), "--json"])
+        self.assertEqual(code, 2)
+        self.assertIn("file is not a database", stderr.getvalue())
+        self.assertNotIn("Traceback", stderr.getvalue())
+        gc.collect()
 
     def test_force_hash_is_passed_to_scan_configuration(self):
         with patch("workspace.tools.resource_index.cli.scan_resources", return_value={}) as scan:
