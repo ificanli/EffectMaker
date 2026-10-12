@@ -24,10 +24,37 @@ unity projects verify "E:/Unity特效人工智能学习/workspace/unity-verifica
 
 ```bash
 unity editors --format json
-unity project open "E:/path/to/project"
+unity open "E:/path/to/project"
 ```
 
 如果项目没有匹配的 Editor，再评估是否安装对应版本和模块。不要未经确认自动升级项目版本。
+
+### 2026-09-07 批处理验证补充
+
+下文旧版本和连接记录属于历史快照。当前 EffectDemo 2022 包清单为 URP 14.0.12，本次隔离执行实际使用 2022.3.62f3c1；CLI 安装表中对应版本键为 `2022.3.62f3`（不带 c1），旧 2022.3.16f1 可执行文件已不存在。调用工具必须显式提供实际 Editor 路径，不自动升级用户打开的项目。
+
+Windows 精简子进程环境可能没有 `ALLUSERSPROFILE`，导致 UPM 报 `The "path" argument must be of type string. Received undefined`。本次确认异常发生在 UPM 全局配置路径，不是工程路径或包解析本身。EffectDemo 的 8 个执行脚本统一通过 `effectdemo_unity_process.ps1` 启动：仅在缺失时读取 Windows CommonApplicationData 补齐，结束后恢复原进程值，不修改机器/用户环境配置。
+
+禁止把 `-NoUpm` 当成 URP 的正常恢复手段。捕获验证必须同时检查实际 `render_pipeline_instance_type`、`render_pipeline_verified`、帧有效性和动态材质限制；配置中的 `UniversalRenderPipelineAsset` 不能代替运行实例证据。管线不匹配截图保留诊断用途，不进入图像或完整视觉训练。
+
+本次正常 URP 连续帧和故意管线不匹配反例见 `workspace/data/vfx_generation/generated/prompt_execution_regression_urp_r002/`，根因与失败尝试见 `ERR-VFXPIPELINE-001`。
+
+本工作区有两条可并行运行的 Unity CLI 制作管线：
+
+| 项目 | Editor | 渲染管线 | Pipeline 端口 |
+|---|---|---|---|
+| `UnityDemo/EffectDemo` | `2022.3.16f1c1` | URP `14.0.9` | `7801` |
+| `UnityDemo/EffectDemo6.0` | `6000.5.9f1` | URP `17.5.0` | `7800` |
+
+启动时必须显式选择匹配的项目和 Editor：
+
+```powershell
+unity open "E:/Unity特效人工智能学习/UnityDemo/EffectDemo" --editor-version 2022.3.16f1
+unity open "E:/Unity特效人工智能学习/UnityDemo/EffectDemo6.0" --editor-version 6000.5.9f1
+```
+
+两个项目可以同时打开，但不能共用 `Library/`、`Temp/`、日志、端口或命令目标。
+2022 项目的 Pipeline 适配、DLL `.meta` 兼容和专用命令见 [EffectDemo 2022 Unity CLI 接入指南](EffectDemo%202022%20Unity%20CLI接入指南.md)。
 
 ## 认证与诊断
 
@@ -84,16 +111,22 @@ AI 执行 Unity 相关任务时按以下顺序：
 
 ## 当前环境
 
-已验证：
+- Unity 6 工程：`E:/UnityVFX/EffectDemo6.0`，Pipeline `7800`
+- Unity 2022 工程：`E:/Unity特效人工智能学习/UnityDemo/EffectDemo`，Pipeline `7801`
+- `UnityDemo/EffectDemo6.0` 是 Unity 6 源工程；`UnityDemo/EffectDemo` 是 Unity 2022 独立制作轨道
 
-- Unity CLI `1.0.0-beta.6` 已安装并在 PATH 中。
+项目检查示例：
+
+```bash
+unity projects verify "E:/UnityVFX/EffectDemo6.0" --format json
+```
+
+已验证：
 - `unity --help`、`unity editors --format json`、`unity doctor` 可用。
 - Unity 账号认证状态为 OAuth 已登录。
-- 验证工程已通过 `unity projects verify`。
+- 两个制作工程均可通过 `unity projects verify`。
+- Unity 2022 Pipeline Server 可在 `7801` 提供命令发现和实时命令执行。
 
-尚未完成：
-
-- 目标 Unity Editor 的有效许可证激活。
-- 需要 Editor 实际运行的场景、渲染和 Play Mode 验证。
+按效果执行具体任务时，仍需补充该效果自己的场景、渲染和 Play Mode 视觉验证；这不影响两条 Pipeline 的连接和命令 authoring 能力。
 
 许可证、账号或外部服务不可用时，实验必须标记为阻塞或 planned，不能仅凭 CLI 命令成功就标记为 verified。
