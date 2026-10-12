@@ -1,0 +1,27 @@
+{
+  "schema_version": "course_controller_adapter.v1",
+  "created_at": "2026-09-01T03:02:32.905360+00:00",
+  "adapter_id": "course_controller_adapter_r001",
+  "knowledge_record_count": 1652,
+  "spec_prior_count": 4,
+  "controller_candidate_count": 4,
+  "excluded_count": 1648,
+  "exclusion_counts": {
+    "unknown_effect_family": 17,
+    "unverified_course_evidence": 1631
+  },
+  "files": {
+    "vfxspec_priors": "vfxspec_priors.jsonl",
+    "controller_candidates": "controller_candidates.jsonl",
+    "exclusions": "course_training_exclusions.jsonl"
+  },
+  "training_policy": {
+    "course_priors_are_not_visual_labels": true,
+    "controller_sft_count": 0,
+    "requires_unity_reproduction": true,
+    "requires_human_prompt_condition_feedback": true,
+    "unverified_assumption_is_excluded": true,
+    "not_visible_is_not_training_data": true
+  },
+  "status": "pass"
+}

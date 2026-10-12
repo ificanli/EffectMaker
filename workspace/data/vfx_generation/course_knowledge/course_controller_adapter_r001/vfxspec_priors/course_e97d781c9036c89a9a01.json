@@ -1,0 +1,53 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "fire",
+  "effect_type": "course_engineering_prior",
+  "prompt": "结论",
+  "negative_prompt": "未经Unity复现和人工确认，不得当作最终视觉结果",
+  "adapter": {
+    "name": "fire.adapter",
+    "version": "course-prior-only",
+    "generator_family": "course_knowledge_prior",
+    "specialized_metrics": [
+      "turbulence",
+      "root_brightness",
+      "edge_breakup",
+      "heat_layering"
+    ]
+  },
+  "reference": {
+    "source_id": "course_knowledge_r001",
+    "case_id": "e97d781c9036c89a9a01",
+    "frames": [
+      {
+        "time_seconds": 0.0,
+        "path": "knowledge/experiments/EXP-2026-004_烟花生命周期分层验证.md",
+        "role": "course_evidence_excerpt"
+      }
+    ]
+  },
+  "generation": {
+    "run_id": "course_knowledge_course_knowledge_r001",
+    "candidate_id": "course_e97d781c9036c89a9a01",
+    "seed": 4172762103,
+    "generator": "course_knowledge_adapter",
+    "generator_version": "course_knowledge_adapter.v1",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "course_engineering_prior",
+      "status": "placeholder",
+      "topology": "requires_family_adapter_mapping",
+      "constraints": [
+        "requires_unity_reproduction",
+        "not_visual_acceptance",
+        "not_positive_training"
+      ],
+      "shape_parameters": {
+        "source_record_id": "e97d781c9036c89a9a01",
+        "evidence_level": "low_or_unknown"
+      }
+    }
+  ]
+}

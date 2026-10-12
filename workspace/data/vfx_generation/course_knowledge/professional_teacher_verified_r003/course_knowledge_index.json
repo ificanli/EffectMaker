@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-09-03T18:31:28.791011+00:00",
+  "effect_family_counts": {
+    "explosion": 4
+  },
+  "files": {
+    "records": "course_knowledge_records.jsonl"
+  },
+  "index_id": "professional_teacher_verified_r003",
+  "input_count": 2,
+  "policy": {
+    "conflicting_duplicate_is_error": true,
+    "deduplicate_by_record_id": true,
+    "preserve_source_provenance": true
+  },
+  "record_count": 4,
+  "record_type_counts": {
+    "tutorial_fact": 4
+  },
+  "schema_version": "course_knowledge_index.v1",
+  "source_indexes": [
+    {
+      "index_id": "professional_teacher_verified_r002",
+      "path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/course_knowledge/professional_teacher_verified_r002"
+    },
+    {
+      "index_id": "professional_teacher_explosion_debris_r001",
+      "path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/professional_teacher_explosion_debris_r001/teacher_index"
+    }
+  ],
+  "status": "pass",
+  "status_counts": {
+    "verified": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "course_knowledge_index.v1",
+  "created_at": "2026-09-01T03:15:53.827359+00:00",
+  "index_id": "course_knowledge_r003",
+  "input_count": 1022,
+  "record_count": 2651,
+  "record_type_counts": {
+    "context": 2122,
+    "engineering_mapping": 318,
+    "tutorial_fact": 15,
+    "unverified_assumption": 196
+  },
+  "status_counts": {
+    "pending": 257,
+    "unlabeled": 2190,
+    "unverified": 196,
+    "verified": 8
+  },
+  "files": {
+    "records": "course_knowledge_records.jsonl"
+  },
+  "policy": {
+    "source_text_is_evidence_not_training_label": true,
+    "unverified_assumption_is_not_vfxspec_prior": true,
+    "verified_course_fact_still_requires_unity_reproduction": true,
+    "not_visible_is_not_training_data": true
+  },
+  "status": "pass"
+}
