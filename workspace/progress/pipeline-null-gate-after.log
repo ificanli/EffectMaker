@@ -1,0 +1,913 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luxinyu" at "2026-09-07T02:45:03.3839801Z"
+[Licensing::Client] Code 1 while verifying Licensing Client signature (process Id: 50544, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.16.2'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-luxinyu"
+[Licensing::IpcConnector] LicenseClient-luxinyu channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luxinyu-2022.3.62" at "2026-09-07T02:45:03.4089779Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 26532, path: "C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.2+bdef8f5
+  Session Id:              03e9a1c3f2bd45dcab0cd0599d4590a7
+  Correlation Id:          bd2787cda33734d5246d206b672202d9
+  External correlation Id: 3162207037874592101
+  Machine Id:              UOJXh5QphUCWeQ208AN8hEEVPxk=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-luxinyu-2022.3.62" (connect: 0.00s, validation: 0.01s, handshake: 0.11s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luxinyu-2022.3.62-notifications" at "2026-09-07T02:45:03.5366544Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '2022.3/china_unity/release' branch; Version is '2022.3.62f3c1 (1623fc0bbb97) revision 1451004'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32609 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Unity.exe
+-batchmode
+-quit
+-nographics
+-projectPath
+E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001
+-executeMethod
+EffectDemoPipelineGateProbe.VerifyNullPipelineCannotQualify
+-logFile
+E:\Unity特效人工智能学习\workspace\progress\pipeline-null-gate-after.log
+Successfully changed project path to: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001
+E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14576]  Target information:
+
+Player connection [14576]  * "[IP] 172.16.130.102 [Port] 55506 [Flags] 2 [Guid] 1318268540 [EditorId] 1318268540 [Version] 1048832 [Id] WindowsEditor(7,LXY-130-102) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14576]  * "[IP] 172.30.160.1 [Port] 55506 [Flags] 2 [Guid] 1318268540 [EditorId] 1318268540 [Version] 1048832 [Id] WindowsEditor(7,LXY-130-102) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14576] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14576] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[Package Manager] UpmClient::Connect -- Connected to IPC stream "Upm-19804" after 0.6 seconds.
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 53 packages:
+  Packages from [https://packages.unity.cn]:
+    com.unity.collab-proxy@2.12.4 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.collab-proxy@2.12.4)
+    com.unity.ide.rider@3.0.36 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ide.rider@3.0.36)
+    com.unity.ide.visualstudio@2.0.22 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ide.visualstudio@2.0.22)
+    com.unity.ide.vscode@1.2.5 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ide.vscode@1.2.5)
+    com.unity.test-framework@1.1.33 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.test-framework@1.1.33)
+    com.unity.textmeshpro@3.0.7 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.textmeshpro@3.0.7)
+    com.unity.timeline@1.7.7 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.timeline@1.7.7)
+    com.unity.visualscripting@1.9.4 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.visualscripting@1.9.4)
+    com.unity.ext.nunit@1.0.6 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ext.nunit@1.0.6)
+    com.unity.mathematics@1.2.6 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.mathematics@1.2.6)
+    com.unity.burst@1.8.21 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.burst@1.8.21)
+    com.unity.nuget.newtonsoft-json@3.2.1 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1)
+    com.unity.nuget.mono-cecil@1.11.6 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.nuget.mono-cecil@1.11.6)
+    com.unity.searcher@4.9.2 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.searcher@4.9.2)
+  Built-in packages:
+    com.unity.ugui@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.ugui@1.0.0)
+    com.unity.modules.ai@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.ai@1.0.0)
+    com.unity.modules.androidjni@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.androidjni@1.0.0)
+    com.unity.modules.animation@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.animation@1.0.0)
+    com.unity.modules.assetbundle@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.assetbundle@1.0.0)
+    com.unity.modules.audio@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.audio@1.0.0)
+    com.unity.modules.cloth@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.cloth@1.0.0)
+    com.unity.modules.director@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.director@1.0.0)
+    com.unity.modules.imageconversion@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.imageconversion@1.0.0)
+    com.unity.modules.imgui@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.imgui@1.0.0)
+    com.unity.modules.jsonserialize@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0)
+    com.unity.modules.particlesystem@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.particlesystem@1.0.0)
+    com.unity.modules.physics@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.physics@1.0.0)
+    com.unity.modules.physics2d@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.physics2d@1.0.0)
+    com.unity.modules.screencapture@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.screencapture@1.0.0)
+    com.unity.modules.terrain@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.terrain@1.0.0)
+    com.unity.modules.terrainphysics@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0)
+    com.unity.modules.tilemap@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.tilemap@1.0.0)
+    com.unity.modules.ui@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.ui@1.0.0)
+    com.unity.modules.uielements@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.uielements@1.0.0)
+    com.unity.modules.umbra@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.umbra@1.0.0)
+    com.unity.modules.unityanalytics@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0)
+    com.unity.modules.unitywebrequest@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0)
+    com.unity.modules.vehicles@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.vehicles@1.0.0)
+    com.unity.modules.video@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.video@1.0.0)
+    com.unity.modules.vr@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.vr@1.0.0)
+    com.unity.modules.wind@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.wind@1.0.0)
+    com.unity.modules.xr@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.xr@1.0.0)
+    com.unity.modules.subsystems@1.0.0 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.modules.subsystems@1.0.0)
+    com.unity.shadergraph@14.0.12 (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Library\PackageCache\com.unity.shadergraph@14.0.12)
+  Embedded packages:
+    com.unity.pipeline@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.pipeline (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.pipeline)
+    com.unity.render-pipelines.universal@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal)
+    com.unity.render-pipelines.core@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.core (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.core)
+    com.unity.render-pipelines.universal-config@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal-config (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.unity.render-pipelines.universal-config)
+    com.xuanxuan.nb.fx@file:E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.xuanxuan.nb.fx (location: E:\Unity特效人工智能学习\workspace\unity-render-staging\EffectDemoPromptHumanR001\Packages\com.xuanxuan.nb.fx)
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.17 seconds
+Refreshing native plugins compatible for Editor in 36.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f3c1 (1623fc0bbb97)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.025050 seconds.
+- Loaded All Assemblies, in  0.371 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.215 seconds
+Domain Reload Profiling: 580ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (124ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (114ms)
+				TypeCache.ScanAssembly (101ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (215ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (177ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+Application.AssetDatabase Initial Refresh Start
+GUID [7f27709c942d91541be1fd6aa5cb3d78] for asset 'Packages/com.unity.ugui/Runtime/EventSystem' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [b3cdabf2f1e76854d8aab5930305d70d] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [b180fd8310805e44dbbef545d0231418] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData/AxisEventData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData/AxisEventData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [91f495459b6e34f419ac123740d798b1] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData/BaseEventData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData/BaseEventData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [75df57ccb1e44c64085399277405e1ca] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventData/PointerEventData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventData/PointerEventData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [db7dd43fe1278a9459cd6036f096b91d] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventHandle.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventHandle.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2359c66dee10c454c97f6aea84e3fe22] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventInterfaces.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventInterfaces.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [76c392e42b5098c458856cdf6ecaaaa1] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventSystem.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [d0b148fe25e99eb48b9724523833bab1] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventTrigger.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3fa274f26b1574c40b949e114327022e] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/EventTriggerType.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/EventTriggerType.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [623c79a1e113b4941afdbfc88d19e8fd] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/ExecuteEvents.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [8e78f8a8575e4a04f8337a54e241cdc5] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1511ccae7919cfc46b603b9b337fdc94] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/BaseInput.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1ea10891dd782154ca0fb67bce9e6f72] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/BaseInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cbab8835092323a4389f2dc7d8f6c781] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/PointerInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/PointerInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [4f231c4fb786f3946a6b90b886c48677] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/StandaloneInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2d49b7c1bcd2e07499844da127be038d] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/InputModules/TouchInputModule.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/InputModules/TouchInputModule.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [4d2250412b81fe34abf39f246e274479] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/MoveDirection.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/MoveDirection.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [26570be2af04195458e6f1ac1f5c48e0] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/RaycasterManager.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/RaycasterManager.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [46646a5562f14984690c85ee7b946bc9] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [426106349a0ff964fa4e7178c1d3a4f5] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters/BaseRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters/BaseRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [56666c5a40171f54783dd416a44f42bf] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters/Physics2DRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters/Physics2DRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c49b4cc203aa6414fae5c798d1d0e7d6] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/Raycasters/PhysicsRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/Raycasters/PhysicsRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3550d8ec6f29ab34d895ae9a43d560c2] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/RaycastResult.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/RaycastResult.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [0aaa057ce5566e940b18a0ccd0344693] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIBehaviour.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5dc64c943466a44498be3b620c743b45] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIElements' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIElements' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [8a410b213209442fb15a69799f0240a5] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIElements/PanelEventHandler.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIElements/PanelEventHandler.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7a79c4e23d4d4b64bfa5fa9e6671a460] for asset 'Packages/com.unity.ugui/Runtime/EventSystem/UIElements/PanelRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/EventSystem/UIElements/PanelRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [32e2186f4598cff489784aae586f2215] for asset 'Packages/com.unity.ugui/Runtime/Properties' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/Properties' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7d7bd4bcc815cfb44b9990c29dabdb9f] for asset 'Packages/com.unity.ugui/Runtime/Properties/AssemblyInfo.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/Properties/AssemblyInfo.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [742654cad2425334696ba6ed4495cfef] for asset 'Packages/com.unity.ugui/Runtime/UI' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5472815444de2ce45bf2053a4af04b9d] for asset 'Packages/com.unity.ugui/Runtime/UI/Animation' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Animation' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7be84a49bb2cd7e4a9ed097ba22794d0] for asset 'Packages/com.unity.ugui/Runtime/UI/Animation/CoroutineTween.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Animation/CoroutineTween.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [12c42068351bb084abde965d725b9887] for asset 'Packages/com.unity.ugui/Runtime/UI/Core' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c67ac6e40bbb6fe47a095b949b609ce0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/AnimationTriggers.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/AnimationTriggers.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [4e29b1a8efbd4b44bb3f3716e73f07ff] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Button.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Button.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [bfb788a43e03363419155b8af77da971] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/CanvasUpdateRegistry.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [83088ba2132cbc940b7ca0c679a02b0d] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/ColorBlock.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/ColorBlock.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [27ed3e221887b3544bd9d6505d4a789f] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [9f1026265f8e3d54fb6e9f082c43debf] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/ClipperRegistry.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/ClipperRegistry.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [67e3583b91179094094c6a188b232262] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/Clipping.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/Clipping.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [371b6b9c8adc50745ace66a6fdf67481] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/IClipRegion.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/IClipRegion.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c606041f02fc7d542b1429806872292b] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Culling/RectangularVertexClipper.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Culling/RectangularVertexClipper.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [bf87e20fb5440ec498f441167b5291f8] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/DefaultControls.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/DefaultControls.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [0d0b652f32a2cc243917e4028fa0f046] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Dropdown.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Dropdown.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [13cd966480ec3354bb318ee1aeccff6f] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/FontData.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/FontData.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [39ab466162988eb4f83443f911bbf5c8] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/FontUpdateTracker.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/FontUpdateTracker.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [a6238e9452bfc704f82ff36791fe1a45] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Graphic.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Graphic.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [dc42784cf147c0c48a680349fa168899] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/GraphicRaycaster.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [445cdcfc747eba94288b97f5869aa2fb] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/GraphicRebuildTracker.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/GraphicRebuildTracker.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [69e3979b7029e8a4da2d96b714ba5c3a] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/GraphicRegistry.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/GraphicRegistry.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [928dc55e2c8c3ee4dad33b6d561cb6ea] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/IGraphicEnabledDisabled.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/IGraphicEnabledDisabled.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [fe87c0e1cc204ed48ad3b37840f39efc] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Image.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Image.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [ceb629fc661813d40986b4abbefe72c6] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/IMask.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/IMask.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [61a20120cddc53849bbc10fc805ffe3e] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/IMaskable.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/IMaskable.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [d199490a83bb2b844b9695cbf13b01ef] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/InputField.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/InputField.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1999349e7f492c947bb6eb70f624382e] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [86710e43de46f6f4bac7c8e50813a599] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/AspectRatioFitter.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/AspectRatioFitter.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [0cd44c1031e13a943bb63640046fad76] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/CanvasScaler.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3245ec927659c4140ac4f8d17403cc18] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/ContentSizeFitter.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/ContentSizeFitter.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [8a8695521f0d02e499659fee002a26c2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/GridLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/GridLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [30649d3a9faa99c48a7b1166b86bf2a0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [a5c214e5846a99242b348c37e49b2f59] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [368d3a0498e78014da578aa5f45e2797] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/ILayoutElement.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/ILayoutElement.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [306cc8c2b49d7114eaa3623786fc2126] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutElement.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutElement.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cb7c939a806f03341b682c180dc13f08] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [006633c8a6f4ae94aa9babf72234e1a2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutRebuilder.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutRebuilder.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [82bf3f737dec0be43a60891958a8da87] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutUtility.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/LayoutUtility.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [59f8146938fff824cb5fd77236b75775] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Layout/VerticalLayoutGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Layout/VerticalLayoutGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [31a19414c41e5ae4aae2af33fee712f6] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Mask.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [976acc75bfafe594cb01142ba21947be] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaskableGraphic.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaskableGraphic.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7bd96d76711152648a736c4d28d865f2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaskUtilities.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaskUtilities.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7c6295db74da28645bf49db58b7c9c65] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaterialModifiers' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaterialModifiers' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [20ff4283f687e044087714f82c4d6d3f] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [828075bc53f2de84982a943870529b7b] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Misc.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Misc.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5ebeb75bd91642048bb3f6c1939fde66] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/MultipleDisplayUtilities.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [61d491d99e9292c4a81d7d01a74781ea] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Navigation.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Navigation.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1344c3c82d62a2a41a3576d8abb8e3ea] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/RawImage.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [3312d7739989d2b4e91e6319e9a96d76] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/RectMask2D.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2a4db7a114972834c8e4117be1d82ba3] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Scrollbar.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Scrollbar.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [1aa08ab6e0800fa44ae55d278d1423e3] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/ScrollRect.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [7a98125502f715b4b83cfb77b434e436] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Selectable.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Selectable.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [b9ba34e0b1884454fbc4257260e22b64] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SetPropertyUtility.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SetPropertyUtility.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [67db9e8f0e2ae9c40bc1e2b64352a6b4] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Slider.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [f8ed4321a98682942b9980996131cf26] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SpecializedCollections' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SpecializedCollections' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [a8604e8f13b3be84b8bc0c1507d8f3f6] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SpecializedCollections/IndexedSet.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SpecializedCollections/IndexedSet.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [25b01819c6e1649428db2a9b274cf364] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/SpriteState.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/SpriteState.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [69ae55f76840b2849ba56cfb53a17df0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/StencilMaterial.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/StencilMaterial.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [5f7201a12d95ffc409449d95f23cf332] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Text.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Text.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [9085046f02f69544eb97fd06b6048fe2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Toggle.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Toggle.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2fafe2cfe61f6974895a912c3755e8f1] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/ToggleGroup.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/ToggleGroup.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [d63dd1a776d383248a21ec2a8a6e7868] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Utility' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Utility' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [fcae021c30eccf74790a4e816ba97c19] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Utility/ReflectionMethodsCache.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Utility/ReflectionMethodsCache.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [c459424081436584c8cec10767f9ac38] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/Utility/VertexHelper.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/Utility/VertexHelper.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cfa73a847eeff06448bb50a8ac6a94e0] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [718966f960cb50643986195e5fe953ca] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/BaseMeshEffect.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/BaseMeshEffect.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [85f3c3a3c2623cd4da1661b0479e2ef2] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [e19747de3f5aca642ab2be37e372fb86] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/Outline.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/Outline.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [020ee4c1798a3d243a4b8cbfee6cac2d] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/PositionAsUV1.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/PositionAsUV1.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [cfabb0440166ab443bba8876756fdfa9] for asset 'Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/Shadow.cs' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UI/Core/VertexModifiers/Shadow.cs' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+GUID [2bafac87e7f4b9b418d9448d219b01ab] for asset 'Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef' conflicts with:
+  'Assets/VFXSourceIngest/Compat/UnityUGUI/Runtime/UnityEngine.UI.asmdef' (current owner)
+We can't assign a new GUID because the asset is in an immutable folder. The asset will be ignored.
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\2022.3.62f3c1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s563ms
+[549/705    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[697/705    0s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll (+2 others)
+[699/705    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 120 defines and 257 references
+
+processors: Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[700/705    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 118 defines and 277 references
+
+processors: Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Pipeline.CodeGen.HotReloadInPlaceILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[703/705    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[704/705    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (1.38 seconds), 6 items updated, 705 evaluated
+AssetDatabase: script compilation time: 2.445383s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.958 seconds
+Refreshing native plugins compatible for Editor in 14.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start importing Assets/VFXCapture/EffectDemoRuntimeCaptureController.cs using Guid(f1a4d49eb92c4dd4aa0a21f02bf72790) Importer(-1,00000000000000000000000000000000) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '10e02d83fe2124282f23a81d3033a602') in 0.012045 seconds
+Refreshing native plugins compatible for Editor in 17.46 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Start HTTP server: port:7801
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.114 seconds
+Domain Reload Profiling: 7062ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (712ms)
+		LoadAssemblies (547ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (262ms)
+			TypeCache.Refresh (228ms)
+				TypeCache.ScanAssembly (207ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (6115ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5882ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (5618ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 15.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=28466361a6731084cb0e94fbefd7940b): Total: 12.767 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=1453 (actual=1, local cache=1452, cache server=0)
+		Asset DB Process Time: managed=5 ms, native=2840 ms
+		Asset DB Callback time: managed=100 ms, native=29 ms
+		Scripting: domain reloads=1, domain reload time=7243 ms, compile time=2447 ms, other=100 ms
+		Project Asset Count: scripts=8580, non-scripts=6614
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeBeforeRefreshCallbacks: 4.013ms
+	ApplyChangesToAssetFolders: 0.058ms
+	Scan: 315.510ms
+	OnSourceAssetsModified: 2.551ms
+	GetAllGuidsForCategorization: 2.543ms
+	CategorizeAssets: 289.327ms
+	ImportOutOfDateAssets: 6228.717ms (3716.853ms without children)
+		ImportManagerImport: 16.860ms (4.246ms without children)
+			ImportInProcess: 12.587ms
+			UpdateCategorizedAssets: 0.026ms
+		CompileScripts: 2446.958ms
+		ReloadNativeAssets: 0.032ms
+		UnloadImportedAssets: 36.318ms
+		ReloadImportedAssets: 0.476ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 7.027ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.003ms
+		OnDemandSchedulerStart: 4.191ms
+	PostProcessAllAssets: 107.483ms
+	Hotreload: 16.075ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 0.355ms
+	PersistCurrentRevisions: 1.616ms
+	UnloadStreamsEnd: 0.206ms
+	GenerateScriptTypeHashes: 4.895ms
+	Untracked: 5798.688ms
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Scanning for USB devices : 6.207ms
+Initializing Unity extensions:
+Script 'Library/PackageCache/com.unity.mathematics@1.2.6/Tests/Unity.Mathematics.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.timeline@1.7.7/DocCodeExamples/DocCodeExamples.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/UnityEngine.UI.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Library/PackageCache/com.unity.textmeshpro@3.0.7/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-DP8B-TVV3-3X7Y-4T5P-XXXX"
+[Licensing::Module] Serial number assigned to: "ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX"
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-EffectDemo
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ProgressiveSceneManager::Cancel()
+Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 157 unused Assets / (4.6 MB). Loaded Objects now: 6052.
+Memory consumption went from 187.8 MB to 183.2 MB.
+Total: 16.827700 ms (FindLiveObjects: 0.780600 ms CreateObjectMapping: 0.466100 ms MarkObjects: 12.593100 ms  DeleteObjects: 2.984000 ms)
+
+Null pipeline rejected by verification and both training gates: E:\Unity特效人工智能学习\workspace\progress\pipeline-null-gate-after.json
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EffectDemoPipelineGateProbe:VerifyNullPipelineCannotQualify () (at Assets/Editor/EffectDemoPipelineGateProbe.cs:67)
+
+(Filename: Assets/Editor/EffectDemoPipelineGateProbe.cs Line: 67)
+
+Batchmode quit successfully invoked - shutting down!
+Pipeline Server stopped
+Curl error 42: Callback aborted
+Curl error 42: Callback aborted
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-luxinyu-2022.3.62-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-luxinyu-2022.3.62 channel disconnected successfully.
+Cleanup mono
+10:45:22.121 |V| RiderPlugin                    | :1                             | AppDomain.CurrentDomain.DomainUnload lifetimeDefinition.Terminate
+10:45:22.132 |V| RiderPlugin                    | :1                             | AppDomain.CurrentDomain.DomainUnload lifetimeDefinition.Terminate
+10:45:22.138 |V| RiderPlugin                    | :1                             | AppDomain.CurrentDomain.DomainUnload lifetimeDefinition.Terminate
+10:45:22.142 |V| RiderPlugin                    | :1                             | AppDomain.CurrentDomain.DomainUnload lifetimeDefinition.Terminate
+[Performance] WinEditorMain                                                                                                  :        1 samples, Peak.   911 ms (1.0x), Avg.   911 ms, Total. 910.8 ms (4.8%)
+[Performance] WinEditorMain.ConfigureCrashHandler                                                                            :        1 samples, Peak.  68.4 us (1.0x), Avg.  68.4 us, Total. 68.40 us (0.0%)
+[Performance] WinEditorMain.CurlRequestInitialize                                                                            :        1 samples, Peak.  4.09 ms (1.0x), Avg.  4.09 ms, Total. 4.087 ms (0.0%)
+[Performance] WinEditorMain.SetupLogFile                                                                                     :        1 samples, Peak.   781 us (1.0x), Avg.   781 us, Total. 780.6 us (0.0%)
+[Performance] WinEditorMain.RunNativeTestsIfRequiredAndExit                                                                  :        1 samples, Peak.   100 ns (1.0x), Avg.   100 ns, Total. 100.0 ns (0.0%)
+[Performance] WinEditorMain.Licensing                                                                                        :        1 samples, Peak.   815 ms (1.0x), Avg.   815 ms, Total. 815.4 ms (4.3%)
+[Performance] WinEditorMain.InitializeCrashHandler                                                                           :        1 samples, Peak.  14.7 ms (1.0x), Avg.  14.7 ms, Total. 14.73 ms (0.1%)
+[Performance] WinEditorMain.CreateApplication                                                                                :        1 samples, Peak.   666 us (1.0x), Avg.   666 us, Total. 666.5 us (0.0%)
+[Performance] Application.InitializeProject                                                                                  :        1 samples, Peak.  16.3 s (1.0x), Avg.  16.3 s, Total. 16.32 s (86.0%)
+[Performance] Application.PackageManager.StartServer                                                                         :        1 samples, Peak.  88.9 ms (1.0x), Avg.  88.9 ms, Total. 88.91 ms (0.5%)
+[Performance] Application.AcquireProjectLock                                                                                 :        1 samples, Peak.  28.3 ms (1.0x), Avg.  28.3 ms, Total. 28.28 ms (0.1%)
+[Performance] Application.InitializeEngineNoGraphics                                                                         :        1 samples, Peak.  75.2 ms (1.0x), Avg.  75.2 ms, Total. 75.17 ms (0.4%)
+[Performance] Application.PackageManager.Initialize                                                                          :        1 samples, Peak.   580 ms (1.0x), Avg.   580 ms, Total. 580.3 ms (3.1%)
+[Performance] Connecting to Package Manager                                                                                  :       59 samples, Peak.   136 us (18.6x), Avg.  7.27 us, Total. 429.1 us (0.0%)
+[Performance] Application.EngineGraphics.Initialize                                                                          :        1 samples, Peak.  45.4 ms (1.0x), Avg.  45.4 ms, Total. 45.35 ms (0.2%)
+[Performance] Application.GI.Initialize                                                                                      :        1 samples, Peak.  4.51 ms (1.0x), Avg.  4.51 ms, Total. 4.509 ms (0.0%)
+[Performance] Application.LoadAllDefaultResourcesFromEditor                                                                  :        1 samples, Peak.  1.54 ms (1.0x), Avg.  1.54 ms, Total. 1.536 ms (0.0%)
+[Performance] Application.LoadMonoAssemblies                                                                                 :        1 samples, Peak.   616 ms (1.0x), Avg.   616 ms, Total. 615.7 ms (3.2%)
+[Performance] RestoreManagedReferences                                                                                       :        2 samples, Peak.   110 ms (2.0x), Avg.  55.0 ms, Total. 110.0 ms (0.6%)
+[Performance] InitializeOnLoad DrivenRectTransformUndo                                                                       :        2 samples, Peak.   546 us (1.1x), Avg.   514 us, Total. 1.028 ms (0.0%)
+[Performance] InitializeOnLoad SceneSearch                                                                                   :        2 samples, Peak.   150 us (1.2x), Avg.   123 us, Total. 245.3 us (0.0%)
+[Performance] InitializeOnLoad CloudBuild                                                                                    :        2 samples, Peak.  5.90 us (1.2x), Avg.  4.80 us, Total. 9.600 us (0.0%)
+[Performance] InitializeOnLoad NativeFormatImporterUtility                                                                   :        2 samples, Peak.  2.96 ms (1.2x), Avg.  2.53 ms, Total. 5.058 ms (0.0%)
+[Performance] InitializeOnLoad SearchService                                                                                 :        2 samples, Peak.   320 us (1.3x), Avg.   255 us, Total. 509.9 us (0.0%)
+[Performance] InitializeOnLoad SettingsService                                                                               :        2 samples, Peak.  27.5 us (1.6x), Avg.  17.4 us, Total. 34.80 us (0.0%)
+[Performance] InitializeOnLoad WindowLayout                                                                                  :        2 samples, Peak.   817 us (1.0x), Avg.   816 us, Total. 1.632 ms (0.0%)
+[Performance] InitializeOnLoad AssetStoreContext                                                                             :        2 samples, Peak.  22.0 ms (1.1x), Avg.  20.2 ms, Total. 40.38 ms (0.2%)
+[Performance] InitializeOnLoad PoolManager                                                                                   :        2 samples, Peak.   778 us (1.3x), Avg.   592 us, Total. 1.183 ms (0.0%)
+[Performance] InitializeOnLoad MixerEffectDefinitionReloader                                                                 :        2 samples, Peak.  1.92 ms (1.1x), Avg.  1.80 ms, Total. 3.601 ms (0.0%)
+[Performance] InitializeOnLoad ProjectSearch                                                                                 :        2 samples, Peak.   364 us (1.6x), Avg.   228 us, Total. 455.1 us (0.0%)
+[Performance] InitializeOnLoad UISystemProfilerRenderService                                                                 :        2 samples, Peak.  8.20 us (1.0x), Avg.  7.90 us, Total. 15.80 us (0.0%)
+[Performance] InitializeOnLoad EditMode                                                                                      :        2 samples, Peak.   398 us (1.1x), Avg.   365 us, Total. 730.8 us (0.0%)
+[Performance] InitializeOnLoad UnityConnect                                                                                  :        2 samples, Peak.  56.9 us (1.1x), Avg.  53.6 us, Total. 107.2 us (0.0%)
+[Performance] InitializeOnLoad ManagedDebugger                                                                               :        2 samples, Peak.   536 us (1.7x), Avg.   323 us, Total. 646.3 us (0.0%)
+[Performance] InitializeOnLoad ShortcutIntegration                                                                           :        2 samples, Peak.  54.8 us (1.1x), Avg.  51.1 us, Total. 102.2 us (0.0%)
+[Performance] InitializeOnLoad AddComponentWindow                                                                            :        2 samples, Peak.   121 us (1.2x), Avg.   102 us, Total. 204.1 us (0.0%)
+[Performance] InitializeOnLoad ManagedDebuggerWindow                                                                         :        2 samples, Peak.   134 us (1.1x), Avg.   118 us, Total. 235.2 us (0.0%)
+[Performance] InitializeOnLoad CacheServerWindow                                                                             :        2 samples, Peak.  8.90 us (1.2x), Avg.  7.45 us, Total. 14.90 us (0.0%)
+[Performance] InitializeOnLoad PlayModeDownload                                                                              :        2 samples, Peak.  5.06 ms (1.9x), Avg.  2.64 ms, Total. 5.279 ms (0.0%)
+[Performance] InitializeOnLoad MenuItems                                                                                     :        2 samples, Peak.   120 us (1.2x), Avg.  99.7 us, Total. 199.4 us (0.0%)
+[Performance] InitializeOnLoad PrefabInstanceChangedListener                                                                 :        2 samples, Peak.   187 us (1.3x), Avg.   140 us, Total. 279.5 us (0.0%)
+[Performance] InitializeOnLoad ObjectSelectorSearch                                                                          :        2 samples, Peak.   168 us (1.8x), Avg.  95.7 us, Total. 191.4 us (0.0%)
+[Performance] InitializeOnLoad EditorMonitor                                                                                 :        2 samples, Peak.   693 us (1.4x), Avg.   499 us, Total. 997.7 us (0.0%)
+[Performance] InitializeOnLoad RetainedMode                                                                                  :        2 samples, Peak.  4.58 ms (1.5x), Avg.  3.05 ms, Total. 6.099 ms (0.0%)
+[Performance] InitializeOnLoad EditorShaderLoader                                                                            :        2 samples, Peak.  1.03 ms (1.3x), Avg.   783 us, Total. 1.565 ms (0.0%)
+[Performance] InitializeOnLoad EditorDelegateRegistration                                                                    :        2 samples, Peak.  1.54 ms (1.6x), Avg.   964 us, Total. 1.928 ms (0.0%)
+[Performance] InitializeOnLoad UIDocumentHierarchyWatcher                                                                    :        2 samples, Peak.   196 us (1.5x), Avg.   130 us, Total. 259.4 us (0.0%)
+[Performance] InitializeOnLoad LiveReloadTrackerCreator                                                                      :        2 samples, Peak.   439 us (1.6x), Avg.   283 us, Total. 565.1 us (0.0%)
+[Performance] InitializeOnLoad UxmlObjectEditorFactories                                                                     :        2 samples, Peak.  1.00 ms (1.4x), Avg.   697 us, Total. 1.395 ms (0.0%)
+[Performance] InitializeOnLoad UXMLEditorFactories                                                                           :        2 samples, Peak.   119 ms (1.5x), Avg.  81.2 ms, Total. 162.3 ms (0.9%)
+[Performance] InitializeOnLoad PurchasingService                                                                             :        2 samples, Peak.  9.68 ms (1.3x), Avg.  7.27 ms, Total. 14.54 ms (0.1%)
+[Performance] InitializeOnLoad CloudBuildPoller                                                                              :        2 samples, Peak.   218 us (1.4x), Avg.   151 us, Total. 301.7 us (0.0%)
+[Performance] InitializeOnLoad EditorGameServicesAnalytics                                                                   :        2 samples, Peak.  1.41 ms (1.3x), Avg.  1.08 ms, Total. 2.160 ms (0.0%)
+[Performance] InitializeOnLoad AnalyticsService                                                                              :        2 samples, Peak.   263 us (1.2x), Avg.   228 us, Total. 456.9 us (0.0%)
+[Performance] InitializeOnLoad BuildService                                                                                  :        2 samples, Peak.   223 us (1.2x), Avg.   183 us, Total. 366.5 us (0.0%)
+[Performance] InitializeOnLoad AdsService                                                                                    :        2 samples, Peak.   519 us (1.1x), Avg.   477 us, Total. 953.4 us (0.0%)
+[Performance] InitializeOnLoad UDPService                                                                                    :        2 samples, Peak.   160 us (1.2x), Avg.   131 us, Total. 262.0 us (0.0%)
+[Performance] InitializeOnLoad CrashService                                                                                  :        2 samples, Peak.   150 us (1.3x), Avg.   118 us, Total. 236.6 us (0.0%)
+[Performance] InitializeOnLoad ServicesRepository                                                                            :        2 samples, Peak.  2.10 us (1.5x), Avg.  1.40 us, Total. 2.800 us (0.0%)
+[Performance] InitializeOnLoad SearchWindow                                                                                  :        2 samples, Peak.   326 us (1.6x), Avg.   206 us, Total. 411.7 us (0.0%)
+[Performance] InitializeOnLoad CustomIndexers                                                                                :        2 samples, Peak.  17.8 ms (1.1x), Avg.  15.7 ms, Total. 31.42 ms (0.2%)
+[Performance] InitializeOnLoad SearchMonitor                                                                                 :        2 samples, Peak.  1.14 ms (1.4x), Avg.   822 us, Total. 1.644 ms (0.0%)
+[Performance] InitializeOnLoad ParameterControllerEditor                                                                     :        2 samples, Peak.  24.7 us (1.3x), Avg.  19.2 us, Total. 38.30 us (0.0%)
+[Performance] InitializeOnLoad LayerSettingsWindow                                                                           :        2 samples, Peak.  34.5 us (1.8x), Avg.  19.5 us, Total. 39.00 us (0.0%)
+[Performance] InitializeOnLoad PackageManagerHookGUIDConverter.RegisterPackagesEventHandler                                  :        2 samples, Peak.   663 us (1.5x), Avg.   431 us, Total. 862.2 us (0.0%)
+[Performance] InitializeOnLoad EditorDragAndDrop.RegisterEditorClient                                                        :        2 samples, Peak.   635 us (1.5x), Avg.   423 us, Total. 846.2 us (0.0%)
+[Performance] InitializeOnLoad EditorEventCallbacks.InitializeFontAssetResourceChangeCallBacks                               :        2 samples, Peak.  2.39 ms (1.5x), Avg.  1.63 ms, Total. 3.251 ms (0.0%)
+[Performance] InitializeOnLoad SceneTemplateService.Init                                                                     :        2 samples, Peak.  2.75 ms (1.6x), Avg.  1.76 ms, Total. 3.512 ms (0.0%)
+[Performance] InitializeOnLoad DiagnosticSwitchesConsoleMessage.Init                                                         :        2 samples, Peak.  15.4 ms (1.9x), Avg.  8.15 ms, Total. 16.31 ms (0.1%)
+[Performance] InitializeOnLoad MemoryProfilerCompilationGuard.InjectCompileGuard                                             :        2 samples, Peak.   169 us (1.4x), Avg.   118 us, Total. 235.8 us (0.0%)
+[Performance] InitializeOnLoad EditorWindow.Initialize                                                                       :        2 samples, Peak.   273 us (1.2x), Avg.   232 us, Total. 463.1 us (0.0%)
+[Performance] InitializeOnLoad AssetPostprocessingInternal.RefreshCustomDependencies                                         :        2 samples, Peak.  3.01 ms (1.2x), Avg.  2.55 ms, Total. 5.096 ms (0.0%)
+[Performance] InitializeOnLoad SysrootManager.Initialize                                                                     :        2 samples, Peak.   629 us (1.2x), Avg.   526 us, Total. 1.053 ms (0.0%)
+[Performance] InitializeOnLoad PackageManagerWindow.EditorInitializedInSafeMode                                              :        2 samples, Peak.  21.7 ms (2.0x), Avg.  11.0 ms, Total. 21.92 ms (0.1%)
+[Performance] InitializeOnLoad ToolShortcutContext.Init                                                                      :        2 samples, Peak.   133 us (1.1x), Avg.   125 us, Total. 250.6 us (0.0%)
+[Performance] InitializeOnLoad SceneVisibilityManager.Initialize                                                             :        2 samples, Peak.  3.96 ms (1.5x), Avg.  2.62 ms, Total. 5.244 ms (0.0%)
+[Performance] InitializeOnLoad ScopedRegistryAddedPopup.SubscribeToRegistriesAdded                                           :        2 samples, Peak.  8.15 ms (2.0x), Avg.  4.12 ms, Total. 8.233 ms (0.0%)
+[Performance] AssemblyReloadEvents.afterAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.AfterAssemblyReload   :        2 samples, Peak.  1.91 ms (1.8x), Avg.  1.06 ms, Total. 2.129 ms (0.0%)
+[Performance] ProcessService.EditorAfterLoadAllAssemblies                                                                    :        2 samples, Peak.   850 us (1.5x), Avg.   550 us, Total. 1.100 ms (0.0%)
+[Performance] Application.ReadLicenseInfo                                                                                    :        1 samples, Peak.  16.5 ms (1.0x), Avg.  16.5 ms, Total. 16.53 ms (0.1%)
+[Performance] Application.InitialRefresh                                                                                     :        1 samples, Peak.  12.8 s (1.0x), Avg.  12.8 s, Total. 12.77 s (67.3%)
+[Performance] ShaderImporter.SourceAssetModified                                                                             :        2 samples, Peak.  1.80 us (1.3x), Avg.  1.35 us, Total. 2.700 us (0.0%)
+[Performance] ShaderIncludeImporter.SourceAssetModified                                                                      :        2 samples, Peak.  1.70 us (1.1x), Avg.  1.50 us, Total. 3.000 us (0.0%)
+[Performance] Compiling Scripts                                                                                              :        1 samples, Peak.  2.45 s (1.0x), Avg.  2.45 s, Total. 2.446 s (12.9%)
+[Performance] AssemblyReloadEvents.beforeAssemblyReload: UnityEditor.SceneTemplate.SceneTemplateService.BeforeAssemblyReload :        1 samples, Peak.   476 us (1.0x), Avg.   476 us, Total. 475.8 us (0.0%)
+[Performance] PresetManagerPostProcessor.OnPreprocessAsset                                                                   :        1 samples, Peak.  2.15 ms (1.0x), Avg.  2.15 ms, Total. 2.151 ms (0.0%)
+[Performance] CancelSplashScreenOnAssetChange.OnPreprocessAsset                                                              :        1 samples, Peak.   124 us (1.0x), Avg.   124 us, Total. 123.7 us (0.0%)
+[Performance] ShaderGraphAssetPostProcessor.OnPreprocessAsset                                                                :        1 samples, Peak.   183 us (1.0x), Avg.   183 us, Total. 182.5 us (0.0%)
+[Performance] InitializeOnLoad ReadmeEditor                                                                                  :        1 samples, Peak.   179 us (1.0x), Avg.   179 us, Total. 179.0 us (0.0%)
+[Performance] InitializeOnLoad EffectDemoInspectorRecovery                                                                   :        1 samples, Peak.  55.1 us (1.0x), Avg.  55.1 us, Total. 55.10 us (0.0%)
+[Performance] InitializeOnLoad EffectDemoMaterialBindingAudit                                                                :        1 samples, Peak.  36.9 us (1.0x), Avg.  36.9 us, Total. 36.90 us (0.0%)
+[Performance] InitializeOnLoad EffectDemoPrefabPlayabilityAudit                                                              :        1 samples, Peak.  46.2 us (1.0x), Avg.  46.2 us, Total. 46.20 us (0.0%)
+[Performance] InitializeOnLoad BurstLoader                                                                                   :        1 samples, Peak.  3.86 s (1.0x), Avg.  3.86 s, Total. 3.857 s (20.3%)
+[Performance] InitializeOnLoad ShadowCasterGroup2DManager                                                                    :        1 samples, Peak.   293 us (1.0x), Avg.   293 us, Total. 292.7 us (0.0%)
+[Performance] InitializeOnLoad ProbeGIBaking                                                                                 :        1 samples, Peak.  5.46 ms (1.0x), Avg.  5.46 ms, Total. 5.457 ms (0.0%)
+[Performance] InitializeOnLoad FilterWindow                                                                                  :        1 samples, Peak.   171 us (1.0x), Avg.   171 us, Total. 171.4 us (0.0%)
+[Performance] InitializeOnLoad RealtimeProbeSubdivisionDebug                                                                 :        1 samples, Peak.   331 us (1.0x), Avg.   331 us, Total. 331.2 us (0.0%)
+[Performance] InitializeOnLoad NodeClassCache                                                                                :        1 samples, Peak.  16.3 us (1.0x), Avg.  16.3 us, Total. 16.30 us (0.0%)
+[Performance] InitializeOnLoad ShaderGraphMaterialsUpdater                                                                   :        2 samples, Peak.   934 us (1.4x), Avg.   680 us, Total. 1.360 ms (0.0%)
+[Performance] InitializeOnLoad EditorToolManager                                                                             :        1 samples, Peak.  3.09 ms (1.0x), Avg.  3.09 ms, Total. 3.094 ms (0.0%)
+[Performance] InitializeOnLoad Renderer2DAnalytics                                                                           :        1 samples, Peak.   175 us (1.0x), Avg.   175 us, Total. 175.4 us (0.0%)
+[Performance] InitializeOnLoad RendererDataPatcher                                                                           :        1 samples, Peak.   280 ms (1.0x), Avg.   280 ms, Total. 279.9 ms (1.5%)
+[Performance] InitializeOnLoad VSUsageUtility                                                                                :        1 samples, Peak.   289 ms (1.0x), Avg.   289 ms, Total. 288.6 ms (1.5%)
+[Performance] InitializeOnLoad BackgroundWatcher                                                                             :        1 samples, Peak.   167 us (1.0x), Avg.   167 us, Total. 166.7 us (0.0%)
+[Performance] InitializeOnLoad UnityTestProtocolStarter                                                                      :        1 samples, Peak.   203 us (1.0x), Avg.   203 us, Total. 202.9 us (0.0%)
+[Performance] InitializeOnLoad TestStarter                                                                                   :        1 samples, Peak.   761 us (1.0x), Avg.   761 us, Total. 761.4 us (0.0%)
+[Performance] InitializeOnLoad RerunCallbackInitializer                                                                      :        1 samples, Peak.  7.20 ms (1.0x), Avg.  7.20 ms, Total. 7.202 ms (0.0%)
+[Performance] InitializeOnLoad VisualStudioEditor                                                                            :        1 samples, Peak.  19.3 ms (1.0x), Avg.  19.3 ms, Total. 19.27 ms (0.1%)
+[Performance] InitializeOnLoad TestRunnerApiListener                                                                         :        1 samples, Peak.   551 us (1.0x), Avg.   551 us, Total. 550.9 us (0.0%)
+[Performance] InitializeOnLoad VisualStudioIntegration                                                                       :        1 samples, Peak.   585 us (1.0x), Avg.   585 us, Total. 584.5 us (0.0%)
+[Performance] InitializeOnLoad NBPostProcessingLocalization                                                                  :        1 samples, Peak.  2.40 ms (1.0x), Avg.  2.40 ms, Total. 2.404 ms (0.0%)
+[Performance] InitializeOnLoad PrefabLayoutRebuilder                                                                         :        1 samples, Peak.   263 us (1.0x), Avg.   263 us, Total. 263.0 us (0.0%)
+[Performance] InitializeOnLoad RiderScriptEditor                                                                             :        1 samples, Peak.   230 ms (1.0x), Avg.   230 ms, Total. 230.4 ms (1.2%)
+[Performance] InitializeOnLoad CallbackInitializer                                                                           :        1 samples, Peak.  2.55 ms (1.0x), Avg.  2.55 ms, Total. 2.550 ms (0.0%)
+[Performance] InitializeOnLoad PackageEntryPoint                                                                             :        1 samples, Peak.  87.5 ms (1.0x), Avg.  87.5 ms, Total. 87.45 ms (0.5%)
+[Performance] InitializeOnLoad UnityInternalsInjector                                                                        :        1 samples, Peak.  1.40 ms (1.0x), Avg.  1.40 ms, Total. 1.397 ms (0.0%)
+[Performance] InitializeOnLoad UVCSToolbarBoostrap                                                                           :        1 samples, Peak.   104 ms (1.0x), Avg.   104 ms, Total. 103.7 ms (0.5%)
+[Performance] InitializeOnLoad PackageManagerCommand                                                                         :        1 samples, Peak.  1.68 ms (1.0x), Avg.  1.68 ms, Total. 1.682 ms (0.0%)
+[Performance] InitializeOnLoad PipelineServerStartup                                                                         :        1 samples, Peak.   491 ms (1.0x), Avg.   491 ms, Total. 491.0 ms (2.6%)
+[Performance] InitializeOnLoad RecompileCommand                                                                              :        1 samples, Peak.   301 us (1.0x), Avg.   301 us, Total. 301.1 us (0.0%)
+[Performance] InitializeOnLoad ProjectAuditCommands                                                                          :        1 samples, Peak.   345 us (1.0x), Avg.   345 us, Total. 344.9 us (0.0%)
+[Performance] InitializeOnLoad BuildCommand                                                                                  :        1 samples, Peak.   810 us (1.0x), Avg.   810 us, Total. 810.4 us (0.0%)
+[Performance] InitializeOnLoad SwitchBuildTargetCommand                                                                      :        1 samples, Peak.   475 us (1.0x), Avg.   475 us, Total. 474.9 us (0.0%)
+[Performance] InitializeOnLoad NavMeshBakeCommands                                                                           :        1 samples, Peak.   402 us (1.0x), Avg.   402 us, Total. 401.8 us (0.0%)
+[Performance] InitializeOnLoad EditorProgressMirror                                                                          :        1 samples, Peak.   637 us (1.0x), Avg.   637 us, Total. 637.4 us (0.0%)
+[Performance] InitializeOnLoad EditorConsoleCaptureBootstrap                                                                 :        1 samples, Peak.  1.54 ms (1.0x), Avg.  1.54 ms, Total. 1.536 ms (0.0%)
+[Performance] InitializeOnLoad TestReloader                                                                                  :        1 samples, Peak.  56.3 us (1.0x), Avg.  56.3 us, Total. 56.30 us (0.0%)
+[Performance] InitializeOnLoad OcclusionBakeCommands                                                                         :        1 samples, Peak.   461 us (1.0x), Avg.   461 us, Total. 460.9 us (0.0%)
+[Performance] InitializeOnLoad LightingBakeCommands                                                                          :        1 samples, Peak.   663 us (1.0x), Avg.   663 us, Total. 663.5 us (0.0%)
+[Performance] InitializeOnLoad NBShaderDebugSymbolsSettingsProvider                                                          :        1 samples, Peak.  1.27 ms (1.0x), Avg.  1.27 ms, Total. 1.267 ms (0.0%)
+[Performance] InitializeOnLoad NBShaderEditorQualityTierWatcher                                                              :        1 samples, Peak.   811 us (1.0x), Avg.   811 us, Total. 811.4 us (0.0%)
+[Performance] InitializeOnLoad ParticleBaseMigrationSettingsProvider                                                         :        1 samples, Peak.   574 us (1.0x), Avg.   574 us, Total. 574.3 us (0.0%)
+[Performance] InitializeOnLoad NBShaderInspectorLocalization                                                                 :        1 samples, Peak.   160 us (1.0x), Avg.   160 us, Total. 160.3 us (0.0%)
+[Performance] InitializeOnLoad NBShaderFeatureLevelSettingsProvider                                                          :        1 samples, Peak.   928 us (1.0x), Avg.   928 us, Total. 927.5 us (0.0%)
+[Performance] InitializeOnLoad VSCodeScriptEditor                                                                            :        1 samples, Peak.  20.3 ms (1.0x), Avg.  20.3 ms, Total. 20.34 ms (0.1%)
+[Performance] InitializeOnLoad MaterialReimporter.RegisterUpgraderReimport                                                   :        2 samples, Peak.   223 us (1.4x), Avg.   161 us, Total. 322.3 us (0.0%)
+[Performance] InitializeOnLoad ConsoleLogBuffer.Init                                                                         :        1 samples, Peak.   489 us (1.0x), Avg.   489 us, Total. 488.9 us (0.0%)
+[Performance] InitializeOnLoad TestJobDataHolder.ResumeRunningJobs                                                           :        1 samples, Peak.  1.68 ms (1.0x), Avg.  1.68 ms, Total. 1.683 ms (0.0%)
+[Performance] InitializeOnLoad AnalyticsReporter.RegisterCallbacks                                                           :        1 samples, Peak.   459 us (1.0x), Avg.   459 us, Total. 458.8 us (0.0%)
+[Performance] InitializeOnLoad DebugManagerWindowLifetimeAnalytic.SubscribeToDebugManagerOpenCloseWindows                    :        1 samples, Peak.   433 us (1.0x), Avg.   433 us, Total. 432.6 us (0.0%)
+[Performance] InitializeOnLoad VolumeGizmoDrawer.InitVolumeGizmoCallbacks                                                    :        1 samples, Peak.   361 us (1.0x), Avg.   361 us, Total. 361.2 us (0.0%)
+[Performance] InitializeOnLoad CoreRenderPipelinePreferences.InitPreferenceProviders                                         :        1 samples, Peak.  14.9 ms (1.0x), Avg.  14.9 ms, Total. 14.91 ms (0.1%)
+[Performance] InitializeOnLoad VisualStudioEditor.LegacyVisualStudioCodePackageDisabler                                      :        1 samples, Peak.  21.9 ms (1.0x), Avg.  21.9 ms, Total. 21.90 ms (0.1%)
+[Performance] DidReloadScriptsTestRunnerWindow.CompilationCallback                                                           :        1 samples, Peak.   181 us (1.0x), Avg.   181 us, Total. 181.3 us (0.0%)
+[Performance] DidReloadScriptsTestListCache.ScriptReloaded                                                                   :        1 samples, Peak.  1.94 ms (1.0x), Avg.  1.94 ms, Total. 1.941 ms (0.0%)
+[Performance] DidReloadScriptsLookDev.OnEditorReload                                                                         :        1 samples, Peak.   211 us (1.0x), Avg.   211 us, Total. 210.7 us (0.0%)
+[Performance] DidReloadScriptsVolumeComponentEditor.OnEditorReload                                                           :        1 samples, Peak.  8.37 ms (1.0x), Avg.  8.37 ms, Total. 8.375 ms (0.0%)
+[Performance] DidReloadScriptsDebugWindow.OnEditorReload                                                                     :        1 samples, Peak.  13.0 ms (1.0x), Avg.  13.0 ms, Total. 12.99 ms (0.1%)
+[Performance] DidReloadScriptsAdvancedDropdownWindow.OnScriptReload                                                          :        1 samples, Peak.   178 us (1.0x), Avg.   178 us, Total. 178.2 us (0.0%)
+[Performance] AssemblyReloadEvents.afterAssemblyReload: Unity.Pipeline.Editor.PipelineServerStartup.OnAfterAssemblyReload    :        1 samples, Peak.  53.6 us (1.0x), Avg.  53.6 us, Total. 53.60 us (0.0%)
+[Performance] AssetDatabase.ImportAssets                                                                                     :        3 samples, Peak.  1.60 us (1.8x), Avg.   867 ns, Total. 2.600 us (0.0%)
+[Performance] VersionControl.Task.Wait                                                                                       :        1 samples, Peak.  16.0 us (1.0x), Avg.  16.0 us, Total. 16.00 us (0.0%)
+[Performance] TMPro_TexturePostProcessor.OnPostprocessAllAssets                                                              :        2 samples, Peak.   735 us (1.1x), Avg.   657 us, Total. 1.314 ms (0.0%)
+[Performance] UVCSAssetPostprocessor.OnPostprocessAllAssets                                                                  :        2 samples, Peak.   623 us (1.0x), Avg.   621 us, Total. 1.242 ms (0.0%)
+[Performance] BuilderAssetPostprocessor.OnPostprocessAllAssets                                                               :        2 samples, Peak.  2.06 ms (1.0x), Avg.  2.05 ms, Total. 4.107 ms (0.0%)
+[Performance] ArtifactBrowserPostProcessor.OnPostprocessAllAssets                                                            :        2 samples, Peak.   452 us (1.0x), Avg.   450 us, Total. 899.2 us (0.0%)
+[Performance] AssetEvents.OnPostprocessAllAssets                                                                             :        4 samples, Peak.   396 us (1.8x), Avg.   226 us, Total. 903.2 us (0.0%)
+[Performance] AudioMixerPostprocessor.OnPostprocessAllAssets                                                                 :        2 samples, Peak.   267 us (1.0x), Avg.   266 us, Total. 532.1 us (0.0%)
+[Performance] StyleCatalogPostProcessor.OnPostprocessAllAssets                                                               :        2 samples, Peak.  63.7 ms (1.0x), Avg.  63.7 ms, Total. 127.4 ms (0.7%)
+[Performance] BuildCatalog                                                                                                   :        1 samples, Peak.  62.7 ms (1.0x), Avg.  62.7 ms, Total. 62.71 ms (0.3%)
+[Performance] ModelImporterPostProcessor.OnPostprocessAllAssets                                                              :        2 samples, Peak.  1.93 ms (1.0x), Avg.  1.92 ms, Total. 3.848 ms (0.0%)
+[Performance] MaterialPostprocessor.OnPostprocessAllAssets                                                                   :        4 samples, Peak.  1.19 ms (1.1x), Avg.  1.10 ms, Total. 4.416 ms (0.0%)
+[Performance] RetainedModeAssetPostprocessor.OnPostprocessAllAssets                                                          :        2 samples, Peak.  3.24 ms (1.0x), Avg.  3.22 ms, Total. 6.439 ms (0.0%)
+[Performance] AssetChangedListener.OnPostprocessAllAssets                                                                    :        2 samples, Peak.  2.67 ms (1.0x), Avg.  2.65 ms, Total. 5.299 ms (0.0%)
+[Performance] PostProcessor.OnPostprocessAllAssets                                                                           :        2 samples, Peak.   511 us (1.0x), Avg.   504 us, Total. 1.009 ms (0.0%)
+[Performance] ShaderGraphAssetPostProcessor.OnPostprocessAllAssets                                                           :        2 samples, Peak.  2.31 ms (1.0x), Avg.  2.31 ms, Total. 4.619 ms (0.0%)
+[Performance] SpeedTreePostProcessor.OnPostprocessAllAssets                                                                  :        2 samples, Peak.   261 us (1.1x), Avg.   241 us, Total. 482.3 us (0.0%)
+[Performance] TextAssetPostProcessor.OnPostprocessAllAssets                                                                  :        2 samples, Peak.   440 us (1.0x), Avg.   438 us, Total. 876.0 us (0.0%)
+[Performance] SyncVS.PostprocessSyncProject                                                                                  :        1 samples, Peak.  1.90 ms (1.0x), Avg.  1.90 ms, Total. 1.898 ms (0.0%)
+[Performance] Application.ImportPackagesAndSetTemplateWhenCreatingProject                                                    :        1 samples, Peak.  11.4 ms (1.0x), Avg.  11.4 ms, Total. 11.39 ms (0.1%)
+[Performance] Application.SyncCurrentColorSpace                                                                              :        1 samples, Peak.  38.1 ms (1.0x), Avg.  38.1 ms, Total. 38.11 ms (0.2%)
+[Performance] Application.OnUsbDevicesChanged                                                                                :        1 samples, Peak.  6.37 ms (1.0x), Avg.  6.37 ms, Total. 6.367 ms (0.0%)
+[Performance] Application.AssetInstanceCacheUpdate                                                                           :        1 samples, Peak.  1.10 us (1.0x), Avg.  1.10 us, Total. 1.100 us (0.0%)
+[Performance] Application.UnityExtensions.Initialize                                                                         :        1 samples, Peak.  11.2 ms (1.0x), Avg.  11.2 ms, Total. 11.22 ms (0.1%)
+[Performance] CodeEditorProjectSync.SyncEditorProject                                                                        :        1 samples, Peak.   735 ms (1.0x), Avg.   735 ms, Total. 735.4 ms (3.9%)
+[Performance] Application.ExecuteStartups                                                                                    :        1 samples, Peak.  78.4 ms (1.0x), Avg.  78.4 ms, Total. 78.42 ms (0.4%)
+[Performance] Menu.RegisterMenuInterface                                                                                     :       26 samples, Peak.  1.90 us (7.3x), Avg.   262 ns, Total. 6.800 us (0.0%)
+[Performance] Gizmo.RebuildRenderers                                                                                         :        1 samples, Peak.  70.4 ms (1.0x), Avg.  70.4 ms, Total. 70.38 ms (0.4%)
+[Performance] Gizmo.AddGizmoRenderers                                                                                        :      104 samples, Peak.  3.53 ms (65.5x), Avg.  53.8 us, Total. 5.599 ms (0.0%)
+[Performance] Application.editorInitializingProject                                                                          :        1 samples, Peak.   574 ms (1.0x), Avg.   574 ms, Total. 573.6 ms (3.0%)
+[Performance] Application.InitializeMenu                                                                                     :        1 samples, Peak.   198 ms (1.0x), Avg.   198 ms, Total. 197.7 ms (1.0%)
+[Performance] Menu.RebuildAll                                                                                                :        1 samples, Peak.   198 ms (1.0x), Avg.   198 ms, Total. 197.7 ms (1.0%)
+[Performance] Menu.BuildRegisteredMenuInterfaces                                                                             :        1 samples, Peak.   166 ms (1.0x), Avg.   166 ms, Total. 165.7 ms (0.9%)
+[Performance] Menu.FilterMenuItem                                                                                            :      683 samples, Peak.  67.3 ms (658.2x), Avg.   102 us, Total. 69.82 ms (0.4%)
+[Performance] UpdateAllMenus                                                                                                 :        1 samples, Peak.   609 us (1.0x), Avg.   609 us, Total. 608.8 us (0.0%)
+[Performance] Menu.RebuildOSMainMenu                                                                                         :        2 samples, Peak.  30.9 ms (1.6x), Avg.  19.4 ms, Total. 38.73 ms (0.2%)
+[Performance] EditorSceneManager.sceneClosing: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnSceneClosing           :        1 samples, Peak.   446 us (1.0x), Avg.   446 us, Total. 445.9 us (0.0%)
+[Performance] GUIView.RepaintAll.PlayerLoopController                                                                        :        1 samples, Peak.  4.50 us (1.0x), Avg.  4.50 us, Total. 4.500 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneTemplate.SceneTemplateService.OnNewSceneCreated           :        1 samples, Peak.   278 us (1.0x), Avg.   278 us, Total. 277.7 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneVisibilityManager.EditorSceneManagerOnNewSceneCreated     :        1 samples, Peak.   221 us (1.0x), Avg.   221 us, Total. 220.8 us (0.0%)
+[Performance] EditorSceneManager.newSceneCreated: UnityEditor.SceneManagement.StageNavigationManager.OnNewSceneCreated       :        1 samples, Peak.  59.8 us (1.0x), Avg.  59.8 us, Total. 59.80 us (0.0%)
+[Performance] Application.InvokeFinishedLoadingProject                                                                       :        1 samples, Peak.  30.3 ms (1.0x), Avg.  30.3 ms, Total. 30.30 ms (0.2%)
+[Performance] ProcessService.OnProjectLoaded                                                                                 :        1 samples, Peak.  87.3 us (1.0x), Avg.  87.3 us, Total. 87.30 us (0.0%)
+[Performance] EditorApplication.quitting: Unity.Burst.Editor.BurstLoader.OnEditorApplicationQuitting                         :        1 samples, Peak.  90.2 us (1.0x), Avg.  90.2 us, Total. 90.20 us (0.0%)
+[Performance] EditorApplication.quitting: Unity.Pipeline.Editor.PipelineServerStartup.OnEditorQuitting                       :        1 samples, Peak.  3.74 ms (1.0x), Avg.  3.74 ms, Total. 3.737 ms (0.0%)
+[Performance] EditorApplication.quitting: Unity.Pipeline.Editor.Console.EditorConsoleCaptureBootstrap.Persist                :        1 samples, Peak.  11.7 ms (1.0x), Avg.  11.7 ms, Total. 11.68 ms (0.1%)
+[Performance] EditorApplication.quitting: callback in UnityEditor.TextCore.Text.EditorEventCallbacks                         :        1 samples, Peak.  42.7 ms (1.0x), Avg.  42.7 ms, Total. 42.69 ms (0.2%)
+[Performance] Application.Shutdown.PauseProfilerSession                                                                      :        1 samples, Peak.   175 us (1.0x), Avg.   175 us, Total. 175.1 us (0.0%)
+[Performance] Application.Shutdown.PauseAssetImportWorkers                                                                   :        1 samples, Peak.  1.47 ms (1.0x), Avg.  1.47 ms, Total. 1.468 ms (0.0%)
+[Performance] Application.Shutdown.SaveAssets                                                                                :        1 samples, Peak.  19.8 ms (1.0x), Avg.  19.8 ms, Total. 19.77 ms (0.1%)
+[Performance] StateMacroSavedEvent.OnWillSaveAssets                                                                          :        1 samples, Peak.   196 us (1.0x), Avg.   196 us, Total. 196.3 us (0.0%)
+[Performance] UnityCloudProjectLinkMonitor.OnWillSaveAssets                                                                  :        1 samples, Peak.   449 us (1.0x), Avg.   449 us, Total. 448.9 us (0.0%)
+[Performance] UVCSAssetModificationProcessor.OnWillSaveAssets                                                                :        1 samples, Peak.   498 us (1.0x), Avg.   498 us, Total. 498.2 us (0.0%)
+[Performance] FlowMacroSavedEvent.OnWillSaveAssets                                                                           :        1 samples, Peak.   155 us (1.0x), Avg.   155 us, Total. 154.5 us (0.0%)
+[Performance] BuilderAssetModificationProcessor.OnWillSaveAssets                                                             :        1 samples, Peak.   322 us (1.0x), Avg.   322 us, Total. 322.3 us (0.0%)
+[Performance] TerrainModificationProcessor.OnWillSaveAssets                                                                  :        1 samples, Peak.   596 us (1.0x), Avg.   596 us, Total. 596.2 us (0.0%)
+[Performance] Application.Shutdown.CleanupRenderPipeline                                                                     :        1 samples, Peak.  13.1 us (1.0x), Avg.  13.1 us, Total. 13.10 us (0.0%)
+[Performance] Application.Shutdown.StopPreloadManager                                                                        :        1 samples, Peak.  9.71 ms (1.0x), Avg.  9.71 ms, Total. 9.713 ms (0.1%)
+[Performance] Application.Shutdown.DestroyWorld                                                                              :        1 samples, Peak.  2.35 ms (1.0x), Avg.  2.35 ms, Total. 2.347 ms (0.0%)
+[Performance] Application.Shutdown.CleanupAfterLoad                                                                          :        1 samples, Peak.   271 ms (1.0x), Avg.   271 ms, Total. 271.4 ms (1.4%)
+[Performance] Application.Shutdown.Progress                                                                                  :        1 samples, Peak.  11.0 us (1.0x), Avg.  11.0 us, Total. 11.00 us (0.0%)
+[Performance] Application.Shutdown.GICleanupManagers                                                                         :        1 samples, Peak.  2.02 ms (1.0x), Avg.  2.02 ms, Total. 2.024 ms (0.0%)
+[Performance] Application.Shutdown.MenuCleanupClass                                                                          :        1 samples, Peak.   310 us (1.0x), Avg.   310 us, Total. 310.3 us (0.0%)
+[Performance] Application.Shutdown.ADBSaveStateBeforeShutdown                                                                :        1 samples, Peak.  13.9 us (1.0x), Avg.  13.9 us, Total. 13.90 us (0.0%)
+[Performance] Application.Shutdown.RemoteShutdown                                                                            :        1 samples, Peak.  1.30 us (1.0x), Avg.  1.30 us, Total. 1.300 us (0.0%)
+[Performance] Application.Shutdown.CleanupVCProvider                                                                         :        1 samples, Peak.  17.3 us (1.0x), Avg.  17.3 us, Total. 17.30 us (0.0%)
+[Performance] Application.Shutdown.InputShutdown                                                                             :        1 samples, Peak.   700 ns (1.0x), Avg.   700 ns, Total. 700.0 ns (0.0%)
+[Performance] Application.Shutdown.GizmoManagerDestroy                                                                       :        1 samples, Peak.  1.29 ms (1.0x), Avg.  1.29 ms, Total. 1.288 ms (0.0%)
+[Performance] Application.Shutdown.ProfilerSession                                                                           :        1 samples, Peak.   301 us (1.0x), Avg.   301 us, Total. 301.4 us (0.0%)
+[Performance] Application.Shutdown.ReleaseGfxWindowOnAllGUIViews                                                             :        1 samples, Peak.   500 ns (1.0x), Avg.   500 ns, Total. 500.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupEngine                                                                             :        1 samples, Peak.   135 ms (1.0x), Avg.   135 ms, Total. 134.6 ms (0.7%)
+[Performance] Application.Shutdown.CleanupAssetDatabase                                                                      :        1 samples, Peak.  20.0 ms (1.0x), Avg.  20.0 ms, Total. 19.98 ms (0.1%)
+[Performance] Application.Shutdown.ScriptCompilationCleanUp                                                                  :        1 samples, Peak.  42.0 ms (1.0x), Avg.  42.0 ms, Total. 42.03 ms (0.2%)
+[Performance] Application.Shutdown.DestroyJobSystem                                                                          :        1 samples, Peak.   195 us (1.0x), Avg.   195 us, Total. 195.3 us (0.0%)
+[Performance] Application.Shutdown.CleanupPersistentManager                                                                  :        1 samples, Peak.  2.83 ms (1.0x), Avg.  2.83 ms, Total. 2.826 ms (0.0%)
+[Performance] Application.Shutdown.CleanupAsyncReadManager                                                                   :        1 samples, Peak.   531 us (1.0x), Avg.   531 us, Total. 531.3 us (0.0%)
+[Performance] Application.Shutdown.CleanupProgressBar                                                                        :        1 samples, Peak.   300 ns (1.0x), Avg.   300 ns, Total. 300.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupMono                                                                               :        1 samples, Peak.   783 ms (1.0x), Avg.   783 ms, Total. 782.7 ms (4.1%)
+[Performance] Application.Shutdown.CleanupStdConverters                                                                      :        1 samples, Peak.  8.30 us (1.0x), Avg.  8.30 us, Total. 8.300 us (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportModuleNativeDlls                                                  :        1 samples, Peak.  1.00 us (1.0x), Avg.  1.00 us, Total. 1.000 us (0.0%)
+[Performance] Application.Shutdown.UnloadAllPlatformSupportNativeLibraries                                                   :        1 samples, Peak.   100 ns (1.0x), Avg.   100 ns, Total. 100.0 ns (0.0%)
+[Performance] Application.Shutdown.CleanupAutoDocumentation                                                                  :        1 samples, Peak.   259 us (1.0x), Avg.   259 us, Total. 258.5 us (0.0%)
+[Performance] Application.Shutdown.ShaderNameManagerDestroy                                                                  :        1 samples, Peak.  44.6 us (1.0x), Avg.  44.6 us, Total. 44.60 us (0.0%)
+[Performance] Application.Shutdown.CleanupCacheServer                                                                        :        1 samples, Peak.   100 ns (1.0x), Avg.   100 ns, Total. 100.0 ns (0.0%)
+[Performance] Application.Shutdown.Virtualization_Shutdown                                                                   :        1 samples, Peak.   200 ns (1.0x), Avg.   200 ns, Total. 200.0 ns (0.0%)
+[Performance] Application.Shutdown.DevConnections                                                                            :        1 samples, Peak.   131 us (1.0x), Avg.   131 us, Total. 131.2 us (0.0%)
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

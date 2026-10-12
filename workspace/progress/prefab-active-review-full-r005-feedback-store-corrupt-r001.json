@@ -1,0 +1,227 @@
+{
+  "batch_id": "prefab_active_review_full_r005",
+  "records": {
+    "sample_0d53ff02e6a144c86a58": {
+      "latest": {
+        "action": "无法判断",
+        "ai_draft": {
+          "label_provenance": {
+            "confidence": 0.45,
+            "created_at": "2026-09-02T12:26:58.869796+00:00",
+            "distance": null,
+            "label_source": "ai_pseudo_label",
+            "model_version": "weak_metadata_visual_teacher.v1",
+            "parent_human_record_id": null,
+            "reviewer": null
+          },
+          "labels": {
+            "decision": null,
+            "issues": [],
+            "observed_color_tags": [],
+            "observed_element_tags": [
+              "slash"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "training": {
+            "eligible_tasks": [
+              "element_semisupervision",
+              "color_semisupervision",
+              "active_learning_priority"
+            ],
+            "excluded_tasks": [
+              "human_gold",
+              "regression_evaluation",
+              "model_promotion",
+              "preference_training"
+            ],
+            "expires_with_model_version": true,
+            "frozen": false,
+            "split": "test",
+            "weight": 0.09000000000000001
+          }
+        },
+        "batch_id": "prefab_active_review_full_r005",
+        "confirmation_mode": "human_exclusion",
+        "correction": {
+          "action": "无法判断",
+          "label_delta": {}
+        },
+        "evidence": {
+          "capture_manifest_path": "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/capture_manifest.json",
+          "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+          "dynamic_frame_paths": [
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_000_0_000.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_001_0_015.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_002_0_030.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_003_0_045.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_004_0_060.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_005_0_075.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_006_0_090.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_007_0_105.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_008_0_120.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_009_0_135.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_010_0_150.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_011_0_165.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_012_0_180.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_013_0_195.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_014_0_210.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_015_0_225.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_016_0_240.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_017_0_255.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_018_0_270.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_019_0_285.png",
+            "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_020_0_300.png"
+          ],
+          "webgl_catalog_id": null
+        },
+        "notes": "",
+        "prefab_path": "Assets/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab",
+        "record_id": "active_feedback_2be4be409d4f15e2e4f1",
+        "result": {
+          "disposition": "excluded",
+          "eligible_tasks": [],
+          "exclusion_reason": "human_unable_to_judge",
+          "labels": {},
+          "trainable": false
+        },
+        "reviewed_at": "2026-09-03T03:00:44.088407+00:00",
+        "reviewer": "local_human",
+        "sample_id": "sample_0d53ff02e6a144c86a58",
+        "schema_version": "vfx_prefab_active_review_feedback.v1"
+      },
+      "revisions": [
+        {
+          "action": "无法判断",
+          "ai_draft": {
+            "label_provenance": {
+              "confidence": 0.45,
+              "created_at": "2026-09-02T12:26:58.869796+00:00",
+              "distance": null,
+              "label_source": "ai_pseudo_label",
+              "model_version": "weak_metadata_visual_teacher.v1",
+              "parent_human_record_id": null,
+              "reviewer": null
+            },
+            "labels": {
+              "decision": null,
+              "issues": [],
+              "observed_color_tags": [],
+              "observed_element_tags": [
+                "slash"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "training": {
+              "eligible_tasks": [
+                "element_semisupervision",
+                "color_semisupervision",
+                "active_learning_priority"
+              ],
+              "excluded_tasks": [
+                "human_gold",
+                "regression_evaluation",
+                "model_promotion",
+                "preference_training"
+              ],
+              "expires_with_model_version": true,
+              "frozen": false,
+              "split": "test",
+              "weight": 0.09000000000000001
+            }
+          },
+          "batch_id": "prefab_active_review_full_r005",
+          "confirmation_mode": "human_exclusion",
+          "correction": {
+            "action": "无法判断",
+            "label_delta": {}
+          },
+          "evidence": {
+            "capture_manifest_path": "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/capture_manifest.json",
+            "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+            "dynamic_frame_paths": [
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_000_0_000.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_001_0_015.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_002_0_030.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_003_0_045.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_004_0_060.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_005_0_075.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_006_0_090.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_007_0_105.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_008_0_120.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_009_0_135.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_010_0_150.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_011_0_165.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_012_0_180.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_013_0_195.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_014_0_210.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_015_0_225.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_016_0_240.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_017_0_255.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_018_0_270.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_019_0_285.png",
+              "workspace/data/vfx_generation/captures/sword_slash_timing_r002/cases/full_prefab_0001_5b7d7f902fb3/captures/frame_020_0_300.png"
+            ],
+            "webgl_catalog_id": null
+          },
+          "notes": "",
+          "prefab_path": "Assets/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab",
+          "record_id": "active_feedback_2be4be409d4f15e2e4f1",
+          "result": {
+            "disposition": "excluded",
+            "eligible_tasks": [],
+            "exclusion_reason": "human_unable_to_judge",
+            "labels": {},
+            "trainable": false
+          },
+          "reviewed_at": "2026-09-03T03:00:44.088407+00:00",
+          "reviewer": "local_human",
+          "sample_id": "sample_0d53ff02e6a144c86a58",
+          "schema_version": "vfx_prefab_active_review_feedback.v1"
+        }
+      ]
+    }
+  },
+  "schema_version": "vfx_prefab_active_review_store.v1"
+}
+efab",
+          "record_id": "active_feedback_49edad86678768f263a3",
+          "result": {
+            "disposition": "human_gold",
+            "eligible_tasks": [
+              "material_issue_detection",
+              "pseudo_label_calibration"
+            ],
+            "exclusion_reason": null,
+            "labels": {
+              "decision": "材质有问题",
+              "issues": [
+                "材质有问题"
+              ],
+              "observed_color_tags": [],
+              "observed_element_tags": [
+                "slash"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "trainable": true
+          },
+          "reviewed_at": "2026-09-03T03:00:46.880534+00:00",
+          "reviewer": "local_human",
+          "sample_id": "sample_0d53ff02e6a144c86a58",
+          "schema_version": "vfx_prefab_active_review_feedback.v1"
+        }
+      ]
+    }
+  },
+  "schema_version": "vfx_prefab_active_review_store.v1"
+}

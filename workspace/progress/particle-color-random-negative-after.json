@@ -1,0 +1,26 @@
+{
+    "schema_version": "vfx_prefab_graph_readback_result.v1",
+    "created_at": "2026-09-07T03:56:11.8583384Z",
+    "graph_id": "pfg_db3bd3af17a5f5793c97",
+    "input_graph_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\generated\\tutorial_lightning_fixed_color_r002\\tutorial_fixed\\graph.json",
+    "prefab_path": "Assets/Generated/ParticleColorRandomNegativeR001/GeneratedRoot.prefab",
+    "output_graph_path": "E:\\Unity特效人工智能学习\\workspace\\progress\\particle-color-random-negative-after-graph.json",
+    "status": "mismatch",
+    "unity_api_readback": true,
+    "source_prefab_instantiated": false,
+    "node_count": 2,
+    "particle_system_count": 1,
+    "renderer_count": 1,
+    "material_paths": [
+        "Assets/Generated/TutorialLightningFixedColorR002/tutorial_fixed/Materials/pfg_db3bd3af17a5f5793c97_p0000.mat"
+    ],
+    "mesh_paths": [],
+    "differences": [
+        "particle[n0001].start_color_mode is TwoColors; deterministic Color required"
+    ],
+    "allowed_normalizations": [
+        "node[n0000].parent_node_id: Unity JsonUtility serializes the root null parent as an empty string",
+        "particle[n0001].material_paths: generated output material replaces template binding"
+    ],
+    "error": "InvalidOperationException: Unity API readback differs from input Graph."
+}
