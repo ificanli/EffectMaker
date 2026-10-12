@@ -1,0 +1,49 @@
+{
+  "schema_version": "vfx_prefab_corpus.v1",
+  "created_at": "2026-09-01T02:11:55.117497+00:00",
+  "corpus_id": "vfx_prefab_corpus_r001",
+  "source_count": 1,
+  "prefab_count": 259,
+  "record_count": 259,
+  "split_counts": {
+    "test": 18,
+    "train": 210,
+    "validation": 31
+  },
+  "delta": {
+    "new_count": 259,
+    "unchanged_count": 0,
+    "changed_count": 0,
+    "removed_count": 0
+  },
+  "files": {
+    "records": "prefab_records.jsonl",
+    "failures": "failures.jsonl",
+    "split_assignments": "split_assignments.jsonl"
+  },
+  "quality_gates": {
+    "source_manifests_readable": true,
+    "prefab_paths_present": true,
+    "split_groups_disjoint": true,
+    "duplicate_source_keys": 0,
+    "license_review_required_count": 0
+  },
+  "training_policy": {
+    "asset_copying": "not_performed",
+    "local_reference_only_is_allowed_for_local_training": true,
+    "not_visible_or_no_visual_evidence_is_not_positive_training": true,
+    "source_structure_is_not_visual_quality": true,
+    "source_summaries": [
+      {
+        "source_id": "TRN_FX_ALL_001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_fx_all_001/source_manifest.json",
+        "file_counts": {
+          "material": 627,
+          "other": 1,
+          "prefab": 259
+        }
+      }
+    ]
+  },
+  "status": "pass"
+}

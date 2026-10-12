@@ -1,0 +1,197 @@
+{
+  "schema_version": "vfx_prefab_corpus.v1",
+  "created_at": "2026-09-01T02:15:34.177062+00:00",
+  "corpus_id": "vfx_prefab_corpus_all_r001",
+  "source_count": 18,
+  "prefab_count": 626,
+  "record_count": 626,
+  "split_counts": {
+    "test": 52,
+    "train": 505,
+    "validation": 69
+  },
+  "delta": {
+    "new_count": 626,
+    "unchanged_count": 0,
+    "changed_count": 0,
+    "removed_count": 0
+  },
+  "files": {
+    "records": "prefab_records.jsonl",
+    "failures": "failures.jsonl",
+    "split_assignments": "split_assignments.jsonl"
+  },
+  "quality_gates": {
+    "source_manifests_readable": true,
+    "prefab_paths_present": true,
+    "split_groups_disjoint": true,
+    "duplicate_source_keys": 0,
+    "license_review_required_count": 0
+  },
+  "training_policy": {
+    "asset_copying": "not_performed",
+    "local_reference_only_is_allowed_for_local_training": true,
+    "not_visible_or_no_visual_evidence_is_not_positive_training": true,
+    "source_structure_is_not_visual_quality": true,
+    "source_summaries": [
+      {
+        "source_id": "SRC-VFX-SLASH-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/examples/slash_source_sample_001/source_manifest.json",
+        "file_counts": {
+          "material": 1,
+          "prefab": 1,
+          "shader": 1,
+          "texture": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-ACID-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_acid_001/source_manifest.json",
+        "file_counts": {
+          "material": 4,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-ACID-STAGING-REPRO",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_acid_staging_repro/source_manifest.json",
+        "file_counts": {
+          "material": 4,
+          "other": 1,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-FX-ACID-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_fx_acid_001/source_manifest.json",
+        "file_counts": {
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-FX-ACID-CACHE",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_fx_acid_cache_check/source_manifest.json",
+        "file_counts": {
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "TRN_FX_ALL_001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_fx_all_001/source_manifest.json",
+        "file_counts": {
+          "material": 627,
+          "other": 1,
+          "prefab": 259
+        }
+      },
+      {
+        "source_id": "TRN_FX_ALL_001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_fx_all_001_dryrun/source_manifest.json",
+        "file_counts": {
+          "animation": 26,
+          "material": 522,
+          "mesh": 31,
+          "other": 1,
+          "prefab": 258,
+          "texture": 415
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-ICE_SPIKE-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_ice_spike_001/source_manifest.json",
+        "file_counts": {
+          "material": 4,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "TRN_IGNORE_EFFECT_PREFABS_001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_ignore_effect_prefabs_001/source_manifest.json",
+        "file_counts": {
+          "material": 99,
+          "mesh": 2,
+          "prefab": 32,
+          "shader": 2,
+          "shader_include": 1,
+          "texture": 84
+        }
+      },
+      {
+        "source_id": "TRN_IGNORE_EFFECT_PREFABS_002",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_ignore_effect_prefabs_002/source_manifest.json",
+        "file_counts": {
+          "material": 99,
+          "prefab": 32
+        }
+      },
+      {
+        "source_id": "TRN_IGNORE_EFFECT_PREFABS_003",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_ignore_effect_prefabs_003/source_manifest.json",
+        "file_counts": {
+          "material": 99,
+          "mesh": 2,
+          "prefab": 32,
+          "shader": 2,
+          "shader_include": 1,
+          "texture": 84
+        }
+      },
+      {
+        "source_id": "TRN_MATERIAL_DRIVER_001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/trains_material_driver_001/source_manifest.json",
+        "file_counts": {
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-SCENE_EXPLOSION-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_scene_explosion_001/source_manifest.json",
+        "file_counts": {
+          "material": 8,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-SCENE_SMOKE-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_scene_smoke_001/source_manifest.json",
+        "file_counts": {
+          "material": 3,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-SHIELD-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_shield_001/source_manifest.json",
+        "file_counts": {
+          "material": 3,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-SHIELD-001-INTEGRITY",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_shield_001_integrity_r002/source_manifest.json",
+        "file_counts": {
+          "material": 1,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-THUNDER_BALL-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_thunder_ball_001/source_manifest.json",
+        "file_counts": {
+          "material": 5,
+          "prefab": 1
+        }
+      },
+      {
+        "source_id": "SRC-TRAINS-WHIRWIND-001",
+        "manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/sources/Trains_whirwind_001/source_manifest.json",
+        "file_counts": {
+          "material": 2,
+          "prefab": 1
+        }
+      }
+    ]
+  },
+  "status": "pass"
+}
