@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>VFX Prefab Player | {{{ PRODUCT_NAME }}}</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-bar">
+        <div class="brand-block">
+          <button id="library-toggle" class="icon-button mobile-only" type="button" title="特效库" aria-label="打开特效库">
+            <i data-lucide="panel-left" aria-hidden="true"></i><span class="icon-fallback">☰</span>
+          </button>
+          <div>
+            <strong>VFX Training Review</strong>
+            <span id="build-label">Unity 2022 Web</span>
+          </div>
+        </div>
+        <div class="app-status" role="status" aria-live="polite">
+          <span id="status-dot" class="status-dot is-loading"></span>
+          <span id="status-label">正在载入运行时</span>
+        </div>
+        <button id="fullscreen-button" class="icon-button" type="button" title="全屏" aria-label="全屏">
+          <i data-lucide="maximize" aria-hidden="true"></i><span class="icon-fallback">□</span>
+        </button>
+      </header>
+
+      <div class="workspace-layout">
+        <aside id="library-panel" class="library-panel" aria-label="Prefab 特效库">
+          <div class="panel-heading">
+            <div>
+              <h1>Prefab 特效库</h1>
+              <span id="catalog-count">0 项</span>
+            </div>
+            <button id="library-close" class="icon-button mobile-only" type="button" title="关闭" aria-label="关闭特效库">
+              <i data-lucide="x" aria-hidden="true"></i><span class="icon-fallback">×</span>
+            </button>
+          </div>
+          <div class="library-tools">
+            <label class="search-box" for="search-input">
+              <i data-lucide="search" aria-hidden="true"></i><span class="icon-fallback">⌕</span>
+              <input id="search-input" type="search" autocomplete="off" placeholder="搜索名称或路径">
+            </label>
+            <label class="select-label" for="category-select">
+              <span>分类</span>
+              <select id="category-select">
+                <option value="all">全部</option>
+              </select>
+            </label>
+          </div>
+          <div id="prefab-list" class="prefab-list" role="listbox" aria-label="可播放 Prefab"></div>
+        </aside>
+
+        <main class="viewer-panel">
+          <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} tabindex="-1"></canvas>
+
+          <div id="loading-overlay" class="loading-overlay">
+            <div class="loading-mark">VFX</div>
+            <div class="loading-copy">
+              <strong>载入 Unity 运行时</strong>
+              <span id="loading-percent">0%</span>
+            </div>
+            <div class="progress-track"><span id="progress-bar"></span></div>
+          </div>
+
+          <div id="warning-banner" class="warning-banner" aria-live="assertive"></div>
+
+          <div class="runtime-strip" aria-label="运行统计">
+            <span><b id="particle-count">0</b> 粒子</span>
+            <span><b id="renderer-count">0</b> 渲染器</span>
+            <span><b id="material-change-count">0</b> 材质变化</span>
+            <span><b id="elapsed-time">0.00</b>s</span>
+          </div>
+
+          <div class="viewer-toolbar" aria-label="播放与视图控制">
+            <div class="toolbar-group">
+              <button id="replay-button" class="icon-button strong" type="button" title="重新播放" aria-label="重新播放">
+                <i data-lucide="rotate-ccw" aria-hidden="true"></i><span class="icon-fallback">↻</span>
+              </button>
+              <button id="pause-button" class="icon-button" type="button" title="暂停" aria-label="暂停">
+                <i data-lucide="pause" aria-hidden="true"></i><span class="icon-fallback">Ⅱ</span>
+              </button>
+            </div>
+            <div id="speed-control" class="segmented-control" aria-label="播放速度">
+              <button type="button" data-speed="0.25">0.25×</button>
+              <button type="button" data-speed="0.5">0.5×</button>
+              <button type="button" data-speed="1" class="is-active">1×</button>
+              <button type="button" data-speed="2">2×</button>
+            </div>
+            <div class="toolbar-group">
+              <button id="fit-button" class="icon-button" type="button" title="适配画面" aria-label="适配画面">
+                <i data-lucide="scan" aria-hidden="true"></i><span class="icon-fallback">⌗</span>
+              </button>
+              <button id="reset-view-button" class="icon-button" type="button" title="重置视角" aria-label="重置视角">
+                <i data-lucide="focus" aria-hidden="true"></i><span class="icon-fallback">◎</span>
+              </button>
+            </div>
+          </div>
+        </main>
+
+        <aside class="details-panel" aria-label="当前 Prefab 信息">
+          <section class="details-section">
+            <span class="section-label">当前特效</span>
+            <h2 id="effect-name">等待运行时</h2>
+            <div class="badge-row">
+              <span id="effect-category" class="badge">未分类</span>
+              <span id="effect-playability" class="badge status-badge">检查中</span>
+            </div>
+          </section>
+          <section class="details-section metrics-grid">
+            <div><span>粒子系统</span><strong id="effect-particle-systems">0</strong></div>
+            <div><span>渲染器</span><strong id="effect-renderers">0</strong></div>
+            <div><span>建议时长</span><strong id="effect-duration">0.0s</strong></div>
+            <div><span>播放速度</span><strong id="effect-speed">1×</strong></div>
+          </section>
+          <section class="details-section">
+            <span class="section-label">Prefab 资源</span>
+            <code id="effect-path">-</code>
+          </section>
+          <section class="details-section">
+            <span class="section-label">来源</span>
+            <code id="effect-source">-</code>
+          </section>
+          <section class="details-section training-section">
+            <span class="section-label">训练关联</span>
+            <div class="badge-row">
+              <span id="training-link-status" class="badge status-badge">未关联</span>
+              <span id="source-script-fidelity" class="badge">脚本状态未知</span>
+            </div>
+            <dl class="training-identifiers">
+              <div><dt>Run</dt><dd id="training-run-id">-</dd></div>
+              <div><dt>Candidate</dt><dd id="training-candidate-id">-</dd></div>
+              <div><dt>Case</dt><dd id="training-case-id">-</dd></div>
+              <div><dt>材质事件</dt><dd id="training-material-changes">0</dd></div>
+            </dl>
+            <div id="material-key-times" class="key-time-control" aria-label="关键材质变化时间点"></div>
+          </section>
+          <section class="details-section review-section">
+            <span class="section-label">动态评价</span>
+            <label class="field-control" for="reviewer-input">
+              <span>评价人</span>
+              <input id="reviewer-input" type="text" value="human_web_reviewer" autocomplete="off">
+            </label>
+            <label class="field-control" for="decision-select">
+              <span>结论</span>
+              <select id="decision-select">
+                <option value="accept_direction">接受方向</option>
+                <option value="partial" selected>部分可用</option>
+                <option value="reject">拒绝</option>
+                <option value="needs_comparison">需要对比</option>
+                <option value="not_visible">不可见</option>
+              </select>
+            </label>
+            <label class="range-control" for="dynamic-quality-input">
+              <span>动态质量</span><output id="dynamic-quality-output">3</output>
+              <input id="dynamic-quality-input" type="range" min="0" max="5" step="1" value="3">
+            </label>
+            <label class="range-control" for="rhythm-quality-input">
+              <span>节奏</span><output id="rhythm-quality-output">3</output>
+              <input id="rhythm-quality-input" type="range" min="0" max="5" step="1" value="3">
+            </label>
+            <label class="field-control" for="style-match-select">
+              <span>风格匹配</span>
+              <select id="style-match-select">
+                <option value="unlabeled" selected>未标注</option>
+                <option value="match">匹配</option>
+                <option value="partial">部分匹配</option>
+                <option value="mismatch">不匹配</option>
+              </select>
+            </label>
+            <label class="field-control" for="review-summary-input">
+              <span>结论摘要</span>
+              <textarea id="review-summary-input" rows="3" placeholder="记录动态、节奏、材质或技术问题"></textarea>
+            </label>
+            <div class="review-actions">
+              <button id="save-review-button" class="command-button strong" type="button" disabled>
+                <i data-lucide="check" aria-hidden="true"></i><span>记录</span>
+              </button>
+              <button id="export-reviews-button" class="command-button" type="button" disabled>
+                <i data-lucide="download" aria-hidden="true"></i><span>导出 <b id="review-count">0</b></span>
+              </button>
+            </div>
+          </section>
+          <section class="details-section">
+            <span class="section-label">背景</span>
+            <div id="background-control" class="swatch-control">
+              <button type="button" class="swatch is-active" data-color="#0e1112" style="--swatch:#0e1112" title="深色背景" aria-label="深色背景"></button>
+              <button type="button" class="swatch" data-color="#252a2d" style="--swatch:#252a2d" title="中性背景" aria-label="中性背景"></button>
+              <button type="button" class="swatch light" data-color="#d9dcda" style="--swatch:#d9dcda" title="浅色背景" aria-label="浅色背景"></button>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <script src="TemplateData/app.js"></script>
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+#if USE_WASM
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+#endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+        productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+        showBanner: function (message, type) {
+          window.vfxWebPlayer.showBanner(message, type);
+        },
+        devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
+      };
+
+      var loaderScript = document.createElement("script");
+      loaderScript.src = loaderUrl;
+      loaderScript.onload = function () {
+        createUnityInstance(canvas, config, function (progress) {
+          window.vfxWebPlayer.setLoadingProgress(progress);
+        }).then(function (unityInstance) {
+          window.vfxWebPlayer.attachUnity(unityInstance);
+        }).catch(function (message) {
+          window.vfxWebPlayer.failLoading(message);
+        });
+      };
+      loaderScript.onerror = function () {
+        window.vfxWebPlayer.failLoading("Unity loader 无法读取，请确认使用本地 HTTP 服务打开构建目录。");
+      };
+      document.body.appendChild(loaderScript);
+    </script>
+  </body>
+</html>
