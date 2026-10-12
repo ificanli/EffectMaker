@@ -50,7 +50,7 @@ public static class VfxFireworksCommands
         main.startColor = new ParticleSystem.MinMaxGradient(color);
         var emission = ps.emission;
         emission.rateOverTime = 0f;
-        emission.SetBursts(new[] { new ParticleSystem.Burst(0f, (short)count) });
+        emission.SetBursts(new[] { new ParticleSystem.Burst(0f, count) });
         var shape = ps.shape;
         shape.enabled = true;
         shape.shapeType = ParticleSystemShapeType.Sphere;
