@@ -1,0 +1,554 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-03T20:04:43.043779+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7937203358890106,
+        "center_luminance": 0.4640323519706726,
+        "edge_density": 0.06839926402943883,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_000_pfg_3e16d27e0c119474b310/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.053076171875,
+        "visible_luma_mean": 0.5417566299438477,
+        "visible_luma_std": 0.39956533908843994
+      },
+      "bbox_fill_reduction": 0.33921604896714125,
+      "candidate_id": "layered_material_pair_000_pfg_3e16d27e0c119474b310",
+      "center_luminance_ratio": 0.8238340557965907,
+      "core_only_window_end_seconds": 0.035,
+      "edge_density_gain": 0.0433244158111457,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_3e16d27e0c119474b310",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.45450428692186934,
+        "center_luminance": 0.3822856545448303,
+        "edge_density": 0.11172367984058452,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_000_pfg_3e16d27e0c119474b310/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.03675537109375,
+        "visible_luma_mean": 0.6505880951881409,
+        "visible_luma_std": 0.3498164117336273
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_000_pfg_3e16d27e0c119474b310",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.04974892735481262
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7917222116422269,
+        "center_luminance": 0.5260124802589417,
+        "edge_density": 0.05688742783835792,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_001_pfg_4f3ab55fef0e9021494c/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.0608984375,
+        "visible_luma_mean": 0.5416976809501648,
+        "visible_luma_std": 0.39961108565330505
+      },
+      "bbox_fill_reduction": 0.3351646603615382,
+      "candidate_id": "layered_material_pair_001_pfg_4f3ab55fef0e9021494c",
+      "center_luminance_ratio": 0.8072638887708533,
+      "core_only_window_end_seconds": 0.045000000000000005,
+      "edge_density_gain": 0.04617955697221066,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_4f3ab55fef0e9021494c",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.4565575512806887,
+        "center_luminance": 0.42463088035583496,
+        "edge_density": 0.10306698481056858,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_001_pfg_4f3ab55fef0e9021494c/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.04195068359375,
+        "visible_luma_mean": 0.655240535736084,
+        "visible_luma_std": 0.347626268863678
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_001_pfg_4f3ab55fef0e9021494c",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.051984816789627075
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7914496758422787,
+        "center_luminance": 0.6082675457000732,
+        "edge_density": 0.042736764360291404,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_002_pfg_cd1768082e57a7b63ab3/captures/frame_002_0_050.png",
+        "time_seconds": 0.05000000074505806,
+        "visible_area_ratio": 0.07272216796875,
+        "visible_luma_mean": 0.5362721681594849,
+        "visible_luma_std": 0.40010666847229004
+      },
+      "bbox_fill_reduction": 0.33728337310841544,
+      "candidate_id": "layered_material_pair_002_pfg_cd1768082e57a7b63ab3",
+      "center_luminance_ratio": 0.7709687648333626,
+      "core_only_window_end_seconds": 0.055,
+      "edge_density_gain": 0.04798875128949945,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_cd1768082e57a7b63ab3",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.4541663027338632,
+        "center_luminance": 0.46895527839660645,
+        "edge_density": 0.09072551564979085,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_002_pfg_cd1768082e57a7b63ab3/captures/frame_002_0_050.png",
+        "time_seconds": 0.05000000074505806,
+        "visible_area_ratio": 0.05077880859375,
+        "visible_luma_mean": 0.6409463882446289,
+        "visible_luma_std": 0.3479406535625458
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_002_pfg_cd1768082e57a7b63ab3",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.05216601490974426
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7876943881000676,
+        "center_luminance": 0.6571279168128967,
+        "edge_density": 0.03801348865726548,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_003_pfg_473e36ca82995eb49071/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.079638671875,
+        "visible_luma_mean": 0.5372818112373352,
+        "visible_luma_std": 0.4004364311695099
+      },
+      "bbox_fill_reduction": 0.3328408859492682,
+      "candidate_id": "layered_material_pair_003_pfg_473e36ca82995eb49071",
+      "center_luminance_ratio": 0.7524886897939069,
+      "core_only_window_end_seconds": 0.035,
+      "edge_density_gain": 0.054148709674357844,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_473e36ca82995eb49071",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.45485350215079945,
+        "center_luminance": 0.49448132514953613,
+        "edge_density": 0.09216219833162333,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_003_pfg_473e36ca82995eb49071/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.05472900390625,
+        "visible_luma_mean": 0.6503155827522278,
+        "visible_luma_std": 0.34997427463531494
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_003_pfg_473e36ca82995eb49071",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.050462156534194946
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7901058780576853,
+        "center_luminance": 0.4622941315174103,
+        "edge_density": 0.06968254701723581,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_004_pfg_9f7ef36cf1f7f50a6357/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.05283447265625,
+        "visible_luma_mean": 0.5420292615890503,
+        "visible_luma_std": 0.39957234263420105
+      },
+      "bbox_fill_reduction": 0.33608462458588234,
+      "candidate_id": "layered_material_pair_004_pfg_9f7ef36cf1f7f50a6357",
+      "center_luminance_ratio": 0.8262051285787013,
+      "core_only_window_end_seconds": 0.045000000000000005,
+      "edge_density_gain": 0.04189402057369444,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_9f7ef36cf1f7f50a6357",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.45402125347180294,
+        "center_luminance": 0.381949782371521,
+        "edge_density": 0.11157656759093025,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_004_pfg_9f7ef36cf1f7f50a6357/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.03671630859375,
+        "visible_luma_mean": 0.6505351066589355,
+        "visible_luma_std": 0.3499274253845215
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_004_pfg_9f7ef36cf1f7f50a6357",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.049644917249679565
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7911480784408961,
+        "center_luminance": 0.542451798915863,
+        "edge_density": 0.053794797022484846,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_005_pfg_d3d24ce2b9d7d34e8699/captures/frame_002_0_050.png",
+        "time_seconds": 0.05000000074505806,
+        "visible_area_ratio": 0.0636279296875,
+        "visible_luma_mean": 0.5370752215385437,
+        "visible_luma_std": 0.3999927043914795
+      },
+      "bbox_fill_reduction": 0.3359980784408961,
+      "candidate_id": "layered_material_pair_005_pfg_d3d24ce2b9d7d34e8699",
+      "center_luminance_ratio": 0.7988083725541107,
+      "core_only_window_end_seconds": 0.055,
+      "edge_density_gain": 0.043151264715403766,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_d3d24ce2b9d7d34e8699",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.45515,
+        "center_luminance": 0.4333150386810303,
+        "edge_density": 0.09694606173788861,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_005_pfg_d3d24ce2b9d7d34e8699/captures/frame_002_0_050.png",
+        "time_seconds": 0.05000000074505806,
+        "visible_area_ratio": 0.0444482421875,
+        "visible_luma_mean": 0.6420810222625732,
+        "visible_luma_std": 0.34661993384361267
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_005_pfg_d3d24ce2b9d7d34e8699",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.05337277054786682
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7909616974373106,
+        "center_luminance": 0.5925899744033813,
+        "edge_density": 0.04741499442586399,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_006_pfg_278f6049e49f716babb1/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.070078125,
+        "visible_luma_mean": 0.5393379330635071,
+        "visible_luma_std": 0.40002211928367615
+      },
+      "bbox_fill_reduction": 0.33552530690476623,
+      "candidate_id": "layered_material_pair_006_pfg_278f6049e49f716babb1",
+      "center_luminance_ratio": 0.7802554010708096,
+      "core_only_window_end_seconds": 0.035,
+      "edge_density_gain": 0.050027149301298,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_278f6049e49f716babb1",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.45543639053254437,
+        "center_luminance": 0.4623715281486511,
+        "edge_density": 0.09744214372716199,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_006_pfg_278f6049e49f716babb1/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.04810546875,
+        "visible_luma_mean": 0.653008222579956,
+        "visible_luma_std": 0.34843727946281433
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_006_pfg_278f6049e49f716babb1",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.051584839820861816
+    },
+    {
+      "baseline_peak": {
+        "bbox_fill_ratio": 0.7955592588961866,
+        "center_luminance": 0.6555135250091553,
+        "edge_density": 0.03779804078614996,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_baselines/layered_material_pair_007_pfg_8ed9e47d88d1b2b7a9d7/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.0792529296875,
+        "visible_luma_mean": 0.5381821990013123,
+        "visible_luma_std": 0.4002610743045807
+      },
+      "bbox_fill_reduction": 0.3366129779044511,
+      "candidate_id": "layered_material_pair_007_pfg_8ed9e47d88d1b2b7a9d7",
+      "center_luminance_ratio": 0.7536924565627042,
+      "core_only_window_end_seconds": 0.045000000000000005,
+      "edge_density_gain": 0.0538149786169023,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[0].parameters.texture_asset_path"
+        ],
+        "expected_difference_path": "components.particle_systems[0].parameters.texture_asset_path",
+        "only_core_texture_differs": true
+      },
+      "guided_graph_id": "pfg_8ed9e47d88d1b2b7a9d7",
+      "guided_peak": {
+        "bbox_fill_ratio": 0.4589462809917355,
+        "center_luminance": 0.4940555989742279,
+        "edge_density": 0.09161301940305226,
+        "path": "workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/runtime_captures/layered_material_pair_007_pfg_8ed9e47d88d1b2b7a9d7/captures/frame_001_0_025.png",
+        "time_seconds": 0.02500000037252903,
+        "visible_area_ratio": 0.05423095703125,
+        "visible_luma_mean": 0.6541564464569092,
+        "visible_luma_std": 0.34833258390426636
+      },
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "structured_core_breaks_flat_fill": true,
+        "structured_core_has_more_edge_structure": true,
+        "structured_core_remains_visible": true
+      },
+      "source_candidate_id": "layered_explosion_007_pfg_8ed9e47d88d1b2b7a9d7",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_core_texture": true,
+        "equal_nonzero_frame_count": true,
+        "flat_compile_pass": true,
+        "flat_prefab_api_readback_pass": true,
+        "flat_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_core_texture_structure_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_core_texture_structure_within_verified_pair"
+      },
+      "visible_luma_std_gain": -0.05192849040031433
+    }
+  ],
+  "run_id": "layered_explosion_material_ablation_r001",
+  "schema_version": "vfx_professional_explosion_material_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "explosion_core_texture_rule_controller_only",
+      "effect_family": "explosion",
+      "judgment_axis": "core_texture_structure",
+      "minimum_bbox_fill_reduction": 0.08,
+      "minimum_center_luminance_ratio": 0.25,
+      "minimum_luma_std_gain": 0.02,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/graphs/structured_flame.json",
+      "status": "eligible",
+      "target_role": "core"
+    },
+    "effect_family": "explosion",
+    "expert_judgment": "火焰不能只是一整块高亮贴片；应保留中心高亮、外部暗色、可识别轮廓和软边结构。",
+    "judgment_axes": [
+      "material",
+      "core_readability",
+      "composition"
+    ],
+    "record_id": "professional_explosion_core_texture_structure_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_explosion_material_r001/reproduction_report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology explosion Core texture pairs only"
+}

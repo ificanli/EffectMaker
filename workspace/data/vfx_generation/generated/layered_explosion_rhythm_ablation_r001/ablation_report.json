@@ -1,0 +1,591 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-03T20:55:46.632081+00:00",
+  "professional_rule_transfer_pass_count": 8,
+  "records": [
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.010875526393105475,
+        "last_visible_time_seconds": 0.949999988079071,
+        "late_active_ratio": 0.25,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_000_pfg_4345e832edb46e1f10ea",
+      "early_outer_visible_reduction": 0.004699588678875723,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_4345e832edb46e1f10ea",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.006175937714229752,
+        "last_visible_time_seconds": 1.149999976158142,
+        "late_active_ratio": 0.65,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.19999998807907104,
+      "late_active_ratio_gain": 0.4,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_000_pfg_4345e832edb46e1f10ea",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.07,
+        "residual": 0.2,
+        "support": 0.04
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.01346709431005778,
+        "last_visible_time_seconds": 1.024999976158142,
+        "late_active_ratio": 0.4,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_001_pfg_be1dabde65502a49afd7",
+      "early_outer_visible_reduction": 0.005938448731759867,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_be1dabde65502a49afd7",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.0075286455782979135,
+        "last_visible_time_seconds": 1.25,
+        "late_active_ratio": 0.85,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.2250000238418579,
+      "late_active_ratio_gain": 0.44999999999999996,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_001_pfg_be1dabde65502a49afd7",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.08,
+        "residual": 0.225,
+        "support": 0.05
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.016406326510625797,
+        "last_visible_time_seconds": 1.100000023841858,
+        "late_active_ratio": 0.55,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_002_pfg_ab7484adcf337080a563",
+      "early_outer_visible_reduction": 0.007573939868768975,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_ab7484adcf337080a563",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.008832386641856822,
+        "last_visible_time_seconds": 1.350000023841858,
+        "late_active_ratio": 1.0,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.25,
+      "late_active_ratio_gain": 0.44999999999999996,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_002_pfg_ab7484adcf337080a563",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.07,
+        "residual": 0.25,
+        "support": 0.06
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.01757296053275879,
+        "last_visible_time_seconds": 0.949999988079071,
+        "late_active_ratio": 0.25,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_003_pfg_d9b87d4c75b2c555428f",
+      "early_outer_visible_reduction": 0.007205464694936834,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_d9b87d4c75b2c555428f",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.010367495837821957,
+        "last_visible_time_seconds": 1.225000023841858,
+        "late_active_ratio": 0.8,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.27500003576278687,
+      "late_active_ratio_gain": 0.55,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_003_pfg_d9b87d4c75b2c555428f",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.08,
+        "residual": 0.275,
+        "support": 0.04
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.011367642738223483,
+        "last_visible_time_seconds": 1.024999976158142,
+        "late_active_ratio": 0.4,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_004_pfg_afe5033ee51bb0d7476c",
+      "early_outer_visible_reduction": 0.005177014983840955,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_afe5033ee51bb0d7476c",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.006190627754382528,
+        "last_visible_time_seconds": 1.225000023841858,
+        "late_active_ratio": 0.8,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.20000004768371582,
+      "late_active_ratio_gain": 0.4,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_004_pfg_afe5033ee51bb0d7476c",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.07,
+        "residual": 0.2,
+        "support": 0.05
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.013262657917931643,
+        "last_visible_time_seconds": 1.100000023841858,
+        "late_active_ratio": 0.55,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_005_pfg_737d87d90084dd6bf5ed",
+      "early_outer_visible_reduction": 0.005836842620703164,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_737d87d90084dd6bf5ed",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.0074258152972284785,
+        "last_visible_time_seconds": 1.3250000476837158,
+        "late_active_ratio": 1.0,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.2250000238418579,
+      "late_active_ratio_gain": 0.44999999999999996,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_005_pfg_737d87d90084dd6bf5ed",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.08,
+        "residual": 0.225,
+        "support": 0.06
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.015415972970326118,
+        "last_visible_time_seconds": 0.949999988079071,
+        "late_active_ratio": 0.25,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_006_pfg_ad4cd9f53a620cbb4c6a",
+      "early_outer_visible_reduction": 0.006511360297718146,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_ad4cd9f53a620cbb4c6a",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.008904612672607972,
+        "last_visible_time_seconds": 1.2000000476837158,
+        "late_active_ratio": 0.75,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.2500000596046448,
+      "late_active_ratio_gain": 0.5,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_006_pfg_ad4cd9f53a620cbb4c6a",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.07,
+        "residual": 0.25,
+        "support": 0.04
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    },
+    {
+      "baseline_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.017390559200861817,
+        "last_visible_time_seconds": 1.0499999523162842,
+        "late_active_ratio": 0.45,
+        "outer_onset_seconds": 0.0
+      },
+      "candidate_id": "layered_rhythm_pair_007_pfg_bd21c84e0d2ce0f9c606",
+      "early_outer_visible_reduction": 0.00704142591323083,
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_delay_max",
+          "components.particle_systems[2].parameters.start_delay_max",
+          "components.particle_systems[3].parameters.start_delay_max"
+        ],
+        "only_layer_delays_differ": true
+      },
+      "guided_graph_id": "pfg_bd21c84e0d2ce0f9c606",
+      "guided_rhythm": {
+        "center_onset_seconds": 0.0,
+        "early_outer_visible_mean": 0.010349133287630987,
+        "last_visible_time_seconds": 1.3250000476837158,
+        "late_active_ratio": 1.0,
+        "outer_onset_seconds": 0.0
+      },
+      "last_visible_time_gain_seconds": 0.27500009536743164,
+      "late_active_ratio_gain": 0.55,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "staged_graph_orders_core_support_hit_residual": true,
+        "staging_preserves_late_residual": true,
+        "staging_reduces_early_outer_overlap": true
+      },
+      "source_candidate_id": "layered_explosion_007_pfg_bd21c84e0d2ce0f9c606",
+      "staged_delays_seconds": {
+        "core": 0.0,
+        "hit": 0.08,
+        "residual": 0.275,
+        "support": 0.05
+      },
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_layer_delays": true,
+        "equal_nonzero_frame_count": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true,
+        "simultaneous_compile_pass": true,
+        "simultaneous_prefab_api_readback_pass": true,
+        "simultaneous_texture_readback_matches_plan": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "explosion_staged_rhythm_rule_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_staged_rhythm_within_verified_pair"
+      }
+    }
+  ],
+  "run_id": "layered_explosion_rhythm_ablation_r001",
+  "schema_version": "vfx_professional_explosion_rhythm_ablation_batch.v1",
+  "status": "pass",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "explosion_staged_rhythm_controller_only",
+      "effect_family": "explosion",
+      "judgment_axis": "staged_rhythm",
+      "minimum_early_outer_visible_reduction": 5e-05,
+      "minimum_last_visible_time_gain_seconds": 0.15,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/graphs/staged_layers.json",
+      "required_delay_order": [
+        "core",
+        "support",
+        "hit",
+        "residual"
+      ],
+      "status": "eligible",
+      "target_role": "multi_layer"
+    },
+    "effect_family": "explosion",
+    "expert_judgment": "完整爆炸应按中心亮点、扩散线与碎片、残光小元素的顺序分层出现，并在短爆发后快速收束而不是全部同时起播和消失。",
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation",
+      "composition"
+    ],
+    "record_id": "professional_explosion_staged_rhythm_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/reproduction_report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology explosion staged-rhythm pairs only"
+}
