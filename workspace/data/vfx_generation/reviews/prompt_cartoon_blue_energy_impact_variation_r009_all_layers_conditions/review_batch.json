@@ -1,0 +1,95 @@
+{
+  "schema_version": "prompt_condition_review_batch.v1",
+  "created_at": "2026-09-01T01:07:49.645564+00:00",
+  "batch_id": "prompt_cartoon_blue_energy_impact_variation_r009_all_layers_conditions",
+  "source_variation_manifest": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/variant_manifest.json",
+  "prompt_condition": {
+    "schema_version": "vfx_prompt_condition.v1",
+    "prompt_id": "prompt_cartoon_blue_energy_impact_001",
+    "text": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+    "style_family": "cartoon",
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_families": [
+      "explosion"
+    ],
+    "source_categories": [
+      "battle"
+    ],
+    "motion_keywords": [
+      "burst",
+      "impact",
+      "trail"
+    ],
+    "timing_profile": "fast_impact",
+    "negative_constraints": [
+      "长拖尾"
+    ],
+    "candidate_count": 6,
+    "seed": 20260831
+  },
+  "selected_count": 1,
+  "records": [
+    {
+      "review_index": 1,
+      "batch_id": "prompt_cartoon_blue_energy_impact_variation_r009_all_layers_conditions",
+      "candidate_id": "pcv_005_blue_fast_impact_multi_material_particle",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab",
+      "effect_family_hint": "explosion",
+      "duration_seconds": 0.6499999761581421,
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_000_0_000.png"
+        },
+        {
+          "time_seconds": 0.06499999761581421,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_001_0_065.png"
+        },
+        {
+          "time_seconds": 0.12999999523162842,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_002_0_130.png"
+        },
+        {
+          "time_seconds": 0.19499999284744263,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_003_0_195.png"
+        },
+        {
+          "time_seconds": 0.25999999046325684,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_004_0_260.png"
+        },
+        {
+          "time_seconds": 0.32499998807907104,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_005_0_325.png"
+        },
+        {
+          "time_seconds": 0.38999998569488525,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_006_0_390.png"
+        },
+        {
+          "time_seconds": 0.45500001311302185,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_007_0_455.png"
+        },
+        {
+          "time_seconds": 0.5199999809265137,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_008_0_520.png"
+        },
+        {
+          "time_seconds": 0.5849999785423279,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_009_0_585.png"
+        },
+        {
+          "time_seconds": 0.6499999761581421,
+          "path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/candidates/pcv_005_blue_fast_impact_multi_material_particle/frames/frame_010_0_650.png"
+        }
+      ],
+      "source_prefab_label": null,
+      "quality_feedback_is_separate": true,
+      "feedback_status": "pending",
+      "review_subject": "prompt_variation",
+      "review_subject_cn": "受约束变异结果（本次运行）",
+      "variation_manifest": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_variation_r009_all_layers/variant_manifest.json"
+    }
+  ]
+}

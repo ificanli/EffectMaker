@@ -1,0 +1,790 @@
+{
+  "batch_id": "prefab_active_review_full_r008",
+  "records": {
+    "sample_00f5b9e2c42d93886872": {
+      "latest": {
+        "action": "AI判断正确",
+        "ai_draft": {
+          "label_provenance": {
+            "confidence": 0.65,
+            "created_at": "2026-09-03T07:13:16.347123+00:00",
+            "distance": null,
+            "label_source": "ai_pseudo_label",
+            "model_version": "weak_metadata_visual_teacher.v1",
+            "parent_human_record_id": null,
+            "reviewer": null
+          },
+          "labels": {
+            "decision": null,
+            "issues": [],
+            "observed_color_tags": [
+              "blue"
+            ],
+            "observed_element_tags": [
+              "ice"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "training": {
+            "eligible_tasks": [
+              "element_semisupervision",
+              "color_semisupervision",
+              "active_learning_priority"
+            ],
+            "excluded_tasks": [
+              "human_gold",
+              "regression_evaluation",
+              "model_promotion",
+              "preference_training"
+            ],
+            "expires_with_model_version": true,
+            "frozen": false,
+            "split": "train",
+            "weight": 0.13
+          }
+        },
+        "batch_id": "prefab_active_review_full_r008",
+        "confirmation_mode": "human_accepted_ai_draft",
+        "correction": {
+          "action": "AI判断正确",
+          "label_delta": {
+            "ai_effect_type": "ice",
+            "selected_effect_type": "ice",
+            "semantic_scope": "function_only"
+          }
+        },
+        "evidence": {
+          "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/capture_manifest.json",
+          "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+          "dynamic_frame_paths": [
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_000_0_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_001_0_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_002_0_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_003_0_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_004_0_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_005_0_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_006_0_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_007_0_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_008_0_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_009_0_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_010_1_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_011_1_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_012_1_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_013_1_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_014_1_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_015_1_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_016_1_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_017_1_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_018_1_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_019_1_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_020_2_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_021_2_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_022_2_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_023_2_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_024_2_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_025_2_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_026_2_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_027_2_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_028_2_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_029_2_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_030_3_000.png"
+          ],
+          "webgl_catalog_id": null
+        },
+        "notes": "",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_BDSX_bingzhui/Fx_BDSX_bignzhui.prefab",
+        "record_id": "active_feedback_1b82dbfd92efea690138",
+        "result": {
+          "disposition": "human_gold",
+          "eligible_tasks": [
+            "effect_family_supervision",
+            "pseudo_label_calibration"
+          ],
+          "exclusion_reason": null,
+          "labels": {
+            "decision": "AI判断正确",
+            "decisions": [
+              "AI判断正确"
+            ],
+            "issues": [],
+            "observed_color_tags": [],
+            "observed_element_tags": [
+              "ice"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "trainable": true
+        },
+        "review_scope": "semantic_function_only",
+        "reviewed_at": "2026-09-03T07:46:24.753865+00:00",
+        "reviewer": "local_human",
+        "sample_id": "sample_00f5b9e2c42d93886872",
+        "schema_version": "vfx_prefab_active_review_feedback.v1",
+        "selected_actions": [
+          "AI判断正确"
+        ],
+        "semantic_selection": {
+          "ai_effect_type": "ice",
+          "selected_effect_type": "ice",
+          "selected_effect_type_cn": "冰霜"
+        }
+      },
+      "revisions": [
+        {
+          "action": "AI判断正确",
+          "ai_draft": {
+            "label_provenance": {
+              "confidence": 0.65,
+              "created_at": "2026-09-03T07:13:16.347123+00:00",
+              "distance": null,
+              "label_source": "ai_pseudo_label",
+              "model_version": "weak_metadata_visual_teacher.v1",
+              "parent_human_record_id": null,
+              "reviewer": null
+            },
+            "labels": {
+              "decision": null,
+              "issues": [],
+              "observed_color_tags": [
+                "blue"
+              ],
+              "observed_element_tags": [
+                "ice"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "training": {
+              "eligible_tasks": [
+                "element_semisupervision",
+                "color_semisupervision",
+                "active_learning_priority"
+              ],
+              "excluded_tasks": [
+                "human_gold",
+                "regression_evaluation",
+                "model_promotion",
+                "preference_training"
+              ],
+              "expires_with_model_version": true,
+              "frozen": false,
+              "split": "train",
+              "weight": 0.13
+            }
+          },
+          "batch_id": "prefab_active_review_full_r008",
+          "confirmation_mode": "human_accepted_ai_draft",
+          "correction": {
+            "action": "AI判断正确",
+            "label_delta": {
+              "ai_effect_type": "ice",
+              "selected_effect_type": "ice",
+              "semantic_scope": "function_only"
+            }
+          },
+          "evidence": {
+            "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/capture_manifest.json",
+            "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+            "dynamic_frame_paths": [
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_000_0_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_001_0_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_002_0_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_003_0_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_004_0_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_005_0_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_006_0_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_007_0_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_008_0_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_009_0_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_010_1_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_011_1_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_012_1_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_013_1_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_014_1_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_015_1_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_016_1_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_017_1_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_018_1_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_019_1_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_020_2_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_021_2_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_022_2_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_023_2_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_024_2_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_025_2_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_026_2_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_027_2_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_028_2_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_029_2_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r003/cases/full_prefab_0014_ccf5ba96404a/captures/frame_030_3_000.png"
+            ],
+            "webgl_catalog_id": null
+          },
+          "notes": "",
+          "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_BDSX_bingzhui/Fx_BDSX_bignzhui.prefab",
+          "record_id": "active_feedback_1b82dbfd92efea690138",
+          "result": {
+            "disposition": "human_gold",
+            "eligible_tasks": [
+              "effect_family_supervision",
+              "pseudo_label_calibration"
+            ],
+            "exclusion_reason": null,
+            "labels": {
+              "decision": "AI判断正确",
+              "decisions": [
+                "AI判断正确"
+              ],
+              "issues": [],
+              "observed_color_tags": [],
+              "observed_element_tags": [
+                "ice"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "trainable": true
+          },
+          "review_scope": "semantic_function_only",
+          "reviewed_at": "2026-09-03T07:46:24.753865+00:00",
+          "reviewer": "local_human",
+          "sample_id": "sample_00f5b9e2c42d93886872",
+          "schema_version": "vfx_prefab_active_review_feedback.v1",
+          "selected_actions": [
+            "AI判断正确"
+          ],
+          "semantic_selection": {
+            "ai_effect_type": "ice",
+            "selected_effect_type": "ice",
+            "selected_effect_type_cn": "冰霜"
+          }
+        }
+      ]
+    },
+    "sample_05afabb60e799dc067b2": {
+      "latest": {
+        "action": "特效类型错误",
+        "ai_draft": {
+          "label_provenance": {
+            "confidence": 0.65,
+            "created_at": "2026-09-03T07:13:13.858614+00:00",
+            "distance": null,
+            "label_source": "ai_pseudo_label",
+            "model_version": "weak_metadata_visual_teacher.v1",
+            "parent_human_record_id": null,
+            "reviewer": null
+          },
+          "labels": {
+            "decision": null,
+            "issues": [],
+            "observed_color_tags": [
+              "purple",
+              "red"
+            ],
+            "observed_element_tags": [
+              "fire"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "training": {
+            "eligible_tasks": [
+              "element_semisupervision",
+              "color_semisupervision",
+              "active_learning_priority"
+            ],
+            "excluded_tasks": [
+              "human_gold",
+              "regression_evaluation",
+              "model_promotion",
+              "preference_training"
+            ],
+            "expires_with_model_version": true,
+            "frozen": false,
+            "split": "train",
+            "weight": 0.13
+          }
+        },
+        "batch_id": "prefab_active_review_full_r008",
+        "confirmation_mode": "human_corrected_ai_draft",
+        "correction": {
+          "action": "特效类型错误",
+          "label_delta": {
+            "ai_effect_type": "fire",
+            "selected_effect_type": "unclassified",
+            "semantic_scope": "function_only"
+          }
+        },
+        "evidence": {
+          "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/capture_manifest.json",
+          "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+          "dynamic_frame_paths": [
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_000_0_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_001_0_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_002_0_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_003_0_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_004_0_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_005_0_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_006_0_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_007_0_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_008_0_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_009_0_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_010_1_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_011_1_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_012_1_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_013_1_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_014_1_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_015_1_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_016_1_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_017_1_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_018_1_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_019_1_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_020_2_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_021_2_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_022_2_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_023_2_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_024_2_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_025_2_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_026_2_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_027_2_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_028_2_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_029_2_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_030_3_000.png"
+          ],
+          "webgl_catalog_id": null
+        },
+        "notes": "烟花！和火焰有所区别",
+        "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Firework/FireworkRedCluster.prefab",
+        "record_id": "active_feedback_3f450d84fb526562d7f6",
+        "result": {
+          "disposition": "human_gold",
+          "eligible_tasks": [
+            "effect_family_supervision",
+            "pseudo_label_calibration"
+          ],
+          "exclusion_reason": null,
+          "labels": {
+            "decision": "特效类型错误",
+            "decisions": [
+              "特效类型错误"
+            ],
+            "issues": [
+              "特效类型错误"
+            ],
+            "observed_color_tags": [],
+            "observed_element_tags": [
+              "unclassified"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "trainable": true
+        },
+        "review_scope": "semantic_function_only",
+        "reviewed_at": "2026-09-03T07:46:41.723335+00:00",
+        "reviewer": "local_human",
+        "sample_id": "sample_05afabb60e799dc067b2",
+        "schema_version": "vfx_prefab_active_review_feedback.v1",
+        "selected_actions": [
+          "特效类型错误"
+        ],
+        "semantic_selection": {
+          "ai_effect_type": "fire",
+          "selected_effect_type": "unclassified",
+          "selected_effect_type_cn": "其他"
+        }
+      },
+      "revisions": [
+        {
+          "action": "特效类型错误",
+          "ai_draft": {
+            "label_provenance": {
+              "confidence": 0.65,
+              "created_at": "2026-09-03T07:13:13.858614+00:00",
+              "distance": null,
+              "label_source": "ai_pseudo_label",
+              "model_version": "weak_metadata_visual_teacher.v1",
+              "parent_human_record_id": null,
+              "reviewer": null
+            },
+            "labels": {
+              "decision": null,
+              "issues": [],
+              "observed_color_tags": [
+                "purple",
+                "red"
+              ],
+              "observed_element_tags": [
+                "fire"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "training": {
+              "eligible_tasks": [
+                "element_semisupervision",
+                "color_semisupervision",
+                "active_learning_priority"
+              ],
+              "excluded_tasks": [
+                "human_gold",
+                "regression_evaluation",
+                "model_promotion",
+                "preference_training"
+              ],
+              "expires_with_model_version": true,
+              "frozen": false,
+              "split": "train",
+              "weight": 0.13
+            }
+          },
+          "batch_id": "prefab_active_review_full_r008",
+          "confirmation_mode": "human_corrected_ai_draft",
+          "correction": {
+            "action": "特效类型错误",
+            "label_delta": {
+              "ai_effect_type": "fire",
+              "selected_effect_type": "unclassified",
+              "semantic_scope": "function_only"
+            }
+          },
+          "evidence": {
+            "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/capture_manifest.json",
+            "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+            "dynamic_frame_paths": [
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_000_0_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_001_0_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_002_0_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_003_0_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_004_0_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_005_0_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_006_0_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_007_0_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_008_0_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_009_0_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_010_1_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_011_1_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_012_1_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_013_1_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_014_1_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_015_1_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_016_1_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_017_1_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_018_1_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_019_1_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_020_2_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_021_2_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_022_2_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_023_2_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_024_2_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_025_2_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_026_2_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_027_2_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_028_2_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_029_2_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0027_ebeedec1f234/captures/frame_030_3_000.png"
+            ],
+            "webgl_catalog_id": null
+          },
+          "notes": "烟花！和火焰有所区别",
+          "prefab_path": "Assets/Epic Toon FX/Prefabs/Environment/Firework/FireworkRedCluster.prefab",
+          "record_id": "active_feedback_3f450d84fb526562d7f6",
+          "result": {
+            "disposition": "human_gold",
+            "eligible_tasks": [
+              "effect_family_supervision",
+              "pseudo_label_calibration"
+            ],
+            "exclusion_reason": null,
+            "labels": {
+              "decision": "特效类型错误",
+              "decisions": [
+                "特效类型错误"
+              ],
+              "issues": [
+                "特效类型错误"
+              ],
+              "observed_color_tags": [],
+              "observed_element_tags": [
+                "unclassified"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "trainable": true
+          },
+          "review_scope": "semantic_function_only",
+          "reviewed_at": "2026-09-03T07:46:41.723335+00:00",
+          "reviewer": "local_human",
+          "sample_id": "sample_05afabb60e799dc067b2",
+          "schema_version": "vfx_prefab_active_review_feedback.v1",
+          "selected_actions": [
+            "特效类型错误"
+          ],
+          "semantic_selection": {
+            "ai_effect_type": "fire",
+            "selected_effect_type": "unclassified",
+            "selected_effect_type_cn": "其他"
+          }
+        }
+      ]
+    },
+    "sample_eb48ef8bec76b8b45d06": {
+      "latest": {
+        "action": "AI判断正确",
+        "ai_draft": {
+          "label_provenance": {
+            "confidence": 0.65,
+            "created_at": "2026-09-03T07:13:13.631557+00:00",
+            "distance": null,
+            "label_source": "ai_pseudo_label",
+            "model_version": "weak_metadata_visual_teacher.v1",
+            "parent_human_record_id": null,
+            "reviewer": null
+          },
+          "labels": {
+            "decision": null,
+            "issues": [],
+            "observed_color_tags": [
+              "gray",
+              "white"
+            ],
+            "observed_element_tags": [
+              "slash"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "training": {
+            "eligible_tasks": [
+              "element_semisupervision",
+              "color_semisupervision",
+              "active_learning_priority"
+            ],
+            "excluded_tasks": [
+              "human_gold",
+              "regression_evaluation",
+              "model_promotion",
+              "preference_training"
+            ],
+            "expires_with_model_version": true,
+            "frozen": false,
+            "split": "train",
+            "weight": 0.13
+          }
+        },
+        "batch_id": "prefab_active_review_full_r008",
+        "confirmation_mode": "human_accepted_ai_draft",
+        "correction": {
+          "action": "AI判断正确",
+          "label_delta": {
+            "ai_effect_type": "slash",
+            "selected_effect_type": "slash",
+            "semantic_scope": "function_only"
+          }
+        },
+        "evidence": {
+          "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/capture_manifest.json",
+          "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+          "dynamic_frame_paths": [
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_000_0_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_001_0_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_002_0_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_003_0_300.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_004_0_400.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_005_0_500.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_006_0_600.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_007_0_700.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_008_0_800.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_009_0_900.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_010_1_000.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_011_1_100.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_012_1_200.png",
+            "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_013_1_300.png"
+          ],
+          "webgl_catalog_id": null
+        },
+        "notes": "",
+        "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Sword/Slash/SwordSlashThick/SwordSlashThickWhite.prefab",
+        "record_id": "active_feedback_ea240c4ca2b21c85ed66",
+        "result": {
+          "disposition": "human_gold",
+          "eligible_tasks": [
+            "effect_family_supervision",
+            "pseudo_label_calibration"
+          ],
+          "exclusion_reason": null,
+          "labels": {
+            "decision": "AI判断正确",
+            "decisions": [
+              "AI判断正确"
+            ],
+            "issues": [],
+            "observed_color_tags": [],
+            "observed_element_tags": [
+              "slash"
+            ],
+            "quality_score": null,
+            "scores": {},
+            "target_color_tags": [],
+            "target_effect_family": null
+          },
+          "trainable": true
+        },
+        "review_scope": "semantic_function_only",
+        "reviewed_at": "2026-09-03T07:47:14.349124+00:00",
+        "reviewer": "local_human",
+        "sample_id": "sample_eb48ef8bec76b8b45d06",
+        "schema_version": "vfx_prefab_active_review_feedback.v1",
+        "selected_actions": [
+          "AI判断正确"
+        ],
+        "semantic_selection": {
+          "ai_effect_type": "slash",
+          "selected_effect_type": "slash",
+          "selected_effect_type_cn": "刀光/挥砍"
+        }
+      },
+      "revisions": [
+        {
+          "action": "AI判断正确",
+          "ai_draft": {
+            "label_provenance": {
+              "confidence": 0.65,
+              "created_at": "2026-09-03T07:13:13.631557+00:00",
+              "distance": null,
+              "label_source": "ai_pseudo_label",
+              "model_version": "weak_metadata_visual_teacher.v1",
+              "parent_human_record_id": null,
+              "reviewer": null
+            },
+            "labels": {
+              "decision": null,
+              "issues": [],
+              "observed_color_tags": [
+                "gray",
+                "white"
+              ],
+              "observed_element_tags": [
+                "slash"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "training": {
+              "eligible_tasks": [
+                "element_semisupervision",
+                "color_semisupervision",
+                "active_learning_priority"
+              ],
+              "excluded_tasks": [
+                "human_gold",
+                "regression_evaluation",
+                "model_promotion",
+                "preference_training"
+              ],
+              "expires_with_model_version": true,
+              "frozen": false,
+              "split": "train",
+              "weight": 0.13
+            }
+          },
+          "batch_id": "prefab_active_review_full_r008",
+          "confirmation_mode": "human_accepted_ai_draft",
+          "correction": {
+            "action": "AI判断正确",
+            "label_delta": {
+              "ai_effect_type": "slash",
+              "selected_effect_type": "slash",
+              "semantic_scope": "function_only"
+            }
+          },
+          "evidence": {
+            "capture_manifest_path": "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/capture_manifest.json",
+            "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+            "dynamic_frame_paths": [
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_000_0_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_001_0_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_002_0_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_003_0_300.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_004_0_400.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_005_0_500.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_006_0_600.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_007_0_700.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_008_0_800.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_009_0_900.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_010_1_000.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_011_1_100.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_012_1_200.png",
+              "workspace/data/vfx_generation/captures/full_prefab_capture_r002/cases/full_prefab_0041_d5004e5e47a9/captures/frame_013_1_300.png"
+            ],
+            "webgl_catalog_id": null
+          },
+          "notes": "",
+          "prefab_path": "Assets/Epic Toon FX/Prefabs/Combat/Sword/Slash/SwordSlashThick/SwordSlashThickWhite.prefab",
+          "record_id": "active_feedback_ea240c4ca2b21c85ed66",
+          "result": {
+            "disposition": "human_gold",
+            "eligible_tasks": [
+              "effect_family_supervision",
+              "pseudo_label_calibration"
+            ],
+            "exclusion_reason": null,
+            "labels": {
+              "decision": "AI判断正确",
+              "decisions": [
+                "AI判断正确"
+              ],
+              "issues": [],
+              "observed_color_tags": [],
+              "observed_element_tags": [
+                "slash"
+              ],
+              "quality_score": null,
+              "scores": {},
+              "target_color_tags": [],
+              "target_effect_family": null
+            },
+            "trainable": true
+          },
+          "review_scope": "semantic_function_only",
+          "reviewed_at": "2026-09-03T07:47:14.349124+00:00",
+          "reviewer": "local_human",
+          "sample_id": "sample_eb48ef8bec76b8b45d06",
+          "schema_version": "vfx_prefab_active_review_feedback.v1",
+          "selected_actions": [
+            "AI判断正确"
+          ],
+          "semantic_selection": {
+            "ai_effect_type": "slash",
+            "selected_effect_type": "slash",
+            "selected_effect_type_cn": "刀光/挥砍"
+          }
+        }
+      ]
+    }
+  },
+  "schema_version": "vfx_prefab_active_review_store.v1"
+}

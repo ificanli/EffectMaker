@@ -1,0 +1,28 @@
+{
+  "schema_version": "vfx_effect_type_normalization.v1",
+  "created_at": "2026-09-03T12:20:00+00:00",
+  "source_review_batch": "prefab_active_review_full_r010",
+  "normalized_review_batch": "prefab_active_review_full_r011",
+  "input_feedback_count": 32,
+  "human_gold_count": 32,
+  "exclusion_count": 0,
+  "action_counts": {
+    "AI判断正确": 19,
+    "特效元素错误": 11,
+    "特效类型错误": 2,
+    "无法播放": 0,
+    "无法判断": 0
+  },
+  "canonical_effect_type": {
+    "value": "impact",
+    "label": "命中/爆点",
+    "aliases": ["hit", "命中/受击", "爆点/命中"]
+  },
+  "quality_gates": {
+    "input_feedback_complete": 1,
+    "human_gold_complete": 1,
+    "hit_alias_as_independent_type": 0,
+    "history_overwritten": 0
+  },
+  "status": "pass"
+}

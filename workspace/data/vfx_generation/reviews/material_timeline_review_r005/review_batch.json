@@ -1,0 +1,645 @@
+{
+  "schema_version": "prefab_human_review_batch.v3",
+  "created_at": "2026-08-29T17:38:07.966354+00:00",
+  "batch_id": "material_timeline_review_r005",
+  "source_dataset": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/run_manifest.json",
+  "source_run": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/run_manifest.json",
+  "selection_strategy": "material_timeline_webgl_review.v1",
+  "requested_count": 3,
+  "selected_count": 3,
+  "review_route_counts": {
+    "可评价": 3
+  },
+  "technical_status_counts": {
+    "particle_playable": 3
+  },
+  "webgl_catalog": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/webgl_catalog_r003.json",
+  "prefab_audit": "workspace/data/vfx_generation/audits/effectdemo_prefab_structure_audit_r3.json",
+  "unity_project": "UnityDemo/EffectDemo",
+  "webgl_status_counts": {
+    "webgl_ready": 3
+  },
+  "records": [
+    {
+      "candidate_id": "source_prefab_001_fx_bosstips",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_bosstips/FX_BossTips.prefab",
+      "source_category": [
+        "battle"
+      ],
+      "effect_family_hint": "source_ingest",
+      "technical_status": "particle_playable",
+      "technical_status_cn": "可独立播放",
+      "review_route": "可评价",
+      "visibility_status": "可见",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 3.5,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.034298,
+          "mean_luminance_peak": 0.023775,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 0.990858,
+          "frame_delta_mean": 0.00105,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 26.249999999999996,
+            "material": 64.86,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 72.78,
+          "overall_score": 72.78,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "low_motion"
+      },
+      "auto_eval_status_cn": "主体偏小",
+      "prefab_summary": {
+        "status": "particle_playable",
+        "particle_system_count": 2,
+        "particle_renderer_count": 2,
+        "renderer_count": 2,
+        "material_slot_count": 2,
+        "missing_script_count": 0,
+        "missing_material_slot_count": 0,
+        "serialized_empty_material_slot_count": 0,
+        "missing_shader_count": 0,
+        "estimated_duration_seconds": 12.0,
+        "looping": true
+      },
+      "particle_system_count": 2,
+      "material_count": 2,
+      "texture_count": 2,
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_000_0_000.png"
+        },
+        {
+          "time_seconds": 0.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_001_0_250.png"
+        },
+        {
+          "time_seconds": 0.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_002_0_500.png"
+        },
+        {
+          "time_seconds": 0.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_003_0_750.png"
+        },
+        {
+          "time_seconds": 1.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_004_1_000.png"
+        },
+        {
+          "time_seconds": 1.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_005_1_250.png"
+        },
+        {
+          "time_seconds": 1.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_006_1_500.png"
+        },
+        {
+          "time_seconds": 1.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_007_1_750.png"
+        },
+        {
+          "time_seconds": 2.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_008_2_000.png"
+        },
+        {
+          "time_seconds": 2.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_009_2_250.png"
+        },
+        {
+          "time_seconds": 2.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_010_2_500.png"
+        },
+        {
+          "time_seconds": 2.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_011_2_750.png"
+        },
+        {
+          "time_seconds": 3.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_012_3_000.png"
+        },
+        {
+          "time_seconds": 3.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_013_3_250.png"
+        },
+        {
+          "time_seconds": 3.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_014_3_500.png"
+        },
+        {
+          "time_seconds": 3.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_015_3_750.png"
+        },
+        {
+          "time_seconds": 4.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_016_4_000.png"
+        },
+        {
+          "time_seconds": 4.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_017_4_250.png"
+        },
+        {
+          "time_seconds": 4.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_018_4_500.png"
+        },
+        {
+          "time_seconds": 4.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_019_4_750.png"
+        },
+        {
+          "time_seconds": 5.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_020_5_000.png"
+        },
+        {
+          "time_seconds": 5.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_021_5_250.png"
+        },
+        {
+          "time_seconds": 5.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_022_5_500.png"
+        },
+        {
+          "time_seconds": 5.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_023_5_750.png"
+        },
+        {
+          "time_seconds": 6.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_024_6_000.png"
+        },
+        {
+          "time_seconds": 6.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_025_6_250.png"
+        },
+        {
+          "time_seconds": 6.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_026_6_500.png"
+        },
+        {
+          "time_seconds": 6.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_027_6_750.png"
+        },
+        {
+          "time_seconds": 7.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_028_7_000.png"
+        },
+        {
+          "time_seconds": 7.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_029_7_250.png"
+        },
+        {
+          "time_seconds": 7.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_030_7_500.png"
+        },
+        {
+          "time_seconds": 7.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_031_7_750.png"
+        },
+        {
+          "time_seconds": 8.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/captures/frame_032_8_000.png"
+        }
+      ],
+      "contact_sheet_path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/contact_sheets/page-001.jpg",
+      "feedback_status": "pending",
+      "webgl_preview": {
+        "candidateId": "source_prefab_001_fx_bosstips",
+        "reviewCandidateId": "source_prefab_001_fx_bosstips",
+        "webPrefabPath": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_bosstips/FX_BossTips.prefab",
+        "sourcePrefabPath": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_bosstips/FX_BossTips.prefab",
+        "catalogId": "7baaa1c395c7d524298bd829aa90259a",
+        "status": "webgl_ready",
+        "status_cn": "真实 WebGL 预览可用",
+        "availability_reason_cn": "该候选已关联真实 Unity 2022 WebGL Prefab，可在动态预览中复核。",
+        "player_url": "http://127.0.0.1:8780/",
+        "catalog_id": "7baaa1c395c7d524298bd829aa90259a",
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_bosstips/FX_BossTips.prefab"
+      },
+      "material_timeline_status": "ready",
+      "material_change_count": 0,
+      "material_key_times": [],
+      "material_timeline_path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_001_fx_bosstips/material_timeline.json",
+      "review_index": 3
+    },
+    {
+      "candidate_id": "source_prefab_002_fx_com_sheilder",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "source_category": [
+        "battle"
+      ],
+      "effect_family_hint": "source_ingest",
+      "technical_status": "particle_playable",
+      "technical_status_cn": "可独立播放",
+      "review_route": "可评价",
+      "visibility_status": "可见",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 2.44,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.020926,
+          "mean_luminance_peak": 0.022524,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000822,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 83.70400000000001,
+            "timing": 20.55,
+            "material": 64.08,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 67.08,
+          "overall_score": 67.08,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "auto_eval_status_cn": "主体偏小",
+      "prefab_summary": {
+        "status": "particle_playable",
+        "particle_system_count": 4,
+        "particle_renderer_count": 3,
+        "renderer_count": 3,
+        "material_slot_count": 3,
+        "missing_script_count": 0,
+        "missing_material_slot_count": 0,
+        "serialized_empty_material_slot_count": 0,
+        "missing_shader_count": 0,
+        "estimated_duration_seconds": 5.0,
+        "looping": true
+      },
+      "particle_system_count": 4,
+      "material_count": 3,
+      "texture_count": 7,
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_000_0_000.png"
+        },
+        {
+          "time_seconds": 0.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_001_0_250.png"
+        },
+        {
+          "time_seconds": 0.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_002_0_500.png"
+        },
+        {
+          "time_seconds": 0.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_003_0_750.png"
+        },
+        {
+          "time_seconds": 1.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_004_1_000.png"
+        },
+        {
+          "time_seconds": 1.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_005_1_250.png"
+        },
+        {
+          "time_seconds": 1.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_006_1_500.png"
+        },
+        {
+          "time_seconds": 1.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_007_1_750.png"
+        },
+        {
+          "time_seconds": 2.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_008_2_000.png"
+        },
+        {
+          "time_seconds": 2.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_009_2_250.png"
+        },
+        {
+          "time_seconds": 2.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_010_2_500.png"
+        },
+        {
+          "time_seconds": 2.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_011_2_750.png"
+        },
+        {
+          "time_seconds": 3.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_012_3_000.png"
+        },
+        {
+          "time_seconds": 3.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_013_3_250.png"
+        },
+        {
+          "time_seconds": 3.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_014_3_500.png"
+        },
+        {
+          "time_seconds": 3.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_015_3_750.png"
+        },
+        {
+          "time_seconds": 4.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_016_4_000.png"
+        },
+        {
+          "time_seconds": 4.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_017_4_250.png"
+        },
+        {
+          "time_seconds": 4.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_018_4_500.png"
+        },
+        {
+          "time_seconds": 4.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_019_4_750.png"
+        },
+        {
+          "time_seconds": 5.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/captures/frame_020_5_000.png"
+        }
+      ],
+      "contact_sheet_path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/contact_sheets/page-001.jpg",
+      "feedback_status": "pending",
+      "webgl_preview": {
+        "candidateId": "source_prefab_002_fx_com_sheilder",
+        "reviewCandidateId": "source_prefab_002_fx_com_sheilder",
+        "webPrefabPath": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+        "sourcePrefabPath": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+        "catalogId": "98d4ae0645d84744caa3eff83314f175",
+        "status": "webgl_ready",
+        "status_cn": "真实 WebGL 预览可用",
+        "availability_reason_cn": "该候选已关联真实 Unity 2022 WebGL Prefab，可在动态预览中复核。",
+        "player_url": "http://127.0.0.1:8780/",
+        "catalog_id": "98d4ae0645d84744caa3eff83314f175",
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab"
+      },
+      "material_timeline_status": "ready",
+      "material_change_count": 0,
+      "material_key_times": [],
+      "material_timeline_path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_002_fx_com_sheilder/material_timeline.json",
+      "review_index": 4
+    },
+    {
+      "candidate_id": "source_prefab_003_fx_gun_fire",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_gun_fire/eff/Fx_Gun_Fire.prefab",
+      "source_category": [
+        "battle"
+      ],
+      "effect_family_hint": "source_ingest",
+      "technical_status": "particle_playable",
+      "technical_status_cn": "可独立播放",
+      "review_route": "可评价",
+      "visibility_status": "可见",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 1.23,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.005147,
+          "mean_luminance_peak": 0.023663,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000481,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 20.587999999999997,
+            "timing": 12.025,
+            "material": 64.79,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 49.35,
+          "overall_score": 49.35,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "auto_eval_status_cn": "主体偏小",
+      "prefab_summary": {
+        "status": "particle_playable",
+        "particle_system_count": 3,
+        "particle_renderer_count": 2,
+        "renderer_count": 2,
+        "material_slot_count": 2,
+        "missing_script_count": 0,
+        "missing_material_slot_count": 0,
+        "serialized_empty_material_slot_count": 0,
+        "missing_shader_count": 0,
+        "estimated_duration_seconds": 5.0,
+        "looping": true
+      },
+      "particle_system_count": 3,
+      "material_count": 2,
+      "texture_count": 2,
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_000_0_000.png"
+        },
+        {
+          "time_seconds": 0.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_001_0_250.png"
+        },
+        {
+          "time_seconds": 0.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_002_0_500.png"
+        },
+        {
+          "time_seconds": 0.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_003_0_750.png"
+        },
+        {
+          "time_seconds": 1.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_004_1_000.png"
+        },
+        {
+          "time_seconds": 1.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_005_1_250.png"
+        },
+        {
+          "time_seconds": 1.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_006_1_500.png"
+        },
+        {
+          "time_seconds": 1.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_007_1_750.png"
+        },
+        {
+          "time_seconds": 2.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_008_2_000.png"
+        },
+        {
+          "time_seconds": 2.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_009_2_250.png"
+        },
+        {
+          "time_seconds": 2.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_010_2_500.png"
+        },
+        {
+          "time_seconds": 2.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_011_2_750.png"
+        },
+        {
+          "time_seconds": 3.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_012_3_000.png"
+        },
+        {
+          "time_seconds": 3.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_013_3_250.png"
+        },
+        {
+          "time_seconds": 3.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_014_3_500.png"
+        },
+        {
+          "time_seconds": 3.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_015_3_750.png"
+        },
+        {
+          "time_seconds": 4.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_016_4_000.png"
+        },
+        {
+          "time_seconds": 4.25,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_017_4_250.png"
+        },
+        {
+          "time_seconds": 4.5,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_018_4_500.png"
+        },
+        {
+          "time_seconds": 4.75,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_019_4_750.png"
+        },
+        {
+          "time_seconds": 5.0,
+          "path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/captures/frame_020_5_000.png"
+        }
+      ],
+      "contact_sheet_path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/contact_sheets/page-001.jpg",
+      "feedback_status": "pending",
+      "webgl_preview": {
+        "candidateId": "source_prefab_003_fx_gun_fire",
+        "reviewCandidateId": "source_prefab_003_fx_gun_fire",
+        "webPrefabPath": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_gun_fire/eff/Fx_Gun_Fire.prefab",
+        "sourcePrefabPath": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_gun_fire/eff/Fx_Gun_Fire.prefab",
+        "catalogId": "c0c9b3c29fe7bff4d9809d6837064500",
+        "status": "webgl_ready",
+        "status_cn": "真实 WebGL 预览可用",
+        "availability_reason_cn": "该候选已关联真实 Unity 2022 WebGL Prefab，可在动态预览中复核。",
+        "player_url": "http://127.0.0.1:8780/",
+        "catalog_id": "c0c9b3c29fe7bff4d9809d6837064500",
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_gun_fire/eff/Fx_Gun_Fire.prefab"
+      },
+      "material_timeline_status": "ready",
+      "material_change_count": 0,
+      "material_key_times": [],
+      "material_timeline_path": "workspace/data/vfx_generation/runs/trains_material_timeline_r001/candidates/source_prefab_003_fx_gun_fire/material_timeline.json",
+      "review_index": 5
+    }
+  ]
+}

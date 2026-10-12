@@ -1,0 +1,133 @@
+{
+  "allowed_actions": [
+    "AI判断正确",
+    "应该更好",
+    "应该更差",
+    "特效类型错误",
+    "风格判断错误",
+    "主体不清楚",
+    "层次有问题",
+    "节奏有问题",
+    "材质有问题",
+    "无法播放",
+    "无法判断"
+  ],
+  "batch_id": "prefab_active_review_r001",
+  "created_at": "2026-09-02T09:13:21.727760+00:00",
+  "record_count": 1,
+  "records": [
+    {
+      "ai_draft": {
+        "label_provenance": {
+          "confidence": 0.65,
+          "created_at": "2026-09-02T08:29:55.137215+00:00",
+          "distance": null,
+          "label_source": "ai_pseudo_label",
+          "model_version": "weak_metadata_visual_teacher.v1",
+          "parent_human_record_id": null,
+          "reviewer": null
+        },
+        "labels": {
+          "decision": null,
+          "issues": [],
+          "observed_color_tags": [
+            "blue",
+            "white"
+          ],
+          "observed_element_tags": [
+            "lightning"
+          ],
+          "quality_score": null,
+          "scores": {},
+          "target_color_tags": [],
+          "target_effect_family": null
+        },
+        "training": {
+          "eligible_tasks": [
+            "element_semisupervision",
+            "color_semisupervision",
+            "active_learning_priority"
+          ],
+          "excluded_tasks": [
+            "human_gold",
+            "regression_evaluation",
+            "model_promotion",
+            "preference_training"
+          ],
+          "expires_with_model_version": true,
+          "frozen": false,
+          "split": "train",
+          "weight": 0.13
+        }
+      },
+      "ai_summary_cn": "元素：雷电；颜色：蓝色、白色",
+      "allowed_actions": [
+        "AI判断正确",
+        "应该更好",
+        "应该更差",
+        "特效类型错误",
+        "风格判断错误",
+        "主体不清楚",
+        "层次有问题",
+        "节奏有问题",
+        "材质有问题",
+        "无法播放",
+        "无法判断"
+      ],
+      "capture_manifest_path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/capture_manifest.json",
+      "capture_pipeline_version": "play_mode_runtime_isolated_multiview.v2",
+      "cluster_id": "cluster_9faaa64da81c",
+      "frames": [
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_000_0_000.png",
+          "time_seconds": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_001_0_019.png",
+          "time_seconds": 0.018799999728798866
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_002_0_038.png",
+          "time_seconds": 0.03750000149011612
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_003_0_056.png",
+          "time_seconds": 0.056299999356269836
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_004_0_075.png",
+          "time_seconds": 0.07500000298023224
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_005_0_094.png",
+          "time_seconds": 0.09380000084638596
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_006_0_113.png",
+          "time_seconds": 0.11249999701976776
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_007_0_131.png",
+          "time_seconds": 0.13130000233650208
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/runtime_capture_v2_regression_r003/cases/capture_v2_instant_rayline/captures/frame_008_0_150.png",
+          "time_seconds": 0.15000000596046448
+        }
+      ],
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/eff/Fx_rayline_body.prefab",
+      "priority_score": 0.34712,
+      "review_index": 1,
+      "sample_id": "sample_a12c13e3ee26b4caad58",
+      "selection_reason": "uncertainty",
+      "selection_reason_cn": "AI不确定",
+      "webgl_preview": {
+        "catalog_id": "bd9fa0b2a9121634ca2ca23264b9d098",
+        "player_url": "http://127.0.0.1:8778/"
+      }
+    }
+  ],
+  "schema_version": "vfx_prefab_active_review_batch.v1",
+  "selection_strategy": "bounded_active_learning_chinese_correction.v1",
+  "source_active_batch": "workspace/data/vfx_generation/active_learning/prefab_active_r004/active_learning_batch.json"
+}

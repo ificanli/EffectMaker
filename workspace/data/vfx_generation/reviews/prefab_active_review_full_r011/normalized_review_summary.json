@@ -1,0 +1,35 @@
+{
+  "schema_version": "vfx_prefab_active_review_summary.v2",
+  "created_at": "2026-09-03T12:30:00+00:00",
+  "batch_id": "prefab_active_review_full_r011",
+  "source_batch_id": "prefab_active_review_full_r010",
+  "review_mode": "semantic_function_only",
+  "semantic_schema_version": "effect_element_and_type.v2",
+  "review_count": 32,
+  "human_gold_count": 32,
+  "exclusion_count": 0,
+  "action_counts": {
+    "AI判断正确": 19,
+    "特效元素错误": 11,
+    "特效类型错误": 2,
+    "无法播放": 0,
+    "无法判断": 0
+  },
+  "canonical_effect_type": {
+    "value": "impact",
+    "label": "命中/爆点",
+    "aliases": ["hit", "命中/受击", "爆点/命中"]
+  },
+  "training_boundary": {
+    "eligible_tasks": ["effect_element_supervision", "effect_type_supervision", "pseudo_label_calibration"],
+    "excluded_tasks": ["aesthetic_judge", "preference_training", "model_promotion", "regression_evaluation"]
+  },
+  "quality_gates": {
+    "input_feedback_complete": 1,
+    "human_gold_complete": 1,
+    "technical_exclusion_count": 0,
+    "hit_alias_as_independent_type": 0,
+    "history_overwritten": 0
+  },
+  "status": "pass"
+}
