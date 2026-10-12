@@ -1,0 +1,49 @@
+{
+  "schema_version": "vfx_aesthetic_training_dataset.v1",
+  "created_at": "2026-09-01T05:22:04.127028+00:00",
+  "dataset_id": "aesthetic_training_r002",
+  "source_count": 2,
+  "record_count": 2698,
+  "judge_candidate_count": 47,
+  "judge_training_count": 0,
+  "preference_candidate_count": 0,
+  "preference_training_count": 0,
+  "excluded_count": 2916,
+  "exclusion_counts": {
+    "missing_feature_vector": 47,
+    "non_training_record": 2651,
+    "technical_exclusion": 218
+  },
+  "split_counts": {
+    "judge": {},
+    "preference": {}
+  },
+  "split_group_counts": {
+    "test": 100,
+    "train": 788,
+    "validation": 110
+  },
+  "training_gate": {
+    "status": "blocked_no_feature_vectors",
+    "reason": "feature vectors are required before Judge or preference training",
+    "judge_ready": false,
+    "preference_ready": false,
+    "minimum_judge_examples": 32,
+    "minimum_preference_pairs": 20
+  },
+  "files": {
+    "records": "aesthetic_training_records.jsonl",
+    "judge_training": "judge_training.jsonl",
+    "preference_training": "preference_training.jsonl",
+    "training_exclusions": "training_exclusions.jsonl",
+    "split_assignments": "split_assignments.jsonl"
+  },
+  "policy": {
+    "same_group_stays_in_one_split": true,
+    "not_visible_is_not_aesthetic_training": true,
+    "technical_exclusion_is_not_aesthetic_negative": true,
+    "missing_features_are_not_silent": true,
+    "course_prior_is_not_generation_success": true
+  },
+  "status": "pass"
+}

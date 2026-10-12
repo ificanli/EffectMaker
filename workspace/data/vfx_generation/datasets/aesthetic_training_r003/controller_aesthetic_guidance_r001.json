@@ -1,0 +1,87 @@
+{
+  "schema_version": "vfx_controller_aesthetic_guidance.v1",
+  "guidance_id": "guidance_c1d7e4e4500443c1a380",
+  "created_at": "2026-09-01T05:44:43.381303+00:00",
+  "input": {
+    "prompt": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+    "effect_family": "explosion",
+    "target_style_profile": {
+      "family": "cartoon",
+      "keywords": [
+        "高饱和"
+      ]
+    },
+    "source_context": {
+      "schema_version": "prompt_variation_execution_manifest.v1",
+      "created_at": "2026-09-01T01:07:22.445161+00:00",
+      "proposal_manifest": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_variation_r009_all_layers\\proposal_manifest.json",
+      "proposal_id": "pcv_005_blue_fast_impact_multi_material_particle",
+      "parent_candidate_id": "prompt_cartoon_blue_energy_impact_001_c004",
+      "technical_status": "pass",
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_metrics": {
+        "blue_visible_fraction_peak": 1.0,
+        "blue_visible_fraction_mean": 0.71960237
+      },
+      "target_condition_status": {
+        "blue": "candidate_signal_present",
+        "fast_impact": "capture_window_under_2_seconds",
+        "explosion": "inherited_from_source_prefab_metadata",
+        "human_prompt_condition_label": "pending"
+      },
+      "training_eligibility": {
+        "prompt_condition_supervision": false,
+        "positive_generation_supervision": false,
+        "preference_training": false,
+        "reason": "variation is a technical proposal pending independent human Prompt-condition evaluation"
+      },
+      "execution_result_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_variation_r009_all_layers\\candidates\\pcv_005_blue_fast_impact_multi_material_particle\\execution_result.json",
+      "status": "technical_pass_pending_human_prompt_review"
+    }
+  },
+  "evidence": {
+    "judge": {
+      "status": "unavailable",
+      "model_path": null,
+      "candidate_id": null,
+      "predictions": {}
+    },
+    "preference": {
+      "status": "unavailable",
+      "model_path": null,
+      "ranking_path": null,
+      "top_candidate_id": null
+    },
+    "human_feedback": {
+      "status": "unavailable",
+      "record_ids": [],
+      "issues": [],
+      "next_mutation": []
+    }
+  },
+  "mutation_plan": {
+    "goals": [
+      "等待更多可见人工评价和偏好比较"
+    ],
+    "preserve": [
+      "Prefab依赖闭包",
+      "材质/贴图/Shader真实绑定",
+      "Unity运行证据和人工反馈 provenance"
+    ],
+    "change": [],
+    "rationale": [
+      "当前没有足够的Judge或人工问题证据，不能凭空指定修改变量。"
+    ],
+    "approval_required": true
+  },
+  "training_eligibility": {
+    "controller_sft": false,
+    "preference_training": false,
+    "positive_generation_supervision": false,
+    "excluded_reasons": [
+      "guidance_requires_unity_execution_and_human_confirmation"
+    ]
+  },
+  "status": "guidance_only"
+}
