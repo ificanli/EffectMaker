@@ -1,0 +1,203 @@
+{
+  "created_at": "2026-09-04T03:23:14.201650+00:00",
+  "effect_family": "slash",
+  "graph_id": "pfg_2cece59f7a40dda2d60a",
+  "layers": [
+    {
+      "blocking_reasons": [
+        "missing_shader_feature_group:dissolve_control|cutout_control|uv_motion",
+        "single_material_template_reused_across_all_roles"
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "material_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+      "renderer_mode": "Mesh",
+      "required_features": [
+        "all:opacity_control",
+        "all:color_control",
+        "any:emission_control|additive_blend",
+        "any:dissolve_control|cutout_control|uv_motion"
+      ],
+      "shader_features": [
+        "base_texture",
+        "color_control",
+        "emission_control",
+        "opacity_control",
+        "soft_particles"
+      ],
+      "shader_name": "QFX/ProjectilesFX/Particles",
+      "status": "blocked",
+      "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+      "texture_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.dark_background",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "motion.uv_scroll_u",
+        "quality.license_unknown",
+        "resolution.medium",
+        "role.color_control",
+        "role.core_shape",
+        "role.noise_control",
+        "role.residual_trail",
+        "semantic.trail",
+        "shape.horizontal_strip",
+        "size.512x128",
+        "slot.alpha_mask",
+        "slot.base_map",
+        "slot.ramp_map"
+      ]
+    },
+    {
+      "blocking_reasons": [
+        "missing_shader_feature_group:dissolve_control|cutout_control|uv_motion|distortion",
+        "single_material_template_reused_across_all_roles"
+      ],
+      "component_id": "p0001",
+      "layer_role": "support",
+      "material_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+      "renderer_mode": "Mesh",
+      "required_features": [
+        "all:opacity_control",
+        "all:color_control",
+        "any:dissolve_control|cutout_control|uv_motion|distortion"
+      ],
+      "shader_features": [
+        "base_texture",
+        "color_control",
+        "emission_control",
+        "opacity_control",
+        "soft_particles"
+      ],
+      "shader_name": "QFX/ProjectilesFX/Particles",
+      "status": "blocked",
+      "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+      "texture_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.dark_background",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "motion.uv_scroll_u",
+        "quality.license_unknown",
+        "resolution.medium",
+        "role.color_control",
+        "role.core_shape",
+        "role.noise_control",
+        "role.residual_trail",
+        "semantic.trail",
+        "shape.horizontal_strip",
+        "size.512x128",
+        "slot.alpha_mask",
+        "slot.base_map",
+        "slot.ramp_map"
+      ]
+    },
+    {
+      "blocking_reasons": [
+        "single_material_template_reused_across_all_roles",
+        "texture_has_forbidden_tag",
+        "texture_missing_role_tag"
+      ],
+      "component_id": "p0003",
+      "layer_role": "hit",
+      "material_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+      "renderer_mode": "Billboard",
+      "required_features": [
+        "all:opacity_control",
+        "all:color_control",
+        "any:emission_control|additive_blend"
+      ],
+      "shader_features": [
+        "base_texture",
+        "color_control",
+        "emission_control",
+        "opacity_control",
+        "soft_particles"
+      ],
+      "shader_name": "QFX/ProjectilesFX/Particles",
+      "status": "blocked",
+      "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Hit_1.png",
+      "texture_tags": [
+        "alpha.opaque",
+        "luma.dark_background",
+        "quality.license_unknown",
+        "resolution.medium",
+        "shape.square",
+        "size.512x512"
+      ]
+    },
+    {
+      "blocking_reasons": [
+        "missing_shader_feature_group:uv_motion|dissolve_control|cutout_control",
+        "single_material_template_reused_across_all_roles"
+      ],
+      "component_id": "p0002",
+      "layer_role": "residual",
+      "material_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+      "renderer_mode": "Billboard",
+      "required_features": [
+        "all:opacity_control",
+        "all:color_control",
+        "any:uv_motion|dissolve_control|cutout_control"
+      ],
+      "shader_features": [
+        "base_texture",
+        "color_control",
+        "emission_control",
+        "opacity_control",
+        "soft_particles"
+      ],
+      "shader_name": "QFX/ProjectilesFX/Particles",
+      "status": "blocked",
+      "texture_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+      "texture_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.dark_background",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "motion.uv_scroll_u",
+        "quality.license_unknown",
+        "resolution.medium",
+        "role.color_control",
+        "role.core_shape",
+        "role.noise_control",
+        "role.residual_trail",
+        "semantic.trail",
+        "shape.horizontal_strip",
+        "size.512x128",
+        "slot.alpha_mask",
+        "slot.base_map",
+        "slot.ramp_map"
+      ]
+    }
+  ],
+  "quality_gates": {
+    "blocked_layer_count": 4,
+    "layer_count": 4,
+    "missing_asset_count": 0,
+    "shader_role_mismatch_count": 3,
+    "single_template_all_roles": true,
+    "texture_role_mismatch_count": 2,
+    "vertex_stream_contract_missing_count": 0
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "shader_material_contract_audit.v1",
+  "status": "blocked",
+  "training_eligibility": {
+    "positive_generation_supervision": false,
+    "proposal_failure_supervision": true,
+    "reason": "At least one role-specific Shader/Material/Texture contract failed."
+  }
+}

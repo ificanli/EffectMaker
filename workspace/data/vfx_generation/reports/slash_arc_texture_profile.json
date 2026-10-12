@@ -1,0 +1,819 @@
+{
+  "material_selection": {
+    "selection_basis": [
+      "shader choice comes first and is recorded separately from texture slots",
+      "texture tags determine slot compatibility before material training",
+      "slot rules use explicit required, preferred, and avoided tag families"
+    ],
+    "shader_candidates": [
+      {
+        "name": "Universal Render Pipeline/Particles/Unlit",
+        "role": "baseline_default",
+        "source": "Unity built-in URP particle shader; use as the first material baseline before custom shader work.",
+        "tags": [
+          "shader.baseline",
+          "shader.urp",
+          "shader.unlit",
+          "material.simple"
+        ]
+      },
+      {
+        "name": "Effects/NBShader",
+        "path": "UnityDemo/EffectDemo/Packages/com.xuanxuan.nb.fx/NBShaders2/Shader/NBShader.shader",
+        "role": "local_reference",
+        "source": "Local NB FX package shader in UnityDemo/EffectDemo; compare it against the URP baseline when a custom shader baseline is needed.",
+        "tags": [
+          "shader.local_reference",
+          "shader.nbfx",
+          "material.custom"
+        ]
+      }
+    ],
+    "shader_name": "Universal Render Pipeline/Particles/Unlit",
+    "slot_rules": {
+      "alpha_mask": {
+        "avoided_tags": [
+          "alpha.opaque"
+        ],
+        "preferred_tags": [
+          "alpha.structured",
+          "alpha.gradient",
+          "alpha.cutout",
+          "semantic.mask",
+          "semantic.slash"
+        ],
+        "required_tags": [
+          "slot.alpha_mask"
+        ]
+      },
+      "base_map": {
+        "avoided_tags": [
+          "alpha.opaque",
+          "luma.low_contrast"
+        ],
+        "preferred_tags": [
+          "role.core_shape",
+          "alpha.sparse",
+          "alpha.mixed",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "shape.horizontal_strip"
+        ],
+        "required_tags": [
+          "semantic.slash",
+          "slot.base_map"
+        ]
+      },
+      "dissolve_map": {
+        "avoided_tags": [],
+        "preferred_tags": [
+          "slot.distortion_map",
+          "role.noise_control",
+          "motion.dissolve_reveal",
+          "shape.square",
+          "luma.high_contrast"
+        ],
+        "required_tags": [
+          "semantic.noise",
+          "slot.dissolve_map"
+        ]
+      },
+      "ramp_map": {
+        "avoided_tags": [],
+        "preferred_tags": [
+          "semantic.gradient",
+          "role.color_control",
+          "shape.horizontal_strip",
+          "shape.vertical_strip"
+        ],
+        "required_tags": [
+          "slot.ramp_map"
+        ]
+      }
+    },
+    "tag_sources": [
+      "workspace/data/resource_index/texture_tags_slash_sample.jsonl"
+    ]
+  },
+  "schema_version": "slash_arc_texture_profile.v1",
+  "shader": {
+    "name": "Universal Render Pipeline/Particles/Unlit",
+    "role": "baseline_default",
+    "source": "Unity built-in URP particle shader; use as the first material baseline before custom shader work.",
+    "tags": [
+      "shader.baseline",
+      "shader.urp",
+      "shader.unlit",
+      "material.simple"
+    ]
+  },
+  "shader_candidates": [
+    {
+      "name": "Universal Render Pipeline/Particles/Unlit",
+      "role": "baseline_default",
+      "source": "Unity built-in URP particle shader; use as the first material baseline before custom shader work.",
+      "tags": [
+        "shader.baseline",
+        "shader.urp",
+        "shader.unlit",
+        "material.simple"
+      ]
+    },
+    {
+      "name": "Effects/NBShader",
+      "path": "UnityDemo/EffectDemo/Packages/com.xuanxuan.nb.fx/NBShaders2/Shader/NBShader.shader",
+      "role": "local_reference",
+      "source": "Local NB FX package shader in UnityDemo/EffectDemo; compare it against the URP baseline when a custom shader baseline is needed.",
+      "tags": [
+        "shader.local_reference",
+        "shader.nbfx",
+        "material.custom"
+      ]
+    }
+  ],
+  "slots": {
+    "alpha_mask": [
+      {
+        "asset_id": "e85014dffef5ee9accc17aa31030b727f23af5f05a760c4c271546ef43faaa91",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1501.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/e8/e85014dffef5ee9accc17aa31030b727f23af5f05a760c4c271546ef43faaa91.png",
+        "width": 512
+      },
+      {
+        "asset_id": "5660dc5f8afc49dfc985d7a5e21be0ba93b0e13d3284b316ffbf3cf1c31369d9",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_203.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/56/5660dc5f8afc49dfc985d7a5e21be0ba93b0e13d3284b316ffbf3cf1c31369d9.png",
+        "width": 512
+      },
+      {
+        "asset_id": "645a94f0f981430ecdbc684a0acc6d32dbf5fa0549eac02d605473f995d399f4",
+        "height": 256,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1401_C.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.256x256",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/64/645a94f0f981430ecdbc684a0acc6d32dbf5fa0549eac02d605473f995d399f4.png",
+        "width": 256
+      },
+      {
+        "asset_id": "8a8901125251ad88b893af6eb7f2ea5bed30ca09163fdba29e7606f95cd4b770",
+        "height": 256,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1401.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.256x256",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/8a/8a8901125251ad88b893af6eb7f2ea5bed30ca09163fdba29e7606f95cd4b770.png",
+        "width": 256
+      },
+      {
+        "asset_id": "549986f4fc65cec21fb642db8d9d08253887d4b323c7e75222319421c2af2dc8",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_305.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.rectangle",
+          "size.256x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/54/549986f4fc65cec21fb642db8d9d08253887d4b323c7e75222319421c2af2dc8.png",
+        "width": 256
+      },
+      {
+        "asset_id": "dcd13d4c122dd6e2a3bdb978114c8a09473e6d04053a2e3aa610ba47459b2707",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1303.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.rectangle",
+          "size.256x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/dc/dcd13d4c122dd6e2a3bdb978114c8a09473e6d04053a2e3aa610ba47459b2707.png",
+        "width": 256
+      },
+      {
+        "asset_id": "773cf252fe3a54b8956c370ff9d369857dd1eeb4e0dc8c83520d5aceeb3898c0",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1704_C.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.rectangle",
+          "size.256x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/77/773cf252fe3a54b8956c370ff9d369857dd1eeb4e0dc8c83520d5aceeb3898c0.png",
+        "width": 256
+      },
+      {
+        "asset_id": "5d54a0931cdfa6034f244a4329c7b72f73099fb8953fa50a9a245cb51a35e1f5",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1205.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/5d/5d54a0931cdfa6034f244a4329c7b72f73099fb8953fa50a9a245cb51a35e1f5.png",
+        "width": 512
+      }
+    ],
+    "base_map": [
+      {
+        "asset_id": "5660dc5f8afc49dfc985d7a5e21be0ba93b0e13d3284b316ffbf3cf1c31369d9",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_203.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/56/5660dc5f8afc49dfc985d7a5e21be0ba93b0e13d3284b316ffbf3cf1c31369d9.png",
+        "width": 512
+      },
+      {
+        "asset_id": "180cf9ab48921cb61a308a01b1842d3dd64e195bbac96ecb787b219c84bf6842",
+        "height": 64,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_303.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.256x64",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/18/180cf9ab48921cb61a308a01b1842d3dd64e195bbac96ecb787b219c84bf6842.png",
+        "width": 256
+      },
+      {
+        "asset_id": "e85014dffef5ee9accc17aa31030b727f23af5f05a760c4c271546ef43faaa91",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1501.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/e8/e85014dffef5ee9accc17aa31030b727f23af5f05a760c4c271546ef43faaa91.png",
+        "width": 512
+      },
+      {
+        "asset_id": "5d54a0931cdfa6034f244a4329c7b72f73099fb8953fa50a9a245cb51a35e1f5",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1205.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/5d/5d54a0931cdfa6034f244a4329c7b72f73099fb8953fa50a9a245cb51a35e1f5.png",
+        "width": 512
+      },
+      {
+        "asset_id": "0d1a32430f39d0f1bb8b5a3179c65120ce5d5b1886872819c46d73ae2dcf2509",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1201.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/0d/0d1a32430f39d0f1bb8b5a3179c65120ce5d5b1886872819c46d73ae2dcf2509.png",
+        "width": 512
+      },
+      {
+        "asset_id": "cdd11c3ee09cc300e2325780a8ff38ebea7c80cf5da7c24c4ec09933aca0ef83",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/Ray_501.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/cd/cdd11c3ee09cc300e2325780a8ff38ebea7c80cf5da7c24c4ec09933aca0ef83.png",
+        "width": 512
+      },
+      {
+        "asset_id": "92a527386ced1cbc4e74eec264a1b00890db6e18e23498398abec48cd54cf97c",
+        "height": 256,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1208.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.square",
+          "size.256x256",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/92/92a527386ced1cbc4e74eec264a1b00890db6e18e23498398abec48cd54cf97c.png",
+        "width": 256
+      },
+      {
+        "asset_id": "bc7efdcd6f8d528d9010c1bbb02116070e95409995eadd3cb56d6891e233be0c",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_001.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "semantic.slash",
+          "shape.rectangle",
+          "size.256x128",
+          "slash",
+          "slot.base_map"
+        ],
+        "thumbnail_status": "thumbnails/bc/bc7efdcd6f8d528d9010c1bbb02116070e95409995eadd3cb56d6891e233be0c.png",
+        "width": 256
+      }
+    ],
+    "dissolve_map": [
+      {
+        "asset_id": "f94805e3552793ef9bc16e39554e4d3d1a2fc5180dbee123748bf7a6a0640ffc",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Eff/Distortion_Slash_01.tga",
+        "tags": [
+          "alpha.mixed",
+          "distortion",
+          "motion.dissolve_reveal",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.noise",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.base_map",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ],
+        "thumbnail_status": "thumbnails/f9/f94805e3552793ef9bc16e39554e4d3d1a2fc5180dbee123748bf7a6a0640ffc.png",
+        "width": 512
+      },
+      {
+        "asset_id": "c70851f9337f42e355e53a20811c34647f3b0ebbb743ec6c9e4f099ebd8f482d",
+        "height": 512,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/Distortion_Slash_01.png",
+        "tags": [
+          "alpha.opaque",
+          "distortion",
+          "motion.dissolve_reveal",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.noise",
+          "semantic.slash",
+          "shape.square",
+          "size.512x512",
+          "slash",
+          "slot.base_map",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ],
+        "thumbnail_status": "thumbnails/c7/c70851f9337f42e355e53a20811c34647f3b0ebbb743ec6c9e4f099ebd8f482d.png",
+        "width": 512
+      }
+    ],
+    "ramp_map": [
+      {
+        "asset_id": "5660dc5f8afc49dfc985d7a5e21be0ba93b0e13d3284b316ffbf3cf1c31369d9",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_203.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/56/5660dc5f8afc49dfc985d7a5e21be0ba93b0e13d3284b316ffbf3cf1c31369d9.png",
+        "width": 512
+      },
+      {
+        "asset_id": "0d1a32430f39d0f1bb8b5a3179c65120ce5d5b1886872819c46d73ae2dcf2509",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1201.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/0d/0d1a32430f39d0f1bb8b5a3179c65120ce5d5b1886872819c46d73ae2dcf2509.png",
+        "width": 512
+      },
+      {
+        "asset_id": "d9165bab2246a1830bdd9d5aaecaf9193bf00ba10f49a4ae5b2a320e24ad25e4",
+        "height": 32,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_1202.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.small",
+          "role.color_control",
+          "role.core_shape",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.128x32",
+          "slash",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/d9/d9165bab2246a1830bdd9d5aaecaf9193bf00ba10f49a4ae5b2a320e24ad25e4.png",
+        "width": 128
+      },
+      {
+        "asset_id": "91fc817b5c604b51974bcf685b9763244814527b71a29b7fd0f3627c782a83af",
+        "height": 1024,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Eff/Mei_Hit_Slash_Right_To_Left.tga",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "quality.license_unknown",
+          "resolution.large",
+          "role.color_control",
+          "role.core_shape",
+          "semantic.slash",
+          "shape.vertical_strip",
+          "size.256x1024",
+          "slash",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/91/91fc817b5c604b51974bcf685b9763244814527b71a29b7fd0f3627c782a83af.png",
+        "width": 256
+      },
+      {
+        "asset_id": "180cf9ab48921cb61a308a01b1842d3dd64e195bbac96ecb787b219c84bf6842",
+        "height": 64,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_303.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.256x64",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/18/180cf9ab48921cb61a308a01b1842d3dd64e195bbac96ecb787b219c84bf6842.png",
+        "width": 256
+      },
+      {
+        "asset_id": "7e2a161771020c7d51d67d4506788ee334d68f2d3cdeb4c8c29c9f187c1e2f25",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_204.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/7e/7e2a161771020c7d51d67d4506788ee334d68f2d3cdeb4c8c29c9f187c1e2f25.png",
+        "width": 512
+      },
+      {
+        "asset_id": "0921a0cad6c0075630fb7197c689b04f68d4a0fbab5ddb066e29769ab28da71f",
+        "height": 128,
+        "license_status": "unknown",
+        "relative_path": "FXTexture/米家FXTexture/Slash/SFX_Ray_204_C.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "quality.license_unknown",
+          "resolution.medium",
+          "role.color_control",
+          "role.core_shape",
+          "role.noise_control",
+          "semantic.slash",
+          "shape.horizontal_strip",
+          "size.512x128",
+          "slash",
+          "slot.alpha_mask",
+          "slot.base_map",
+          "slot.ramp_map"
+        ],
+        "thumbnail_status": "thumbnails/09/0921a0cad6c0075630fb7197c689b04f68d4a0fbab5ddb066e29769ab28da71f.png",
+        "width": 512
+      }
+    ]
+  }
+}

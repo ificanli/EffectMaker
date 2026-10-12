@@ -1,0 +1,213 @@
+{
+  "created_at": "2026-09-04T03:23:56.254976+00:00",
+  "intent": {
+    "color_keywords": [
+      "blue",
+      "purple"
+    ],
+    "direction": "unspecified",
+    "effect_family": "lightning",
+    "hit_placement": "unspecified",
+    "shape_keywords": [],
+    "style_family": "stylized",
+    "timing_keywords": [
+      "instant_pulse"
+    ]
+  },
+  "layers": [
+    {
+      "layer_role": "core",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Carry the main bolt and instantaneous pulse.",
+      "renderer_modes": [
+        "Mesh",
+        "Trail"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ],
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any_tags": [
+          "role.core_shape",
+          "slot.base_map",
+          "slot.alpha_mask"
+        ]
+      },
+      "topology_candidates": [
+        "single_bolt_strip",
+        "segmented_bolt",
+        "procedural_line"
+      ]
+    },
+    {
+      "layer_role": "support",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Add thinner branches without obscuring the main bolt.",
+      "renderer_modes": [
+        "Mesh",
+        "Trail"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion",
+            "distortion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error"
+        ],
+        "required_any_tags": [
+          "role.noise_control",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      "topology_candidates": [
+        "branch_strip",
+        "fork_cluster",
+        "secondary_line"
+      ]
+    },
+    {
+      "layer_role": "hit",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Concentrate the electrical contact point.",
+      "renderer_modes": [
+        "Billboard"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ]
+        ],
+        "requires_vertex_stream_contract": false
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any_tags": [
+          "role.hit_accent",
+          "role.impact_ring",
+          "semantic.spark"
+        ]
+      },
+      "topology_candidates": [
+        "contact_flash",
+        "electric_ring",
+        "spark_cluster"
+      ]
+    },
+    {
+      "layer_role": "residual",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords",
+        "timing_keywords"
+      ],
+      "purpose": "Leave short-lived residual sparks after the main pulse.",
+      "renderer_modes": [
+        "Stretch",
+        "Trail"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "uv_motion",
+            "dissolve_control",
+            "cutout_control"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any_tags": [
+          "role.residual_trail",
+          "semantic.trail",
+          "semantic.smoke"
+        ]
+      },
+      "topology_candidates": [
+        "residual_sparks",
+        "fading_branches",
+        "surface_arcs"
+      ]
+    }
+  ],
+  "plan_id": "proposal_dd8285813bc3910b2c04",
+  "prompt": "风格化蓝紫雷电脉冲，主电流粗亮，分支轻弱，命中峰值集中，主体短促消失",
+  "schema_version": "vfx_proposal_plan.v1",
+  "seed": 20262432,
+  "selection_policy": {
+    "joint_shader_material_texture_ranking": true,
+    "no_single_template_for_all_roles": true,
+    "prompt_controls_proposal": true,
+    "role_specific_shader_plan": true,
+    "verified_assets_only": true,
+    "whole_batch_absolute_quality_gate": true
+  },
+  "status": "planned",
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false,
+    "proposal_failure_supervision": false,
+    "reason": "Plan only; requires asset contract audit, Unity execution and absolute quality acceptance."
+  }
+}

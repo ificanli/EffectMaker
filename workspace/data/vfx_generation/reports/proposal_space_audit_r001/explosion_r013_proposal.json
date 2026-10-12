@@ -1,0 +1,206 @@
+{
+  "created_at": "2026-09-04T03:24:05.354903+00:00",
+  "intent": {
+    "color_keywords": [],
+    "direction": "unspecified",
+    "effect_family": "explosion",
+    "hit_placement": "unspecified",
+    "shape_keywords": [],
+    "style_family": "cartoon",
+    "timing_keywords": []
+  },
+  "layers": [
+    {
+      "layer_role": "core",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Carry the ignition and peak energy mass.",
+      "renderer_modes": [
+        "Billboard",
+        "Mesh"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ],
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any_tags": [
+          "role.core_shape",
+          "slot.base_map",
+          "slot.alpha_mask"
+        ]
+      },
+      "topology_candidates": [
+        "billboard_volume",
+        "flipbook_core",
+        "mesh_burst"
+      ]
+    },
+    {
+      "layer_role": "support",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Expand the shockwave and secondary volume.",
+      "renderer_modes": [
+        "Billboard",
+        "Mesh"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "dissolve_control",
+            "cutout_control",
+            "uv_motion",
+            "distortion"
+          ]
+        ],
+        "requires_vertex_stream_contract": true
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error"
+        ],
+        "required_any_tags": [
+          "role.noise_control",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      "topology_candidates": [
+        "shockwave_ring",
+        "secondary_fireball",
+        "radial_streaks"
+      ]
+    },
+    {
+      "layer_role": "hit",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Provide the peak flash and high-frequency debris accent.",
+      "renderer_modes": [
+        "Billboard"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "emission_control",
+            "additive_blend"
+          ]
+        ],
+        "requires_vertex_stream_contract": false
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any_tags": [
+          "role.hit_accent",
+          "role.impact_ring",
+          "semantic.spark"
+        ]
+      },
+      "topology_candidates": [
+        "peak_flash",
+        "debris_burst",
+        "spark_shell"
+      ]
+    },
+    {
+      "layer_role": "residual",
+      "prompt_controls": [
+        "style_family",
+        "color_keywords"
+      ],
+      "purpose": "Leave smoke, embers or dust after the peak.",
+      "renderer_modes": [
+        "Billboard"
+      ],
+      "shader_contract": {
+        "forbid_unverified_fallback": true,
+        "required_all": [
+          "opacity_control",
+          "color_control"
+        ],
+        "required_any": [
+          [
+            "uv_motion",
+            "dissolve_control",
+            "cutout_control"
+          ]
+        ],
+        "requires_vertex_stream_contract": false
+      },
+      "texture_contract": {
+        "forbidden_tags": [
+          "analysis.error",
+          "alpha.opaque"
+        ],
+        "required_any_tags": [
+          "role.residual_trail",
+          "semantic.trail",
+          "semantic.smoke"
+        ]
+      },
+      "topology_candidates": [
+        "smoke_volume",
+        "ember_field",
+        "dust_ring"
+      ]
+    }
+  ],
+  "plan_id": "proposal_febfd026b6c3c42a886b",
+  "prompt": "卡通火焰爆炸，亮核先出现，冲击环与碎片错峰释放，烟雾残光延迟收束",
+  "schema_version": "vfx_proposal_plan.v1",
+  "seed": 20261904,
+  "selection_policy": {
+    "joint_shader_material_texture_ranking": true,
+    "no_single_template_for_all_roles": true,
+    "prompt_controls_proposal": true,
+    "role_specific_shader_plan": true,
+    "verified_assets_only": true,
+    "whole_batch_absolute_quality_gate": true
+  },
+  "status": "planned",
+  "training_eligibility": {
+    "controller_sft": false,
+    "positive_generation_supervision": false,
+    "proposal_failure_supervision": false,
+    "reason": "Plan only; requires asset contract audit, Unity execution and absolute quality acceptance."
+  }
+}

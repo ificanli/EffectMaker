@@ -1,0 +1,55 @@
+{
+  "schema_version": "vfx_aesthetic_promotion_report.v1",
+  "created_at": "2026-09-01T05:49:44.643734+00:00",
+  "dataset_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/aesthetic_training_r003/aesthetic_training_dataset_manifest.json",
+  "data_coverage": {
+    "judge_training_count": 0,
+    "preference_training_count": 0,
+    "effect_family_counts": {},
+    "style_family_counts": {}
+  },
+  "leakage_audit": {
+    "status": "pass",
+    "group_count": 998,
+    "multi_split_group_count": 0,
+    "multi_split_groups": []
+  },
+  "model_status": {
+    "judge": {
+      "status": "absent",
+      "model_path": null,
+      "metrics_path": null,
+      "model_card_path": null,
+      "final_visual_acceptance": false
+    },
+    "preference_ranker": {
+      "status": "absent",
+      "model_path": null,
+      "metrics_path": null,
+      "model_card_path": null,
+      "final_visual_acceptance": false
+    },
+    "controller": {
+      "status": "absent",
+      "model_path": null,
+      "metrics_path": null,
+      "model_card_path": null,
+      "final_visual_acceptance": false
+    }
+  },
+  "promotion": {
+    "decision": "blocked",
+    "reasons": [
+      "judge_model_absent",
+      "need_2_effect_families_found_0",
+      "need_2_style_families_found_0",
+      "no_judge_training_rows",
+      "preference_ranker_absent",
+      "regression_set_missing"
+    ],
+    "minimum_families": 2,
+    "minimum_styles": 2,
+    "regression_set_status": "missing"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "vfx_controller_training_preflight.v1",
+  "created_at": "2026-09-01T02:12:33.005941+00:00",
+  "dataset_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/vfx_controller_r001/controller_dataset_manifest.json",
+  "backend": "minimind_controller_adapter",
+  "sft_example_count": 0,
+  "labeled_family_count": 1,
+  "minimum_sft_examples": 32,
+  "minimum_sft_families": 2,
+  "status": "blocked_insufficient_labels",
+  "reasons": [
+    "no candidate has complete, human-confirmed, positive Prompt-condition supervision",
+    "need at least 32 positive SFT examples; found 0",
+    "need at least 2 labeled effect families; found 1"
+  ],
+  "weight_written": false,
+  "policy": {
+    "not_visible_is_not_training_data": true,
+    "technical_pass_is_not_aesthetic_acceptance": true,
+    "controller_does_not_generate_unverified_unity_assets": true
+  }
+}

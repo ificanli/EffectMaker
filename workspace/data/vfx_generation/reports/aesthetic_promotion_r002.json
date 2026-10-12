@@ -1,0 +1,62 @@
+{
+  "schema_version": "vfx_aesthetic_promotion_report.v1",
+  "created_at": "2026-09-01T06:50:23.273137+00:00",
+  "dataset_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/aesthetic_training_r006/aesthetic_training_dataset_manifest.json",
+  "data_coverage": {
+    "judge_training_count": 47,
+    "preference_training_count": 0,
+    "effect_family_counts": {
+      "explosion": 3,
+      "fire": 1,
+      "ice": 1,
+      "shield": 1,
+      "unclassified": 41
+    },
+    "style_family_counts": {
+      "cartoon": 7,
+      "stylized": 27,
+      "ui_graphic": 7
+    }
+  },
+  "leakage_audit": {
+    "status": "pass",
+    "group_count": 998,
+    "multi_split_group_count": 0,
+    "multi_split_groups": []
+  },
+  "model_status": {
+    "judge": {
+      "status": "absent",
+      "model_path": null,
+      "metrics_path": null,
+      "model_card_path": null,
+      "final_visual_acceptance": false
+    },
+    "preference_ranker": {
+      "status": "absent",
+      "model_path": null,
+      "metrics_path": null,
+      "model_card_path": null,
+      "final_visual_acceptance": false
+    },
+    "controller": {
+      "status": "absent",
+      "model_path": null,
+      "metrics_path": null,
+      "model_card_path": null,
+      "final_visual_acceptance": false
+    }
+  },
+  "promotion": {
+    "decision": "blocked",
+    "reasons": [
+      "judge_model_absent",
+      "preference_ranker_absent",
+      "regression_set_missing"
+    ],
+    "minimum_families": 2,
+    "minimum_styles": 2,
+    "regression_set_status": "missing"
+  },
+  "status": "pass"
+}

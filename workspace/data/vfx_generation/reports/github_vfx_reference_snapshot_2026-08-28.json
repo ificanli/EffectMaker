@@ -1,0 +1,88 @@
+{
+  "schema_version": "github_vfx_reference_snapshot.v1",
+  "captured_at": "2026-08-28",
+  "source": "public GitHub repository pages",
+  "capture_note": "GitHub REST API was rate-limited, so stars, license and archive state were read from each repository's public HTML page. Counts are snapshots and will change.",
+  "references": [
+    {
+      "repo": "Unity-Technologies/Graphics",
+      "url": "https://github.com/Unity-Technologies/Graphics",
+      "stars": 2983,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "scope": "Official SRP, URP, HDRP, Shader Graph and Visual Effect Graph source reference.",
+      "decision": "study",
+      "compatibility_note": "Study the branch/package source matching URP 17.5.0; do not clone or embed the whole repository into the production project."
+    },
+    {
+      "repo": "mob-sakai/ParticleEffectForUGUI",
+      "url": "https://github.com/mob-sakai/ParticleEffectForUGUI",
+      "stars": 5970,
+      "license_spdx": "MIT",
+      "archived": false,
+      "scope": "uGUI particle rendering, masking and sorting.",
+      "decision": "adopt_conditionally",
+      "compatibility_note": "Only evaluate when the product needs UI particle effects; it is not a replacement for world-space VFX Graph or Particle System work."
+    },
+    {
+      "repo": "Unity-Technologies/BoatAttack",
+      "url": "https://github.com/Unity-Technologies/BoatAttack",
+      "stars": 2781,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "scope": "Official Universal Render Pipeline sample project.",
+      "decision": "study",
+      "compatibility_note": "Use as a rendering and sample-project reference only; do not import the project or assets into the current VFX pipeline by default."
+    },
+    {
+      "repo": "keijiro/Kino",
+      "url": "https://github.com/keijiro/Kino",
+      "stars": 2409,
+      "license_spdx": "NOASSERTION",
+      "archived": false,
+      "scope": "Custom Unity post-processing effect collection.",
+      "decision": "do_not_install_yet",
+      "compatibility_note": "The current project uses URP 17.5 Volume and Render Graph paths; study effect ideas, but do not install without a targeted compatibility port."
+    },
+    {
+      "repo": "keijiro/Klak",
+      "url": "https://github.com/keijiro/Klak",
+      "stars": 2002,
+      "license_spdx": "MIT",
+      "archived": false,
+      "scope": "Creative coding components for Unity.",
+      "decision": "study",
+      "compatibility_note": "Useful for procedural-control ideas; verify APIs and package structure before adopting any component in Unity 6."
+    },
+    {
+      "repo": "keijiro/NoiseShader",
+      "url": "https://github.com/keijiro/NoiseShader",
+      "stars": 1382,
+      "license_spdx": "MIT",
+      "archived": false,
+      "scope": "Unity noise shader function library.",
+      "decision": "study_selective_port",
+      "compatibility_note": "Port only a tested function or Custom Function node into the project shader path; do not import the repository wholesale."
+    },
+    {
+      "repo": "keijiro/StableFluids",
+      "url": "https://github.com/keijiro/StableFluids",
+      "stars": 1172,
+      "license_spdx": "Unlicense",
+      "archived": false,
+      "scope": "GPU stable-fluid simulation example for Unity.",
+      "decision": "study",
+      "compatibility_note": "Relevant to a future water, smoke or volume adapter, not to the current Prefab render or SlashArc bottleneck."
+    },
+    {
+      "repo": "Cyanilux/URP_ShaderGraphCustomLighting",
+      "url": "https://github.com/Cyanilux/URP_ShaderGraphCustomLighting",
+      "stars": 778,
+      "license_spdx": "MIT",
+      "archived": false,
+      "scope": "Custom lighting functions and sub-graphs for URP Shader Graph.",
+      "decision": "study_selective_port",
+      "compatibility_note": "High relevance to URP material work, but validate every function under Unity 6000.5.9f1 and URP 17.5.0 before adoption."
+    }
+  ]
+}
