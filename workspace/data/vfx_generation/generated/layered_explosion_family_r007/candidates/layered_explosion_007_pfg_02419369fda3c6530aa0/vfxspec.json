@@ -1,0 +1,145 @@
+{
+  "adapter": {
+    "generator_family": "radial_impact_fragments",
+    "name": "explosion.adapter",
+    "specialized_metrics": [
+      "core_readability",
+      "shockwave_readability",
+      "debris_spread",
+      "residual_timing"
+    ],
+    "version": "explosion_family_adapter.v1"
+  },
+  "effect_family": "explosion",
+  "effect_type": "explosion",
+  "generation": {
+    "candidate_id": "layered_explosion_007_pfg_02419369fda3c6530aa0",
+    "generator": "explosion_family_generator",
+    "generator_version": "explosion_family_adapter.v1",
+    "graph_id": "pfg_02419369fda3c6530aa0",
+    "parent_candidate_id": null,
+    "run_id": "layered_explosion_family_r007",
+    "seed": 20261311
+  },
+  "layers": [
+    {
+      "constraints": [
+        "unity_2022_compile_and_readback_required",
+        "professional_teacher_verified_only_for_core_readability"
+      ],
+      "material_parameters": {
+        "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+        "texture_asset_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Glow/FX_Glow_1.TGA",
+        "texture_property_name": "_MainTex"
+      },
+      "role": "core_flash",
+      "shape_parameters": {
+        "gravity_modifier_max": 0.0,
+        "shape_radius": 0.0,
+        "shape_type": "Sphere",
+        "start_size_max": 1.0,
+        "start_speed_max": 0.0
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 1,
+        "duration_seconds": 0.8,
+        "start_delay_max": 0.0,
+        "start_lifetime_max": 0.34
+      },
+      "topology": "layered_explosion_v1"
+    },
+    {
+      "constraints": [
+        "unity_2022_compile_and_readback_required",
+        "professional_teacher_verified_only_for_core_readability"
+      ],
+      "material_parameters": {
+        "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+        "texture_asset_path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Glow2.png",
+        "texture_property_name": "_MainTex"
+      },
+      "role": "shockwave_ring",
+      "shape_parameters": {
+        "gravity_modifier_max": 0.0,
+        "shape_radius": 0.0,
+        "shape_type": "Circle",
+        "start_size_max": 1.08,
+        "start_speed_max": 0.0
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 1,
+        "duration_seconds": 0.9,
+        "start_delay_max": 0.05,
+        "start_lifetime_max": 0.51
+      },
+      "topology": "layered_explosion_v1"
+    },
+    {
+      "constraints": [
+        "unity_2022_compile_and_readback_required",
+        "professional_teacher_verified_only_for_core_readability"
+      ],
+      "material_parameters": {
+        "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Magic/MFX_Spark_1.mat",
+        "texture_asset_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Spark_1.png",
+        "texture_property_name": "_MainTex"
+      },
+      "role": "debris_burst",
+      "shape_parameters": {
+        "gravity_modifier_max": 0.63,
+        "shape_radius": 0.12000000000000001,
+        "shape_type": "Sphere",
+        "start_size_max": 0.135,
+        "start_speed_max": 3.45
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 42,
+        "duration_seconds": 0.9,
+        "start_delay_max": 0.08,
+        "start_lifetime_max": 0.56
+      },
+      "topology": "layered_explosion_v1"
+    },
+    {
+      "constraints": [
+        "unity_2022_compile_and_readback_required",
+        "professional_teacher_verified_only_for_core_readability"
+      ],
+      "material_parameters": {
+        "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Dark Magic/MFX_Smoke_1.mat",
+        "texture_asset_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Smoke/FX_Smoke_3.png",
+        "texture_property_name": "_MainTex"
+      },
+      "role": "residual_smoke",
+      "shape_parameters": {
+        "gravity_modifier_max": -0.1,
+        "shape_radius": 0.245,
+        "shape_type": "Sphere",
+        "start_size_max": 0.73,
+        "start_speed_max": 0.33
+      },
+      "status": "active",
+      "timing_parameters": {
+        "burst_particle_count": 16,
+        "duration_seconds": 1.6,
+        "start_delay_max": 0.275,
+        "start_lifetime_max": 1.08
+      },
+      "topology": "layered_explosion_v1"
+    }
+  ],
+  "negative_prompt": "不要中心空，不要四层同时出现，不要用同一贴图伪装不同职责",
+  "prompt": "卡通火焰爆炸，中心闪光后出现清晰单环冲击波，碎片向外散射，烟雾延迟消散",
+  "render_plan": {
+    "camera": "LayeredExplosionRuntimeCamera",
+    "resolution": "512x512",
+    "scene": "LayeredExplosionRuntimeCapture",
+    "time_points_seconds": [],
+    "unity_project": "UnityDemo/EffectDemo"
+  },
+  "schema_version": "vfxspec.v1",
+  "training_scope": "ai_hypothesis topology; core_readability uses one verified professional Teacher rule"
+}

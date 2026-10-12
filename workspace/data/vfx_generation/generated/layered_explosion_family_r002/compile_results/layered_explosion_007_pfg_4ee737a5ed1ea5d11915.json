@@ -1,0 +1,74 @@
+{
+    "schema_version": "vfx_prefab_graph_compile_result.v1",
+    "created_at": "2026-09-03T16:11:54.4889036Z",
+    "graph_id": "pfg_4ee737a5ed1ea5d11915",
+    "status": "pass",
+    "output_prefab_path": "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/GeneratedRoot.prefab",
+    "source_prefab_read": false,
+    "node_count": 5,
+    "particle_system_count": 4,
+    "generated_material_paths": [
+        "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0000.mat",
+        "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0001.mat",
+        "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0002.mat",
+        "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0003.mat"
+    ],
+    "generated_texture_paths": [],
+    "bound_texture_paths": [
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Glow/FX_Glow_1.TGA",
+        "Assets/VFXSourceIngest/Shared/Textures/72/dian_72805c2f8bec22d6.png",
+        "Assets/VFXSourceIngest/Shared/Textures/78/Tex_zombie_boss_smoke1_7865c49e3509962f.png",
+        "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png"
+    ],
+    "generated_shader_names": [
+        "QFX/ProjectilesFX/Particles",
+        "Common/ColorDefault",
+        "Common/ColorDefault",
+        "Common/ColorDefault"
+    ],
+    "material_template_paths": [
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_ring.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Enemy/Fx_boss/Mat/Mat_zombie_boss_smoke1.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/sparkle_ADD2.mat"
+    ],
+    "material_texture_readbacks": [
+        {
+            "renderer_name": "CoreFlash",
+            "material_path": "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0000.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Glow/FX_Glow_1.TGA"
+        },
+        {
+            "renderer_name": "DebrisBurst",
+            "material_path": "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0002.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/72/dian_72805c2f8bec22d6.png"
+        },
+        {
+            "renderer_name": "ResidualSmoke",
+            "material_path": "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0003.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_DissolveTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/b0/Tex_zombie_boss_smoke2_b0c3f5fa08676ebc.png"
+        },
+        {
+            "renderer_name": "ResidualSmoke",
+            "material_path": "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0003.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/78/Tex_zombie_boss_smoke1_7865c49e3509962f.png"
+        },
+        {
+            "renderer_name": "ShockwaveRing",
+            "material_path": "Assets/Generated/LayeredExplosionFamilyR002/layered_explosion_007_pfg_4ee737a5ed1ea5d11915/Materials/pfg_4ee737a5ed1ea5d11915_p0001.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png"
+        }
+    ],
+    "planned_texture_readback_match": true,
+    "error": ""
+}
