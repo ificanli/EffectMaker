@@ -98,6 +98,8 @@ def main():
                     if digest.hexdigest() != entry['sha256']:
                         raise RuntimeError('Restored file SHA-256 mismatch: '+member.name)
                     temporary.replace(destination)
+                    if destination.suffix == '.meta' and b'folderAsset: yes' in destination.read_bytes():
+                        destination.with_suffix('').mkdir(parents=True, exist_ok=True)
                     restored.add(member.name)
         if restored != set(expected):
             raise RuntimeError('Archive file set does not match manifest: '+name)
