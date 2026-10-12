@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# bd 守卫 wrapper（macOS / Linux / Git Bash）
+#
+# 拦截写操作并引导走 bdg（强制工作记录），只读操作透明转发真实 bd。
+# 本文件被 PATH 前置后生效；真实 bd 在 npm 全局 bin 目录（自动探测）。
+#
+# 拦截规则：
+#   create / close / update / note / comment / delete / import / edit / merge  → 引导 bdg
+#   list / show / ready / query / search / state / children / labels / history / count 等 → 透明转发
+set -euo pipefail
+
+SELF="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/bd"
+
+# 探测真实 bd（npm 全局 bin 目录优先，避免递归调用本 wrapper）
+REAL_BD=""
+NPM_BIN="$(npm prefix -g 2>/dev/null || true)"
+if [ -n "$NPM_BIN" ] && [ -x "$NPM_BIN/bd" ]; then
+  REAL_BD="$NPM_BIN/bd"
+else
+  # 回退：PATH 中第一个非本 wrapper 的 bd
+  for c in $(command -v bd 2>/dev/null | tr '\n' ' '); do
+    if [ "$c" != "$SELF" ]; then REAL_BD="$c"; break; fi
+  done
+fi
+if [ -z "$REAL_BD" ]; then
+  echo "[bd-guard] 找不到真实 bd（npm prefix -g 无 bd，PATH 也无）。" >&2
+  exit 127
+fi
+
+# 项目根目录（本脚本在 workspace/bin/ 下）
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+
+# 拦截的写操作：引导到 bdg 并退出非零
+WRITE_OPS="create close update note comment delete import edit merge set-state tag label promote"
+
+cmd="${1:-}"
+case " $WRITE_OPS " in
+  *" $cmd "*)
+    echo "[bd-guard] 检测到写操作 'bd $*'" >&2
+    echo "[bd-guard] 本仓库强制工作记录：写操作必须走 bdg（创建/关闭/备注/评论/认领）。" >&2
+    echo "[bd-guard] 正确用法：" >&2
+    echo "  python -m workspace.tools.bd_guard create \"标题\" --description ... --acceptance ... --notes ..." >&2
+    echo "  python -m workspace.tools.bd_guard close <id> --reason \"完成：...\" --require-notes" >&2
+    echo "  python -m workspace.tools.bd_guard note <id> \"阶段结论/弯路\"" >&2
+    echo "  python -m workspace.tools.bd_guard claim <id>" >&2
+    echo "[bd-guard] 详见 docs/30-操作指南/工作记录强制规范.md" >&2
+    exit 3
+    ;;
+esac
+
+# 只读/其他操作：透明转发真实 bd
+exec "$REAL_BD" "$@"
