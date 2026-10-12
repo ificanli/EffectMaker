@@ -1,0 +1,462 @@
+{
+    "schema_version": "vfx_prefab_graph.v1",
+    "graph_id": "pfg_b24bb3ec9a1926f44b90",
+    "source": {
+        "source_kind": "generated",
+        "prefab_path": "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/GeneratedRoot.prefab",
+        "source_example_id": ""
+    },
+    "root_node_id": "n0000",
+    "nodes": [
+        {
+            "node_id": "n0000",
+            "name": "GeneratedRoot",
+            "role": "root",
+            "sibling_index": 0,
+            "depth": 0,
+            "parent_node_id": "",
+            "hierarchy_path": "GeneratedRoot[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0001",
+            "name": "MainBolt",
+            "role": "core",
+            "sibling_index": 0,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedRoot[0]/MainBolt[0]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0002",
+            "name": "BranchSupport",
+            "role": "support",
+            "sibling_index": 1,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedRoot[0]/BranchSupport[1]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0003",
+            "name": "ImpactFlash",
+            "role": "hit",
+            "sibling_index": 2,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedRoot[0]/ImpactFlash[2]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    1.350000023841858,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "node_id": "n0004",
+            "name": "ResidualSpark",
+            "role": "residual",
+            "sibling_index": 3,
+            "depth": 1,
+            "parent_node_id": "n0000",
+            "hierarchy_path": "GeneratedRoot[0]/ResidualSpark[3]",
+            "active_self": true,
+            "component_types": [
+                "UnityEngine.ParticleSystem",
+                "UnityEngine.ParticleSystemRenderer",
+                "UnityEngine.Transform"
+            ],
+            "transform": {
+                "local_position": [
+                    1.2999999523162842,
+                    0.0,
+                    0.0
+                ],
+                "local_rotation": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "local_scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "components": {
+        "particle_systems": [
+            {
+                "component_id": "p0000",
+                "node_id": "n0001",
+                "parameters": {
+                    "duration_seconds": 0.550000011920929,
+                    "start_delay_max": 0.0,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 16,
+                    "start_lifetime_max": 0.14000000059604646,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 2.5799999237060549,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.550000011920929,
+                        0.8999999761581421,
+                        1.0,
+                        1.0
+                    ],
+                    "end_color_rgba": [
+                        0.12000000476837158,
+                        0.3199999928474426,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 0.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.20000000298023225,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 10,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0000.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0001",
+                "node_id": "n0002",
+                "parameters": {
+                    "duration_seconds": 0.550000011920929,
+                    "start_delay_max": 0.014999999664723874,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 16,
+                    "start_lifetime_max": 0.12999999523162843,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 1.5499999523162842,
+                    "start_rotation_max": 0.10506424307823181,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.550000011920929,
+                        0.8999999761581421,
+                        1.0,
+                        0.3799999952316284
+                    ],
+                    "end_color_rgba": [
+                        0.12000000476837158,
+                        0.3199999928474426,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 2,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 0.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.6499999761581421,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 9,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0001.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0002",
+                "node_id": "n0003",
+                "parameters": {
+                    "duration_seconds": 0.550000011920929,
+                    "start_delay_max": 0.07000000029802323,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 16,
+                    "start_lifetime_max": 0.11999999731779099,
+                    "start_speed_max": 0.0,
+                    "start_size_max": 0.7599999904632568,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.8799999952316284,
+                        0.9800000190734863,
+                        1.0,
+                        0.15000000596046449
+                    ],
+                    "end_color_rgba": [
+                        0.12000000476837158,
+                        0.3199999928474426,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 1,
+                    "shape_enabled": false,
+                    "shape_type": "disabled",
+                    "shape_radius": 0.0,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.25,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 12,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0002.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "p0003",
+                "node_id": "n0004",
+                "parameters": {
+                    "duration_seconds": 0.550000011920929,
+                    "start_delay_max": 0.11999999731779099,
+                    "looping": false,
+                    "simulation_space": "Local",
+                    "max_particles": 24,
+                    "start_lifetime_max": 0.23999999463558198,
+                    "start_speed_max": 1.399999976158142,
+                    "start_size_max": 0.17000000178813935,
+                    "start_rotation_max": 0.0,
+                    "gravity_modifier_max": 0.0,
+                    "start_color_rgba": [
+                        0.550000011920929,
+                        0.8999999761581421,
+                        1.0,
+                        0.47999998927116396
+                    ],
+                    "end_color_rgba": [
+                        0.12000000476837158,
+                        0.3199999928474426,
+                        1.0,
+                        0.0
+                    ],
+                    "emission_enabled": true,
+                    "emission_rate_over_time_max": 0.0,
+                    "burst_particle_count": 8,
+                    "shape_enabled": true,
+                    "shape_type": "Cone",
+                    "shape_radius": 0.05999999865889549,
+                    "color_over_lifetime_enabled": true,
+                    "size_over_lifetime_enabled": true,
+                    "end_size_multiplier": 0.20000000298023225,
+                    "renderer_mode": "Billboard",
+                    "sorting_order": 7,
+                    "texture_profile": "",
+                    "shader_profile": "",
+                    "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+                    "serialized_modules": "unity_api_readback"
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0003.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "renderers": [
+            {
+                "component_id": "r0000",
+                "node_id": "n0001",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 10
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0000.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0001",
+                "node_id": "n0002",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 9
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0001.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0002",
+                "node_id": "n0003",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 12
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0002.mat"
+                ],
+                "mesh_paths": []
+            },
+            {
+                "component_id": "r0003",
+                "node_id": "n0004",
+                "renderer_type": "ParticleSystemRenderer",
+                "enabled": true,
+                "parameters": {
+                    "particle_render_mode": "Billboard",
+                    "sorting_order": 7
+                },
+                "material_paths": [
+                    "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0003.mat"
+                ],
+                "mesh_paths": []
+            }
+        ],
+        "animations": []
+    },
+    "asset_bindings": {
+        "materials": [
+            "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0000.mat",
+            "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0001.mat",
+            "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0002.mat",
+            "Assets/Generated/LayeredLightningHitAblationR001/lightning_hit_pair_004_pfg_fa5476ad59453bca8c6a/Materials/pfg_b24bb3ec9a1926f44b90_p0003.mat"
+        ],
+        "meshes": []
+    },
+    "reconstruction": {
+        "status": "reconstructable",
+        "compiler_profile": "particle_v1",
+        "missing_fields": [],
+        "unsupported_components": []
+    },
+    "training": {
+        "eligible_tasks": [
+            "component_prediction",
+            "full_reconstruction",
+            "hierarchy_modeling",
+            "particle_parameter_modeling"
+        ],
+        "excluded_tasks": [
+            "aesthetic_preference"
+        ],
+        "aesthetic_label_source": "ai_hypothesis"
+    },
+    "provenance": {
+        "source_dataset_id": "lightning_family_adapter_r001",
+        "source_run_id": "",
+        "exporter": "prefab_graph_readback.v1",
+        "assumptions": [
+            "Graph exported through Unity AssetDatabase and component APIs.",
+            "Material and mesh paths point to the compiled Prefab output assets."
+        ]
+    }
+}

@@ -1,0 +1,570 @@
+{
+  "candidate_count": 8,
+  "created_at": "2026-09-04T00:53:58.088040+00:00",
+  "professional_rule_transfer_pass_count": 4,
+  "records": [
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.403125,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_000_pfg_4249418220fb7505bf60/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.2176220703125,
+        "visible_width_ratio": 0.5171875
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.0,
+      "candidate_id": "lightning_hierarchy_pair_000_pfg_4249418220fb7505bf60",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_4249418220fb7505bf60",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.39375,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_000_pfg_4249418220fb7505bf60/captures/frame_000_0_000.png",
+        "time_seconds": 0.0,
+        "visible_area_ratio": 0.21502685546875,
+        "visible_width_ratio": 0.4796875
+      },
+      "high_luma_width_reduction": 0.009375000000000022,
+      "main_alpha": 1.0,
+      "main_size": 2.5,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "main_is_brighter": true,
+        "main_is_thicker": true,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_000_pfg_4249418220fb7505bf60",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "lightning_main_branch_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.9274924471299093
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.4140625,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_001_pfg_336a4841ae11f4f7ee2b/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.22732177734375,
+        "visible_width_ratio": 0.5703125
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.06,
+      "candidate_id": "lightning_hierarchy_pair_001_pfg_336a4841ae11f4f7ee2b",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_336a4841ae11f4f7ee2b",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.36875,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_001_pfg_336a4841ae11f4f7ee2b/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.2150341796875,
+        "visible_width_ratio": 0.484375
+      },
+      "high_luma_width_reduction": 0.04531249999999998,
+      "main_alpha": 1.0,
+      "main_size": 2.58,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "main_is_brighter": true,
+        "main_is_thicker": true,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_001_pfg_336a4841ae11f4f7ee2b",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "lightning_main_branch_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8493150684931506
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.3875,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_002_pfg_3f4fdd5724eaa7cc6a09/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.23311279296875,
+        "visible_width_ratio": 0.6171875
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.12,
+      "candidate_id": "lightning_hierarchy_pair_002_pfg_3f4fdd5724eaa7cc6a09",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_3f4fdd5724eaa7cc6a09",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.36875,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_002_pfg_3f4fdd5724eaa7cc6a09/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.2159619140625,
+        "visible_width_ratio": 0.4984375
+      },
+      "high_luma_width_reduction": 0.01874999999999999,
+      "main_alpha": 1.0,
+      "main_size": 2.66,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "main_is_brighter": true,
+        "main_is_thicker": true,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_002_pfg_3f4fdd5724eaa7cc6a09",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "lightning_main_branch_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8075949367088607
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.3953125,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_003_pfg_de194480b1dbda41620c/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.22007080078125,
+        "visible_width_ratio": 0.54375
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.18,
+      "candidate_id": "lightning_hierarchy_pair_003_pfg_de194480b1dbda41620c",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_de194480b1dbda41620c",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.375,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_003_pfg_de194480b1dbda41620c/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.215078125,
+        "visible_width_ratio": 0.484375
+      },
+      "high_luma_width_reduction": 0.02031250000000001,
+      "main_alpha": 1.0,
+      "main_size": 2.5,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": false,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "main_is_brighter": true,
+        "main_is_thicker": false,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_003_pfg_de194480b1dbda41620c",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8908045977011495
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.390625,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_004_pfg_2e2b49af3437aebb0e3d/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.22263671875,
+        "visible_width_ratio": 0.5625
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.0,
+      "candidate_id": "lightning_hierarchy_pair_004_pfg_2e2b49af3437aebb0e3d",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_2e2b49af3437aebb0e3d",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.3890625,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_004_pfg_2e2b49af3437aebb0e3d/captures/frame_000_0_000.png",
+        "time_seconds": 0.0,
+        "visible_area_ratio": 0.21498779296875,
+        "visible_width_ratio": 0.4796875
+      },
+      "high_luma_width_reduction": 0.0015625000000000222,
+      "main_alpha": 1.0,
+      "main_size": 2.58,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": false,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": false,
+        "main_is_brighter": true,
+        "main_is_thicker": true,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_004_pfg_2e2b49af3437aebb0e3d",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8527777777777777
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.4125,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_005_pfg_40e9336b0c7b66f38214/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.225703125,
+        "visible_width_ratio": 0.5609375
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.06,
+      "candidate_id": "lightning_hierarchy_pair_005_pfg_40e9336b0c7b66f38214",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_40e9336b0c7b66f38214",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.3921875,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_005_pfg_40e9336b0c7b66f38214/captures/frame_000_0_000.png",
+        "time_seconds": 0.0,
+        "visible_area_ratio": 0.2149267578125,
+        "visible_width_ratio": 0.4796875
+      },
+      "high_luma_width_reduction": 0.020312499999999956,
+      "main_alpha": 1.0,
+      "main_size": 2.66,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": true,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "main_is_brighter": true,
+        "main_is_thicker": true,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_005_pfg_40e9336b0c7b66f38214",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [
+          "lightning_main_branch_hierarchy_controller"
+        ],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8551532033426184
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.3921875,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_006_pfg_f26a1c1d66a4454d10b7/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.222109375,
+        "visible_width_ratio": 0.5578125
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.12,
+      "candidate_id": "lightning_hierarchy_pair_006_pfg_f26a1c1d66a4454d10b7",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_f26a1c1d66a4454d10b7",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.39375,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_006_pfg_f26a1c1d66a4454d10b7/captures/frame_000_0_000.png",
+        "time_seconds": 0.0,
+        "visible_area_ratio": 0.21502685546875,
+        "visible_width_ratio": 0.4796875
+      },
+      "high_luma_width_reduction": -0.0015624999999999667,
+      "main_alpha": 1.0,
+      "main_size": 2.5,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": false,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": false,
+        "main_is_brighter": true,
+        "main_is_thicker": false,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_006_pfg_f26a1c1d66a4454d10b7",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8599439775910364
+    },
+    {
+      "baseline_peak": {
+        "high_luma_width_ratio": 0.390625,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_baselines/lightning_hierarchy_pair_007_pfg_7b66587d5efd10801788/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.22582763671875,
+        "visible_width_ratio": 0.5796875
+      },
+      "branch_alpha": 0.42,
+      "branch_size": 2.18,
+      "candidate_id": "lightning_hierarchy_pair_007_pfg_7b66587d5efd10801788",
+      "graph_comparison": {
+        "difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "expected_difference_paths": [
+          "components.particle_systems[1].parameters.start_color_rgba[3]",
+          "components.particle_systems[1].parameters.start_size_max"
+        ],
+        "only_branch_size_and_alpha_differ": true
+      },
+      "guided_graph_id": "pfg_7b66587d5efd10801788",
+      "guided_peak": {
+        "high_luma_width_ratio": 0.375,
+        "overexposed_visible_ratio": 0.0,
+        "path": "workspace/data/vfx_generation/generated/layered_lightning_hierarchy_ablation_r001/runtime_captures/lightning_hierarchy_pair_007_pfg_7b66587d5efd10801788/captures/frame_001_0_020.png",
+        "time_seconds": 0.019999999552965164,
+        "visible_area_ratio": 0.215859375,
+        "visible_width_ratio": 0.4921875
+      },
+      "high_luma_width_reduction": 0.015625,
+      "main_alpha": 1.0,
+      "main_size": 2.58,
+      "overexposed_visible_reduction": 0.0,
+      "professional_rule_transfer_pass": false,
+      "rule_gates": {
+        "hierarchy_reduces_full_length_highlight": true,
+        "main_is_brighter": true,
+        "main_is_thicker": false,
+        "main_silhouette_is_preserved": true
+      },
+      "source_candidate_id": "layered_lightning_007_pfg_7b66587d5efd10801788",
+      "technical_gates": {
+        "both_runtime_eligible": true,
+        "controlled_graph_difference_only_branch_size_alpha": true,
+        "equal_compile_pass": true,
+        "equal_nonzero_frame_count": true,
+        "equal_prefab_api_readback_pass": true,
+        "equal_texture_readback_matches_plan": true,
+        "no_material_render_errors": true,
+        "same_forced_camera": true
+      },
+      "technical_pass": true,
+      "training_eligibility": {
+        "eligible_tasks": [],
+        "excluded_tasks": [
+          "full_aesthetic_judge",
+          "positive_generation_supervision",
+          "general_quality_head"
+        ],
+        "label_scope": "relative_lightning_main_branch_hierarchy_within_verified_pair"
+      },
+      "visible_width_ratio_retained": 0.8490566037735848
+    }
+  ],
+  "run_id": "layered_lightning_hierarchy_ablation_r001",
+  "schema_version": "vfx_professional_lightning_hierarchy_ablation_batch.v1",
+  "status": "blocked",
+  "teacher_rule": {
+    "controller_prior": {
+      "allowed_use": "lightning_main_branch_rule_controller_only",
+      "effect_family": "lightning",
+      "judgment_axis": "main_branch_hierarchy",
+      "minimum_high_luma_width_reduction": 0.005,
+      "minimum_main_branch_alpha_ratio": 2.0,
+      "minimum_main_branch_size_ratio": 1.2,
+      "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/graphs/main_dominant.json",
+      "status": "eligible",
+      "target_role": "core_support"
+    },
+    "effect_family": "lightning",
+    "expert_judgment": "雷电中心主电流应更粗，外围分支更细且数量克制，避免细碎线条与主电流同亮同重。",
+    "judgment_axes": [
+      "core_readability",
+      "branch_readability",
+      "layer_separation"
+    ],
+    "record_id": "professional_lightning_main_branch_hierarchy_r001",
+    "reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/report.json"
+  },
+  "technical_pass_count": 8,
+  "training_scope": "same-topology lightning main/branch hierarchy pairs only"
+}

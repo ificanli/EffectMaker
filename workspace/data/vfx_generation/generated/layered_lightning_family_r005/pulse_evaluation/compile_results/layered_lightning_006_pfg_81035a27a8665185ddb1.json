@@ -1,0 +1,64 @@
+{
+    "schema_version": "vfx_prefab_graph_compile_result.v1",
+    "created_at": "2026-09-04T02:04:11.6722983Z",
+    "graph_id": "pfg_764755758909e1f81d22",
+    "status": "pass",
+    "output_prefab_path": "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/GeneratedRoot.prefab",
+    "source_prefab_read": false,
+    "node_count": 5,
+    "particle_system_count": 4,
+    "generated_material_paths": [
+        "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0000.mat",
+        "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0001.mat",
+        "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0002.mat",
+        "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0003.mat"
+    ],
+    "generated_texture_paths": [],
+    "bound_texture_paths": [
+        "Assets/Epic Toon FX/Textures/lightning1.png",
+        "Assets/Epic Toon FX/Textures/lightning2.png",
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Hit_1.png",
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Spark_1.png"
+    ],
+    "generated_shader_names": [
+        "QFX/ProjectilesFX/Particles",
+        "QFX/ProjectilesFX/Particles",
+        "QFX/ProjectilesFX/Particles",
+        "QFX/ProjectilesFX/Particles"
+    ],
+    "material_template_paths": [
+        "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat"
+    ],
+    "material_texture_readbacks": [
+        {
+            "renderer_name": "BranchSupport",
+            "material_path": "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0001.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Epic Toon FX/Textures/lightning1.png"
+        },
+        {
+            "renderer_name": "ImpactFlash",
+            "material_path": "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0002.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Hit_1.png"
+        },
+        {
+            "renderer_name": "MainBolt",
+            "material_path": "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0000.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Epic Toon FX/Textures/lightning2.png"
+        },
+        {
+            "renderer_name": "ResidualSpark",
+            "material_path": "Assets/Generated/LightningPulseEvaluationR005/layered_lightning_006_pfg_81035a27a8665185ddb1/Materials/pfg_764755758909e1f81d22_p0003.mat",
+            "shader_name": "QFX/ProjectilesFX/Particles",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Other/FX_Spark_1.png"
+        }
+    ],
+    "planned_texture_readback_match": true,
+    "error": ""
+}
