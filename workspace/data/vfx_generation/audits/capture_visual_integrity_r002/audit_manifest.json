@@ -1,0 +1,27 @@
+{
+  "audit_id": "capture_visual_integrity_r002",
+  "capture_count": 128,
+  "created_at": "2026-09-03T08:04:54.638323+00:00",
+  "files": {
+    "records": "records.jsonl",
+    "technical_exclusions": "technical_exclusions.jsonl"
+  },
+  "pass_count": 116,
+  "quality_gates": {
+    "aesthetic_negative_count": 0,
+    "missing_capture_count": 0
+  },
+  "reason_counts": {
+    "unity_error_magenta": 12
+  },
+  "schema_version": "vfx_capture_visual_integrity_audit.v1",
+  "status": "pass",
+  "technical_exclusion_count": 12,
+  "thresholds": {
+    "error_magenta_min_pixels": 64,
+    "error_magenta_ratio": 0.001,
+    "error_magenta_visible_ratio": 0.5,
+    "pixel_definition": "R>=250,G<=8,B>=250",
+    "visible_pixel_definition": "max(abs(RGB-background_median_from_corners))>8"
+  }
+}
