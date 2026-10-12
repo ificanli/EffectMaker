@@ -1,0 +1,72 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "slash",
+  "effect_type": "slash",
+  "adapter": {
+    "name": "slash.source_ingest.seed",
+    "version": "0.1.0",
+    "generator_family": "source_to_candidate",
+    "specialized_metrics": [
+      "core_arc_readability",
+      "edge_sharpness",
+      "dissolve_direction",
+      "peak_timing"
+    ]
+  },
+  "prompt": "从一个已登记的刀光源文件包反推可生成的主体刀光候选，保留核心材质意图，但不假设原始主体弧一定正确。",
+  "negative_prompt": "不要把源文件存在当作视觉成功；不要继续生成支撑层、命中层或场景锚点；不要使用授权不明贴图作为可提交资产。",
+  "reference": {
+    "source_id": "SRC-VFX-SLASH-001",
+    "case_id": "sample_slash_source_001",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "slash_source_ingest_r001",
+    "candidate_id": "slash_source_candidate_001",
+    "seed": 1001,
+    "generator": "source_ingest_seed",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "core_blade",
+      "status": "active",
+      "topology": "source_derived_arc_candidate",
+      "shape_parameters": {
+        "source_manifest_path": "source_manifest.json",
+        "source_sample_path": "source_sample.json",
+        "topology_confidence": "unknown_until_rendered"
+      },
+      "material_parameters": {
+        "source_material": "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat",
+        "source_shader": "Assets/VFX/Samples/SlashSource001/Shaders/SlashDissolve.hlsl",
+        "source_textures": [
+          "Assets/VFX/Samples/SlashSource001/Textures/slash_flow_noise_01.png"
+        ]
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Must render before training.",
+        "Must preserve source/license trace.",
+        "Core blade can be rejected even if source file is valid."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/UnityVFX/EffectDemo6.0",
+    "scene": "Assets/Scenes/VFXSourceIngestSample.unity",
+    "camera": "Main Camera",
+    "resolution": "1280x720",
+    "time_points_seconds": [
+      0.0,
+      0.08,
+      0.16,
+      0.24,
+      0.4
+    ]
+  }
+}

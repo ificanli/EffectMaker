@@ -1,0 +1,256 @@
+{
+  "schema_version": "source_sample.v1",
+  "sample_id": "sample_src-trains-acid-001",
+  "source_id": "SRC-TRAINS-ACID-001",
+  "purpose": "source_to_vfxspec_seed",
+  "readiness": "needs_render",
+  "inputs": {
+    "source_manifest_path": "source_manifest.json",
+    "selected_files": [
+      "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/qipaobaozha1.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyebowen1.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyebowen2.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyedi.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/FX/Battle/Fx_acid/eff/Fx_acid.prefab"
+    ],
+    "prompt_path": null,
+    "manual_notes_path": null
+  },
+  "extracted": {
+    "effect_family": "acid",
+    "component_summary": {
+      "files": 5,
+      "dependencies": 12,
+      "missing_dependencies": 0,
+      "resolved_shared_dependencies": 8,
+      "external_dependencies": 0,
+      "ignored_dependencies": 0,
+      "builtin_dependencies": 0,
+      "material": 4,
+      "prefab": 1,
+      "animators": 0,
+      "line_renderers": 0,
+      "particle_renderers": 5,
+      "particle_systems": 5,
+      "trail_renderers": 0
+    },
+    "layers": [
+      {
+        "role": "source_prefab_set",
+        "source_files": [
+          "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/FX/Battle/Fx_acid/eff/Fx_acid.prefab"
+        ],
+        "status": "candidate",
+        "observations": [
+          "Prefab structure was indexed, but visual layer roles require rendering and human review."
+        ]
+      }
+    ],
+    "timing": {
+      "duration_seconds": null,
+      "peak_time_seconds": null,
+      "source": "not_extracted"
+    },
+    "shape_parameters": {
+      "prefab_count": 1,
+      "mesh_count": 0,
+      "trail_renderer_count": 0,
+      "line_renderer_count": 0
+    },
+    "material_parameters": {
+      "material_count": 4,
+      "texture_count": 0,
+      "shader_count": 0,
+      "source_materials": [
+        "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/qipaobaozha1.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyebowen1.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyebowen2.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyedi.mat"
+      ],
+      "source_textures": [],
+      "source_shaders": []
+    },
+    "material_selection": {
+      "material_count": 4,
+      "shader_count": 0,
+      "texture_count": 0,
+      "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+      "texture_tag_index_status": "loaded",
+      "texture_tag_index_record_count": 36550,
+      "texture_tagging_status": "required_for_slot_selection",
+      "materials": [
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/qipaobaozha1.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/77/qipaobaozha1_7767db8a6bb7476b.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/77/qipaobaozha1_7767db8a6bb7476b.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 2,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyebowen1.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/82/suanyebowen1_8295ed1bba3a398d.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/82/suanyebowen1_8295ed1bba3a398d.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 2,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyebowen2.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/1d/suanyebowen2_1d15fe45e6a98ac7.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/1d/suanyebowen2_1d15fe45e6a98ac7.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 2,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_acid_001/ArtResources/Effect/__Materials/suanyedi.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 2,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        }
+      ],
+      "shader_candidates": [],
+      "texture_candidates": [],
+      "selection_basis": [
+        "shader paths come from resolved material dependency edges",
+        "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+        "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+      ]
+    },
+    "performance_hints": {
+      "particle_system_count": 5,
+      "particle_renderer_count": 5,
+      "overdraw_risk": "unknown_until_rendered",
+      "draw_call_risk": "unknown_until_unity_profiled"
+    }
+  },
+  "derived": {
+    "vfxspec_path": "derived_vfxspec.json",
+    "render_run_id": "src-trains-acid-001_r001",
+    "candidate_id": "src-trains-acid-001_candidate_001",
+    "training_example_path": "training_example.json"
+  },
+  "evidence": {
+    "capture_manifest_path": "../../../runs/src-trains-acid-001_r001/run_manifest.json",
+    "contact_sheet_path": null,
+    "render_paths": [],
+    "human_feedback_path": "../../../runs/src-trains-acid-001_r001/feedback.jsonl",
+    "quality_gate": {
+      "unity_verified": null,
+      "visual_reviewed": false,
+      "license_checked": true
+    }
+  },
+  "boundaries": [
+    "Parsed source data is not a visual success signal.",
+    "Render capture and human feedback are required before training.",
+    "Large source assets remain local unless license status explicitly allows committing."
+  ]
+}

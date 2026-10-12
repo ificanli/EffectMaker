@@ -1,0 +1,83 @@
+{
+  "schema_version": "source_sample.v1",
+  "sample_id": "sample_slash_source_001",
+  "source_id": "SRC-VFX-SLASH-001",
+  "purpose": "source_to_vfxspec_seed",
+  "readiness": "needs_render",
+  "inputs": {
+    "source_manifest_path": "source_manifest.json",
+    "selected_files": [
+      "Assets/VFX/Samples/SlashSource001/SlashSource001.prefab",
+      "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat",
+      "Assets/VFX/Samples/SlashSource001/Shaders/SlashDissolve.hlsl",
+      "Assets/VFX/Samples/SlashSource001/Textures/slash_flow_noise_01.png"
+    ],
+    "prompt_path": "../../../prompts/slash_arc_001.md",
+    "manual_notes_path": null
+  },
+  "extracted": {
+    "effect_family": "slash",
+    "component_summary": {
+      "prefabs": 1,
+      "materials": 1,
+      "shaders": 1,
+      "textures": 1,
+      "particle_systems": "unknown",
+      "vfx_graphs": 0
+    },
+    "layers": [
+      {
+        "role": "core_blade",
+        "source_files": [
+          "Assets/VFX/Samples/SlashSource001/SlashSource001.prefab",
+          "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat"
+        ],
+        "status": "candidate",
+        "observations": [
+          "源文件看起来以核心刀光材质为主，但必须通过渲染确认主体弧是否成立。"
+        ]
+      }
+    ],
+    "timing": {
+      "duration_seconds": null,
+      "peak_time_seconds": null,
+      "source": "not_extracted"
+    },
+    "shape_parameters": {
+      "dominant_topology": "arc_candidate",
+      "mesh_or_billboard": "unknown"
+    },
+    "material_parameters": {
+      "shader_family": "dissolve_flow_candidate",
+      "known_texture_slots": [
+        "slash_flow_noise_01.png"
+      ]
+    },
+    "performance_hints": {
+      "overdraw_risk": "unknown",
+      "draw_call_risk": "unknown"
+    }
+  },
+  "derived": {
+    "vfxspec_path": "derived_vfxspec.json",
+    "render_run_id": "slash_source_ingest_r001",
+    "candidate_id": "slash_source_candidate_001",
+    "training_example_path": "training_example.json"
+  },
+  "evidence": {
+    "capture_manifest_path": "../../../runs/slash_source_ingest_r001/run_manifest.json",
+    "contact_sheet_path": null,
+    "render_paths": [],
+    "human_feedback_path": "../../../runs/slash_source_ingest_r001/feedback.jsonl",
+    "quality_gate": {
+      "unity_verified": null,
+      "visual_reviewed": false,
+      "license_checked": false
+    }
+  },
+  "boundaries": [
+    "源文件已登记但尚未渲染，不能进入训练。",
+    "授权状态为local_reference_only，不能提交原始贴图或公开训练。",
+    "主体弧是否成立必须由渲染截图和人工反馈判断。"
+  ]
+}

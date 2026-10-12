@@ -1,0 +1,121 @@
+{
+  "schema_version": "source_manifest.v1",
+  "source_id": "SRC-VFX-SLASH-001",
+  "title": "示例刀光源文件包",
+  "effect_family": "slash",
+  "source_kind": "unity_prefab_sample",
+  "ingest_status": "registered",
+  "unity_context": {
+    "project_path": "E:/UnityVFX/EffectDemo6.0",
+    "unity_version": "6000.5.9f1",
+    "render_pipeline": "URP",
+    "pipeline_version": "17.5.0",
+    "package_snapshot_path": null,
+    "scene_path": "Assets/Scenes/VFXSourceIngestSample.unity"
+  },
+  "license": {
+    "status": "local_reference_only",
+    "owner": null,
+    "source_url": null,
+    "evidence_path": null,
+    "notes": "示例占位；真实资源进入训练前必须补授权证据。"
+  },
+  "root": {
+    "path": "E:/UnityVFX/EffectDemo6.0/Assets/VFX/Samples/SlashSource001",
+    "storage_policy": "local_only",
+    "relative_to": "unity_project"
+  },
+  "files": [
+    {
+      "role": "prefab",
+      "path": "Assets/VFX/Samples/SlashSource001/SlashSource001.prefab",
+      "file_type": "prefab",
+      "unity_guid": "00000000000000000000000000000001",
+      "meta_path": "Assets/VFX/Samples/SlashSource001/SlashSource001.prefab.meta",
+      "sha256": null,
+      "size_bytes": null,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "material",
+      "path": "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat",
+      "file_type": "mat",
+      "unity_guid": "00000000000000000000000000000002",
+      "meta_path": "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat.meta",
+      "sha256": null,
+      "size_bytes": null,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "shader",
+      "path": "Assets/VFX/Samples/SlashSource001/Shaders/SlashDissolve.hlsl",
+      "file_type": "hlsl",
+      "unity_guid": "00000000000000000000000000000003",
+      "meta_path": "Assets/VFX/Samples/SlashSource001/Shaders/SlashDissolve.hlsl.meta",
+      "sha256": null,
+      "size_bytes": null,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "texture",
+      "path": "Assets/VFX/Samples/SlashSource001/Textures/slash_flow_noise_01.png",
+      "file_type": "png",
+      "unity_guid": "00000000000000000000000000000004",
+      "meta_path": "Assets/VFX/Samples/SlashSource001/Textures/slash_flow_noise_01.png.meta",
+      "sha256": null,
+      "size_bytes": null,
+      "license_status": "local_reference_only",
+      "commit_policy": "do_not_commit",
+      "importer": {
+        "texture_type": "Default",
+        "sRGB": false,
+        "alpha_source": "InputTextureAlpha"
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "from_path": "Assets/VFX/Samples/SlashSource001/SlashSource001.prefab",
+      "to_path": "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat",
+      "to_guid": "00000000000000000000000000000002",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat",
+      "to_path": "Assets/VFX/Samples/SlashSource001/Shaders/SlashDissolve.hlsl",
+      "to_guid": "00000000000000000000000000000003",
+      "dependency_type": "shader",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFX/Samples/SlashSource001/Materials/SlashCore.mat",
+      "to_path": "Assets/VFX/Samples/SlashSource001/Textures/slash_flow_noise_01.png",
+      "to_guid": "00000000000000000000000000000004",
+      "dependency_type": "texture",
+      "status": "resolved"
+    }
+  ],
+  "links": {
+    "source_sample_path": "source_sample.json",
+    "derived_vfxspec_path": "derived_vfxspec.json",
+    "render_run_id": "slash_source_ingest_r001",
+    "render_manifest_path": "../../../runs/slash_source_ingest_r001/run_manifest.json",
+    "feedback_path": "../../../runs/slash_source_ingest_r001/feedback.jsonl",
+    "training_example_path": "training_example.json",
+    "beads_id": "vfx-2df.15"
+  },
+  "extraction": {
+    "dependency_index_path": null,
+    "parameter_snapshot_path": "source_sample.json",
+    "feature_manifest_path": null,
+    "tool_version": null
+  },
+  "notes": [
+    "这是格式示例，不代表真实资源已授权或已渲染。",
+    "真实摄入时必须用 Unity 依赖查询或 AssetDatabase 补齐 GUID、meta 和缺失依赖。"
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": "source_sample.v1",
+  "sample_id": "sample_src-trains-shield-001-integrity",
+  "source_id": "SRC-TRAINS-SHIELD-001-INTEGRITY",
+  "purpose": "source_to_vfxspec_seed",
+  "readiness": "needs_render",
+  "inputs": {
+    "source_manifest_path": "source_manifest.json",
+    "selected_files": [
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat"
+    ],
+    "prompt_path": null,
+    "manual_notes_path": null
+  },
+  "extracted": {
+    "effect_family": "shield",
+    "component_summary": {
+      "files": 2,
+      "dependencies": 8,
+      "missing_dependencies": 0,
+      "resolved_shared_dependencies": 0,
+      "external_dependencies": 7,
+      "ignored_dependencies": 0,
+      "builtin_dependencies": 0,
+      "m_texture_slot_count": 36,
+      "m_texture_unresolved_count": 0,
+      "duplicate_material_guid_count": 0,
+      "material": 1,
+      "prefab": 1,
+      "animators": 0,
+      "line_renderers": 0,
+      "particle_renderers": 3,
+      "particle_systems": 4,
+      "trail_renderers": 0
+    },
+    "layers": [
+      {
+        "role": "source_prefab_set",
+        "source_files": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab"
+        ],
+        "status": "candidate",
+        "observations": [
+          "Prefab structure was indexed, but visual layer roles require rendering and human review."
+        ]
+      }
+    ],
+    "timing": {
+      "duration_seconds": null,
+      "peak_time_seconds": null,
+      "source": "not_extracted"
+    },
+    "shape_parameters": {
+      "prefab_count": 1,
+      "mesh_count": 0,
+      "trail_renderer_count": 0,
+      "line_renderer_count": 0
+    },
+    "material_parameters": {
+      "material_count": 1,
+      "texture_count": 0,
+      "shader_count": 0,
+      "source_materials": [
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat"
+      ],
+      "source_textures": [],
+      "source_shaders": []
+    },
+    "material_selection": {
+      "material_count": 1,
+      "shader_count": 0,
+      "texture_count": 0,
+      "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+      "texture_tag_index_status": "loaded",
+      "texture_tag_index_record_count": 36550,
+      "texture_tagging_status": "required_for_slot_selection",
+      "materials": [
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+            "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+            "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            },
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            },
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 3,
+          "slot_role_hints": [],
+          "dependency_count": 4,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        }
+      ],
+      "shader_candidates": [],
+      "texture_candidates": [],
+      "selection_basis": [
+        "shader paths come from resolved material dependency edges",
+        "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+        "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+      ]
+    },
+    "performance_hints": {
+      "particle_system_count": 4,
+      "particle_renderer_count": 3,
+      "overdraw_risk": "unknown_until_rendered",
+      "draw_call_risk": "unknown_until_unity_profiled"
+    }
+  },
+  "derived": {
+    "vfxspec_path": "derived_vfxspec.json",
+    "render_run_id": "src-trains-shield-001-integrity_r001",
+    "candidate_id": "src-trains-shield-001-integrity_candidate_001",
+    "training_example_path": "training_example.json"
+  },
+  "evidence": {
+    "capture_manifest_path": "../../../runs/src-trains-shield-001-integrity_r001/run_manifest.json",
+    "contact_sheet_path": null,
+    "render_paths": [],
+    "human_feedback_path": "../../../runs/src-trains-shield-001-integrity_r001/feedback.jsonl",
+    "quality_gate": {
+      "unity_verified": null,
+      "visual_reviewed": false,
+      "license_checked": true
+    }
+  },
+  "boundaries": [
+    "Parsed source data is not a visual success signal.",
+    "Render capture and human feedback are required before training.",
+    "Large source assets remain local unless license status explicitly allows committing."
+  ]
+}

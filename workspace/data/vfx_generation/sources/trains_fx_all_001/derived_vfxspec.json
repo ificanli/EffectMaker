@@ -1,0 +1,3965 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "mixed",
+  "effect_type": "mixed",
+  "adapter": {
+    "name": "mixed.source_ingest.seed",
+    "version": "0.1.0",
+    "generator_family": "source_to_candidate",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "layer_role_clarity",
+      "material_parameter_reusability"
+    ]
+  },
+  "prompt": "Derive a mixed VFX candidate from Unity source files: Trains FX full import.",
+  "negative_prompt": "Do not treat source-file existence as visual success. Do not train without render evidence and human feedback.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "sample_trn_fx_all_001",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trn_fx_all_001_r001",
+    "candidate_id": "trn_fx_all_001_candidate_001",
+    "seed": 1,
+    "generator": "source_ingest_seed",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab_set",
+      "status": "active",
+      "topology": "source_derived_unknown",
+      "shape_parameters": {
+        "source_manifest_path": "source_manifest.json",
+        "prefab_count": 259,
+        "particle_system_count": 1340
+      },
+      "material_parameters": {
+        "material_count": 627,
+        "texture_count": 0,
+        "shader_count": 0,
+        "material_selection": {
+          "material_count": 627,
+          "shader_count": 0,
+          "texture_count": 0,
+          "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+          "texture_tag_index_status": "loaded",
+          "texture_tag_index_record_count": 36550,
+          "texture_tagging_status": "required_for_slot_selection",
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/abyss_img_skipportalstars.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/e3/abyss_img_skipportalstars_e3ef042060528cbb.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/e3/abyss_img_skipportalstars_e3ef042060528cbb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/bao2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/6e/guang3_00_6ea0b016e3f7400d.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/6e/guang3_00_6ea0b016e3f7400d.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/fang.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/04/fang_04da935db952757e.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/04/fang_04da935db952757e.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/feibiao2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/43/feibiao2_43fad9cad1ca63c2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/43/feibiao2_43fad9cad1ca63c2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangbiao 3.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/ad/guangbiao_ad43dffeb063c609.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ad/guangbiao_ad43dffeb063c609.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangdian.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/c3/guangdian_c386ae113e53e7ea.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/c3/guangdian_c386ae113e53e7ea.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangdian1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/c3/guangdian_c386ae113e53e7ea.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/c3/guangdian_c386ae113e53e7ea.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guanghuan5.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/b5/guanghuan2_b529c7436121ac03.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b5/guanghuan2_b529c7436121ac03.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan10 1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/5e/guangquan10_5edd8e46cffb0dbb.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/5e/guangquan10_5edd8e46cffb0dbb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan10.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/5e/guangquan10_5edd8e46cffb0dbb.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/5e/guangquan10_5edd8e46cffb0dbb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan11.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/21/guangquan12_21577bf39c6b50a0.jpg"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/21/guangquan12_21577bf39c6b50a0.jpg",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan12.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/5e/guangquan10_5edd8e46cffb0dbb.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/5e/guangquan10_5edd8e46cffb0dbb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan20.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/60/guangquan19_607fa7b9ec8be154.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/60/guangquan19_607fa7b9ec8be154.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangsu 4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/10/guangsu_1_10975688df8902b9.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/10/guangsu_1_10975688df8902b9.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangyun.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangyun7.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a4/guangyun7_a476c496dd8268bf.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a4/guangyun7_a476c496dd8268bf.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangyun8.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/b2/guangyun14_b22d1da3989430d6.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b2/guangyun14_b22d1da3989430d6.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangzhu.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/b9/guangzhu_b912a80e3a1d7003.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b9/guangzhu_b912a80e3a1d7003.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hd 6.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/fe/hd_fe63293c4b9fdbf2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/fe/hd_fe63293c4b9fdbf2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hexinbao.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/ef/guangdian2_ef4dd1b931ace231.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ef/guangdian2_ef4dd1b931ace231.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/jiguangfangxing_1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/b7/jiguangfangxing_b73b62a3e46c6b14.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b7/jiguangfangxing_b73b62a3e46c6b14.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/kt (162).mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/83/kt_162_8399e75112c56b61.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/83/kt_162_8399e75112c56b61.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/kt (64).mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/c2/kt_64_c20e6ca06d6954eb.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/c2/kt_64_c20e6ca06d6954eb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/leidian.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/98/leidian_98818ebb4b227fd5.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/98/leidian_98818ebb4b227fd5.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/leidian3.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/f0/leidian2_f05fc3e776367cc7.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/f0/leidian2_f05fc3e776367cc7.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/leidian4 1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/31/leidian9_312d4ad5e52a72db.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/31/leidian9_312d4ad5e52a72db.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/leidian4_2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/31/leidian9_312d4ad5e52a72db.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/31/leidian9_312d4ad5e52a72db.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/leidian6 2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/37/leidian6_2_376914a9e741864b.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/37/leidian6_2_376914a9e741864b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/libaoguang 1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/libaoguang.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_24_2_xin03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/58/Tex_08_huo01_58eb0c2247682ff6.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/58/Tex_08_huo01_58eb0c2247682ff6.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/9d/Tex_46_wuping_21_9d534b2ca6008a50.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/9d/Tex_46_wuping_21_9d534b2ca6008a50.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_somke_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/18/shj_5_18b332b843156173.png",
+                "Assets/VFXSourceIngest/Shared/Textures/88/yanchen_88bfb2c5276db28e.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/18/shj_5_18b332b843156173.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/88/yanchen_88bfb2c5276db28e.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_55_Glow_03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/da/Tex_23_glow_05_dafa6ab29e839e5d.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/da/Tex_23_glow_05_dafa6ab29e839e5d.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_anyewuyao_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/c7/Tex_anyewuyao_01_c7b10679bf1388c9.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/c7/Tex_anyewuyao_01_c7b10679bf1388c9.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_dishuxiongdi_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png",
+                "Assets/VFXSourceIngest/Shared/Textures/9f/Tex_dishuxiongdi_01_9f219b7e79e6a29f.tga"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/9f/Tex_dishuxiongdi_01_9f219b7e79e6a29f.tga",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_fengkuangyuedui_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_fengkuangyuedui_09.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/17/Tex_chengjie_03_177908b2b2eb8ac2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/17/Tex_chengjie_03_177908b2b2eb8ac2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_fire_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/33/huoyan7_33eb6e37c09d965d.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/33/huoyan7_33eb6e37c09d965d.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+                "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_hudun_wuowei_3aeeb2d9446563e7.png",
+                "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_hudun_wuowei_3aeeb2d9446563e7.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+                "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+                "Assets/VFXSourceIngest/Shared/Textures/55/yuanhuan_558f4c30fbee7f8d.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/55/yuanhuan_558f4c30fbee7f8d.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_jinzita_06.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/ec/choukafaguang2_ec30eaeb6190f742.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ec/choukafaguang2_ec30eaeb6190f742.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_jiqiren_04.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/7f/tuowei4_7fce611df8c752e3.png",
+                "Assets/VFXSourceIngest/Shared/Textures/fe/Tex_shirenhua_04_fe6a3d8d876e5af1.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/7f/tuowei4_7fce611df8c752e3.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/fe/Tex_shirenhua_04_fe6a3d8d876e5af1.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_jiqiren_06.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_jiqiren_07.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_shouqiangren_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/0b/Tex_shouqiangren_01_0bcc9b6402ad41cb.png",
+                "Assets/VFXSourceIngest/Shared/Textures/17/Tex_27_Mask_02_173e6ed23b89159d.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/0b/Tex_shouqiangren_01_0bcc9b6402ad41cb.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/17/Tex_27_Mask_02_173e6ed23b89159d.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_shouqiangren_13.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/b5/guanghuan2_b529c7436121ac03.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b5/guanghuan2_b529c7436121ac03.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_yezi_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/7a/yezi_7a8ee5e5dbb815af.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/7a/yezi_7a8ee5e5dbb815af.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/penhuo4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/penhuo6.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/qipaobaozha1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/77/qipaobaozha1_7767db8a6bb7476b.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/77/qipaobaozha1_7767db8a6bb7476b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/quanxinyanchen.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+                "Assets/VFXSourceIngest/Shared/Textures/69/yancheng1_69a73fc565ee37fd.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/69/yancheng1_69a73fc565ee37fd.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/ring_1 1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/bc/ring_bc10204e013a7a4f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/bc/ring_bc10204e013a7a4f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/ring_1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/ring_4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/sanjiao111.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/60/sanjiao_6095fca49aab8264.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/60/sanjiao_6095fca49aab8264.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/shizixing 1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/3d/shizixing_3d2763ae44ecc0d3.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/3d/shizixing_3d2763ae44ecc0d3.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/sparkle_ADD2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/72/dian_72805c2f8bec22d6.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/dian_72805c2f8bec22d6.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suanyebowen 1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/8d/suanyebowen_8da2d6ce0b865a07.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/8d/suanyebowen_8da2d6ce0b865a07.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suanyebowen1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/82/suanyebowen1_8295ed1bba3a398d.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/82/suanyebowen1_8295ed1bba3a398d.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suanyebowen2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/1d/suanyebowen2_1d15fe45e6a98ac7.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/1d/suanyebowen2_1d15fe45e6a98ac7.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suanyedi.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suishi_1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/f8/suishi_f82c997ca2bfc895.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/f8/suishi_f82c997ca2bfc895.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/tuowei13.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/FrameAnimation.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/FrameAnimation.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/ff/tuowei2_ff8d4ee148e4397e.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ff/tuowei2_ff8d4ee148e4397e.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/tuowei13_TransOff.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/FrameAnimation.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/FrameAnimation.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/ff/tuowei2_ff8d4ee148e4397e.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ff/tuowei2_ff8d4ee148e4397e.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xiaoshandian.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/63/xiaoshandian_6310b2cafbc5773a.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/63/xiaoshandian_6310b2cafbc5773a.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xiaoyuan.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xingxing.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/12/xingxing_1238e718ea3a97d1.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/12/xingxing_1238e718ea3a97d1.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xishandian.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/eb/xishandian_ebb7d597fb58bfee.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/eb/xishandian_ebb7d597fb58bfee.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xuehuapian1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/96/xuehua2_96acc134be39ecfc.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/96/xuehua2_96acc134be39ecfc.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/2c/xulie4_1_2c070cb2ec7a7e82.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/2c/xulie4_1_2c070cb2ec7a7e82.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yantuan 3.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+                "Assets/VFXSourceIngest/Shared/Textures/f1/yanchen5_f1f198d46000dac8.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/45/rongjieyanchen_457f4f61081496a6.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/f1/yanchen5_f1f198d46000dac8.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yanwu_xs.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/4b/yanwu_xs_4b61bd5e7f0ae420.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/4b/yanwu_xs_4b61bd5e7f0ae420.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yinying.mat",
+              "primary_shader_path": null,
+              "shader_paths": [],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "texture",
+                "unity_builtin"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan10.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan5.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan8.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuandian1.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_27_Glow_05.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/a9/shj_4_a9663eb5baca04b2.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d6/ring_1_d6c4a2af3c5c5762.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_buqiang_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/18/jianbiantu_3_1822e2fe3f6d5da1.png",
+                "Assets/VFXSourceIngest/Shared/Textures/51/Tex_301_mask_07_5112dd0a497f3029.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/18/jianbiantu_3_1822e2fe3f6d5da1.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/51/Tex_301_mask_07_5112dd0a497f3029.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_chengjie_06.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/92/Tex_chengjie_04_924bd49a9f438598.png",
+                "Assets/VFXSourceIngest/Shared/Textures/d0/wenli19_d049aec453c28ea4.png",
+                "Assets/VFXSourceIngest/Shared/Textures/d9/mask_3_d9b8fc293595bcde.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/92/Tex_chengjie_04_924bd49a9f438598.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d0/wenli19_d049aec453c28ea4.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d9/mask_3_d9b8fc293595bcde.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 4,
+              "slot_role_hints": [],
+              "dependency_count": 5,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_chuanjia_Noise_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png",
+                "Assets/VFXSourceIngest/Shared/Textures/34/Tex_52_mask_04_34ea2b357a58c81e.png",
+                "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/34/Tex_52_mask_04_34ea2b357a58c81e.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 4,
+              "slot_role_hints": [],
+              "dependency_count": 5,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_chuanjia_trail_04.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/0b/Tex_chuanjia_trail_02_0babf837604e54e6.png",
+                "Assets/VFXSourceIngest/Shared/Textures/da/Tex_52_mask_01_da9488609a7e548e.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/0b/Tex_chuanjia_trail_02_0babf837604e54e6.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/da/Tex_52_mask_01_da9488609a7e548e.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_danke_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/4c/Tex_danke_01_4c116a5a293a95f0.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/4c/Tex_danke_01_4c116a5a293a95f0.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/4e/Tex_daodan_03_4e753c5e5889bec7.png",
+                "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/4e/Tex_daodan_03_4e753c5e5889bec7.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+                "Assets/VFXSourceIngest/Shared/Textures/89/Mat_27_Xulie_02_899e75bee8cd14b5.png",
+                "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/89/Mat_27_Xulie_02_899e75bee8cd14b5.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_dufeibiao_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/d7/Tex_dufeibiao_01_d741640498d3d743.png",
+                "Assets/VFXSourceIngest/Shared/Textures/ff/Tex_chengjie_06_ff1a1121ee0ca8fd.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d7/Tex_dufeibiao_01_d741640498d3d743.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ff/Tex_chengjie_06_ff1a1121ee0ca8fd.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_fengkuangyuedui_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/dc/Tex_fengkuangyuedui_01_dc9201de449ab2af.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/dc/Tex_fengkuangyuedui_01_dc9201de449ab2af.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 1,
+              "slot_role_hints": [],
+              "dependency_count": 2,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_kun_10.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                "Assets/VFXSourceIngest/Shared/Textures/d0/wenli19_d049aec453c28ea4.png",
+                "Assets/VFXSourceIngest/Shared/Textures/e9/Tex_kun_10_e96592183851de23.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/d0/wenli19_d049aec453c28ea4.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/e9/Tex_kun_10_e96592183851de23.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 3,
+              "slot_role_hints": [],
+              "dependency_count": 4,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_kun_13.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_paths": [
+                "Assets/VFXSourceIngest/Shared/Textures/09/Tex_trail_04_091ec084c4e64e19.png",
+                "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/09/Tex_trail_04_091ec084c4e64e19.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+                  "role": "texture",
+                  "status": "candidate",
+                  "tag_match": null,
+                  "tag_source": "dependency_only",
+                  "asset_id": null,
+                  "tags": [],
+                  "slot_roles": [],
+                  "license_status": "unknown",
+                  "thumbnail_status": null,
+                  "width": null,
+                  "height": null
+                }
+              ],
+              "tagged_texture_count": 0,
+              "untagged_texture_count": 2,
+              "slot_role_hints": [],
+              "dependency_count": 3,
+              "dependency_types": [
+                "shader",
+                "texture"
+              ]
+            }
+          ],
+          "shader_candidates": [],
+          "texture_candidates": [],
+          "selection_basis": [
+            "shader paths come from resolved material dependency edges",
+            "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+            "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Must render before training.",
+        "Must preserve source/license trace."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "unassigned",
+    "camera": "Main Camera",
+    "resolution": "1280x720",
+    "time_points_seconds": [
+      0.0,
+      0.08,
+      0.16,
+      0.24,
+      0.4
+    ]
+  }
+}

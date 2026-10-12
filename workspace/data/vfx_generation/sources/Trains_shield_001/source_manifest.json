@@ -1,0 +1,395 @@
+{
+  "schema_version": "source_manifest.v1",
+  "source_id": "SRC-TRAINS-SHIELD-001",
+  "title": "shield",
+  "effect_family": "shield",
+  "source_kind": "unity_effect_package",
+  "ingest_status": "parameters_extracted",
+  "created_at": "2026-08-28T03:33:37.874803+00:00",
+  "unity_context": {
+    "project_path": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "unity_version": "2022.3.16f1c1",
+    "render_pipeline": "URP",
+    "pipeline_version": "14.0.9",
+    "package_snapshot_path": "Packages/manifest.json",
+    "scene_path": null,
+    "original_project_path": "E:/Trains/Unity",
+    "original_source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+    "copied_source_path": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo/Assets/VFXSourceIngest/Trains/Trains_shield_001"
+  },
+  "license": {
+    "status": "local_reference_only",
+    "owner": "user-owned local project",
+    "source_url": null,
+    "evidence_path": null,
+    "notes": "Local training/reference only until the user confirms redistribution or broader training rights."
+  },
+  "root": {
+    "path": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo/Assets/VFXSourceIngest/Trains/Trains_shield_001",
+    "storage_policy": "local_only",
+    "relative_to": "target_unity_project"
+  },
+  "files": [
+    {
+      "role": "material",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+      "file_type": "mat",
+      "unity_guid": "9d2c4fde99f144b683f348a6e107c90a",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat.meta",
+      "sha256": "7bbe76c2c5f360a2c20fd7d772dd6f4d852e78f48dc7a061ef9233bd0ae0ce1b",
+      "size_bytes": 4247,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "material",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+      "file_type": "mat",
+      "unity_guid": "3df694076eee44b696e6b4f7cfa73646",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat.meta",
+      "sha256": "1c5f743d70868c365579e60df8f11b7bb6577c8df50018d64d25dc2554af4379",
+      "size_bytes": 4228,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "prefab",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "file_type": "prefab",
+      "unity_guid": "98d4ae0645d84744caa3eff83314f175",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab.meta",
+      "sha256": "9d51e6b7c2ec83e77d206f0f29796307cc5084603d8f52871266d2ea772de820",
+      "size_bytes": 491595,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "material",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+      "file_type": "mat",
+      "unity_guid": "702b105686fd43ab9885b25e4140a96f",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat.meta",
+      "sha256": "8c30d49dfbcac7f59bac171ebcfe3c0c40ac971d2c777e49e24384ceb161a72f",
+      "size_bytes": 4255,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    }
+  ],
+  "dependencies": [
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+      "to_guid": "27f62cfb0e29486299ea20254882c790",
+      "dependency_type": "shader",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+      "to_guid": "6a50d3cc2c41456faa4068d199e16c31",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_hudun_wuowei_3aeeb2d9446563e7.png",
+      "to_guid": "70a2a60ee20845f1a011e656b9f655ad",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+      "to_guid": "36289fffa79e4c3db209fa6f63280769",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+      "to_guid": "27f62cfb0e29486299ea20254882c790",
+      "dependency_type": "shader",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+      "to_guid": "6a50d3cc2c41456faa4068d199e16c31",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/55/yuanhuan_558f4c30fbee7f8d.png",
+      "to_guid": "797da56783744590b85a492b11d91ec9",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+      "to_guid": "36289fffa79e4c3db209fa6f63280769",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "to_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+      "to_guid": "9d2c4fde99f144b683f348a6e107c90a",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "to_path": "Assets/VFXSourceIngest/Shared/Meshes/95/mod_yuan1_9507a0d70720cf7b.fbx",
+      "to_guid": "8f39c47794b941a98174b054c703d124",
+      "dependency_type": "mesh",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "to_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+      "to_guid": "3df694076eee44b696e6b4f7cfa73646",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab",
+      "to_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+      "to_guid": "702b105686fd43ab9885b25e4140a96f",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+      "to_guid": "27f62cfb0e29486299ea20254882c790",
+      "dependency_type": "shader",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+      "to_guid": "8efddb3c08af4435a8ce706b4ef62b07",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png",
+      "to_guid": "7bd2839c583542278ed3c53a7aaa2a7b",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_shield_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+      "to_guid": "e432bfa31d384666ad7498da512c3a1b",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    }
+  ],
+  "links": {
+    "source_sample_path": "source_sample.json",
+    "derived_vfxspec_path": "derived_vfxspec.json",
+    "render_run_id": "src-trains-shield-001_r001",
+    "render_manifest_path": "../../../runs/src-trains-shield-001_r001/run_manifest.json",
+    "feedback_path": "../../../runs/src-trains-shield-001_r001/feedback.jsonl",
+    "training_example_path": "training_example.json",
+    "beads_id": "vfx-2df.19"
+  },
+  "extraction": {
+    "dependency_index_path": null,
+    "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+    "texture_tag_index_status": "loaded",
+    "texture_tag_index_record_count": 36550,
+    "texture_tag_index_source": "default_global",
+    "texture_tag_index_error": null,
+    "parameter_snapshot_path": "source_sample.json",
+    "feature_manifest_path": null,
+    "tool_version": "vfx_source_ingest.v1",
+    "copy_dependency_closure": true,
+    "shared_dependency_pool": {
+      "mode": "shared_dependency_pool",
+      "shared_root": "Assets/VFXSourceIngest/Shared",
+      "shared_index": "Library/VFXSourceIngest/shared_dependency_index.json",
+      "copied_shared": 8,
+      "reused_shared": 2,
+      "copied_sample": 4,
+      "guid_rewrite_count": 16,
+      "guid_mapping_count": 13,
+      "rebased_material_count": 3,
+      "dry_run": false,
+      "assets": [
+        {
+          "source": "E:/Trains/Unity/Assets/Bundles/Shaders/Common/ColorDefault.shader",
+          "sha256": "dd6aa079099fb36e7d7ed98f6c4744647e142984400a4312feeaaff476e36fdc",
+          "action": "reused",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "role": "shader",
+            "sha256": "dd6aa079099fb36e7d7ed98f6c4744647e142984400a4312feeaaff476e36fdc",
+            "source_path": "E:/Trains/Unity/Assets/Bundles/Shaders/Common/ColorDefault.shader",
+            "unity_guid": "27f62cfb0e29486299ea20254882c790"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/Bundles/Shaders/ShaderLibraries/PixelPeerlessCommon.hlsl",
+          "sha256": "908947337c67bacaf44f8e06a92a9e1f580853925b4bfcae76ad973da4d6e74b",
+          "action": "reused",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/ShaderLibraries/PixelPeerlessCommon.hlsl",
+            "role": "shader_include",
+            "sha256": "908947337c67bacaf44f8e06a92a9e1f580853925b4bfcae76ad973da4d6e74b",
+            "source_path": "E:/Trains/Unity/Assets/Bundles/Shaders/ShaderLibraries/PixelPeerlessCommon.hlsl",
+            "unity_guid": "fafada71c0c148f5a958e83bbb0e6226"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/Effect/__models/mod_yuan1.fbx",
+          "sha256": "9507a0d70720cf7bef1d4a14771401f6360f2f3c42b94db168636db2653ec3f9",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Meshes/95/mod_yuan1_9507a0d70720cf7b.fbx",
+            "unity_guid": "8f39c47794b941a98174b054c703d124",
+            "sha256": "9507a0d70720cf7bef1d4a14771401f6360f2f3c42b94db168636db2653ec3f9",
+            "role": "mesh",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/Effect/__models/mod_yuan1.fbx"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/Effect/_noise/Tex_noise_02.png",
+          "sha256": "250b535b64dd8bf3547d48cf722cfc99e45f11da52bb14593b7406b14f4a1991",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+            "unity_guid": "36289fffa79e4c3db209fa6f63280769",
+            "sha256": "250b535b64dd8bf3547d48cf722cfc99e45f11da52bb14593b7406b14f4a1991",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/Effect/_noise/Tex_noise_02.png"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/Effect/guangyun/yuanhuan.png",
+          "sha256": "558f4c30fbee7f8dd49fb5f2babd9324448618948edd609b787ddb4b1b766381",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/55/yuanhuan_558f4c30fbee7f8d.png",
+            "unity_guid": "797da56783744590b85a492b11d91ec9",
+            "sha256": "558f4c30fbee7f8dd49fb5f2babd9324448618948edd609b787ddb4b1b766381",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/Effect/guangyun/yuanhuan.png"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/Effect/tuowei/Tex_hudun_wuowei.png",
+          "sha256": "3aeeb2d9446563e7796e8103436770c2474da45c50ce15654b8db0aa27fe74bb",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_hudun_wuowei_3aeeb2d9446563e7.png",
+            "unity_guid": "70a2a60ee20845f1a011e656b9f655ad",
+            "sha256": "3aeeb2d9446563e7796e8103436770c2474da45c50ce15654b8db0aa27fe74bb",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/Effect/tuowei/Tex_hudun_wuowei.png"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_tiebijiangjun/tex/Tex_tiebijiangjun_kejiwenli.png",
+          "sha256": "e3d69ceece1340e5238b3f3f72442a706c755efb2c783d9722ae00cddeeb02c3",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png",
+            "unity_guid": "7bd2839c583542278ed3c53a7aaa2a7b",
+            "sha256": "e3d69ceece1340e5238b3f3f72442a706c755efb2c783d9722ae00cddeeb02c3",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_tiebijiangjun/tex/Tex_tiebijiangjun_kejiwenli.png"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_tiebijiangjun/tex/Tex_tiebijiangjun_kejiwenli1.png",
+          "sha256": "b20c9f1ff44b8e7b0fec6a56bdf2aaea82e7b65f59860115f32d8989ba21e849",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+            "unity_guid": "8efddb3c08af4435a8ce706b4ef62b07",
+            "sha256": "b20c9f1ff44b8e7b0fec6a56bdf2aaea82e7b65f59860115f32d8989ba21e849",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_tiebijiangjun/tex/Tex_tiebijiangjun_kejiwenli1.png"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_tiebijiangjun/tex/Tex_tiebijiangjun_ring1.png",
+          "sha256": "7da6c5c1fe66df708c9e906f4027d3d2e49e14d42c92d01b2775f075e6ac6fa8",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+            "unity_guid": "e432bfa31d384666ad7498da512c3a1b",
+            "sha256": "7da6c5c1fe66df708c9e906f4027d3d2e49e14d42c92d01b2775f075e6ac6fa8",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_tiebijiangjun/tex/Tex_tiebijiangjun_ring1.png"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_zhiyugeji/tex/Tex_zhiyugeji_wenli.png",
+          "sha256": "485848ad894bc2c98f2a10f3e4ebead32a857838b5e402ac5010d4628572664f",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+            "unity_guid": "6a50d3cc2c41456faa4068d199e16c31",
+            "sha256": "485848ad894bc2c98f2a10f3e4ebead32a857838b5e402ac5010d4628572664f",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Battle/Fx_zhiyugeji/tex/Tex_zhiyugeji_wenli.png"
+          }
+        }
+      ],
+      "integrity": {
+        "status": "passed",
+        "shared_asset_count": 10,
+        "sample_asset_count": 4
+      }
+    },
+    "shared_dependency_store": "Assets/VFXSourceIngest/Shared",
+    "shared_index_path": null,
+    "dedupe_by": "sha256",
+    "rewrite_guid_references": true,
+    "dry_run": false,
+    "include_script_dependencies": false,
+    "copyable_dependency_extensions": [
+      ".anim",
+      ".asset",
+      ".blend",
+      ".cginc",
+      ".controller",
+      ".cubemap",
+      ".dds",
+      ".exr",
+      ".fbx",
+      ".hlsl",
+      ".jpeg",
+      ".jpg",
+      ".mat",
+      ".obj",
+      ".overridecontroller",
+      ".playable",
+      ".png",
+      ".prefab",
+      ".psd",
+      ".rendertexture",
+      ".shader",
+      ".shadergraph",
+      ".shadersubgraph",
+      ".spriteatlas",
+      ".tga",
+      ".vfx"
+    ],
+    "guid_cache": {
+      "status": "cache_hit",
+      "entries": 16322,
+      "cache_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/guid_cache/trains_unity_assets.json"
+    }
+  },
+  "notes": [
+    "Generated by workspace.tools.vfx_source_ingest.",
+    "Source files are context for training, not visual success evidence."
+  ]
+}

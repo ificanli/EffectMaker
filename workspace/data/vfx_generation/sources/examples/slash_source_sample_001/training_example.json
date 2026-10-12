@@ -1,0 +1,28 @@
+{
+  "schema_version": "training_example.v1",
+  "example_id": "train_slash_source_001",
+  "run_id": "slash_source_ingest_r001",
+  "candidate_id": "slash_source_candidate_001",
+  "inputs": {
+    "prompt": "从刀光源文件包反推主体刀光候选。",
+    "negative_prompt": "不要把源文件存在当作视觉成功。",
+    "reference_frames": [],
+    "spec_path": "derived_vfxspec.json",
+    "render_manifest_path": "../../../runs/slash_source_ingest_r001/run_manifest.json",
+    "source_manifest_path": "source_manifest.json",
+    "source_sample_path": "source_sample.json"
+  },
+  "outputs": {
+    "render_paths": [],
+    "features_path": null
+  },
+  "label": {
+    "decision": "unlabeled",
+    "rank": null,
+    "accepted_parts": [],
+    "rejected_parts": [],
+    "next_mutation": [
+      "渲染后再判断主体弧是否成立。"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "training_example.v1",
+  "example_id": "train_src-trains-fx-acid-001",
+  "run_id": "src-trains-fx-acid-001_r001",
+  "candidate_id": "src-trains-fx-acid-001_candidate_001",
+  "inputs": {
+    "prompt": "Derive a mixed VFX candidate from Unity source files: Fx_acid.",
+    "negative_prompt": "Do not treat source-file existence as visual success. Do not train without render evidence and human feedback.",
+    "reference_frames": [],
+    "spec_path": "derived_vfxspec.json",
+    "render_manifest_path": "../../../runs/src-trains-fx-acid-001_r001/run_manifest.json",
+    "source_manifest_path": "source_manifest.json",
+    "source_sample_path": "source_sample.json",
+    "material_selection": {
+      "material_count": 0,
+      "shader_count": 0,
+      "texture_count": 0,
+      "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+      "texture_tag_index_status": "loaded",
+      "texture_tag_index_record_count": 36550,
+      "texture_tagging_status": "required_for_slot_selection",
+      "materials": [],
+      "shader_candidates": [],
+      "texture_candidates": [],
+      "selection_basis": [
+        "shader paths come from resolved material dependency edges",
+        "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+        "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+      ]
+    }
+  },
+  "outputs": {
+    "render_paths": [],
+    "features_path": null
+  },
+  "label": {
+    "decision": "unlabeled",
+    "rank": null,
+    "accepted_parts": [],
+    "rejected_parts": [],
+    "next_mutation": [
+      "Render the copied/source-indexed effect before assigning training labels."
+    ]
+  }
+}

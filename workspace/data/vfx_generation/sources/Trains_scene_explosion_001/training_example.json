@@ -1,0 +1,326 @@
+{
+  "schema_version": "training_example.v1",
+  "example_id": "train_src-trains-scene_explosion-001",
+  "run_id": "src-trains-scene_explosion-001_r001",
+  "candidate_id": "src-trains-scene_explosion-001_candidate_001",
+  "inputs": {
+    "prompt": "Derive a explosion VFX candidate from Unity source files: scene_explosion.",
+    "negative_prompt": "Do not treat source-file existence as visual success. Do not train without render evidence and human feedback.",
+    "reference_frames": [],
+    "spec_path": "derived_vfxspec.json",
+    "render_manifest_path": "../../../runs/src-trains-scene_explosion-001_r001/run_manifest.json",
+    "source_manifest_path": "source_manifest.json",
+    "source_sample_path": "source_sample.json",
+    "material_selection": {
+      "material_count": 8,
+      "shader_count": 0,
+      "texture_count": 0,
+      "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+      "texture_tag_index_status": "loaded",
+      "texture_tag_index_record_count": 36550,
+      "texture_tagging_status": "required_for_slot_selection",
+      "materials": [
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_01.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/b4/eff_glow_131_b4ebbec0f4aa1f14.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/b4/eff_glow_131_b4ebbec0f4aa1f14.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_02.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/b4/eff_glow_131_b4ebbec0f4aa1f14.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/b4/eff_glow_131_b4ebbec0f4aa1f14.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_03.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/4a/eff_xulie_baozha_01_4a8a4883bb543546.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/4a/eff_xulie_baozha_01_4a8a4883bb543546.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_04.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/c5/eff_xulie_spark_01_c5cc0c659c9ec378.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/c5/eff_xulie_spark_01_c5cc0c659c9ec378.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_05.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/6e/eff_xulie_baozha_02_6e010f24596a67dd.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/6e/eff_xulie_baozha_02_6e010f24596a67dd.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_06.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/13/eff_glow_138_13e7b7e98538dfeb.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/13/eff_glow_138_13e7b7e98538dfeb.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_07.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/36/eff_xulie_baozha_04_361209b8495e8c4f.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/36/eff_xulie_baozha_04_361209b8495e8c4f.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_scene_explosion_001/ArtResources/FX/Scene/Fx_explosion/mat/Mat_explosion_08.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/73/eff_yanhuo_005_730005f96186166d.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/73/eff_yanhuo_005_730005f96186166d.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        }
+      ],
+      "shader_candidates": [],
+      "texture_candidates": [],
+      "selection_basis": [
+        "shader paths come from resolved material dependency edges",
+        "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+        "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+      ]
+    }
+  },
+  "outputs": {
+    "render_paths": [],
+    "features_path": null
+  },
+  "label": {
+    "decision": "unlabeled",
+    "rank": null,
+    "accepted_parts": [],
+    "rejected_parts": [],
+    "next_mutation": [
+      "Render the copied/source-indexed effect before assigning training labels."
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "training_example.v1",
+  "example_id": "train_src-trains-shield-001-integrity",
+  "run_id": "src-trains-shield-001-integrity_r001",
+  "candidate_id": "src-trains-shield-001-integrity_candidate_001",
+  "inputs": {
+    "prompt": "Derive a shield VFX candidate from Unity source files: Trains shield import integrity audit.",
+    "negative_prompt": "Do not treat source-file existence as visual success. Do not train without render evidence and human feedback.",
+    "reference_frames": [],
+    "spec_path": "derived_vfxspec.json",
+    "render_manifest_path": "../../../runs/src-trains-shield-001-integrity_r001/run_manifest.json",
+    "source_manifest_path": "source_manifest.json",
+    "source_sample_path": "source_sample.json",
+    "material_selection": {
+      "material_count": 1,
+      "shader_count": 0,
+      "texture_count": 0,
+      "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+      "texture_tag_index_status": "loaded",
+      "texture_tag_index_record_count": 36550,
+      "texture_tagging_status": "required_for_slot_selection",
+      "materials": [
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+            "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+            "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            },
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            },
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 3,
+          "slot_role_hints": [],
+          "dependency_count": 4,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        }
+      ],
+      "shader_candidates": [],
+      "texture_candidates": [],
+      "selection_basis": [
+        "shader paths come from resolved material dependency edges",
+        "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+        "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+      ]
+    }
+  },
+  "outputs": {
+    "render_paths": [],
+    "features_path": null
+  },
+  "label": {
+    "decision": "unlabeled",
+    "rank": null,
+    "accepted_parts": [],
+    "rejected_parts": [],
+    "next_mutation": [
+      "Render the copied/source-indexed effect before assigning training labels."
+    ]
+  }
+}

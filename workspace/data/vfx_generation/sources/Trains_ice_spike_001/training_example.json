@@ -1,0 +1,185 @@
+{
+  "schema_version": "training_example.v1",
+  "example_id": "train_src-trains-ice_spike-001",
+  "run_id": "src-trains-ice_spike-001_r001",
+  "candidate_id": "src-trains-ice_spike-001_candidate_001",
+  "inputs": {
+    "prompt": "Derive a ice VFX candidate from Unity source files: ice_spike.",
+    "negative_prompt": "Do not treat source-file existence as visual success. Do not train without render evidence and human feedback.",
+    "reference_frames": [],
+    "spec_path": "derived_vfxspec.json",
+    "render_manifest_path": "../../../runs/src-trains-ice_spike-001_r001/run_manifest.json",
+    "source_manifest_path": "source_manifest.json",
+    "source_sample_path": "source_sample.json",
+    "material_selection": {
+      "material_count": 4,
+      "shader_count": 0,
+      "texture_count": 0,
+      "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+      "texture_tag_index_status": "loaded",
+      "texture_tag_index_record_count": 36550,
+      "texture_tagging_status": "required_for_slot_selection",
+      "materials": [
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_ice_spike_001/ArtResources/Effect/__Materials/xuehuapian1.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/96/xuehua2_96acc134be39ecfc.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/96/xuehua2_96acc134be39ecfc.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 2,
+          "dependency_types": [
+            "shader",
+            "texture"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_ice_spike_001/ArtResources/FX/Battle/Fx_BDSX_bingzhui/Mat/Mat_BDSX_bingzhui.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/a0/Tex_BDSX_bingzhui_a06872fb109127f0.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/a0/Tex_BDSX_bingzhui_a06872fb109127f0.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_ice_spike_001/ArtResources/FX/Battle/Fx_fengyan_fengren/Mat/Fx_fengren_glow.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/60/Tex_cyjl_glow_6070b322ee0e295c.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/60/Tex_cyjl_glow_6070b322ee0e295c.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        },
+        {
+          "material_path": "Assets/VFXSourceIngest/Trains/Trains_ice_spike_001/ArtResources/FX/Battle/Fx_train_engine_speed_up/Mat/Mat_speed_up_yan.mat",
+          "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+          "shader_paths": [
+            "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+          ],
+          "texture_paths": [
+            "Assets/VFXSourceIngest/Shared/Textures/d9/Tex_speed_up_yan_d97a172fa2815296.png"
+          ],
+          "texture_bindings": [
+            {
+              "path": "Assets/VFXSourceIngest/Shared/Textures/d9/Tex_speed_up_yan_d97a172fa2815296.png",
+              "role": "texture",
+              "status": "candidate",
+              "tag_match": null,
+              "tag_source": "dependency_only",
+              "asset_id": null,
+              "tags": [],
+              "slot_roles": [],
+              "license_status": "unknown",
+              "thumbnail_status": null,
+              "width": null,
+              "height": null
+            }
+          ],
+          "tagged_texture_count": 0,
+          "untagged_texture_count": 1,
+          "slot_role_hints": [],
+          "dependency_count": 3,
+          "dependency_types": [
+            "shader",
+            "texture",
+            "unknown"
+          ]
+        }
+      ],
+      "shader_candidates": [],
+      "texture_candidates": [],
+      "selection_basis": [
+        "shader paths come from resolved material dependency edges",
+        "texture tag records are joined to texture paths so slot roles can be learned from evidence, not counts",
+        "raw counts are not enough; keep shader and tagged texture candidates available to the training step"
+      ]
+    }
+  },
+  "outputs": {
+    "render_paths": [],
+    "features_path": null
+  },
+  "label": {
+    "decision": "unlabeled",
+    "rank": null,
+    "accepted_parts": [],
+    "rejected_parts": [],
+    "next_mutation": [
+      "Render the copied/source-indexed effect before assigning training labels."
+    ]
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "schema_version": "source_manifest.v1",
+  "source_id": "SRC-TRAINS-SCENE_SMOKE-001",
+  "title": "scene_smoke",
+  "effect_family": "smoke",
+  "source_kind": "unity_effect_package",
+  "ingest_status": "parameters_extracted",
+  "created_at": "2026-08-28T03:34:21.716003+00:00",
+  "unity_context": {
+    "project_path": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "unity_version": "2022.3.16f1c1",
+    "render_pipeline": "URP",
+    "pipeline_version": "14.0.9",
+    "package_snapshot_path": "Packages/manifest.json",
+    "scene_path": null,
+    "original_project_path": "E:/Trains/Unity",
+    "original_source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Scene/Fx_smoke/eff/Fx_Scene_smoke_01.prefab",
+    "copied_source_path": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo/Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001"
+  },
+  "license": {
+    "status": "local_reference_only",
+    "owner": "user-owned local project",
+    "source_url": null,
+    "evidence_path": null,
+    "notes": "Local training/reference only until the user confirms redistribution or broader training rights."
+  },
+  "root": {
+    "path": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo/Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001",
+    "storage_policy": "local_only",
+    "relative_to": "target_unity_project"
+  },
+  "files": [
+    {
+      "role": "prefab",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/eff/Fx_Scene_smoke_01.prefab",
+      "file_type": "prefab",
+      "unity_guid": "6c4a8c4ae29bd90449a9d029d6781ee3",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/eff/Fx_Scene_smoke_01.prefab.meta",
+      "sha256": "d17a1675523f8c4a2a0c92964bc33a10326a3e527a4063719d8b13f0f31d6dfe",
+      "size_bytes": 489833,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "material",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_01.mat",
+      "file_type": "mat",
+      "unity_guid": "1b75ff4d960d4176821af40ceaf52a03",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_01.mat.meta",
+      "sha256": "9a09d9f20a061b24673d048a89144e1ee6e4b0d96d4e163f8d58dcd3781a1d2c",
+      "size_bytes": 6694,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "material",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_02.mat",
+      "file_type": "mat",
+      "unity_guid": "fab27d503def44b5b81f244a589e1d38",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_02.mat.meta",
+      "sha256": "49d46183b723568e4aa974b69355974b57d7a1ee37ff0e17ad8da4e346adc0bb",
+      "size_bytes": 6693,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    },
+    {
+      "role": "material",
+      "path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_03.mat",
+      "file_type": "mat",
+      "unity_guid": "a247afa4720043b180394f7ed6571cd2",
+      "meta_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_03.mat.meta",
+      "sha256": "3162a142b10477fed052ead190e458cd912419614eb0e5d0afc03ed2470f8f57",
+      "size_bytes": 6693,
+      "license_status": "inherits_source",
+      "commit_policy": "metadata_only"
+    }
+  ],
+  "dependencies": [
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/eff/Fx_Scene_smoke_01.prefab",
+      "to_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_01.mat",
+      "to_guid": "1b75ff4d960d4176821af40ceaf52a03",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/eff/Fx_Scene_smoke_01.prefab",
+      "to_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_02.mat",
+      "to_guid": "fab27d503def44b5b81f244a589e1d38",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/eff/Fx_Scene_smoke_01.prefab",
+      "to_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_03.mat",
+      "to_guid": "a247afa4720043b180394f7ed6571cd2",
+      "dependency_type": "material",
+      "status": "resolved"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_01.mat",
+      "to_path": null,
+      "to_guid": "d0353a89b1f911e48b9e16bdc9f2e058",
+      "dependency_type": "unknown",
+      "status": "missing"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_01.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+      "to_guid": "593cfe69c8a540ef93f8159b55278c25",
+      "dependency_type": "shader",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_01.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/fd/eff_g_smoke_002_fd75441e83577d9a.png",
+      "to_guid": "f3df882c0b904fb3b37c5af76ee06e3f",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_02.mat",
+      "to_path": null,
+      "to_guid": "d0353a89b1f911e48b9e16bdc9f2e058",
+      "dependency_type": "unknown",
+      "status": "missing"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_02.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+      "to_guid": "593cfe69c8a540ef93f8159b55278c25",
+      "dependency_type": "shader",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_02.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/13/eff_glow_138_13e7b7e98538dfeb.png",
+      "to_guid": "dc76b8e1fed442d5b955db93a04a3eb5",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_03.mat",
+      "to_path": null,
+      "to_guid": "d0353a89b1f911e48b9e16bdc9f2e058",
+      "dependency_type": "unknown",
+      "status": "missing"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_03.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+      "to_guid": "593cfe69c8a540ef93f8159b55278c25",
+      "dependency_type": "shader",
+      "status": "resolved_shared"
+    },
+    {
+      "from_path": "Assets/VFXSourceIngest/Trains/Trains_scene_smoke_001/ArtResources/FX/Scene/Fx_smoke/mat/Mat_smoke_03.mat",
+      "to_path": "Assets/VFXSourceIngest/Shared/Textures/fd/eff_g_smoke_002_fd75441e83577d9a.png",
+      "to_guid": "f3df882c0b904fb3b37c5af76ee06e3f",
+      "dependency_type": "texture",
+      "status": "resolved_shared"
+    }
+  ],
+  "links": {
+    "source_sample_path": "source_sample.json",
+    "derived_vfxspec_path": "derived_vfxspec.json",
+    "render_run_id": "src-trains-scene_smoke-001_r001",
+    "render_manifest_path": "../../../runs/src-trains-scene_smoke-001_r001/run_manifest.json",
+    "feedback_path": "../../../runs/src-trains-scene_smoke-001_r001/feedback.jsonl",
+    "training_example_path": "training_example.json",
+    "beads_id": "vfx-2df.19"
+  },
+  "extraction": {
+    "dependency_index_path": null,
+    "texture_tag_index_path": "workspace/data/resource_index/texture_tags.jsonl",
+    "texture_tag_index_status": "loaded",
+    "texture_tag_index_record_count": 36550,
+    "texture_tag_index_source": "default_global",
+    "texture_tag_index_error": null,
+    "parameter_snapshot_path": "source_sample.json",
+    "feature_manifest_path": null,
+    "tool_version": "vfx_source_ingest.v1",
+    "copy_dependency_closure": true,
+    "shared_dependency_pool": {
+      "mode": "shared_dependency_pool",
+      "shared_root": "Assets/VFXSourceIngest/Shared",
+      "shared_index": "Library/VFXSourceIngest/shared_dependency_index.json",
+      "copied_shared": 1,
+      "reused_shared": 2,
+      "copied_sample": 4,
+      "guid_rewrite_count": 10,
+      "guid_mapping_count": 6,
+      "rebased_material_count": 3,
+      "dry_run": false,
+      "assets": [
+        {
+          "source": "E:/Trains/Unity/Assets/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+          "sha256": "c8de567d86f9ecd72fa9b01fb88ee7bb3bc2b438b4347678673400f2a22f7b3d",
+          "action": "reused",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+            "role": "shader",
+            "sha256": "c8de567d86f9ecd72fa9b01fb88ee7bb3bc2b438b4347678673400f2a22f7b3d",
+            "source_path": "E:/Trains/Unity/Assets/Bundles/Shaders/YOYOShader/YOYO Shader.shader",
+            "unity_guid": "593cfe69c8a540ef93f8159b55278c25"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/FX/Scene/Fx_rock/tex/eff_glow_138.png",
+          "sha256": "13e7b7e98538dfeb44eee49b05c9ac1d6b48e5707b2bc6842ebf518ffbde2d3b",
+          "action": "reused",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/13/eff_glow_138_13e7b7e98538dfeb.png",
+            "role": "texture",
+            "sha256": "13e7b7e98538dfeb44eee49b05c9ac1d6b48e5707b2bc6842ebf518ffbde2d3b",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Scene/Fx_rock/tex/eff_glow_138.png",
+            "unity_guid": "dc76b8e1fed442d5b955db93a04a3eb5"
+          }
+        },
+        {
+          "source": "E:/Trains/Unity/Assets/ArtResources/FX/Scene/Fx_smoke/tex/eff_g_smoke_002.png",
+          "sha256": "fd75441e83577d9aebff0d8ca7a0b4c865b20320f2a30fce711f334f05e50e79",
+          "action": "copied",
+          "canonical": {
+            "relative_path": "Assets/VFXSourceIngest/Shared/Textures/fd/eff_g_smoke_002_fd75441e83577d9a.png",
+            "unity_guid": "f3df882c0b904fb3b37c5af76ee06e3f",
+            "sha256": "fd75441e83577d9aebff0d8ca7a0b4c865b20320f2a30fce711f334f05e50e79",
+            "role": "texture",
+            "source_path": "E:/Trains/Unity/Assets/ArtResources/FX/Scene/Fx_smoke/tex/eff_g_smoke_002.png"
+          }
+        }
+      ],
+      "integrity": {
+        "status": "passed",
+        "shared_asset_count": 3,
+        "sample_asset_count": 4
+      }
+    },
+    "shared_dependency_store": "Assets/VFXSourceIngest/Shared",
+    "shared_index_path": null,
+    "dedupe_by": "sha256",
+    "rewrite_guid_references": true,
+    "dry_run": false,
+    "include_script_dependencies": false,
+    "copyable_dependency_extensions": [
+      ".anim",
+      ".asset",
+      ".blend",
+      ".cginc",
+      ".controller",
+      ".cubemap",
+      ".dds",
+      ".exr",
+      ".fbx",
+      ".hlsl",
+      ".jpeg",
+      ".jpg",
+      ".mat",
+      ".obj",
+      ".overridecontroller",
+      ".playable",
+      ".png",
+      ".prefab",
+      ".psd",
+      ".rendertexture",
+      ".shader",
+      ".shadergraph",
+      ".shadersubgraph",
+      ".spriteatlas",
+      ".tga",
+      ".vfx"
+    ],
+    "guid_cache": {
+      "status": "cache_hit",
+      "entries": 16322,
+      "cache_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/guid_cache/trains_unity_assets.json"
+    }
+  },
+  "notes": [
+    "Generated by workspace.tools.vfx_source_ingest.",
+    "Source files are context for training, not visual success evidence."
+  ]
+}
