@@ -1,0 +1,379 @@
+{
+  "asset_bindings": {
+    "materials": [
+      "Assets/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat",
+      "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat",
+      "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/mat/Mat_tiebijiangjun_kejiglow.mat"
+    ],
+    "meshes": []
+  },
+  "components": {
+    "animations": [],
+    "particle_systems": [
+      {
+        "component_id": "p0000",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0001",
+        "parameters": {
+          "burst_particle_count": 1,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 1.08,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 1.5,
+          "looping": false,
+          "material_template_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Materials/Nature/MFX_Flare_4.mat",
+          "max_particles": 64,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "condition_family": "explosion",
+            "condition_style": "cartoon",
+            "professional_teacher_rule_id": "professional_explosion_core_readability_r001",
+            "professional_teacher_rule_scope": "explosion_core_readability",
+            "profile": "prompt_condition_multi_particle",
+            "variation_index": 3
+          },
+          "shader_profile": null,
+          "shape_enabled": true,
+          "shape_radius": 0.0,
+          "shape_type": "Sphere",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 10,
+          "start_color_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            0.95
+          ],
+          "start_lifetime_max": 0.5,
+          "start_size_max": 0.9,
+          "start_speed_max": 0.0,
+          "texture_asset_path": "Assets/QFX/ProjectilesFX/VFX_Resources/Textures/Glow/FX_Glow_1.TGA",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0001",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0002",
+        "parameters": {
+          "burst_particle_count": 19,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 1.08,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.027999999999999997,
+            0.12249999999999998,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 0.05,
+          "looping": false,
+          "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_baodian_01.mat",
+          "max_particles": 64,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "condition_family": "explosion",
+            "condition_style": "cartoon",
+            "profile": "prompt_condition_multi_particle",
+            "variation_index": 3
+          },
+          "shader_profile": null,
+          "shape_enabled": true,
+          "shape_radius": 0.125,
+          "shape_type": "Circle",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 2,
+          "start_color_rgba": [
+            0.08,
+            0.35,
+            1.0,
+            0.95
+          ],
+          "start_lifetime_max": 0.5,
+          "start_size_max": 2.7,
+          "start_speed_max": 0.75,
+          "texture_asset_path": "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      },
+      {
+        "component_id": "p0002",
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0003",
+        "parameters": {
+          "burst_particle_count": 19,
+          "color_over_lifetime_enabled": true,
+          "duration_seconds": 1.08,
+          "emission_enabled": true,
+          "emission_rate_over_time_max": 0.0,
+          "end_color_rgba": [
+            0.027999999999999997,
+            0.12249999999999998,
+            1.0,
+            0.0
+          ],
+          "end_size_multiplier": 0.05,
+          "looping": false,
+          "material_template_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/mat/Mat_tiebijiangjun_kejiglow.mat",
+          "max_particles": 64,
+          "renderer_mode": "Billboard",
+          "serialized_modules": {
+            "condition_family": "explosion",
+            "condition_style": "cartoon",
+            "profile": "prompt_condition_multi_particle",
+            "variation_index": 3
+          },
+          "shader_profile": null,
+          "shape_enabled": true,
+          "shape_radius": 0.125,
+          "shape_type": "Box",
+          "simulation_space": "Local",
+          "size_over_lifetime_enabled": true,
+          "sorting_order": 2,
+          "start_color_rgba": [
+            0.08,
+            0.35,
+            1.0,
+            0.95
+          ],
+          "start_lifetime_max": 0.5,
+          "start_size_max": 1.45,
+          "start_speed_max": 0.75,
+          "texture_asset_path": "Assets/VFXSourceIngest/Shared/Textures/79/Tex_tiejiajiangjun_glow_79963c403bef09ed.png",
+          "texture_profile": null,
+          "texture_property_name": "_MainTex"
+        }
+      }
+    ],
+    "renderers": [
+      {
+        "component_id": "r0000",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0001",
+        "parameters": {
+          "particle_render_mode": "Billboard",
+          "sorting_order": 10
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0001",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0002",
+        "parameters": {
+          "particle_render_mode": "Billboard",
+          "sorting_order": 2
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      },
+      {
+        "component_id": "r0002",
+        "enabled": true,
+        "material_paths": [],
+        "mesh_paths": [],
+        "node_id": "n0003",
+        "parameters": {
+          "particle_render_mode": "Billboard",
+          "sorting_order": 2
+        },
+        "renderer_type": "ParticleSystemRenderer"
+      }
+    ]
+  },
+  "condition": {
+    "effect_family": "explosion",
+    "parent_prefab_path": null,
+    "prompt": "卡通蓝色爆炸冲击，短时爆发，清晰的命中冲击，不要长拖尾",
+    "seed": 20260914,
+    "style_family": "cartoon"
+  },
+  "graph_id": "pfg_c4a91f4bf8c3b10a37ee",
+  "nodes": [
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.Transform"
+      ],
+      "depth": 0,
+      "hierarchy_path": "GeneratedRoot[0]",
+      "name": "GeneratedRoot",
+      "node_id": "n0000",
+      "parent_node_id": null,
+      "role": "root",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_01[0]",
+      "name": "GeneratedLayer_01",
+      "node_id": "n0001",
+      "parent_node_id": "n0000",
+      "role": "core",
+      "sibling_index": 0,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_02[1]",
+      "name": "GeneratedLayer_02",
+      "node_id": "n0002",
+      "parent_node_id": "n0000",
+      "role": "support",
+      "sibling_index": 1,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "active_self": true,
+      "component_types": [
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "UnityEngine.Transform"
+      ],
+      "depth": 1,
+      "hierarchy_path": "GeneratedRoot[0]/GeneratedLayer_03[2]",
+      "name": "GeneratedLayer_03",
+      "node_id": "n0003",
+      "parent_node_id": "n0000",
+      "role": "hit",
+      "sibling_index": 2,
+      "transform": {
+        "local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "local_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "assumptions": [
+      "Constrained decoder emits a structure-only graph with safe default particle parameters.",
+      "No source or parent Prefab is read.",
+      "Verified professional Teacher rule applied as a narrow Controller prior: professional_explosion_core_readability_r001."
+    ],
+    "exporter": "prefab_graph_constrained.v1",
+    "source_dataset_id": "prompt_condition_generation",
+    "source_run_id": null
+  },
+  "reconstruction": {
+    "compiler_profile": "particle_v1",
+    "missing_fields": [],
+    "status": "reconstructable",
+    "unsupported_components": []
+  },
+  "root_node_id": "n0000",
+  "schema_version": "vfx_prefab_graph.v1",
+  "source": {
+    "prefab_path": null,
+    "source_example_id": null,
+    "source_kind": "generated"
+  },
+  "training": {
+    "aesthetic_label_source": "ai_hypothesis",
+    "eligible_tasks": [
+      "component_prediction",
+      "full_reconstruction",
+      "hierarchy_modeling",
+      "particle_parameter_modeling"
+    ],
+    "excluded_tasks": [
+      "aesthetic_preference",
+      "prompt_condition"
+    ]
+  }
+}

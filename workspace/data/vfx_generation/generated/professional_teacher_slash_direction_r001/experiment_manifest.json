@@ -1,0 +1,64 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "direction_trail.transform.local_rotation"
+    ],
+    "held_constant": [
+      "trail material",
+      "trail texture",
+      "speed",
+      "lifetime",
+      "size",
+      "burst count",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T22:06:45.432178+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "刀光拖带与能量扩散应沿攻击方向真正离开原位置，不能朝镜头运动或停在原地堆叠。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep003/visual_check/07_template_reuse/",
+      "knowledge/sources/SRC-2026-SERIES-001/ep003/visual_check/09_flying_attack/"
+    ],
+    "judgment_axes": [
+      "composition",
+      "rhythm",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP003",
+    "timecodes": [
+      "01:02:00-01:12:03",
+      "01:38:09-02:02:00"
+    ],
+    "title": "第03集作业点评：重复模板、动态方向与刀光能量"
+  },
+  "rule_id": "professional_slash_directional_trail_r001",
+  "schema_version": "vfx_professional_slash_direction_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_slash_direction_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_slash_family_r005/candidates/layered_slash_000_pfg_a91a6e71a6513bf52e4c/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/compile_results/depth_misaligned.json",
+      "graph_id": "pfg_056209797ac4c8c4cf5d",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/graphs/depth_misaligned.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashDirectionR001/depth_misaligned/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/readback/depth_misaligned.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/readback_results/depth_misaligned.json",
+      "variant": "depth_misaligned"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/compile_results/attack_aligned.json",
+      "graph_id": "pfg_aff359fbd8586e37b3e3",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/graphs/attack_aligned.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashDirectionR001/attack_aligned/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/readback/attack_aligned.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/readback_results/attack_aligned.json",
+      "variant": "attack_aligned"
+    }
+  ]
+}

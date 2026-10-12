@@ -1,0 +1,70 @@
+{
+  "contact_position": [
+    1.45,
+    -0.05,
+    0.0
+  ],
+  "controlled_variables": {
+    "changed": [
+      "contact_hit.transform.local_position"
+    ],
+    "held_constant": [
+      "blade mesh",
+      "hit material",
+      "hit texture",
+      "hit timing",
+      "hit size",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T23:03:17.683312+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "刀光命中反馈应集中在真实接触点或受力端，成为局部视觉重点；不能把亮点堆在刀光中心而让落点失焦。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-001/visual_review_22-44/2007_ground_hit.jpg",
+      "knowledge/sources/SRC-2026-001/visual_review_22-44/contact_11_33-34.jpg",
+      "knowledge/sources/SRC-2026-001/visual_review_22-44/2176_floating_blade.jpg",
+      "knowledge/sources/SRC-2026-001/visual_review_22-44/contact_14_36-37.jpg"
+    ],
+    "judgment_axes": [
+      "composition",
+      "contact_readability",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-001",
+    "timecodes": [
+      "00:33:12.540-00:34:09.000",
+      "00:36:15.900-00:37:45.450"
+    ],
+    "title": "20260415点评-一定要练基本功"
+  },
+  "rule_id": "professional_slash_contact_focus_r001",
+  "schema_version": "vfx_professional_slash_hit_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_slash_hit_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_slash_family_r009/candidates/layered_slash_000_pfg_48ce5428d13330245c8a/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/compile_results/center_misplaced.json",
+      "graph_id": "pfg_86f8e6c20e7a19c52f8e",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/graphs/center_misplaced.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashHitR003/center_misplaced/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/readback/center_misplaced.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/readback_results/center_misplaced.json",
+      "variant": "center_misplaced"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/compile_results/contact_aligned.json",
+      "graph_id": "pfg_8237b7c95c3f03a7971d",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/graphs/contact_aligned.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashHitR003/contact_aligned/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/readback/contact_aligned.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_hit_r003/readback_results/contact_aligned.json",
+      "variant": "contact_aligned"
+    }
+  ]
+}

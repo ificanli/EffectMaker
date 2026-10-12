@@ -1,0 +1,62 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "core.start_lifetime_max"
+    ],
+    "held_constant": [
+      "MainBolt material",
+      "MainBolt texture",
+      "size",
+      "alpha",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-04T01:40:50.199073+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "雷电主体应短促建立峰值并快速退出，不能持续占据画面或以同一亮度拖长。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/04_28_lightning/02_problem_18-00.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/04_28_lightning/03_modified_18-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/04_28_lightning/05_end_21-00.jpg"
+    ],
+    "judgment_axes": [
+      "instant_peak",
+      "rhythm",
+      "readability"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP004",
+    "timecodes": [
+      "00:17:10-00:24:34"
+    ],
+    "title": "第04集作业点评：闪电的粗细、可见性和短促收尾"
+  },
+  "rule_id": "professional_lightning_instant_pulse_r001",
+  "schema_version": "vfx_professional_lightning_pulse_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_lightning_pulse_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_lightning_family_r004/candidates/layered_lightning_003_pfg_6ae0f44ed1c593504a71/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/compile_results/slow_pulse.json",
+      "graph_id": "pfg_55dfaaac28575cf09d89",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/graphs/slow_pulse.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherLightningPulseR001/slow_pulse/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/readback/slow_pulse.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/readback_results/slow_pulse.json",
+      "variant": "slow_pulse"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/compile_results/instant_pulse.json",
+      "graph_id": "pfg_9d9c7c8157fdbee00887",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/graphs/instant_pulse.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherLightningPulseR001/instant_pulse/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/readback/instant_pulse.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_pulse_r001/readback_results/instant_pulse.json",
+      "variant": "instant_pulse"
+    }
+  ]
+}

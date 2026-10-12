@@ -1,0 +1,71 @@
+{
+  "contact_position": [
+    1.35,
+    0.0,
+    0.0
+  ],
+  "controlled_variables": {
+    "changed": [
+      "impact_flash.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "MainBolt",
+      "BranchSupport",
+      "hit material",
+      "hit texture",
+      "hit position",
+      "hit timing",
+      "hit size",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-04T01:21:29.630058+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "雷电暴点核心应成为局部最亮峰值，主电流和外围分支不能淹没命中核心。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/01_01250.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/02_01415.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/03_01580.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/04_01749.jpg"
+    ],
+    "judgment_axes": [
+      "impact_readability",
+      "instant_peak",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP008",
+    "timecodes": [
+      "00:20:53-00:28:24"
+    ],
+    "title": "第08集作业点评：雷电粗细与冲击核心"
+  },
+  "rule_id": "professional_lightning_impact_focus_r001",
+  "schema_version": "vfx_professional_lightning_hit_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_lightning_hit_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_lightning_family_r003/candidates/layered_lightning_004_pfg_fa5476ad59453bca8c6a/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/compile_results/weak_impact.json",
+      "graph_id": "pfg_b1682902302d9455fcd7",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/graphs/weak_impact.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherLightningHitR001/weak_impact/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/readback/weak_impact.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/readback_results/weak_impact.json",
+      "variant": "weak_impact"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/compile_results/focused_impact.json",
+      "graph_id": "pfg_11a07799964a963b4dbb",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/graphs/focused_impact.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherLightningHitR001/focused_impact/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/readback/focused_impact.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/readback_results/focused_impact.json",
+      "variant": "focused_impact"
+    }
+  ]
+}

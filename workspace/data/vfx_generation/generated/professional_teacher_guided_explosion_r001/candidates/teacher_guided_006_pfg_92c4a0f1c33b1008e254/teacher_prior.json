@@ -1,0 +1,30 @@
+{
+  "changed_fields": [
+    "asset_bindings.materials",
+    "core.parameters.burst_particle_count",
+    "core.parameters.end_color_rgba",
+    "core.parameters.end_size_multiplier",
+    "core.parameters.material_template_path",
+    "core.parameters.shape_radius",
+    "core.parameters.sorting_order",
+    "core.parameters.start_color_rgba",
+    "core.parameters.start_size_max",
+    "core.parameters.start_speed_max",
+    "core.parameters.texture_asset_path",
+    "core.renderer.sorting_order"
+  ],
+  "effect_family": "explosion",
+  "expert_judgment": "爆炸需要核心体积与外扩元素；外围细节不能替代核心，中心空会削弱主体体积和力量感。",
+  "guided_graph_id": "pfg_92c4a0f1c33b1008e254",
+  "judgment_axes": [
+    "core_readability",
+    "layer_separation",
+    "composition"
+  ],
+  "rule_id": "professional_explosion_core_readability_r001",
+  "schema_version": "vfx_professional_teacher_prior_application.v1",
+  "source_candidate_id": "prompt_graph_generation_001_006_pfg_95aaeb5d0d4d7f356be5",
+  "source_graph_id": "pfg_95aaeb5d0d4d7f356be5",
+  "training_scope": "verified_professional_rule_prior_only_not_aesthetic_quality_label",
+  "unity_reproduction_report": "workspace/data/vfx_generation/generated/professional_teacher_explosion_core_r006/reproduction_report.json"
+}

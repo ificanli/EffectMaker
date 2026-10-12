@@ -1,0 +1,2236 @@
+{
+  "comparison": {
+    "early_outer_visible_reduction": 0.004809763980021545,
+    "last_visible_time_gain_seconds": 0.19999998807907104,
+    "late_active_ratio_gain": 0.4,
+    "outer_onset_delay_gain_seconds": 0.0
+  },
+  "conclusion": "Unity reproduction supports staged Core, expansion/debris and residual timing.",
+  "controlled_variables": {
+    "changed": [
+      "support.start_delay_max",
+      "hit.start_delay_max",
+      "residual.start_delay_max"
+    ],
+    "held_constant": [
+      "all materials",
+      "all textures",
+      "particle counts",
+      "speeds",
+      "lifetimes",
+      "colors",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T20:45:42.825832+00:00",
+  "experiment_manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/experiment_manifest.json",
+  "graph_comparison": {
+    "difference_paths": [
+      "components.particle_systems[1].parameters.start_delay_max",
+      "components.particle_systems[2].parameters.start_delay_max",
+      "components.particle_systems[3].parameters.start_delay_max"
+    ],
+    "expected_difference_paths": [
+      "components.particle_systems[1].parameters.start_delay_max",
+      "components.particle_systems[2].parameters.start_delay_max",
+      "components.particle_systems[3].parameters.start_delay_max"
+    ],
+    "only_layer_delays_differ": true
+  },
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "完整爆炸应按中心亮点、扩散线与碎片、残光小元素的顺序分层出现，并在短爆发后快速收束而不是全部同时起播和消失。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/01_start_24-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/03_modified_25-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/04_peak_26-30.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/05_end_29-00.jpg"
+    ],
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation",
+      "composition"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP004-EP006",
+    "timecodes": [
+      "EP004 00:24:34-00:34:10",
+      "EP006 00:10:00-00:20:00"
+    ],
+    "title": "连续打击分层消失与短爆发快速收束"
+  },
+  "quality_gates": {
+    "both_compile_pass": true,
+    "both_prefab_api_readbacks_pass": true,
+    "both_runtime_eligible": true,
+    "both_texture_readbacks_match_plan": true,
+    "controlled_graph_difference_only_layer_delays": true,
+    "equal_nonzero_frame_count": true,
+    "no_material_render_errors": true,
+    "same_forced_camera": true,
+    "staged_graph_orders_core_support_hit_residual": true,
+    "staging_preserves_late_residual": true,
+    "staging_reduces_early_outer_overlap": true
+  },
+  "rule_id": "professional_explosion_staged_rhythm_r001",
+  "schema_version": "vfx_professional_explosion_rhythm_teacher_reproduction.v1",
+  "staged_delays_seconds": {
+    "core": 0.0,
+    "hit": 0.07,
+    "residual": 0.2,
+    "support": 0.04
+  },
+  "status": "verified",
+  "unity": {
+    "capture_mode": "play_mode_runtime_isolated_multiview.v2",
+    "project": "workspace/unity-render-staging/EffectDemoPromptHumanR001",
+    "render_pipeline": "URP 14.0.9",
+    "version": "2022.3.16f1c1"
+  },
+  "validated_controller_prior": {
+    "allowed_use": "explosion_staged_rhythm_controller_only",
+    "effect_family": "explosion",
+    "judgment_axis": "staged_rhythm",
+    "minimum_early_outer_visible_reduction": 5e-05,
+    "minimum_last_visible_time_gain_seconds": 0.15,
+    "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/graphs/staged_layers.json",
+    "required_delay_order": [
+      "core",
+      "support",
+      "hit",
+      "residual"
+    ],
+    "status": "eligible",
+    "target_role": "multi_layer"
+  },
+  "variants": {
+    "simultaneous_layers": {
+      "capture": {
+        "frames": [
+          {
+            "center_local_contrast": 0.16811657982919728,
+            "center_luminance": 0.18802324649586394,
+            "center_occupancy_ratio": 0.3212890625,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_000_0_000.png",
+            "time_seconds": 0.0,
+            "visible_area_ratio": 0.0128515625
+          },
+          {
+            "center_local_contrast": 0.1932292014208027,
+            "center_luminance": 0.21313586808746934,
+            "center_occupancy_ratio": 0.36956787109375,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_001_0_025.png",
+            "time_seconds": 0.02500000037252903,
+            "visible_area_ratio": 0.01478271484375
+          },
+          {
+            "center_local_contrast": 0.22952386307061887,
+            "center_luminance": 0.24943052973728552,
+            "center_occupancy_ratio": 0.4571533203125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_002_0_050.png",
+            "time_seconds": 0.05000000074505806,
+            "visible_area_ratio": 0.0182861328125
+          },
+          {
+            "center_local_contrast": 0.26472396082261024,
+            "center_luminance": 0.2846306274892769,
+            "center_occupancy_ratio": 0.5556640625,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_003_0_075.png",
+            "time_seconds": 0.07500000298023224,
+            "visible_area_ratio": 0.0222265625
+          },
+          {
+            "center_local_contrast": 0.29462328398464516,
+            "center_luminance": 0.3145526652496936,
+            "center_occupancy_ratio": 0.6546630859375,
+            "center_visible_share": 0.9988824734587446,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_004_0_100.png",
+            "time_seconds": 0.10000000149011612,
+            "visible_area_ratio": 0.0262158203125
+          },
+          {
+            "center_local_contrast": 0.2944311309140585,
+            "center_luminance": 0.3204497053557751,
+            "center_occupancy_ratio": 0.71563720703125,
+            "center_visible_share": 0.9356048515799553,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_005_0_125.png",
+            "time_seconds": 0.125,
+            "visible_area_ratio": 0.030595703125
+          },
+          {
+            "center_local_contrast": 0.25965540629476325,
+            "center_luminance": 0.3032654581227022,
+            "center_occupancy_ratio": 0.71063232421875,
+            "center_visible_share": 0.8107374138291206,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_006_0_150.png",
+            "time_seconds": 0.15000000596046448,
+            "visible_area_ratio": 0.03506103515625
+          },
+          {
+            "center_local_contrast": 0.2063905539216798,
+            "center_luminance": 0.27218761115579043,
+            "center_occupancy_ratio": 0.6697998046875,
+            "center_visible_share": 0.6764470196634408,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_007_0_175.png",
+            "time_seconds": 0.17499999701976776,
+            "visible_area_ratio": 0.03960693359375
+          },
+          {
+            "center_local_contrast": 0.15734911649730177,
+            "center_luminance": 0.2376267388556985,
+            "center_occupancy_ratio": 0.6368408203125,
+            "center_visible_share": 0.575700728316045,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_008_0_200.png",
+            "time_seconds": 0.20000000298023224,
+            "visible_area_ratio": 0.044248046875
+          },
+          {
+            "center_local_contrast": 0.11332473576284789,
+            "center_luminance": 0.21016460463579964,
+            "center_occupancy_ratio": 0.6094970703125,
+            "center_visible_share": 0.49944983495048517,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_009_0_225.png",
+            "time_seconds": 0.22499999403953552,
+            "visible_area_ratio": 0.0488134765625
+          },
+          {
+            "center_local_contrast": 0.07203881773397239,
+            "center_luminance": 0.18273039344937192,
+            "center_occupancy_ratio": 0.5811767578125,
+            "center_visible_share": 0.436008974769907,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_010_0_250.png",
+            "time_seconds": 0.25,
+            "visible_area_ratio": 0.05331787109375
+          },
+          {
+            "center_local_contrast": 0.030993629898469433,
+            "center_luminance": 0.15190840049594057,
+            "center_occupancy_ratio": 0.567626953125,
+            "center_visible_share": 0.38936571069709025,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_011_0_275.png",
+            "time_seconds": 0.2750000059604645,
+            "visible_area_ratio": 0.05831298828125
+          },
+          {
+            "center_local_contrast": -0.011190725539231963,
+            "center_luminance": 0.11179643133425243,
+            "center_occupancy_ratio": 0.55413818359375,
+            "center_visible_share": 0.36016344017772134,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_012_0_300.png",
+            "time_seconds": 0.30000001192092896,
+            "visible_area_ratio": 0.06154296875
+          },
+          {
+            "center_local_contrast": -0.05281338500895546,
+            "center_luminance": 0.05011725638595282,
+            "center_occupancy_ratio": 0.4769287109375,
+            "center_visible_share": 0.3261132673928467,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_013_0_325.png",
+            "time_seconds": 0.32499998807907104,
+            "visible_area_ratio": 0.05849853515625
+          },
+          {
+            "center_local_contrast": -0.04535171895279898,
+            "center_luminance": 0.04960090676700367,
+            "center_occupancy_ratio": 0.49407958984375,
+            "center_visible_share": 0.3355996849218523,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_014_0_350.png",
+            "time_seconds": 0.3499999940395355,
+            "visible_area_ratio": 0.05888916015625
+          },
+          {
+            "center_local_contrast": -0.03902263494829931,
+            "center_luminance": 0.047814138853783696,
+            "center_occupancy_ratio": 0.4951171875,
+            "center_visible_share": 0.33771856786011656,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_015_0_375.png",
+            "time_seconds": 0.375,
+            "visible_area_ratio": 0.058642578125
+          },
+          {
+            "center_local_contrast": -0.029548411480273415,
+            "center_luminance": 0.04788388518688726,
+            "center_occupancy_ratio": 0.50921630859375,
+            "center_visible_share": 0.35122505683253347,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_016_0_400.png",
+            "time_seconds": 0.4000000059604645,
+            "visible_area_ratio": 0.0579931640625
+          },
+          {
+            "center_local_contrast": -0.01861647935799847,
+            "center_luminance": 0.04808114334405637,
+            "center_occupancy_ratio": 0.52691650390625,
+            "center_visible_share": 0.3616522139834946,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_017_0_425.png",
+            "time_seconds": 0.42500001192092896,
+            "visible_area_ratio": 0.05827880859375
+          },
+          {
+            "center_local_contrast": -0.004931673596252267,
+            "center_luminance": 0.04813364238664215,
+            "center_occupancy_ratio": 0.5440673828125,
+            "center_visible_share": 0.37428619415518977,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_018_0_450.png",
+            "time_seconds": 0.44999998807907104,
+            "visible_area_ratio": 0.05814453125
+          },
+          {
+            "center_local_contrast": 0.013965312315606777,
+            "center_luminance": 0.04587756759344362,
+            "center_occupancy_ratio": 0.53753662109375,
+            "center_visible_share": 0.38889870175748475,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_019_0_475.png",
+            "time_seconds": 0.4749999940395355,
+            "visible_area_ratio": 0.0552880859375
+          },
+          {
+            "center_local_contrast": 0.026073889050083517,
+            "center_luminance": 0.046067009229473044,
+            "center_occupancy_ratio": 0.5360107421875,
+            "center_visible_share": 0.9772980191408859,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_020_0_500.png",
+            "time_seconds": 0.5,
+            "visible_area_ratio": 0.0219384765625
+          },
+          {
+            "center_local_contrast": 0.02674652858486255,
+            "center_luminance": 0.04677132927389706,
+            "center_occupancy_ratio": 0.54962158203125,
+            "center_visible_share": 0.9801893980624796,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_021_0_525.png",
+            "time_seconds": 0.5249999761581421,
+            "visible_area_ratio": 0.02242919921875
+          },
+          {
+            "center_local_contrast": 0.027345424746365882,
+            "center_luminance": 0.047424749157475486,
+            "center_occupancy_ratio": 0.56298828125,
+            "center_visible_share": 0.9724828676858197,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_022_0_550.png",
+            "time_seconds": 0.550000011920929,
+            "visible_area_ratio": 0.02315673828125
+          },
+          {
+            "center_local_contrast": 0.004870798571567574,
+            "center_luminance": 0.02477720066444547,
+            "center_occupancy_ratio": 0.54595947265625,
+            "center_visible_share": 0.9714378801042571,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_023_0_575.png",
+            "time_seconds": 0.574999988079071,
+            "visible_area_ratio": 0.02248046875
+          },
+          {
+            "center_local_contrast": 0.005101863809842497,
+            "center_luminance": 0.025013736596200983,
+            "center_occupancy_ratio": 0.55718994140625,
+            "center_visible_share": 0.9627715671799199,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_024_0_600.png",
+            "time_seconds": 0.6000000238418579,
+            "visible_area_ratio": 0.0231494140625
+          },
+          {
+            "center_local_contrast": 0.005308605588029834,
+            "center_luminance": 0.025238698203890936,
+            "center_occupancy_ratio": 0.56597900390625,
+            "center_visible_share": 0.9547981878088962,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_025_0_625.png",
+            "time_seconds": 0.625,
+            "visible_area_ratio": 0.0237109375
+          },
+          {
+            "center_local_contrast": 0.005599367220335674,
+            "center_luminance": 0.02555264174517463,
+            "center_occupancy_ratio": 0.5758056640625,
+            "center_visible_share": 0.9469985946597069,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_026_0_650.png",
+            "time_seconds": 0.6499999761581421,
+            "visible_area_ratio": 0.0243212890625
+          },
+          {
+            "center_local_contrast": 0.0026570750977042874,
+            "center_luminance": 0.02253623238357843,
+            "center_occupancy_ratio": 0.51373291015625,
+            "center_visible_share": 0.9703712243486281,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_027_0_675.png",
+            "time_seconds": 0.675000011920929,
+            "visible_area_ratio": 0.0211767578125
+          },
+          {
+            "center_local_contrast": 0.002816184770590261,
+            "center_luminance": 0.022710665019914214,
+            "center_occupancy_ratio": 0.5107421875,
+            "center_visible_share": 0.9633893621920332,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_028_0_700.png",
+            "time_seconds": 0.699999988079071,
+            "visible_area_ratio": 0.0212060546875
+          },
+          {
+            "center_local_contrast": 0.0029365350840260054,
+            "center_luminance": 0.022857774873621322,
+            "center_occupancy_ratio": 0.50848388671875,
+            "center_visible_share": 0.9511359744263044,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_029_0_725.png",
+            "time_seconds": 0.7250000238418579,
+            "visible_area_ratio": 0.02138427734375
+          },
+          {
+            "center_local_contrast": 0.00304249323018271,
+            "center_luminance": 0.02300213982077206,
+            "center_occupancy_ratio": 0.5042724609375,
+            "center_visible_share": 0.935673839184598,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_030_0_750.png",
+            "time_seconds": 0.75,
+            "visible_area_ratio": 0.0215576171875
+          },
+          {
+            "center_local_contrast": 0.0032468236953247624,
+            "center_luminance": 0.023249893679151347,
+            "center_occupancy_ratio": 0.4996337890625,
+            "center_visible_share": 0.9155575438988928,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_031_0_775.png",
+            "time_seconds": 0.7749999761581421,
+            "visible_area_ratio": 0.02182861328125
+          },
+          {
+            "center_local_contrast": 0.0034896321768017116,
+            "center_luminance": 0.02355851380591299,
+            "center_occupancy_ratio": 0.4879150390625,
+            "center_visible_share": 0.8974963511844617,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_032_0_800.png",
+            "time_seconds": 0.800000011920929,
+            "visible_area_ratio": 0.02174560546875
+          },
+          {
+            "center_local_contrast": 0.0035839166718769147,
+            "center_luminance": 0.023714252833946077,
+            "center_occupancy_ratio": 0.474853515625,
+            "center_visible_share": 0.8819861693685523,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_033_0_825.png",
+            "time_seconds": 0.824999988079071,
+            "visible_area_ratio": 0.02153564453125
+          },
+          {
+            "center_local_contrast": 0.0006499022828169686,
+            "center_luminance": 0.020565187078737744,
+            "center_occupancy_ratio": 0.2430419921875,
+            "center_visible_share": 0.9599807135969142,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_034_0_850.png",
+            "time_seconds": 0.8500000238418579,
+            "visible_area_ratio": 0.010126953125
+          },
+          {
+            "center_local_contrast": 0.0013499558943476306,
+            "center_luminance": 0.02136698381012561,
+            "center_occupancy_ratio": 0.20574951171875,
+            "center_visible_share": 0.9560408394781622,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_035_0_875.png",
+            "time_seconds": 0.875,
+            "visible_area_ratio": 0.0086083984375
+          },
+          {
+            "center_local_contrast": 0.0017274539957173145,
+            "center_luminance": 0.021792792681525733,
+            "center_occupancy_ratio": 0.15777587890625,
+            "center_visible_share": 0.9919416730621642,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_036_0_900.png",
+            "time_seconds": 0.8999999761581421,
+            "visible_area_ratio": 0.0063623046875
+          },
+          {
+            "center_local_contrast": 0.0020369363019034532,
+            "center_luminance": 0.022151276424632355,
+            "center_occupancy_ratio": 0.0758056640625,
+            "center_visible_share": 0.9764150943396226,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_037_0_925.png",
+            "time_seconds": 0.925000011920929,
+            "visible_area_ratio": 0.00310546875
+          },
+          {
+            "center_local_contrast": 0.0016443031225026918,
+            "center_luminance": 0.021755513078278183,
+            "center_occupancy_ratio": 0.018798828125,
+            "center_visible_share": 0.9595015576323987,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_038_0_950.png",
+            "time_seconds": 0.949999988079071,
+            "visible_area_ratio": 0.00078369140625
+          },
+          {
+            "center_local_contrast": 0.0008782281803118852,
+            "center_luminance": 0.020890354865579042,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_039_0_975.png",
+            "time_seconds": 0.9750000238418579,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_040_1_000.png",
+            "time_seconds": 1.0,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_041_1_025.png",
+            "time_seconds": 1.024999976158142,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_042_1_050.png",
+            "time_seconds": 1.0499999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_043_1_075.png",
+            "time_seconds": 1.0750000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_044_1_100.png",
+            "time_seconds": 1.100000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_045_1_125.png",
+            "time_seconds": 1.125,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_046_1_150.png",
+            "time_seconds": 1.149999976158142,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_047_1_175.png",
+            "time_seconds": 1.1749999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_048_1_200.png",
+            "time_seconds": 1.2000000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_049_1_225.png",
+            "time_seconds": 1.225000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_050_1_250.png",
+            "time_seconds": 1.25,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_051_1_275.png",
+            "time_seconds": 1.274999976158142,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_052_1_300.png",
+            "time_seconds": 1.2999999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_053_1_325.png",
+            "time_seconds": 1.3250000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_054_1_350.png",
+            "time_seconds": 1.350000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_055_1_375.png",
+            "time_seconds": 1.375,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_056_1_400.png",
+            "time_seconds": 1.399999976158142,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_057_1_425.png",
+            "time_seconds": 1.4249999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_058_1_450.png",
+            "time_seconds": 1.4500000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_059_1_475.png",
+            "time_seconds": 1.475000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_060_1_500.png",
+            "time_seconds": 1.5,
+            "visible_area_ratio": 0.0
+          }
+        ],
+        "full_visual_training_eligible": false,
+        "image_sequence_training_eligible": true,
+        "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/capture_manifest.json",
+        "material_render_error_frame_count": 0,
+        "peak_center_local_contrast": 0.29462328398464516,
+        "peak_center_luminance": 0.3204497053557751,
+        "peak_center_occupancy_ratio": 0.71563720703125,
+        "peak_center_visible_share": 0.9356048515799553,
+        "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_005_0_125.png",
+        "peak_time_seconds": 0.125,
+        "selected_camera_view": "front",
+        "valid_frame_count": 61,
+        "visual_evidence_status": "image_sequence_partial_material_fidelity"
+      },
+      "center_onset_seconds": 0.0,
+      "early_outer_visible_mean": 0.011016305944569581,
+      "frames": [
+        {
+          "center_luminance": 0.9817973375320435,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.010047987464499069,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.0128515625
+        },
+        {
+          "center_luminance": 0.9647727012634277,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.011984624424640093,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903,
+          "visible_area_ratio": 0.01478271484375
+        },
+        {
+          "center_luminance": 0.9127059578895569,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01549799236117912,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.0182861328125
+        },
+        {
+          "center_luminance": 0.8859618902206421,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01944961316227598,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224,
+          "visible_area_ratio": 0.0222265625
+        },
+        {
+          "center_luminance": 0.8498976230621338,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.023450200763882087,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.0262158203125
+        },
+        {
+          "center_luminance": 0.8042905330657959,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.02784252276956224,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_005_0_125.png",
+          "time_seconds": 0.125,
+          "visible_area_ratio": 0.030595703125
+        },
+        {
+          "center_luminance": 0.7522858381271362,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.032320536676133584,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.03506103515625
+        },
+        {
+          "center_luminance": 0.7015066146850586,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.0368793458035452,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776,
+          "visible_area_ratio": 0.03960693359375
+        },
+        {
+          "center_luminance": 0.6437472105026245,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.041533640191949855,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.044248046875
+        },
+        {
+          "center_luminance": 0.5786724090576172,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.04611203603956517,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552,
+          "visible_area_ratio": 0.0488134765625
+        },
+        {
+          "center_luminance": 0.5053616762161255,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05062922338654392,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_010_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.05331787109375
+        },
+        {
+          "center_luminance": 0.4168645739555359,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.055638527078640684,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645,
+          "visible_area_ratio": 0.05831298828125
+        },
+        {
+          "center_luminance": 0.29282641410827637,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05887768093232788,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.06154296875
+        },
+        {
+          "center_luminance": 0.12218663096427917,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05582460092057585,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104,
+          "visible_area_ratio": 0.05849853515625
+        },
+        {
+          "center_luminance": 0.12092211842536926,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05621633532464989,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.05888916015625
+        },
+        {
+          "center_luminance": 0.11455845087766647,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05596905298207815,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_015_0_375.png",
+          "time_seconds": 0.375,
+          "visible_area_ratio": 0.058642578125
+        },
+        {
+          "center_luminance": 0.11272634565830231,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05531779453530506,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.0579931640625
+        },
+        {
+          "center_luminance": 0.11050141602754593,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.055604250318284205,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896,
+          "visible_area_ratio": 0.05827880859375
+        },
+        {
+          "center_luminance": 0.10826162248849869,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05546959161688375,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.05814453125
+        },
+        {
+          "center_luminance": 0.10092494636774063,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05260503378709235,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355,
+          "visible_area_ratio": 0.0552880859375
+        },
+        {
+          "center_luminance": 0.09847930073738098,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.019160709039271372,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_020_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.0219384765625
+        },
+        {
+          "center_luminance": 0.09626148641109467,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.019652825384389384,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421,
+          "visible_area_ratio": 0.02242919921875
+        },
+        {
+          "center_luminance": 0.09375259280204773,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.02038243071197728,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.02315673828125
+        },
+        {
+          "center_luminance": 0.03475172817707062,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.019704240524924102,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071,
+          "visible_area_ratio": 0.02248046875
+        },
+        {
+          "center_luminance": 0.034087229520082474,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.020375085691900892,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.0231494140625
+        },
+        {
+          "center_luminance": 0.033136289566755295,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.02093820389775732,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_025_0_625.png",
+          "time_seconds": 0.625,
+          "visible_area_ratio": 0.0237109375
+        },
+        {
+          "center_luminance": 0.03260152041912079,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.021550288904123003,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_026_0_650.png",
+          "time_seconds": 0.6499999761581421,
+          "visible_area_ratio": 0.0243212890625
+        },
+        {
+          "center_luminance": 0.026828208938241005,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018396826951327,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_027_0_675.png",
+          "time_seconds": 0.675000011920929,
+          "visible_area_ratio": 0.0211767578125
+        },
+        {
+          "center_luminance": 0.026813706383109093,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018426207031632554,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_028_0_700.png",
+          "time_seconds": 0.699999988079071,
+          "visible_area_ratio": 0.0212060546875
+        },
+        {
+          "center_luminance": 0.026626968756318092,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018604935853491333,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_029_0_725.png",
+          "time_seconds": 0.7250000238418579,
+          "visible_area_ratio": 0.02138427734375
+        },
+        {
+          "center_luminance": 0.02614481933414936,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01877876799529919,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_030_0_750.png",
+          "time_seconds": 0.75,
+          "visible_area_ratio": 0.0215576171875
+        },
+        {
+          "center_luminance": 0.026091966778039932,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01905053373812555,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_031_0_775.png",
+          "time_seconds": 0.7749999761581421,
+          "visible_area_ratio": 0.02182861328125
+        },
+        {
+          "center_luminance": 0.026910221204161644,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01896729017725982,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_032_0_800.png",
+          "time_seconds": 0.800000011920929,
+          "visible_area_ratio": 0.02174560546875
+        },
+        {
+          "center_luminance": 0.02650933526456356,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018756732935070023,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_033_0_825.png",
+          "time_seconds": 0.824999988079071,
+          "visible_area_ratio": 0.02153564453125
+        },
+        {
+          "center_luminance": 0.02062135376036167,
+          "center_visible_ratio": 0.29770992366412213,
+          "outer_visible_ratio": 0.008877680932327882,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_034_0_850.png",
+          "time_seconds": 0.8500000238418579,
+          "visible_area_ratio": 0.010126953125
+        },
+        {
+          "center_luminance": 0.021896090358495712,
+          "center_visible_ratio": 0.12404580152671756,
+          "outer_visible_ratio": 0.007729409460385858,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_035_0_875.png",
+          "time_seconds": 0.875,
+          "visible_area_ratio": 0.0086083984375
+        },
+        {
+          "center_luminance": 0.02281477488577366,
+          "center_visible_ratio": 0.011450381679389313,
+          "outer_visible_ratio": 0.005858877680932328,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_036_0_900.png",
+          "time_seconds": 0.8999999761581421,
+          "visible_area_ratio": 0.0063623046875
+        },
+        {
+          "center_luminance": 0.023084012791514397,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0030971501322103615,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_037_0_925.png",
+          "time_seconds": 0.925000011920929,
+          "visible_area_ratio": 0.00310546875
+        },
+        {
+          "center_luminance": 0.022528795525431633,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0007859171481735383,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_038_0_950.png",
+          "time_seconds": 0.949999988079071,
+          "visible_area_ratio": 0.00078369140625
+        },
+        {
+          "center_luminance": 0.021267037838697433,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_039_0_975.png",
+          "time_seconds": 0.9750000238418579,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_040_1_000.png",
+          "time_seconds": 1.0,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_041_1_025.png",
+          "time_seconds": 1.024999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_042_1_050.png",
+          "time_seconds": 1.0499999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_043_1_075.png",
+          "time_seconds": 1.0750000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_044_1_100.png",
+          "time_seconds": 1.100000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_045_1_125.png",
+          "time_seconds": 1.125,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_046_1_150.png",
+          "time_seconds": 1.149999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_047_1_175.png",
+          "time_seconds": 1.1749999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_048_1_200.png",
+          "time_seconds": 1.2000000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_049_1_225.png",
+          "time_seconds": 1.225000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_050_1_250.png",
+          "time_seconds": 1.25,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_051_1_275.png",
+          "time_seconds": 1.274999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_052_1_300.png",
+          "time_seconds": 1.2999999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_053_1_325.png",
+          "time_seconds": 1.3250000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_054_1_350.png",
+          "time_seconds": 1.350000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_055_1_375.png",
+          "time_seconds": 1.375,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_056_1_400.png",
+          "time_seconds": 1.399999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_057_1_425.png",
+          "time_seconds": 1.4249999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_058_1_450.png",
+          "time_seconds": 1.4500000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_059_1_475.png",
+          "time_seconds": 1.475000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/simultaneous_layers/captures/frame_060_1_500.png",
+          "time_seconds": 1.5,
+          "visible_area_ratio": 0.0
+        }
+      ],
+      "last_visible_time_seconds": 0.949999988079071,
+      "late_active_ratio": 0.25,
+      "outer_onset_seconds": 0.0
+    },
+    "staged_layers": {
+      "capture": {
+        "frames": [
+          {
+            "center_local_contrast": 0.1378499995691636,
+            "center_luminance": 0.15775666623583026,
+            "center_occupancy_ratio": 0.21368408203125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_000_0_000.png",
+            "time_seconds": 0.0,
+            "visible_area_ratio": 0.00854736328125
+          },
+          {
+            "center_local_contrast": 0.14475881060431986,
+            "center_luminance": 0.16466547727098652,
+            "center_occupancy_ratio": 0.22894287109375,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_001_0_025.png",
+            "time_seconds": 0.02500000037252903,
+            "visible_area_ratio": 0.00915771484375
+          },
+          {
+            "center_local_contrast": 0.17762669366574754,
+            "center_luminance": 0.1975333603324142,
+            "center_occupancy_ratio": 0.30804443359375,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_002_0_050.png",
+            "time_seconds": 0.05000000074505806,
+            "visible_area_ratio": 0.01232177734375
+          },
+          {
+            "center_local_contrast": 0.19873412535424323,
+            "center_luminance": 0.21864079202090989,
+            "center_occupancy_ratio": 0.35137939453125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_003_0_075.png",
+            "time_seconds": 0.07500000298023224,
+            "visible_area_ratio": 0.01405517578125
+          },
+          {
+            "center_local_contrast": 0.22965637532552083,
+            "center_luminance": 0.24956304199218748,
+            "center_occupancy_ratio": 0.41943359375,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_004_0_100.png",
+            "time_seconds": 0.10000000149011612,
+            "visible_area_ratio": 0.01677734375
+          },
+          {
+            "center_local_contrast": 0.2644588962450214,
+            "center_luminance": 0.2843655629116881,
+            "center_occupancy_ratio": 0.5107421875,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_005_0_125.png",
+            "time_seconds": 0.125,
+            "visible_area_ratio": 0.0204296875
+          },
+          {
+            "center_local_contrast": 0.28773695738557187,
+            "center_luminance": 0.3082211848958333,
+            "center_occupancy_ratio": 0.611328125,
+            "center_visible_share": 0.9889415481832543,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_006_0_150.png",
+            "time_seconds": 0.15000000596046448,
+            "visible_area_ratio": 0.0247265625
+          },
+          {
+            "center_local_contrast": 0.27821325361018884,
+            "center_luminance": 0.30882420496323526,
+            "center_occupancy_ratio": 0.64471435546875,
+            "center_visible_share": 0.8878708918214676,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_007_0_175.png",
+            "time_seconds": 0.17499999701976776,
+            "visible_area_ratio": 0.02904541015625
+          },
+          {
+            "center_local_contrast": 0.2356383535386065,
+            "center_luminance": 0.2858482173426011,
+            "center_occupancy_ratio": 0.66015625,
+            "center_visible_share": 0.7567340656265304,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_008_0_200.png",
+            "time_seconds": 0.20000000298023224,
+            "visible_area_ratio": 0.03489501953125
+          },
+          {
+            "center_local_contrast": 0.18353944389140636,
+            "center_luminance": 0.2545590218577665,
+            "center_occupancy_ratio": 0.61810302734375,
+            "center_visible_share": 0.6271753266860717,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_009_0_225.png",
+            "time_seconds": 0.22499999403953552,
+            "visible_area_ratio": 0.03942138671875
+          },
+          {
+            "center_local_contrast": 0.13067449257868796,
+            "center_luminance": 0.2156865651807598,
+            "center_occupancy_ratio": 0.5833740234375,
+            "center_visible_share": 0.5306167767723311,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_010_0_250.png",
+            "time_seconds": 0.25,
+            "visible_area_ratio": 0.04397705078125
+          },
+          {
+            "center_local_contrast": 0.07622986626544792,
+            "center_luminance": 0.17813623822380514,
+            "center_occupancy_ratio": 0.5516357421875,
+            "center_visible_share": 0.4552689905299214,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_011_0_275.png",
+            "time_seconds": 0.2750000059604645,
+            "visible_area_ratio": 0.048466796875
+          },
+          {
+            "center_local_contrast": 0.01656134628839777,
+            "center_luminance": 0.13147630806717214,
+            "center_occupancy_ratio": 0.51702880859375,
+            "center_visible_share": 0.39248482602047907,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_012_0_300.png",
+            "time_seconds": 0.30000001192092896,
+            "visible_area_ratio": 0.05269287109375
+          },
+          {
+            "center_local_contrast": -0.0682668415345714,
+            "center_luminance": 0.05572631165747549,
+            "center_occupancy_ratio": 0.3717041015625,
+            "center_visible_share": 0.28497894244267663,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_013_0_325.png",
+            "time_seconds": 0.32499998807907104,
+            "visible_area_ratio": 0.0521728515625
+          },
+          {
+            "center_local_contrast": -0.07077669984121607,
+            "center_luminance": 0.050333487237668506,
+            "center_occupancy_ratio": 0.37103271484375,
+            "center_visible_share": 0.2751923947487551,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_014_0_350.png",
+            "time_seconds": 0.3499999940395355,
+            "visible_area_ratio": 0.0539306640625
+          },
+          {
+            "center_local_contrast": -0.05332070301051721,
+            "center_luminance": 0.04770508157169118,
+            "center_occupancy_ratio": 0.38470458984375,
+            "center_visible_share": 0.2816605594780588,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_015_0_375.png",
+            "time_seconds": 0.375,
+            "visible_area_ratio": 0.0546337890625
+          },
+          {
+            "center_local_contrast": -0.046950127576964935,
+            "center_luminance": 0.046331081734451586,
+            "center_occupancy_ratio": 0.39813232421875,
+            "center_visible_share": 0.2893709520007098,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_016_0_400.png",
+            "time_seconds": 0.4000000059604645,
+            "visible_area_ratio": 0.0550341796875
+          },
+          {
+            "center_local_contrast": -0.03984857893954985,
+            "center_luminance": 0.04478574917662377,
+            "center_occupancy_ratio": 0.4061279296875,
+            "center_visible_share": 0.29535265657596876,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_017_0_425.png",
+            "time_seconds": 0.42500001192092896,
+            "visible_area_ratio": 0.05500244140625
+          },
+          {
+            "center_local_contrast": -0.03008198601770004,
+            "center_luminance": 0.044692066291360286,
+            "center_occupancy_ratio": 0.41845703125,
+            "center_visible_share": 0.30766469215580683,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_018_0_450.png",
+            "time_seconds": 0.44999998807907104,
+            "visible_area_ratio": 0.054404296875
+          },
+          {
+            "center_local_contrast": -0.01810969783338244,
+            "center_luminance": 0.044679647863051467,
+            "center_occupancy_ratio": 0.4337158203125,
+            "center_visible_share": 0.3183263898221565,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_019_0_475.png",
+            "time_seconds": 0.4749999940395355,
+            "visible_area_ratio": 0.05449951171875
+          },
+          {
+            "center_local_contrast": -0.004806383964540195,
+            "center_luminance": 0.04356816707835478,
+            "center_occupancy_ratio": 0.441650390625,
+            "center_visible_share": 0.32840156122356357,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_020_0_500.png",
+            "time_seconds": 0.5,
+            "visible_area_ratio": 0.0537939453125
+          },
+          {
+            "center_local_contrast": 0.02324771033995984,
+            "center_luminance": 0.04330239860983455,
+            "center_occupancy_ratio": 0.44195556640625,
+            "center_visible_share": 0.9750875302989497,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_021_0_525.png",
+            "time_seconds": 0.5249999761581421,
+            "visible_area_ratio": 0.0181298828125
+          },
+          {
+            "center_local_contrast": 0.024259431831458667,
+            "center_luminance": 0.04422483881931679,
+            "center_occupancy_ratio": 0.46112060546875,
+            "center_visible_share": 0.9795151043692467,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_022_0_550.png",
+            "time_seconds": 0.550000011920929,
+            "visible_area_ratio": 0.01883056640625
+          },
+          {
+            "center_local_contrast": 0.023668196694367857,
+            "center_luminance": 0.043588458132276346,
+            "center_occupancy_ratio": 0.46527099609375,
+            "center_visible_share": 0.9880751782242385,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_023_0_575.png",
+            "time_seconds": 0.574999988079071,
+            "visible_area_ratio": 0.01883544921875
+          },
+          {
+            "center_local_contrast": 0.024682705665347453,
+            "center_luminance": 0.044592116076899516,
+            "center_occupancy_ratio": 0.4840087890625,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_024_0_600.png",
+            "time_seconds": 0.6000000238418579,
+            "visible_area_ratio": 0.0193603515625
+          },
+          {
+            "center_local_contrast": 0.02561536820874917,
+            "center_luminance": 0.0455310778090533,
+            "center_occupancy_ratio": 0.50323486328125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_025_0_625.png",
+            "time_seconds": 0.625,
+            "visible_area_ratio": 0.02012939453125
+          },
+          {
+            "center_local_contrast": 0.026442873246521406,
+            "center_luminance": 0.046371687346813725,
+            "center_occupancy_ratio": 0.521240234375,
+            "center_visible_share": 0.9976635514018691,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_026_0_650.png",
+            "time_seconds": 0.6499999761581421,
+            "visible_area_ratio": 0.0208984375
+          },
+          {
+            "center_local_contrast": 0.025236506820133717,
+            "center_luminance": 0.045177805654488354,
+            "center_occupancy_ratio": 0.518798828125,
+            "center_visible_share": 0.9946173648490522,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_027_0_675.png",
+            "time_seconds": 0.675000011920929,
+            "visible_area_ratio": 0.0208642578125
+          },
+          {
+            "center_local_contrast": 0.02596648630967624,
+            "center_luminance": 0.04593989473230698,
+            "center_occupancy_ratio": 0.53338623046875,
+            "center_visible_share": 0.9885746606334842,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_028_0_700.png",
+            "time_seconds": 0.699999988079071,
+            "visible_area_ratio": 0.02158203125
+          },
+          {
+            "center_local_contrast": 0.026670100560139024,
+            "center_luminance": 0.046690184541590074,
+            "center_occupancy_ratio": 0.54827880859375,
+            "center_visible_share": 0.9813196416866944,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_029_0_725.png",
+            "time_seconds": 0.7250000238418579,
+            "visible_area_ratio": 0.0223486328125
+          },
+          {
+            "center_local_contrast": 0.027261303254348772,
+            "center_luminance": 0.04733513796338848,
+            "center_occupancy_ratio": 0.56158447265625,
+            "center_visible_share": 0.973341796255157,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_030_0_750.png",
+            "time_seconds": 0.75,
+            "visible_area_ratio": 0.02307861328125
+          },
+          {
+            "center_local_contrast": 0.027818245434433602,
+            "center_luminance": 0.04795237410003063,
+            "center_occupancy_ratio": 0.57513427734375,
+            "center_visible_share": 0.9647793590662435,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_031_0_775.png",
+            "time_seconds": 0.7749999761581421,
+            "visible_area_ratio": 0.02384521484375
+          },
+          {
+            "center_local_contrast": 0.0050850286195482375,
+            "center_luminance": 0.024997021149280027,
+            "center_occupancy_ratio": 0.5555419921875,
+            "center_visible_share": 0.9635824687698497,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_032_0_800.png",
+            "time_seconds": 0.800000011920929,
+            "visible_area_ratio": 0.0230615234375
+          },
+          {
+            "center_local_contrast": 0.005269634682428869,
+            "center_luminance": 0.025193117915134806,
+            "center_occupancy_ratio": 0.5667724609375,
+            "center_visible_share": 0.95476043594489,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_033_0_825.png",
+            "time_seconds": 0.824999988079071,
+            "visible_area_ratio": 0.0237451171875
+          },
+          {
+            "center_local_contrast": 0.005538604453013123,
+            "center_luminance": 0.025485927399280024,
+            "center_occupancy_ratio": 0.5755615234375,
+            "center_visible_share": 0.9478339531611217,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_034_0_850.png",
+            "time_seconds": 0.8500000238418579,
+            "visible_area_ratio": 0.02428955078125
+          },
+          {
+            "center_local_contrast": 0.002646592141576639,
+            "center_luminance": 0.022525892453661153,
+            "center_occupancy_ratio": 0.51214599609375,
+            "center_visible_share": 0.9705065926439972,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_035_0_875.png",
+            "time_seconds": 0.875,
+            "visible_area_ratio": 0.0211083984375
+          },
+          {
+            "center_local_contrast": 0.0027998381944910194,
+            "center_luminance": 0.022688101926317403,
+            "center_occupancy_ratio": 0.51580810546875,
+            "center_visible_share": 0.9615428376379566,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_036_0_900.png",
+            "time_seconds": 0.8999999761581421,
+            "visible_area_ratio": 0.02145751953125
+          },
+          {
+            "center_local_contrast": 0.0029284260186434215,
+            "center_luminance": 0.022849060776654412,
+            "center_occupancy_ratio": 0.50750732421875,
+            "center_visible_share": 0.952571886814068,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_037_0_925.png",
+            "time_seconds": 0.925000011920929,
+            "visible_area_ratio": 0.02131103515625
+          },
+          {
+            "center_local_contrast": 0.0030342542887720654,
+            "center_luminance": 0.022993124856387867,
+            "center_occupancy_ratio": 0.50396728515625,
+            "center_visible_share": 0.9371240494836001,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_038_0_950.png",
+            "time_seconds": 0.949999988079071,
+            "visible_area_ratio": 0.02151123046875
+          },
+          {
+            "center_local_contrast": 0.003244177579783389,
+            "center_luminance": 0.023244959788602942,
+            "center_occupancy_ratio": 0.4989013671875,
+            "center_visible_share": 0.9174991581546751,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_039_0_975.png",
+            "time_seconds": 0.9750000238418579,
+            "visible_area_ratio": 0.02175048828125
+          },
+          {
+            "center_local_contrast": 0.0034885630971447784,
+            "center_luminance": 0.023554028463924633,
+            "center_occupancy_ratio": 0.48724365234375,
+            "center_visible_share": 0.8994929577464789,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_040_1_000.png",
+            "time_seconds": 1.0,
+            "visible_area_ratio": 0.02166748046875
+          },
+          {
+            "center_local_contrast": 0.0035877715851620195,
+            "center_luminance": 0.02371348561006434,
+            "center_occupancy_ratio": 0.47479248046875,
+            "center_visible_share": 0.8844798180784537,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_041_1_025.png",
+            "time_seconds": 1.024999976158142,
+            "visible_area_ratio": 0.02147216796875
+          },
+          {
+            "center_local_contrast": 0.0005169573983668102,
+            "center_luminance": 0.02041552657781863,
+            "center_occupancy_ratio": 0.2509765625,
+            "center_visible_share": 0.9716446124763705,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_042_1_050.png",
+            "time_seconds": 1.0499999523162842,
+            "visible_area_ratio": 0.01033203125
+          },
+          {
+            "center_local_contrast": 0.0013515698099923062,
+            "center_luminance": 0.02136718941482843,
+            "center_occupancy_ratio": 0.20538330078125,
+            "center_visible_share": 0.9567813477395507,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_043_1_075.png",
+            "time_seconds": 1.0750000476837158,
+            "visible_area_ratio": 0.00858642578125
+          },
+          {
+            "center_local_contrast": 0.0017300355644142805,
+            "center_luminance": 0.021792956830193014,
+            "center_occupancy_ratio": 0.1572265625,
+            "center_visible_share": 0.9922958397534669,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_044_1_100.png",
+            "time_seconds": 1.100000023841858,
+            "visible_area_ratio": 0.006337890625
+          },
+          {
+            "center_local_contrast": 0.002038251938290273,
+            "center_luminance": 0.022149492522594974,
+            "center_occupancy_ratio": 0.0753173828125,
+            "center_visible_share": 0.9770387965162312,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_045_1_125.png",
+            "time_seconds": 1.125,
+            "visible_area_ratio": 0.00308349609375
+          },
+          {
+            "center_local_contrast": 0.0016485788570909966,
+            "center_luminance": 0.021756920620787375,
+            "center_occupancy_ratio": 0.0185546875,
+            "center_visible_share": 0.9650793650793651,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_046_1_150.png",
+            "time_seconds": 1.149999976158142,
+            "visible_area_ratio": 0.00076904296875
+          },
+          {
+            "center_local_contrast": 0.0008806986397362146,
+            "center_luminance": 0.020891067277496934,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_047_1_175.png",
+            "time_seconds": 1.1749999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_048_1_200.png",
+            "time_seconds": 1.2000000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_049_1_225.png",
+            "time_seconds": 1.225000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_050_1_250.png",
+            "time_seconds": 1.25,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_051_1_275.png",
+            "time_seconds": 1.274999976158142,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_052_1_300.png",
+            "time_seconds": 1.2999999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_053_1_325.png",
+            "time_seconds": 1.3250000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_054_1_350.png",
+            "time_seconds": 1.350000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_055_1_375.png",
+            "time_seconds": 1.375,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_056_1_400.png",
+            "time_seconds": 1.399999976158142,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_057_1_425.png",
+            "time_seconds": 1.4249999523162842,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_058_1_450.png",
+            "time_seconds": 1.4500000476837158,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_059_1_475.png",
+            "time_seconds": 1.475000023841858,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_060_1_500.png",
+            "time_seconds": 1.5,
+            "visible_area_ratio": 0.0
+          }
+        ],
+        "full_visual_training_eligible": false,
+        "image_sequence_training_eligible": true,
+        "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/capture_manifest.json",
+        "material_render_error_frame_count": 0,
+        "peak_center_local_contrast": 0.28773695738557187,
+        "peak_center_luminance": 0.30882420496323526,
+        "peak_center_occupancy_ratio": 0.66015625,
+        "peak_center_visible_share": 0.7567340656265304,
+        "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_008_0_200.png",
+        "peak_time_seconds": 0.20000000298023224,
+        "selected_camera_view": "front",
+        "valid_frame_count": 61,
+        "visual_evidence_status": "image_sequence_partial_material_fidelity"
+      },
+      "center_onset_seconds": 0.0,
+      "early_outer_visible_mean": 0.006206541964548036,
+      "frames": [
+        {
+          "center_luminance": 0.9088992476463318,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.005910292821467046,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.00854736328125
+        },
+        {
+          "center_luminance": 0.900307834148407,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.006502791107629027,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903,
+          "visible_area_ratio": 0.00915771484375
+        },
+        {
+          "center_luminance": 0.8860204815864563,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.009631769660170405,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.01232177734375
+        },
+        {
+          "center_luminance": 0.982132077217102,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.011338262657917932,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224,
+          "visible_area_ratio": 0.01405517578125
+        },
+        {
+          "center_luminance": 0.9341141581535339,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.013994711585545001,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.01677734375
+        },
+        {
+          "center_luminance": 0.8502928614616394,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.017650083243560866,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_005_0_125.png",
+          "time_seconds": 0.125,
+          "visible_area_ratio": 0.0204296875
+        },
+        {
+          "center_luminance": 0.7797062993049622,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.021964058368426208,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.0247265625
+        },
+        {
+          "center_luminance": 0.7119210958480835,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.02630006855352071,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776,
+          "visible_area_ratio": 0.02904541015625
+        },
+        {
+          "center_luminance": 0.6572142243385315,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.03215404955440212,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.03489501953125
+        },
+        {
+          "center_luminance": 0.5893831253051758,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.03669327196161003,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552,
+          "visible_area_ratio": 0.03942138671875
+        },
+        {
+          "center_luminance": 0.5160830616950989,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.04126187444912349,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_010_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.04397705078125
+        },
+        {
+          "center_luminance": 0.4306577742099762,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.04576437175594947,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645,
+          "visible_area_ratio": 0.048466796875
+        },
+        {
+          "center_luminance": 0.3147903382778168,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.050002448340025464,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.05269287109375
+        },
+        {
+          "center_luminance": 0.13294482231140137,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.0494809519146019,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104,
+          "visible_area_ratio": 0.0521728515625
+        },
+        {
+          "center_luminance": 0.1301872581243515,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05124375673293507,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.0539306640625
+        },
+        {
+          "center_luminance": 0.1310349404811859,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05194887866026834,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_015_0_375.png",
+          "time_seconds": 0.375,
+          "visible_area_ratio": 0.0546337890625
+        },
+        {
+          "center_luminance": 0.13162946701049805,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.052350406424444225,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.0550341796875
+        },
+        {
+          "center_luminance": 0.12823127210140228,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.052318578004113214,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896,
+          "visible_area_ratio": 0.05500244140625
+        },
+        {
+          "center_luminance": 0.12829534709453583,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.051718734697874844,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.054404296875
+        },
+        {
+          "center_luminance": 0.12797290086746216,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05181421995886789,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355,
+          "visible_area_ratio": 0.05449951171875
+        },
+        {
+          "center_luminance": 0.12308956682682037,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.05110664969150916,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_020_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.0537939453125
+        },
+        {
+          "center_luminance": 0.12221931666135788,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.015341298599549505,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421,
+          "visible_area_ratio": 0.0181298828125
+        },
+        {
+          "center_luminance": 0.12096056342124939,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01604397218685731,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.01883056640625
+        },
+        {
+          "center_luminance": 0.11468818038702011,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.016048868866908237,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071,
+          "visible_area_ratio": 0.01883544921875
+        },
+        {
+          "center_luminance": 0.11277320235967636,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.016575261972382724,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.0193603515625
+        },
+        {
+          "center_luminance": 0.11062129586935043,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.017346489080403486,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_025_0_625.png",
+          "time_seconds": 0.625,
+          "visible_area_ratio": 0.02012939453125
+        },
+        {
+          "center_luminance": 0.10840728878974915,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018117716188424247,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_026_0_650.png",
+          "time_seconds": 0.6499999761581421,
+          "visible_area_ratio": 0.0208984375
+        },
+        {
+          "center_luminance": 0.10108073800802231,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01808343942806777,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_027_0_675.png",
+          "time_seconds": 0.675000011920929,
+          "visible_area_ratio": 0.0208642578125
+        },
+        {
+          "center_luminance": 0.09857896715402603,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018803251395553815,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_028_0_700.png",
+          "time_seconds": 0.699999988079071,
+          "visible_area_ratio": 0.02158203125
+        },
+        {
+          "center_luminance": 0.09636908024549484,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.019572030163549112,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_029_0_725.png",
+          "time_seconds": 0.7250000238418579,
+          "visible_area_ratio": 0.0223486328125
+        },
+        {
+          "center_luminance": 0.09384527057409286,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.020304083831162473,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_030_0_750.png",
+          "time_seconds": 0.75,
+          "visible_area_ratio": 0.02307861328125
+        },
+        {
+          "center_luminance": 0.0913238525390625,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.02107286259915777,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_031_0_775.png",
+          "time_seconds": 0.7749999761581421,
+          "visible_area_ratio": 0.02384521484375
+        },
+        {
+          "center_luminance": 0.03413814306259155,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.020286945450984233,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_032_0_800.png",
+          "time_seconds": 0.800000011920929,
+          "visible_area_ratio": 0.0230615234375
+        },
+        {
+          "center_luminance": 0.03332441672682762,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.020972480658113798,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_033_0_825.png",
+          "time_seconds": 0.824999988079071,
+          "visible_area_ratio": 0.0237451171875
+        },
+        {
+          "center_luminance": 0.03256731107831001,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.02151846048379199,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_034_0_850.png",
+          "time_seconds": 0.8500000238418579,
+          "visible_area_ratio": 0.02428955078125
+        },
+        {
+          "center_luminance": 0.02681364305317402,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018328273430614044,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_035_0_875.png",
+          "time_seconds": 0.875,
+          "visible_area_ratio": 0.0211083984375
+        },
+        {
+          "center_luminance": 0.02671182155609131,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018678386054255217,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_036_0_900.png",
+          "time_seconds": 0.8999999761581421,
+          "visible_area_ratio": 0.02145751953125
+        },
+        {
+          "center_luminance": 0.026653988286852837,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018531485652727452,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_037_0_925.png",
+          "time_seconds": 0.925000011920929,
+          "visible_area_ratio": 0.02131103515625
+        },
+        {
+          "center_luminance": 0.02615910768508911,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018732249534815396,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_038_0_950.png",
+          "time_seconds": 0.949999988079071,
+          "visible_area_ratio": 0.02151123046875
+        },
+        {
+          "center_luminance": 0.026097837835550308,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.018972186857310742,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_039_0_975.png",
+          "time_seconds": 0.9750000238418579,
+          "visible_area_ratio": 0.02175048828125
+        },
+        {
+          "center_luminance": 0.026908403262495995,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01888894329644501,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_040_1_000.png",
+          "time_seconds": 1.0,
+          "visible_area_ratio": 0.02166748046875
+        },
+        {
+          "center_luminance": 0.026511916890740395,
+          "center_visible_ratio": 1.0,
+          "outer_visible_ratio": 0.01869307609440799,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_041_1_025.png",
+          "time_seconds": 1.024999976158142,
+          "visible_area_ratio": 0.02147216796875
+        },
+        {
+          "center_luminance": 0.02028048038482666,
+          "center_visible_ratio": 0.3473282442748092,
+          "outer_visible_ratio": 0.008985407893448242,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_042_1_050.png",
+          "time_seconds": 1.0499999523162842,
+          "visible_area_ratio": 0.01033203125
+        },
+        {
+          "center_luminance": 0.02191139943897724,
+          "center_visible_ratio": 0.12595419847328243,
+          "outer_visible_ratio": 0.0077000293800803055,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_043_1_075.png",
+          "time_seconds": 1.0750000476837158,
+          "visible_area_ratio": 0.00858642578125
+        },
+        {
+          "center_luminance": 0.02279970608651638,
+          "center_visible_ratio": 0.013358778625954198,
+          "outer_visible_ratio": 0.005831945940652237,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_044_1_100.png",
+          "time_seconds": 1.100000023841858,
+          "visible_area_ratio": 0.006337890625
+        },
+        {
+          "center_luminance": 0.023098815232515335,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.003070218391930271,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_045_1_125.png",
+          "time_seconds": 1.125,
+          "visible_area_ratio": 0.00308349609375
+        },
+        {
+          "center_luminance": 0.022533059120178223,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0007712271080207619,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_046_1_150.png",
+          "time_seconds": 1.149999976158142,
+          "visible_area_ratio": 0.00076904296875
+        },
+        {
+          "center_luminance": 0.021259082481265068,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_047_1_175.png",
+          "time_seconds": 1.1749999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_048_1_200.png",
+          "time_seconds": 1.2000000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_049_1_225.png",
+          "time_seconds": 1.225000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_050_1_250.png",
+          "time_seconds": 1.25,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_051_1_275.png",
+          "time_seconds": 1.274999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_052_1_300.png",
+          "time_seconds": 1.2999999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_053_1_325.png",
+          "time_seconds": 1.3250000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_054_1_350.png",
+          "time_seconds": 1.350000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_055_1_375.png",
+          "time_seconds": 1.375,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_056_1_400.png",
+          "time_seconds": 1.399999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_057_1_425.png",
+          "time_seconds": 1.4249999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_058_1_450.png",
+          "time_seconds": 1.4500000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_059_1_475.png",
+          "time_seconds": 1.475000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_luminance": 0.0199066661298275,
+          "center_visible_ratio": 0.0,
+          "outer_visible_ratio": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/runtime_captures/staged_layers/captures/frame_060_1_500.png",
+          "time_seconds": 1.5,
+          "visible_area_ratio": 0.0
+        }
+      ],
+      "last_visible_time_seconds": 1.149999976158142,
+      "late_active_ratio": 0.65,
+      "outer_onset_seconds": 0.0
+    }
+  }
+}

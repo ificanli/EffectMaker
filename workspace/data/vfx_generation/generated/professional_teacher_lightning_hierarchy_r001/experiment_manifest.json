@@ -1,0 +1,63 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "branch.start_size_max",
+      "branch.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "MainBolt",
+      "textures",
+      "timing",
+      "particle count",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-04T00:43:11.009667+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "雷电中心主电流应更粗，外围分支更细且数量克制，避免细碎线条与主电流同亮同重。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/04_28_lightning/02_problem_18-00.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/04_28_lightning/03_modified_18-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/04_28_lightning/04_peak_19-40.jpg"
+    ],
+    "judgment_axes": [
+      "core_readability",
+      "branch_readability",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP004",
+    "timecodes": [
+      "00:17:10-00:24:34"
+    ],
+    "title": "第04集作业点评：闪电的粗细、可见性和短促收尾"
+  },
+  "rule_id": "professional_lightning_main_branch_hierarchy_r001",
+  "schema_version": "vfx_professional_lightning_hierarchy_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_lightning_hierarchy_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_lightning_family_r001/candidates/layered_lightning_000_pfg_4249418220fb7505bf60/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/compile_results/equal_weight.json",
+      "graph_id": "pfg_952a182ed547e8766e98",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/graphs/equal_weight.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherLightningHierarchyR001/equal_weight/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/readback/equal_weight.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/readback_results/equal_weight.json",
+      "variant": "equal_weight"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/compile_results/main_dominant.json",
+      "graph_id": "pfg_b70b647b67162fdc958c",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/graphs/main_dominant.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherLightningHierarchyR001/main_dominant/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/readback/main_dominant.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hierarchy_r001/readback_results/main_dominant.json",
+      "variant": "main_dominant"
+    }
+  ]
+}

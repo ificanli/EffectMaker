@@ -1,0 +1,984 @@
+{
+  "comparison": {
+    "peak_paired_radius_gain": 0.23285282877171395
+  },
+  "conclusion": "Unity reproduction supports the professional rule that a shockwave should expand outward from the impact center.",
+  "controlled_variables": {
+    "changed": [
+      "shockwave.end_size_multiplier"
+    ],
+    "held_constant": [
+      "shockwave material",
+      "shockwave texture",
+      "start size",
+      "lifetime",
+      "start delay",
+      "color",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T17:53:18.081139+00:00",
+  "experiment_manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/experiment_manifest.json",
+  "graph_comparison": {
+    "difference_paths": [
+      "components.particle_systems[1].parameters.end_size_multiplier"
+    ],
+    "expected_difference_path": "components.particle_systems[1].parameters.end_size_multiplier",
+    "only_shockwave_scale_curve_differs": true
+  },
+  "measurement_window_seconds": [
+    0.075,
+    0.55
+  ],
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "冲击层应在命中亮点之后从中心向外扩张，不能只是停在原地的单贴图。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/01_start_24-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/02_problem_25-00.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/03_modified_25-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/04_peak_26-30.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/05_end_29-00.jpg"
+    ],
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation",
+      "composition"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP004",
+    "timecodes": [
+      "00:24:34-00:34:10"
+    ],
+    "title": "第04集作业点评：连续打击的爆点、扩散线和分层消失"
+  },
+  "quality_gates": {
+    "both_compile_pass": true,
+    "both_prefab_api_readbacks_pass": true,
+    "both_runtime_eligible": true,
+    "both_texture_readbacks_match_plan": true,
+    "controlled_graph_difference_only_shockwave_scale": true,
+    "equal_nonzero_frame_count": true,
+    "expanding_ring_grows": true,
+    "expanding_ring_is_mostly_outward": true,
+    "no_material_render_errors": true,
+    "paired_radius_gain": true,
+    "same_forced_camera": true,
+    "static_ring_stays_local": true
+  },
+  "rule_id": "professional_explosion_shockwave_expansion_r001",
+  "schema_version": "vfx_professional_shockwave_teacher_reproduction.v1",
+  "status": "verified",
+  "unity": {
+    "capture_mode": "play_mode_runtime_isolated_multiview.v2",
+    "project": "workspace/unity-render-staging/EffectDemoPromptHumanR001",
+    "render_pipeline": "URP 14.0.9",
+    "version": "2022.3.16f1c1"
+  },
+  "validated_controller_prior": {
+    "allowed_use": "explosion_shockwave_rule_controller_only",
+    "effect_family": "explosion",
+    "judgment_axis": "shockwave_expansion",
+    "minimum_paired_radius_gain": 0.15,
+    "minimum_radius_growth": 0.2,
+    "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/graphs/expanding_ring.json",
+    "status": "eligible",
+    "target_role": "support"
+  },
+  "variants": {
+    "expanding_ring": {
+      "camera_mode": "forced_request_view_fixed_frame",
+      "frames": [
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.00197021484375,
+          "visible_radius_mean": 0.06449132292983302,
+          "visible_radius_p90": 0.07542198991341982
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224,
+          "visible_area_ratio": 0.00262451171875,
+          "visible_radius_mean": 0.07409071320013887,
+          "visible_radius_p90": 0.08606524596200257
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.00337890625,
+          "visible_radius_mean": 0.08427875649914822,
+          "visible_radius_p90": 0.09755307049242479
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_005_0_125.png",
+          "time_seconds": 0.125,
+          "visible_area_ratio": 0.004169921875,
+          "visible_radius_mean": 0.09442160392102243,
+          "visible_radius_p90": 0.10970931050963724
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.00478271484375,
+          "visible_radius_mean": 0.10452713390923195,
+          "visible_radius_p90": 0.12098633918953776
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776,
+          "visible_area_ratio": 0.005244140625,
+          "visible_radius_mean": 0.11472269171842815,
+          "visible_radius_p90": 0.13138755905348767
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.006396484375,
+          "visible_radius_mean": 0.12482554408945014,
+          "visible_radius_p90": 0.14390277208066565
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552,
+          "visible_area_ratio": 0.0071435546875,
+          "visible_radius_mean": 0.1349717843293324,
+          "visible_radius_p90": 0.15469539121286063
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_010_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.008359375,
+          "visible_radius_mean": 0.14503638392822527,
+          "visible_radius_p90": 0.16637507043574767
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645,
+          "visible_area_ratio": 0.00953125,
+          "visible_radius_mean": 0.15502337545973213,
+          "visible_radius_p90": 0.17794673096884922
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.01080810546875,
+          "visible_radius_mean": 0.16508903248511442,
+          "visible_radius_p90": 0.1893786097015711
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104,
+          "visible_area_ratio": 0.01224365234375,
+          "visible_radius_mean": 0.1751212591204971,
+          "visible_radius_p90": 0.2012291332349767
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.01353515625,
+          "visible_radius_mean": 0.18521036993294754,
+          "visible_radius_p90": 0.21279161039813008
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_015_0_375.png",
+          "time_seconds": 0.375,
+          "visible_area_ratio": 0.015009765625,
+          "visible_radius_mean": 0.19537522600574675,
+          "visible_radius_p90": 0.2243284239448057
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.016650390625,
+          "visible_radius_mean": 0.2054826579812871,
+          "visible_radius_p90": 0.23619088215360895
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896,
+          "visible_area_ratio": 0.01808349609375,
+          "visible_radius_mean": 0.21562910766951127,
+          "visible_radius_p90": 0.24757614043461457
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.0198828125,
+          "visible_radius_mean": 0.2257757716412198,
+          "visible_radius_p90": 0.25951615135189565
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355,
+          "visible_area_ratio": 0.021474609375,
+          "visible_radius_mean": 0.2358798416588025,
+          "visible_radius_p90": 0.2708583722399956
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_020_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.0229736328125,
+          "visible_radius_mean": 0.24608199800837283,
+          "visible_radius_p90": 0.2828513440174892
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421,
+          "visible_area_ratio": 0.024384765625,
+          "visible_radius_mean": 0.256261939808681,
+          "visible_radius_p90": 0.29468766569454513
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.02612548828125,
+          "visible_radius_mean": 0.2663484736312294,
+          "visible_radius_p90": 0.30590701456896996
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071,
+          "visible_area_ratio": 0.02764404296875,
+          "visible_radius_mean": 0.2764975689423107,
+          "visible_radius_p90": 0.317702014012706
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_025_0_625.png",
+          "time_seconds": 0.625,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_026_0_650.png",
+          "time_seconds": 0.6499999761581421,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_027_0_675.png",
+          "time_seconds": 0.675000011920929,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_028_0_700.png",
+          "time_seconds": 0.699999988079071,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_029_0_725.png",
+          "time_seconds": 0.7250000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_030_0_750.png",
+          "time_seconds": 0.75,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_031_0_775.png",
+          "time_seconds": 0.7749999761581421,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_032_0_800.png",
+          "time_seconds": 0.800000011920929,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_033_0_825.png",
+          "time_seconds": 0.824999988079071,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_034_0_850.png",
+          "time_seconds": 0.8500000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_035_0_875.png",
+          "time_seconds": 0.875,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_036_0_900.png",
+          "time_seconds": 0.8999999761581421,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_037_0_925.png",
+          "time_seconds": 0.925000011920929,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_038_0_950.png",
+          "time_seconds": 0.949999988079071,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_039_0_975.png",
+          "time_seconds": 0.9750000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_040_1_000.png",
+          "time_seconds": 1.0,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_041_1_025.png",
+          "time_seconds": 1.024999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_042_1_050.png",
+          "time_seconds": 1.0499999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_043_1_075.png",
+          "time_seconds": 1.0750000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_044_1_100.png",
+          "time_seconds": 1.100000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_045_1_125.png",
+          "time_seconds": 1.125,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_046_1_150.png",
+          "time_seconds": 1.149999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_047_1_175.png",
+          "time_seconds": 1.1749999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_048_1_200.png",
+          "time_seconds": 1.2000000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_049_1_225.png",
+          "time_seconds": 1.225000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_050_1_250.png",
+          "time_seconds": 1.25,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_051_1_275.png",
+          "time_seconds": 1.274999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_052_1_300.png",
+          "time_seconds": 1.2999999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_053_1_325.png",
+          "time_seconds": 1.3250000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_054_1_350.png",
+          "time_seconds": 1.350000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_055_1_375.png",
+          "time_seconds": 1.375,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_056_1_400.png",
+          "time_seconds": 1.399999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_057_1_425.png",
+          "time_seconds": 1.4249999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_058_1_450.png",
+          "time_seconds": 1.4500000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_059_1_475.png",
+          "time_seconds": 1.475000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/captures/frame_060_1_500.png",
+          "time_seconds": 1.5,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        }
+      ],
+      "image_sequence_training_eligible": true,
+      "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/expanding_ring/capture_manifest.json",
+      "material_render_error_frame_count": 0,
+      "selected_camera_view": "front",
+      "valid_frame_count": 61,
+      "visual_evidence_status": "image_sequence_partial_material_fidelity"
+    },
+    "static_ring": {
+      "camera_mode": "forced_request_view_fixed_frame",
+      "frames": [
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.00175048828125,
+          "visible_radius_mean": 0.06374525633067349,
+          "visible_radius_p90": 0.07345412045964475
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224,
+          "visible_area_ratio": 0.00175048828125,
+          "visible_radius_mean": 0.06373267263901221,
+          "visible_radius_p90": 0.07345412045964475
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.001748046875,
+          "visible_radius_mean": 0.06372474873936852,
+          "visible_radius_p90": 0.07345412045964475
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_005_0_125.png",
+          "time_seconds": 0.125,
+          "visible_area_ratio": 0.00171630859375,
+          "visible_radius_mean": 0.06370132440633623,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.00171630859375,
+          "visible_radius_mean": 0.06368203661533821,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776,
+          "visible_area_ratio": 0.00171142578125,
+          "visible_radius_mean": 0.06366714544343635,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.001708984375,
+          "visible_radius_mean": 0.06364981733696237,
+          "visible_radius_p90": 0.07321437820701031
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552,
+          "visible_area_ratio": 0.00170654296875,
+          "visible_radius_mean": 0.06362935082972837,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_010_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.00169677734375,
+          "visible_radius_mean": 0.06360173431916273,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645,
+          "visible_area_ratio": 0.00169677734375,
+          "visible_radius_mean": 0.06357547319172545,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.00169677734375,
+          "visible_radius_mean": 0.06354059563744112,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104,
+          "visible_area_ratio": 0.00169677734375,
+          "visible_radius_mean": 0.06350545948842991,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.00167724609375,
+          "visible_radius_mean": 0.06351387959643054,
+          "visible_radius_p90": 0.07329429229122178
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_015_0_375.png",
+          "time_seconds": 0.375,
+          "visible_area_ratio": 0.00166748046875,
+          "visible_radius_mean": 0.0635195529815249,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.00166748046875,
+          "visible_radius_mean": 0.06352578112070036,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896,
+          "visible_area_ratio": 0.00166748046875,
+          "visible_radius_mean": 0.06352974214886191,
+          "visible_radius_p90": 0.07318774017893981
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.00164306640625,
+          "visible_radius_mean": 0.06353097373349754,
+          "visible_radius_p90": 0.073054185797256
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355,
+          "visible_area_ratio": 0.00164306640625,
+          "visible_radius_mean": 0.06354028868497398,
+          "visible_radius_p90": 0.073054185797256
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_020_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.00162353515625,
+          "visible_radius_mean": 0.06353233245484521,
+          "visible_radius_p90": 0.07270531914066881
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421,
+          "visible_area_ratio": 0.0014990234375,
+          "visible_radius_mean": 0.06357490835499437,
+          "visible_radius_p90": 0.073054185797256
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.0014794921875,
+          "visible_radius_mean": 0.06357860035960462,
+          "visible_radius_p90": 0.073054185797256
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071,
+          "visible_area_ratio": 0.00143798828125,
+          "visible_radius_mean": 0.06358258424952644,
+          "visible_radius_p90": 0.07308089667359277
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_025_0_625.png",
+          "time_seconds": 0.625,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_026_0_650.png",
+          "time_seconds": 0.6499999761581421,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_027_0_675.png",
+          "time_seconds": 0.675000011920929,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_028_0_700.png",
+          "time_seconds": 0.699999988079071,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_029_0_725.png",
+          "time_seconds": 0.7250000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_030_0_750.png",
+          "time_seconds": 0.75,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_031_0_775.png",
+          "time_seconds": 0.7749999761581421,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_032_0_800.png",
+          "time_seconds": 0.800000011920929,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_033_0_825.png",
+          "time_seconds": 0.824999988079071,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_034_0_850.png",
+          "time_seconds": 0.8500000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_035_0_875.png",
+          "time_seconds": 0.875,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_036_0_900.png",
+          "time_seconds": 0.8999999761581421,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_037_0_925.png",
+          "time_seconds": 0.925000011920929,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_038_0_950.png",
+          "time_seconds": 0.949999988079071,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_039_0_975.png",
+          "time_seconds": 0.9750000238418579,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_040_1_000.png",
+          "time_seconds": 1.0,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_041_1_025.png",
+          "time_seconds": 1.024999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_042_1_050.png",
+          "time_seconds": 1.0499999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_043_1_075.png",
+          "time_seconds": 1.0750000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_044_1_100.png",
+          "time_seconds": 1.100000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_045_1_125.png",
+          "time_seconds": 1.125,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_046_1_150.png",
+          "time_seconds": 1.149999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_047_1_175.png",
+          "time_seconds": 1.1749999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_048_1_200.png",
+          "time_seconds": 1.2000000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_049_1_225.png",
+          "time_seconds": 1.225000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_050_1_250.png",
+          "time_seconds": 1.25,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_051_1_275.png",
+          "time_seconds": 1.274999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_052_1_300.png",
+          "time_seconds": 1.2999999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_053_1_325.png",
+          "time_seconds": 1.3250000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_054_1_350.png",
+          "time_seconds": 1.350000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_055_1_375.png",
+          "time_seconds": 1.375,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_056_1_400.png",
+          "time_seconds": 1.399999976158142,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_057_1_425.png",
+          "time_seconds": 1.4249999523162842,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_058_1_450.png",
+          "time_seconds": 1.4500000476837158,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_059_1_475.png",
+          "time_seconds": 1.475000023841858,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        },
+        {
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/captures/frame_060_1_500.png",
+          "time_seconds": 1.5,
+          "visible_area_ratio": 0.0,
+          "visible_radius_mean": 0.0,
+          "visible_radius_p90": 0.0
+        }
+      ],
+      "image_sequence_training_eligible": true,
+      "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_shockwave_r002/runtime_captures/static_ring/capture_manifest.json",
+      "material_render_error_frame_count": 0,
+      "selected_camera_view": "front",
+      "valid_frame_count": 61,
+      "visual_evidence_status": "image_sequence_partial_material_fidelity"
+    }
+  },
+  "window_metrics": {
+    "expanding_ring": {
+      "frame_count": 19.0,
+      "initial_radius_p90": 0.08606524596200257,
+      "nondecreasing_step_ratio": 1.0,
+      "peak_radius_p90": 0.29468766569454513,
+      "radius_growth": 0.20862241973254256
+    },
+    "static_ring": {
+      "frame_count": 19.0,
+      "initial_radius_p90": 0.07345412045964475,
+      "nondecreasing_step_ratio": 1.0,
+      "peak_radius_p90": 0.07345412045964475,
+      "radius_growth": 0.0
+    }
+  }
+}

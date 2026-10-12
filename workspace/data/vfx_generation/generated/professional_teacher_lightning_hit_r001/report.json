@@ -1,0 +1,993 @@
+{
+  "comparison": {
+    "active_positive_difference_frame_count": 7.0,
+    "max_center_luminance_reduction": 0.0,
+    "max_contact_luminance_gain": 0.3824832923710346,
+    "max_contact_peak_luminance_gain": 0.9184618890285492,
+    "mean_positive_contact_luminance_gain": 0.15134945698082447,
+    "mean_positive_delta_centroid_x": 0.7251433126712518,
+    "mean_positive_delta_centroid_y": 0.4905444326359852,
+    "mean_positive_delta_target_distance": 0.08223252880843789
+  },
+  "conclusion": "Unity reproduction supports a focused lightning impact flash above the surrounding bolt layers.",
+  "controlled_variables": {
+    "changed": [
+      "impact_flash.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "MainBolt",
+      "BranchSupport",
+      "hit material",
+      "hit texture",
+      "hit position",
+      "hit timing",
+      "hit size",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-04T01:23:53.022016+00:00",
+  "experiment_manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/experiment_manifest.json",
+  "graph_comparison": {
+    "difference_paths": [
+      "components.particle_systems[2].parameters.start_color_rgba[3]"
+    ],
+    "expected_difference_path": "components.particle_systems[2].parameters.start_color_rgba[3]",
+    "only_hit_alpha_differs": true
+  },
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "雷电暴点核心应成为局部最亮峰值，主电流和外围分支不能淹没命中核心。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/01_01250.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/02_01415.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/03_01580.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep008/visual_check/04_lightning/04_01749.jpg"
+    ],
+    "judgment_axes": [
+      "impact_readability",
+      "instant_peak",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP008",
+    "timecodes": [
+      "00:20:53-00:28:24"
+    ],
+    "title": "第08集作业点评：雷电粗细与冲击核心"
+  },
+  "quality_gates": {
+    "both_compile_pass": true,
+    "both_prefab_api_readbacks_pass": true,
+    "both_runtime_eligible": true,
+    "both_texture_readbacks_match_plan": true,
+    "contact_bright_pixels_gain_luminance": true,
+    "contact_difference_has_frames": true,
+    "contact_region_gains_luminance": true,
+    "controlled_graph_difference_only_hit_alpha": true,
+    "equal_nonzero_frame_count": true,
+    "no_material_render_errors": true,
+    "positive_difference_lands_near_contact": true,
+    "same_forced_camera": true
+  },
+  "rule_id": "professional_lightning_impact_focus_r001",
+  "schema_version": "vfx_professional_lightning_hit_teacher_reproduction.v1",
+  "status": "verified",
+  "unity": {
+    "capture_mode": "play_mode_runtime_isolated_multiview.v2",
+    "project": "workspace/unity-render-staging/EffectDemoPromptHumanR001",
+    "render_pipeline": "URP 14.0.9",
+    "version": "2022.3.16f1c1"
+  },
+  "validated_controller_prior": {
+    "allowed_use": "lightning_impact_focus_controller_only",
+    "contact_position": [
+      1.35,
+      0.0,
+      0.0
+    ],
+    "effect_family": "lightning",
+    "judgment_axis": "impact_focus",
+    "maximum_contact_centroid_distance": 0.12,
+    "minimum_contact_luminance_gain": 0.012,
+    "minimum_contact_peak_luminance_gain": 0.08,
+    "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/graphs/focused_impact.json",
+    "status": "eligible",
+    "target_role": "hit"
+  },
+  "variants": {
+    "focused_impact": {
+      "capture": {
+        "frames": [
+          {
+            "center_local_contrast": 0.23446477854376802,
+            "center_luminance": 0.6730041808363971,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.18605707536992244,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_000_0_000.png",
+            "time_seconds": 0.0,
+            "visible_area_ratio": 0.21498779296875
+          },
+          {
+            "center_local_contrast": 0.2489890388920208,
+            "center_luminance": 0.6290351203948377,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.1866208012028294,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_001_0_025.png",
+            "time_seconds": 0.02500000037252903,
+            "visible_area_ratio": 0.21433837890625
+          },
+          {
+            "center_local_contrast": 0.2931026798281525,
+            "center_luminance": 0.5290098401596967,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.26858135798826266,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_002_0_050.png",
+            "time_seconds": 0.05000000074505806,
+            "visible_area_ratio": 0.1489306640625
+          },
+          {
+            "center_local_contrast": 0.3091116686277559,
+            "center_luminance": 0.3974615769569546,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.38033334880913694,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_003_0_075.png",
+            "time_seconds": 0.07500000298023224,
+            "visible_area_ratio": 0.1051708984375
+          },
+          {
+            "center_local_contrast": 0.18506297292647172,
+            "center_luminance": 0.21038385234757964,
+            "center_occupancy_ratio": 0.99176025390625,
+            "center_visible_share": 0.6602868869112927,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_004_0_100.png",
+            "time_seconds": 0.10000000149011612,
+            "visible_area_ratio": 0.06008056640625
+          },
+          {
+            "center_local_contrast": 0.05255517784206076,
+            "center_luminance": 0.072623978582644,
+            "center_occupancy_ratio": 0.60284423828125,
+            "center_visible_share": 0.8385973849550008,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_005_0_125.png",
+            "time_seconds": 0.125,
+            "visible_area_ratio": 0.0287548828125
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_006_0_150.png",
+            "time_seconds": 0.15000000596046448,
+            "visible_area_ratio": 0.0020849609375
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_007_0_175.png",
+            "time_seconds": 0.17499999701976776,
+            "visible_area_ratio": 0.000751953125
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_008_0_200.png",
+            "time_seconds": 0.20000000298023224,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_009_0_225.png",
+            "time_seconds": 0.22499999403953552,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_010_0_250.png",
+            "time_seconds": 0.25,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_011_0_275.png",
+            "time_seconds": 0.2750000059604645,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_012_0_300.png",
+            "time_seconds": 0.30000001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_013_0_325.png",
+            "time_seconds": 0.32499998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_014_0_350.png",
+            "time_seconds": 0.3499999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_015_0_375.png",
+            "time_seconds": 0.375,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_016_0_400.png",
+            "time_seconds": 0.4000000059604645,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_017_0_425.png",
+            "time_seconds": 0.42500001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_018_0_450.png",
+            "time_seconds": 0.44999998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_019_0_475.png",
+            "time_seconds": 0.4749999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_020_0_500.png",
+            "time_seconds": 0.5,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_021_0_525.png",
+            "time_seconds": 0.5249999761581421,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_022_0_550.png",
+            "time_seconds": 0.550000011920929,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_023_0_575.png",
+            "time_seconds": 0.574999988079071,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_024_0_600.png",
+            "time_seconds": 0.6000000238418579,
+            "visible_area_ratio": 0.0
+          }
+        ],
+        "full_visual_training_eligible": false,
+        "image_sequence_training_eligible": true,
+        "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/capture_manifest.json",
+        "material_render_error_frame_count": 0,
+        "peak_center_local_contrast": 0.3091116686277559,
+        "peak_center_luminance": 0.6730041808363971,
+        "peak_center_occupancy_ratio": 1.0,
+        "peak_center_visible_share": 0.18605707536992244,
+        "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_000_0_000.png",
+        "peak_time_seconds": 0.0,
+        "selected_camera_view": "front",
+        "valid_frame_count": 25,
+        "visual_evidence_status": "image_sequence_partial_material_fidelity"
+      },
+      "frames": [
+        {
+          "center_luminance": 0.7368636727333069,
+          "center_peak_luminance": 0.8591004014015198,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.2126658856868744,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_000_0_000.png",
+          "time_seconds": 0.0
+        },
+        {
+          "center_luminance": 0.7074605226516724,
+          "center_peak_luminance": 0.8557654023170471,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.16975612938404083,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903
+        },
+        {
+          "center_luminance": 0.647460401058197,
+          "center_peak_luminance": 0.8440933227539062,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806
+        },
+        {
+          "center_luminance": 0.558210551738739,
+          "center_peak_luminance": 0.8183975219726562,
+          "contact_luminance": 0.41659027338027954,
+          "contact_peak_luminance": 0.9832991361618042,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224
+        },
+        {
+          "center_luminance": 0.3413137197494507,
+          "center_peak_luminance": 0.5576118230819702,
+          "contact_luminance": 0.2558005750179291,
+          "contact_peak_luminance": 0.9164799451828003,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612
+        },
+        {
+          "center_luminance": 0.14955805242061615,
+          "center_peak_luminance": 0.29448702931404114,
+          "contact_luminance": 0.1266128569841385,
+          "contact_peak_luminance": 0.6398622989654541,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_005_0_125.png",
+          "time_seconds": 0.125
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.054757993668317795,
+          "contact_peak_luminance": 0.3376521170139313,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.025671962648630142,
+          "contact_peak_luminance": 0.08487074077129364,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_010_0_250.png",
+          "time_seconds": 0.25
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_015_0_375.png",
+          "time_seconds": 0.375
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_020_0_500.png",
+          "time_seconds": 0.5
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/focused_impact/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579
+        }
+      ]
+    },
+    "weak_impact": {
+      "capture": {
+        "frames": [
+          {
+            "center_local_contrast": 0.2338066445671313,
+            "center_luminance": 0.6702147220147825,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.18605707536992244,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_000_0_000.png",
+            "time_seconds": 0.0,
+            "visible_area_ratio": 0.21498779296875
+          },
+          {
+            "center_local_contrast": 0.2506634418294127,
+            "center_luminance": 0.6259926451439951,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.18851034942988967,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_001_0_025.png",
+            "time_seconds": 0.02500000037252903,
+            "visible_area_ratio": 0.21218994140625
+          },
+          {
+            "center_local_contrast": 0.29545297310247487,
+            "center_luminance": 0.5256534079159008,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.27278933084697227,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_002_0_050.png",
+            "time_seconds": 0.05000000074505806,
+            "visible_area_ratio": 0.14663330078125
+          },
+          {
+            "center_local_contrast": 0.30462814723184184,
+            "center_luminance": 0.3888034944661458,
+            "center_occupancy_ratio": 1.0,
+            "center_visible_share": 0.4160276268345945,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_003_0_075.png",
+            "time_seconds": 0.07500000298023224,
+            "visible_area_ratio": 0.0961474609375
+          },
+          {
+            "center_local_contrast": 0.18106625120010808,
+            "center_luminance": 0.20572915201822917,
+            "center_occupancy_ratio": 0.99005126953125,
+            "center_visible_share": 0.7317964450058648,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_004_0_100.png",
+            "time_seconds": 0.10000000149011612,
+            "visible_area_ratio": 0.0541162109375
+          },
+          {
+            "center_local_contrast": 0.04701980285771038,
+            "center_luminance": 0.06702446198108149,
+            "center_occupancy_ratio": 0.57080078125,
+            "center_visible_share": 0.9562372188139059,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_005_0_125.png",
+            "time_seconds": 0.125,
+            "visible_area_ratio": 0.023876953125
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_006_0_150.png",
+            "time_seconds": 0.15000000596046448,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_007_0_175.png",
+            "time_seconds": 0.17499999701976776,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_008_0_200.png",
+            "time_seconds": 0.20000000298023224,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_009_0_225.png",
+            "time_seconds": 0.22499999403953552,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_010_0_250.png",
+            "time_seconds": 0.25,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_011_0_275.png",
+            "time_seconds": 0.2750000059604645,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_012_0_300.png",
+            "time_seconds": 0.30000001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_013_0_325.png",
+            "time_seconds": 0.32499998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_014_0_350.png",
+            "time_seconds": 0.3499999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_015_0_375.png",
+            "time_seconds": 0.375,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_016_0_400.png",
+            "time_seconds": 0.4000000059604645,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_017_0_425.png",
+            "time_seconds": 0.42500001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_018_0_450.png",
+            "time_seconds": 0.44999998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_019_0_475.png",
+            "time_seconds": 0.4749999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_020_0_500.png",
+            "time_seconds": 0.5,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_021_0_525.png",
+            "time_seconds": 0.5249999761581421,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_022_0_550.png",
+            "time_seconds": 0.550000011920929,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_023_0_575.png",
+            "time_seconds": 0.574999988079071,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_024_0_600.png",
+            "time_seconds": 0.6000000238418579,
+            "visible_area_ratio": 0.0
+          }
+        ],
+        "full_visual_training_eligible": false,
+        "image_sequence_training_eligible": true,
+        "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/capture_manifest.json",
+        "material_render_error_frame_count": 0,
+        "peak_center_local_contrast": 0.30462814723184184,
+        "peak_center_luminance": 0.6702147220147825,
+        "peak_center_occupancy_ratio": 1.0,
+        "peak_center_visible_share": 0.18605707536992244,
+        "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_000_0_000.png",
+        "peak_time_seconds": 0.0,
+        "selected_camera_view": "front",
+        "valid_frame_count": 25,
+        "visual_evidence_status": "image_sequence_partial_material_fidelity"
+      },
+      "frames": [
+        {
+          "center_luminance": 0.7340890765190125,
+          "center_peak_luminance": 0.8565991520881653,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.21108172833919525,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_000_0_000.png",
+          "time_seconds": 0.0
+        },
+        {
+          "center_luminance": 0.7057318687438965,
+          "center_peak_luminance": 0.8557654023170471,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.1554385870695114,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903
+        },
+        {
+          "center_luminance": 0.6457802057266235,
+          "center_peak_luminance": 0.8440933227539062,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806
+        },
+        {
+          "center_luminance": 0.5479508638381958,
+          "center_peak_luminance": 0.8038439750671387,
+          "contact_luminance": 0.03410698100924492,
+          "contact_peak_luminance": 0.064837247133255,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224
+        },
+        {
+          "center_luminance": 0.33653196692466736,
+          "center_peak_luminance": 0.5508856177330017,
+          "contact_luminance": 0.02693440020084381,
+          "contact_peak_luminance": 0.060570940375328064,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612
+        },
+        {
+          "center_luminance": 0.13939402997493744,
+          "center_peak_luminance": 0.27793097496032715,
+          "contact_luminance": 0.021831659600138664,
+          "contact_peak_luminance": 0.041610825806856155,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_005_0_125.png",
+          "time_seconds": 0.125
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_010_0_250.png",
+          "time_seconds": 0.25
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_015_0_375.png",
+          "time_seconds": 0.375
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_020_0_500.png",
+          "time_seconds": 0.5
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071
+        },
+        {
+          "center_luminance": 0.01990666799247265,
+          "center_peak_luminance": 0.01990666799247265,
+          "contact_luminance": 0.01990666799247265,
+          "contact_peak_luminance": 0.01990666799247265,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_lightning_hit_r001/runtime_captures/weak_impact/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1058 @@
+{
+  "comparison": {
+    "early_frame_max_mae": 9.020401921588928e-05,
+    "last_visible_time_gain_seconds": 1.149999976158142,
+    "late_active_frame_ratio_gain": 0.2702702702702703,
+    "late_visible_area_mean_gain": 0.0014881287537537539
+  },
+  "conclusion": "Unity reproduction supports the professional rule that a delayed Residual layer preserves post-peak continuity.",
+  "controlled_variables": {
+    "changed": [
+      "residual.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "graph topology",
+      "core parameters",
+      "shockwave parameters",
+      "debris parameters",
+      "material paths",
+      "texture paths",
+      "shader paths",
+      "timing",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T17:08:00.015558+00:00",
+  "experiment_manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/experiment_manifest.json",
+  "graph_comparison": {
+    "difference_paths": [
+      "components.particle_systems[3].parameters.start_color_rgba[3]"
+    ],
+    "expected_difference_path": "components.particle_systems[3].parameters.start_color_rgba[3]",
+    "only_residual_alpha_differs": true
+  },
+  "late_metrics": {
+    "abrupt_no_residual": {
+      "active_frame_ratio": 0.0,
+      "frame_count": 37.0,
+      "last_visible_time_seconds": 0.0,
+      "visible_area_mean": 0.0
+    },
+    "staged_residual": {
+      "active_frame_ratio": 0.2702702702702703,
+      "frame_count": 37.0,
+      "last_visible_time_seconds": 1.149999976158142,
+      "visible_area_mean": 0.0014881287537537539
+    }
+  },
+  "late_window_start_seconds": 0.6800000000000002,
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "爆炸后应有残留，不应在峰值后瞬间清空。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-001/visual_review_44-66/evidence/00-57-48.jpg",
+      "knowledge/sources/SRC-2026-001/visual_review_44-66/evidence/00-57-55.jpg",
+      "knowledge/sources/SRC-2026-001/visual_review_44-66/evidence/00-58-48.jpg"
+    ],
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-001",
+    "source_url": "https://www.bilibili.com/video/BV1xmQnBaE6b/",
+    "timecodes": [
+      "00:57:40-00:58:47"
+    ],
+    "title": "20260415点评-一定要练基本功"
+  },
+  "quality_gates": {
+    "both_compile_pass": true,
+    "both_prefab_api_readbacks_pass": true,
+    "both_runtime_eligible": true,
+    "both_texture_readbacks_match_plan": true,
+    "controlled_graph_difference_only_residual_alpha": true,
+    "early_frames_unchanged": true,
+    "equal_nonzero_frame_count": true,
+    "last_visible_time_gain": true,
+    "late_active_ratio_gain": true,
+    "late_visible_area_gain": true,
+    "no_material_render_errors": true,
+    "same_camera_view": true
+  },
+  "rule_id": "professional_explosion_residual_persistence_r001",
+  "schema_version": "vfx_professional_residual_teacher_reproduction.v1",
+  "status": "verified",
+  "unity": {
+    "capture_mode": "play_mode_runtime_isolated_multiview.v2",
+    "project": "workspace/unity-render-staging/EffectDemoPromptHumanR001",
+    "render_pipeline": "URP 14.0.9",
+    "version": "2022.3.16f1c1"
+  },
+  "validated_controller_prior": {
+    "allowed_use": "explosion_residual_rule_controller_only",
+    "effect_family": "explosion",
+    "judgment_axis": "rhythm",
+    "minimum_last_visible_time_gain_seconds": 0.3,
+    "minimum_late_active_ratio_gain": 0.15,
+    "minimum_late_visible_area_gain": 0.0005,
+    "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/graphs/staged_residual.json",
+    "status": "eligible",
+    "target_role": "residual"
+  },
+  "variants": {
+    "abrupt_no_residual": {
+      "frames": [
+        {
+          "center_local_contrast": 0.06155804753691599,
+          "center_luminance": 0.08146471420358264,
+          "center_occupancy_ratio": 0.11554783950617284,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.002599826388888889
+        },
+        {
+          "center_local_contrast": 0.07314187152021302,
+          "center_luminance": 0.09304853818687968,
+          "center_occupancy_ratio": 0.15104166666666666,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_001_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.0033984375
+        },
+        {
+          "center_local_contrast": 0.08637138586298716,
+          "center_luminance": 0.10627805252965382,
+          "center_occupancy_ratio": 0.22434413580246915,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_002_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.005047743055555555
+        },
+        {
+          "center_local_contrast": 0.10691804012345676,
+          "center_luminance": 0.12682470679012342,
+          "center_occupancy_ratio": 0.31732253086419754,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_003_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.007139756944444444
+        },
+        {
+          "center_local_contrast": 0.12264763008956668,
+          "center_luminance": 0.14280172763858628,
+          "center_occupancy_ratio": 0.41280864197530864,
+          "center_visible_share": 0.9834558823529411,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_004_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.009444444444444445
+        },
+        {
+          "center_local_contrast": 0.10053947249109518,
+          "center_luminance": 0.12722624167877025,
+          "center_occupancy_ratio": 0.41898148148148145,
+          "center_visible_share": 0.7597061909758657,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_005_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.012408854166666667
+        },
+        {
+          "center_local_contrast": 0.07214377508040254,
+          "center_luminance": 0.10420649146695715,
+          "center_occupancy_ratio": 0.41647376543209874,
+          "center_visible_share": 0.6131780744106787,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_006_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.015282118055555556
+        },
+        {
+          "center_local_contrast": 0.02133711477158766,
+          "center_luminance": 0.056240177166545634,
+          "center_occupancy_ratio": 0.3298611111111111,
+          "center_visible_share": 0.46253719231809576,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_007_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.016046006944444444
+        },
+        {
+          "center_local_contrast": 0.011096407996161427,
+          "center_luminance": 0.04834869644153958,
+          "center_occupancy_ratio": 0.32156635802469136,
+          "center_visible_share": 0.39381053626269785,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_008_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.018372395833333333
+        },
+        {
+          "center_local_contrast": 0.0036726419839540753,
+          "center_luminance": 0.03653094695594287,
+          "center_occupancy_ratio": 0.26022376543209874,
+          "center_visible_share": 0.34598615029494745,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_009_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.016922743055555557
+        },
+        {
+          "center_local_contrast": 0.001712788944219671,
+          "center_luminance": 0.02830322409828129,
+          "center_occupancy_ratio": 0.2177854938271605,
+          "center_visible_share": 0.28474148802017657,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_010_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.01720920138888889
+        },
+        {
+          "center_local_contrast": 0.00031809957464467437,
+          "center_luminance": 0.020345148874364553,
+          "center_occupancy_ratio": 0.005979938271604938,
+          "center_visible_share": 0.62,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_011_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.00021701388888888888
+        },
+        {
+          "center_local_contrast": 2.3452404295052492e-05,
+          "center_luminance": 0.019960004084967314,
+          "center_occupancy_ratio": 0.0021219135802469135,
+          "center_visible_share": 0.4583333333333333,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_012_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.00010416666666666667
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_013_0_650.png",
+          "time_seconds": 0.6499999761581421,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_014_0_700.png",
+          "time_seconds": 0.699999988079071,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_015_0_750.png",
+          "time_seconds": 0.75,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_016_0_800.png",
+          "time_seconds": 0.800000011920929,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_017_0_850.png",
+          "time_seconds": 0.8500000238418579,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_018_0_900.png",
+          "time_seconds": 0.8999999761581421,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_019_0_950.png",
+          "time_seconds": 0.949999988079071,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_020_1_000.png",
+          "time_seconds": 1.0,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_021_1_050.png",
+          "time_seconds": 1.0499999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_022_1_100.png",
+          "time_seconds": 1.100000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_023_1_150.png",
+          "time_seconds": 1.149999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_024_1_200.png",
+          "time_seconds": 1.2000000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_025_1_250.png",
+          "time_seconds": 1.25,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_026_1_300.png",
+          "time_seconds": 1.2999999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_027_1_350.png",
+          "time_seconds": 1.350000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_028_1_400.png",
+          "time_seconds": 1.399999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_029_1_450.png",
+          "time_seconds": 1.4500000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_030_1_500.png",
+          "time_seconds": 1.5,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_031_1_550.png",
+          "time_seconds": 1.5499999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_032_1_600.png",
+          "time_seconds": 1.600000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_033_1_650.png",
+          "time_seconds": 1.649999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_034_1_700.png",
+          "time_seconds": 1.7000000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_035_1_750.png",
+          "time_seconds": 1.75,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_036_1_800.png",
+          "time_seconds": 1.7999999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_037_1_850.png",
+          "time_seconds": 1.850000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_038_1_900.png",
+          "time_seconds": 1.899999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_039_1_950.png",
+          "time_seconds": 1.9500000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_040_2_000.png",
+          "time_seconds": 2.0,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_041_2_050.png",
+          "time_seconds": 2.049999952316284,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_042_2_100.png",
+          "time_seconds": 2.0999999046325684,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_043_2_150.png",
+          "time_seconds": 2.1500000953674316,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_044_2_200.png",
+          "time_seconds": 2.200000047683716,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_045_2_250.png",
+          "time_seconds": 2.25,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_046_2_300.png",
+          "time_seconds": 2.299999952316284,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_047_2_350.png",
+          "time_seconds": 2.3499999046325684,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_048_2_400.png",
+          "time_seconds": 2.4000000953674316,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_049_2_450.png",
+          "time_seconds": 2.450000047683716,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_050_2_500.png",
+          "time_seconds": 2.5,
+          "visible_area_ratio": 0.0
+        }
+      ],
+      "full_visual_training_eligible": false,
+      "image_sequence_training_eligible": true,
+      "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/capture_manifest.json",
+      "material_render_error_frame_count": 0,
+      "peak_center_local_contrast": 0.12264763008956668,
+      "peak_center_luminance": 0.14280172763858628,
+      "peak_center_occupancy_ratio": 0.41898148148148145,
+      "peak_center_visible_share": 0.7597061909758657,
+      "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/abrupt_no_residual/captures/frame_005_0_250.png",
+      "peak_time_seconds": 0.25,
+      "selected_camera_view": "top",
+      "valid_frame_count": 51,
+      "visual_evidence_status": "image_sequence_partial_material_fidelity"
+    },
+    "staged_residual": {
+      "frames": [
+        {
+          "center_local_contrast": 0.061493997518760585,
+          "center_luminance": 0.08140066418542724,
+          "center_occupancy_ratio": 0.11535493827160494,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.002595486111111111
+        },
+        {
+          "center_local_contrast": 0.0729586757141128,
+          "center_luminance": 0.09286534238077945,
+          "center_occupancy_ratio": 0.15200617283950618,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_001_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.003420138888888889
+        },
+        {
+          "center_local_contrast": 0.08630312182280318,
+          "center_luminance": 0.10620978848946984,
+          "center_occupancy_ratio": 0.22492283950617284,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_002_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.005060763888888889
+        },
+        {
+          "center_local_contrast": 0.1063270427862503,
+          "center_luminance": 0.12623370945291695,
+          "center_occupancy_ratio": 0.3177083333333333,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_003_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.0071484375
+        },
+        {
+          "center_local_contrast": 0.1232559476882111,
+          "center_luminance": 0.1433707927862503,
+          "center_occupancy_ratio": 0.4087577160493827,
+          "center_visible_share": 0.9832946635730858,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_004_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.00935329861111111
+        },
+        {
+          "center_local_contrast": 0.1018076200262821,
+          "center_luminance": 0.12839516400387313,
+          "center_occupancy_ratio": 0.4185956790123457,
+          "center_visible_share": 0.7659724673490999,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_005_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.012296006944444444
+        },
+        {
+          "center_local_contrast": 0.07442608643272122,
+          "center_luminance": 0.10646017746913579,
+          "center_occupancy_ratio": 0.4222608024691358,
+          "center_visible_share": 0.6224054591981802,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_006_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.015264756944444444
+        },
+        {
+          "center_local_contrast": 0.029285912636165583,
+          "center_luminance": 0.0640448052832244,
+          "center_occupancy_ratio": 0.4340277777777778,
+          "center_visible_share": 0.5339345040341718,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_007_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.018289930555555556
+        },
+        {
+          "center_local_contrast": 0.01991639333609986,
+          "center_luminance": 0.057205085633018626,
+          "center_occupancy_ratio": 0.45717592592592593,
+          "center_visible_share": 0.4792719919110212,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_008_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.02146267361111111
+        },
+        {
+          "center_local_contrast": 0.013249140450254174,
+          "center_luminance": 0.046267178195352206,
+          "center_occupancy_ratio": 0.4236111111111111,
+          "center_visible_share": 0.4642706131078224,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_009_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.02052951388888889
+        },
+        {
+          "center_local_contrast": 0.012362009428709755,
+          "center_luminance": 0.03897220648753328,
+          "center_occupancy_ratio": 0.40316358024691357,
+          "center_visible_share": 0.42488310632242327,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_010_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.02134982638888889
+        },
+        {
+          "center_local_contrast": 0.011434442944461741,
+          "center_luminance": 0.03145636241224885,
+          "center_occupancy_ratio": 0.21006944444444445,
+          "center_visible_share": 0.983739837398374,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_011_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.0048046875
+        },
+        {
+          "center_local_contrast": 0.012052589488017431,
+          "center_luminance": 0.03199371595860566,
+          "center_occupancy_ratio": 0.22472993827160495,
+          "center_visible_share": 0.9872881355932204,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_012_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.005121527777777778
+        },
+        {
+          "center_local_contrast": 0.012139233387799573,
+          "center_luminance": 0.03204590005446623,
+          "center_occupancy_ratio": 0.23707561728395063,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_013_0_650.png",
+          "time_seconds": 0.6499999761581421,
+          "visible_area_ratio": 0.005334201388888889
+        },
+        {
+          "center_local_contrast": 0.012857656741709033,
+          "center_luminance": 0.03276432340837569,
+          "center_occupancy_ratio": 0.25462962962962965,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_014_0_700.png",
+          "time_seconds": 0.699999988079071,
+          "visible_area_ratio": 0.005729166666666666
+        },
+        {
+          "center_local_contrast": 0.012564071502057617,
+          "center_luminance": 0.03247073816872428,
+          "center_occupancy_ratio": 0.26427469135802467,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_015_0_750.png",
+          "time_seconds": 0.75,
+          "visible_area_ratio": 0.005946180555555555
+        },
+        {
+          "center_local_contrast": 0.013131756989832977,
+          "center_luminance": 0.03303842365649964,
+          "center_occupancy_ratio": 0.2820216049382716,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_016_0_800.png",
+          "time_seconds": 0.800000011920929,
+          "visible_area_ratio": 0.006345486111111111
+        },
+        {
+          "center_local_contrast": 0.002455058097313001,
+          "center_luminance": 0.02236172476397966,
+          "center_occupancy_ratio": 0.28433641975308643,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_017_0_850.png",
+          "time_seconds": 0.8500000238418579,
+          "visible_area_ratio": 0.0063975694444444444
+        },
+        {
+          "center_local_contrast": 0.002691079793028326,
+          "center_luminance": 0.022597746459694985,
+          "center_occupancy_ratio": 0.2993827160493827,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_018_0_900.png",
+          "time_seconds": 0.8999999761581421,
+          "visible_area_ratio": 0.006736111111111111
+        },
+        {
+          "center_local_contrast": 0.0012906994371822862,
+          "center_luminance": 0.021197366103848946,
+          "center_occupancy_ratio": 0.2492283950617284,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_019_0_950.png",
+          "time_seconds": 0.949999988079071,
+          "visible_area_ratio": 0.005607638888888889
+        },
+        {
+          "center_local_contrast": 0.0014401870007262237,
+          "center_luminance": 0.021346853667392883,
+          "center_occupancy_ratio": 0.2496141975308642,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_020_1_000.png",
+          "time_seconds": 1.0,
+          "visible_area_ratio": 0.005616319444444445
+        },
+        {
+          "center_local_contrast": 0.0016893949709513474,
+          "center_luminance": 0.021596061637618007,
+          "center_occupancy_ratio": 0.24363425925925927,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_021_1_050.png",
+          "time_seconds": 1.0499999523162842,
+          "visible_area_ratio": 0.005481770833333333
+        },
+        {
+          "center_local_contrast": 0.0018805942870975603,
+          "center_luminance": 0.02178726095376422,
+          "center_occupancy_ratio": 0.22743055555555555,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_022_1_100.png",
+          "time_seconds": 1.100000023841858,
+          "visible_area_ratio": 0.0051171875
+        },
+        {
+          "center_local_contrast": 0.0007752045509561885,
+          "center_luminance": 0.020681871217622848,
+          "center_occupancy_ratio": 0.06327160493827161,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_023_1_150.png",
+          "time_seconds": 1.149999976158142,
+          "visible_area_ratio": 0.0014236111111111112
+        },
+        {
+          "center_local_contrast": 0.0010878956366497244,
+          "center_luminance": 0.020994562303316384,
+          "center_occupancy_ratio": 0.029320987654320986,
+          "center_visible_share": 1.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_024_1_200.png",
+          "time_seconds": 1.2000000476837158,
+          "visible_area_ratio": 0.0006597222222222222
+        },
+        {
+          "center_local_contrast": 0.0004821583756959569,
+          "center_luminance": 0.020388825042362616,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_025_1_250.png",
+          "time_seconds": 1.25,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_026_1_300.png",
+          "time_seconds": 1.2999999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_027_1_350.png",
+          "time_seconds": 1.350000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_028_1_400.png",
+          "time_seconds": 1.399999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_029_1_450.png",
+          "time_seconds": 1.4500000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_030_1_500.png",
+          "time_seconds": 1.5,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_031_1_550.png",
+          "time_seconds": 1.5499999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_032_1_600.png",
+          "time_seconds": 1.600000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_033_1_650.png",
+          "time_seconds": 1.649999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_034_1_700.png",
+          "time_seconds": 1.7000000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_035_1_750.png",
+          "time_seconds": 1.75,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_036_1_800.png",
+          "time_seconds": 1.7999999523162842,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_037_1_850.png",
+          "time_seconds": 1.850000023841858,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_038_1_900.png",
+          "time_seconds": 1.899999976158142,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_039_1_950.png",
+          "time_seconds": 1.9500000476837158,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_040_2_000.png",
+          "time_seconds": 2.0,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_041_2_050.png",
+          "time_seconds": 2.049999952316284,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_042_2_100.png",
+          "time_seconds": 2.0999999046325684,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_043_2_150.png",
+          "time_seconds": 2.1500000953674316,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_044_2_200.png",
+          "time_seconds": 2.200000047683716,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_045_2_250.png",
+          "time_seconds": 2.25,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_046_2_300.png",
+          "time_seconds": 2.299999952316284,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_047_2_350.png",
+          "time_seconds": 2.3499999046325684,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_048_2_400.png",
+          "time_seconds": 2.4000000953674316,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_049_2_450.png",
+          "time_seconds": 2.450000047683716,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "center_local_contrast": 0.0,
+          "center_luminance": 0.01990666666666666,
+          "center_occupancy_ratio": 0.0,
+          "center_visible_share": 0.0,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_050_2_500.png",
+          "time_seconds": 2.5,
+          "visible_area_ratio": 0.0
+        }
+      ],
+      "full_visual_training_eligible": false,
+      "image_sequence_training_eligible": true,
+      "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/capture_manifest.json",
+      "material_render_error_frame_count": 0,
+      "peak_center_local_contrast": 0.1232559476882111,
+      "peak_center_luminance": 0.1433707927862503,
+      "peak_center_occupancy_ratio": 0.45717592592592593,
+      "peak_center_visible_share": 0.4792719919110212,
+      "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_residual_r001/runtime_captures/staged_residual/captures/frame_008_0_400.png",
+      "peak_time_seconds": 0.4000000059604645,
+      "selected_camera_view": "top",
+      "valid_frame_count": 51,
+      "visual_evidence_status": "image_sequence_partial_material_fidelity"
+    }
+  }
+}

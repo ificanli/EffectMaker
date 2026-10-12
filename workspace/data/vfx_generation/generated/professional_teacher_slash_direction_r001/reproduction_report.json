@@ -1,0 +1,940 @@
+{
+  "comparison": {
+    "aligned_horizontal_vertical_ratio": 15.673637292333293,
+    "aligned_signed_x_displacement": 0.28170159610370793,
+    "horizontal_span_gain": 0.271574550870447
+  },
+  "conclusion": "Unity reproduction supports aligning slash trail motion with the screen-space attack axis.",
+  "controlled_variables": {
+    "changed": [
+      "direction_trail.transform.local_rotation"
+    ],
+    "held_constant": [
+      "trail material",
+      "trail texture",
+      "speed",
+      "lifetime",
+      "size",
+      "burst count",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T22:08:01.306106+00:00",
+  "experiment_manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/experiment_manifest.json",
+  "graph_comparison": {
+    "difference_paths": [
+      "nodes[3].transform.local_rotation[1]",
+      "nodes[3].transform.local_rotation[3]"
+    ],
+    "expected_difference_prefix": "nodes[3].transform.local_rotation",
+    "only_trail_rotation_differs": true
+  },
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "刀光拖带与能量扩散应沿攻击方向真正离开原位置，不能朝镜头运动或停在原地堆叠。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep003/visual_check/07_template_reuse/",
+      "knowledge/sources/SRC-2026-SERIES-001/ep003/visual_check/09_flying_attack/"
+    ],
+    "judgment_axes": [
+      "composition",
+      "rhythm",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP003",
+    "timecodes": [
+      "01:02:00-01:12:03",
+      "01:38:09-02:02:00"
+    ],
+    "title": "第03集作业点评：重复模板、动态方向与刀光能量"
+  },
+  "quality_gates": {
+    "aligned_exceeds_depth_projection": true,
+    "aligned_has_motion_frames": true,
+    "aligned_motion_is_axis_dominant": true,
+    "aligned_moves_horizontally": true,
+    "both_compile_pass": true,
+    "both_prefab_api_readbacks_pass": true,
+    "both_runtime_eligible": true,
+    "both_texture_readbacks_match_plan": true,
+    "controlled_graph_difference_only_trail_rotation": true,
+    "no_material_render_errors": true,
+    "same_forced_camera": true
+  },
+  "rule_id": "professional_slash_directional_trail_r001",
+  "schema_version": "vfx_professional_slash_direction_teacher_reproduction.v1",
+  "status": "verified",
+  "unity": {
+    "capture_mode": "play_mode_runtime_isolated_multiview.v2",
+    "project": "workspace/unity-render-staging/EffectDemoPromptHumanR001",
+    "render_pipeline": "URP 14.0.9",
+    "version": "2022.3.16f1c1"
+  },
+  "validated_controller_prior": {
+    "allowed_use": "slash_directional_trail_controller_only",
+    "effect_family": "slash",
+    "judgment_axis": "directional_trail",
+    "minimum_horizontal_centroid_span": 0.05,
+    "minimum_horizontal_span_gain": 0.04,
+    "reference_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/graphs/attack_aligned.json",
+    "status": "eligible",
+    "target_role": "residual"
+  },
+  "variants": {
+    "attack_aligned": {
+      "active_frame_count": 12,
+      "capture": {
+        "frames": [
+          {
+            "center_local_contrast": -0.03095774588200928,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_000_0_000.png",
+            "time_seconds": 0.0,
+            "visible_area_ratio": 0.00590576171875
+          },
+          {
+            "center_local_contrast": -0.03245619126546428,
+            "center_luminance": 0.02642790019914215,
+            "center_occupancy_ratio": 0.017822265625,
+            "center_visible_share": 0.11546065638592329,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_001_0_025.png",
+            "time_seconds": 0.02500000037252903,
+            "visible_area_ratio": 0.00617431640625
+          },
+          {
+            "center_local_contrast": -0.002751050882960966,
+            "center_luminance": 0.04719406221277572,
+            "center_occupancy_ratio": 0.0570068359375,
+            "center_visible_share": 0.35717017208413004,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_002_0_050.png",
+            "time_seconds": 0.05000000074505806,
+            "visible_area_ratio": 0.00638427734375
+          },
+          {
+            "center_local_contrast": 0.06119012415552266,
+            "center_luminance": 0.09037771034390314,
+            "center_occupancy_ratio": 0.12628173828125,
+            "center_visible_share": 0.7866920152091255,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_003_0_075.png",
+            "time_seconds": 0.07500000298023224,
+            "visible_area_ratio": 0.0064208984375
+          },
+          {
+            "center_local_contrast": 0.08494393583409923,
+            "center_luminance": 0.10485060250076589,
+            "center_occupancy_ratio": 0.15777587890625,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_004_0_100.png",
+            "time_seconds": 0.10000000149011612,
+            "visible_area_ratio": 0.00631103515625
+          },
+          {
+            "center_local_contrast": 0.07445718501072303,
+            "center_luminance": 0.09436385167738968,
+            "center_occupancy_ratio": 0.14971923828125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_005_0_125.png",
+            "time_seconds": 0.125,
+            "visible_area_ratio": 0.00598876953125
+          },
+          {
+            "center_local_contrast": 0.05979308110255821,
+            "center_luminance": 0.07969974776922487,
+            "center_occupancy_ratio": 0.1395263671875,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_006_0_150.png",
+            "time_seconds": 0.15000000596046448,
+            "visible_area_ratio": 0.0055810546875
+          },
+          {
+            "center_local_contrast": 0.04478148561963849,
+            "center_luminance": 0.06468815228630515,
+            "center_occupancy_ratio": 0.12542724609375,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_007_0_175.png",
+            "time_seconds": 0.17499999701976776,
+            "visible_area_ratio": 0.00501708984375
+          },
+          {
+            "center_local_contrast": 0.029303582500382962,
+            "center_luminance": 0.04921024916704962,
+            "center_occupancy_ratio": 0.10821533203125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_008_0_200.png",
+            "time_seconds": 0.20000000298023224,
+            "visible_area_ratio": 0.00432861328125
+          },
+          {
+            "center_local_contrast": 0.01730351466758578,
+            "center_luminance": 0.03721018133425244,
+            "center_occupancy_ratio": 0.08697509765625,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_009_0_225.png",
+            "time_seconds": 0.22499999403953552,
+            "visible_area_ratio": 0.00347900390625
+          },
+          {
+            "center_local_contrast": 0.006250545825593687,
+            "center_luminance": 0.026886959108838843,
+            "center_occupancy_ratio": 0.04766845703125,
+            "center_visible_share": 0.7395833333333334,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_010_0_250.png",
+            "time_seconds": 0.25,
+            "visible_area_ratio": 0.002578125
+          },
+          {
+            "center_local_contrast": -0.0007040368644556684,
+            "center_luminance": 0.019918129212622544,
+            "center_occupancy_ratio": 0.0003662109375,
+            "center_visible_share": 0.009174311926605505,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_011_0_275.png",
+            "time_seconds": 0.2750000059604645,
+            "visible_area_ratio": 0.0015966796875
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_012_0_300.png",
+            "time_seconds": 0.30000001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_013_0_325.png",
+            "time_seconds": 0.32499998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_014_0_350.png",
+            "time_seconds": 0.3499999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_015_0_375.png",
+            "time_seconds": 0.375,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_016_0_400.png",
+            "time_seconds": 0.4000000059604645,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_017_0_425.png",
+            "time_seconds": 0.42500001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_018_0_450.png",
+            "time_seconds": 0.44999998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_019_0_475.png",
+            "time_seconds": 0.4749999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_020_0_500.png",
+            "time_seconds": 0.5,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_021_0_525.png",
+            "time_seconds": 0.5249999761581421,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_022_0_550.png",
+            "time_seconds": 0.550000011920929,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_023_0_575.png",
+            "time_seconds": 0.574999988079071,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_024_0_600.png",
+            "time_seconds": 0.6000000238418579,
+            "visible_area_ratio": 0.0
+          }
+        ],
+        "full_visual_training_eligible": false,
+        "image_sequence_training_eligible": true,
+        "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/capture_manifest.json",
+        "material_render_error_frame_count": 0,
+        "peak_center_local_contrast": 0.08494393583409923,
+        "peak_center_luminance": 0.10485060250076589,
+        "peak_center_occupancy_ratio": 0.15777587890625,
+        "peak_center_visible_share": 1.0,
+        "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_004_0_100.png",
+        "peak_time_seconds": 0.10000000149011612,
+        "selected_camera_view": "front",
+        "valid_frame_count": 25,
+        "visual_evidence_status": "image_sequence_partial_material_fidelity"
+      },
+      "end_centroid_x": 0.6198368365089623,
+      "frames": [
+        {
+          "centroid_x": 0.33813524040525433,
+          "centroid_y": 0.4982692882530006,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.00590576171875
+        },
+        {
+          "centroid_x": 0.3651284670429469,
+          "centroid_y": 0.4980211626159093,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903,
+          "visible_area_ratio": 0.00617431640625
+        },
+        {
+          "centroid_x": 0.39101891099008945,
+          "centroid_y": 0.49769849289449114,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.00638427734375
+        },
+        {
+          "centroid_x": 0.4163396323794309,
+          "centroid_y": 0.49725183315984106,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224,
+          "visible_area_ratio": 0.0064208984375
+        },
+        {
+          "centroid_x": 0.4414424799631252,
+          "centroid_y": 0.4965613630391449,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.00631103515625
+        },
+        {
+          "centroid_x": 0.4664849565159152,
+          "centroid_y": 0.4954775607982007,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_005_0_125.png",
+          "time_seconds": 0.125,
+          "visible_area_ratio": 0.00598876953125
+        },
+        {
+          "centroid_x": 0.4916549460646193,
+          "centroid_y": 0.49385282060068425,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.0055810546875
+        },
+        {
+          "centroid_x": 0.5170184936154111,
+          "centroid_y": 0.4913439401499387,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776,
+          "visible_area_ratio": 0.00501708984375
+        },
+        {
+          "centroid_x": 0.5424577129316975,
+          "centroid_y": 0.4882447295493465,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.00432861328125
+        },
+        {
+          "centroid_x": 0.5681619741535369,
+          "centroid_y": 0.48557151417672323,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552,
+          "visible_area_ratio": 0.00347900390625
+        },
+        {
+          "centroid_x": 0.5939396074316641,
+          "centroid_y": 0.4831403060008776,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_010_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.002578125
+        },
+        {
+          "centroid_x": 0.6198368365089623,
+          "centroid_y": 0.48029633208146144,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645,
+          "visible_area_ratio": 0.0015966796875
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_015_0_375.png",
+          "time_seconds": 0.375,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_020_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/attack_aligned/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.0
+        }
+      ],
+      "horizontal_centroid_span": 0.28170159610370793,
+      "start_centroid_x": 0.33813524040525433,
+      "vertical_centroid_span": 0.017972956171539156
+    },
+    "depth_misaligned": {
+      "active_frame_count": 12,
+      "capture": {
+        "frames": [
+          {
+            "center_local_contrast": 0.10445431099685966,
+            "center_luminance": 0.12436097766352631,
+            "center_occupancy_ratio": 0.17364501953125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_000_0_000.png",
+            "time_seconds": 0.0,
+            "visible_area_ratio": 0.00694580078125
+          },
+          {
+            "center_local_contrast": 0.12127915307138479,
+            "center_luminance": 0.14118581973805144,
+            "center_occupancy_ratio": 0.2060546875,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_001_0_025.png",
+            "time_seconds": 0.02500000037252903,
+            "visible_area_ratio": 0.0082421875
+          },
+          {
+            "center_local_contrast": 0.1344328067555147,
+            "center_luminance": 0.15433947342218135,
+            "center_occupancy_ratio": 0.23516845703125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_002_0_050.png",
+            "time_seconds": 0.05000000074505806,
+            "visible_area_ratio": 0.00940673828125
+          },
+          {
+            "center_local_contrast": 0.13900496471928614,
+            "center_luminance": 0.1589116313859528,
+            "center_occupancy_ratio": 0.25469970703125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_003_0_075.png",
+            "time_seconds": 0.07500000298023224,
+            "visible_area_ratio": 0.01018798828125
+          },
+          {
+            "center_local_contrast": 0.1332734886737898,
+            "center_luminance": 0.15318015534045645,
+            "center_occupancy_ratio": 0.26513671875,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_004_0_100.png",
+            "time_seconds": 0.10000000149011612,
+            "visible_area_ratio": 0.01060546875
+          },
+          {
+            "center_local_contrast": 0.11267436762791053,
+            "center_luminance": 0.13258103429457718,
+            "center_occupancy_ratio": 0.26593017578125,
+            "center_visible_share": 1.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_005_0_125.png",
+            "time_seconds": 0.125,
+            "visible_area_ratio": 0.01063720703125
+          },
+          {
+            "center_local_contrast": 0.08398854885414266,
+            "center_luminance": 0.10414324161305145,
+            "center_occupancy_ratio": 0.2435302734375,
+            "center_visible_share": 0.9898288265938973,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_006_0_150.png",
+            "time_seconds": 0.15000000596046448,
+            "visible_area_ratio": 0.00984130859375
+          },
+          {
+            "center_local_contrast": 0.05678952522388558,
+            "center_luminance": 0.07762184996361825,
+            "center_occupancy_ratio": 0.20361328125,
+            "center_visible_share": 0.963326595437482,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_007_0_175.png",
+            "time_seconds": 0.17499999701976776,
+            "visible_area_ratio": 0.00845458984375
+          },
+          {
+            "center_local_contrast": 0.033838309145782314,
+            "center_luminance": 0.05501213685278799,
+            "center_occupancy_ratio": 0.16015625,
+            "center_visible_share": 0.927536231884058,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_008_0_200.png",
+            "time_seconds": 0.20000000298023224,
+            "visible_area_ratio": 0.00690673828125
+          },
+          {
+            "center_local_contrast": 0.01820952321326329,
+            "center_luminance": 0.03908314725988051,
+            "center_occupancy_ratio": 0.11834716796875,
+            "center_visible_share": 0.9010223048327137,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_009_0_225.png",
+            "time_seconds": 0.22499999403953552,
+            "visible_area_ratio": 0.00525390625
+          },
+          {
+            "center_local_contrast": 0.008545596931067198,
+            "center_luminance": 0.028958747223498768,
+            "center_occupancy_ratio": 0.08154296875,
+            "center_visible_share": 0.8865295288652952,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_010_0_250.png",
+            "time_seconds": 0.25,
+            "visible_area_ratio": 0.00367919921875
+          },
+          {
+            "center_local_contrast": 0.000973472764678289,
+            "center_luminance": 0.02093754590801164,
+            "center_occupancy_ratio": 0.0435791015625,
+            "center_visible_share": 0.8869565217391304,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_011_0_275.png",
+            "time_seconds": 0.2750000059604645,
+            "visible_area_ratio": 0.00196533203125
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_012_0_300.png",
+            "time_seconds": 0.30000001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_013_0_325.png",
+            "time_seconds": 0.32499998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_014_0_350.png",
+            "time_seconds": 0.3499999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_015_0_375.png",
+            "time_seconds": 0.375,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_016_0_400.png",
+            "time_seconds": 0.4000000059604645,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_017_0_425.png",
+            "time_seconds": 0.42500001192092896,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_018_0_450.png",
+            "time_seconds": 0.44999998807907104,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_019_0_475.png",
+            "time_seconds": 0.4749999940395355,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_020_0_500.png",
+            "time_seconds": 0.5,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_021_0_525.png",
+            "time_seconds": 0.5249999761581421,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_022_0_550.png",
+            "time_seconds": 0.550000011920929,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_023_0_575.png",
+            "time_seconds": 0.574999988079071,
+            "visible_area_ratio": 0.0
+          },
+          {
+            "center_local_contrast": 3.469446951953614e-18,
+            "center_luminance": 0.019906666666666663,
+            "center_occupancy_ratio": 0.0,
+            "center_visible_share": 0.0,
+            "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_024_0_600.png",
+            "time_seconds": 0.6000000238418579,
+            "visible_area_ratio": 0.0
+          }
+        ],
+        "full_visual_training_eligible": false,
+        "image_sequence_training_eligible": true,
+        "manifest_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/capture_manifest.json",
+        "material_render_error_frame_count": 0,
+        "peak_center_local_contrast": 0.13900496471928614,
+        "peak_center_luminance": 0.1589116313859528,
+        "peak_center_occupancy_ratio": 0.26593017578125,
+        "peak_center_visible_share": 1.0,
+        "peak_frame_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_005_0_125.png",
+        "peak_time_seconds": 0.125,
+        "selected_camera_view": "front",
+        "valid_frame_count": 25,
+        "visual_evidence_status": "image_sequence_partial_material_fidelity"
+      },
+      "end_centroid_x": 0.4841968020356415,
+      "frames": [
+        {
+          "centroid_x": 0.4740697568023806,
+          "centroid_y": 0.49803651135522875,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_000_0_000.png",
+          "time_seconds": 0.0,
+          "visible_area_ratio": 0.00694580078125
+        },
+        {
+          "centroid_x": 0.47500816673279966,
+          "centroid_y": 0.4971311971448643,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_001_0_025.png",
+          "time_seconds": 0.02500000037252903,
+          "visible_area_ratio": 0.0082421875
+        },
+        {
+          "centroid_x": 0.4756335599335905,
+          "centroid_y": 0.4957711910630429,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_002_0_050.png",
+          "time_seconds": 0.05000000074505806,
+          "visible_area_ratio": 0.00940673828125
+        },
+        {
+          "centroid_x": 0.47644290850652726,
+          "centroid_y": 0.4941283894097721,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_003_0_075.png",
+          "time_seconds": 0.07500000298023224,
+          "visible_area_ratio": 0.01018798828125
+        },
+        {
+          "centroid_x": 0.47798046631096364,
+          "centroid_y": 0.4925471896891811,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_004_0_100.png",
+          "time_seconds": 0.10000000149011612,
+          "visible_area_ratio": 0.01060546875
+        },
+        {
+          "centroid_x": 0.4795578649346819,
+          "centroid_y": 0.4906456453546655,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_005_0_125.png",
+          "time_seconds": 0.125,
+          "visible_area_ratio": 0.01063720703125
+        },
+        {
+          "centroid_x": 0.48043194341252315,
+          "centroid_y": 0.4883036362827512,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_006_0_150.png",
+          "time_seconds": 0.15000000596046448,
+          "visible_area_ratio": 0.00984130859375
+        },
+        {
+          "centroid_x": 0.4811077225422281,
+          "centroid_y": 0.48596731754782463,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_007_0_175.png",
+          "time_seconds": 0.17499999701976776,
+          "visible_area_ratio": 0.00845458984375
+        },
+        {
+          "centroid_x": 0.48174679527194125,
+          "centroid_y": 0.4838528519294058,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_008_0_200.png",
+          "time_seconds": 0.20000000298023224,
+          "visible_area_ratio": 0.00690673828125
+        },
+        {
+          "centroid_x": 0.48227332863068745,
+          "centroid_y": 0.4816400266601949,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_009_0_225.png",
+          "time_seconds": 0.22499999403953552,
+          "visible_area_ratio": 0.00525390625
+        },
+        {
+          "centroid_x": 0.48313169274204915,
+          "centroid_y": 0.4797469425828312,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_010_0_250.png",
+          "time_seconds": 0.25,
+          "visible_area_ratio": 0.00367919921875
+        },
+        {
+          "centroid_x": 0.4841968020356415,
+          "centroid_y": 0.4783830318651091,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_011_0_275.png",
+          "time_seconds": 0.2750000059604645,
+          "visible_area_ratio": 0.00196533203125
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_012_0_300.png",
+          "time_seconds": 0.30000001192092896,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_013_0_325.png",
+          "time_seconds": 0.32499998807907104,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_014_0_350.png",
+          "time_seconds": 0.3499999940395355,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_015_0_375.png",
+          "time_seconds": 0.375,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_016_0_400.png",
+          "time_seconds": 0.4000000059604645,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_017_0_425.png",
+          "time_seconds": 0.42500001192092896,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_018_0_450.png",
+          "time_seconds": 0.44999998807907104,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_019_0_475.png",
+          "time_seconds": 0.4749999940395355,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_020_0_500.png",
+          "time_seconds": 0.5,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_021_0_525.png",
+          "time_seconds": 0.5249999761581421,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_022_0_550.png",
+          "time_seconds": 0.550000011920929,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_023_0_575.png",
+          "time_seconds": 0.574999988079071,
+          "visible_area_ratio": 0.0
+        },
+        {
+          "centroid_x": 0.5,
+          "centroid_y": 0.5,
+          "path": "workspace/data/vfx_generation/generated/professional_teacher_slash_direction_r001/runtime_captures/depth_misaligned/captures/frame_024_0_600.png",
+          "time_seconds": 0.6000000238418579,
+          "visible_area_ratio": 0.0
+        }
+      ],
+      "horizontal_centroid_span": 0.010127045233260912,
+      "start_centroid_x": 0.4740697568023806,
+      "vertical_centroid_span": 0.01965347949011964
+    }
+  }
+}

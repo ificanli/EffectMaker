@@ -1,0 +1,65 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "inner.start_size_max",
+      "inner.start_color_rgba.alpha"
+    ],
+    "held_constant": [
+      "outer layer",
+      "Mesh",
+      "material",
+      "texture",
+      "lifetime",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T21:29:01.855822+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md",
+    "expert_judgment": "刀光外侧主刃应更亮、更长，内侧辅助层应缩短并削弱，避免内外同长同亮。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-001/1872_blade_layers.jpg",
+      "knowledge/sources/SRC-2026-001/2398_slash_shape.jpg",
+      "knowledge/sources/SRC-2026-001/contact_09_31-32.jpg",
+      "knowledge/sources/SRC-2026-001/contact_10_32-33.jpg"
+    ],
+    "judgment_axes": [
+      "core_readability",
+      "layer_separation",
+      "composition"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-001",
+    "timecodes": [
+      "00:31:12.540-00:32:06.400"
+    ],
+    "title": "刀光内外侧层次"
+  },
+  "rule_id": "professional_slash_outer_inner_hierarchy_r001",
+  "schema_version": "vfx_professional_slash_layer_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_slash_layer_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_slash_family_r003/candidates/layered_slash_000_pfg_0020f221a2d84f2a301b/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/compile_results/equal_layers.json",
+      "graph_id": "pfg_150b2e4fb5092cf95bab",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/graphs/equal_layers.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashLayerR001/equal_layers/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/readback/equal_layers.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/readback_results/equal_layers.json",
+      "variant": "equal_layers"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/compile_results/outer_dominant.json",
+      "graph_id": "pfg_882a9eaed4d0fa435aec",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/graphs/outer_dominant.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashLayerR001/outer_dominant/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/readback/outer_dominant.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_layer_r001/readback_results/outer_dominant.json",
+      "variant": "outer_dominant"
+    }
+  ]
+}

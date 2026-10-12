@@ -1,0 +1,68 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "support.start_delay_max",
+      "hit.start_delay_max",
+      "residual.start_delay_max"
+    ],
+    "held_constant": [
+      "all materials",
+      "all textures",
+      "particle counts",
+      "speeds",
+      "lifetimes",
+      "colors",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T20:42:12.562931+00:00",
+  "professional_source": {
+    "author": "三生路_王先生特效",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-001/source.md: 作者页面说明为网易资深特效师",
+    "expert_judgment": "完整爆炸应按中心亮点、扩散线与碎片、残光小元素的顺序分层出现，并在短爆发后快速收束而不是全部同时起播和消失。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/01_start_24-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/03_modified_25-35.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/04_peak_26-30.jpg",
+      "knowledge/sources/SRC-2026-SERIES-001/ep004/visual_check/05_impact_burst_layers/05_end_29-00.jpg"
+    ],
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation",
+      "composition"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-SERIES-001-EP004-EP006",
+    "timecodes": [
+      "EP004 00:24:34-00:34:10",
+      "EP006 00:10:00-00:20:00"
+    ],
+    "title": "连续打击分层消失与短爆发快速收束"
+  },
+  "rule_id": "professional_explosion_staged_rhythm_r001",
+  "schema_version": "vfx_professional_explosion_rhythm_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_explosion_rhythm_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_explosion_family_r012/candidates/layered_explosion_000_pfg_4345e832edb46e1f10ea/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/compile_results/simultaneous_layers.json",
+      "graph_id": "pfg_4206b2be4f8b1a511425",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/graphs/simultaneous_layers.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionRhythmR001/simultaneous_layers/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/readback/simultaneous_layers.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/readback_results/simultaneous_layers.json",
+      "variant": "simultaneous_layers"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/compile_results/staged_layers.json",
+      "graph_id": "pfg_7b04660679772a92cfd8",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/graphs/staged_layers.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherExplosionRhythmR001/staged_layers/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/readback/staged_layers.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_explosion_rhythm_r001/readback_results/staged_layers.json",
+      "variant": "staged_layers"
+    }
+  ]
+}
