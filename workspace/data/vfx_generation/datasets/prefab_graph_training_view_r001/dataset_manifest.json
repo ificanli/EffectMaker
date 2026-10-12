@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-09-03T12:44:40.082270+00:00",
+  "dataset_id": "prefab_graph_training_view_r001",
+  "example_count": 2115,
+  "files": {
+    "examples": "workspace/data/vfx_generation/datasets/prefab_graph_training_view_r001/examples.jsonl",
+    "graphs": "workspace/data/vfx_generation/datasets/prefab_graph_training_view_r001/graphs.jsonl",
+    "structure_clusters": "workspace/data/vfx_generation/datasets/prefab_graph_training_view_r001/structure_clusters.jsonl",
+    "vocabulary": "workspace/data/vfx_generation/datasets/prefab_graph_training_view_r001/vocabulary.json"
+  },
+  "fingerprint_policy": {
+    "cluster_rule": "Union examples sharing either structural fingerprint; split by structure_cluster_id.",
+    "component_topology_ignored_prefixes": [
+      "DEPTH_",
+      "SIBLING_",
+      "ACTIVE_",
+      "LOOP_",
+      "LIFETIME_",
+      "SIZE_",
+      "SPEED_",
+      "MATERIALS_",
+      "SIM_",
+      "SHAPE_",
+      "RENDER_",
+      "TYPE_",
+      "ENABLED_"
+    ],
+    "parameter_agnostic_sequence_ignored_prefixes": [
+      "DEPTH_",
+      "SIBLING_",
+      "ACTIVE_",
+      "LOOP_",
+      "LIFETIME_",
+      "SIZE_",
+      "SPEED_",
+      "MATERIALS_"
+    ]
+  },
+  "quality_gates": {
+    "aesthetic_labels_consumed": 0,
+    "cluster_split_leakage": 0,
+    "component_topology_duplicate_group_count": 131,
+    "duplicate_example_ids": 0,
+    "duplicate_graph_ids": 0,
+    "graph_schema_errors": 0,
+    "parameter_agnostic_duplicate_group_count": 345,
+    "source_example_count": 2115,
+    "test_source_group_count": 13,
+    "train_source_group_count": 16,
+    "train_validation_test_nonempty": 1,
+    "validation_source_group_count": 15
+  },
+  "reconstruction_status_counts": {
+    "structure_only": 2115
+  },
+  "schema_version": "vfx_prefab_graph_training_dataset.v1",
+  "source_dataset_id": "prefab_graph_full_r002",
+  "source_group_note": "All 16 source groups are retained as provenance. Structure clusters, not source paths, define the split boundary.",
+  "split_cluster_counts": {
+    "test": 43,
+    "train": 238,
+    "validation": 56
+  },
+  "split_example_counts": {
+    "test": 502,
+    "train": 1169,
+    "validation": 444
+  },
+  "status": "pass",
+  "token_count": 360760,
+  "view_schema_version": "vfx_prefab_graph_training_view.v1",
+  "vocabulary_fit_split": "train"
+}
