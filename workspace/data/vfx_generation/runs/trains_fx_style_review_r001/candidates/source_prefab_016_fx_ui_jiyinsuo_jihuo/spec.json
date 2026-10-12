@@ -1,0 +1,174 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: FX_ui_jiyinsuo_jihuo.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "trains_fx_221_fx_ui_jiyinsuo_jihuo",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trains_fx_style_review_r001",
+    "candidate_id": "source_prefab_016_fx_ui_jiyinsuo_jihuo",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_jiyinsuo/eff/FX_ui_jiyinsuo_jihuo.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "material_count": 1,
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_jiyinsuo/mat/Mat_jiyinsuo_02_super.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/34/Tex_jiyinsuo_02_3441c47b338240bb.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "shape.square",
+                    "size.128x128"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "3441c47b338240bbf1321da1bfcc6d2cfadb5c9312b80d6d8fb366da121dc8c8",
+                  "slot_roles": [],
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_jiyinsuo_01_48c845213c95b9b4.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.256x256"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "48c845213c95b9b497eabf33596edca04a4f98eaf72bf5f546345190ef456af4",
+                  "slot_roles": [],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/4b/UI_Lab_gene_icon_biggenebg_4b73d588e2970356.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.248x254"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "4b73d588e297035648af96bd849eb98015a39f80f37ca04453dea6fbec815124",
+                  "slot_roles": [],
+                  "width": 248,
+                  "height": 254
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 3
+            }
+          ],
+          "selection_basis": [
+            "material paths are direct Prefab dependency edges",
+            "shader and texture paths are direct material dependency edges",
+            "texture tags are joined by content hash when the local index contains the copied texture"
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "SourceIngestBatchScene",
+    "camera": "SourceIngestReviewCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [
+      0.05,
+      0.25,
+      0.75,
+      1.5
+    ]
+  },
+  "training_case_id": "trains_fx_221_fx_ui_jiyinsuo_jihuo",
+  "target_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "ui"
+    ],
+    "source": "prompt",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  },
+  "observed_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "ui"
+    ],
+    "source": "unlabeled_source_import",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  }
+}

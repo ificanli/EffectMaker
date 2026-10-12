@@ -1,0 +1,335 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: Fx_com_sheilder.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "trains_fx_016_fx_com_sheilder",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trains_fx_style_runtime_r001",
+    "candidate_id": "source_prefab_004_fx_com_sheilder",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Fx_com_sheilder.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "material_count": 3,
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow 2.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "motion.dissolve_reveal",
+                    "resolution.small",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "250b535b64dd8bf3547d48cf722cfc99e45f11da52bb14593b7406b14f4a1991",
+                  "slot_roles": [
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_hudun_wuowei_3aeeb2d9446563e7.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.dark_background",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "role.color_control",
+                    "shape.horizontal_strip",
+                    "size.512x128",
+                    "slot.ramp_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "3aeeb2d9446563e7796e8103436770c2474da45c50ce15654b8db0aa27fe74bb",
+                  "slot_roles": [
+                    "slot.ramp_map"
+                  ],
+                  "width": 512,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "resolution.small",
+                    "shape.square",
+                    "size.128x128"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "485848ad894bc2c98f2a10f3e4ebead32a857838b5e402ac5010d4628572664f",
+                  "slot_roles": [],
+                  "width": 128,
+                  "height": 128
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 12,
+              "editor_bound_texture_slot_count": 3
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_hudun_glow.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/25/Tex_noise_02_250b535b64dd8bf3.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "motion.dissolve_reveal",
+                    "resolution.small",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "250b535b64dd8bf3547d48cf722cfc99e45f11da52bb14593b7406b14f4a1991",
+                  "slot_roles": [
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_zhiyugeji_wenli_485848ad894bc2c9.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "resolution.small",
+                    "shape.square",
+                    "size.128x128"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "485848ad894bc2c98f2a10f3e4ebead32a857838b5e402ac5010d4628572664f",
+                  "slot_roles": [],
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/55/yuanhuan_558f4c30fbee7f8d.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "558f4c30fbee7f8dd49fb5f2babd9324448618948edd609b787ddb4b1b766381",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 12,
+              "editor_bound_texture_slot_count": 3
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_sheilder/Mat_sheilder_keji.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/7d/Tex_tiebijiangjun_ring1_7da6c5c1fe66df70.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.dark_background",
+                    "luma.high_contrast",
+                    "motion.radial_expand",
+                    "resolution.medium",
+                    "role.impact_ring",
+                    "role.noise_control",
+                    "semantic.ring",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "7da6c5c1fe66df708c9e906f4027d3d2e49e14d42c92d01b2775f075e6ac6fa8",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b2/Tex_tiebijiangjun_kejiwenli1_b20c9f1ff44b8e7b.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.dark_background",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.256x256"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "b20c9f1ff44b8e7b0fec6a56bdf2aaea82e7b65f59860115f32d8989ba21e849",
+                  "slot_roles": [],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/e3/Tex_tiebijiangjun_kejiwenli_e3d69ceece1340e5.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "shape.square",
+                    "size.128x128"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "e3d69ceece1340e5238b3f3f72442a706c755efb2c783d9722ae00cddeeb02c3",
+                  "slot_roles": [],
+                  "width": 128,
+                  "height": 128
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 12,
+              "editor_bound_texture_slot_count": 3
+            }
+          ],
+          "selection_basis": [
+            "material paths are direct Prefab dependency edges",
+            "shader and texture paths are direct material dependency edges",
+            "texture tags are joined by content hash when the local index contains the copied texture"
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "RuntimeCaptureScene",
+    "camera": "RuntimeCaptureCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [],
+    "sampling_mode": "adaptive_runtime",
+    "sampling_plan": {
+      "target_intervals": 10,
+      "min_interval_seconds": 0.02,
+      "max_interval_seconds": 0.25,
+      "max_duration_seconds": 8.0,
+      "include_zero": true,
+      "duration_sources": [
+        "particle_system",
+        "animator",
+        "animation",
+        "playable_director"
+      ]
+    }
+  },
+  "training_case_id": "trains_fx_016_fx_com_sheilder",
+  "target_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "battle"
+    ],
+    "source": "prompt",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  },
+  "observed_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "battle"
+    ],
+    "source": "unlabeled_source_import",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  }
+}

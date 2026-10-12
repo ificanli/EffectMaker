@@ -1,0 +1,37 @@
+{
+  "schema_version": "effectdemo_source_render_requests.v1",
+  "created_at": "2026-08-28T10:24:32.128763+00:00",
+  "run_id": "trains_material_animation_r001",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "scene": "TrainsMaterialAnimationScene",
+  "camera": "TrainsMaterialAnimationCamera",
+  "width": 960,
+  "height": 540,
+  "time_points_seconds": [],
+  "sampling_mode": "adaptive_runtime",
+  "sampling": {
+    "target_intervals": 10,
+    "min_interval_seconds": 0.02,
+    "max_interval_seconds": 0.2,
+    "max_duration_seconds": 5.0,
+    "include_zero": true,
+    "duration_sources": [
+      "particle_system",
+      "animator",
+      "animation",
+      "playable_director"
+    ]
+  },
+  "capture_material_timeline": true,
+  "requests": [
+    {
+      "candidate_id": "source_prefab_001_trainengine_hinttextwrap",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_MaterialDriver_001/Bundles/Battle/Prefab/Train/TrainEngine_HintTextWrap.prefab",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/trains_material_animation_r001/candidates/source_prefab_001_trainengine_hinttextwrap/captures",
+      "capture_manifest_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/trains_material_animation_r001/candidates/source_prefab_001_trainengine_hinttextwrap/capture_manifest.json",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/trains_material_animation_r001/candidates/source_prefab_001_trainengine_hinttextwrap/material_timeline.json",
+      "source_script_fidelity": "source_scripts_excluded",
+      "ignored_script_dependency_count": 1
+    }
+  ]
+}

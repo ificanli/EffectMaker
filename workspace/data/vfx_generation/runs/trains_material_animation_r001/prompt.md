@@ -1,0 +1,6 @@
+# Source Prefab Render Review
+
+- Source sample: `sample_trn_material_driver_001`
+- Source ID: `TRN_MATERIAL_DRIVER_001`
+- Candidate count: `1`
+- Review boundary: source dependencies prove structural closure only; render and human feedback determine training eligibility.

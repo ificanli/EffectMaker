@@ -1,0 +1,665 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: Fx_aidawang_baozha.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "trains_fx_118_fx_aidawang_baozha",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trains_fx_style_review_r001",
+    "candidate_id": "source_prefab_009_fx_aidawang_baozha",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "material_count": 10,
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.512x512",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "72ba9e1373d6b26b6ee381c870e25299f2e116f898096abbcc2191d1aea3031d",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 512,
+                  "height": 512
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/9d/Tex_46_wuping_21_9d534b2ca6008a50.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "9d534b2ca6008a502b2e2b0659951b7729c2edf3df3ae545e3f5d1e19ab31bbf",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/72/magic_orb_72ba9e1373d6b26b.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.512x512",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "72ba9e1373d6b26b6ee381c870e25299f2e116f898096abbcc2191d1aea3031d",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 512,
+                  "height": 512
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/2c/xulie4_1_2c070cb2ec7a7e82.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "luma.bright_core",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "shape.rectangle",
+                    "size.512x256"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "2c070cb2ec7a7e822f2fc668b595c6eb22fd4937c5fad83857dc53671826ac54",
+                  "slot_roles": [],
+                  "width": 512,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_Shoulei_Glow_03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/ec/choukafaguang2_ec30eaeb6190f742.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "ec30eaeb6190f7426757d7e4f7d1d2e028dffbb198f119d5f0048407dd046bf7",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 128,
+                  "height": 128
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "tags": [
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "0124c84dfcf5756b49f7ea4523fe91ef9eb05e16a33621b3df8334ef261c93cb",
+                  "slot_roles": [
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.600x600",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "b34451ef600d5ebf9af94317a70c5b709f10dd7f51a224431df6e985d4b4a8b7",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 600,
+                  "height": 600
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 3
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "tags": [
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "0124c84dfcf5756b49f7ea4523fe91ef9eb05e16a33621b3df8334ef261c93cb",
+                  "slot_roles": [
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/4e/Tex_daodan_03_4e753c5e5889bec7.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.dark_background",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.512x512",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "4e753c5e5889bec777fac223d1d6845d698bb77e6fa16d42c47b4d25a4ad8b9d",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.600x600",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "b34451ef600d5ebf9af94317a70c5b709f10dd7f51a224431df6e985d4b4a8b7",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 600,
+                  "height": 600
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 3
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.256x256"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "48346976b0aa2ec55b2567fd88af50e12bff9faa74e73ebd592cdae8aa1db905",
+                  "slot_roles": [],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/89/Mat_27_Xulie_02_899e75bee8cd14b5.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.dark_background",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.rectangle",
+                    "size.256x512",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "899e75bee8cd14b59a683844d1cf441197ac3afd50edc56ab217d587d3da59a2",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 512
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/b3/boom_b34451ef600d5ebf.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.600x600",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "b34451ef600d5ebf9af94317a70c5b709f10dd7f51a224431df6e985d4b4a8b7",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 600,
+                  "height": 600
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 4
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_shoulei_somke_01.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+                  "tags": [
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "0124c84dfcf5756b49f7ea4523fe91ef9eb05e16a33621b3df8334ef261c93cb",
+                  "slot_roles": [
+                    "slot.alpha_mask",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/18/shj_5_18b332b843156173.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.128x128",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "18b332b84315617392915a4caac2a19a0fffba3e2a7365949a001113682a3d60",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/88/yanchen_88bfb2c5276db28e.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "88bfb2c5276db28eee6be9d5c5966db22b773b20b197f0bc28f832575a207b7f",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 4
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/mat/Mat_aidawang_02.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_aidawang_01_48f873439e9f9d63.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.mixed",
+                    "alpha.structured",
+                    "luma.dark_background",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "48f873439e9f9d632986cb1b056abc43ba89c12191e26086411c51adffdb8cff",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/68/Tex_dishuxiongdi_03_6806b8da7bd73927.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.256x256"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "6806b8da7bd73927ffc6655de7d9c0dc21a37786ea305fa8ce2f2fe98e567bd2",
+                  "slot_roles": [],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "afe0a2d41aecf2773692d898522f2f5da118ec358dd945ee638a7081b5746db3",
+                  "slot_roles": [
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 3
+            }
+          ],
+          "selection_basis": [
+            "material paths are direct Prefab dependency edges",
+            "shader and texture paths are direct material dependency edges",
+            "texture tags are joined by content hash when the local index contains the copied texture"
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "SourceIngestBatchScene",
+    "camera": "SourceIngestReviewCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [
+      0.05,
+      0.25,
+      0.75,
+      1.5
+    ]
+  },
+  "training_case_id": "trains_fx_118_fx_aidawang_baozha",
+  "target_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "character"
+    ],
+    "source": "prompt",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  },
+  "observed_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "character"
+    ],
+    "source": "unlabeled_source_import",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  }
+}

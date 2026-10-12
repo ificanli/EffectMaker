@@ -1,0 +1,248 @@
+{
+  "schema_version": "vfx_run_manifest.v1",
+  "run_id": "trains_fx_runtime_smoke_r001",
+  "parent_beads_id": "vfx-2df.18.10",
+  "prompt_path": "prompt.md",
+  "generator_version": "vfx_source_render.v1",
+  "created_at": "2026-08-28T06:38:34.305734+00:00",
+  "candidate_root_path": "candidates",
+  "candidate_count": 1,
+  "candidate_status_counts": {
+    "reject": 1
+  },
+  "frame_summary": {
+    "valid_frame_count": 11,
+    "missing_frame_count": 0
+  },
+  "render_time_points_seconds": [],
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "scene": "RuntimeCaptureScene",
+  "camera": "RuntimeCaptureCamera",
+  "resolution": [
+    960,
+    540
+  ],
+  "verify": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "passed"
+  },
+  "console": {
+    "error_count": 0,
+    "warning_count": 0,
+    "last_error": null,
+    "status": "clean"
+  },
+  "auto_eval_path": "auto_eval.jsonl",
+  "feedback_path": "feedback.jsonl",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg"
+  ],
+  "candidates": [
+    {
+      "discovery_index": 1,
+      "candidate_id": "source_prefab_001_fx_acid",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_001_fx_acid/spec.json",
+      "render_manifest_path": "candidates/source_prefab_001_fx_acid/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_001_fx_acid/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "RuntimeCaptureScene",
+        "camera": "RuntimeCaptureCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "RuntimeCaptureScene",
+        "camera": "RuntimeCaptureCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.10000000149011612,
+          "capture_time_seconds": 0.10000000149011612,
+          "path": "frame_001_0_100.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.20000000298023224,
+          "capture_time_seconds": 0.20000000298023224,
+          "path": "frame_002_0_200.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.30000001192092896,
+          "capture_time_seconds": 0.30000001192092896,
+          "path": "frame_003_0_300.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.4000000059604645,
+          "capture_time_seconds": 0.4000000059604645,
+          "path": "frame_004_0_400.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_005_0_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.6000000238418579,
+          "capture_time_seconds": 0.6000000238418579,
+          "path": "frame_006_0_600.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.699999988079071,
+          "capture_time_seconds": 0.699999988079071,
+          "path": "frame_007_0_700.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.800000011920929,
+          "capture_time_seconds": 0.800000011920929,
+          "path": "frame_008_0_800.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.8999999761581421,
+          "capture_time_seconds": 0.8999999761581421,
+          "path": "frame_009_0_900.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_010_1_000.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 1
+    }
+  ],
+  "evaluation_profile": "source_vfx_review",
+  "capture_mode": "play_mode_runtime",
+  "sampling_mode": "adaptive_runtime",
+  "sampling_plan": {
+    "target_intervals": 10,
+    "min_interval_seconds": 0.02,
+    "max_interval_seconds": 0.25,
+    "max_duration_seconds": 8.0,
+    "include_zero": true,
+    "duration_sources": [
+      "particle_system",
+      "animator",
+      "animation",
+      "playable_director"
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: Fx_ThunderBall.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "trains_fx_072_fx_thunderball",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trains_fx_style_review_r001",
+    "candidate_id": "source_prefab_006_fx_thunderball",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_ThunderBall/eff/Fx_ThunderBall.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "material_count": 5,
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/hd 6.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/fe/hd_fe63293c4b9fdbf2.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "fe63293c4b9fdbf2fbed9cd26db7ecb454954eb9855688471ad0b2cac4cfde07",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/leidian3.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/f0/leidian2_f05fc3e776367cc7.png",
+                  "tags": [
+                    "alpha.sparse",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.512x512"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "f05fc3e776367cc7bb8658ad1b1c5f4e47b1b1ec1b0ddef00d31d05fc95d9261",
+                  "slot_roles": [],
+                  "width": 512,
+                  "height": 512
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan10.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.32x32",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "292a5fd951b6040f5618d6ee13995d6b9aab90dc469108942f3f4f7fb36e20c8",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 32,
+                  "height": 32
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan4.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.32x32",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "292a5fd951b6040f5618d6ee13995d6b9aab90dc469108942f3f4f7fb36e20c8",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 32,
+                  "height": 32
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/yuan5.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.flat",
+                    "luma.low_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.square",
+                    "size.32x32",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "292a5fd951b6040f5618d6ee13995d6b9aab90dc469108942f3f4f7fb36e20c8",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 32,
+                  "height": 32
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            }
+          ],
+          "selection_basis": [
+            "material paths are direct Prefab dependency edges",
+            "shader and texture paths are direct material dependency edges",
+            "texture tags are joined by content hash when the local index contains the copied texture"
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "SourceIngestBatchScene",
+    "camera": "SourceIngestReviewCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [
+      0.05,
+      0.25,
+      0.75,
+      1.5
+    ]
+  },
+  "training_case_id": "trains_fx_072_fx_thunderball",
+  "target_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "battle"
+    ],
+    "source": "prompt",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  },
+  "observed_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "battle"
+    ],
+    "source": "unlabeled_source_import",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  }
+}

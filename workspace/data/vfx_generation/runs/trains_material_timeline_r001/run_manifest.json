@@ -1,0 +1,1685 @@
+{
+  "schema_version": "vfx_run_manifest.v1",
+  "run_id": "trains_material_timeline_r001",
+  "parent_beads_id": "vfx-2df.18.11",
+  "prompt_path": "prompt.md",
+  "generator_version": "vfx_source_render.v1",
+  "created_at": "2026-08-28T10:11:06.359417+00:00",
+  "candidate_root_path": "candidates",
+  "candidate_count": 5,
+  "candidate_status_counts": {
+    "warn": 5
+  },
+  "frame_summary": {
+    "valid_frame_count": 119,
+    "missing_frame_count": 0
+  },
+  "material_state_summary": {
+    "ready_timeline_count": 5,
+    "dynamic_candidate_count": 0,
+    "delta_count": 0
+  },
+  "render_time_points_seconds": [],
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "scene": "TrainsMaterialTimelineScene",
+  "camera": "TrainsMaterialTimelineCamera",
+  "resolution": [
+    960,
+    540
+  ],
+  "verify": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "passed"
+  },
+  "console": {
+    "error_count": 0,
+    "warning_count": 0,
+    "last_error": null,
+    "status": "clean"
+  },
+  "auto_eval_path": "auto_eval.jsonl",
+  "feedback_path": "feedback.jsonl",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg"
+  ],
+  "candidates": [
+    {
+      "discovery_index": 5,
+      "candidate_id": "source_prefab_005_fx_ui_jiyinsuo_jihuo",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_005_fx_ui_jiyinsuo_jihuo/spec.json",
+      "render_manifest_path": "candidates/source_prefab_005_fx_ui_jiyinsuo_jihuo/capture_manifest.json",
+      "material_timeline_path": "candidates/source_prefab_005_fx_ui_jiyinsuo_jihuo/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 33,
+        "delta_count": 0,
+        "changed_frame_count": 0,
+        "has_dynamic_material_state": false,
+        "key_material_change_times": [],
+        "source_script_fidelity": "no_ignored_script_dependencies",
+        "ignored_script_dependency_count": 0
+      },
+      "capture_root": "candidates/source_prefab_005_fx_ui_jiyinsuo_jihuo/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 48808
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_001_0_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 51545
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_002_0_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 15876
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_003_0_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 12488
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_004_1_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.25,
+          "capture_time_seconds": 1.25,
+          "path": "frame_005_1_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_006_1_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.75,
+          "capture_time_seconds": 1.75,
+          "path": "frame_007_1_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.0,
+          "capture_time_seconds": 2.0,
+          "path": "frame_008_2_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.25,
+          "capture_time_seconds": 2.25,
+          "path": "frame_009_2_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.5,
+          "capture_time_seconds": 2.5,
+          "path": "frame_010_2_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.75,
+          "capture_time_seconds": 2.75,
+          "path": "frame_011_2_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 11,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.0,
+          "capture_time_seconds": 3.0,
+          "path": "frame_012_3_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 12,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.25,
+          "capture_time_seconds": 3.25,
+          "path": "frame_013_3_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 13,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.5,
+          "capture_time_seconds": 3.5,
+          "path": "frame_014_3_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 14,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.75,
+          "capture_time_seconds": 3.75,
+          "path": "frame_015_3_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 15,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.0,
+          "capture_time_seconds": 4.0,
+          "path": "frame_016_4_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 16,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.25,
+          "capture_time_seconds": 4.25,
+          "path": "frame_017_4_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 17,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.5,
+          "capture_time_seconds": 4.5,
+          "path": "frame_018_4_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 18,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.75,
+          "capture_time_seconds": 4.75,
+          "path": "frame_019_4_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 19,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 5.0,
+          "capture_time_seconds": 5.0,
+          "path": "frame_020_5_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 20,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 5.25,
+          "capture_time_seconds": 5.25,
+          "path": "frame_021_5_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 21,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 5.5,
+          "capture_time_seconds": 5.5,
+          "path": "frame_022_5_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 22,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 5.75,
+          "capture_time_seconds": 5.75,
+          "path": "frame_023_5_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 23,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 6.0,
+          "capture_time_seconds": 6.0,
+          "path": "frame_024_6_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 24,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 6.25,
+          "capture_time_seconds": 6.25,
+          "path": "frame_025_6_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 25,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 6.5,
+          "capture_time_seconds": 6.5,
+          "path": "frame_026_6_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 26,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 6.75,
+          "capture_time_seconds": 6.75,
+          "path": "frame_027_6_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 27,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 7.0,
+          "capture_time_seconds": 7.0,
+          "path": "frame_028_7_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 28,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 7.25,
+          "capture_time_seconds": 7.25,
+          "path": "frame_029_7_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 29,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 7.5,
+          "capture_time_seconds": 7.5,
+          "path": "frame_030_7_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 30,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 7.75,
+          "capture_time_seconds": 7.75,
+          "path": "frame_031_7_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 31,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 8.0,
+          "capture_time_seconds": 8.0,
+          "path": "frame_032_8_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 32,
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 33,
+      "valid_frame_count": 33,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 5.92,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.059504,
+          "mean_luminance_peak": 0.048438,
+          "overexposed_ratio_peak": 1.4e-05,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000925,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 23.125,
+            "material": 80.27,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 75.85,
+          "overall_score": 75.85,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 1
+    },
+    {
+      "discovery_index": 4,
+      "candidate_id": "source_prefab_004_fx_chongneng_jiesuo",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_004_fx_chongneng_jiesuo/spec.json",
+      "render_manifest_path": "candidates/source_prefab_004_fx_chongneng_jiesuo/capture_manifest.json",
+      "material_timeline_path": "candidates/source_prefab_004_fx_chongneng_jiesuo/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 11,
+        "delta_count": 0,
+        "changed_frame_count": 0,
+        "has_dynamic_material_state": false,
+        "key_material_change_times": [],
+        "source_script_fidelity": "no_ignored_script_dependencies",
+        "ignored_script_dependency_count": 0
+      },
+      "capture_root": "candidates/source_prefab_004_fx_chongneng_jiesuo/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 16870
+        },
+        {
+          "requested_time_seconds": 0.1550000011920929,
+          "capture_time_seconds": 0.1550000011920929,
+          "path": "frame_001_0_155.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 48130
+        },
+        {
+          "requested_time_seconds": 0.3100000023841858,
+          "capture_time_seconds": 0.3100000023841858,
+          "path": "frame_002_0_310.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 42861
+        },
+        {
+          "requested_time_seconds": 0.4650000035762787,
+          "capture_time_seconds": 0.4650000035762787,
+          "path": "frame_003_0_465.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 11922
+        },
+        {
+          "requested_time_seconds": 0.6200000047683716,
+          "capture_time_seconds": 0.6200000047683716,
+          "path": "frame_004_0_620.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 11703
+        },
+        {
+          "requested_time_seconds": 0.7749999761581421,
+          "capture_time_seconds": 0.7749999761581421,
+          "path": "frame_005_0_775.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 11703
+        },
+        {
+          "requested_time_seconds": 0.9300000071525574,
+          "capture_time_seconds": 0.9300000071525574,
+          "path": "frame_006_0_930.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 11703
+        },
+        {
+          "requested_time_seconds": 1.0850000381469727,
+          "capture_time_seconds": 1.0850000381469727,
+          "path": "frame_007_1_085.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 11703
+        },
+        {
+          "requested_time_seconds": 1.2400000095367432,
+          "capture_time_seconds": 1.2400000095367432,
+          "path": "frame_008_1_240.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 11703
+        },
+        {
+          "requested_time_seconds": 1.3949999809265137,
+          "capture_time_seconds": 1.3949999809265137,
+          "path": "frame_009_1_395.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 11703
+        },
+        {
+          "requested_time_seconds": 1.5499999523162842,
+          "capture_time_seconds": 1.5499999523162842,
+          "path": "frame_010_1_550.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 11703
+        }
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 4.6,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.035955,
+          "mean_luminance_peak": 0.033701,
+          "overexposed_ratio_peak": 3.1e-05,
+          "underexposed_ratio_peak": 0.9995,
+          "frame_delta_mean": 0.002812,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 70.3,
+            "material": 71.06,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 85.34,
+          "overall_score": 85.34,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "low_motion"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 2
+    },
+    {
+      "discovery_index": 1,
+      "candidate_id": "source_prefab_001_fx_bosstips",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_001_fx_bosstips/spec.json",
+      "render_manifest_path": "candidates/source_prefab_001_fx_bosstips/capture_manifest.json",
+      "material_timeline_path": "candidates/source_prefab_001_fx_bosstips/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 33,
+        "delta_count": 0,
+        "changed_frame_count": 0,
+        "has_dynamic_material_state": false,
+        "key_material_change_times": [],
+        "source_script_fidelity": "no_ignored_script_dependencies",
+        "ignored_script_dependency_count": 0
+      },
+      "capture_root": "candidates/source_prefab_001_fx_bosstips/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 27031
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_001_0_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 33084
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_002_0_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 33695
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_003_0_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 31365
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_004_1_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 31217
+        },
+        {
+          "requested_time_seconds": 1.25,
+          "capture_time_seconds": 1.25,
+          "path": "frame_005_1_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 33244
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_006_1_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 33284
+        },
+        {
+          "requested_time_seconds": 1.75,
+          "capture_time_seconds": 1.75,
+          "path": "frame_007_1_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 29863
+        },
+        {
+          "requested_time_seconds": 2.0,
+          "capture_time_seconds": 2.0,
+          "path": "frame_008_2_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 32051
+        },
+        {
+          "requested_time_seconds": 2.25,
+          "capture_time_seconds": 2.25,
+          "path": "frame_009_2_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 33888
+        },
+        {
+          "requested_time_seconds": 2.5,
+          "capture_time_seconds": 2.5,
+          "path": "frame_010_2_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 32624
+        },
+        {
+          "requested_time_seconds": 2.75,
+          "capture_time_seconds": 2.75,
+          "path": "frame_011_2_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 11,
+          "file_size": 22301
+        },
+        {
+          "requested_time_seconds": 3.0,
+          "capture_time_seconds": 3.0,
+          "path": "frame_012_3_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 12,
+          "file_size": 32334
+        },
+        {
+          "requested_time_seconds": 3.25,
+          "capture_time_seconds": 3.25,
+          "path": "frame_013_3_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 13,
+          "file_size": 33903
+        },
+        {
+          "requested_time_seconds": 3.5,
+          "capture_time_seconds": 3.5,
+          "path": "frame_014_3_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 14,
+          "file_size": 32191
+        },
+        {
+          "requested_time_seconds": 3.75,
+          "capture_time_seconds": 3.75,
+          "path": "frame_015_3_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 15,
+          "file_size": 29743
+        },
+        {
+          "requested_time_seconds": 4.0,
+          "capture_time_seconds": 4.0,
+          "path": "frame_016_4_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 16,
+          "file_size": 33048
+        },
+        {
+          "requested_time_seconds": 4.25,
+          "capture_time_seconds": 4.25,
+          "path": "frame_017_4_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 17,
+          "file_size": 33019
+        },
+        {
+          "requested_time_seconds": 4.5,
+          "capture_time_seconds": 4.5,
+          "path": "frame_018_4_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 18,
+          "file_size": 31151
+        },
+        {
+          "requested_time_seconds": 4.75,
+          "capture_time_seconds": 4.75,
+          "path": "frame_019_4_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 19,
+          "file_size": 31026
+        },
+        {
+          "requested_time_seconds": 5.0,
+          "capture_time_seconds": 5.0,
+          "path": "frame_020_5_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 20,
+          "file_size": 33328
+        },
+        {
+          "requested_time_seconds": 5.25,
+          "capture_time_seconds": 5.25,
+          "path": "frame_021_5_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 21,
+          "file_size": 33005
+        },
+        {
+          "requested_time_seconds": 5.5,
+          "capture_time_seconds": 5.5,
+          "path": "frame_022_5_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 22,
+          "file_size": 29249
+        },
+        {
+          "requested_time_seconds": 5.75,
+          "capture_time_seconds": 5.75,
+          "path": "frame_023_5_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 23,
+          "file_size": 31927
+        },
+        {
+          "requested_time_seconds": 6.0,
+          "capture_time_seconds": 6.0,
+          "path": "frame_024_6_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 24,
+          "file_size": 33990
+        },
+        {
+          "requested_time_seconds": 6.25,
+          "capture_time_seconds": 6.25,
+          "path": "frame_025_6_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 25,
+          "file_size": 32636
+        },
+        {
+          "requested_time_seconds": 6.5,
+          "capture_time_seconds": 6.5,
+          "path": "frame_026_6_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 26,
+          "file_size": 23975
+        },
+        {
+          "requested_time_seconds": 6.75,
+          "capture_time_seconds": 6.75,
+          "path": "frame_027_6_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 27,
+          "file_size": 32441
+        },
+        {
+          "requested_time_seconds": 7.0,
+          "capture_time_seconds": 7.0,
+          "path": "frame_028_7_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 28,
+          "file_size": 33507
+        },
+        {
+          "requested_time_seconds": 7.25,
+          "capture_time_seconds": 7.25,
+          "path": "frame_029_7_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 29,
+          "file_size": 32204
+        },
+        {
+          "requested_time_seconds": 7.5,
+          "capture_time_seconds": 7.5,
+          "path": "frame_030_7_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 30,
+          "file_size": 30085
+        },
+        {
+          "requested_time_seconds": 7.75,
+          "capture_time_seconds": 7.75,
+          "path": "frame_031_7_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 31,
+          "file_size": 33377
+        },
+        {
+          "requested_time_seconds": 8.0,
+          "capture_time_seconds": 8.0,
+          "path": "frame_032_8_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 32,
+          "file_size": 33545
+        }
+      ],
+      "frame_count": 33,
+      "valid_frame_count": 33,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 3.5,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.034298,
+          "mean_luminance_peak": 0.023775,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 0.990858,
+          "frame_delta_mean": 0.00105,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 26.249999999999996,
+            "material": 64.86,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 72.78,
+          "overall_score": 72.78,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "low_motion"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 3
+    },
+    {
+      "discovery_index": 2,
+      "candidate_id": "source_prefab_002_fx_com_sheilder",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_002_fx_com_sheilder/spec.json",
+      "render_manifest_path": "candidates/source_prefab_002_fx_com_sheilder/capture_manifest.json",
+      "material_timeline_path": "candidates/source_prefab_002_fx_com_sheilder/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 21,
+        "delta_count": 0,
+        "changed_frame_count": 0,
+        "has_dynamic_material_state": false,
+        "key_material_change_times": [],
+        "source_script_fidelity": "no_ignored_script_dependencies",
+        "ignored_script_dependency_count": 0
+      },
+      "capture_root": "candidates/source_prefab_002_fx_com_sheilder/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_001_0_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_002_0_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 43358
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_003_0_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 43490
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_004_1_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 43703
+        },
+        {
+          "requested_time_seconds": 1.25,
+          "capture_time_seconds": 1.25,
+          "path": "frame_005_1_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 42882
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_006_1_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 42778
+        },
+        {
+          "requested_time_seconds": 1.75,
+          "capture_time_seconds": 1.75,
+          "path": "frame_007_1_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 42981
+        },
+        {
+          "requested_time_seconds": 2.0,
+          "capture_time_seconds": 2.0,
+          "path": "frame_008_2_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 42815
+        },
+        {
+          "requested_time_seconds": 2.25,
+          "capture_time_seconds": 2.25,
+          "path": "frame_009_2_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 42413
+        },
+        {
+          "requested_time_seconds": 2.5,
+          "capture_time_seconds": 2.5,
+          "path": "frame_010_2_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 42634
+        },
+        {
+          "requested_time_seconds": 2.75,
+          "capture_time_seconds": 2.75,
+          "path": "frame_011_2_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 11,
+          "file_size": 43233
+        },
+        {
+          "requested_time_seconds": 3.0,
+          "capture_time_seconds": 3.0,
+          "path": "frame_012_3_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 12,
+          "file_size": 42847
+        },
+        {
+          "requested_time_seconds": 3.25,
+          "capture_time_seconds": 3.25,
+          "path": "frame_013_3_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 13,
+          "file_size": 43197
+        },
+        {
+          "requested_time_seconds": 3.5,
+          "capture_time_seconds": 3.5,
+          "path": "frame_014_3_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 14,
+          "file_size": 43443
+        },
+        {
+          "requested_time_seconds": 3.75,
+          "capture_time_seconds": 3.75,
+          "path": "frame_015_3_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 15,
+          "file_size": 43560
+        },
+        {
+          "requested_time_seconds": 4.0,
+          "capture_time_seconds": 4.0,
+          "path": "frame_016_4_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 16,
+          "file_size": 43612
+        },
+        {
+          "requested_time_seconds": 4.25,
+          "capture_time_seconds": 4.25,
+          "path": "frame_017_4_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 17,
+          "file_size": 43265
+        },
+        {
+          "requested_time_seconds": 4.5,
+          "capture_time_seconds": 4.5,
+          "path": "frame_018_4_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 18,
+          "file_size": 42914
+        },
+        {
+          "requested_time_seconds": 4.75,
+          "capture_time_seconds": 4.75,
+          "path": "frame_019_4_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 19,
+          "file_size": 42783
+        },
+        {
+          "requested_time_seconds": 5.0,
+          "capture_time_seconds": 5.0,
+          "path": "frame_020_5_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 20,
+          "file_size": 42856
+        }
+      ],
+      "frame_count": 21,
+      "valid_frame_count": 21,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 2.44,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.020926,
+          "mean_luminance_peak": 0.022524,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000822,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 83.70400000000001,
+            "timing": 20.55,
+            "material": 64.08,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 67.08,
+          "overall_score": 67.08,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 4
+    },
+    {
+      "discovery_index": 3,
+      "candidate_id": "source_prefab_003_fx_gun_fire",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_003_fx_gun_fire/spec.json",
+      "render_manifest_path": "candidates/source_prefab_003_fx_gun_fire/capture_manifest.json",
+      "material_timeline_path": "candidates/source_prefab_003_fx_gun_fire/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 21,
+        "delta_count": 0,
+        "changed_frame_count": 0,
+        "has_dynamic_material_state": false,
+        "key_material_change_times": [],
+        "source_script_fidelity": "no_ignored_script_dependencies",
+        "ignored_script_dependency_count": 0
+      },
+      "capture_root": "candidates/source_prefab_003_fx_gun_fire/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "TrainsMaterialTimelineScene",
+        "camera": "TrainsMaterialTimelineCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 15494
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_001_0_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_002_0_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_003_0_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_004_1_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.25,
+          "capture_time_seconds": 1.25,
+          "path": "frame_005_1_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_006_1_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.75,
+          "capture_time_seconds": 1.75,
+          "path": "frame_007_1_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.0,
+          "capture_time_seconds": 2.0,
+          "path": "frame_008_2_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.25,
+          "capture_time_seconds": 2.25,
+          "path": "frame_009_2_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.5,
+          "capture_time_seconds": 2.5,
+          "path": "frame_010_2_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 2.75,
+          "capture_time_seconds": 2.75,
+          "path": "frame_011_2_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 11,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.0,
+          "capture_time_seconds": 3.0,
+          "path": "frame_012_3_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 12,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.25,
+          "capture_time_seconds": 3.25,
+          "path": "frame_013_3_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 13,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.5,
+          "capture_time_seconds": 3.5,
+          "path": "frame_014_3_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 14,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 3.75,
+          "capture_time_seconds": 3.75,
+          "path": "frame_015_3_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 15,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.0,
+          "capture_time_seconds": 4.0,
+          "path": "frame_016_4_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 16,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.25,
+          "capture_time_seconds": 4.25,
+          "path": "frame_017_4_250.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 17,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.5,
+          "capture_time_seconds": 4.5,
+          "path": "frame_018_4_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 18,
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 4.75,
+          "capture_time_seconds": 4.75,
+          "path": "frame_019_4_750.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 19,
+          "file_size": 13772
+        },
+        {
+          "requested_time_seconds": 5.0,
+          "capture_time_seconds": 5.0,
+          "path": "frame_020_5_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 20,
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 21,
+      "valid_frame_count": 21,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 1.23,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.005147,
+          "mean_luminance_peak": 0.023663,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000481,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 20.587999999999997,
+            "timing": 12.025,
+            "material": 64.79,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 49.35,
+          "overall_score": 49.35,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 5
+    }
+  ],
+  "evaluation_profile": "source_vfx_review",
+  "capture_mode": "play_mode_runtime",
+  "sampling_mode": "adaptive_runtime",
+  "sampling_plan": {
+    "target_intervals": 10,
+    "min_interval_seconds": 0.02,
+    "max_interval_seconds": 0.25,
+    "max_duration_seconds": 8.0,
+    "include_zero": true,
+    "duration_sources": [
+      "particle_system",
+      "animator",
+      "animation",
+      "playable_director"
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "slash",
+  "effect_type": "slash_arc",
+  "prompt": "stylized top-down slash core arc with clear attack direction",
+  "negative_prompt": "closed ring, symmetric UI icon, rectangular billboard, reused V9 arc",
+  "generation": {
+    "run_id": "slash_arc_pref_001_r001",
+    "candidate_id": "slash_arc_pref_001_r001_c0039",
+    "seed": 20639801,
+    "generator": "slash_arc_generator",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "adapter": {
+    "name": "slash.adapter",
+    "version": "0.1.0",
+    "schema_ref": "schemas/adapters/slash_adapter.schema.json",
+    "generator_family": "curve_mesh",
+    "topology": {
+      "arc_topology": "crescent",
+      "attack_direction": "diagonal",
+      "control_point_count": 5,
+      "asymmetry": 0.3689
+    },
+    "shape": {
+      "arc_length": 4.514,
+      "arc_width": 0.5323,
+      "width_profile": "tip_heavy",
+      "tip_shape": "forked",
+      "curvature": -0.1746,
+      "edge_breakup": 0.4464,
+      "residual_flow": "outward",
+      "control_points": [
+        [
+          -2.2101,
+          0.0,
+          -0.5749
+        ],
+        [
+          -0.9604,
+          0.0,
+          -0.2796
+        ],
+        [
+          0.0705,
+          0.0,
+          0.236
+        ],
+        [
+          0.9821,
+          0.0,
+          0.7323
+        ],
+        [
+          1.8,
+          0.0,
+          0.9084
+        ]
+      ],
+      "width_samples": [
+        [
+          0.0,
+          0.015
+        ],
+        [
+          0.18,
+          0.412
+        ],
+        [
+          0.38,
+          0.6876
+        ],
+        [
+          0.58,
+          0.812
+        ],
+        [
+          0.78,
+          0.8187
+        ],
+        [
+          1.0,
+          0.706
+        ]
+      ]
+    },
+    "evaluation_metrics": [
+      "sharpness",
+      "attack_direction",
+      "width_profile",
+      "tip_quality",
+      "silhouette_readability"
+    ]
+  },
+  "layers": [
+    {
+      "role": "core_blade",
+      "status": "active",
+      "topology": "curve_mesh",
+      "shape_parameters": {
+        "arc_length": 4.514,
+        "arc_width": 0.5323,
+        "width_profile": "tip_heavy",
+        "tip_shape": "forked",
+        "curvature": -0.1746,
+        "edge_breakup": 0.4464,
+        "residual_flow": "outward",
+        "control_points": [
+          [
+            -2.2101,
+            0.0,
+            -0.5749
+          ],
+          [
+            -0.9604,
+            0.0,
+            -0.2796
+          ],
+          [
+            0.0705,
+            0.0,
+            0.236
+          ],
+          [
+            0.9821,
+            0.0,
+            0.7323
+          ],
+          [
+            1.8,
+            0.0,
+            0.9084
+          ]
+        ],
+        "width_samples": [
+          [
+            0.0,
+            0.015
+          ],
+          [
+            0.18,
+            0.412
+          ],
+          [
+            0.38,
+            0.6876
+          ],
+          [
+            0.58,
+            0.812
+          ],
+          [
+            0.78,
+            0.8187
+          ],
+          [
+            1.0,
+            0.706
+          ]
+        ]
+      },
+      "material_parameters": {
+        "base_color": "gold_white",
+        "alpha_power": 1.6437,
+        "edge_emission": 1.7469,
+        "dissolve_bias": 0.4195
+      },
+      "timing_parameters": {
+        "appear_time": 0.2756,
+        "peak_time": 0.6102,
+        "fade_time": 0.894
+      },
+      "constraints": [
+        "core_blade_only",
+        "no_support_arc",
+        "no_hit_accent",
+        "no_scene_anchor"
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/UnityVFX/EffectDemo6.0",
+    "scene": "Assets/Scenes/SampleScene.unity",
+    "camera": "VFXCaptureCamera",
+    "resolution": "1280x720",
+    "time_points_seconds": [
+      0.3,
+      0.5,
+      0.6,
+      0.75,
+      0.9
+    ]
+  }
+}

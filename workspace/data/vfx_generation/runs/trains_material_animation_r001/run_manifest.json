@@ -1,0 +1,273 @@
+{
+  "schema_version": "vfx_run_manifest.v1",
+  "run_id": "trains_material_animation_r001",
+  "parent_beads_id": "vfx-2df.18.11",
+  "prompt_path": "prompt.md",
+  "generator_version": "vfx_source_render.v1",
+  "created_at": "2026-08-28T10:25:48.090741+00:00",
+  "candidate_root_path": "candidates",
+  "candidate_count": 1,
+  "candidate_status_counts": {
+    "warn": 1
+  },
+  "frame_summary": {
+    "valid_frame_count": 11,
+    "missing_frame_count": 0
+  },
+  "material_state_summary": {
+    "ready_timeline_count": 1,
+    "dynamic_candidate_count": 0,
+    "delta_count": 0
+  },
+  "render_time_points_seconds": [],
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "scene": "TrainsMaterialAnimationScene",
+  "camera": "TrainsMaterialAnimationCamera",
+  "resolution": [
+    960,
+    540
+  ],
+  "verify": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "passed"
+  },
+  "console": {
+    "error_count": 0,
+    "warning_count": 6,
+    "last_error": null,
+    "status": "warning"
+  },
+  "auto_eval_path": "auto_eval.jsonl",
+  "feedback_path": "feedback.jsonl",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg"
+  ],
+  "candidates": [
+    {
+      "discovery_index": 1,
+      "candidate_id": "source_prefab_001_trainengine_hinttextwrap",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_001_trainengine_hinttextwrap/spec.json",
+      "render_manifest_path": "candidates/source_prefab_001_trainengine_hinttextwrap/capture_manifest.json",
+      "material_timeline_path": "candidates/source_prefab_001_trainengine_hinttextwrap/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 11,
+        "delta_count": 0,
+        "changed_frame_count": 0,
+        "has_dynamic_material_state": false,
+        "key_material_change_times": [],
+        "source_script_fidelity": "source_scripts_excluded",
+        "ignored_script_dependency_count": 1
+      },
+      "capture_root": "candidates/source_prefab_001_trainengine_hinttextwrap/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "TrainsMaterialAnimationScene",
+        "camera": "TrainsMaterialAnimationCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "TrainsMaterialAnimationScene",
+        "camera": "TrainsMaterialAnimationCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.10000000149011612,
+          "capture_time_seconds": 0.10000000149011612,
+          "path": "frame_001_0_100.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.20000000298023224,
+          "capture_time_seconds": 0.20000000298023224,
+          "path": "frame_002_0_200.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.30000001192092896,
+          "capture_time_seconds": 0.30000001192092896,
+          "path": "frame_003_0_300.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.4000000059604645,
+          "capture_time_seconds": 0.4000000059604645,
+          "path": "frame_004_0_400.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_005_0_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.6000000238418579,
+          "capture_time_seconds": 0.6000000238418579,
+          "path": "frame_006_0_600.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.699999988079071,
+          "capture_time_seconds": 0.699999988079071,
+          "path": "frame_007_0_700.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.800000011920929,
+          "capture_time_seconds": 0.800000011920929,
+          "path": "frame_008_0_800.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 0.8999999761581421,
+          "capture_time_seconds": 0.8999999761581421,
+          "path": "frame_009_0_900.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 48407
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_010_1_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 48407
+        }
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 4.09,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.039556,
+          "mean_luminance_peak": 0.046198,
+          "overexposed_ratio_peak": 9.6e-05,
+          "underexposed_ratio_peak": 0.960351,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 0.0,
+            "material": 78.87,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 69.72,
+          "overall_score": 69.72,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "console_warning; static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 1
+    }
+  ],
+  "evaluation_profile": "source_vfx_review",
+  "capture_mode": "play_mode_runtime",
+  "sampling_mode": "adaptive_runtime",
+  "sampling_plan": {
+    "target_intervals": 10,
+    "min_interval_seconds": 0.02,
+    "max_interval_seconds": 0.2,
+    "max_duration_seconds": 5.0,
+    "include_zero": true,
+    "duration_sources": [
+      "particle_system",
+      "animator",
+      "animation",
+      "playable_director"
+    ]
+  }
+}

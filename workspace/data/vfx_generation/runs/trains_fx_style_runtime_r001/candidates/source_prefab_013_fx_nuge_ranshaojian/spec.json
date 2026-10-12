@@ -1,0 +1,234 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "source_ingest",
+  "effect_type": "imported_prefab",
+  "adapter": {
+    "name": "source_ingest.render_review",
+    "version": "0.1.0",
+    "generator_family": "source_prefab_render",
+    "specialized_metrics": [
+      "source_dependency_completeness",
+      "render_readability",
+      "material_selection_traceability"
+    ]
+  },
+  "prompt": "Render-review imported Unity VFX Prefab: Fx_nuge_ranshaojian.prefab",
+  "negative_prompt": "Do not accept source structure as visual evidence. Do not detach materials from shaders or tagged textures.",
+  "reference": {
+    "source_id": "TRN_FX_ALL_001",
+    "case_id": "trains_fx_128_fx_nuge_ranshaojian",
+    "frames": []
+  },
+  "generation": {
+    "run_id": "trains_fx_style_runtime_r001",
+    "candidate_id": "source_prefab_013_fx_nuge_ranshaojian",
+    "seed": null,
+    "generator": "source_prefab_render",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "source_prefab",
+      "status": "active",
+      "topology": "imported_prefab",
+      "shape_parameters": {
+        "source_prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/eff/Fx_nuge_ranshaojian.prefab"
+      },
+      "material_parameters": {
+        "material_selection": {
+          "material_count": 2,
+          "materials": [
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_24_2_xin03.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/58/Tex_08_huo01_58eb0c2247682ff6.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.overbright_risk",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.fire",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "58eb0c2247682ff61d47b79302c95c888b8ccccf6dcf9ff7561151fe1a1c9518",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 1
+            },
+            {
+              "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/mat/Mat_nuge_05.mat",
+              "primary_shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+              "shader_paths": [
+                "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader"
+              ],
+              "texture_bindings": [
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/4f/Tex_nuge_03_4f1b576d8935fa3b.png",
+                  "tags": [
+                    "alpha.cutout",
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "alpha.structured",
+                    "luma.bright_core",
+                    "luma.high_contrast",
+                    "luma.overbright_risk",
+                    "resolution.small",
+                    "role.noise_control",
+                    "shape.rectangle",
+                    "size.64x128",
+                    "slot.alpha_mask"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "4f1b576d8935fa3b8edd9044a7b4eb7f075c6cb199683c5433d2509e91d1dda4",
+                  "slot_roles": [
+                    "slot.alpha_mask"
+                  ],
+                  "width": 64,
+                  "height": 128
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/68/Tex_dishuxiongdi_03_6806b8da7bd73927.png",
+                  "tags": [
+                    "alpha.gradient",
+                    "alpha.sparse",
+                    "resolution.medium",
+                    "shape.square",
+                    "size.256x256"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "6806b8da7bd73927ffc6655de7d9c0dc21a37786ea305fa8ce2f2fe98e567bd2",
+                  "slot_roles": [],
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+                  "tags": [
+                    "alpha.opaque",
+                    "luma.high_contrast",
+                    "motion.dissolve_reveal",
+                    "resolution.medium",
+                    "role.noise_control",
+                    "semantic.noise",
+                    "shape.square",
+                    "size.256x256",
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "tag_status": "loaded",
+                  "asset_id": "afe0a2d41aecf2773692d898522f2f5da118ec358dd945ee638a7081b5746db3",
+                  "slot_roles": [
+                    "slot.dissolve_map",
+                    "slot.distortion_map"
+                  ],
+                  "width": 256,
+                  "height": 256
+                }
+              ],
+              "source_missing_dependency_count": 0,
+              "editor_texture_slot_count": 4,
+              "editor_bound_texture_slot_count": 3
+            }
+          ],
+          "selection_basis": [
+            "material paths are direct Prefab dependency edges",
+            "shader and texture paths are direct material dependency edges",
+            "texture tags are joined by content hash when the local index contains the copied texture"
+          ]
+        }
+      },
+      "timing_parameters": {
+        "duration_seconds": null,
+        "peak_time_seconds": null
+      },
+      "constraints": [
+        "Use the imported material, shader, and texture binding without substitutions.",
+        "Human review is required before this candidate becomes a training label."
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "RuntimeCaptureScene",
+    "camera": "RuntimeCaptureCamera",
+    "resolution": [
+      960,
+      540
+    ],
+    "time_points_seconds": [],
+    "sampling_mode": "adaptive_runtime",
+    "sampling_plan": {
+      "target_intervals": 10,
+      "min_interval_seconds": 0.02,
+      "max_interval_seconds": 0.25,
+      "max_duration_seconds": 8.0,
+      "include_zero": true,
+      "duration_sources": [
+        "particle_system",
+        "animator",
+        "animation",
+        "playable_director"
+      ]
+    }
+  },
+  "training_case_id": "trains_fx_128_fx_nuge_ranshaojian",
+  "target_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "character"
+    ],
+    "source": "prompt",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  },
+  "observed_style_profile": {
+    "schema_version": "vfx_style_profile.v1",
+    "family": "unknown",
+    "keywords": [],
+    "axes": {
+      "realism": null,
+      "graphic_stylization": null,
+      "texture_detail": null,
+      "color_saturation": null,
+      "edge_definition": null,
+      "glow_exaggeration": null,
+      "motion_exaggeration": null
+    },
+    "scene_context": [
+      "character"
+    ],
+    "source": "unlabeled_source_import",
+    "confidence": 0.0,
+    "notes": "Needs style annotation or a style-conditioned prompt."
+  }
+}

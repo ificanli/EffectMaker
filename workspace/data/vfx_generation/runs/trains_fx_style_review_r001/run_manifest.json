@@ -1,0 +1,2244 @@
+{
+  "schema_version": "vfx_run_manifest.v1",
+  "run_id": "trains_fx_style_review_r001",
+  "parent_beads_id": "vfx-2df.18.8",
+  "prompt_path": "prompt.md",
+  "generator_version": "vfx_source_render.v1",
+  "created_at": "2026-08-28T14:18:37.269723+08:00",
+  "candidate_root_path": "candidates",
+  "candidate_count": 16,
+  "candidate_status_counts": {
+    "pass": 3,
+    "warn": 6,
+    "reject": 7
+  },
+  "frame_summary": {
+    "valid_frame_count": 64,
+    "missing_frame_count": 0
+  },
+  "render_time_points_seconds": [
+    0.05,
+    0.25,
+    0.75,
+    1.5
+  ],
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "scene": "SourceIngestBatchScene",
+  "camera": "SourceIngestReviewCamera",
+  "resolution": [
+    960,
+    540
+  ],
+  "verify": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "passed"
+  },
+  "console": {
+    "error_count": 0,
+    "warning_count": 0,
+    "last_error": null,
+    "status": "clean"
+  },
+  "auto_eval_path": "auto_eval.jsonl",
+  "feedback_path": "feedback.jsonl",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg",
+    "contact_sheets/page-002.jpg"
+  ],
+  "candidates": [
+    {
+      "discovery_index": 16,
+      "candidate_id": "source_prefab_016_fx_ui_jiyinsuo_jihuo",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_016_fx_ui_jiyinsuo_jihuo/spec.json",
+      "render_manifest_path": "candidates/source_prefab_016_fx_ui_jiyinsuo_jihuo/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_016_fx_ui_jiyinsuo_jihuo/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 46494
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 48603
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 12874
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "pass",
+        "rank_hint": 10.77,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.059491,
+          "mean_luminance_peak": 0.052615,
+          "overexposed_ratio_peak": 0.000123,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.012761,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 98.88088235294119,
+            "material": 82.88,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 95.44,
+          "overall_score": 95.44,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": null
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 1
+    },
+    {
+      "discovery_index": 15,
+      "candidate_id": "source_prefab_015_fx_chongneng_jiesuo_1",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_015_fx_chongneng_jiesuo_1/spec.json",
+      "render_manifest_path": "candidates/source_prefab_015_fx_chongneng_jiesuo_1/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_015_fx_chongneng_jiesuo_1/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 49920
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 40287
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 12420
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 12469
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "pass",
+        "rank_hint": 6.21,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.045613,
+          "mean_luminance_peak": 0.034708,
+          "overexposed_ratio_peak": 8.3E-05,
+          "underexposed_ratio_peak": 0.999412,
+          "frame_delta_mean": 0.005061,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 100.0,
+            "material": 71.69,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 92.92,
+          "overall_score": 92.92,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": null
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 2
+    },
+    {
+      "discovery_index": 14,
+      "candidate_id": "source_prefab_014_fx_chongneng_jiesuo",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_014_fx_chongneng_jiesuo/spec.json",
+      "render_manifest_path": "candidates/source_prefab_014_fx_chongneng_jiesuo/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_014_fx_chongneng_jiesuo/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 25021
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 45489
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 12214
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 12267
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "pass",
+        "rank_hint": 4.86,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.031406,
+          "mean_luminance_peak": 0.028179,
+          "overexposed_ratio_peak": 2.9E-05,
+          "underexposed_ratio_peak": 0.999533,
+          "frame_delta_mean": 0.004635,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 100.0,
+            "material": 67.61,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 91.9,
+          "overall_score": 91.9,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": null
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 3
+    },
+    {
+      "discovery_index": 3,
+      "candidate_id": "source_prefab_003_fx_bosstips",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_003_fx_bosstips/spec.json",
+      "render_manifest_path": "candidates/source_prefab_003_fx_bosstips/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_003_fx_bosstips/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 27736
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 30142
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 29698
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 31296
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 3.42,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.034392,
+          "mean_luminance_peak": 0.023848,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 0.972269,
+          "frame_delta_mean": 0.000836,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 20.900000000000002,
+            "material": 64.91,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 71.45,
+          "overall_score": 71.45,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 4
+    },
+    {
+      "discovery_index": 9,
+      "candidate_id": "source_prefab_009_fx_aidawang_baozha",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_009_fx_aidawang_baozha/spec.json",
+      "render_manifest_path": "candidates/source_prefab_009_fx_aidawang_baozha/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_009_fx_aidawang_baozha/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 24029
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 28390
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 22202
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 2.67,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.015085,
+          "mean_luminance_peak": 0.026133,
+          "overexposed_ratio_peak": 0.000116,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.002179,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 60.339999999999996,
+            "timing": 54.474999999999994,
+            "material": 66.33,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 70.29,
+          "overall_score": 70.29,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "low_motion"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 5
+    },
+    {
+      "discovery_index": 4,
+      "candidate_id": "source_prefab_004_fx_com_sheilder",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_004_fx_com_sheilder/spec.json",
+      "render_manifest_path": "candidates/source_prefab_004_fx_com_sheilder/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_004_fx_com_sheilder/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 43320
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 43320
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 2.37,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.020091,
+          "mean_luminance_peak": 0.022108,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000832,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 80.364,
+            "timing": 20.8,
+            "material": 63.82,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 66.25,
+          "overall_score": 66.25,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 6
+    },
+    {
+      "discovery_index": 12,
+      "candidate_id": "source_prefab_012_fx_nuge_bingdong",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_012_fx_nuge_bingdong/spec.json",
+      "render_manifest_path": "candidates/source_prefab_012_fx_nuge_bingdong/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_012_fx_nuge_bingdong/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 12909
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 16589
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 17829
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 17758
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 1.28,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.00566,
+          "mean_luminance_peak": 0.021997,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 0.998791,
+          "frame_delta_mean": 0.000635,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 22.64,
+            "timing": 15.875,
+            "material": 63.75,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 50.57,
+          "overall_score": 50.57,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 7
+    },
+    {
+      "discovery_index": 13,
+      "candidate_id": "source_prefab_013_fx_nuge_ranshaojian",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_013_fx_nuge_ranshaojian/spec.json",
+      "render_manifest_path": "candidates/source_prefab_013_fx_nuge_ranshaojian/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_013_fx_nuge_ranshaojian/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 20519
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 20519
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 20519
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 20519
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 1.02,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0056,
+          "mean_luminance_peak": 0.021819,
+          "overexposed_ratio_peak": 0.000191,
+          "underexposed_ratio_peak": 0.994304,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 22.4,
+            "timing": 0.0,
+            "material": 63.64,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 46.51,
+          "overall_score": 46.51,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 8
+    },
+    {
+      "discovery_index": 5,
+      "candidate_id": "source_prefab_005_fx_gun_fire",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_005_fx_gun_fire/spec.json",
+      "render_manifest_path": "candidates/source_prefab_005_fx_gun_fire/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_005_fx_gun_fire/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 11870
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "warn",
+        "rank_hint": 0.84,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.001404,
+          "mean_luminance_peak": 0.020727,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.000373,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 5.6160000000000005,
+            "timing": 9.325,
+            "material": 62.95,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 44.47,
+          "overall_score": 44.47,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "borderline_visibility; static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 1
+    },
+    {
+      "discovery_index": 1,
+      "candidate_id": "source_prefab_001_fx_acid",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_001_fx_acid/spec.json",
+      "render_manifest_path": "candidates/source_prefab_001_fx_acid/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_001_fx_acid/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 2
+    },
+    {
+      "discovery_index": 2,
+      "candidate_id": "source_prefab_002_fx_boomerang",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_002_fx_boomerang/spec.json",
+      "render_manifest_path": "candidates/source_prefab_002_fx_boomerang/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_002_fx_boomerang/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 3
+    },
+    {
+      "discovery_index": 6,
+      "candidate_id": "source_prefab_006_fx_thunderball",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_006_fx_thunderball/spec.json",
+      "render_manifest_path": "candidates/source_prefab_006_fx_thunderball/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_006_fx_thunderball/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 4
+    },
+    {
+      "discovery_index": 7,
+      "candidate_id": "source_prefab_007_fx_thunderball_chain",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_007_fx_thunderball_chain/spec.json",
+      "render_manifest_path": "candidates/source_prefab_007_fx_thunderball_chain/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_007_fx_thunderball_chain/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 5
+    },
+    {
+      "discovery_index": 8,
+      "candidate_id": "source_prefab_008_fx_zombie_boss_skill_1_dg",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_008_fx_zombie_boss_skill_1_dg/spec.json",
+      "render_manifest_path": "candidates/source_prefab_008_fx_zombie_boss_skill_1_dg/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_008_fx_zombie_boss_skill_1_dg/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 6
+    },
+    {
+      "discovery_index": 10,
+      "candidate_id": "source_prefab_010_fx_aidawang_feji",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_010_fx_aidawang_feji/spec.json",
+      "render_manifest_path": "candidates/source_prefab_010_fx_aidawang_feji/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_010_fx_aidawang_feji/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10994
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 11622
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 11948
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 5E-06,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.125,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.6,
+          "overall_score": 40.6,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 7
+    },
+    {
+      "discovery_index": 11,
+      "candidate_id": "source_prefab_011_fx_aidawang_ranshao",
+      "seed": null,
+      "spec_path": "candidates/source_prefab_011_fx_aidawang_ranshao/spec.json",
+      "render_manifest_path": "candidates/source_prefab_011_fx_aidawang_ranshao/capture_manifest.json",
+      "capture_root": "candidates/source_prefab_011_fx_aidawang_ranshao/captures",
+      "spec_summary": {
+        "effect_family": "source_ingest",
+        "effect_type": "imported_prefab",
+        "generator": "source_prefab_render",
+        "generator_version": "0.1.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "time_points_seconds": [
+          0.05,
+          0.25,
+          0.75,
+          1.5
+        ]
+      },
+      "render_context": {
+        "scene": "SourceIngestBatchScene",
+        "camera": "SourceIngestReviewCamera",
+        "resolution": [
+          960,
+          540
+        ],
+        "editor_status": "batchmode_camera_render",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.05000000074505806,
+          "capture_time_seconds": 0.05000000074505806,
+          "path": "frame_0_050.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.25,
+          "capture_time_seconds": 0.25,
+          "path": "frame_0_250.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 0.75,
+          "capture_time_seconds": 0.75,
+          "path": "frame_0_750.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        },
+        {
+          "requested_time_seconds": 1.5,
+          "capture_time_seconds": 1.5,
+          "path": "frame_1_500.png",
+          "valid": true,
+          "error": "",
+          "file_size": 10196
+        }
+      ],
+      "frame_count": 4,
+      "valid_frame_count": 4,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "reject",
+        "rank_hint": 0.56,
+        "hard_reject_reasons": [
+          "invisible"
+        ],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.0,
+          "mean_luminance_peak": 0.019608,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 1.0,
+          "frame_delta_mean": 0.0,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "source_ingest",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 0.0,
+            "timing": 0.0,
+            "material": 62.26,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {
+            "source_dependency_completeness": null,
+            "render_readability": null,
+            "material_selection_traceability": null
+          },
+          "spec_prior_score": null,
+          "render_score": 40.56,
+          "overall_score": 40.56,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor",
+            "source_dependency_completeness",
+            "render_readability",
+            "material_selection_traceability"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": "static_frames"
+      },
+      "contact_sheet_page": 2,
+      "contact_sheet_row": 8
+    }
+  ],
+  "evaluation_profile": "source_vfx_review",
+  "capture_mode": "editor_particle_simulation",
+  "sampling_mode": "fixed_editor_simulation"
+}
