@@ -76,6 +76,45 @@ workspace/data/*cache*/
 Thumbs.db
 *.swp
 *.swo
+/nul
+# Windows device-name artifacts and local IDE state
+**/nul
+**/.idea/
+
+# Raw source assets remain local (see README.md)
+/resource/
+/effects/
+/p/
 
 # Local generated verification output
 workspace/unity-verification/build.log
+UnityDemo/EffectDemo/effectdemo-cli.log
+UnityDemo/EffectDemo/Assets/VFXSourceIngest/
+workspace/progress/effectdemo-2022-*.log
+workspace/progress/unity-verification-2022-upm.log
+
+# Local preview pages
+workspace/previews/*
+!workspace/previews/
+!workspace/previews/README.md
+
+# Disposable Unity project copies and repair backups
+/workspace/unity-render-staging/
+/workspace/repair-quarantine/
+
+# Rebuildable local resource indexes and vector caches
+/workspace/data/model_index/
+/workspace/data/model_index_fix1/
+/workspace/data/resource_index/
+/workspace/data/resource_vectors/
+
+# Generated render frames remain local; retain specs and reports
+/workspace/data/vfx_generation/generated/**/*.png
+/workspace/data/vfx_generation/generated/**/*.jpg
+/workspace/data/vfx_generation/generated/**/*.jpeg
+/workspace/data/vfx_generation/captures/**/*.png
+/workspace/data/vfx_generation/captures/**/*.jpg
+/workspace/data/vfx_generation/captures/**/*.jpeg
+
+# Keep the small frame sequence used by the maintained presentation
+!/workspace/data/vfx_generation/generated/tutorial_lightning_fixed_color_r003/**/*.png
