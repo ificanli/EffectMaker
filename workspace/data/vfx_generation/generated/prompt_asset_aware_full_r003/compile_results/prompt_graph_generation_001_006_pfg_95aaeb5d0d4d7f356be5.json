@@ -1,0 +1,63 @@
+{
+    "schema_version": "vfx_prefab_graph_compile_result.v1",
+    "created_at": "2026-09-03T13:35:24.8998833Z",
+    "graph_id": "pfg_95aaeb5d0d4d7f356be5",
+    "status": "pass",
+    "output_prefab_path": "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/GeneratedRoot.prefab",
+    "source_prefab_read": false,
+    "node_count": 4,
+    "particle_system_count": 3,
+    "generated_material_paths": [
+        "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0000.mat",
+        "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0001.mat",
+        "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0002.mat"
+    ],
+    "generated_texture_paths": [],
+    "bound_texture_paths": [
+        "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png",
+        "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png",
+        "Assets/VFXSourceIngest/Shared/Textures/7c/Tex_xiaoming_glow_7c05c232ec11da02.png"
+    ],
+    "generated_shader_names": [
+        "ERB/Particles/Blend_CenterGlow",
+        "QFX/IFX/Cutout/CutoutAB",
+        "Common/ColorDefault"
+    ],
+    "material_template_paths": [
+        "Assets/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat",
+        "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Blink/P_Splash.mat",
+        "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_xiaoming/mat/Mat_xiaoming_glow.mat"
+    ],
+    "material_texture_readbacks": [
+        {
+            "renderer_name": "GeneratedLayer_01",
+            "material_path": "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0000.mat",
+            "shader_name": "ERB/Particles/Blend_CenterGlow",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/Hovl Studio/Sword slash VFX/Textures/Flash21.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0001.mat",
+            "shader_name": "QFX/IFX/Cutout/CutoutAB",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Base/T_Random Ink Brush 1.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_02",
+            "material_path": "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0001.mat",
+            "shader_name": "QFX/IFX/Cutout/CutoutAB",
+            "property_name": "_NoiseTex",
+            "texture_path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png"
+        },
+        {
+            "renderer_name": "GeneratedLayer_03",
+            "material_path": "Assets/Generated/PromptAssetAwareFullR003/explosion/candidate_006/Materials/pfg_95aaeb5d0d4d7f356be5_p0002.mat",
+            "shader_name": "Common/ColorDefault",
+            "property_name": "_MainTex",
+            "texture_path": "Assets/VFXSourceIngest/Shared/Textures/7c/Tex_xiaoming_glow_7c05c232ec11da02.png"
+        }
+    ],
+    "planned_texture_readback_match": true,
+    "error": ""
+}

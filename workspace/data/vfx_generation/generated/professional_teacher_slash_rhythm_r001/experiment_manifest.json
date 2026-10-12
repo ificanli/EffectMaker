@@ -1,0 +1,67 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "support.start_delay_max",
+      "hit.start_delay_max",
+      "residual.start_delay_max"
+    ],
+    "held_constant": [
+      "all meshes",
+      "all materials",
+      "all textures",
+      "particle counts",
+      "speeds",
+      "lifetimes",
+      "colors",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T23:46:05.155516+00:00",
+  "professional_source": {
+    "author": "特效Orange",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-UP389578709_source.md",
+    "expert_judgment": "刀光应先建立主体，再快速进入命中峰值和可读窗口，最后由较弱残留收尾；四层不能全部同时起播和同时消失。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-UP389578709/frames/BV1mjvxBgESJ/60-70/60-48_to_61-04_contact_sheet.jpg"
+    ],
+    "judgment_axes": [
+      "rhythm",
+      "layer_separation",
+      "contact_readability"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-UP389578709",
+    "timecodes": [
+      "00:01:15-00:01:35",
+      "00:10:50-00:14:04",
+      "01:00:13-01:01:24"
+    ],
+    "title": "刀光特效制作的底层逻辑（公开课）"
+  },
+  "rule_id": "professional_slash_staged_rhythm_r001",
+  "schema_version": "vfx_professional_slash_rhythm_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_slash_rhythm_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_slash_family_r012/candidates/layered_slash_000_pfg_0c060328e7f347dfbfbc/graph.json",
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/compile_results/simultaneous_layers.json",
+      "graph_id": "pfg_0cb9de718488236e99cb",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/graphs/simultaneous_layers.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashRhythmR001/simultaneous_layers/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/readback/simultaneous_layers.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/readback_results/simultaneous_layers.json",
+      "variant": "simultaneous_layers"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/compile_results/staged_layers.json",
+      "graph_id": "pfg_509a1436709224552c21",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/graphs/staged_layers.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashRhythmR001/staged_layers/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/readback/staged_layers.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_rhythm_r001/readback_results/staged_layers.json",
+      "variant": "staged_layers"
+    }
+  ]
+}

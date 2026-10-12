@@ -1,0 +1,828 @@
+{
+  "condition": {
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_family": "impact",
+    "performance_tier": "standard",
+    "prompt": "卡通蓝色能量爆点，快速命中，清晰冲击，不要长拖尾",
+    "seed": 20260922,
+    "style_family": "cartoon"
+  },
+  "created_at": "2026-09-03T13:46:01.579709+00:00",
+  "graph_id": "pfg_38876fb8f53a613cfc32",
+  "layers": [
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_e7e37885677326e5",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_9adc0260d6302693529e",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail75bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.952973,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 6.0,
+            "total": 116.952973
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_01e224d808ce2d572ce7",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Trail75.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.mixed",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.small",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.slash",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_b21325ad00a8568a",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_e1bf2d7fe35121e2fc3e",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail54bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.244667,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 6.0,
+            "total": 116.244667
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_5f0870ea106a2eb04421",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail54.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.flat",
+              "luma.low_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.square",
+              "size.512x512",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_6ed86de0c9270aa7",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_28f80aca8c110917fb95",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail81bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.140339,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 6.0,
+            "total": 116.140339
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_fcd25173bb5c9e0a54b9",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail81.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_1b43bc6a80b1880e",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_9ae63640877834721388",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail68bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.635248,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 6.0,
+            "total": 115.635248
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=core",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_7958086ad66e9dac5ee1",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Trail68.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.color_control",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.trail",
+              "shape.horizontal_strip",
+              "size.512x128",
+              "slot.alpha_mask",
+              "slot.base_map",
+              "slot.ramp_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0000",
+      "layer_role": "core",
+      "node_id": "n0001",
+      "selected_candidate_id": "material_candidate_1b43bc6a80b1880e",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_7ae386fd326dc75d",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_a768b462c3873b0879e6",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_chuanjia_trail_04.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.898185,
+            "family": 0.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 24.0,
+            "style": 0,
+            "total": 94.898185
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=support",
+            "texture_property=_DissolveTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_0124c84dfcf5756b49f7",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+            "tags": [
+              "alpha.mixed",
+              "alpha.structured",
+              "luma.high_contrast",
+              "motion.dissolve_reveal",
+              "resolution.medium",
+              "role.noise_control",
+              "semantic.noise",
+              "shape.square",
+              "size.256x256",
+              "slot.alpha_mask",
+              "slot.dissolve_map",
+              "slot.distortion_map"
+            ]
+          },
+          "texture_property_name": "_DissolveTex"
+        },
+        {
+          "candidate_id": "material_candidate_a21b789ae036f707",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_d20fcbbeba17ef9f96cd",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Glow2bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.986321,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 10.0,
+            "slot": 8.0,
+            "style": 6.0,
+            "total": 87.986321
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=support",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_1f66a55f240de966498c",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Glow2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "quality.license_unknown",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.128x128",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_fb7c414f386ac92b",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_9adc0260d6302693529e",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Trail75bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 0.927724,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 10.0,
+            "slot": 8.0,
+            "style": 6.0,
+            "total": 87.927724
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=support",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_01e224d808ce2d572ce7",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Textures/Trail75.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.mixed",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.high_contrast",
+              "motion.uv_scroll_u",
+              "quality.license_unknown",
+              "resolution.small",
+              "role.core_shape",
+              "role.noise_control",
+              "role.residual_trail",
+              "semantic.slash",
+              "semantic.trail",
+              "shape.rectangle",
+              "size.128x64",
+              "slot.alpha_mask",
+              "slot.base_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_8aa9c88f17b04e70",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_639abcf27a7dc529ec58",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Materials/Lightning Blast/P_Splash.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.980758,
+            "family": 0.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 30.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 86.980758
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=support",
+            "texture_property=_NoiseTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_f7676f1d37bd78f1a64b",
+            "binding_status": "project_bindable",
+            "name": "QFX/IFX/Cutout/CutoutAB",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Shaders/Cutout/IFX_CutoutAB.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_76f3a5024235a3098ff3",
+            "binding_status": "project_bindable",
+            "path": "Assets/QFX/Imagy VFX/VFX_Resources/Textures/Noise/T_Noise_3.png",
+            "tags": [
+              "alpha.mixed",
+              "motion.dissolve_reveal",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.noise_control",
+              "semantic.noise",
+              "shape.square",
+              "size.256x256",
+              "slot.dissolve_map",
+              "slot.distortion_map"
+            ]
+          },
+          "texture_property_name": "_NoiseTex"
+        }
+      ],
+      "component_id": "p0001",
+      "layer_role": "support",
+      "node_id": "n0002",
+      "selected_candidate_id": "material_candidate_8aa9c88f17b04e70",
+      "status": "pass"
+    },
+    {
+      "blocking_reasons": [],
+      "candidates": [
+        {
+          "candidate_id": "material_candidate_951294b91dd0b82d",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_2e5bb582571d575ba275",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Flare14bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.788227,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 6.0,
+            "total": 106.788227
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_3409208314cf15ee2d52",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Flare14.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "luma.overbright_risk",
+              "quality.license_unknown",
+              "resolution.medium",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.512x512",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_731f3c04c2d5bacc",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_d20fcbbeba17ef9f96cd",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Materials/Glow2bcg.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 6.9e-05,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 6.0,
+            "total": 105.000069
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_3aacdc74b5eccdb04b80",
+            "binding_status": "project_bindable",
+            "name": "ERB/Particles/Blend_CenterGlow",
+            "path": "Assets/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_1f66a55f240de966498c",
+            "binding_status": "project_bindable",
+            "path": "Assets/Hovl Studio/Toon Projectiles 2/Textures/Glow2.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.dark_background",
+              "luma.high_contrast",
+              "quality.license_unknown",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.128x128",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_c55bcd8096a5d45c",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_1f3c5280d7e4d8d26b0c",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_jiqiren_07.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.995273,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 100.995273
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_0e610fed5fc48209fa6a",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/0e/Tex_48_Glow_01_0e610fed5fc48209.png",
+            "tags": [
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "luma.bright_core",
+              "luma.flat",
+              "luma.low_contrast",
+              "luma.overbright_risk",
+              "resolution.medium",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.256x256",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        },
+        {
+          "candidate_id": "material_candidate_adecbd9ea17571bf",
+          "material": {
+            "binding_status": "usable",
+            "material_id": "material_09074f6caf320ad135b2",
+            "path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_xiaoming/mat/Mat_xiaoming_glow.mat"
+          },
+          "scores": {
+            "color": 0,
+            "diversity": 1.973339,
+            "family": 24.0,
+            "pairing": 32.0,
+            "performance": 3.0,
+            "pipeline": 4.0,
+            "role": 20.0,
+            "slot": 16.0,
+            "style": 0,
+            "total": 100.973339
+          },
+          "selection_basis": [
+            "material, Shader and Texture are jointly ranked",
+            "effect_family=impact",
+            "style_family=cartoon",
+            "layer_role=hit",
+            "texture_property=_MainTex",
+            "all selected assets are project_bindable",
+            "prior Unity Material property binding is preferred when available"
+          ],
+          "shader": {
+            "asset_id": "shader_8f3c853a4f046209e4cf",
+            "binding_status": "project_bindable",
+            "name": "Common/ColorDefault",
+            "path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+            "pipeline_tags": [
+              "builtin"
+            ]
+          },
+          "status": "pass",
+          "texture": {
+            "asset_id": "tex_7c05c232ec11da029a67",
+            "binding_status": "project_bindable",
+            "path": "Assets/VFXSourceIngest/Shared/Textures/7c/Tex_xiaoming_glow_7c05c232ec11da02.png",
+            "tags": [
+              "alpha.cutout",
+              "alpha.gradient",
+              "alpha.sparse",
+              "alpha.structured",
+              "resolution.small",
+              "role.edge_accent",
+              "role.hit_accent",
+              "role.noise_control",
+              "semantic.spark",
+              "shape.square",
+              "size.128x128",
+              "slot.alpha_mask",
+              "slot.emission_map"
+            ]
+          },
+          "texture_property_name": "_MainTex"
+        }
+      ],
+      "component_id": "p0002",
+      "layer_role": "hit",
+      "node_id": "n0003",
+      "selected_candidate_id": "material_candidate_adecbd9ea17571bf",
+      "status": "pass"
+    }
+  ],
+  "plan_id": "material_plan_pfg_38876fb8f53a613cfc32",
+  "quality_gates": {
+    "blocked_materials_selected": 0,
+    "duplicate_candidate_ids": 0,
+    "layer_count": 3,
+    "nonproject_textures_selected": 0,
+    "reference_shaders_selected": 0,
+    "selected_layer_count": 3
+  },
+  "registry_id": "asset_registry_r003",
+  "schema_version": "vfx_material_plan.v1",
+  "selection_policy": {
+    "alternatives_per_layer": 4,
+    "no_silent_fallback": true,
+    "project_bindable_only": true,
+    "prompt_conditioned": true,
+    "shader_texture_joint_ranking": true
+  },
+  "status": "pass"
+}

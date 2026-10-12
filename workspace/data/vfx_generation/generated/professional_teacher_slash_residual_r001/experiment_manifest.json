@@ -1,0 +1,67 @@
+{
+  "controlled_variables": {
+    "changed": [
+      "residual.start_delay_max",
+      "residual.start_lifetime_max"
+    ],
+    "held_constant": [
+      "graph topology",
+      "Core",
+      "Support",
+      "Hit",
+      "assets",
+      "residual color",
+      "residual speed",
+      "residual size",
+      "camera",
+      "capture seed"
+    ]
+  },
+  "created_at": "2026-09-03T23:27:38.471649+00:00",
+  "non_residual_end_seconds": 0.36000000000000004,
+  "professional_source": {
+    "author": "特效Orange",
+    "author_expertise_evidence": "knowledge/sources/SRC-2026-UP389578709_source.md",
+    "expert_judgment": "刀光应先保留可读的关键瞬间，再进入慢速消失；过早结束或从出现到消失同速都会削弱收尾。",
+    "frame_paths": [
+      "knowledge/sources/SRC-2026-UP389578709/frames/BV1mjvxBgESJ/60-70/60-48_to_61-04_contact_sheet.jpg"
+    ],
+    "judgment_axes": [
+      "rhythm",
+      "readability",
+      "layer_separation"
+    ],
+    "license_scope": "internal_learning_only_no_redistribution",
+    "source_id": "SRC-2026-UP389578709",
+    "timecodes": [
+      "01:00:13-01:01:24"
+    ],
+    "title": "刀光特效制作的底层逻辑（公开课）"
+  },
+  "rule_id": "professional_slash_readable_then_fade_r001",
+  "schema_version": "vfx_professional_slash_residual_teacher_reproduction.v1",
+  "shared_capture_seed_id": "professional_slash_residual_pair_r001",
+  "source_graph_path": "workspace/data/vfx_generation/generated/layered_slash_family_r011/candidates/layered_slash_007_pfg_819bd0288e4ada34a584/graph.json",
+  "staged_residual_end_seconds": 0.48,
+  "status": "prepared",
+  "variants": [
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/compile_results/premature_residual.json",
+      "graph_id": "pfg_eda2036b85edc99f7371",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/graphs/premature_residual.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashResidualR001/premature_residual/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/readback/premature_residual.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/readback_results/premature_residual.json",
+      "variant": "premature_residual"
+    },
+    {
+      "compile_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/compile_results/staged_residual.json",
+      "graph_id": "pfg_96c61e70506d80a19b71",
+      "graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/graphs/staged_residual.json",
+      "output_prefab_path": "Assets/Generated/ProfessionalTeacherSlashResidualR001/staged_residual/GeneratedRoot.prefab",
+      "readback_graph_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/readback/staged_residual.json",
+      "readback_result_path": "workspace/data/vfx_generation/generated/professional_teacher_slash_residual_r001/readback_results/staged_residual.json",
+      "variant": "staged_residual"
+    }
+  ]
+}
