@@ -1,0 +1,62 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_077_keyword_material_suanyedi",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 121687984,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/suanyedi.mat",
+    "material_name": "suanyedi",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/39/guangyun1_39818cd350b5ec95.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [
+    {
+      "time_seconds": 0.75,
+      "from_material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/suanyedi.mat",
+      "to_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_jinmianju/mat/Mat_jinmianju_06.mat",
+      "same_shader_required": true
+    }
+  ],
+  "expected_signals": [
+    "material_instance_replaced"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "ae761ed72d32"
+  }
+}

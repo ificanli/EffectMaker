@@ -1,0 +1,103 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_070_texture_swap_mat_kapaifenwei_04",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 319073691,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_kapai/mat/Mat_kapaifenwei_04.mat",
+    "material_name": "Mat_kapaifenwei_04",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/cb/wenli5_cb3aa68c7016dd44.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.large",
+          "shape.square",
+          "size.1024x1024"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/a3/Tex_shouqiangren_03_a3c1e87776e39fae.png",
+        "tags": [
+          "alpha.opaque",
+          "resolution.small",
+          "shape.square",
+          "size.128x128"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.54,
+      "property_name": "_DistortTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/zaobo3_48346976b0aa2ec5.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/33/huoyan7_33eb6e37c09d965d.png",
+      "from_tags": [
+        "alpha.opaque",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "resolution.medium",
+        "shape.square",
+        "size.256x256"
+      ],
+      "to_tags": [
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.overbright_risk",
+        "resolution.medium",
+        "role.noise_control",
+        "semantic.fire",
+        "shape.square",
+        "size.256x256",
+        "slot.alpha_mask"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "056f685d4bb5"
+  }
+}

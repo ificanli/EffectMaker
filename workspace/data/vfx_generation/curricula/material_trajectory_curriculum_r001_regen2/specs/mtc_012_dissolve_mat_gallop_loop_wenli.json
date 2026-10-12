@@ -1,0 +1,120 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_012_dissolve_mat_gallop_loop_wenli",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 505323351,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_train_gallop/Mat/Mat_gallop_loop_wenli.mat",
+    "material_name": "Mat_gallop_loop_wenli",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/01/Tex_27_Noise_02_0124c84dfcf5756b.png",
+        "tags": [
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/58/Tex_28_mask_03_588565d01c913c52.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/49/mask_49f69f3296ba357a.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.rectangle",
+          "size.128x64",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png",
+        "tags": [
+          "alpha.opaque",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.0,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_Dissolve",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "pulse",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.0,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "slot_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "1ddd744f4ff1"
+  }
+}

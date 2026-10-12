@@ -1,0 +1,87 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_092_negative_mat_springfes_smoke_01",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 283690892,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_springfes/Mat_springfes_smoke_01.mat",
+    "material_name": "Mat_springfes_smoke_01",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/99/Tex_springfes_01_994853eaeae56723.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "motion.radial_expand",
+          "resolution.medium",
+          "role.impact_ring",
+          "role.noise_control",
+          "semantic.ring",
+          "shape.square",
+          "size.512x512",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "smoke"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [
+    {
+      "property_name": "_Distort_SpeedIntensity",
+      "semantic": "flow_distortion",
+      "value_kind": "color",
+      "start_value": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "end_value": [
+        4.0,
+        4.0,
+        11.115112,
+        7.6794080000000005
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.8,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "renderer_property_block_changed"
+  ],
+  "negative_mutation": {
+    "type": "overshoot",
+    "severity": 0.792,
+    "reason": "Parameter exceeds the source material's usable range."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "f54b66eb5564"
+  }
+}

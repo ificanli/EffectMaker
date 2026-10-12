@@ -1,0 +1,118 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_052_mpb_mat_mibaochuantoudan_03",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1137955482,
+  "category": "mpb",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_mibaochuantoudan/Mat_mibaochuantoudan_03.mat",
+    "material_name": "Mat_mibaochuantoudan_03",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/09/Tex_trail_04_091ec084c4e64e19.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "motion.uv_scroll_u",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "role.residual_trail",
+          "semantic.trail",
+          "shape.rectangle",
+          "size.256x128",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/bf/Tex_mibaochuantoudan_01_bfa21485b06c6843.png",
+        "tags": [
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.small",
+          "role.noise_control",
+          "shape.square",
+          "size.64x64",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_Dissolve_EdgeColor",
+      "semantic": "dissolve",
+      "value_kind": "color",
+      "start_value": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "end_value": [
+        1.739194,
+        0.50281,
+        1.051241,
+        0.890747
+      ],
+      "curve": "ease_in",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "0af669b21cb1"
+  }
+}

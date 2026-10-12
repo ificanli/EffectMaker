@@ -1,0 +1,122 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_067_texture_swap_mat_changji_noise_03",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1968798568,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_Changji/mat/Mat_Changji_Noise_03.mat",
+    "material_name": "Mat_Changji_Noise_03",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/b1/Tex_Changji_Jianbiantu1_b1ecdb1061fde3ba.png",
+        "tags": [
+          "alpha.mixed",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.color_control",
+          "role.noise_control",
+          "shape.horizontal_strip",
+          "size.256x2",
+          "slot.alpha_mask",
+          "slot.ramp_map"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/9b/Tex_jianxian_010_9bc5c97ee13fa308.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.rectangle",
+          "size.512x256"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/e0/Tex_Changji_Noise_02_e079e1c4618ecb44.png",
+        "tags": [
+          "alpha.opaque",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/15/wenli22_15ec3e379a3e1c2f.png",
+        "tags": [
+          "alpha.opaque",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.0,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.45,
+      "property_name": "_MaskTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/9b/Tex_jianxian_010_9bc5c97ee13fa308.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/4c/Tex_jianxian_08_4c2a51cb4330fe35.png",
+      "from_tags": [
+        "alpha.opaque",
+        "luma.high_contrast",
+        "resolution.medium",
+        "shape.rectangle",
+        "size.512x256"
+      ],
+      "to_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.high_contrast",
+        "luma.overbright_risk",
+        "resolution.small",
+        "role.noise_control",
+        "shape.square",
+        "size.128x128",
+        "slot.alpha_mask"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "f0ee5e6322d8"
+  }
+}

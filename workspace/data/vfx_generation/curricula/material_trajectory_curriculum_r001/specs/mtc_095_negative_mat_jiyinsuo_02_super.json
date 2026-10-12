@@ -1,0 +1,102 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_095_negative_mat_jiyinsuo_02_super",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1819194378,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_jiyinsuo/mat/Mat_jiyinsuo_02_super.mat",
+    "material_name": "Mat_jiyinsuo_02_super",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/4b/UI_Lab_gene_icon_biggenebg_4b73d588e2970356.png",
+        "tags": [
+          "alpha.opaque",
+          "resolution.medium",
+          "shape.square",
+          "size.248x254"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/34/Tex_jiyinsuo_02_3441c47b338240bb.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "shape.square",
+          "size.128x128"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/48/Tex_jiyinsuo_01_48c845213c95b9b4.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      }
+    ],
+    "effect_families": [
+      "fire"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_Color",
+      "semantic": "emission_alpha",
+      "value_kind": "color",
+      "start_value": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "end_value": [
+        1.367176,
+        0.704682,
+        1.749773,
+        1.0
+      ],
+      "curve": "step",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.8,
+      "clamp_min": 0.0,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "negative_trajectory",
+    "renderer_property_block_changed"
+  ],
+  "negative_mutation": {
+    "type": "abrupt_jump",
+    "severity": 0.945,
+    "reason": "Parameter changes in one visible step instead of a readable transition."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "4688d0b7a6fd"
+  }
+}

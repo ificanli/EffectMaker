@@ -1,0 +1,58 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_036_emission_alpha_mat_jinzita_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1567019778,
+  "category": "emission_alpha",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/Mat_jinzita_02.mat",
+    "material_name": "Mat_jinzita_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/d2/Tex_jinzita_01_d262ecb4ebc228ff.png",
+        "tags": []
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 2.0,
+  "parameter_tracks": [
+    {
+      "property_name": "_Main_SolidColor",
+      "semantic": "emission_alpha",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.017235
+      ],
+      "curve": "linear",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 2.0,
+      "clamp_min": 0.0,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "b3777dd832bb"
+  }
+}

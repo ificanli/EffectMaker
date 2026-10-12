@@ -1,0 +1,128 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_099_negative_mat_zhuizongdan_wenli_4",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 968803079,
+  "category": "negative",
+  "label": "negative",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_zhuizongdan/Mat/Mat_zhuizongdan_wenli 4.mat",
+    "material_name": "Mat_zhuizongdan_wenli 4",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/fe/Tex_xingzhe_wenli6_fe258e32c95d75eb.jpg",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "shape.square",
+          "size.256x256"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/30/Tex_zhuizongdan_Noise_01_30472da7baa1628c.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      {
+        "property_name": "_DissolveTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_SpeedV",
+      "semantic": "flow_distortion",
+      "value_kind": "float",
+      "start_value": [
+        3.0
+      ],
+      "end_value": [
+        -2.690697
+      ],
+      "curve": "smoothstep",
+      "start_time_seconds": 1.35,
+      "duration_seconds": 0.15,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "material_property_changed",
+    "negative_trajectory"
+  ],
+  "negative_mutation": {
+    "type": "late_peak",
+    "severity": 0.655,
+    "reason": "The peak occurs too late to establish readable timing."
+  },
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "35a3d60943b5"
+  }
+}

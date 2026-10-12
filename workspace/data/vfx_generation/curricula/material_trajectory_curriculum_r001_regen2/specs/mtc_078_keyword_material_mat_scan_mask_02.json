@@ -1,0 +1,63 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_078_keyword_material_mat_scan_mask_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 2032407652,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_scan/mat/Mat_scan_mask_02.mat",
+    "material_name": "Mat_scan_mask_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/88/Tex_scan_mask_03_883839994e946e49.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 0.8,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [
+    {
+      "time_seconds": 0.4,
+      "from_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_scan/mat/Mat_scan_mask_02.mat",
+      "to_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_pomoarrow/mat/Mat_pomoarrow_ring.mat",
+      "same_shader_required": true
+    }
+  ],
+  "expected_signals": [
+    "material_instance_replaced"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "be3fc6e53b08"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_005_dissolve_suipian_2",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1969546282,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/Effect/__Materials/suipian_2.mat",
+    "material_name": "suipian_2",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/c6/suipian_c64b0fbc80da92da.png",
+        "tags": []
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 0.6,
+  "parameter_tracks": [
+    {
+      "property_name": "_Dissolve_SpeedU",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "smoothstep",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.6,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "slot_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "4c7be39bcf5f"
+  }
+}

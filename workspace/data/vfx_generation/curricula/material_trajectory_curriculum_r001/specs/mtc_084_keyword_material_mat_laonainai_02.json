@@ -1,0 +1,108 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_084_keyword_material_mat_laonainai_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1558029778,
+  "category": "keyword_material",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_laonainai/mat/Mat_laonainai_02.mat",
+    "material_name": "Mat_laonainai_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/09/Tex_trail_04_091ec084c4e64e19.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "motion.uv_scroll_u",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "role.residual_trail",
+          "semantic.trail",
+          "shape.rectangle",
+          "size.256x128",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/5e/Tex_trail_03_5eb8210625b79c4c.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "motion.uv_scroll_u",
+          "resolution.medium",
+          "role.core_shape",
+          "role.noise_control",
+          "role.residual_trail",
+          "semantic.trail",
+          "shape.rectangle",
+          "size.256x128",
+          "slot.alpha_mask",
+          "slot.base_map"
+        ]
+      },
+      {
+        "property_name": "_DistortTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/af/Tex_27_Noise_01_afe0a2d41aecf277.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.high_contrast",
+          "motion.dissolve_reveal",
+          "resolution.medium",
+          "role.noise_control",
+          "semantic.noise",
+          "shape.square",
+          "size.256x256",
+          "slot.dissolve_map",
+          "slot.distortion_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [],
+  "keyword_events": [
+    {
+      "time_seconds": 0.48,
+      "keyword": "_MASK",
+      "enabled": false
+    }
+  ],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "shader_keywords_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "8595eea58130"
+  }
+}

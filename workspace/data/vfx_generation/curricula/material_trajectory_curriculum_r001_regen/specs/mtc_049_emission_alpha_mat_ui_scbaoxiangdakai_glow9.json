@@ -1,0 +1,74 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_049_emission_alpha_mat_ui_scbaoxiangdakai_glow9",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 629112820,
+  "category": "emission_alpha",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_huodeiguangxiao/Mat/Mat_UI_SCbaoxiangdakai_glow9.mat",
+    "material_name": "Mat_UI_SCbaoxiangdakai_glow9",
+    "shader_name": "UI/CustomUIDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/UI/CustomUIDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/44/Tex_UI_SCbaoxiangdakai_glow_44fe71633a037eac.tga",
+        "tags": [
+          "alpha.opaque",
+          "luma.dark_background",
+          "resolution.small",
+          "role.edge_accent",
+          "role.hit_accent",
+          "semantic.spark",
+          "shape.square",
+          "size.64x64",
+          "slot.emission_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "fire",
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle",
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_Main_SolidColor",
+      "semantic": "emission_alpha",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        0.084809
+      ],
+      "curve": "pulse",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": 0.0,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "c0ac9ea0cc85",
+    "material_group": "c1c462b7d822"
+  }
+}

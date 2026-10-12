@@ -1,0 +1,114 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_073_texture_swap_mat_hundouluo_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 746971236,
+  "category": "texture_swap",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_hundouluo/mat/Mat_hundouluo_02.mat",
+    "material_name": "Mat_hundouluo_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/d7/Tex_dufeibiao_01_d741640498d3d743.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.dark_background",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/e6/Tex_34_mask_01_e6facc41a6f83e31.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.square",
+          "size.128x128",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.2,
+  "parameter_tracks": [],
+  "keyword_events": [],
+  "texture_swap_events": [
+    {
+      "time_seconds": 0.54,
+      "property_name": "_MainTex",
+      "from_texture_path": "Assets/VFXSourceIngest/Shared/Textures/d7/Tex_dufeibiao_01_d741640498d3d743.png",
+      "to_texture_path": "Assets/VFXSourceIngest/Shared/Textures/2c/Tex_springfes_03_2c0823f508b4d834.png",
+      "from_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.dark_background",
+        "luma.high_contrast",
+        "resolution.medium",
+        "role.noise_control",
+        "shape.square",
+        "size.256x256",
+        "slot.alpha_mask"
+      ],
+      "to_tags": [
+        "alpha.cutout",
+        "alpha.gradient",
+        "alpha.sparse",
+        "alpha.structured",
+        "luma.bright_core",
+        "luma.low_contrast",
+        "luma.overbright_risk",
+        "motion.radial_expand",
+        "resolution.medium",
+        "role.color_control",
+        "role.impact_ring",
+        "role.noise_control",
+        "semantic.ring",
+        "shape.horizontal_strip",
+        "size.231x52",
+        "slot.alpha_mask",
+        "slot.ramp_map"
+      ]
+    }
+  ],
+  "material_replace_events": [],
+  "expected_signals": [
+    "texture_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "ad7a75faead8"
+  }
+}

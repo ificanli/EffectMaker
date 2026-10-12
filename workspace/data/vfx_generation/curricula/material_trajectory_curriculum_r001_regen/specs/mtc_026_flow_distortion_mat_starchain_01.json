@@ -1,0 +1,75 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_026_flow_distortion_mat_starchain_01",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1337249698,
+  "category": "flow_distortion",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_starchain/mat/Mat_starchain_01.mat",
+    "material_name": "Mat_starchain_01",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/29/xiaoyuan_292a5fd951b6040f.png",
+        "tags": [
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.flat",
+          "luma.low_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "shape.square",
+          "size.32x32",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "battle"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_key_Distort",
+      "semantic": "flow_distortion",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        -1.750057
+      ],
+      "curve": "smoothstep",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "slot_property_block_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "d9cf66169a23"
+  }
+}

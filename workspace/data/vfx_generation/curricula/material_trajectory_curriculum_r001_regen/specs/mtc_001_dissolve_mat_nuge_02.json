@@ -1,0 +1,75 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_001_dissolve_mat_nuge_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1574464643,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/mat/Mat_nuge_02.mat",
+    "material_name": "Mat_nuge_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/3a/Tex_nuge_01_3ae2fb29c2b315a3.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.noise_control",
+          "shape.square",
+          "size.256x256",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [
+      "ice"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 0.6,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_DissolveIntensity",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "pulse",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.6,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "9d8863c1656e"
+  }
+}

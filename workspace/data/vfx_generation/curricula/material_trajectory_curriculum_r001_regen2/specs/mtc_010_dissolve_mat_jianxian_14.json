@@ -1,0 +1,89 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_010_dissolve_mat_jianxian_14",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1660324087,
+  "category": "dissolve",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_SS_jianxan/mat/Mat_jianxian_14.mat",
+    "material_name": "Mat_jianxian_14",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": null,
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/ad/Tex_54_Line_04_adaf9cc9cc9e1cef.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.bright_core",
+          "luma.overbright_risk",
+          "resolution.medium",
+          "role.color_control",
+          "role.noise_control",
+          "shape.horizontal_strip",
+          "size.256x64",
+          "slot.alpha_mask",
+          "slot.ramp_map"
+        ]
+      },
+      {
+        "property_name": "_MaskTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/17/Tex_27_Mask_02_173e6ed23b89159d.png",
+        "tags": [
+          "alpha.opaque",
+          "luma.bright_core",
+          "luma.high_contrast",
+          "luma.overbright_risk",
+          "resolution.small",
+          "role.noise_control",
+          "semantic.mask",
+          "shape.square",
+          "size.128x128",
+          "slot.alpha_mask"
+        ]
+      }
+    ],
+    "effect_families": [],
+    "source_categories": []
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "renderer_mpb",
+  "duration_seconds": 0.6,
+  "parameter_tracks": [
+    {
+      "property_name": "_Mask_Dissolve",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "smoothstep",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.6,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "renderer_property_block_changed",
+    "dissolve_parameter_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "d7cbb3df8c9a"
+  }
+}

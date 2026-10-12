@@ -1,0 +1,64 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_054_mpb_mat_kapaifenwei_02",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1297291881,
+  "category": "mpb",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_kapai/mat/Mat_kapaifenwei_02.mat",
+    "material_name": "Mat_kapaifenwei_02",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [],
+    "effect_families": [
+      "fire",
+      "ice",
+      "unclassified"
+    ],
+    "source_categories": [
+      "ui"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "slot_mpb",
+  "duration_seconds": 1.0,
+  "parameter_tracks": [
+    {
+      "property_name": "_Distort_TilingOffset",
+      "semantic": "flow_distortion",
+      "value_kind": "color",
+      "start_value": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "end_value": [
+        0.987479,
+        0.551761,
+        0.0,
+        0.0
+      ],
+      "curve": "pulse",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.0,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "slot_property_block_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "fe492bae5f67"
+  }
+}

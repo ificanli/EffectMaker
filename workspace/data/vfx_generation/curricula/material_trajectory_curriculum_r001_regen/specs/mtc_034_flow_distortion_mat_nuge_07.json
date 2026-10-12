@@ -1,0 +1,75 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "mtc_034_flow_distortion_mat_nuge_07",
+  "curriculum_id": "material_trajectory_curriculum_r001",
+  "seed": 1038192996,
+  "category": "flow_distortion",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/mat/Mat_nuge_07.mat",
+    "material_name": "Mat_nuge_07",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [
+      {
+        "property_name": "_MainTex",
+        "texture_path": "Assets/VFXSourceIngest/Shared/Textures/66/Tex_nuge_05_6600169aa1a52f52.png",
+        "tags": [
+          "alpha.cutout",
+          "alpha.gradient",
+          "alpha.sparse",
+          "alpha.structured",
+          "luma.high_contrast",
+          "resolution.medium",
+          "role.color_control",
+          "role.noise_control",
+          "shape.horizontal_strip",
+          "size.944x117",
+          "slot.alpha_mask",
+          "slot.ramp_map"
+        ]
+      }
+    ],
+    "effect_families": [
+      "unclassified"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 1.5,
+  "parameter_tracks": [
+    {
+      "property_name": "_key_Distort",
+      "semantic": "flow_distortion",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        -2.153356
+      ],
+      "curve": "ease_in",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 1.5,
+      "clamp_min": null,
+      "clamp_max": null
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "material_property_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "92e0ce218d94"
+  }
+}
