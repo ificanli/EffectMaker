@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-09-03T19:35:37.696447+00:00",
+  "dataset_id": "professional_debris_rule_training_r003b_axis_local",
+  "feature_names": [
+    "debris.active_frame_ratio",
+    "debris.component_count.mean",
+    "debris.component_count.max",
+    "debris.radius_p90.mean",
+    "debris.radius_p90.max",
+    "debris.visible_area.mean",
+    "debris.visible_area.max"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "no_debris": 8,
+    "radial_debris": 8
+  },
+  "limitations": [
+    "Labels express debris branch presence inside verified explosion pairs only.",
+    "The dataset does not supervise debris material quality, optimal density or overall VFX quality.",
+    "The dataset is a small pilot and cannot establish broad generalization."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_debris_rule_training.v2",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_debris_ablation_r002/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_debris_ablation_r002/ablation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 8
+  },
+  "target_scope": {
+    "effect_family": "explosion",
+    "judgment_axis": "debris_branches"
+  },
+  "teacher_rule_id": "professional_explosion_debris_branches_r001"
+}

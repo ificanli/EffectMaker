@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-09-03T19:50:25.405769+00:00",
+  "dataset_id": "professional_residual_rule_training_r003_axis_local",
+  "feature_names": [
+    "late.active_frame_ratio",
+    "late.visible_area_mean",
+    "late.visible_area_max",
+    "late.last_visible_time_seconds",
+    "late.center_luminance.mean",
+    "late.center_luminance.max",
+    "late.center_local_contrast.mean",
+    "late.center_local_contrast.max"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "abrupt_no_residual": 16,
+    "staged_residual": 16
+  },
+  "limitations": [
+    "Labels express residual persistence inside verified explosion pairs only.",
+    "Merged batches expand late-window coverage but do not establish broad style generalization."
+  ],
+  "pair_count": 16,
+  "pair_split_overlap_count": 0,
+  "record_count": 32,
+  "schema_version": "vfx_professional_residual_rule_training.v2",
+  "source_datasets": [
+    {
+      "dataset_id": "professional_residual_rule_training_r002_axis_local",
+      "pair_count": 8,
+      "path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/professional_residual_rule_training_r002_axis_local"
+    },
+    {
+      "dataset_id": "professional_residual_rule_training_r003b_axis_local",
+      "pair_count": 8,
+      "path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/professional_residual_rule_training_r003b_axis_local"
+    }
+  ],
+  "split_counts": {
+    "test": 8,
+    "train": 16,
+    "validation": 8
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 16
+  },
+  "target_scope": {
+    "effect_family": "explosion",
+    "judgment_axis": "residual_persistence"
+  },
+  "teacher_rule_id": "professional_explosion_residual_persistence_r001"
+}

@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-09-03T20:06:54.352914+00:00",
+  "dataset_id": "professional_explosion_material_rule_training_r001",
+  "feature_names": [
+    "core.visible_area_ratio",
+    "core.bbox_fill_ratio",
+    "core.visible_luma_mean",
+    "core.visible_luma_std",
+    "core.edge_density",
+    "core.center_luminance"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "flat_glow": 8,
+    "structured_flame": 8
+  },
+  "limitations": [
+    "Labels compare two Core textures under one material template.",
+    "The model does not judge complete explosion material quality or style generalization.",
+    "The dataset is a small pilot."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_explosion_material_rule_training.v1",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_material_ablation_r001/ablation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 8
+  },
+  "target_scope": {
+    "effect_family": "explosion",
+    "judgment_axis": "core_texture_structure"
+  },
+  "teacher_rule_id": "professional_explosion_core_texture_structure_r001"
+}

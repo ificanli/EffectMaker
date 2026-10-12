@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-09-03T19:36:56.084557+00:00",
+  "dataset_id": "professional_debris_rule_training_r003_axis_local",
+  "feature_names": [
+    "debris.active_frame_ratio",
+    "debris.component_count.mean",
+    "debris.component_count.max",
+    "debris.radius_p90.mean",
+    "debris.radius_p90.max",
+    "debris.visible_area.mean",
+    "debris.visible_area.max"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "no_debris": 16,
+    "radial_debris": 16
+  },
+  "limitations": [
+    "Labels express debris branch presence inside verified explosion pairs only.",
+    "Merging evaluated batches expands seed coverage but does not establish broad style generalization."
+  ],
+  "pair_count": 16,
+  "pair_split_overlap_count": 0,
+  "record_count": 32,
+  "schema_version": "vfx_professional_debris_rule_training.v2",
+  "source_datasets": [
+    {
+      "dataset_id": "professional_debris_rule_training_r003a_axis_local",
+      "pair_count": 8,
+      "path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/professional_debris_rule_training_r003a_axis_local"
+    },
+    {
+      "dataset_id": "professional_debris_rule_training_r003b_axis_local",
+      "pair_count": 8,
+      "path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/datasets/professional_debris_rule_training_r003b_axis_local"
+    }
+  ],
+  "split_counts": {
+    "test": 8,
+    "train": 16,
+    "validation": 8
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 16
+  },
+  "target_scope": {
+    "effect_family": "explosion",
+    "judgment_axis": "debris_branches"
+  },
+  "teacher_rule_id": "professional_explosion_debris_branches_r001"
+}

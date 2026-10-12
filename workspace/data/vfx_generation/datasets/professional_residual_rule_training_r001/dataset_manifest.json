@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-09-03T17:27:57.675021+00:00",
+  "dataset_id": "professional_residual_rule_training_r001",
+  "feature_names": [
+    "image.visible_ratio.mean",
+    "image.visible_ratio.max",
+    "image.visible_ratio.std",
+    "image.mean_luma.mean",
+    "image.mean_luma.max",
+    "image.std_luma.mean",
+    "image.std_luma.max",
+    "image.overexposed_ratio.mean",
+    "image.overexposed_ratio.max",
+    "image.edge_density.mean",
+    "image.edge_density.max",
+    "image.temporal_delta.mean",
+    "image.temporal_delta.max",
+    "image.bbox_area_ratio.mean",
+    "image.bbox_area_ratio.max",
+    "late.active_frame_ratio",
+    "late.visible_area_mean",
+    "late.visible_area_max",
+    "late.last_visible_time_seconds",
+    "late.center_luminance.mean",
+    "late.center_luminance.max",
+    "late.center_local_contrast.mean",
+    "late.center_local_contrast.max"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "abrupt_no_residual": 8,
+    "staged_residual": 8
+  },
+  "limitations": [
+    "Labels express residual persistence inside verified explosion pairs only.",
+    "The dataset does not supervise overall quality or the visual design of the residual material.",
+    "The dataset is a small pilot and cannot establish broad generalization."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_residual_rule_training.v1",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_residual_ablation_r002/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_residual_ablation_r002/guided_generation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 8
+  },
+  "target_scope": {
+    "effect_family": "explosion",
+    "judgment_axis": "residual_persistence"
+  },
+  "teacher_rule_id": "professional_explosion_residual_persistence_r001"
+}

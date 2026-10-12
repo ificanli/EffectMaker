@@ -1,0 +1,55 @@
+{
+  "schema_version": "vfx_prompt_condition_scorer_dataset.v1",
+  "created_at": "2026-09-01T02:36:32.991235+00:00",
+  "dataset_id": "vfx_prompt_condition_scorer_r001",
+  "overlay_count": 1,
+  "feature_row_count": 1,
+  "condition_counts": {
+    "风格": {},
+    "主色": {
+      "部分符合": 1
+    },
+    "特效类别": {
+      "部分符合": 1
+    },
+    "节奏": {
+      "符合": 1
+    },
+    "无长拖尾": {
+      "符合": 1
+    },
+    "整体": {
+      "部分符合": 1
+    }
+  },
+  "unknown_condition_counts": {
+    "风格": 1
+  },
+  "exclusion_count": 0,
+  "files": {
+    "feature_rows": "scorer_feature_rows.jsonl",
+    "exclusions": "scorer_exclusions.jsonl",
+    "feature_schema": "feature_schema.json"
+  },
+  "training_gate": {
+    "status": "insufficient_labels",
+    "minimum_per_class": 4,
+    "minimum_groups": 2,
+    "ready_conditions": [],
+    "blocked_conditions": {
+      "风格": "awaiting complete class coverage and independent evaluation groups",
+      "主色": "awaiting complete class coverage and independent evaluation groups",
+      "特效类别": "awaiting complete class coverage and independent evaluation groups",
+      "节奏": "awaiting complete class coverage and independent evaluation groups",
+      "无长拖尾": "awaiting complete class coverage and independent evaluation groups",
+      "整体": "awaiting complete class coverage and independent evaluation groups"
+    }
+  },
+  "policy": {
+    "not_visible_is_not_training_data": true,
+    "unknown_condition_is_not_training_data": true,
+    "ai_draft_is_not_human_label": true,
+    "quality_label_is_not_prompt_condition_label": true
+  },
+  "status": "pass"
+}

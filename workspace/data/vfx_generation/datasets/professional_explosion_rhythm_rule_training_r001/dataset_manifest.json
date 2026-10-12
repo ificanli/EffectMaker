@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-09-03T20:58:39.545544+00:00",
+  "dataset_id": "professional_explosion_rhythm_rule_training_r001",
+  "feature_names": [
+    "timing.support_delay",
+    "timing.hit_delay",
+    "timing.residual_delay",
+    "timing.support_core_gap",
+    "timing.hit_support_gap",
+    "timing.residual_hit_gap",
+    "visual.early_outer_visible_mean",
+    "visual.late_active_ratio",
+    "visual.last_visible_time_seconds"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "simultaneous_layers": 8,
+    "staged_layers": 8
+  },
+  "limitations": [
+    "Labels compare simultaneous and staged layer timing inside one explosion topology.",
+    "The model does not judge global aesthetic quality or unrelated effect families.",
+    "The dataset is a small pilot."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_explosion_rhythm_rule_training.v1",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_rhythm_ablation_r001/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_explosion_rhythm_ablation_r001/ablation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 8
+  },
+  "target_scope": {
+    "effect_family": "explosion",
+    "judgment_axis": "staged_rhythm"
+  },
+  "teacher_rule_id": "professional_explosion_staged_rhythm_r001"
+}

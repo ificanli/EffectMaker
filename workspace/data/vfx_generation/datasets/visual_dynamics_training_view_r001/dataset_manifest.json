@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-09-03T14:29:41.914328+00:00",
+  "effect_type_counts": {
+    "explosion": 14,
+    "fire": 6,
+    "ice": 2,
+    "impact": 16,
+    "slash": 8,
+    "unknown": 58
+  },
+  "files": {
+    "records": "records.jsonl"
+  },
+  "quality_gates": {
+    "aesthetic_quality_training_status_blocked": true,
+    "all_capture_v2_generated_rows": true,
+    "group_split_overlap_count": 0,
+    "missing_frame_count": 0,
+    "professional_quality_labels_consumed": 0,
+    "technical_exclusion_count": 0
+  },
+  "record_count": 104,
+  "sample_kind_counts": {
+    "generated_prefab": 32,
+    "material_trajectory": 72
+  },
+  "schema_version": "vfx_visual_dynamics_training_view.v1",
+  "source_generated_manifest_ids": [
+    "prompt_asset_aware_full_r003",
+    "prompt_asset_aware_impact_r001",
+    "prompt_asset_aware_slash_r002",
+    "prompt_asset_neural_impact_r002"
+  ],
+  "source_material_dataset_id": "material_trajectory_r002_training_r001",
+  "split_counts": {
+    "test": 5,
+    "train": 91,
+    "validation": 8
+  },
+  "status": "pass_technical_self_supervision_quality_head_blocked",
+  "style_family_counts": {
+    "cartoon": 32,
+    "unknown": 72
+  },
+  "teacher_readiness_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/course_knowledge/professional_aesthetic_teacher_readiness_r001/readiness_manifest.json",
+  "teacher_ready_count": 0,
+  "training_policy": {
+    "image_feature_self_supervision": true,
+    "nonexpert_aesthetic_feedback_consumed": false,
+    "professional_teacher_required_for_quality_head": true,
+    "technical_dynamic_self_supervision": true,
+    "visible_is_not_quality": true
+  },
+  "view_id": "visual_dynamics_training_view_r001"
+}

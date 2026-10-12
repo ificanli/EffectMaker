@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-09-04T01:33:26.882590+00:00",
+  "dataset_id": "professional_lightning_hit_rule_training_r001",
+  "feature_names": [
+    "hit.alpha",
+    "hit.start_size",
+    "hit.start_delay",
+    "hit.lifetime",
+    "visual.contact_peak_luminance",
+    "visual.contact_mean_luminance",
+    "visual.center_peak_luminance",
+    "visual.active_contact_frame_count"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "limitations": [
+    "Labels supervise lightning impact-focus strength only.",
+    "The model does not judge bolt silhouette, branch hierarchy, residual rhythm or global lightning quality."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_lightning_hit_rule_training.v1",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_lightning_hit_ablation_r001/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_lightning_hit_ablation_r001/ablation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "target_scope": {
+    "effect_family": "lightning",
+    "judgment_axis": "impact_focus"
+  },
+  "teacher_rule_id": "professional_lightning_impact_focus_r001"
+}

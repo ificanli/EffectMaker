@@ -1,0 +1,23 @@
+{
+  "schema_version": "vfx_prefab_dataset.v1",
+  "dataset_id": "trn_fx_all_001_prefab_cases",
+  "created_at": "2026-08-28T05:26:12.442598+00:00",
+  "source_id": "TRN_FX_ALL_001",
+  "source_manifest_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\sources\\trains_fx_all_001\\source_manifest.json",
+  "source_sample_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\sources\\trains_fx_all_001\\source_sample.json",
+  "case_count": 259,
+  "supervision_status_counts": {
+    "needs_render_and_style_annotation": 183,
+    "blocked_source_missing": 76
+  },
+  "prefab_cases_path": "prefab_cases.jsonl",
+  "style_annotation_queue_path": "style_annotation_queue.jsonl",
+  "material_audit_path": "E:\\Unity特效人工智能学习\\UnityDemo\\EffectDemo\\Library\\VFXSourceIngest\\material-binding-audit.json",
+  "playability_audit_path": null,
+  "texture_tag_index_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\datasets\\trains_fx_all_001\\texture_tags.jsonl",
+  "texture_tag_index_record_count": 533,
+  "notes": [
+    "Cases are source priors and material-selection contexts, not positive visual training labels.",
+    "A later prompt supplies target_style_profile; render review supplies observed_style_profile and style match feedback."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-09-04T00:10:53.365031+00:00",
+  "dataset_id": "professional_slash_layer_rule_training_r002",
+  "feature_names": [
+    "layer.outer_inner_size_ratio",
+    "layer.outer_inner_alpha_ratio",
+    "visual.visible_width_ratio",
+    "visual.high_luma_width_ratio",
+    "visual.overexposed_visible_ratio",
+    "visual.visible_area_ratio"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "label_counts": {
+    "equal_layers": 8,
+    "outer_dominant": 8
+  },
+  "limitations": [
+    "Labels express outer/inner hierarchy for one slash Mesh/material family only.",
+    "The model does not judge attack direction, hit quality, residual rhythm or global slash quality."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_slash_layer_rule_training.v1",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_slash_layer_ablation_r002/ablation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "supervision": {
+    "global_quality_labels_used": 0,
+    "nonexpert_aesthetic_labels_used": 0,
+    "professional_teacher_rule_count": 1,
+    "verified_unity_transfer_pair_count": 8
+  },
+  "target_scope": {
+    "effect_family": "slash",
+    "judgment_axis": "outer_inner_hierarchy"
+  },
+  "teacher_rule_id": "professional_slash_outer_inner_hierarchy_r001"
+}

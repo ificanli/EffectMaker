@@ -1,0 +1,37 @@
+{
+  "controller_sft_count": 0,
+  "created_at": "2026-09-04T04:16:44.966912+00:00",
+  "dataset_id": "procedure_training_r003",
+  "family_counts": {
+    "explosion": 1,
+    "fire": 1,
+    "lightning": 1
+  },
+  "files": {
+    "controller_sft": "workspace/data/vfx_generation/datasets/procedure_training_r003/controller_sft.jsonl",
+    "exclusions": "workspace/data/vfx_generation/datasets/procedure_training_r003/exclusions.jsonl",
+    "planner_constraints": "workspace/data/vfx_generation/datasets/procedure_training_r003/planner_constraints.jsonl",
+    "procedure_index": "workspace/data/vfx_generation/datasets/procedure_training_r003/procedure_index.jsonl"
+  },
+  "planner_constraint_count": 2,
+  "policy": {
+    "prefabs_are_not_the_only_training_source": true,
+    "professional_visual_acceptance_required_for_positive_generation": true,
+    "target_unity_reproduction_required_for_sft": true,
+    "tutorials_are_causal_supervision": true
+  },
+  "procedure_count": 2,
+  "quality_gates": {
+    "duplicate_procedure_ids": 0,
+    "invalid_step_orders": 0,
+    "schema_errors": 0,
+    "unverified_positive_supervision_count": 0
+  },
+  "schema_version": "vfx_procedure_training_dataset.v1",
+  "source_status_counts": {
+    "partially_verified": 1,
+    "verified": 1
+  },
+  "status": "ready_for_retrieval_only",
+  "target_verified_count": 0
+}

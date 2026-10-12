@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-09-04T00:11:19.078852+00:00",
+  "dataset_id": "professional_slash_direction_rule_training_r002",
+  "feature_names": [
+    "direction.rotation_y_abs",
+    "direction.rotation_w_abs",
+    "motion.horizontal_span",
+    "motion.vertical_span",
+    "motion.horizontal_vertical_ratio",
+    "motion.signed_x_displacement",
+    "motion.active_frame_count"
+  ],
+  "files": {
+    "records": "records.jsonl"
+  },
+  "limitations": [
+    "Labels supervise screen-space trail alignment only.",
+    "The model does not judge blade silhouette, hit quality or global slash quality."
+  ],
+  "pair_count": 8,
+  "pair_split_overlap_count": 0,
+  "record_count": 16,
+  "schema_version": "vfx_professional_slash_direction_rule_training.v1",
+  "source_ablation_manifest": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_slash_direction_ablation_r002/guided_generation_manifest.json",
+  "source_ablation_report": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/generated/layered_slash_direction_ablation_r002/ablation_report.json",
+  "split_counts": {
+    "test": 4,
+    "train": 8,
+    "validation": 4
+  },
+  "status": "pass",
+  "target_scope": {
+    "effect_family": "slash",
+    "judgment_axis": "directional_trail"
+  },
+  "teacher_rule_id": "professional_slash_directional_trail_r001"
+}
