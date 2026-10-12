@@ -1,0 +1,27 @@
+{
+  "schema_version": "vfx_aesthetic_dataset.v1",
+  "created_at": "2026-09-01T05:07:35.323252+00:00",
+  "dataset_id": "aesthetic_records_r001",
+  "source_count": 1026,
+  "record_count": 2698,
+  "record_kind_counts": {
+    "human_label": 47,
+    "observation": 2651
+  },
+  "judge_eligible_count": 41,
+  "preference_eligible_count": 0,
+  "technical_exclusion_count": 218,
+  "files": {
+    "records": "aesthetic_records.jsonl",
+    "judge_records": "aesthetic_judge_records.jsonl",
+    "technical_exclusions": "technical_exclusions.jsonl"
+  },
+  "policy": {
+    "source_text_is_not_visual_quality_label": true,
+    "prompt_condition_feedback_is_not_aesthetic_quality_label": true,
+    "technical_exclusion_is_not_aesthetic_negative": true,
+    "not_visible_is_not_training_data": true,
+    "ai_draft_is_not_human_label": true
+  },
+  "status": "pass"
+}
