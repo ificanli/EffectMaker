@@ -1,0 +1,61 @@
+{
+  "schema_version": "prefab_structure_training_dataset.v1",
+  "created_at": "2026-08-29T11:09:02.073625+00:00",
+  "dataset_id": "prefab_structure_r003_training_r003",
+  "source": {
+    "source_group": "TRN_FX_ALL_001",
+    "prefab_cases_path": "workspace/data/vfx_generation/datasets/trains_fx_all_002/prefab_cases.jsonl",
+    "prefab_audit_path": "workspace/data/vfx_generation/audits/effectdemo_prefab_structure_audit_r2.json",
+    "unity_project": "UnityDemo/EffectDemo",
+    "render_run_root": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r003_all_particle_playable"
+  },
+  "example_count": 259,
+  "prefab_structure_example_count": 259,
+  "particle_parameter_example_count": 220,
+  "play_mode_render_candidate_count": 79,
+  "image_conditioned_example_count": 50,
+  "aesthetic_preference_example_count": 0,
+  "rendered_example_count": 79,
+  "render_status_counts": {
+    "pass": 2,
+    "reject": 29,
+    "warn": 48
+  },
+  "technical_status_counts": {
+    "empty_or_invalid": 37,
+    "particle_context_required": 141,
+    "particle_playable": 79,
+    "static_or_contextual": 2
+  },
+  "supervision_status_counts": {
+    "blocked_source_missing": 76,
+    "empty_or_invalid": 26,
+    "needs_render_and_style_annotation": 59,
+    "runtime_context_required": 96,
+    "static_or_contextual": 2
+  },
+  "files": {
+    "examples": "workspace/data/vfx_generation/datasets/prefab_structure_r003_training_r003/examples.jsonl",
+    "particle_parameter_examples": "workspace/data/vfx_generation/datasets/prefab_structure_r003_training_r003/particle_parameter_examples.jsonl",
+    "play_mode_render_candidates": "workspace/data/vfx_generation/datasets/prefab_structure_r003_training_r003/play_mode_render_candidates.jsonl",
+    "blocked_or_context_examples": "workspace/data/vfx_generation/datasets/prefab_structure_r003_training_r003/blocked_or_context_examples.jsonl",
+    "rendered_examples": "workspace/data/vfx_generation/datasets/prefab_structure_r003_training_r003/rendered_examples.jsonl",
+    "image_feature_examples": "workspace/data/vfx_generation/datasets/prefab_structure_r003_training_r003/image_feature_examples.jsonl"
+  },
+  "quality_gates": {
+    "audit_schema_errors": 0,
+    "base_training_example_schema_errors": 0,
+    "prefab_training_example_schema_errors": 0,
+    "case_audit_mismatches": 0,
+    "missing_prefab_assets": 0,
+    "human_aesthetic_labels": 0,
+    "missing_render_files": 0
+  },
+  "limitations": [
+    "These are technical structure, ParticleSystem, and render-evidence examples, not aesthetic positive examples.",
+    "Source dependency health remains blocked for cases whose source manifest contains unresolved edges.",
+    "Style family and style-match labels remain human-unlabeled.",
+    "Auto-eval pass/warn only grants image feature eligibility; it is not a human quality label."
+  ],
+  "status": "pass"
+}
