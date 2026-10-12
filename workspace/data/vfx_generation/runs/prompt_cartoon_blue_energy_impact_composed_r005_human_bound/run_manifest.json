@@ -1,0 +1,211 @@
+{
+  "schema_version": "material_trajectory_execution_manifest.v1",
+  "created_at": "2026-08-31T11:06:29.003894+00:00",
+  "run_id": "prompt_cartoon_blue_energy_impact_composed_r005_human_bound",
+  "execution_mode": "selected",
+  "curriculum_root": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "execution_project": "E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoPromptHumanR001",
+  "execution_uses_isolated_staging": true,
+  "unity_version": "2022.3.16f1c1",
+  "render_pipeline": "URP 14.0.9",
+  "capture_sync": "trajectory_apply_at_late_update -> material_snapshot -> camera_render",
+  "spec_count": 6,
+  "pass_count": 6,
+  "fail_count": 0,
+  "valid_frame_count": 66,
+  "frame_count": 66,
+  "category_counts": {
+    "dissolve": 1,
+    "flow_distortion": 1,
+    "mpb": 3,
+    "texture_swap": 1
+  },
+  "scope_counts": {
+    "material": 3,
+    "renderer_mpb": 1,
+    "slot_mpb": 2
+  },
+  "curve_counts": {
+    "linear": 1,
+    "pulse": 3,
+    "smoothstep": 1
+  },
+  "actual_signal_counts": {
+    "dissolve_parameter_changed": 2,
+    "material_property_changed": 3,
+    "slot_property_block_changed": 2,
+    "texture_changed": 1
+  },
+  "event_counts": {
+    "keyword": 0,
+    "material_replace": 0,
+    "texture_swap": 1
+  },
+  "schema_error_count": 0,
+  "schema_errors": [],
+  "resource_audit": {
+    "candidate_leak_count": 0,
+    "candidate_leaks": [],
+    "run_resource_audit_path": "run_resource_audit.json",
+    "run_render_texture_live": 0,
+    "clean": true
+  },
+  "visual_evidence": {
+    "status": "complete",
+    "visible_area_threshold": 0.001,
+    "visible_candidate_count": 6,
+    "near_blank_candidate_count": 0,
+    "near_blank_candidate_ids": [],
+    "image_training_eligible_count": 6,
+    "policy": "near_blank candidates remain material-state valid but are excluded from image-conditioned training"
+  },
+  "status": "pass",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg"
+  ],
+  "candidates": [
+    {
+      "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.08075714,
+      "mean_visible_area_ratio": 0.03710417,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_scan/eff/Fx_scan_sub.prefab",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "effective_control_scope": "material",
+      "result_path": "candidates/prompt_cartoon_blue_energy_impact_001_c001/execution_result.json",
+      "material_timeline_path": "candidates/prompt_cartoon_blue_energy_impact_001_c001/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_020_dissolve_guangquan20",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.03121567,
+      "mean_visible_area_ratio": 0.02372326,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_xianrenzhang/eff/Fx_xianrenzhang_skill_01.prefab",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "effective_control_scope": "slot_mpb",
+      "result_path": "candidates/prompt_cartoon_blue_energy_impact_001_c002/execution_result.json",
+      "material_timeline_path": "candidates/prompt_cartoon_blue_energy_impact_001_c002/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_024_flow_distortion_mat_jueseshengji_09",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.27677536,
+      "mean_visible_area_ratio": 0.07387612,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_hero_show/Fx_com_hero_show.prefab",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "effective_control_scope": "slot_mpb",
+      "result_path": "candidates/prompt_cartoon_blue_energy_impact_001_c003/execution_result.json",
+      "material_timeline_path": "candidates/prompt_cartoon_blue_energy_impact_001_c003/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_055_mpb_magic_orb_4",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.03398895,
+      "mean_visible_area_ratio": 0.0082283,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "effective_control_scope": "material",
+      "result_path": "candidates/prompt_cartoon_blue_energy_impact_001_c004/execution_result.json",
+      "material_timeline_path": "candidates/prompt_cartoon_blue_energy_impact_001_c004/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.08075714,
+      "mean_visible_area_ratio": 0.03710417,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rollinglog/eff/Fx_rollinglog_dt.prefab",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "effective_control_scope": "material",
+      "result_path": "candidates/prompt_cartoon_blue_energy_impact_001_c005/execution_result.json",
+      "material_timeline_path": "candidates/prompt_cartoon_blue_energy_impact_001_c005/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_066_texture_swap_suishi_1",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.05752563,
+      "mean_visible_area_ratio": 0.01453781,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_cirrus/eff/Fx_cirrus.prefab",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "effective_control_scope": "renderer_mpb",
+      "result_path": "candidates/prompt_cartoon_blue_energy_impact_001_c006/execution_result.json",
+      "material_timeline_path": "candidates/prompt_cartoon_blue_energy_impact_001_c006/material_timeline.json"
+    }
+  ]
+}

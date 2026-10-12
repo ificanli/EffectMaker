@@ -1,0 +1,2102 @@
+{
+  "schema_version": "material_trajectory_execution_manifest.v1",
+  "created_at": "2026-08-28T12:02:15.990333+00:00",
+  "run_id": "material_trajectory_r002_full_r001",
+  "execution_mode": "full",
+  "curriculum_root": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "execution_project": "E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoWeb2022R002",
+  "execution_uses_isolated_staging": true,
+  "unity_version": "2022.3.16f1c1",
+  "render_pipeline": "URP 14.0.9",
+  "capture_sync": "trajectory_apply_at_late_update -> material_snapshot -> camera_render",
+  "spec_count": 100,
+  "pass_count": 100,
+  "fail_count": 0,
+  "valid_frame_count": 1100,
+  "frame_count": 1100,
+  "category_counts": {
+    "dissolve": 20,
+    "emission_alpha": 15,
+    "flow_distortion": 15,
+    "keyword_material": 10,
+    "mpb": 15,
+    "negative": 15,
+    "texture_swap": 10
+  },
+  "scope_counts": {
+    "material": 36,
+    "renderer_mpb": 38,
+    "slot_mpb": 26
+  },
+  "curve_counts": {
+    "ease_in": 15,
+    "ease_out": 4,
+    "linear": 12,
+    "pulse": 18,
+    "smoothstep": 23,
+    "step": 2
+  },
+  "actual_signal_counts": {
+    "dissolve_parameter_changed": 28,
+    "material_instance_replaced": 8,
+    "material_property_changed": 29,
+    "negative_trajectory": 15,
+    "renderer_property_block_changed": 28,
+    "shader_keywords_changed": 2,
+    "slot_property_block_changed": 15,
+    "texture_changed": 16
+  },
+  "event_counts": {
+    "keyword": 2,
+    "material_replace": 8,
+    "texture_swap": 16
+  },
+  "schema_error_count": 0,
+  "schema_errors": [],
+  "resource_audit": {
+    "candidate_leak_count": 0,
+    "candidate_leaks": [],
+    "run_resource_audit_path": "run_resource_audit.json",
+    "run_render_texture_live": 0,
+    "clean": true
+  },
+  "visual_evidence": {
+    "status": "partial",
+    "visible_area_threshold": 0.001,
+    "visible_candidate_count": 72,
+    "near_blank_candidate_count": 28,
+    "near_blank_candidate_ids": [
+      "mtc_003_dissolve_mat_circlecut_2",
+      "mtc_008_dissolve_mat_xingzhe_wenli4",
+      "mtc_010_dissolve_mat_jianxian_15",
+      "mtc_012_dissolve_mat_gallop_loop_wenli",
+      "mtc_013_dissolve_mat_xingzhe_glow",
+      "mtc_014_dissolve_mat_leiji_06",
+      "mtc_021_flow_distortion_mat_jinmianju_04",
+      "mtc_027_flow_distortion_mat_xingzhe_daoguang",
+      "mtc_030_flow_distortion_mat_27_glow_02",
+      "mtc_032_flow_distortion_mat_xiaoming_04",
+      "mtc_034_flow_distortion_mat_nuge_noise_1",
+      "mtc_037_emission_alpha_suanyedi",
+      "mtc_038_emission_alpha_mat_gallop_loop_glow",
+      "mtc_041_emission_alpha_mat_qiangkouhuo_02",
+      "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "mtc_046_emission_alpha_mat_jk_03",
+      "mtc_054_mpb_mat_kapaifenwei_02",
+      "mtc_056_mpb_mat_xingzhe_fire1",
+      "mtc_058_mpb_dianguang",
+      "mtc_059_mpb_mat_aidawang_01",
+      "mtc_061_mpb_mat_tiebijiangjun_keji1",
+      "mtc_062_mpb_mat_commondie_02",
+      "mtc_064_mpb_mat_27_glow_03",
+      "mtc_067_texture_swap_mat_changji_noise_03",
+      "mtc_093_negative_guangyun8",
+      "mtc_094_negative_mat_xingzhe_glow1",
+      "mtc_097_negative_mat_tiebijiangjun_dilie_1",
+      "mtc_100_negative_suanyebowen1"
+    ],
+    "image_training_eligible_count": 72,
+    "policy": "near_blank candidates remain material-state valid but are excluded from image-conditioned training"
+  },
+  "status": "pass",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg",
+    "contact_sheets/page-002.jpg",
+    "contact_sheets/page-003.jpg",
+    "contact_sheets/page-004.jpg",
+    "contact_sheets/page-005.jpg",
+    "contact_sheets/page-006.jpg",
+    "contact_sheets/page-007.jpg",
+    "contact_sheets/page-008.jpg",
+    "contact_sheets/page-009.jpg",
+    "contact_sheets/page-010.jpg",
+    "contact_sheets/page-011.jpg",
+    "contact_sheets/page-012.jpg",
+    "contact_sheets/page-013.jpg"
+  ],
+  "candidates": [
+    {
+      "trajectory_id": "mtc_001_dissolve_mat_nuge_03",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.10799408,
+      "mean_visible_area_ratio": 0.10799408,
+      "result_path": "candidates/mtc_001_dissolve_mat_nuge_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_001_dissolve_mat_nuge_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_002_dissolve_mat_fozu_06",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.55213165,
+      "mean_visible_area_ratio": 0.55213165,
+      "result_path": "candidates/mtc_002_dissolve_mat_fozu_06/execution_result.json",
+      "material_timeline_path": "candidates/mtc_002_dissolve_mat_fozu_06/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_003_dissolve_mat_circlecut_2",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_003_dissolve_mat_circlecut_2/execution_result.json",
+      "material_timeline_path": "candidates/mtc_003_dissolve_mat_circlecut_2/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_004_dissolve_tuowei11",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.28554916,
+      "mean_visible_area_ratio": 0.28554916,
+      "result_path": "candidates/mtc_004_dissolve_tuowei11/execution_result.json",
+      "material_timeline_path": "candidates/mtc_004_dissolve_tuowei11/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_005_dissolve_suishi_1",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.12841415,
+      "mean_visible_area_ratio": 0.12841415,
+      "result_path": "candidates/mtc_005_dissolve_suishi_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_005_dissolve_suishi_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_006_dissolve_mat_nuge_02",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.51541519,
+      "mean_visible_area_ratio": 0.51541519,
+      "result_path": "candidates/mtc_006_dissolve_mat_nuge_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_006_dissolve_mat_nuge_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_007_dissolve_mat_ui_cangpinkapai_jiesuo_2",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.18128967,
+      "mean_visible_area_ratio": 0.18128967,
+      "result_path": "candidates/mtc_007_dissolve_mat_ui_cangpinkapai_jiesuo_2/execution_result.json",
+      "material_timeline_path": "candidates/mtc_007_dissolve_mat_ui_cangpinkapai_jiesuo_2/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_008_dissolve_mat_xingzhe_wenli4",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_008_dissolve_mat_xingzhe_wenli4/execution_result.json",
+      "material_timeline_path": "candidates/mtc_008_dissolve_mat_xingzhe_wenli4/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_009_dissolve_mat_bosswarntip_02",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.98638153,
+      "mean_visible_area_ratio": 0.98636558,
+      "result_path": "candidates/mtc_009_dissolve_mat_bosswarntip_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_009_dissolve_mat_bosswarntip_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_010_dissolve_mat_jianxian_15",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_010_dissolve_mat_jianxian_15/execution_result.json",
+      "material_timeline_path": "candidates/mtc_010_dissolve_mat_jianxian_15/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_011_dissolve_yantuan_1",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.88867188,
+      "mean_visible_area_ratio": 0.88867188,
+      "result_path": "candidates/mtc_011_dissolve_yantuan_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_011_dissolve_yantuan_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_012_dissolve_mat_gallop_loop_wenli",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_012_dissolve_mat_gallop_loop_wenli/execution_result.json",
+      "material_timeline_path": "candidates/mtc_012_dissolve_mat_gallop_loop_wenli/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_013_dissolve_mat_xingzhe_glow",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_013_dissolve_mat_xingzhe_glow/execution_result.json",
+      "material_timeline_path": "candidates/mtc_013_dissolve_mat_xingzhe_glow/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_014_dissolve_mat_leiji_06",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_014_dissolve_mat_leiji_06/execution_result.json",
+      "material_timeline_path": "candidates/mtc_014_dissolve_mat_leiji_06/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_015_dissolve_mat_chongneng_03",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.75349045,
+      "mean_visible_area_ratio": 0.75349045,
+      "result_path": "candidates/mtc_015_dissolve_mat_chongneng_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_015_dissolve_mat_chongneng_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_016_dissolve_mat_jiyinsuo_01",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.908638,
+      "mean_visible_area_ratio": 0.90317743,
+      "result_path": "candidates/mtc_016_dissolve_mat_jiyinsuo_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_016_dissolve_mat_jiyinsuo_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_017_dissolve_mat_severitytip_02",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.92065048,
+      "mean_visible_area_ratio": 0.92065048,
+      "result_path": "candidates/mtc_017_dissolve_mat_severitytip_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_017_dissolve_mat_severitytip_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_018_dissolve_shexiansanjiao",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.27774811,
+      "mean_visible_area_ratio": 0.27774811,
+      "result_path": "candidates/mtc_018_dissolve_shexiansanjiao/execution_result.json",
+      "material_timeline_path": "candidates/mtc_018_dissolve_shexiansanjiao/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_019_dissolve_mat_gongjizengzhang_05",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.84831238,
+      "mean_visible_area_ratio": 0.84831238,
+      "result_path": "candidates/mtc_019_dissolve_mat_gongjizengzhang_05/execution_result.json",
+      "material_timeline_path": "candidates/mtc_019_dissolve_mat_gongjizengzhang_05/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_020_dissolve_guangquan20",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.83664322,
+      "mean_visible_area_ratio": 0.83664322,
+      "result_path": "candidates/mtc_020_dissolve_guangquan20/execution_result.json",
+      "material_timeline_path": "candidates/mtc_020_dissolve_guangquan20/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_021_flow_distortion_mat_jinmianju_04",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_021_flow_distortion_mat_jinmianju_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_021_flow_distortion_mat_jinmianju_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_022_flow_distortion_mat_daodan_02",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.15885544,
+      "mean_visible_area_ratio": 0.15885544,
+      "result_path": "candidates/mtc_022_flow_distortion_mat_daodan_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_022_flow_distortion_mat_daodan_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_023_flow_distortion_mat_jiatelin_02",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.43729019,
+      "mean_visible_area_ratio": 0.43729019,
+      "result_path": "candidates/mtc_023_flow_distortion_mat_jiatelin_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_023_flow_distortion_mat_jiatelin_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_024_flow_distortion_mat_jueseshengji_09",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.84713364,
+      "mean_visible_area_ratio": 0.84713364,
+      "result_path": "candidates/mtc_024_flow_distortion_mat_jueseshengji_09/execution_result.json",
+      "material_timeline_path": "candidates/mtc_024_flow_distortion_mat_jueseshengji_09/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_025_flow_distortion_mat_shitou_shikuai",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.09996796,
+      "mean_visible_area_ratio": 0.09996796,
+      "result_path": "candidates/mtc_025_flow_distortion_mat_shitou_shikuai/execution_result.json",
+      "material_timeline_path": "candidates/mtc_025_flow_distortion_mat_shitou_shikuai/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_026_flow_distortion_mat_starchain_01",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.08086395,
+      "mean_visible_area_ratio": 0.08086395,
+      "result_path": "candidates/mtc_026_flow_distortion_mat_starchain_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_026_flow_distortion_mat_starchain_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_027_flow_distortion_mat_xingzhe_daoguang",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/execution_result.json",
+      "material_timeline_path": "candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_028_flow_distortion_mat_zhuizongdan_wenli_5",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.84860992,
+      "mean_visible_area_ratio": 0.78591225,
+      "result_path": "candidates/mtc_028_flow_distortion_mat_zhuizongdan_wenli_5/execution_result.json",
+      "material_timeline_path": "candidates/mtc_028_flow_distortion_mat_zhuizongdan_wenli_5/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_029_flow_distortion_shexiansanjiao",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.27774811,
+      "mean_visible_area_ratio": 0.27774811,
+      "result_path": "candidates/mtc_029_flow_distortion_shexiansanjiao/execution_result.json",
+      "material_timeline_path": "candidates/mtc_029_flow_distortion_shexiansanjiao/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_030_flow_distortion_mat_27_glow_02",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_030_flow_distortion_mat_27_glow_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_030_flow_distortion_mat_27_glow_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_031_flow_distortion_mat_nuge_03",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.10799408,
+      "mean_visible_area_ratio": 0.10799408,
+      "result_path": "candidates/mtc_031_flow_distortion_mat_nuge_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_031_flow_distortion_mat_nuge_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_032_flow_distortion_mat_xiaoming_04",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_032_flow_distortion_mat_xiaoming_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_032_flow_distortion_mat_xiaoming_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_033_flow_distortion_huan",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.48566437,
+      "mean_visible_area_ratio": 0.48566437,
+      "result_path": "candidates/mtc_033_flow_distortion_huan/execution_result.json",
+      "material_timeline_path": "candidates/mtc_033_flow_distortion_huan/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_034_flow_distortion_mat_nuge_noise_1",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_034_flow_distortion_mat_nuge_noise_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_034_flow_distortion_mat_nuge_noise_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_035_flow_distortion_mat_jueseshengji_05",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.43624496,
+      "mean_visible_area_ratio": 0.43313772,
+      "result_path": "candidates/mtc_035_flow_distortion_mat_jueseshengji_05/execution_result.json",
+      "material_timeline_path": "candidates/mtc_035_flow_distortion_mat_jueseshengji_05/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_036_emission_alpha_mat_jinzita_02",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.40880966,
+      "mean_visible_area_ratio": 0.40348434,
+      "result_path": "candidates/mtc_036_emission_alpha_mat_jinzita_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_036_emission_alpha_mat_jinzita_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_037_emission_alpha_suanyedi",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_037_emission_alpha_suanyedi/execution_result.json",
+      "material_timeline_path": "candidates/mtc_037_emission_alpha_suanyedi/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_038_emission_alpha_mat_gallop_loop_glow",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/execution_result.json",
+      "material_timeline_path": "candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_039_emission_alpha_mat_kun_13",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.9875679,
+      "mean_visible_area_ratio": 0.89429231,
+      "result_path": "candidates/mtc_039_emission_alpha_mat_kun_13/execution_result.json",
+      "material_timeline_path": "candidates/mtc_039_emission_alpha_mat_kun_13/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_040_emission_alpha_mat_jianxian_03",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.28825378,
+      "mean_visible_area_ratio": 0.28804952,
+      "result_path": "candidates/mtc_040_emission_alpha_mat_jianxian_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_040_emission_alpha_mat_jianxian_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_041_emission_alpha_mat_qiangkouhuo_02",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_042_emission_alpha_mat_kun_16",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.98548508,
+      "mean_visible_area_ratio": 0.97541254,
+      "result_path": "candidates/mtc_042_emission_alpha_mat_kun_16/execution_result.json",
+      "material_timeline_path": "candidates/mtc_042_emission_alpha_mat_kun_16/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_043_emission_alpha_mat_xiandanqiang_03",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.68610764,
+      "mean_visible_area_ratio": 0.68571125,
+      "result_path": "candidates/mtc_043_emission_alpha_mat_xiandanqiang_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_043_emission_alpha_mat_xiandanqiang_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_044_emission_alpha_mat_lingqi_glow_8",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.30513,
+      "mean_visible_area_ratio": 0.0640564,
+      "result_path": "candidates/mtc_044_emission_alpha_mat_lingqi_glow_8/execution_result.json",
+      "material_timeline_path": "candidates/mtc_044_emission_alpha_mat_lingqi_glow_8/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_046_emission_alpha_mat_jk_03",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_046_emission_alpha_mat_jk_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_046_emission_alpha_mat_jk_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_047_emission_alpha_mat_severitytip_03",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.27669144,
+      "mean_visible_area_ratio": 0.27669144,
+      "result_path": "candidates/mtc_047_emission_alpha_mat_severitytip_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_047_emission_alpha_mat_severitytip_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_048_emission_alpha_mat_kapaifenwei_05",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 1.0,
+      "mean_visible_area_ratio": 1.0,
+      "result_path": "candidates/mtc_048_emission_alpha_mat_kapaifenwei_05/execution_result.json",
+      "material_timeline_path": "candidates/mtc_048_emission_alpha_mat_kapaifenwei_05/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_049_emission_alpha_mat_ui_scbaoxiangdakai_glow9",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.23115158,
+      "mean_visible_area_ratio": 0.20002989,
+      "result_path": "candidates/mtc_049_emission_alpha_mat_ui_scbaoxiangdakai_glow9/execution_result.json",
+      "material_timeline_path": "candidates/mtc_049_emission_alpha_mat_ui_scbaoxiangdakai_glow9/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_050_emission_alpha_mat_chongneng_01",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.12703705,
+      "mean_visible_area_ratio": 0.12703705,
+      "result_path": "candidates/mtc_050_emission_alpha_mat_chongneng_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_050_emission_alpha_mat_chongneng_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_051_mpb_mat_starchain_01",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.08086395,
+      "mean_visible_area_ratio": 0.08086395,
+      "result_path": "candidates/mtc_051_mpb_mat_starchain_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_051_mpb_mat_starchain_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_052_mpb_mat_mibaochuantoudan_03",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.49504089,
+      "mean_visible_area_ratio": 0.35702272,
+      "result_path": "candidates/mtc_052_mpb_mat_mibaochuantoudan_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_052_mpb_mat_mibaochuantoudan_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_053_mpb_mat_zhuizongdan_wenli_6",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.93325043,
+      "mean_visible_area_ratio": 0.78798051,
+      "result_path": "candidates/mtc_053_mpb_mat_zhuizongdan_wenli_6/execution_result.json",
+      "material_timeline_path": "candidates/mtc_053_mpb_mat_zhuizongdan_wenli_6/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_054_mpb_mat_kapaifenwei_02",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_054_mpb_mat_kapaifenwei_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_054_mpb_mat_kapaifenwei_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_055_mpb_magic_orb_4",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.69129562,
+      "mean_visible_area_ratio": 0.69129562,
+      "result_path": "candidates/mtc_055_mpb_magic_orb_4/execution_result.json",
+      "material_timeline_path": "candidates/mtc_055_mpb_magic_orb_4/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_056_mpb_mat_xingzhe_fire1",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_056_mpb_mat_xingzhe_fire1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_056_mpb_mat_xingzhe_fire1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_057_mpb_mat_ui_battle_start_tip_02",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.99236298,
+      "mean_visible_area_ratio": 0.99236298,
+      "result_path": "candidates/mtc_057_mpb_mat_ui_battle_start_tip_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_057_mpb_mat_ui_battle_start_tip_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_058_mpb_dianguang",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_058_mpb_dianguang/execution_result.json",
+      "material_timeline_path": "candidates/mtc_058_mpb_dianguang/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_059_mpb_mat_aidawang_01",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_059_mpb_mat_aidawang_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_059_mpb_mat_aidawang_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_060_mpb_guangquan12",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.91716385,
+      "mean_visible_area_ratio": 0.76573389,
+      "result_path": "candidates/mtc_060_mpb_guangquan12/execution_result.json",
+      "material_timeline_path": "candidates/mtc_060_mpb_guangquan12/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_061_mpb_mat_tiebijiangjun_keji1",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_062_mpb_mat_commondie_02",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_062_mpb_mat_commondie_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_062_mpb_mat_commondie_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_063_mpb_suanyebowen4",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.70272446,
+      "mean_visible_area_ratio": 0.70272446,
+      "result_path": "candidates/mtc_063_mpb_suanyebowen4/execution_result.json",
+      "material_timeline_path": "candidates/mtc_063_mpb_suanyebowen4/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_064_mpb_mat_27_glow_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_064_mpb_mat_27_glow_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_065_mpb_mat_pomoarrow_sub02",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.26763153,
+      "mean_visible_area_ratio": 0.26276432,
+      "result_path": "candidates/mtc_065_mpb_mat_pomoarrow_sub02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_065_mpb_mat_pomoarrow_sub02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_066_texture_swap_suishi_1",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.32350922,
+      "mean_visible_area_ratio": 0.23482964,
+      "result_path": "candidates/mtc_066_texture_swap_suishi_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_066_texture_swap_suishi_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_067_texture_swap_mat_changji_noise_03",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_067_texture_swap_mat_changji_noise_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_067_texture_swap_mat_changji_noise_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_068_texture_swap_mat_jiatelin_02",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.44649506,
+      "mean_visible_area_ratio": 0.44231103,
+      "result_path": "candidates/mtc_068_texture_swap_mat_jiatelin_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_068_texture_swap_mat_jiatelin_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_069_texture_swap_mat_xiaoming_01",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.27936554,
+      "mean_visible_area_ratio": 0.22662562,
+      "result_path": "candidates/mtc_069_texture_swap_mat_xiaoming_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_069_texture_swap_mat_xiaoming_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_070_texture_swap_mat_kapaifenwei_04",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.9292984,
+      "mean_visible_area_ratio": 0.83651941,
+      "result_path": "candidates/mtc_070_texture_swap_mat_kapaifenwei_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_070_texture_swap_mat_kapaifenwei_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_071_texture_swap_mat_daodan_03",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.28142548,
+      "mean_visible_area_ratio": 0.18495525,
+      "result_path": "candidates/mtc_071_texture_swap_mat_daodan_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_071_texture_swap_mat_daodan_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_072_texture_swap_yantuan_3",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.88867188,
+      "mean_visible_area_ratio": 0.88867188,
+      "result_path": "candidates/mtc_072_texture_swap_yantuan_3/execution_result.json",
+      "material_timeline_path": "candidates/mtc_072_texture_swap_yantuan_3/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_073_texture_swap_mat_hundouluo_02",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.98033524,
+      "mean_visible_area_ratio": 0.30575284,
+      "result_path": "candidates/mtc_073_texture_swap_mat_hundouluo_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_073_texture_swap_mat_hundouluo_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_074_texture_swap_mat_lingqi_glow_11",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.39981079,
+      "mean_visible_area_ratio": 0.26734855,
+      "result_path": "candidates/mtc_074_texture_swap_mat_lingqi_glow_11/execution_result.json",
+      "material_timeline_path": "candidates/mtc_074_texture_swap_mat_lingqi_glow_11/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_075_texture_swap_mat_gongjizengzhang_03",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 1.0,
+      "mean_visible_area_ratio": 0.93670203,
+      "result_path": "candidates/mtc_075_texture_swap_mat_gongjizengzhang_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_075_texture_swap_mat_gongjizengzhang_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_076_keyword_material_mat_guangleng_hit_jianshe",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.39744568,
+      "mean_visible_area_ratio": 0.28208056,
+      "result_path": "candidates/mtc_076_keyword_material_mat_guangleng_hit_jianshe/execution_result.json",
+      "material_timeline_path": "candidates/mtc_076_keyword_material_mat_guangleng_hit_jianshe/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_077_keyword_material_suanyedi",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.98435211,
+      "mean_visible_area_ratio": 0.53691933,
+      "result_path": "candidates/mtc_077_keyword_material_suanyedi/execution_result.json",
+      "material_timeline_path": "candidates/mtc_077_keyword_material_suanyedi/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_078_keyword_material_mat_scan_mask_02",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.98385239,
+      "mean_visible_area_ratio": 0.58429579,
+      "result_path": "candidates/mtc_078_keyword_material_mat_scan_mask_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_078_keyword_material_mat_scan_mask_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_079_keyword_material_line_2",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.99373627,
+      "mean_visible_area_ratio": 0.57111116,
+      "result_path": "candidates/mtc_079_keyword_material_line_2/execution_result.json",
+      "material_timeline_path": "candidates/mtc_079_keyword_material_line_2/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_080_keyword_material_shexiansanjiao",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.97903061,
+      "mean_visible_area_ratio": 0.63908733,
+      "result_path": "candidates/mtc_080_keyword_material_shexiansanjiao/execution_result.json",
+      "material_timeline_path": "candidates/mtc_080_keyword_material_shexiansanjiao/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_081_keyword_material_mat_kun_16",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "shader_keywords_changed"
+      ],
+      "actual_signals": [
+        "shader_keywords_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.97119141,
+      "mean_visible_area_ratio": 0.700823,
+      "result_path": "candidates/mtc_081_keyword_material_mat_kun_16/execution_result.json",
+      "material_timeline_path": "candidates/mtc_081_keyword_material_mat_kun_16/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_082_keyword_material_mat_ui_scbaoxiangdakai_lizi",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.23787689,
+      "mean_visible_area_ratio": 0.17807839,
+      "result_path": "candidates/mtc_082_keyword_material_mat_ui_scbaoxiangdakai_lizi/execution_result.json",
+      "material_timeline_path": "candidates/mtc_082_keyword_material_mat_ui_scbaoxiangdakai_lizi/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_083_keyword_material_xulie3",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.91685486,
+      "mean_visible_area_ratio": 0.54159927,
+      "result_path": "candidates/mtc_083_keyword_material_xulie3/execution_result.json",
+      "material_timeline_path": "candidates/mtc_083_keyword_material_xulie3/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_084_keyword_material_mat_laonainai_02",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "shader_keywords_changed"
+      ],
+      "actual_signals": [
+        "shader_keywords_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.99034882,
+      "mean_visible_area_ratio": 0.76492518,
+      "result_path": "candidates/mtc_084_keyword_material_mat_laonainai_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_084_keyword_material_mat_laonainai_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_085_keyword_material_mat_ui_scbaoxiangdakai_glow5",
+      "category": "keyword_material",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_instance_replaced"
+      ],
+      "actual_signals": [
+        "material_instance_replaced"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.81871414,
+      "mean_visible_area_ratio": 0.51381406,
+      "result_path": "candidates/mtc_085_keyword_material_mat_ui_scbaoxiangdakai_glow5/execution_result.json",
+      "material_timeline_path": "candidates/mtc_085_keyword_material_mat_ui_scbaoxiangdakai_glow5/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_086_negative_mat_fozu_01",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.44521713,
+      "mean_visible_area_ratio": 0.20237142,
+      "result_path": "candidates/mtc_086_negative_mat_fozu_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_086_negative_mat_fozu_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_087_negative_mat_daozhang_04",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory"
+      ],
+      "actual_signals": [
+        "negative_trajectory"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.70797348,
+      "mean_visible_area_ratio": 0.70797348,
+      "result_path": "candidates/mtc_087_negative_mat_daozhang_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_087_negative_mat_daozhang_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_088_negative_mat_fozu_mibao_02",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.9462738,
+      "mean_visible_area_ratio": 0.9462738,
+      "result_path": "candidates/mtc_088_negative_mat_fozu_mibao_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_088_negative_mat_fozu_mibao_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_089_negative_mat_juesejiesuo_04",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.20732117,
+      "mean_visible_area_ratio": 0.20732117,
+      "result_path": "candidates/mtc_089_negative_mat_juesejiesuo_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_089_negative_mat_juesejiesuo_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_090_negative_mat_ui_shengji_glow",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.97238922,
+      "mean_visible_area_ratio": 0.65039756,
+      "result_path": "candidates/mtc_090_negative_mat_ui_shengji_glow/execution_result.json",
+      "material_timeline_path": "candidates/mtc_090_negative_mat_ui_shengji_glow/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_091_negative_mat_ui_scbaoxiangdakai_glow3",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.88526154,
+      "mean_visible_area_ratio": 0.5549247,
+      "result_path": "candidates/mtc_091_negative_mat_ui_scbaoxiangdakai_glow3/execution_result.json",
+      "material_timeline_path": "candidates/mtc_091_negative_mat_ui_scbaoxiangdakai_glow3/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_092_negative_mat_springfes_smoke_02",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.84097672,
+      "mean_visible_area_ratio": 0.83092221,
+      "result_path": "candidates/mtc_092_negative_mat_springfes_smoke_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_092_negative_mat_springfes_smoke_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_093_negative_guangyun8",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_093_negative_guangyun8/execution_result.json",
+      "material_timeline_path": "candidates/mtc_093_negative_guangyun8/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_094_negative_mat_xingzhe_glow1",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed",
+        "negative_trajectory"
+      ],
+      "actual_signals": [
+        "material_property_changed",
+        "negative_trajectory"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_094_negative_mat_xingzhe_glow1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_094_negative_mat_xingzhe_glow1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_095_negative_mat_jiyinsuo_02_super",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.23738861,
+      "mean_visible_area_ratio": 0.22940896,
+      "result_path": "candidates/mtc_095_negative_mat_jiyinsuo_02_super/execution_result.json",
+      "material_timeline_path": "candidates/mtc_095_negative_mat_jiyinsuo_02_super/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_096_negative_guangquan20",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory"
+      ],
+      "actual_signals": [
+        "negative_trajectory"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.83664322,
+      "mean_visible_area_ratio": 0.83664322,
+      "result_path": "candidates/mtc_096_negative_guangquan20/execution_result.json",
+      "material_timeline_path": "candidates/mtc_096_negative_guangquan20/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_097_negative_mat_tiebijiangjun_dilie_1",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_098_negative_mat_jueseshengji_02",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.57984161,
+      "mean_visible_area_ratio": 0.30549968,
+      "result_path": "candidates/mtc_098_negative_mat_jueseshengji_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_098_negative_mat_jueseshengji_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_099_negative_mat_zhuizongdan_wenli_4",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed",
+        "negative_trajectory"
+      ],
+      "actual_signals": [
+        "material_property_changed",
+        "negative_trajectory"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.16343307,
+      "mean_visible_area_ratio": 0.15667586,
+      "result_path": "candidates/mtc_099_negative_mat_zhuizongdan_wenli_4/execution_result.json",
+      "material_timeline_path": "candidates/mtc_099_negative_mat_zhuizongdan_wenli_4/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_100_negative_suanyebowen1",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "result_path": "candidates/mtc_100_negative_suanyebowen1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_100_negative_suanyebowen1/material_timeline.json"
+    }
+  ]
+}

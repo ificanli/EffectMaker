@@ -1,0 +1,51 @@
+{
+    "schema_version": "material_trajectory_execution_result.v1",
+    "created_at": "2026-08-31T10:58:01.9546189Z",
+    "trajectory_id": "mtc_040_emission_alpha_mat_jianxian_03",
+    "curriculum_id": "material_trajectory_curriculum_r002",
+    "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_040_emission_alpha_mat_jianxian_03.json",
+    "category": "emission_alpha",
+    "label": "positive",
+    "control_scope": "material",
+    "status": "error",
+    "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_xianrenzhang/eff/Fx_xianrenzhang_skill_01.prefab",
+    "context_renderer_status": "",
+    "context_renderer_reason": "",
+    "effective_control_scope": "material",
+    "duration_seconds": 0.6000000238418579,
+    "sample_interval_seconds": 0.0,
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_SS_jianxan/mat/Mat_jianxian_03.mat",
+    "shader_name": "Common/ColorDefault",
+    "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r002_human/candidates/prompt_cartoon_blue_energy_impact_001_c005/material_timeline.json",
+    "frames": [],
+    "valid_frame_count": 0,
+    "expected_signals": [
+        "material_property_changed"
+    ],
+    "actual_signals": [],
+    "raw_timeline_signals": [],
+    "missing_signals": [
+        "material_property_changed"
+    ],
+    "unexpected_signals": [],
+    "incidental_timeline_signals": [],
+    "curves_executed": [
+        "smoothstep"
+    ],
+    "parameter_track_count": 1,
+    "keyword_event_count": 0,
+    "texture_swap_event_count": 0,
+    "material_replace_event_count": 0,
+    "negative_mutation_executed": false,
+    "invariant_errors": [],
+    "resource_audit": {
+        "runtime_materials_created": 0,
+        "runtime_materials_destroyed": 0,
+        "runtime_materials_live": 0,
+        "runtime_textures_created": 0,
+        "runtime_textures_destroyed": 0,
+        "runtime_textures_live": 0,
+        "destruction_mode": "UnityEngine.Object.Destroy completed before result write"
+    },
+    "error": "InvalidOperationException: Prefab has no Renderer or Graphic using source material: Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_xianrenzhang/eff/Fx_xianrenzhang_skill_01.prefab -> Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_SS_jianxan/mat/Mat_jianxian_03.mat"
+}

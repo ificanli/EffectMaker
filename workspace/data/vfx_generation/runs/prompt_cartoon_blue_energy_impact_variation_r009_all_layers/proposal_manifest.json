@@ -1,0 +1,64 @@
+{
+  "schema_version": "prompt_variation_proposal.v1",
+  "created_at": "2026-09-01T01:06:33.046313+00:00",
+  "run_id": "prompt_cartoon_blue_energy_impact_variation_r009_all_layers",
+  "proposal_id": "pcv_005_blue_fast_impact_multi_material_particle",
+  "parent_composition_manifest": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r005_human_bound\\composition_manifest.json",
+  "parent_candidate_id": "prompt_cartoon_blue_energy_impact_001_c004",
+  "prompt_condition": {
+    "schema_version": "vfx_prompt_condition.v1",
+    "prompt_id": "prompt_cartoon_blue_energy_impact_001",
+    "text": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+    "style_family": "cartoon",
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_families": [
+      "explosion"
+    ],
+    "source_categories": [
+      "battle"
+    ],
+    "motion_keywords": [
+      "burst",
+      "impact",
+      "trail"
+    ],
+    "timing_profile": "fast_impact",
+    "negative_constraints": [
+      "长拖尾"
+    ],
+    "candidate_count": 6,
+    "seed": 20260831
+  },
+  "source_prefab": {
+    "case_id": "trains_fx_118_fx_aidawang_baozha",
+    "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab",
+    "source_category": [
+      "character"
+    ],
+    "effect_family_hint": "explosion"
+  },
+  "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+  "mutation_plan": {
+    "goal": [
+      "blue_color_candidate",
+      "fast_impact_capture_window",
+      "retain_explosion_prefab"
+    ],
+    "target_renderer_role": "explosion_core_burst_start_size_6",
+    "parameter_changes": [
+      "_Main_SolidColor",
+      "_Main_Color",
+      "_Distort_Dissolve_Intensity",
+      "ParticleSystem.Main.startColor",
+      "ParticleSystem.colorOverLifetime.enabled",
+      "multi_material._Main_SolidColor",
+      "multi_material._Main_Color"
+    ],
+    "source_texture_or_mesh_replacement": false,
+    "training_status": "proposal_only_not_training"
+  },
+  "execution_request_path": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_variation_r009_all_layers\\execution_requests.json",
+  "status": "prepared_pending_unity_execution"
+}

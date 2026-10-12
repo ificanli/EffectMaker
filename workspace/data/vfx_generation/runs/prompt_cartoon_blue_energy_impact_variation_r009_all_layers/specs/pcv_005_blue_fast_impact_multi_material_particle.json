@@ -1,0 +1,593 @@
+{
+  "schema_version": "material_trajectory_spec.v1",
+  "trajectory_id": "pcv_005_blue_fast_impact_multi_material_particle",
+  "curriculum_id": "prompt_variation_proposal.v1",
+  "seed": 2026083101,
+  "category": "emission_alpha",
+  "label": "positive",
+  "source_asset": {
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+    "material_name": "Mat_daodan_01",
+    "shader_name": "Common/ColorDefault",
+    "shader_path": "Assets/VFXSourceIngest/Shared/ShaderPackages/Bundles/Shaders/Common/ColorDefault.shader",
+    "texture_bindings": [],
+    "effect_families": [
+      "explosion"
+    ],
+    "source_categories": [
+      "character"
+    ]
+  },
+  "style_profile": {
+    "family": "unknown",
+    "keywords": []
+  },
+  "control_scope": "material",
+  "duration_seconds": 0.65,
+  "parameter_tracks": [
+    {
+      "property_name": "_Distort_Dissolve_Intensity",
+      "semantic": "dissolve",
+      "value_kind": "float",
+      "start_value": [
+        0.0
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "pulse",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.65,
+      "clamp_min": 0.0,
+      "clamp_max": 1.0
+    }
+  ],
+  "particle_color_tracks": [
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+      "start_color": [
+        0.06,
+        0.34,
+        1.6,
+        1.0
+      ],
+      "end_color": [
+        0.12,
+        0.84,
+        5.0,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_Shoulei_Glow_03.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_02.mat",
+      "start_color": [
+        0.05,
+        0.26,
+        1.4,
+        1.0
+      ],
+      "end_color": [
+        0.1,
+        0.74,
+        4.6,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+      "start_color": [
+        0.08,
+        0.36,
+        1.8,
+        1.0
+      ],
+      "end_color": [
+        0.14,
+        0.9,
+        5.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_01.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 4.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/mat/Mat_aidawang_02.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_shoulei_somke_01.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_03.mat",
+      "start_color": [
+        0.04,
+        0.22,
+        1.2,
+        1.0
+      ],
+      "end_color": [
+        0.08,
+        0.66,
+        4.2,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12,
+      "disable_color_over_lifetime": true
+    }
+  ],
+  "material_property_tracks": [
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_Shoulei_Glow_03.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_02.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_01.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 4.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/mat/Mat_aidawang_02.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_shoulei_somke_01.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_03.mat",
+      "property_name": "_Main_SolidColor",
+      "value_kind": "float",
+      "start_value": [
+        0.85
+      ],
+      "end_value": [
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_01.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_Shoulei_Glow_03.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_02.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/xulie3.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_01.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 4.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/mat/Mat_aidawang_02.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_shoulei_somke_01.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    },
+    {
+      "target_material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/daqiang/Mat_daodan_03.mat",
+      "property_name": "_Main_Color",
+      "value_kind": "color",
+      "start_value": [
+        0.04,
+        0.22,
+        1.4,
+        1.0
+      ],
+      "end_value": [
+        0.12,
+        0.9,
+        5.4,
+        1.0
+      ],
+      "curve": "ease_out",
+      "start_time_seconds": 0.0,
+      "duration_seconds": 0.12
+    }
+  ],
+  "keyword_events": [],
+  "texture_swap_events": [],
+  "material_replace_events": [],
+  "expected_signals": [
+    "material_property_changed",
+    "dissolve_parameter_changed",
+    "particle_color_changed",
+    "multi_material_property_changed"
+  ],
+  "negative_mutation": null,
+  "split_group": {
+    "shader_group": "a2d49f234dad",
+    "material_group": "2ee76ad19c68"
+  }
+}

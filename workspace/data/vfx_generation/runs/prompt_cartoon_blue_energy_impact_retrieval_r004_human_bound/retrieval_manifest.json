@@ -1,0 +1,732 @@
+{
+  "schema_version": "prompt_retrieval_manifest.v1",
+  "created_at": "2026-08-31T11:02:03.847598+00:00",
+  "run_id": "prompt_cartoon_blue_energy_impact_retrieval_r004_human_bound",
+  "prompt_condition": {
+    "schema_version": "vfx_prompt_condition.v1",
+    "prompt_id": "prompt_cartoon_blue_energy_impact_001",
+    "text": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+    "style_family": "cartoon",
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_families": [
+      "explosion"
+    ],
+    "source_categories": [
+      "battle"
+    ],
+    "motion_keywords": [
+      "burst",
+      "impact",
+      "trail"
+    ],
+    "timing_profile": "fast_impact",
+    "negative_constraints": [
+      "长拖尾"
+    ],
+    "candidate_count": 6,
+    "seed": 20260831
+  },
+  "candidate_count": 6,
+  "candidates": [
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c001",
+      "seed": 20260832,
+      "source_prefab": {
+        "case_id": "trains_fx_063_fx_scan_sub",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_scan/eff/Fx_scan_sub.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_064_mpb_mat_27_glow_03.json",
+        "category": "mpb",
+        "control_scope": "material",
+        "material_paths": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat"
+        ],
+        "binding_status": "direct_prefab_renderer_material"
+      },
+      "selection_score": 10.696944,
+      "selection_reasons": [
+        "source_category_match",
+        "human_accept_reference",
+        "human_style_match",
+        "direct_prefab_material_binding"
+      ],
+      "unmatched_conditions": [
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "human_label_context": {
+        "decision": "accept_reference",
+        "style_family": "cartoon",
+        "quality_score": 4,
+        "reviewed_at": "2026-08-31T09:58:54.914652+00:00",
+        "confirmation_mode": "human_corrected_ai_draft"
+      },
+      "evidence": {
+        "representative_frame": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_009_0_900.png",
+        "render_paths": [
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_000_0_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_001_0_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_002_0_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_003_0_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_004_0_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_005_0_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_006_0_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_007_0_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_008_0_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_009_0_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_010_1_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_011_1_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_012_1_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_013_1_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_014_1_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_015_1_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_016_1_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_017_1_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_018_1_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_019_1_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_020_2_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_021_2_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_022_2_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_023_2_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_024_2_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_025_2_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_026_2_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_027_2_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_028_2_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_029_2_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_032_fx_scan_sub/captures/frame_030_3_000.png"
+        ],
+        "auto_eval": {
+          "candidate_id": "source_prefab_032_fx_scan_sub",
+          "frame_count": 31,
+          "hard_reject_reasons": [],
+          "metrics": {
+            "draw_call_count": null,
+            "frame_delta_mean": 9.7e-05,
+            "mean_luminance_peak": 0.020845,
+            "missing_asset_count": 0,
+            "missing_frame_count": 0,
+            "overexposed_ratio_peak": 0.000947,
+            "particle_count_peak": null,
+            "underexposed_ratio_peak": 0.999917,
+            "unity_error_count": 0,
+            "visible_area_ratio_peak": 0.002942
+          },
+          "source_script_fidelity": "no_ignored_script_dependencies",
+          "status": "warn"
+        },
+        "prefab_summary": {
+          "animator_count": 1,
+          "estimated_duration_seconds": 15.289999961853027,
+          "legacy_animation_count": 0,
+          "looping": true,
+          "material_slot_count": 12,
+          "max_particle_count": 4,
+          "missing_material_slot_count": 0,
+          "missing_script_count": 0,
+          "missing_shader_count": 0,
+          "node_count": 19,
+          "particle_renderer_count": 12,
+          "particle_system_count": 12,
+          "playable_director_count": 0,
+          "reasons": [],
+          "renderer_count": 12,
+          "serialized_empty_material_slot_count": 0,
+          "status": "particle_playable"
+        }
+      },
+      "execution_status": "retrieval_proposal_not_yet_composed"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c002",
+      "seed": 20260833,
+      "source_prefab": {
+        "case_id": "trains_fx_167_fx_xianrenzhang_skill_01",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_xianrenzhang/eff/Fx_xianrenzhang_skill_01.prefab",
+        "source_category": [
+          "character"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_020_dissolve_guangquan20",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_020_dissolve_guangquan20.json",
+        "category": "dissolve",
+        "control_scope": "slot_mpb",
+        "material_paths": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/guangquan20.mat"
+        ],
+        "binding_status": "direct_prefab_renderer_material"
+      },
+      "selection_score": 7.567656,
+      "selection_reasons": [
+        "human_accept_reference",
+        "human_style_match",
+        "direct_prefab_material_binding"
+      ],
+      "unmatched_conditions": [
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "human_label_context": {
+        "decision": "accept_reference",
+        "style_family": "cartoon",
+        "quality_score": 4,
+        "reviewed_at": "2026-08-31T10:38:04.542167+00:00",
+        "confirmation_mode": "human_corrected_ai_draft"
+      },
+      "evidence": {
+        "representative_frame": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_007_0_700.png",
+        "render_paths": [
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_000_0_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_001_0_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_002_0_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_003_0_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_004_0_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_005_0_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_006_0_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_007_0_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_008_0_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_009_0_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_010_1_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_011_1_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_012_1_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_013_1_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_014_1_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_015_1_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_016_1_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_017_1_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_018_1_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_019_1_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_020_2_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_021_2_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_022_2_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_023_2_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_024_2_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_025_2_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_026_2_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_027_2_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_028_2_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_029_2_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_090_fx_xianrenzhang_skill_01/captures/frame_030_3_000.png"
+        ],
+        "auto_eval": {
+          "candidate_id": "source_prefab_090_fx_xianrenzhang_skill_01",
+          "frame_count": 31,
+          "hard_reject_reasons": [],
+          "metrics": {
+            "draw_call_count": null,
+            "frame_delta_mean": 0.000918,
+            "mean_luminance_peak": 0.021647,
+            "missing_asset_count": 0,
+            "missing_frame_count": 0,
+            "overexposed_ratio_peak": 2.7e-05,
+            "particle_count_peak": null,
+            "underexposed_ratio_peak": 0.995772,
+            "unity_error_count": 0,
+            "visible_area_ratio_peak": 0.008958
+          },
+          "source_script_fidelity": "no_ignored_script_dependencies",
+          "status": "warn"
+        },
+        "prefab_summary": {
+          "animator_count": 0,
+          "estimated_duration_seconds": 5.0,
+          "legacy_animation_count": 0,
+          "looping": true,
+          "material_slot_count": 7,
+          "max_particle_count": 7,
+          "missing_material_slot_count": 0,
+          "missing_script_count": 0,
+          "missing_shader_count": 0,
+          "node_count": 7,
+          "particle_renderer_count": 7,
+          "particle_system_count": 7,
+          "playable_director_count": 0,
+          "reasons": [],
+          "renderer_count": 7,
+          "serialized_empty_material_slot_count": 2,
+          "status": "particle_playable"
+        }
+      },
+      "execution_status": "retrieval_proposal_not_yet_composed"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c003",
+      "seed": 20260834,
+      "source_prefab": {
+        "case_id": "trains_fx_015_fx_com_hero_show",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_com_hero_show/Fx_com_hero_show.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_024_flow_distortion_mat_jueseshengji_09",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_024_flow_distortion_mat_jueseshengji_09.json",
+        "category": "flow_distortion",
+        "control_scope": "slot_mpb",
+        "material_paths": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_jueseshengji/Mat_jueseshengji_09.mat"
+        ],
+        "binding_status": "direct_prefab_renderer_material"
+      },
+      "selection_score": 5.36768,
+      "selection_reasons": [
+        "source_category_match",
+        "human_accept_reference",
+        "human_style_mismatch",
+        "direct_prefab_material_binding"
+      ],
+      "unmatched_conditions": [
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "human_label_context": {
+        "decision": "accept_reference",
+        "style_family": "stylized",
+        "quality_score": 5,
+        "reviewed_at": "2026-08-29T11:51:49.878719+00:00",
+        "confirmation_mode": "human_corrected_ai_draft"
+      },
+      "evidence": {
+        "representative_frame": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_003_0_300.png",
+        "render_paths": [
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_000_0_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_001_0_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_002_0_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_003_0_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_004_0_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_005_0_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_006_0_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_007_0_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_008_0_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_009_0_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_010_1_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_011_1_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_012_1_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_013_1_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_014_1_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_015_1_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_016_1_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_017_1_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_018_1_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_019_1_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_020_2_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_021_2_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_022_2_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_023_2_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_024_2_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_025_2_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_026_2_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_027_2_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_028_2_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_029_2_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_011_fx_com_hero_show/captures/frame_030_3_000.png"
+        ],
+        "auto_eval": {
+          "candidate_id": "source_prefab_011_fx_com_hero_show",
+          "frame_count": 31,
+          "hard_reject_reasons": [],
+          "metrics": {
+            "draw_call_count": null,
+            "frame_delta_mean": 0.000123,
+            "mean_luminance_peak": 0.02156,
+            "missing_asset_count": 0,
+            "missing_frame_count": 0,
+            "overexposed_ratio_peak": 0.00033,
+            "particle_count_peak": null,
+            "underexposed_ratio_peak": 1.0,
+            "unity_error_count": 0,
+            "visible_area_ratio_peak": 0.00441
+          },
+          "source_script_fidelity": "no_ignored_script_dependencies",
+          "status": "warn"
+        },
+        "prefab_summary": {
+          "animator_count": 0,
+          "estimated_duration_seconds": 5.0,
+          "legacy_animation_count": 0,
+          "looping": true,
+          "material_slot_count": 11,
+          "max_particle_count": 15,
+          "missing_material_slot_count": 0,
+          "missing_script_count": 0,
+          "missing_shader_count": 0,
+          "node_count": 12,
+          "particle_renderer_count": 11,
+          "particle_system_count": 12,
+          "playable_director_count": 0,
+          "reasons": [],
+          "renderer_count": 11,
+          "serialized_empty_material_slot_count": 0,
+          "status": "particle_playable"
+        }
+      },
+      "execution_status": "retrieval_proposal_not_yet_composed"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c004",
+      "seed": 20260835,
+      "source_prefab": {
+        "case_id": "trains_fx_118_fx_aidawang_baozha",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab",
+        "source_category": [
+          "character"
+        ],
+        "effect_family_hint": "explosion"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_055_mpb_magic_orb_4",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_055_mpb_magic_orb_4.json",
+        "category": "mpb",
+        "control_scope": "material",
+        "material_paths": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/magic_orb 4.mat"
+        ],
+        "binding_status": "direct_prefab_renderer_material"
+      },
+      "selection_score": 4.768756,
+      "selection_reasons": [
+        "effect_family_match",
+        "human_partial_reuse",
+        "human_style_mismatch",
+        "direct_prefab_material_binding"
+      ],
+      "unmatched_conditions": [
+        "color_not_yet_scored"
+      ],
+      "human_label_context": {
+        "decision": "partial",
+        "style_family": "stylized",
+        "quality_score": 2,
+        "reviewed_at": "2026-08-31T10:08:02.851352+00:00",
+        "confirmation_mode": "human_corrected_ai_draft"
+      },
+      "evidence": {
+        "representative_frame": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_001_0_100.png",
+        "render_paths": [
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_000_0_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_001_0_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_002_0_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_003_0_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_004_0_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_005_0_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_006_0_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_007_0_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_008_0_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_009_0_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_010_1_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_011_1_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_012_1_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_013_1_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_014_1_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_015_1_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_016_1_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_017_1_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_018_1_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_019_1_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_020_2_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_021_2_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_022_2_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_023_2_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_024_2_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_025_2_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_026_2_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_027_2_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_028_2_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_029_2_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_063_fx_aidawang_baozha/captures/frame_030_3_000.png"
+        ],
+        "auto_eval": {
+          "candidate_id": "source_prefab_063_fx_aidawang_baozha",
+          "frame_count": 31,
+          "hard_reject_reasons": [],
+          "metrics": {
+            "draw_call_count": null,
+            "frame_delta_mean": 0.000382,
+            "mean_luminance_peak": 0.026611,
+            "missing_asset_count": 0,
+            "missing_frame_count": 0,
+            "overexposed_ratio_peak": 0.001406,
+            "particle_count_peak": null,
+            "underexposed_ratio_peak": 1.0,
+            "unity_error_count": 0,
+            "visible_area_ratio_peak": 0.022743
+          },
+          "source_script_fidelity": "no_ignored_script_dependencies",
+          "status": "warn"
+        },
+        "prefab_summary": {
+          "animator_count": 0,
+          "estimated_duration_seconds": 14.199999809265137,
+          "legacy_animation_count": 0,
+          "looping": true,
+          "material_slot_count": 13,
+          "max_particle_count": 15,
+          "missing_material_slot_count": 0,
+          "missing_script_count": 0,
+          "missing_shader_count": 0,
+          "node_count": 13,
+          "particle_renderer_count": 13,
+          "particle_system_count": 13,
+          "playable_director_count": 0,
+          "reasons": [],
+          "renderer_count": 13,
+          "serialized_empty_material_slot_count": 2,
+          "status": "particle_playable"
+        }
+      },
+      "execution_status": "retrieval_proposal_not_yet_composed"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c005",
+      "seed": 20260836,
+      "source_prefab": {
+        "case_id": "trains_fx_059_fx_rollinglog_dt",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rollinglog/eff/Fx_rollinglog_dt.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_064_mpb_mat_27_glow_03.json",
+        "category": "mpb",
+        "control_scope": "material",
+        "material_paths": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/Mat_27_Glow_03.mat"
+        ],
+        "binding_status": "direct_prefab_renderer_material"
+      },
+      "selection_score": 4.366748,
+      "selection_reasons": [
+        "source_category_match",
+        "human_partial_reuse",
+        "direct_prefab_material_binding"
+      ],
+      "unmatched_conditions": [
+        "style_human_label_unknown",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "human_label_context": {
+        "decision": "partial",
+        "style_family": "unknown",
+        "quality_score": 2,
+        "reviewed_at": "2026-08-31T09:57:35.410426+00:00",
+        "confirmation_mode": "human_corrected_ai_draft"
+      },
+      "evidence": {
+        "representative_frame": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_005_0_500.png",
+        "render_paths": [
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_000_0_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_001_0_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_002_0_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_003_0_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_004_0_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_005_0_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_006_0_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_007_0_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_008_0_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_009_0_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_010_1_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_011_1_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_012_1_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_013_1_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_014_1_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_015_1_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_016_1_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_017_1_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_018_1_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_019_1_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_020_2_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_021_2_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_022_2_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_023_2_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_024_2_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_025_2_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_026_2_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_027_2_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_028_2_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_029_2_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_028_fx_rollinglog_dt/captures/frame_030_3_000.png"
+        ],
+        "auto_eval": {
+          "candidate_id": "source_prefab_028_fx_rollinglog_dt",
+          "frame_count": 31,
+          "hard_reject_reasons": [],
+          "metrics": {
+            "draw_call_count": null,
+            "frame_delta_mean": 0.000373,
+            "mean_luminance_peak": 0.02487,
+            "missing_asset_count": 0,
+            "missing_frame_count": 0,
+            "overexposed_ratio_peak": 8e-06,
+            "particle_count_peak": null,
+            "underexposed_ratio_peak": 0.995071,
+            "unity_error_count": 0,
+            "visible_area_ratio_peak": 0.030999
+          },
+          "source_script_fidelity": "no_ignored_script_dependencies",
+          "status": "warn"
+        },
+        "prefab_summary": {
+          "animator_count": 0,
+          "estimated_duration_seconds": 7.25,
+          "legacy_animation_count": 0,
+          "looping": true,
+          "material_slot_count": 15,
+          "max_particle_count": 8,
+          "missing_material_slot_count": 0,
+          "missing_script_count": 0,
+          "missing_shader_count": 0,
+          "node_count": 24,
+          "particle_renderer_count": 15,
+          "particle_system_count": 16,
+          "playable_director_count": 0,
+          "reasons": [],
+          "renderer_count": 15,
+          "serialized_empty_material_slot_count": 0,
+          "status": "particle_playable"
+        }
+      },
+      "execution_status": "retrieval_proposal_not_yet_composed"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c006",
+      "seed": 20260837,
+      "source_prefab": {
+        "case_id": "trains_fx_014_fx_cirrus",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_cirrus/eff/Fx_cirrus.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_066_texture_swap_suishi_1",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_066_texture_swap_suishi_1.json",
+        "category": "texture_swap",
+        "control_scope": "renderer_mpb",
+        "material_paths": [
+          "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/Effect/__Materials/suishi_1.mat"
+        ],
+        "binding_status": "direct_prefab_renderer_material"
+      },
+      "selection_score": 4.13914,
+      "selection_reasons": [
+        "source_category_match",
+        "human_partial_reuse",
+        "direct_prefab_material_binding"
+      ],
+      "unmatched_conditions": [
+        "style_human_label_unknown",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "human_label_context": {
+        "decision": "partial",
+        "style_family": "unknown",
+        "quality_score": 2,
+        "reviewed_at": "2026-08-29T11:51:04.419873+00:00",
+        "confirmation_mode": "human_corrected_ai_draft"
+      },
+      "evidence": {
+        "representative_frame": "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_003_0_300.png",
+        "render_paths": [
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_000_0_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_001_0_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_002_0_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_003_0_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_004_0_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_005_0_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_006_0_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_007_0_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_008_0_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_009_0_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_010_1_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_011_1_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_012_1_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_013_1_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_014_1_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_015_1_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_016_1_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_017_1_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_018_1_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_019_1_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_020_2_000.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_021_2_100.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_022_2_200.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_023_2_300.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_024_2_400.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_025_2_500.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_026_2_600.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_027_2_700.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_028_2_800.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_029_2_900.png",
+          "workspace/data/vfx_generation/runs/trains_prefab_playmode_r005_audit_r3_short_window/candidates/source_prefab_010_fx_cirrus/captures/frame_030_3_000.png"
+        ],
+        "auto_eval": {
+          "candidate_id": "source_prefab_010_fx_cirrus",
+          "frame_count": 31,
+          "hard_reject_reasons": [],
+          "metrics": {
+            "draw_call_count": null,
+            "frame_delta_mean": 0.000467,
+            "mean_luminance_peak": 0.025743,
+            "missing_asset_count": 0,
+            "missing_frame_count": 0,
+            "overexposed_ratio_peak": 1.2e-05,
+            "particle_count_peak": null,
+            "underexposed_ratio_peak": 1.0,
+            "unity_error_count": 0,
+            "visible_area_ratio_peak": 0.019425
+          },
+          "source_script_fidelity": "no_ignored_script_dependencies",
+          "status": "warn"
+        },
+        "prefab_summary": {
+          "animator_count": 0,
+          "estimated_duration_seconds": 5.0,
+          "legacy_animation_count": 0,
+          "looping": true,
+          "material_slot_count": 4,
+          "max_particle_count": 7,
+          "missing_material_slot_count": 0,
+          "missing_script_count": 0,
+          "missing_shader_count": 0,
+          "node_count": 6,
+          "particle_renderer_count": 4,
+          "particle_system_count": 5,
+          "playable_director_count": 0,
+          "reasons": [],
+          "renderer_count": 4,
+          "serialized_empty_material_slot_count": 0,
+          "status": "particle_playable"
+        }
+      },
+      "execution_status": "retrieval_proposal_not_yet_composed"
+    }
+  ],
+  "human_aesthetic_labels_used": 41,
+  "human_aesthetic_labels_selected": 6,
+  "human_label_overlay_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/reviews/prefab_human_review_r009_audit_r3_webgl/human_label_overlays.jsonl",
+  "status": "retrieval_human_label_assisted",
+  "limitations": [
+    "Candidates use direct Prefab-to-material bindings and are not yet composed or re-executed in Unity.",
+    "Color conditions remain unscored until color semantics are independently annotated.",
+    "Selection score is a retrieval heuristic, not final aesthetic acceptance.",
+    "Human style and quality labels affect only matching reviewed Prefabs; unreviewed and technical-exclusion Prefabs do not receive inferred quality labels."
+  ]
+}

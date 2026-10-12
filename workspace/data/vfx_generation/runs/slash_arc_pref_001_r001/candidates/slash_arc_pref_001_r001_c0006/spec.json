@@ -1,0 +1,205 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "slash",
+  "effect_type": "slash_arc",
+  "prompt": "stylized top-down slash core arc with clear attack direction",
+  "negative_prompt": "closed ring, symmetric UI icon, rectangular billboard, reused V9 arc",
+  "generation": {
+    "run_id": "slash_arc_pref_001_r001",
+    "candidate_id": "slash_arc_pref_001_r001_c0006",
+    "seed": 20310692,
+    "generator": "slash_arc_generator",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "adapter": {
+    "name": "slash.adapter",
+    "version": "0.1.0",
+    "schema_ref": "schemas/adapters/slash_adapter.schema.json",
+    "generator_family": "curve_mesh",
+    "topology": {
+      "arc_topology": "hooked_slash",
+      "attack_direction": "left_to_right",
+      "control_point_count": 6,
+      "asymmetry": 0.2614
+    },
+    "shape": {
+      "arc_length": 3.7395,
+      "arc_width": 0.7859,
+      "width_profile": "center_heavy",
+      "tip_shape": "torn",
+      "curvature": 0.5074,
+      "edge_breakup": 0.3571,
+      "residual_flow": "opposite_attack",
+      "control_points": [
+        [
+          -2.013,
+          0.0,
+          -0.2496
+        ],
+        [
+          -1.2406,
+          0.0,
+          0.3098
+        ],
+        [
+          -0.2707,
+          0.0,
+          0.109
+        ],
+        [
+          0.4091,
+          0.0,
+          0.1189
+        ],
+        [
+          1.1987,
+          0.0,
+          0.5093
+        ],
+        [
+          1.7598,
+          0.0,
+          0.0116
+        ]
+      ],
+      "width_samples": [
+        [
+          0.0,
+          0.015
+        ],
+        [
+          0.18,
+          0.6842
+        ],
+        [
+          0.38,
+          0.9571
+        ],
+        [
+          0.58,
+          0.9703
+        ],
+        [
+          0.78,
+          0.7777
+        ],
+        [
+          1.0,
+          0.015
+        ]
+      ]
+    },
+    "evaluation_metrics": [
+      "sharpness",
+      "attack_direction",
+      "width_profile",
+      "tip_quality",
+      "silhouette_readability"
+    ]
+  },
+  "layers": [
+    {
+      "role": "core_blade",
+      "status": "active",
+      "topology": "curve_mesh",
+      "shape_parameters": {
+        "arc_length": 3.7395,
+        "arc_width": 0.7859,
+        "width_profile": "center_heavy",
+        "tip_shape": "torn",
+        "curvature": 0.5074,
+        "edge_breakup": 0.3571,
+        "residual_flow": "opposite_attack",
+        "control_points": [
+          [
+            -2.013,
+            0.0,
+            -0.2496
+          ],
+          [
+            -1.2406,
+            0.0,
+            0.3098
+          ],
+          [
+            -0.2707,
+            0.0,
+            0.109
+          ],
+          [
+            0.4091,
+            0.0,
+            0.1189
+          ],
+          [
+            1.1987,
+            0.0,
+            0.5093
+          ],
+          [
+            1.7598,
+            0.0,
+            0.0116
+          ]
+        ],
+        "width_samples": [
+          [
+            0.0,
+            0.015
+          ],
+          [
+            0.18,
+            0.6842
+          ],
+          [
+            0.38,
+            0.9571
+          ],
+          [
+            0.58,
+            0.9703
+          ],
+          [
+            0.78,
+            0.7777
+          ],
+          [
+            1.0,
+            0.015
+          ]
+        ]
+      },
+      "material_parameters": {
+        "base_color": "blue_violet",
+        "alpha_power": 1.5558,
+        "edge_emission": 1.9157,
+        "dissolve_bias": 0.3306
+      },
+      "timing_parameters": {
+        "appear_time": 0.3461,
+        "peak_time": 0.5134,
+        "fade_time": 0.9064
+      },
+      "constraints": [
+        "core_blade_only",
+        "no_support_arc",
+        "no_hit_accent",
+        "no_scene_anchor"
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/UnityVFX/EffectDemo6.0",
+    "scene": "Assets/Scenes/SampleScene.unity",
+    "camera": "VFXCaptureCamera",
+    "resolution": "1280x720",
+    "time_points_seconds": [
+      0.3,
+      0.5,
+      0.6,
+      0.75,
+      0.9
+    ]
+  }
+}

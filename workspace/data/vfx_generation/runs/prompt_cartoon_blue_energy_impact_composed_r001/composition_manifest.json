@@ -1,0 +1,288 @@
+{
+  "schema_version": "prompt_composition_manifest.v1",
+  "created_at": "2026-09-07T04:28:30.393145+00:00",
+  "run_id": "prompt_cartoon_blue_energy_impact_composed_r001",
+  "retrieval_manifest_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_retrieval_r002/retrieval_manifest.json",
+  "prompt_condition": {
+    "schema_version": "vfx_prompt_condition.v1",
+    "prompt_id": "prompt_cartoon_blue_energy_impact_001",
+    "text": "卡通蓝色能量冲击，快速爆发，不要长拖尾",
+    "style_family": "cartoon",
+    "color_keywords": [
+      "blue"
+    ],
+    "effect_families": [
+      "explosion"
+    ],
+    "source_categories": [
+      "battle"
+    ],
+    "motion_keywords": [
+      "burst",
+      "impact",
+      "trail"
+    ],
+    "timing_profile": "fast_impact",
+    "negative_constraints": [
+      "长拖尾"
+    ],
+    "candidate_count": 6,
+    "seed": 20260828
+  },
+  "candidate_count": 6,
+  "technical_pass_count": 6,
+  "visible_count": 5,
+  "near_blank_count": 1,
+  "human_aesthetic_labels_used": 0,
+  "prompt_conditions_unscored": [
+    "color_not_yet_scored",
+    "effect_family_not_matched",
+    "style_requires_human_labels"
+  ],
+  "contact_sheet_paths": [
+    "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/contact_sheet.jpg"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c001",
+      "source_prefab": {
+        "case_id": "trains_fx_024_fx_conecold",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_conecold/eff/Fx_conecold.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_036_emission_alpha_mat_jinzita_02",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_036_emission_alpha_mat_jinzita_02.json",
+        "category": "emission_alpha",
+        "control_scope": "renderer_mpb"
+      },
+      "execution_status": "technical_pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_status": "visible",
+      "max_visible_area_ratio": 0.08587646,
+      "mean_visible_area_ratio": 0.04483136,
+      "image_feature_eligible": true,
+      "prompt_conditions_unscored": [
+        "style_requires_human_labels",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "resource_clean": true,
+      "representative_frame": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r001\\candidates\\prompt_cartoon_blue_energy_impact_001_c001\\frames\\frame_000_0_000.png",
+      "execution_result_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c001/execution_result.json",
+      "material_timeline_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c001/material_timeline.json",
+      "source_script_fidelity": "controlled_material_trajectory_executor"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c002",
+      "source_prefab": {
+        "case_id": "trains_fx_259_fx_tip_common_circle",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/Bundles/Battle/Prefab/Effect/BOSS/Fx_Tip_Common_Circle.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_037_emission_alpha_suanyedi",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_037_emission_alpha_suanyedi.json",
+        "category": "emission_alpha",
+        "control_scope": "renderer_mpb"
+      },
+      "execution_status": "near_blank",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_status": "near_blank",
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "image_feature_eligible": false,
+      "prompt_conditions_unscored": [
+        "style_requires_human_labels",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "resource_clean": true,
+      "representative_frame": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r001\\candidates\\prompt_cartoon_blue_energy_impact_001_c002\\frames\\frame_000_0_000.png",
+      "execution_result_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c002/execution_result.json",
+      "material_timeline_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c002/material_timeline.json",
+      "source_script_fidelity": "controlled_material_trajectory_executor"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c003",
+      "source_prefab": {
+        "case_id": "trains_fx_051_fx_player_bullet_1_hit",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_player_bullet_1_hit/Fx_player_bullet_1_hit.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_038_emission_alpha_mat_gallop_loop_glow",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_038_emission_alpha_mat_gallop_loop_glow.json",
+        "category": "emission_alpha",
+        "control_scope": "renderer_mpb"
+      },
+      "execution_status": "technical_pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_status": "visible",
+      "max_visible_area_ratio": 0.01561356,
+      "mean_visible_area_ratio": 0.0022805,
+      "image_feature_eligible": true,
+      "prompt_conditions_unscored": [
+        "style_requires_human_labels",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "resource_clean": true,
+      "representative_frame": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r001\\candidates\\prompt_cartoon_blue_energy_impact_001_c003\\frames\\frame_001_0_080.png",
+      "execution_result_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c003/execution_result.json",
+      "material_timeline_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c003/material_timeline.json",
+      "source_script_fidelity": "controlled_material_trajectory_executor"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c004",
+      "source_prefab": {
+        "case_id": "trains_fx_058_fx_rayline_target",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/eff/Fx_rayline_target.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_039_emission_alpha_mat_kun_13",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_039_emission_alpha_mat_kun_13.json",
+        "category": "emission_alpha",
+        "control_scope": "material"
+      },
+      "execution_status": "technical_pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_status": "visible",
+      "max_visible_area_ratio": 0.05729675,
+      "mean_visible_area_ratio": 0.03850729,
+      "image_feature_eligible": true,
+      "prompt_conditions_unscored": [
+        "style_requires_human_labels",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "resource_clean": true,
+      "representative_frame": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r001\\candidates\\prompt_cartoon_blue_energy_impact_001_c004\\frames\\frame_000_0_000.png",
+      "execution_result_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c004/execution_result.json",
+      "material_timeline_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c004/material_timeline.json",
+      "source_script_fidelity": "controlled_material_trajectory_executor"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c005",
+      "source_prefab": {
+        "case_id": "trains_fx_057_fx_rayline_center",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/eff/Fx_rayline_center.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_040_emission_alpha_mat_jianxian_03",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_040_emission_alpha_mat_jianxian_03.json",
+        "category": "emission_alpha",
+        "control_scope": "material"
+      },
+      "execution_status": "technical_pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_status": "visible",
+      "max_visible_area_ratio": 0.02455139,
+      "mean_visible_area_ratio": 0.0203039,
+      "image_feature_eligible": true,
+      "prompt_conditions_unscored": [
+        "style_requires_human_labels",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "resource_clean": true,
+      "representative_frame": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r001\\candidates\\prompt_cartoon_blue_energy_impact_001_c005\\frames\\frame_000_0_000.png",
+      "execution_result_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c005/execution_result.json",
+      "material_timeline_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c005/material_timeline.json",
+      "source_script_fidelity": "controlled_material_trajectory_executor"
+    },
+    {
+      "candidate_id": "prompt_cartoon_blue_energy_impact_001_c006",
+      "source_prefab": {
+        "case_id": "trains_fx_056_fx_rayline_body",
+        "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_rayline/eff/Fx_rayline_body.prefab",
+        "source_category": [
+          "battle"
+        ],
+        "effect_family_hint": "unclassified"
+      },
+      "material_trajectory": {
+        "trajectory_id": "mtc_041_emission_alpha_mat_qiangkouhuo_02",
+        "spec_path": "workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_041_emission_alpha_mat_qiangkouhuo_02.json",
+        "category": "emission_alpha",
+        "control_scope": "material"
+      },
+      "execution_status": "technical_pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "visual_status": "visible",
+      "max_visible_area_ratio": 0.0390625,
+      "mean_visible_area_ratio": 0.03267045,
+      "image_feature_eligible": true,
+      "prompt_conditions_unscored": [
+        "style_requires_human_labels",
+        "color_not_yet_scored",
+        "effect_family_not_matched"
+      ],
+      "resource_clean": true,
+      "representative_frame": "E:\\Unity特效人工智能学习\\workspace\\data\\vfx_generation\\runs\\prompt_cartoon_blue_energy_impact_composed_r001\\candidates\\prompt_cartoon_blue_energy_impact_001_c006\\frames\\frame_000_0_000.png",
+      "execution_result_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c006/execution_result.json",
+      "material_timeline_path": "workspace/data/vfx_generation/runs/prompt_cartoon_blue_energy_impact_composed_r001/candidates/prompt_cartoon_blue_energy_impact_001_c006/material_timeline.json",
+      "source_script_fidelity": "controlled_material_trajectory_executor"
+    }
+  ],
+  "status": "technical_pass_prompt_unscored"
+}

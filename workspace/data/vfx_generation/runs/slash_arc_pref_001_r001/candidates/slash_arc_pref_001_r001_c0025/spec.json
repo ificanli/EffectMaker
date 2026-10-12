@@ -1,0 +1,195 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "slash",
+  "effect_type": "slash_arc",
+  "prompt": "stylized top-down slash core arc with clear attack direction",
+  "negative_prompt": "closed ring, symmetric UI icon, rectangular billboard, reused V9 arc",
+  "generation": {
+    "run_id": "slash_arc_pref_001_r001",
+    "candidate_id": "slash_arc_pref_001_r001_c0025",
+    "seed": 20500179,
+    "generator": "slash_arc_generator",
+    "generator_version": "0.1.0",
+    "parent_candidate_id": null
+  },
+  "adapter": {
+    "name": "slash.adapter",
+    "version": "0.1.0",
+    "schema_ref": "schemas/adapters/slash_adapter.schema.json",
+    "generator_family": "curve_mesh",
+    "topology": {
+      "arc_topology": "single_sweep",
+      "attack_direction": "diagonal",
+      "control_point_count": 5,
+      "asymmetry": 0.8396
+    },
+    "shape": {
+      "arc_length": 4.0388,
+      "arc_width": 0.7126,
+      "width_profile": "root_heavy",
+      "tip_shape": "needle",
+      "curvature": -0.0449,
+      "edge_breakup": 0.0317,
+      "residual_flow": "along_attack",
+      "control_points": [
+        [
+          -1.4411,
+          0.0,
+          -0.902
+        ],
+        [
+          -0.7975,
+          0.0,
+          -0.4263
+        ],
+        [
+          0.0438,
+          0.0,
+          -0.2291
+        ],
+        [
+          0.8176,
+          0.0,
+          0.5737
+        ],
+        [
+          1.5262,
+          0.0,
+          0.8716
+        ]
+      ],
+      "width_samples": [
+        [
+          0.0,
+          0.7722
+        ],
+        [
+          0.18,
+          0.8399
+        ],
+        [
+          0.38,
+          0.8036
+        ],
+        [
+          0.58,
+          0.7068
+        ],
+        [
+          0.78,
+          0.4552
+        ],
+        [
+          1.0,
+          0.015
+        ]
+      ]
+    },
+    "evaluation_metrics": [
+      "sharpness",
+      "attack_direction",
+      "width_profile",
+      "tip_quality",
+      "silhouette_readability"
+    ]
+  },
+  "layers": [
+    {
+      "role": "core_blade",
+      "status": "active",
+      "topology": "curve_mesh",
+      "shape_parameters": {
+        "arc_length": 4.0388,
+        "arc_width": 0.7126,
+        "width_profile": "root_heavy",
+        "tip_shape": "needle",
+        "curvature": -0.0449,
+        "edge_breakup": 0.0317,
+        "residual_flow": "along_attack",
+        "control_points": [
+          [
+            -1.4411,
+            0.0,
+            -0.902
+          ],
+          [
+            -0.7975,
+            0.0,
+            -0.4263
+          ],
+          [
+            0.0438,
+            0.0,
+            -0.2291
+          ],
+          [
+            0.8176,
+            0.0,
+            0.5737
+          ],
+          [
+            1.5262,
+            0.0,
+            0.8716
+          ]
+        ],
+        "width_samples": [
+          [
+            0.0,
+            0.7722
+          ],
+          [
+            0.18,
+            0.8399
+          ],
+          [
+            0.38,
+            0.8036
+          ],
+          [
+            0.58,
+            0.7068
+          ],
+          [
+            0.78,
+            0.4552
+          ],
+          [
+            1.0,
+            0.015
+          ]
+        ]
+      },
+      "material_parameters": {
+        "base_color": "cyan_blue",
+        "alpha_power": 1.3367,
+        "edge_emission": 1.3409,
+        "dissolve_bias": 0.4847
+      },
+      "timing_parameters": {
+        "appear_time": 0.3569,
+        "peak_time": 0.6276,
+        "fade_time": 0.9149
+      },
+      "constraints": [
+        "core_blade_only",
+        "no_support_arc",
+        "no_hit_accent",
+        "no_scene_anchor"
+      ]
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/UnityVFX/EffectDemo6.0",
+    "scene": "Assets/Scenes/SampleScene.unity",
+    "camera": "VFXCaptureCamera",
+    "resolution": "1280x720",
+    "time_points_seconds": [
+      0.3,
+      0.5,
+      0.6,
+      0.75,
+      0.9
+    ]
+  }
+}
