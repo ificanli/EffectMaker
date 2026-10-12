@@ -1,0 +1,36 @@
+{
+  "schema_version": "vfxspec.v1",
+  "effect_family": "technical_probe",
+  "effect_type": "runtime_material_state_probe",
+  "prompt": "Capture controlled runtime material state changes.",
+  "generation": {
+    "run_id": "material_state_probe_r001",
+    "candidate_id": "material_state_probe",
+    "seed": 0,
+    "generator": "effectdemo_material_state_probe",
+    "generator_version": "1.0.0",
+    "parent_candidate_id": null
+  },
+  "layers": [
+    {
+      "role": "material_probe",
+      "status": "technical_validation",
+      "shape_parameters": {
+        "source_prefab_path": "__effectdemo_material_state_probe__"
+      }
+    }
+  ],
+  "render_plan": {
+    "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+    "scene": "MaterialStateProbeScene",
+    "camera": "MaterialStateProbeCamera",
+    "resolution": [640, 360],
+    "sampling_mode": "adaptive_runtime",
+    "material_state_capture": {
+      "required": true,
+      "timeline_path": "candidates/material_state_probe/material_timeline.json",
+      "source_script_fidelity": "source_scripts_captured",
+      "ignored_script_dependency_count": 0
+    }
+  }
+}

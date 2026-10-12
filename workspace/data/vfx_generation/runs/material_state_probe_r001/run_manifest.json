@@ -1,0 +1,273 @@
+{
+  "schema_version": "vfx_run_manifest.v1",
+  "run_id": "material_state_probe_r001",
+  "parent_beads_id": "vfx-2df.18.11",
+  "prompt_path": "prompt.md",
+  "generator_version": "vfx_source_render.v1",
+  "created_at": "2026-08-28T10:04:07.009662+00:00",
+  "candidate_root_path": "candidates",
+  "candidate_count": 1,
+  "candidate_status_counts": {
+    "pass": 1
+  },
+  "frame_summary": {
+    "valid_frame_count": 11,
+    "missing_frame_count": 0
+  },
+  "material_state_summary": {
+    "ready_timeline_count": 1,
+    "dynamic_candidate_count": 1,
+    "delta_count": 30
+  },
+  "render_time_points_seconds": [],
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "scene": "MaterialStateProbeScene",
+  "camera": "MaterialStateProbeCamera",
+  "resolution": [
+    640,
+    360
+  ],
+  "verify": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "passed"
+  },
+  "console": {
+    "error_count": 0,
+    "warning_count": 0,
+    "last_error": null,
+    "status": "clean"
+  },
+  "auto_eval_path": "auto_eval.jsonl",
+  "feedback_path": "feedback.jsonl",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg"
+  ],
+  "candidates": [
+    {
+      "discovery_index": 1,
+      "candidate_id": "material_state_probe",
+      "seed": 0,
+      "spec_path": "candidates/material_state_probe/spec.json",
+      "render_manifest_path": "candidates/material_state_probe/capture_manifest.json",
+      "material_timeline_path": "candidates/material_state_probe/material_timeline.json",
+      "material_timeline_status": "ready",
+      "material_state_summary": {
+        "frame_count": 11,
+        "delta_count": 30,
+        "changed_frame_count": 9,
+        "has_dynamic_material_state": true,
+        "key_material_change_times": [
+          0.10000000149011612,
+          0.20000000298023224,
+          0.30000001192092896,
+          0.4000000059604645,
+          0.5,
+          0.6000000238418579,
+          0.699999988079071,
+          0.800000011920929,
+          0.8999999761581421
+        ],
+        "source_script_fidelity": "source_scripts_captured",
+        "ignored_script_dependency_count": 0
+      },
+      "capture_root": "candidates/material_state_probe/captures",
+      "spec_summary": {
+        "effect_family": "technical_probe",
+        "effect_type": "runtime_material_state_probe",
+        "generator": "effectdemo_material_state_probe",
+        "generator_version": "1.0.0",
+        "parent_candidate_id": null
+      },
+      "render_plan": {
+        "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+        "scene": "MaterialStateProbeScene",
+        "camera": "MaterialStateProbeCamera",
+        "resolution": [
+          640,
+          360
+        ],
+        "time_points_seconds": []
+      },
+      "render_context": {
+        "scene": "MaterialStateProbeScene",
+        "camera": "MaterialStateProbeCamera",
+        "resolution": [
+          640,
+          360
+        ],
+        "editor_status": "play_mode_runtime",
+        "play_requested": true
+      },
+      "frames": [
+        {
+          "requested_time_seconds": 0.0,
+          "capture_time_seconds": 0.0,
+          "path": "frame_000_0_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 0,
+          "file_size": 33094
+        },
+        {
+          "requested_time_seconds": 0.10000000149011612,
+          "capture_time_seconds": 0.10000000149011612,
+          "path": "frame_001_0_100.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 1,
+          "file_size": 36088
+        },
+        {
+          "requested_time_seconds": 0.20000000298023224,
+          "capture_time_seconds": 0.20000000298023224,
+          "path": "frame_002_0_200.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 2,
+          "file_size": 34583
+        },
+        {
+          "requested_time_seconds": 0.30000001192092896,
+          "capture_time_seconds": 0.30000001192092896,
+          "path": "frame_003_0_300.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 3,
+          "file_size": 31806
+        },
+        {
+          "requested_time_seconds": 0.4000000059604645,
+          "capture_time_seconds": 0.4000000059604645,
+          "path": "frame_004_0_400.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 4,
+          "file_size": 28584
+        },
+        {
+          "requested_time_seconds": 0.5,
+          "capture_time_seconds": 0.5,
+          "path": "frame_005_0_500.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 5,
+          "file_size": 25220
+        },
+        {
+          "requested_time_seconds": 0.6000000238418579,
+          "capture_time_seconds": 0.6000000238418579,
+          "path": "frame_006_0_600.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 6,
+          "file_size": 22032
+        },
+        {
+          "requested_time_seconds": 0.699999988079071,
+          "capture_time_seconds": 0.699999988079071,
+          "path": "frame_007_0_700.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 7,
+          "file_size": 18896
+        },
+        {
+          "requested_time_seconds": 0.800000011920929,
+          "capture_time_seconds": 0.800000011920929,
+          "path": "frame_008_0_800.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 8,
+          "file_size": 16485
+        },
+        {
+          "requested_time_seconds": 0.8999999761581421,
+          "capture_time_seconds": 0.8999999761581421,
+          "path": "frame_009_0_900.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 9,
+          "file_size": 13589
+        },
+        {
+          "requested_time_seconds": 1.0,
+          "capture_time_seconds": 1.0,
+          "path": "frame_010_1_000.png",
+          "valid": true,
+          "error": "",
+          "material_timeline_frame_index": 10,
+          "file_size": 13763
+        }
+      ],
+      "frame_count": 11,
+      "valid_frame_count": 11,
+      "missing_frame_count": 0,
+      "render_status": "ready",
+      "auto_eval": {
+        "status": "pass",
+        "rank_hint": 19.66,
+        "hard_reject_reasons": [],
+        "metrics": {
+          "unity_error_count": 0,
+          "missing_asset_count": 0,
+          "missing_frame_count": 0,
+          "visible_area_ratio_peak": 0.184076,
+          "mean_luminance_peak": 0.11714,
+          "overexposed_ratio_peak": 0.0,
+          "underexposed_ratio_peak": 0.96309,
+          "frame_delta_mean": 0.008579,
+          "particle_count_peak": null,
+          "draw_call_count": null
+        },
+        "candidate_score": {
+          "schema_version": "candidate_score.v1",
+          "effect_family": "technical_probe",
+          "provenance": {
+            "render_scores": "render_metrics",
+            "specialized_scores": "spec_parameters",
+            "final_visual_acceptance": false
+          },
+          "common_scores": {
+            "readability": 100.0,
+            "timing": 100.0,
+            "material": 100.0,
+            "camera_readability": 100.0,
+            "performance": null,
+            "layer_separation": null,
+            "spatial_anchor": null
+          },
+          "specialized_scores": {},
+          "spec_prior_score": null,
+          "render_score": 100.0,
+          "overall_score": 100.0,
+          "unscored_dimensions": [
+            "performance",
+            "layer_separation",
+            "spatial_anchor"
+          ],
+          "notes": [
+            "Specialized scores are parameter priors, not image understanding.",
+            "Composite screenshots cannot establish layer separation without isolated renders."
+          ]
+        },
+        "notes": null
+      },
+      "contact_sheet_page": 1,
+      "contact_sheet_row": 1
+    }
+  ],
+  "evaluation_profile": "source_vfx_review",
+  "capture_mode": "play_mode_runtime",
+  "sampling_mode": "adaptive_runtime",
+  "sampling_plan": {
+    "target_intervals": 10,
+    "min_interval_seconds": 0.02,
+    "max_interval_seconds": 0.1,
+    "max_duration_seconds": 1.0,
+    "include_zero": true,
+    "duration_sources": [
+      "fallback_one_second"
+    ]
+  }
+}

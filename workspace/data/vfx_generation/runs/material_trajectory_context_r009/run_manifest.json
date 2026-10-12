@@ -1,0 +1,83 @@
+{
+  "schema_version": "material_trajectory_execution_manifest.v1",
+  "created_at": "2026-08-29T16:05:24.747211+00:00",
+  "run_id": "material_trajectory_context_r009",
+  "execution_mode": "selected",
+  "curriculum_root": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "execution_project": "E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoWeb2022R002",
+  "execution_uses_isolated_staging": true,
+  "unity_version": "2022.3.16f1c1",
+  "render_pipeline": "URP 14.0.9",
+  "capture_sync": "trajectory_apply_at_late_update -> material_snapshot -> camera_render",
+  "spec_count": 1,
+  "pass_count": 1,
+  "fail_count": 0,
+  "valid_frame_count": 11,
+  "frame_count": 11,
+  "category_counts": {
+    "emission_alpha": 1
+  },
+  "scope_counts": {
+    "slot_mpb": 1
+  },
+  "curve_counts": {
+    "linear": 1
+  },
+  "actual_signal_counts": {
+    "material_property_changed": 1
+  },
+  "event_counts": {
+    "keyword": 0,
+    "material_replace": 0,
+    "texture_swap": 0
+  },
+  "schema_error_count": 0,
+  "schema_errors": [],
+  "resource_audit": {
+    "candidate_leak_count": 0,
+    "candidate_leaks": [],
+    "run_resource_audit_path": "run_resource_audit.json",
+    "run_render_texture_live": 0,
+    "clean": true
+  },
+  "visual_evidence": {
+    "status": "partial",
+    "visible_area_threshold": 0.001,
+    "visible_candidate_count": 0,
+    "near_blank_candidate_count": 1,
+    "near_blank_candidate_ids": [
+      "mtc_045_emission_alpha_mat_ui_propitem_glow_1"
+    ],
+    "image_training_eligible_count": 0,
+    "policy": "near_blank candidates remain material-state valid but are excluded from image-conditioned training"
+  },
+  "status": "pass",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg"
+  ],
+  "candidates": [
+    {
+      "trajectory_id": "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_wupin_gs/FX_UI_PropItem.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_ui_geometry",
+      "result_path": "candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/material_timeline.json"
+    }
+  ]
+}

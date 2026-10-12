@@ -1,0 +1,49 @@
+{
+    "schema_version": "material_trajectory_execution_result.v1",
+    "created_at": "2026-08-28T11:51:27.5026164Z",
+    "trajectory_id": "mtc_013_dissolve_mat_xingzhe_glow",
+    "curriculum_id": "material_trajectory_curriculum_r001",
+    "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r001/specs/mtc_013_dissolve_mat_xingzhe_glow.json",
+    "category": "dissolve",
+    "label": "positive",
+    "control_scope": "material",
+    "status": "error",
+    "duration_seconds": 1.0,
+    "sample_interval_seconds": 0.0,
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/mat/Mat_xingzhe_glow.mat",
+    "shader_name": "Common/ColorDefault",
+    "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_error_recovery_r001/candidates/mtc_013_dissolve_mat_xingzhe_glow/material_timeline.json",
+    "frames": [],
+    "valid_frame_count": 0,
+    "expected_signals": [
+        "material_property_changed",
+        "dissolve_parameter_changed"
+    ],
+    "actual_signals": [],
+    "raw_timeline_signals": [],
+    "missing_signals": [
+        "material_property_changed",
+        "dissolve_parameter_changed"
+    ],
+    "unexpected_signals": [],
+    "incidental_timeline_signals": [],
+    "curves_executed": [
+        "ease_in"
+    ],
+    "parameter_track_count": 1,
+    "keyword_event_count": 0,
+    "texture_swap_event_count": 0,
+    "material_replace_event_count": 0,
+    "negative_mutation_executed": false,
+    "invariant_errors": [],
+    "resource_audit": {
+        "runtime_materials_created": 1,
+        "runtime_materials_destroyed": 1,
+        "runtime_materials_live": 0,
+        "runtime_textures_created": 0,
+        "runtime_textures_destroyed": 0,
+        "runtime_textures_live": 0,
+        "destruction_mode": "UnityEngine.Object.Destroy completed before result write"
+    },
+    "error": "InvalidOperationException: Material Mat_xingzhe_glow [MaterialTrajectoryRuntime] does not expose property _UseUIAlphaClip."
+}

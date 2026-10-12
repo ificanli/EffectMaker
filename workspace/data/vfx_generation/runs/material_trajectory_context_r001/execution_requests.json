@@ -1,0 +1,569 @@
+{
+  "schema_version": "effectdemo_material_trajectory_requests.v1",
+  "created_at": "2026-08-29T15:09:16.765995+00:00",
+  "run_id": "material_trajectory_context_r001",
+  "execution_mode": "selected",
+  "curriculum_root": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "execution_project": "E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoWeb2022R002",
+  "context_renderer_map_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/context_renderers/material_trajectory_context_map_r001.json",
+  "context_renderer_count": 26,
+  "width": 512,
+  "height": 512,
+  "target_intervals": 10,
+  "run_resource_audit_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/run_resource_audit.json",
+  "selection": {
+    "count": 28,
+    "trajectory_ids": [
+      "mtc_003_dissolve_mat_circlecut_2",
+      "mtc_008_dissolve_mat_xingzhe_wenli4",
+      "mtc_010_dissolve_mat_jianxian_15",
+      "mtc_012_dissolve_mat_gallop_loop_wenli",
+      "mtc_013_dissolve_mat_xingzhe_glow",
+      "mtc_014_dissolve_mat_leiji_06",
+      "mtc_021_flow_distortion_mat_jinmianju_04",
+      "mtc_027_flow_distortion_mat_xingzhe_daoguang",
+      "mtc_030_flow_distortion_mat_27_glow_02",
+      "mtc_032_flow_distortion_mat_xiaoming_04",
+      "mtc_034_flow_distortion_mat_nuge_noise_1",
+      "mtc_037_emission_alpha_suanyedi",
+      "mtc_038_emission_alpha_mat_gallop_loop_glow",
+      "mtc_041_emission_alpha_mat_qiangkouhuo_02",
+      "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "mtc_046_emission_alpha_mat_jk_03",
+      "mtc_054_mpb_mat_kapaifenwei_02",
+      "mtc_056_mpb_mat_xingzhe_fire1",
+      "mtc_058_mpb_dianguang",
+      "mtc_059_mpb_mat_aidawang_01",
+      "mtc_061_mpb_mat_tiebijiangjun_keji1",
+      "mtc_062_mpb_mat_commondie_02",
+      "mtc_064_mpb_mat_27_glow_03",
+      "mtc_067_texture_swap_mat_changji_noise_03",
+      "mtc_093_negative_guangyun8",
+      "mtc_094_negative_mat_xingzhe_glow1",
+      "mtc_097_negative_mat_tiebijiangjun_dilie_1",
+      "mtc_100_negative_suanyebowen1"
+    ],
+    "category_counts": {
+      "dissolve": 6,
+      "emission_alpha": 5,
+      "flow_distortion": 5,
+      "mpb": 7,
+      "negative": 4,
+      "texture_swap": 1
+    }
+  },
+  "requests": [
+    {
+      "trajectory_id": "mtc_003_dissolve_mat_circlecut_2",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_003_dissolve_mat_circlecut_2.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_003_dissolve_mat_circlecut_2/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_003_dissolve_mat_circlecut_2/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_003_dissolve_mat_circlecut_2/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_circlecut/eff/Fx_circlecut.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_008_dissolve_mat_xingzhe_wenli4",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_008_dissolve_mat_xingzhe_wenli4.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_008_dissolve_mat_xingzhe_wenli4/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_008_dissolve_mat_xingzhe_wenli4/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_008_dissolve_mat_xingzhe_wenli4/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_luogun.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_010_dissolve_mat_jianxian_15",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_010_dissolve_mat_jianxian_15.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_010_dissolve_mat_jianxian_15/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_010_dissolve_mat_jianxian_15/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_010_dissolve_mat_jianxian_15/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_SS_jianxan/eff/Fx_jianxian_glow.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_012_dissolve_mat_gallop_loop_wenli",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_012_dissolve_mat_gallop_loop_wenli.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_012_dissolve_mat_gallop_loop_wenli/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_012_dissolve_mat_gallop_loop_wenli/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_012_dissolve_mat_gallop_loop_wenli/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_train_gallop/Fx_train_gallop_loop.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_013_dissolve_mat_xingzhe_glow",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_013_dissolve_mat_xingzhe_glow.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_013_dissolve_mat_xingzhe_glow/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_013_dissolve_mat_xingzhe_glow/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_013_dissolve_mat_xingzhe_glow/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_guangleng_hit/Fx_guangleng_hit.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_014_dissolve_mat_leiji_06",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_014_dissolve_mat_leiji_06.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_014_dissolve_mat_leiji_06/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_014_dissolve_mat_leiji_06/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_014_dissolve_mat_leiji_06/execution_result.json",
+      "prefab_path": null,
+      "context_renderer_status": "no_prefab_reference",
+      "context_renderer_reason": "material_guid_not_referenced_by_imported_prefab",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_021_flow_distortion_mat_jinmianju_04",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_021_flow_distortion_mat_jinmianju_04.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_021_flow_distortion_mat_jinmianju_04/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_021_flow_distortion_mat_jinmianju_04/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_021_flow_distortion_mat_jinmianju_04/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_jinmianju/eff/Fx_jinmianju_zidan_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_027_flow_distortion_mat_xingzhe_daoguang",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_027_flow_distortion_mat_xingzhe_daoguang.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_zhuangunzi .prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_030_flow_distortion_mat_27_glow_02",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_030_flow_distortion_mat_27_glow_02.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_030_flow_distortion_mat_27_glow_02/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_030_flow_distortion_mat_27_glow_02/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_030_flow_distortion_mat_27_glow_02/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/IgnoreEffectPrefab/Fx_buqiang_kaiqiang.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_032_flow_distortion_mat_xiaoming_04",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_032_flow_distortion_mat_xiaoming_04.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_032_flow_distortion_mat_xiaoming_04/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_032_flow_distortion_mat_xiaoming_04/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_032_flow_distortion_mat_xiaoming_04/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_xiaoming/eff/Fx_xiaoming_zidan_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_034_flow_distortion_mat_nuge_noise_1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_034_flow_distortion_mat_nuge_noise_1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_034_flow_distortion_mat_nuge_noise_1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_034_flow_distortion_mat_nuge_noise_1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_034_flow_distortion_mat_nuge_noise_1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/eff/Fx_nuge_bingdongjian.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_037_emission_alpha_suanyedi",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_037_emission_alpha_suanyedi.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_037_emission_alpha_suanyedi/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_037_emission_alpha_suanyedi/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_037_emission_alpha_suanyedi/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_acid/eff/Fx_acid.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_038_emission_alpha_mat_gallop_loop_glow",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_038_emission_alpha_mat_gallop_loop_glow.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_train_gallop/Fx_train_gallop_loop.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_041_emission_alpha_mat_qiangkouhuo_02",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_041_emission_alpha_mat_qiangkouhuo_02.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/FX_qiangkouhuo.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_045_emission_alpha_mat_ui_propitem_glow_1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_wupin_gs/FX_UI_PropItem.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_ui_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_046_emission_alpha_mat_jk_03",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_046_emission_alpha_mat_jk_03.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_046_emission_alpha_mat_jk_03/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_046_emission_alpha_mat_jk_03/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_046_emission_alpha_mat_jk_03/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_jk/eff/Fx_JK_qiangkou_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_054_mpb_mat_kapaifenwei_02",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_054_mpb_mat_kapaifenwei_02.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_054_mpb_mat_kapaifenwei_02/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_054_mpb_mat_kapaifenwei_02/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_054_mpb_mat_kapaifenwei_02/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_kapai/eff/FX_ui_kapai_bing.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_ui_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_056_mpb_mat_xingzhe_fire1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_056_mpb_mat_xingzhe_fire1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_056_mpb_mat_xingzhe_fire1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_056_mpb_mat_xingzhe_fire1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_056_mpb_mat_xingzhe_fire1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_paidiboom.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_058_mpb_dianguang",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_058_mpb_dianguang.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_058_mpb_dianguang/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_058_mpb_dianguang/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_058_mpb_dianguang/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/IgnoreEffectPrefab/Fx_long_4.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_059_mpb_mat_aidawang_01",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_059_mpb_mat_aidawang_01.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_059_mpb_mat_aidawang_01/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_059_mpb_mat_aidawang_01/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_059_mpb_mat_aidawang_01/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_feji.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_061_mpb_mat_tiebijiangjun_keji1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_061_mpb_mat_tiebijiangjun_keji1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/eff/Fx_tiebijiangjun_hudun.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_062_mpb_mat_commondie_02",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_062_mpb_mat_commondie_02.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_062_mpb_mat_commondie_02/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_062_mpb_mat_commondie_02/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_062_mpb_mat_commondie_02/execution_result.json",
+      "prefab_path": null,
+      "context_renderer_status": "no_prefab_reference",
+      "context_renderer_reason": "material_guid_not_referenced_by_imported_prefab",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_064_mpb_mat_27_glow_03.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_064_mpb_mat_27_glow_03/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_064_mpb_mat_27_glow_03/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_064_mpb_mat_27_glow_03/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_067_texture_swap_mat_changji_noise_03",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_067_texture_swap_mat_changji_noise_03.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_067_texture_swap_mat_changji_noise_03/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_067_texture_swap_mat_changji_noise_03/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_067_texture_swap_mat_changji_noise_03/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_Changji/eff/Fx_Changji_Sub.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [],
+      "has_negative_mutation": false
+    },
+    {
+      "trajectory_id": "mtc_093_negative_guangyun8",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_093_negative_guangyun8.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_093_negative_guangyun8/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_093_negative_guangyun8/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_093_negative_guangyun8/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/eff/Fx_fozu_zidan_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [],
+      "has_negative_mutation": true
+    },
+    {
+      "trajectory_id": "mtc_094_negative_mat_xingzhe_glow1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_094_negative_mat_xingzhe_glow1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_094_negative_mat_xingzhe_glow1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_094_negative_mat_xingzhe_glow1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_094_negative_mat_xingzhe_glow1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_paidiboom.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": false,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": true
+    },
+    {
+      "trajectory_id": "mtc_097_negative_mat_tiebijiangjun_dilie_1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_097_negative_mat_tiebijiangjun_dilie_1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/eff/Fx_tiebijiangjun_zadi.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [],
+      "has_negative_mutation": true
+    },
+    {
+      "trajectory_id": "mtc_100_negative_suanyebowen1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_100_negative_suanyebowen1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_100_negative_suanyebowen1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_100_negative_suanyebowen1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_100_negative_suanyebowen1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_acid/eff/Fx_acid.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": true,
+          "max": 1.0
+        }
+      ],
+      "has_negative_mutation": true
+    }
+  ]
+}

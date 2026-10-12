@@ -1,0 +1,738 @@
+{
+  "schema_version": "material_trajectory_execution_manifest.v1",
+  "created_at": "2026-08-29T15:16:01.671782+00:00",
+  "run_id": "material_trajectory_context_r001",
+  "execution_mode": "selected",
+  "curriculum_root": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "execution_project": "E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoWeb2022R002",
+  "execution_uses_isolated_staging": true,
+  "unity_version": "2022.3.16f1c1",
+  "render_pipeline": "URP 14.0.9",
+  "capture_sync": "trajectory_apply_at_late_update -> material_snapshot -> camera_render",
+  "spec_count": 28,
+  "pass_count": 26,
+  "fail_count": 2,
+  "valid_frame_count": 286,
+  "frame_count": 286,
+  "category_counts": {
+    "dissolve": 6,
+    "emission_alpha": 5,
+    "flow_distortion": 5,
+    "mpb": 7,
+    "negative": 4,
+    "texture_swap": 1
+  },
+  "scope_counts": {
+    "material": 10,
+    "renderer_mpb": 11,
+    "slot_mpb": 7
+  },
+  "curve_counts": {
+    "ease_in": 6,
+    "ease_out": 1,
+    "linear": 4,
+    "pulse": 9,
+    "smoothstep": 4,
+    "step": 1
+  },
+  "actual_signal_counts": {
+    "dissolve_parameter_changed": 9,
+    "material_property_changed": 10,
+    "negative_trajectory": 4,
+    "renderer_property_block_changed": 8,
+    "slot_property_block_changed": 5,
+    "texture_changed": 3
+  },
+  "event_counts": {
+    "keyword": 0,
+    "material_replace": 0,
+    "texture_swap": 3
+  },
+  "schema_error_count": 0,
+  "schema_errors": [],
+  "resource_audit": {
+    "candidate_leak_count": 0,
+    "candidate_leaks": [],
+    "run_resource_audit_path": "run_resource_audit.json",
+    "run_render_texture_live": 0,
+    "clean": true
+  },
+  "visual_evidence": {
+    "status": "partial",
+    "visible_area_threshold": 0.001,
+    "visible_candidate_count": 8,
+    "near_blank_candidate_count": 20,
+    "near_blank_candidate_ids": [
+      "mtc_003_dissolve_mat_circlecut_2",
+      "mtc_008_dissolve_mat_xingzhe_wenli4",
+      "mtc_012_dissolve_mat_gallop_loop_wenli",
+      "mtc_014_dissolve_mat_leiji_06",
+      "mtc_021_flow_distortion_mat_jinmianju_04",
+      "mtc_027_flow_distortion_mat_xingzhe_daoguang",
+      "mtc_032_flow_distortion_mat_xiaoming_04",
+      "mtc_034_flow_distortion_mat_nuge_noise_1",
+      "mtc_037_emission_alpha_suanyedi",
+      "mtc_038_emission_alpha_mat_gallop_loop_glow",
+      "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "mtc_046_emission_alpha_mat_jk_03",
+      "mtc_054_mpb_mat_kapaifenwei_02",
+      "mtc_056_mpb_mat_xingzhe_fire1",
+      "mtc_059_mpb_mat_aidawang_01",
+      "mtc_061_mpb_mat_tiebijiangjun_keji1",
+      "mtc_062_mpb_mat_commondie_02",
+      "mtc_067_texture_swap_mat_changji_noise_03",
+      "mtc_094_negative_mat_xingzhe_glow1",
+      "mtc_100_negative_suanyebowen1"
+    ],
+    "image_training_eligible_count": 8,
+    "policy": "near_blank candidates remain material-state valid but are excluded from image-conditioned training"
+  },
+  "status": "fail",
+  "contact_sheet_paths": [
+    "contact_sheets/page-001.jpg",
+    "contact_sheets/page-002.jpg",
+    "contact_sheets/page-003.jpg",
+    "contact_sheets/page-004.jpg"
+  ],
+  "candidates": [
+    {
+      "trajectory_id": "mtc_003_dissolve_mat_circlecut_2",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_circlecut/eff/Fx_circlecut.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_003_dissolve_mat_circlecut_2/execution_result.json",
+      "material_timeline_path": "candidates/mtc_003_dissolve_mat_circlecut_2/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_008_dissolve_mat_xingzhe_wenli4",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_luogun.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_008_dissolve_mat_xingzhe_wenli4/execution_result.json",
+      "material_timeline_path": "candidates/mtc_008_dissolve_mat_xingzhe_wenli4/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_010_dissolve_mat_jianxian_15",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.00737,
+      "mean_visible_area_ratio": 0.0032151,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_SS_jianxan/eff/Fx_jianxian_glow.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_010_dissolve_mat_jianxian_15/execution_result.json",
+      "material_timeline_path": "candidates/mtc_010_dissolve_mat_jianxian_15/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_012_dissolve_mat_gallop_loop_wenli",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_train_gallop/Fx_train_gallop_loop.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_012_dissolve_mat_gallop_loop_wenli/execution_result.json",
+      "material_timeline_path": "candidates/mtc_012_dissolve_mat_gallop_loop_wenli/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_013_dissolve_mat_xingzhe_glow",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.00162888,
+      "mean_visible_area_ratio": 0.00025108,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_guangleng_hit/Fx_guangleng_hit.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_013_dissolve_mat_xingzhe_glow/execution_result.json",
+      "material_timeline_path": "candidates/mtc_013_dissolve_mat_xingzhe_glow/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_014_dissolve_mat_leiji_06",
+      "category": "dissolve",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "",
+      "context_renderer_status": "no_prefab_reference",
+      "context_renderer_reason": "material_guid_not_referenced_by_imported_prefab",
+      "result_path": "candidates/mtc_014_dissolve_mat_leiji_06/execution_result.json",
+      "material_timeline_path": "candidates/mtc_014_dissolve_mat_leiji_06/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_021_flow_distortion_mat_jinmianju_04",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_jinmianju/eff/Fx_jinmianju_zidan_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_021_flow_distortion_mat_jinmianju_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_021_flow_distortion_mat_jinmianju_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_027_flow_distortion_mat_xingzhe_daoguang",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_zhuangunzi .prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/execution_result.json",
+      "material_timeline_path": "candidates/mtc_027_flow_distortion_mat_xingzhe_daoguang/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_030_flow_distortion_mat_27_glow_02",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.00276947,
+      "mean_visible_area_ratio": 0.00025871,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/IgnoreEffectPrefab/Fx_buqiang_kaiqiang.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_030_flow_distortion_mat_27_glow_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_030_flow_distortion_mat_27_glow_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_032_flow_distortion_mat_xiaoming_04",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_xiaoming/eff/Fx_xiaoming_zidan_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_032_flow_distortion_mat_xiaoming_04/execution_result.json",
+      "material_timeline_path": "candidates/mtc_032_flow_distortion_mat_xiaoming_04/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_034_flow_distortion_mat_nuge_noise_1",
+      "category": "flow_distortion",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_nuge/eff/Fx_nuge_bingdongjian.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_034_flow_distortion_mat_nuge_noise_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_034_flow_distortion_mat_nuge_noise_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_037_emission_alpha_suanyedi",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_acid/eff/Fx_acid.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_037_emission_alpha_suanyedi/execution_result.json",
+      "material_timeline_path": "candidates/mtc_037_emission_alpha_suanyedi/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_038_emission_alpha_mat_gallop_loop_glow",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_train_gallop/Fx_train_gallop_loop.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/execution_result.json",
+      "material_timeline_path": "candidates/mtc_038_emission_alpha_mat_gallop_loop_glow/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_041_emission_alpha_mat_qiangkouhuo_02",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.02461624,
+      "mean_visible_area_ratio": 0.00244834,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/FX_common_qiangkou/FX_qiangkouhuo.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_041_emission_alpha_mat_qiangkouhuo_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "error",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "result_path": "candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_046_emission_alpha_mat_jk_03",
+      "category": "emission_alpha",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_B_jk/eff/Fx_JK_qiangkou_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_046_emission_alpha_mat_jk_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_046_emission_alpha_mat_jk_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_054_mpb_mat_kapaifenwei_02",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "error",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "",
+      "context_renderer_status": "stable_quad_baseline",
+      "context_renderer_reason": "no_context_renderer_mapping",
+      "result_path": "candidates/mtc_054_mpb_mat_kapaifenwei_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_054_mpb_mat_kapaifenwei_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_056_mpb_mat_xingzhe_fire1",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_paidiboom.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_056_mpb_mat_xingzhe_fire1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_056_mpb_mat_xingzhe_fire1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_058_mpb_dianguang",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "renderer_property_block_changed"
+      ],
+      "actual_signals": [
+        "renderer_property_block_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.21104813,
+      "mean_visible_area_ratio": 0.17558531,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_IgnoreEffectPrefab_002/ArtResources/IgnoreEffectPrefab/Fx_long_4.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_058_mpb_dianguang/execution_result.json",
+      "material_timeline_path": "candidates/mtc_058_mpb_dianguang/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_059_mpb_mat_aidawang_01",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "material_property_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_feji.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_059_mpb_mat_aidawang_01/execution_result.json",
+      "material_timeline_path": "candidates/mtc_059_mpb_mat_aidawang_01/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_061_mpb_mat_tiebijiangjun_keji1",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/eff/Fx_tiebijiangjun_hudun.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_061_mpb_mat_tiebijiangjun_keji1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_062_mpb_mat_commondie_02",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "",
+      "context_renderer_status": "no_prefab_reference",
+      "context_renderer_reason": "material_guid_not_referenced_by_imported_prefab",
+      "result_path": "candidates/mtc_062_mpb_mat_commondie_02/execution_result.json",
+      "material_timeline_path": "candidates/mtc_062_mpb_mat_commondie_02/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_064_mpb_mat_27_glow_03",
+      "category": "mpb",
+      "label": "positive",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed"
+      ],
+      "actual_signals": [
+        "material_property_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.05213928,
+      "mean_visible_area_ratio": 0.01275878,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_A_aidawang/eff/Fx_aidawang_baozha.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_064_mpb_mat_27_glow_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_064_mpb_mat_27_glow_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_067_texture_swap_mat_changji_noise_03",
+      "category": "texture_swap",
+      "label": "positive",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "texture_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_Changji/eff/Fx_Changji_Sub.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_067_texture_swap_mat_changji_noise_03/execution_result.json",
+      "material_timeline_path": "candidates/mtc_067_texture_swap_mat_changji_noise_03/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_093_negative_guangyun8",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.00843811,
+      "mean_visible_area_ratio": 0.00739115,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/juese/FX_S_fozu/eff/Fx_fozu_zidan_01.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_093_negative_guangyun8/execution_result.json",
+      "material_timeline_path": "candidates/mtc_093_negative_guangyun8/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_094_negative_mat_xingzhe_glow1",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "material",
+      "status": "pass",
+      "expected_signals": [
+        "material_property_changed",
+        "negative_trajectory"
+      ],
+      "actual_signals": [
+        "material_property_changed",
+        "negative_trajectory"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_xingzhejineng/eff/Fx_xingzhe_paidiboom.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_094_negative_mat_xingzhe_glow1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_094_negative_mat_xingzhe_glow1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_097_negative_mat_tiebijiangjun_dilie_1",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "renderer_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "actual_signals": [
+        "negative_trajectory",
+        "texture_changed"
+      ],
+      "visual_status": "visible",
+      "image_training_eligible": true,
+      "max_visible_area_ratio": 0.02158356,
+      "mean_visible_area_ratio": 0.00416738,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_tiebijiangjun/eff/Fx_tiebijiangjun_zadi.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_097_negative_mat_tiebijiangjun_dilie_1/material_timeline.json"
+    },
+    {
+      "trajectory_id": "mtc_100_negative_suanyebowen1",
+      "category": "negative",
+      "label": "negative",
+      "control_scope": "slot_mpb",
+      "status": "pass",
+      "expected_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "slot_property_block_changed"
+      ],
+      "actual_signals": [
+        "dissolve_parameter_changed",
+        "negative_trajectory",
+        "slot_property_block_changed"
+      ],
+      "visual_status": "near_blank",
+      "image_training_eligible": false,
+      "max_visible_area_ratio": 0.0,
+      "mean_visible_area_ratio": 0.0,
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/Battle/Fx_acid/eff/Fx_acid.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_particle_geometry",
+      "result_path": "candidates/mtc_100_negative_suanyebowen1/execution_result.json",
+      "material_timeline_path": "candidates/mtc_100_negative_suanyebowen1/material_timeline.json"
+    }
+  ]
+}

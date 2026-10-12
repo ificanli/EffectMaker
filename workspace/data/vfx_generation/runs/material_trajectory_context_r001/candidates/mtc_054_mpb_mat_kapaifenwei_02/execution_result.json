@@ -1,0 +1,50 @@
+{
+    "schema_version": "material_trajectory_execution_result.v1",
+    "created_at": "2026-08-29T15:15:23.2827084Z",
+    "trajectory_id": "mtc_054_mpb_mat_kapaifenwei_02",
+    "curriculum_id": "material_trajectory_curriculum_r002",
+    "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_054_mpb_mat_kapaifenwei_02.json",
+    "category": "mpb",
+    "label": "positive",
+    "control_scope": "slot_mpb",
+    "status": "error",
+    "prefab_path": "",
+    "context_renderer_status": "",
+    "context_renderer_reason": "",
+    "duration_seconds": 1.0,
+    "sample_interval_seconds": 0.0,
+    "material_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_kapai/mat/Mat_kapaifenwei_02.mat",
+    "shader_name": "Common/ColorDefault",
+    "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r001/candidates/mtc_054_mpb_mat_kapaifenwei_02/material_timeline.json",
+    "frames": [],
+    "valid_frame_count": 0,
+    "expected_signals": [
+        "slot_property_block_changed"
+    ],
+    "actual_signals": [],
+    "raw_timeline_signals": [],
+    "missing_signals": [
+        "slot_property_block_changed"
+    ],
+    "unexpected_signals": [],
+    "incidental_timeline_signals": [],
+    "curves_executed": [
+        "pulse"
+    ],
+    "parameter_track_count": 1,
+    "keyword_event_count": 0,
+    "texture_swap_event_count": 0,
+    "material_replace_event_count": 0,
+    "negative_mutation_executed": false,
+    "invariant_errors": [],
+    "resource_audit": {
+        "runtime_materials_created": 0,
+        "runtime_materials_destroyed": 0,
+        "runtime_materials_live": 0,
+        "runtime_textures_created": 0,
+        "runtime_textures_destroyed": 0,
+        "runtime_textures_live": 0,
+        "destruction_mode": "UnityEngine.Object.Destroy completed before result write"
+    },
+    "error": "InvalidOperationException: Prefab has no Renderer using source material: Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_kapai/eff/FX_ui_kapai_bing.prefab -> Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/FX_ui_kapai/mat/Mat_kapaifenwei_02.mat"
+}

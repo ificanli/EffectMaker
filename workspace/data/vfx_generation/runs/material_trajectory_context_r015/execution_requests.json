@@ -1,0 +1,45 @@
+{
+  "schema_version": "effectdemo_material_trajectory_requests.v1",
+  "created_at": "2026-08-29T16:17:02.430918+00:00",
+  "run_id": "material_trajectory_context_r015",
+  "execution_mode": "selected",
+  "curriculum_root": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002",
+  "unity_project": "E:/Unity特效人工智能学习/UnityDemo/EffectDemo",
+  "execution_project": "E:/Unity特效人工智能学习/workspace/unity-render-staging/EffectDemoWeb2022R002",
+  "context_renderer_map_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/context_renderers/material_trajectory_context_map_r001.json",
+  "context_renderer_count": 1,
+  "width": 512,
+  "height": 512,
+  "target_intervals": 10,
+  "run_resource_audit_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r015/run_resource_audit.json",
+  "selection": {
+    "count": 1,
+    "trajectory_ids": [
+      "mtc_045_emission_alpha_mat_ui_propitem_glow_1"
+    ],
+    "category_counts": {
+      "emission_alpha": 1
+    }
+  },
+  "requests": [
+    {
+      "trajectory_id": "mtc_045_emission_alpha_mat_ui_propitem_glow_1",
+      "spec_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/curricula/material_trajectory_curriculum_r002/specs/mtc_045_emission_alpha_mat_ui_propitem_glow_1.json",
+      "capture_dir": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r015/candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/frames",
+      "material_timeline_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r015/candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/material_timeline.json",
+      "result_path": "E:/Unity特效人工智能学习/workspace/data/vfx_generation/runs/material_trajectory_context_r015/candidates/mtc_045_emission_alpha_mat_ui_propitem_glow_1/execution_result.json",
+      "prefab_path": "Assets/VFXSourceIngest/Trains/Trains_FX_All_001/ArtResources/FX/UI/Fx_ui_wupin_gs/FX_UI_PropItem.prefab",
+      "context_renderer_status": "prefab_material_match",
+      "context_renderer_reason": "stable_quad_does_not_reproduce_source_ui_geometry",
+      "track_clamps": [
+        {
+          "has_min": true,
+          "min": 0.0,
+          "has_max": false,
+          "max": 0.0
+        }
+      ],
+      "has_negative_mutation": false
+    }
+  ]
+}
