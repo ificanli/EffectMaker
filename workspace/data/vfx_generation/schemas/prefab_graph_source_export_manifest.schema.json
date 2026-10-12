@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_graph_source_export_manifest.schema.json",
+  "title": "PrefabGraph Source Export Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "source_project", "source_dataset_id", "candidate_count", "candidates", "status", "quality_gates", "limitations"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_graph_source_export_manifest.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "source_project": { "type": "string", "minLength": 1 },
+    "source_dataset_id": { "type": "string", "minLength": 1 },
+    "candidate_count": { "type": "integer", "minimum": 1 },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_id", "prefab_path", "graph_path", "report_path", "status", "reconstruction_status", "node_count", "particle_system_count", "renderer_count", "material_count", "mesh_count", "missing_fields", "unsupported_components"],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "prefab_path": { "type": "string", "minLength": 1 },
+          "graph_path": { "type": "string", "minLength": 1 },
+          "report_path": { "type": "string", "minLength": 1 },
+          "status": { "const": "pass" },
+          "reconstruction_status": { "enum": ["structure_only", "reconstructable"] },
+          "node_count": { "type": "integer", "minimum": 1 },
+          "particle_system_count": { "type": "integer", "minimum": 0 },
+          "renderer_count": { "type": "integer", "minimum": 0 },
+          "material_count": { "type": "integer", "minimum": 0 },
+          "mesh_count": { "type": "integer", "minimum": 0 },
+          "missing_fields": { "type": "array", "items": { "type": "string" } },
+          "unsupported_components": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["all_reports_pass", "graph_schema_errors", "unique_candidate_ids", "reconstructable_count", "structure_only_count", "aesthetic_labels_consumed"],
+      "properties": {
+        "all_reports_pass": { "const": true },
+        "graph_schema_errors": { "const": 0 },
+        "unique_candidate_ids": { "const": true },
+        "reconstructable_count": { "type": "integer", "minimum": 0 },
+        "structure_only_count": { "type": "integer", "minimum": 0 },
+        "aesthetic_labels_consumed": { "const": 0 }
+      }
+    },
+    "limitations": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "status": { "const": "pass" }
+  }
+}

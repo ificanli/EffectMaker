@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_web_training_feedback.schema.json",
+  "title": "VFX WebGL Dynamic Training Feedback",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "candidate_id",
+    "reviewed_at",
+    "reviewer",
+    "decision",
+    "scores",
+    "trace",
+    "feedback",
+    "web_review_context"
+  ],
+  "properties": {
+    "schema_version": { "const": "human_feedback.v1" },
+    "run_id": { "type": "string", "minLength": 1 },
+    "candidate_id": { "type": "string", "minLength": 1 },
+    "training_case_id": { "type": ["string", "null"] },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "reviewer": { "type": "string", "minLength": 1 },
+    "decision": { "enum": ["accept_direction", "partial", "reject", "needs_comparison", "not_visible"] },
+    "mutation_allowed": { "type": "boolean" },
+    "style_match_decision": { "enum": ["match", "partial", "mismatch", "unlabeled"] },
+    "effect_family": { "type": "string", "minLength": 1 },
+    "scores": {
+      "type": "object",
+      "required": ["dynamic_quality", "rhythm_quality"],
+      "properties": {
+        "dynamic_quality": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "rhythm_quality": { "type": "integer", "minimum": 0, "maximum": 5 }
+      },
+      "additionalProperties": true
+    },
+    "trace": {
+      "type": "object",
+      "required": ["spec_path", "render_manifest_path", "render_paths", "seed", "generator", "generator_version", "render_status", "material_timeline_path"],
+      "properties": {
+        "spec_path": { "type": ["string", "null"] },
+        "render_manifest_path": { "type": ["string", "null"] },
+        "render_paths": { "type": "array", "items": { "type": "string" } },
+        "seed": { "type": ["integer", "null"] },
+        "generator": { "type": ["string", "null"] },
+        "generator_version": { "type": ["string", "null"] },
+        "render_status": { "type": "string" },
+        "material_timeline_path": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "feedback": {
+      "type": "object",
+      "required": ["summary", "accepted_parts", "rejected_parts", "reject_reasons", "next_mutation"],
+      "properties": {
+        "summary": { "type": "string", "minLength": 1 },
+        "accepted_parts": { "type": "array", "items": { "type": "string" } },
+        "rejected_parts": { "type": "array", "items": { "type": "string" } },
+        "reject_reasons": { "type": "array", "items": { "type": "string" } },
+        "next_mutation": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "web_review_context": {
+      "type": "object",
+      "required": [
+        "web_prefab_id",
+        "web_prefab_path",
+        "source_prefab_path",
+        "observed_time_seconds",
+        "paused",
+        "speed",
+        "material_state_fingerprint",
+        "webgl_material_state_changes",
+        "truth_material_change_count",
+        "source_script_fidelity",
+        "evidence_role"
+      ],
+      "properties": {
+        "observed_time_seconds": { "type": "number", "minimum": 0 },
+        "paused": { "type": "boolean" },
+        "speed": { "type": "number", "exclusiveMinimum": 0 },
+        "webgl_material_state_changes": { "type": "integer", "minimum": 0 },
+        "truth_material_change_count": { "type": "integer", "minimum": 0 },
+        "evidence_role": { "const": "dynamic_human_review_only" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

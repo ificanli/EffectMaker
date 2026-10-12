@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_structure_training_dataset.schema.json",
+  "title": "Prefab Structure Training Dataset",
+  "type": "object",
+  "required": ["schema_version", "created_at", "dataset_id", "source", "example_count", "prefab_structure_example_count", "particle_parameter_example_count", "play_mode_render_candidate_count", "image_conditioned_example_count", "aesthetic_preference_example_count", "technical_status_counts", "supervision_status_counts", "files", "quality_gates", "limitations", "status"],
+  "properties": {
+    "schema_version": { "const": "prefab_structure_training_dataset.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source": { "type": "object" },
+    "example_count": { "type": "integer", "minimum": 1 },
+    "prefab_structure_example_count": { "type": "integer", "minimum": 1 },
+    "particle_parameter_example_count": { "type": "integer", "minimum": 0 },
+    "play_mode_render_candidate_count": { "type": "integer", "minimum": 0 },
+    "image_conditioned_example_count": { "type": "integer", "minimum": 0 },
+    "rendered_example_count": { "type": "integer", "minimum": 0 },
+    "render_status_counts": { "$ref": "#/$defs/countMap" },
+    "aesthetic_preference_example_count": { "const": 0 },
+    "technical_status_counts": { "$ref": "#/$defs/countMap" },
+    "supervision_status_counts": { "$ref": "#/$defs/countMap" },
+    "files": { "type": "object" },
+    "quality_gates": { "type": "object" },
+    "limitations": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

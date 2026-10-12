@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aesthetic_judge_regression_evaluation.schema.json",
+  "title": "Aesthetic Judge Regression Evaluation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "model_path", "model_version", "training_path", "regression_input", "prediction_path", "sample_count", "minimum_samples", "training_overlap_count", "available_tasks", "blocked_tasks", "metrics", "promotion_eligible", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_judge_regression_evaluation.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "model_path": { "type": "string", "minLength": 1 },
+    "model_version": { "type": "string", "minLength": 1 },
+    "training_path": { "type": "string", "minLength": 1 },
+    "regression_input": { "type": "string", "minLength": 1 },
+    "prediction_path": { "type": "string", "minLength": 1 },
+    "sample_count": { "type": "integer", "minimum": 1 },
+    "minimum_samples": { "type": "integer", "minimum": 1 },
+    "training_overlap_count": { "const": 0 },
+    "available_tasks": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "blocked_tasks": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "metrics": { "type": "object" },
+    "promotion_eligible": { "type": "boolean" },
+    "status": { "enum": ["pass", "underfilled"] }
+  }
+}

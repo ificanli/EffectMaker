@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_proposal_plan.schema.json",
+  "title": "Prompt Conditioned VFX Proposal Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "created_at",
+    "plan_id",
+    "prompt",
+    "seed",
+    "intent",
+    "procedure_context",
+    "layers",
+    "selection_policy",
+    "training_eligibility",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "vfx_proposal_plan.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "plan_id": { "type": "string", "pattern": "^proposal_[0-9a-f]{20}$" },
+    "prompt": { "type": "string", "minLength": 1 },
+    "seed": { "type": "integer", "minimum": 0 },
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "effect_family",
+        "style_family",
+        "color_keywords",
+        "direction",
+        "shape_keywords",
+        "timing_keywords",
+        "hit_placement"
+      ],
+      "properties": {
+        "effect_family": { "enum": ["slash", "lightning", "explosion", "fire", "shield"] },
+        "style_family": { "enum": ["stylized", "cartoon", "realistic", "anime", "unspecified"] },
+        "color_keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "direction": { "enum": ["horizontal", "vertical", "radial", "forward", "unspecified"] },
+        "shape_keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "timing_keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "hit_placement": { "enum": ["leading_edge", "center", "surface", "unspecified"] }
+      }
+    },
+    "procedure_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "matched_procedure_ids", "target_verified_procedure_ids", "applied_step_ids", "timing_relationships", "status"],
+      "properties": {
+        "required": { "const": true },
+        "matched_procedure_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "target_verified_procedure_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "applied_step_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "hypothesis_step_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "timing_relationships": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "status": { "enum": ["missing", "candidate", "verified"] }
+      }
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "layer_role",
+          "purpose",
+          "renderer_modes",
+          "topology_candidates",
+          "shader_contract",
+          "texture_contract",
+          "prompt_controls",
+          "procedure_step_ids"
+        ],
+        "properties": {
+          "layer_role": { "enum": ["core", "support", "hit", "residual"] },
+          "purpose": { "type": "string", "minLength": 1 },
+          "renderer_modes": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "enum": ["Mesh", "Billboard", "Stretch", "Trail"] },
+            "uniqueItems": true
+          },
+          "topology_candidates": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+          "shader_contract": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["required_all", "required_any", "forbidden", "requires_vertex_stream_contract", "forbid_unverified_fallback"],
+            "properties": {
+              "required_all": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+              "required_any": {
+                "type": "array",
+                "items": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true }
+              },
+              "forbidden": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+              "requires_vertex_stream_contract": { "type": "boolean" },
+              "forbid_unverified_fallback": { "const": true }
+            }
+          },
+          "texture_contract": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["required_any", "forbidden_tags"],
+            "properties": {
+              "required_any": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true }
+              },
+              "forbidden_tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+            }
+          },
+          "prompt_controls": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+          ,
+          "procedure_step_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+        }
+      }
+    },
+    "selection_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt_controls_proposal",
+        "role_specific_shader_plan",
+        "joint_shader_material_texture_ranking",
+        "verified_assets_only",
+        "no_single_template_for_all_roles",
+        "whole_batch_absolute_quality_gate"
+      ],
+      "properties": {
+        "prompt_controls_proposal": { "const": true },
+        "role_specific_shader_plan": { "const": true },
+        "joint_shader_material_texture_ranking": { "const": true },
+        "verified_assets_only": { "const": true },
+        "no_single_template_for_all_roles": { "const": true },
+        "whole_batch_absolute_quality_gate": { "const": true }
+      }
+    },
+    "training_eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["controller_sft", "positive_generation_supervision", "proposal_failure_supervision", "reason"],
+      "properties": {
+        "controller_sft": { "type": "boolean" },
+        "positive_generation_supervision": { "type": "boolean" },
+        "proposal_failure_supervision": { "type": "boolean" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    },
+    "status": { "enum": ["planned", "blocked"] }
+  }
+}

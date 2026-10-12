@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source_manifest.schema.json",
+  "title": "VFXSourceManifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source_id",
+    "title",
+    "effect_family",
+    "source_kind",
+    "ingest_status",
+    "license",
+    "root",
+    "files"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "source_manifest.v1"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "effect_family": {
+      "type": "string",
+      "examples": ["slash", "fire", "lightning", "shield", "smoke", "explosion", "magic_circle", "water"]
+    },
+    "source_kind": {
+      "type": "string",
+      "enum": [
+        "unity_effect_package",
+        "unity_project_sample",
+        "unity_prefab_sample",
+        "reference_asset_bundle",
+        "unknown"
+      ]
+    },
+    "ingest_status": {
+      "type": "string",
+      "enum": [
+        "registered",
+        "dependency_indexed",
+        "parameters_extracted",
+        "render_linked",
+        "feedback_linked",
+        "trainable",
+        "blocked"
+      ]
+    },
+    "unity_context": {
+      "type": "object",
+      "properties": {
+        "project_path": { "type": "string" },
+        "unity_version": { "type": "string" },
+        "render_pipeline": { "type": "string" },
+        "pipeline_version": { "type": "string" },
+        "package_snapshot_path": { "type": ["string", "null"] },
+        "scene_path": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "license": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "local_reference_only",
+            "redistributable",
+            "trainable_internal",
+            "trainable_public",
+            "blocked"
+          ]
+        },
+        "owner": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"] },
+        "evidence_path": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "root": {
+      "type": "object",
+      "required": ["path", "storage_policy"],
+      "properties": {
+        "path": { "type": "string" },
+        "storage_policy": {
+          "type": "string",
+          "enum": ["repo_metadata_only", "local_only", "committable_assets", "external_archive"]
+        },
+        "relative_to": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["role", "path", "file_type"],
+        "properties": {
+          "role": {
+            "type": "string",
+            "examples": ["prefab", "material", "shader", "shadergraph", "vfxgraph", "texture", "mesh", "scene", "animation", "meta"]
+          },
+          "path": { "type": "string" },
+          "file_type": { "type": "string" },
+          "unity_guid": { "type": ["string", "null"] },
+          "meta_path": { "type": ["string", "null"] },
+          "sha256": { "type": ["string", "null"] },
+          "size_bytes": { "type": ["integer", "null"], "minimum": 0 },
+          "license_status": {
+            "type": "string",
+            "enum": [
+              "inherits_source",
+              "unknown",
+              "local_reference_only",
+              "redistributable",
+              "trainable_internal",
+              "trainable_public",
+              "blocked"
+            ]
+          },
+          "commit_policy": {
+            "type": "string",
+            "enum": ["metadata_only", "can_commit", "do_not_commit"]
+          },
+          "importer": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from_path", "dependency_type"],
+        "properties": {
+          "from_path": { "type": "string" },
+          "to_path": { "type": ["string", "null"] },
+          "to_guid": { "type": ["string", "null"] },
+          "dependency_type": {
+            "type": "string",
+            "examples": ["material", "shader", "texture", "mesh", "animation", "scene", "script", "package"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["resolved", "missing", "external", "ignored", "unknown"]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "source_sample_path": { "type": ["string", "null"] },
+        "derived_vfxspec_path": { "type": ["string", "null"] },
+        "render_run_id": { "type": ["string", "null"] },
+        "render_manifest_path": { "type": ["string", "null"] },
+        "feedback_path": { "type": ["string", "null"] },
+        "training_example_path": { "type": ["string", "null"] },
+        "beads_id": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "extraction": {
+      "type": "object",
+      "properties": {
+        "dependency_index_path": { "type": ["string", "null"] },
+        "parameter_snapshot_path": { "type": ["string", "null"] },
+        "feature_manifest_path": { "type": ["string", "null"] },
+        "tool_version": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

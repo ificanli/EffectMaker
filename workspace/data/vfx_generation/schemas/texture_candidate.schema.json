@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "texture_candidate.schema.json",
+  "title": "VFX Texture Candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "asset_id", "content_sha256", "binding_status", "license_status", "tags", "metrics", "width", "height", "source_paths", "project_asset_path", "importer", "provenance"],
+  "properties": {
+    "schema_version": { "const": "vfx_texture_candidate.v1" },
+    "asset_id": { "type": "string", "pattern": "^tex_[0-9a-f]{20}$" },
+    "content_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "binding_status": { "enum": ["project_bindable", "requires_import", "missing_source"] },
+    "license_status": { "type": "string", "minLength": 1 },
+    "tags": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "metrics": { "type": "object" },
+    "width": { "type": "integer", "minimum": 0 },
+    "height": { "type": "integer", "minimum": 0 },
+    "source_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "source_kind", "exists"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "source_kind": { "enum": ["project_asset", "local_reference"] },
+          "exists": { "type": "boolean" }
+        }
+      }
+    },
+    "project_asset_path": { "type": ["string", "null"] },
+    "importer": { "type": ["object", "null"] },
+    "provenance": { "type": "object" }
+  }
+}

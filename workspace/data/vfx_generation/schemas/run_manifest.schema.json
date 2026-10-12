@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run_manifest.schema.json",
+  "title": "VFXRunManifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "generator_version",
+    "candidate_count",
+    "render_time_points_seconds",
+    "unity_project",
+    "scene",
+    "camera",
+    "resolution",
+    "verify",
+    "console",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "vfx_run_manifest.v1"
+    },
+    "run_id": { "type": "string" },
+    "parent_beads_id": { "type": ["string", "null"] },
+    "prompt_path": { "type": "string" },
+    "generator_version": { "type": "string" },
+    "created_at": { "type": "string" },
+    "candidate_root_path": { "type": "string" },
+    "candidate_count": { "type": "integer", "minimum": 0 },
+    "candidate_status_counts": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "frame_summary": {
+      "type": "object",
+      "properties": {
+        "valid_frame_count": { "type": "integer", "minimum": 0 },
+        "missing_frame_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "material_state_summary": {
+      "type": "object",
+      "properties": {
+        "ready_timeline_count": { "type": "integer", "minimum": 0 },
+        "dynamic_candidate_count": { "type": "integer", "minimum": 0 },
+        "delta_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "render_time_points_seconds": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "unity_project": { "type": "string" },
+    "scene": { "type": "string" },
+    "camera": { "type": "string" },
+    "resolution": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "integer", "minimum": 1 }
+    },
+    "verify": {
+      "type": "object",
+      "properties": {
+        "errors": { "type": ["integer", "null"], "minimum": 0 },
+        "warnings": { "type": ["integer", "null"], "minimum": 0 },
+        "status": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "console": {
+      "type": "object",
+      "properties": {
+        "error_count": { "type": ["integer", "null"], "minimum": 0 },
+        "warning_count": { "type": ["integer", "null"], "minimum": 0 },
+        "last_error": { "type": ["string", "null"] },
+        "status": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "auto_eval_path": { "type": ["string", "null"] },
+    "feedback_path": { "type": ["string", "null"] },
+    "contact_sheet_paths": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "seed",
+          "spec_path",
+          "render_manifest_path",
+          "capture_root",
+          "render_status",
+          "frame_count",
+          "valid_frame_count",
+          "missing_frame_count",
+          "auto_eval",
+          "frames"
+        ],
+        "properties": {
+          "discovery_index": { "type": "integer", "minimum": 1 },
+          "candidate_id": { "type": "string" },
+          "seed": { "type": ["integer", "null"] },
+          "spec_path": { "type": "string" },
+          "render_manifest_path": { "type": ["string", "null"] },
+          "material_timeline_path": { "type": ["string", "null"] },
+          "material_timeline_status": { "enum": ["not_linked", "missing", "ready", "invalid"] },
+          "material_state_summary": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "capture_root": { "type": "string" },
+          "spec_summary": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "render_plan": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "render_context": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "render_status": {
+            "type": "string",
+            "enum": ["missing_manifest", "ready", "partial", "blocked"]
+          },
+          "frame_count": { "type": "integer", "minimum": 0 },
+          "valid_frame_count": { "type": "integer", "minimum": 0 },
+          "missing_frame_count": { "type": "integer", "minimum": 0 },
+          "auto_eval": {
+            "type": "object",
+            "properties": {
+              "status": { "type": "string", "enum": ["pass", "warn", "reject"] },
+              "rank_hint": { "type": "number", "minimum": 0, "maximum": 100 },
+              "hard_reject_reasons": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "metrics": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "candidate_score": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "notes": { "type": ["string", "null"] }
+            },
+            "additionalProperties": true
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["requested_time_seconds", "path", "valid"],
+              "properties": {
+                "requested_time_seconds": { "type": ["number", "null"] },
+                "capture_time_seconds": { "type": ["number", "null"] },
+                "path": { "type": ["string", "null"] },
+                "valid": { "type": "boolean" },
+                "error": { "type": ["string", "null"] },
+                "file_size": { "type": "integer", "minimum": 0 },
+                "material_timeline_frame_index": { "type": ["integer", "null"], "minimum": 0 }
+              },
+              "additionalProperties": true
+            }
+          },
+          "contact_sheet_page": { "type": ["integer", "null"], "minimum": 1 },
+          "contact_sheet_row": { "type": ["integer", "null"], "minimum": 1 }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

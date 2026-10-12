@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_controller_training_example.schema.json",
+  "title": "VFX Controller Training Example",
+  "type": "object",
+  "required": ["schema_version", "example_id", "input", "target", "labels", "provenance", "training_eligibility"],
+  "properties": {
+    "schema_version": { "const": "vfx_controller_training_example.v1" },
+    "example_id": { "type": "string", "minLength": 1 },
+    "input": {
+      "type": "object",
+      "required": ["prompt", "prompt_condition", "context"],
+      "properties": {
+        "prompt": { "type": "string", "minLength": 1 },
+        "prompt_condition": { "type": "object" },
+        "context": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "target": {
+      "type": ["object", "null"],
+      "properties": {
+        "kind": { "enum": ["mutation_spec", "vfxspec", "tool_plan"] },
+        "payload": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "labels": {
+      "type": "object",
+      "required": ["condition_labels", "overall_label"],
+      "properties": {
+        "condition_labels": {
+          "type": "object",
+          "additionalProperties": { "enum": ["符合", "部分符合", "不符合", "无法判断"] }
+        },
+        "overall_label": { "enum": ["符合", "部分符合", "不符合", "无法判断"] },
+        "quality_decision": { "enum": ["可作为参考", "部分可复用", "不建议参考", "无法判断", "未评价"] }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_manifest", "composition_or_variation_manifest", "candidate_id", "render_paths"],
+      "properties": {
+        "source_kind": { "enum": ["composition", "variation", "course_prior"] },
+        "source_manifest": { "type": ["string", "null"] },
+        "composition_or_variation_manifest": { "type": "string", "minLength": 1 },
+        "candidate_id": { "type": "string", "minLength": 1 },
+        "render_paths": { "type": "array", "items": { "type": "string" } },
+        "seed": { "type": ["integer", "null"] },
+        "parent_candidate_id": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "training_eligibility": {
+      "type": "object",
+      "required": ["controller_sft", "prompt_condition_supervision", "positive_generation_supervision", "preference_training", "excluded_reasons"],
+      "properties": {
+        "controller_sft": { "type": "boolean" },
+        "prompt_condition_supervision": { "type": "boolean" },
+        "positive_generation_supervision": { "type": "boolean" },
+        "preference_training": { "type": "boolean" },
+        "excluded_reasons": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

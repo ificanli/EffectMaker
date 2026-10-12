@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_trajectory_execution_manifest.schema.json",
+  "title": "Material Trajectory Execution Run Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_at",
+    "run_id",
+    "execution_mode",
+    "curriculum_root",
+    "unity_project",
+    "execution_project",
+    "execution_uses_isolated_staging",
+    "unity_version",
+    "render_pipeline",
+    "capture_sync",
+    "spec_count",
+    "pass_count",
+    "fail_count",
+    "valid_frame_count",
+    "frame_count",
+    "category_counts",
+    "scope_counts",
+    "curve_counts",
+    "actual_signal_counts",
+    "event_counts",
+    "schema_error_count",
+    "schema_errors",
+    "resource_audit",
+    "visual_evidence",
+    "status",
+    "contact_sheet_paths",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": { "const": "material_trajectory_execution_manifest.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "run_id": { "type": "string", "minLength": 1 },
+    "execution_mode": { "enum": ["smoke", "full", "selected"] },
+    "curriculum_root": { "type": "string", "minLength": 1 },
+    "unity_project": { "type": "string", "minLength": 1 },
+    "execution_project": { "type": "string", "minLength": 1 },
+    "execution_uses_isolated_staging": { "type": "boolean" },
+    "unity_version": { "const": "2022.3.16f1c1" },
+    "render_pipeline": { "const": "URP 14.0.9" },
+    "capture_sync": { "const": "trajectory_apply_at_late_update -> material_snapshot -> camera_render" },
+    "spec_count": { "type": "integer", "minimum": 1 },
+    "pass_count": { "type": "integer", "minimum": 0 },
+    "fail_count": { "type": "integer", "minimum": 0 },
+    "valid_frame_count": { "type": "integer", "minimum": 0 },
+    "frame_count": { "type": "integer", "minimum": 0 },
+    "category_counts": { "$ref": "#/$defs/countMap" },
+    "scope_counts": { "$ref": "#/$defs/countMap" },
+    "curve_counts": { "$ref": "#/$defs/countMap" },
+    "actual_signal_counts": { "$ref": "#/$defs/countMap" },
+    "event_counts": { "$ref": "#/$defs/countMap" },
+    "schema_error_count": { "type": "integer", "minimum": 0 },
+    "schema_errors": { "type": "array", "items": { "type": "string" } },
+    "resource_audit": {
+      "type": "object",
+      "required": ["candidate_leak_count", "candidate_leaks", "run_resource_audit_path", "run_render_texture_live", "clean"],
+      "properties": {
+        "candidate_leak_count": { "type": "integer", "minimum": 0 },
+        "candidate_leaks": { "type": "array", "items": { "type": "string" } },
+        "run_resource_audit_path": { "type": "string", "minLength": 1 },
+        "run_render_texture_live": { "type": "integer" },
+        "clean": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "visual_evidence": {
+      "type": "object",
+      "required": ["status", "visible_area_threshold", "visible_candidate_count", "near_blank_candidate_count", "near_blank_candidate_ids", "image_training_eligible_count", "policy"],
+      "properties": {
+        "status": { "enum": ["complete", "partial"] },
+        "visible_area_threshold": { "type": "number", "exclusiveMinimum": 0 },
+        "visible_candidate_count": { "type": "integer", "minimum": 0 },
+        "near_blank_candidate_count": { "type": "integer", "minimum": 0 },
+        "near_blank_candidate_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "image_training_eligible_count": { "type": "integer", "minimum": 0 },
+        "policy": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "status": { "enum": ["pass", "fail"] },
+    "contact_sheet_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["trajectory_id", "category", "label", "control_scope", "status", "expected_signals", "actual_signals", "visual_status", "image_training_eligible", "max_visible_area_ratio", "mean_visible_area_ratio", "result_path", "material_timeline_path"],
+        "properties": {
+          "trajectory_id": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "minLength": 1 },
+          "label": { "enum": ["positive", "negative"] },
+          "control_scope": { "enum": ["material", "renderer_mpb", "slot_mpb"] },
+          "status": { "enum": ["pass", "fail", "error"] },
+          "expected_signals": { "type": "array", "items": { "type": "string" } },
+          "actual_signals": { "type": "array", "items": { "type": "string" } },
+          "visual_status": { "enum": ["visible", "near_blank"] },
+          "image_training_eligible": { "type": "boolean" },
+          "max_visible_area_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+          "mean_visible_area_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+          "prefab_path": { "type": ["string", "null"] },
+          "context_renderer_status": { "type": "string", "minLength": 1 },
+          "context_renderer_reason": { "type": "string", "minLength": 1 },
+          "effective_control_scope": { "enum": ["material", "renderer_mpb", "slot_mpb"] },
+          "result_path": { "type": "string", "minLength": 1 },
+          "material_timeline_path": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "countMap": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_trajectory.schema.json",
+  "title": "Material Trajectory Curriculum Spec",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "trajectory_id",
+    "curriculum_id",
+    "seed",
+    "category",
+    "label",
+    "source_asset",
+    "style_profile",
+    "control_scope",
+    "duration_seconds",
+    "parameter_tracks",
+    "keyword_events",
+    "texture_swap_events",
+    "material_replace_events",
+    "expected_signals",
+    "negative_mutation",
+    "split_group"
+  ],
+  "properties": {
+    "schema_version": { "const": "material_trajectory_spec.v1" },
+    "trajectory_id": { "type": "string", "minLength": 1 },
+    "curriculum_id": { "type": "string", "minLength": 1 },
+    "seed": { "type": "integer", "minimum": 0 },
+    "category": {
+      "enum": ["dissolve", "flow_distortion", "emission_alpha", "mpb", "texture_swap", "keyword_material", "negative"]
+    },
+    "label": { "enum": ["positive", "negative"] },
+    "source_asset": {
+      "type": "object",
+      "required": ["material_path", "material_name", "shader_name", "shader_path", "texture_bindings", "effect_families", "source_categories"],
+      "properties": {
+        "material_path": { "type": "string", "minLength": 1 },
+        "material_name": { "type": "string", "minLength": 1 },
+        "shader_name": { "type": "string", "minLength": 1 },
+        "shader_path": { "type": ["string", "null"] },
+        "texture_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["property_name", "texture_path", "tags"],
+            "properties": {
+              "property_name": { "type": "string" },
+              "texture_path": { "type": "string" },
+              "tags": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        },
+        "effect_families": { "type": "array", "items": { "type": "string" } },
+        "source_categories": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "style_profile": {
+      "type": "object",
+      "required": ["family", "keywords"],
+      "properties": {
+        "family": { "type": "string" },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "control_scope": { "enum": ["material", "renderer_mpb", "slot_mpb"] },
+    "duration_seconds": { "type": "number", "exclusiveMinimum": 0, "maximum": 8 },
+    "parameter_tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["property_name", "semantic", "value_kind", "start_value", "end_value", "curve", "start_time_seconds", "duration_seconds"],
+        "properties": {
+          "property_name": { "type": "string", "minLength": 1 },
+          "semantic": { "type": "string", "minLength": 1 },
+          "value_kind": { "enum": ["float", "int", "color", "vector"] },
+          "start_value": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "number" } },
+          "end_value": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "number" } },
+          "curve": { "enum": ["linear", "ease_in", "ease_out", "smoothstep", "step", "pulse"] },
+          "start_time_seconds": { "type": "number", "minimum": 0 },
+          "duration_seconds": { "type": "number", "exclusiveMinimum": 0 },
+          "clamp_min": { "type": ["number", "null"] },
+          "clamp_max": { "type": ["number", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "particle_color_tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_material_path", "start_color", "end_color", "curve", "start_time_seconds", "duration_seconds", "disable_color_over_lifetime"],
+        "properties": {
+          "target_material_path": { "type": "string", "minLength": 1 },
+          "start_color": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "number" } },
+          "end_color": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "number" } },
+          "curve": { "enum": ["linear", "ease_in", "ease_out", "smoothstep", "step", "pulse"] },
+          "start_time_seconds": { "type": "number", "minimum": 0 },
+          "duration_seconds": { "type": "number", "exclusiveMinimum": 0 },
+          "disable_color_over_lifetime": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "material_property_tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_material_path", "property_name", "value_kind", "start_value", "end_value", "curve", "start_time_seconds", "duration_seconds"],
+        "properties": {
+          "target_material_path": { "type": "string", "minLength": 1 },
+          "property_name": { "type": "string", "minLength": 1 },
+          "value_kind": { "enum": ["float", "int", "color", "vector"] },
+          "start_value": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "number" } },
+          "end_value": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "number" } },
+          "curve": { "enum": ["linear", "ease_in", "ease_out", "smoothstep", "step", "pulse"] },
+          "start_time_seconds": { "type": "number", "minimum": 0 },
+          "duration_seconds": { "type": "number", "exclusiveMinimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "keyword_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["time_seconds", "keyword", "enabled"],
+        "properties": {
+          "time_seconds": { "type": "number", "minimum": 0 },
+          "keyword": { "type": "string", "minLength": 1 },
+          "enabled": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "texture_swap_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["time_seconds", "property_name", "from_texture_path", "to_texture_path", "from_tags", "to_tags"],
+        "properties": {
+          "time_seconds": { "type": "number", "minimum": 0 },
+          "property_name": { "type": "string" },
+          "from_texture_path": { "type": "string" },
+          "to_texture_path": { "type": "string" },
+          "from_tags": { "type": "array", "items": { "type": "string" } },
+          "to_tags": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "material_replace_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["time_seconds", "from_material_path", "to_material_path", "same_shader_required"],
+        "properties": {
+          "time_seconds": { "type": "number", "minimum": 0 },
+          "from_material_path": { "type": "string" },
+          "to_material_path": { "type": "string" },
+          "same_shader_required": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "expected_signals": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "negative_mutation": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["type", "severity", "reason"],
+          "properties": {
+            "type": { "enum": ["abrupt_jump", "overshoot", "no_op", "incompatible_texture", "late_peak"] },
+            "severity": { "type": "number", "minimum": 0, "maximum": 1 },
+            "reason": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "split_group": {
+      "type": "object",
+      "required": ["shader_group", "material_group"],
+      "properties": {
+        "shader_group": { "type": "string", "minLength": 1 },
+        "material_group": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

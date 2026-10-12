@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "procedure_training_dataset.schema.json",
+  "title": "VFX Procedure Training Dataset Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "dataset_id", "procedure_count", "family_counts", "source_status_counts", "planner_constraint_count", "target_verified_count", "controller_sft_count", "files", "quality_gates", "policy", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_procedure_training_dataset.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "procedure_count": { "type": "integer", "minimum": 0 },
+    "family_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "source_status_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "planner_constraint_count": { "type": "integer", "minimum": 0 },
+    "target_verified_count": { "type": "integer", "minimum": 0 },
+    "controller_sft_count": { "type": "integer", "minimum": 0 },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["procedure_index", "planner_constraints", "controller_sft", "exclusions"],
+      "properties": {
+        "procedure_index": { "type": "string" },
+        "planner_constraints": { "type": "string" },
+        "controller_sft": { "type": "string" },
+        "exclusions": { "type": "string" }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_errors", "duplicate_procedure_ids", "invalid_step_orders", "unverified_positive_supervision_count"],
+      "properties": {
+        "schema_errors": { "const": 0 },
+        "duplicate_procedure_ids": { "const": 0 },
+        "invalid_step_orders": { "const": 0 },
+        "unverified_positive_supervision_count": { "const": 0 }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tutorials_are_causal_supervision", "prefabs_are_not_the_only_training_source", "target_unity_reproduction_required_for_sft", "professional_visual_acceptance_required_for_positive_generation"],
+      "properties": {
+        "tutorials_are_causal_supervision": { "const": true },
+        "prefabs_are_not_the_only_training_source": { "const": true },
+        "target_unity_reproduction_required_for_sft": { "const": true },
+        "professional_visual_acceptance_required_for_positive_generation": { "const": true }
+      }
+    },
+    "status": { "enum": ["ready_for_retrieval_only", "ready_for_planner_training", "empty"] }
+  }
+}

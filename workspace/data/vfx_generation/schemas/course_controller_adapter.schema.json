@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "course_controller_adapter.schema.json",
+  "title": "Course to VFX Controller Adapter Manifest",
+  "type": "object",
+  "required": ["schema_version", "created_at", "adapter_id", "knowledge_record_count", "spec_prior_count", "controller_candidate_count", "excluded_count", "exclusion_counts", "files", "training_policy", "status"],
+  "properties": {
+    "schema_version": { "const": "course_controller_adapter.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "adapter_id": { "type": "string", "minLength": 1 },
+    "knowledge_record_count": { "type": "integer", "minimum": 0 },
+    "spec_prior_count": { "type": "integer", "minimum": 0 },
+    "controller_candidate_count": { "type": "integer", "minimum": 0 },
+    "excluded_count": { "type": "integer", "minimum": 0 },
+    "exclusion_counts": { "$ref": "#/$defs/countMap" },
+    "files": { "type": "object" },
+    "training_policy": { "type": "object" },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

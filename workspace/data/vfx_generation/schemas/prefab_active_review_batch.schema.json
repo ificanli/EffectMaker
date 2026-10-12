@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_active_review_batch.schema.json",
+  "title": "Prefab Active Review Batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "batch_id", "source_active_batch", "selection_strategy", "record_count", "allowed_actions", "records"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_active_review_batch.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "review_mode": { "enum": ["aesthetic_correction", "semantic_function_only"] },
+    "semantic_schema_version": { "type": ["string", "null"] },
+    "source_active_batch": { "type": "string", "minLength": 1 },
+    "selection_strategy": { "const": "bounded_active_learning_chinese_correction.v1" },
+    "record_count": { "type": "integer", "minimum": 0 },
+    "allowed_actions": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 11,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["review_index", "sample_id", "prefab_path", "cluster_id", "selection_reason", "selection_reason_cn", "priority_score", "ai_draft", "ai_summary_cn", "capture_manifest_path", "capture_pipeline_version", "peak_frame_index", "frames", "webgl_preview", "allowed_actions"],
+        "properties": {
+          "review_index": { "type": "integer", "minimum": 1 },
+          "sample_id": { "type": "string", "minLength": 1 },
+          "prefab_path": { "type": "string", "minLength": 1 },
+          "cluster_id": { "type": "string", "minLength": 1 },
+          "selection_reason": { "type": "string", "minLength": 1 },
+          "selection_reason_cn": { "type": "string", "minLength": 1 },
+          "priority_score": { "type": "number" },
+          "ai_draft": { "type": "object" },
+          "ai_summary_cn": { "type": "string", "minLength": 1 },
+          "review_mode": { "enum": ["aesthetic_correction", "semantic_function_only"] },
+          "semantic_schema_version": { "type": "string", "minLength": 1 },
+          "ai_effect_elements": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "ai_effect_elements_cn": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "ai_effect_type": { "type": "string", "minLength": 1 },
+          "ai_effect_type_cn": { "type": "string", "minLength": 1 },
+          "element_options": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["value", "label"],
+              "properties": {
+                "value": { "type": "string", "minLength": 1 },
+                "label": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "effect_type_options": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["value", "label"],
+              "properties": {
+                "value": { "type": "string", "minLength": 1 },
+                "label": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "capture_manifest_path": { "type": "string", "minLength": 1 },
+          "capture_pipeline_version": { "const": "play_mode_runtime_isolated_multiview.v2" },
+          "peak_frame_index": { "type": "integer", "minimum": 0 },
+          "frames": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["time_seconds", "path"],
+              "properties": {
+                "time_seconds": { "type": "number", "minimum": 0 },
+                "path": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "webgl_preview": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["player_url", "catalog_id"],
+            "properties": {
+              "player_url": { "type": "string", "pattern": "^https?://" },
+              "catalog_id": { "type": "string", "minLength": 1 }
+            }
+          },
+          "allowed_actions": { "type": "array", "minItems": 4, "maxItems": 11, "uniqueItems": true, "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

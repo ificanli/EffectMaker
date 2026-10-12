@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_plan_validation_manifest.schema.json",
+  "title": "MaterialPlan Unity Validation Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "validation_id", "record_count", "effect_family_counts", "technical_label_counts", "baseline_comparison", "files", "quality_gates", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_material_plan_validation_manifest.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "validation_id": { "type": "string", "minLength": 1 },
+    "record_count": { "type": "integer", "minimum": 1 },
+    "effect_family_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "technical_label_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "baseline_comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseline_capture_count", "baseline_visible_count", "current_capture_count", "current_visible_count", "visible_count_delta"],
+      "properties": {
+        "baseline_capture_count": { "type": "integer", "minimum": 0 },
+        "baseline_visible_count": { "type": "integer", "minimum": 0 },
+        "current_capture_count": { "type": "integer", "minimum": 0 },
+        "current_visible_count": { "type": "integer", "minimum": 0 },
+        "visible_count_delta": { "type": "integer" }
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records", "visible_pairs", "technical_negatives"],
+      "properties": {
+        "records": { "type": "string" },
+        "visible_pairs": { "type": "string" },
+        "technical_negatives": { "type": "string" }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_errors", "duplicate_candidate_ids", "plan_schema_errors", "planned_texture_readback_failures", "capture_v2_count_mismatch", "aesthetic_labels_consumed"],
+      "properties": {
+        "schema_errors": { "const": 0 },
+        "duplicate_candidate_ids": { "const": 0 },
+        "plan_schema_errors": { "const": 0 },
+        "planned_texture_readback_failures": { "const": 0 },
+        "capture_v2_count_mismatch": { "const": 0 },
+        "aesthetic_labels_consumed": { "const": 0 }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

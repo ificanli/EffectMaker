@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_aesthetic_promotion_report.schema.json",
+  "title": "VFX Aesthetic Model Promotion Report",
+  "type": "object",
+  "required": ["schema_version", "created_at", "dataset_manifest", "data_coverage", "leakage_audit", "model_status", "promotion", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_promotion_report.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_manifest": { "type": "string", "minLength": 1 },
+    "data_coverage": {
+      "type": "object",
+      "required": ["judge_training_count", "preference_training_count", "effect_family_counts", "style_family_counts"],
+      "properties": {
+        "judge_training_count": { "type": "integer", "minimum": 0 },
+        "preference_training_count": { "type": "integer", "minimum": 0 },
+        "effect_family_counts": { "$ref": "#/$defs/countMap" },
+        "style_family_counts": { "$ref": "#/$defs/countMap" }
+      },
+      "additionalProperties": false
+    },
+    "leakage_audit": {
+      "type": "object",
+      "required": ["status", "group_count", "multi_split_group_count"],
+      "properties": {
+        "status": { "enum": ["pass", "fail", "not_available"] },
+        "group_count": { "type": "integer", "minimum": 0 },
+        "multi_split_group_count": { "type": "integer", "minimum": 0 },
+        "multi_split_groups": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "model_status": {
+      "type": "object",
+      "required": ["judge", "preference_ranker", "controller"],
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status", "model_path", "metrics_path", "model_card_path"],
+        "properties": {
+          "status": { "enum": ["absent", "experimental", "candidate", "promoted"] },
+          "model_path": { "type": ["string", "null"] },
+          "metrics_path": { "type": ["string", "null"] },
+          "model_card_path": { "type": ["string", "null"] },
+          "final_visual_acceptance": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "promotion": {
+      "type": "object",
+      "required": ["decision", "reasons", "minimum_families", "minimum_styles", "regression_set_status"],
+      "properties": {
+        "decision": { "enum": ["blocked", "experimental", "candidate", "promoted"] },
+        "reasons": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "minimum_families": { "type": "integer", "minimum": 1 },
+        "minimum_styles": { "type": "integer", "minimum": 1 },
+        "regression_set_status": { "enum": ["pass", "fail", "missing"] }
+      },
+      "additionalProperties": false
+    },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

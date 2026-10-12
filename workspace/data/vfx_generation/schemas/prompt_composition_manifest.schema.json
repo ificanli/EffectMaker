@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prompt_composition_manifest.schema.json",
+  "title": "Prompt Prefab and MaterialTrajectory Composition Manifest",
+  "type": "object",
+  "required": ["schema_version", "created_at", "run_id", "retrieval_manifest_path", "prompt_condition", "candidate_count", "technical_pass_count", "visible_count", "near_blank_count", "human_aesthetic_labels_used", "prompt_conditions_unscored", "contact_sheet_paths", "candidates", "status"],
+  "properties": {
+    "schema_version": { "const": "prompt_composition_manifest.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "run_id": { "type": "string", "minLength": 1 },
+    "retrieval_manifest_path": { "type": "string", "minLength": 1 },
+    "prompt_condition": { "type": "object" },
+    "candidate_count": { "type": "integer", "minimum": 1 },
+    "technical_pass_count": { "type": "integer", "minimum": 0 },
+    "visible_count": { "type": "integer", "minimum": 0 },
+    "near_blank_count": { "type": "integer", "minimum": 0 },
+    "human_aesthetic_labels_used": { "const": 0 },
+    "prompt_conditions_unscored": { "type": "array", "items": { "type": "string" } },
+    "contact_sheet_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "candidates": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "source_prefab", "material_trajectory", "execution_status", "expected_signals", "actual_signals", "frame_count", "valid_frame_count", "visual_status", "max_visible_area_ratio", "image_feature_eligible", "prompt_conditions_unscored", "resource_clean"],
+        "properties": {
+          "candidate_id": { "type": "string" },
+          "source_prefab": { "type": "object" },
+          "material_trajectory": { "type": "object" },
+          "execution_status": { "enum": ["technical_pass", "technical_fail", "near_blank"] },
+          "expected_signals": { "type": "array", "items": { "type": "string" } },
+          "actual_signals": { "type": "array", "items": { "type": "string" } },
+          "frame_count": { "type": "integer", "minimum": 0 },
+          "valid_frame_count": { "type": "integer", "minimum": 0 },
+          "visual_status": { "enum": ["visible", "near_blank"] },
+          "max_visible_area_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+          "image_feature_eligible": { "type": "boolean" },
+          "prompt_conditions_unscored": { "type": "array", "items": { "type": "string" } },
+          "resource_clean": { "type": "boolean" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "status": { "enum": ["technical_pass_prompt_unscored", "technical_fail"] }
+  },
+  "additionalProperties": false
+}

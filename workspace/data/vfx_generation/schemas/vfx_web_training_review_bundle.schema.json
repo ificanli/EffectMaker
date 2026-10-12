@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_web_training_review_bundle.schema.json",
+  "title": "VFX WebGL Training Review Bundle",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "createdAt",
+    "reviewBundleId",
+    "runId",
+    "sourceUnityProject",
+    "truthCaptureMode",
+    "entries"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "vfx_web_training_review_bundle.v1" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "reviewBundleId": { "type": "string", "minLength": 1 },
+    "runId": { "type": "string", "minLength": 1 },
+    "sourceUnityProject": { "type": "string" },
+    "truthCaptureMode": { "type": "string", "minLength": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "webPrefabPath",
+          "sourcePrefabPath",
+          "runId",
+          "candidateId",
+          "trainingCaseId",
+          "effectFamily",
+          "materialTimelinePath",
+          "materialTimelineStatus",
+          "materialChangeCount",
+          "materialKeyTimes",
+          "sourceScriptFidelity",
+          "specPath",
+          "renderManifestPath",
+          "hasSeed",
+          "seed",
+          "generator",
+          "generatorVersion"
+        ],
+        "properties": {
+          "webPrefabPath": { "type": "string" },
+          "sourcePrefabPath": { "type": "string" },
+          "runId": { "type": "string", "minLength": 1 },
+          "candidateId": { "type": "string", "minLength": 1 },
+          "trainingCaseId": { "type": "string" },
+          "effectFamily": { "type": "string", "minLength": 1 },
+          "materialTimelinePath": { "type": ["string", "null"] },
+          "materialTimelineStatus": { "enum": ["ready", "missing", "not_linked", "invalid"] },
+          "materialChangeCount": { "type": "integer", "minimum": 0 },
+          "materialKeyTimes": {
+            "type": "array",
+            "items": { "type": "number", "minimum": 0 }
+          },
+          "sourceScriptFidelity": { "type": "string", "minLength": 1 },
+          "specPath": { "type": ["string", "null"] },
+          "renderManifestPath": { "type": ["string", "null"] },
+          "hasSeed": { "type": "boolean" },
+          "seed": { "type": "integer" },
+          "generator": { "type": ["string", "null"] },
+          "generatorVersion": { "type": ["string", "null"] }
+        },
+        "anyOf": [
+          { "properties": { "webPrefabPath": { "minLength": 1 } } },
+          { "properties": { "sourcePrefabPath": { "minLength": 1 } } }
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

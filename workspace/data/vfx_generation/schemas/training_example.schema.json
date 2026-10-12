@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "training_example.schema.json",
+  "title": "TrainingExample",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "example_id",
+    "run_id",
+    "candidate_id",
+    "inputs",
+    "outputs",
+    "label"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "training_example.v1"
+    },
+    "example_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "prompt": { "type": "string" },
+        "negative_prompt": { "type": "string" },
+        "target_style_profile": { "$ref": "style_profile.schema.json" },
+        "reference_frames": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "spec_path": { "type": "string" },
+        "render_manifest_path": { "type": "string" },
+        "source_sample_path": { "type": "string" },
+        "material_selection": {
+          "type": "object",
+          "properties": {
+            "texture_tag_index_path": { "type": ["string", "null"] },
+            "texture_tag_index_status": {
+              "type": ["string", "null"],
+              "enum": ["loaded", "missing", "unavailable", null]
+            },
+            "texture_tag_index_record_count": { "type": ["integer", "null"] },
+            "shader_candidates": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "texture_candidates": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "materials": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "selection_basis": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "outputs": {
+      "type": "object",
+      "properties": {
+        "render_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "contact_sheet_path": { "type": "string" },
+        "features_path": { "type": ["string", "null"] }
+        ,"observed_style_profile": { "$ref": "style_profile.schema.json" }
+      },
+      "additionalProperties": true
+    },
+    "label": {
+      "type": "object",
+      "properties": {
+        "decision": { "type": "string" },
+        "rank": { "type": ["integer", "null"] },
+        "accepted_parts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "rejected_parts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "next_mutation": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "style_match_decision": { "type": ["string", "null"], "enum": ["match", "partial", "mismatch", "unlabeled", null] },
+        "style_mismatch_dimensions": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

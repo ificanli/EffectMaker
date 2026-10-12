@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aesthetic_record.schema.json",
+  "title": "Unified VFX Aesthetic Evidence Record",
+  "description": "统一审美证据、观察、人工标签、技术排除和成对偏好的记录契约。资料本身不是训练标签；training_eligibility 只有经过后续门禁才能置为 true。",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_id",
+    "record_kind",
+    "provenance",
+    "scope",
+    "evidence",
+    "payload",
+    "training_eligibility"
+  ],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_record.v1" },
+    "record_id": { "type": "string", "minLength": 1 },
+    "record_kind": {
+      "enum": ["reference", "observation", "human_label", "technical_exclusion", "preference_pair"]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_kind", "source_path", "source_record_id", "source_sha256", "run_id", "run_manifest_path", "timecodes", "frame_paths"],
+      "properties": {
+        "source_kind": {
+          "enum": ["course_review", "reference_video", "reference_image", "knowledge_card", "unity_run", "human_feedback", "human_preference", "derived_dataset"]
+        },
+        "source_path": { "type": "string", "minLength": 1 },
+        "source_record_id": { "type": ["string", "null"] },
+        "source_sha256": { "type": ["string", "null"] },
+        "asset_content_sha256": { "type": ["string", "null"] },
+        "source_group_id": { "type": ["string", "null"] },
+        "material_group_id": { "type": ["string", "null"] },
+        "shader_group_id": { "type": ["string", "null"] },
+        "run_id": { "type": ["string", "null"] },
+        "run_manifest_path": { "type": ["string", "null"] },
+        "spec_path": { "type": ["string", "null"] },
+        "prefab_path": { "type": ["string", "null"] },
+        "render_candidate_id": { "type": ["string", "null"] },
+        "timecodes": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "frame_paths": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "parent_record_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "object",
+      "required": ["effect_family", "style_family", "style_keywords", "prompt_id", "candidate_ids"],
+      "properties": {
+        "effect_family": {
+          "enum": ["slash", "fire", "lightning", "shield", "smoke", "explosion", "magic_circle", "water", "ice", "energy", "unknown", "unclassified"]
+        },
+        "style_family": {
+          "enum": ["realistic", "stylized", "cartoon", "anime", "fantasy_painterly", "ui_graphic", "mixed", "unknown"]
+        },
+        "style_keywords": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "prompt_id": { "type": ["string", "null"] },
+        "candidate_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "scene_context": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["visibility_status", "evidence_status", "technical_status", "independent_visual_evidence", "continuous_frame_evidence"],
+      "properties": {
+        "visibility_status": { "enum": ["visible", "partial", "not_visible", "blocked_environment"] },
+        "evidence_status": { "enum": ["observed", "inferred", "pending", "verified", "excluded"] },
+        "technical_status": { "enum": ["pass", "warn", "reject", "unknown", "not_run", "context_required"] },
+        "independent_visual_evidence": { "type": "boolean" },
+        "continuous_frame_evidence": { "type": "boolean" },
+        "visual_review_channel": { "enum": ["native_image", "local_browser", "unity_game_view", "none"] },
+        "evidence_notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "payload": { "type": "object" },
+    "training_eligibility": {
+      "type": "object",
+      "required": ["aesthetic_judge", "preference_training", "controller_sft", "positive_generation_supervision", "excluded_reasons"],
+      "properties": {
+        "aesthetic_judge": { "type": "boolean" },
+        "preference_training": { "type": "boolean" },
+        "controller_sft": { "type": "boolean" },
+        "positive_generation_supervision": { "type": "boolean" },
+        "excluded_reasons": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "record_kind": { "const": "reference" } } },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["reference_role", "description", "human_confirmed"],
+            "properties": {
+              "reference_role": { "enum": ["positive_reference", "negative_reference", "style_reference", "context_only"] },
+              "description": { "type": "string", "minLength": 1 },
+              "human_confirmed": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "record_kind": { "const": "observation" } } },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["observation", "rule_candidate", "axes", "polarity", "confidence"],
+            "properties": {
+              "observation": { "type": "string", "minLength": 1 },
+              "rule_candidate": { "type": ["string", "null"] },
+              "axes": { "type": "array", "items": { "enum": ["core_readability", "layer_separation", "rhythm", "material", "composition", "style_match", "overall_quality"] }, "uniqueItems": true },
+              "polarity": { "enum": ["positive_example", "negative_example", "neutral", "unknown"] },
+              "confidence": { "enum": ["high", "medium", "low", "unknown"] },
+              "requires_unity_validation": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "record_kind": { "const": "human_label" } } },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["reviewer", "reviewed_at", "decision", "quality_score", "scores", "style_match_decision", "layer_roles", "reusable_layers", "issues", "summary", "confirmation_mode"],
+            "properties": {
+              "reviewer": { "type": "string", "minLength": 1 },
+              "reviewed_at": { "type": "string", "format": "date-time" },
+              "decision": { "enum": ["accept_reference", "partial", "reject", "not_visible"] },
+              "quality_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+              "scores": {
+                "type": "object",
+                "required": ["core_readability", "layer_separation", "rhythm", "material", "composition"],
+                "properties": {
+                  "core_readability": { "type": "integer", "minimum": 0, "maximum": 5 },
+                  "layer_separation": { "type": "integer", "minimum": 0, "maximum": 5 },
+                  "rhythm": { "type": "integer", "minimum": 0, "maximum": 5 },
+                  "material": { "type": "integer", "minimum": 0, "maximum": 5 },
+                  "composition": { "type": "integer", "minimum": 0, "maximum": 5 }
+                },
+                "additionalProperties": false
+              },
+              "style_match_decision": { "enum": ["match", "partial", "mismatch", "unlabeled"] },
+              "layer_roles": {
+                "type": "object",
+                "required": ["core", "support", "hit", "residual"],
+                "properties": {
+                  "core": { "type": "string" },
+                  "support": { "type": "string" },
+                  "hit": { "type": "string" },
+                  "residual": { "type": "string" }
+                },
+                "additionalProperties": false
+              },
+              "reusable_layers": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+              "issues": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+              "summary": { "type": "string", "minLength": 1 },
+              "notes": { "type": "string" },
+              "confirmation_mode": { "enum": ["human_accepted_ai_draft", "human_corrected_ai_draft"] }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "record_kind": { "const": "technical_exclusion" } } },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["exclusion_category", "exclusion_code", "reason"],
+            "properties": {
+              "exclusion_category": { "enum": ["visibility", "runtime", "dependency", "context", "authorization", "data_quality"] },
+              "exclusion_code": { "type": "string", "minLength": 1 },
+              "reason": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "record_kind": { "const": "preference_pair" } } },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["candidate_a", "candidate_b", "preference", "comparable", "reason_codes", "human_note"],
+            "properties": {
+              "candidate_a": { "type": "string", "minLength": 1 },
+              "candidate_b": { "type": "string", "minLength": 1 },
+              "preference": { "enum": ["a", "b", "tie", "not_comparable"] },
+              "comparable": { "type": "boolean" },
+              "reason_codes": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+              "human_note": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "training_eligibility": { "properties": { "aesthetic_judge": { "const": true } } } } },
+      "then": {
+        "properties": {
+          "record_kind": { "const": "human_label" },
+          "evidence": {
+            "properties": {
+              "visibility_status": { "const": "visible" },
+              "independent_visual_evidence": { "const": true },
+              "continuous_frame_evidence": { "const": true },
+              "evidence_status": { "enum": ["observed", "verified"] }
+            }
+          },
+          "payload": {
+            "properties": {
+              "decision": { "enum": ["accept_reference", "partial", "reject"] }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "training_eligibility": { "properties": { "preference_training": { "const": true } } } } },
+      "then": {
+        "properties": {
+          "record_kind": { "const": "preference_pair" },
+          "evidence": {
+            "properties": {
+              "visibility_status": { "const": "visible" },
+              "independent_visual_evidence": { "const": true },
+              "continuous_frame_evidence": { "const": true }
+            }
+          },
+          "payload": {
+            "properties": {
+              "preference": { "enum": ["a", "b"] },
+              "comparable": { "const": true }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

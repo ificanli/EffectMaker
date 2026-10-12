@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_prompt_condition_scorer_dataset.schema.json",
+  "title": "VFX Prompt Condition Scorer Dataset Manifest",
+  "type": "object",
+  "required": ["schema_version", "created_at", "dataset_id", "overlay_count", "feature_row_count", "condition_counts", "unknown_condition_counts", "exclusion_count", "files", "training_gate", "policy", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_prompt_condition_scorer_dataset.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "overlay_count": { "type": "integer", "minimum": 0 },
+    "feature_row_count": { "type": "integer", "minimum": 0 },
+    "condition_counts": { "$ref": "#/$defs/nestedCountMap" },
+    "unknown_condition_counts": { "$ref": "#/$defs/countMap" },
+    "exclusion_count": { "type": "integer", "minimum": 0 },
+    "files": { "type": "object" },
+    "training_gate": {
+      "type": "object",
+      "required": ["status", "minimum_per_class", "minimum_groups", "ready_conditions", "blocked_conditions"],
+      "properties": {
+        "status": { "enum": ["ready", "insufficient_labels", "no_labeled_conditions"] },
+        "minimum_per_class": { "type": "integer", "minimum": 1 },
+        "minimum_groups": { "type": "integer", "minimum": 1 },
+        "ready_conditions": { "type": "array", "items": { "type": "string" } },
+        "blocked_conditions": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "policy": { "type": "object" },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "nestedCountMap": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/countMap" }
+    }
+  },
+  "additionalProperties": false
+}

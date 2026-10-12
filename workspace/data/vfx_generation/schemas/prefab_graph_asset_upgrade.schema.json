@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_graph_asset_upgrade.schema.json",
+  "title": "PrefabGraph Asset Upgrade",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "input_decode_path", "candidate_count", "candidates", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_graph_asset_upgrade.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "input_decode_path": { "type": "string", "minLength": 1 },
+    "candidate_count": { "type": "integer", "minimum": 1 },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_id", "profile", "graph_path", "asset_plan_path", "graph_status", "parent_prefab_path"],
+        "properties": {
+          "candidate_id": { "type": "string", "pattern": "^pfg_[0-9a-f]{20}$" },
+          "profile": { "enum": ["root_only", "particle_v1", "multi_particle"] },
+          "graph_path": { "type": "string", "minLength": 1 },
+          "asset_plan_path": { "type": "string", "minLength": 1 },
+          "graph_status": { "const": "reconstructable" },
+          "parent_prefab_path": { "type": "null" }
+        }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adapters/lightning_adapter.schema.json",
+  "title": "LightningAdapter",
+  "type": "object",
+  "required": ["name", "version", "generator_family", "path", "flash", "evaluation_metrics"],
+  "properties": {
+    "name": { "type": "string", "const": "lightning.adapter" },
+    "version": { "type": "string" },
+    "generator_family": {
+      "type": "string",
+      "enum": ["branch_path", "jump_flash", "contact_arc", "afterimage_line"]
+    },
+    "path": {
+      "type": "object",
+      "required": ["path_mode"],
+      "properties": {
+        "path_mode": {
+          "type": "string",
+          "enum": ["single_bolt", "branching", "chain_jump", "ground_crawl", "radial_burst"]
+        },
+        "branch_count": { "type": "integer", "minimum": 0, "maximum": 64 },
+        "jitter_strength": { "type": "number", "minimum": 0, "maximum": 1 },
+        "main_path_bias": { "type": "number", "minimum": 0, "maximum": 1 },
+        "contact_points": { "type": "integer", "minimum": 0, "maximum": 16 }
+      },
+      "additionalProperties": true
+    },
+    "flash": {
+      "type": "object",
+      "properties": {
+        "instant_peak": { "type": "number", "minimum": 0, "maximum": 1 },
+        "afterimage_duration": { "type": "number", "minimum": 0 },
+        "flicker_count": { "type": "integer", "minimum": 0, "maximum": 16 },
+        "contact_arc_strength": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": true
+    },
+    "evaluation_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["branch_readability", "instant_peak", "path_energy", "randomness_control", "contact_clarity"]
+      }
+    }
+  },
+  "additionalProperties": true
+}

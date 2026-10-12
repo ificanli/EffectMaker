@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "runtime_capture_regression_report.schema.json",
+  "title": "Runtime Capture V2 Regression Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "case_count", "categories", "cases", "quality_gates", "status"],
+  "properties": {
+    "schema_version": { "const": "effectdemo_runtime_capture_regression.v2" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "case_count": { "const": 5 },
+    "categories": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": { "enum": ["instant", "moving", "ground", "ui", "script_material"] }
+    },
+    "cases": { "type": "array", "minItems": 5, "items": { "type": "object" } },
+    "quality_gates": { "type": "object" },
+    "status": { "enum": ["pass", "blocked"] }
+  }
+}

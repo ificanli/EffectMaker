@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "human_feedback.schema.json",
+  "title": "HumanFeedback",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "candidate_id",
+    "decision",
+    "reviewer",
+    "feedback"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "human_feedback.v1"
+    },
+    "run_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "reviewer": { "type": "string" },
+    "reviewed_at": { "type": "string" },
+    "decision": {
+      "type": "string",
+      "enum": ["accept_direction", "partial", "reject", "needs_comparison", "not_visible"]
+    },
+    "rank": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "effect_family": { "type": "string" },
+    "target_style_profile": { "$ref": "style_profile.schema.json" },
+    "observed_style_profile": { "$ref": "style_profile.schema.json" },
+    "style_match_decision": { "type": ["string", "null"], "enum": ["match", "partial", "mismatch", "unlabeled", null] },
+    "style_mismatch_dimensions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "mutation_allowed": { "type": "boolean" },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "silhouette": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "direction": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "blade_energy": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "reference_fit": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "engineering_viability": { "type": "integer", "minimum": 0, "maximum": 5 }
+      },
+      "additionalProperties": true
+    },
+    "common_scores": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 5 }
+    },
+    "specialized_scores": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 5 }
+    },
+    "trace": {
+      "type": "object",
+      "required": ["spec_path", "render_manifest_path", "render_paths", "seed", "generator", "generator_version", "render_status"],
+      "properties": {
+        "spec_path": { "type": ["string", "null"] },
+        "render_manifest_path": { "type": ["string", "null"] },
+        "render_paths": { "type": "array", "items": { "type": "string" } },
+        "seed": { "type": ["integer", "null"] },
+        "generator": { "type": ["string", "null"] },
+        "generator_version": { "type": ["string", "null"] },
+        "render_status": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "pairwise": {
+      "type": "object",
+      "required": ["compared_candidate_id", "preference", "reason"],
+      "properties": {
+        "compared_candidate_id": { "type": "string" },
+        "preference": { "type": "string", "enum": ["candidate", "compared", "tie"] },
+        "reason": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "feedback": {
+      "type": "object",
+      "required": ["summary"],
+      "properties": {
+        "summary": { "type": "string" },
+        "accepted_parts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "rejected_parts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "reject_reasons": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "next_mutation": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

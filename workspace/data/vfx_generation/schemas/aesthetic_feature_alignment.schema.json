@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aesthetic_feature_alignment.schema.json",
+  "title": "VFX Aesthetic Feature Alignment Manifest",
+  "type": "object",
+  "required": ["schema_version", "created_at", "dataset_id", "input_record_count", "judge_candidate_count", "aligned_count", "excluded_count", "existing_feature_match_count", "direct_image_feature_count", "exclusion_counts", "files", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_feature_alignment.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "input_record_count": { "type": "integer", "minimum": 0 },
+    "judge_candidate_count": { "type": "integer", "minimum": 0 },
+    "aligned_count": { "type": "integer", "minimum": 0 },
+    "excluded_count": { "type": "integer", "minimum": 0 },
+    "existing_feature_match_count": { "type": "integer", "minimum": 0 },
+    "direct_image_feature_count": { "type": "integer", "minimum": 0 },
+    "exclusion_counts": { "$ref": "#/$defs/countMap" },
+    "coverage_by_run": { "$ref": "#/$defs/countMap" },
+    "files": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

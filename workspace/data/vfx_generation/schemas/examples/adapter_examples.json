@@ -1,0 +1,114 @@
+{
+  "schema_version": "adapter_examples.v1",
+  "examples": {
+    "slash": {
+      "name": "slash.adapter",
+      "version": "0.1.0",
+      "schema_ref": "schemas/adapters/slash_adapter.schema.json",
+      "generator_family": "curve_mesh",
+      "topology": {
+        "arc_topology": "hooked_slash",
+        "attack_direction": "diagonal",
+        "control_point_count": 5,
+        "asymmetry": 0.65
+      },
+      "shape": {
+        "arc_length": 5.2,
+        "arc_width": 0.72,
+        "width_profile": "center_heavy",
+        "tip_shape": "sharp",
+        "curvature": 0.42,
+        "edge_breakup": 0.28,
+        "residual_flow": "along_attack"
+      },
+      "evaluation_metrics": ["sharpness", "attack_direction", "tip_quality", "silhouette_readability"]
+    },
+    "fire": {
+      "name": "fire.adapter",
+      "version": "0.1.0",
+      "schema_ref": "schemas/adapters/fire_adapter.schema.json",
+      "generator_family": "tongue_particles",
+      "topology": {
+        "flame_shape": "fan",
+        "tongue_count": 12,
+        "root_width": 1.1,
+        "height_bias": 0.7,
+        "edge_breakup": 0.55
+      },
+      "behavior": {
+        "turbulence": 0.62,
+        "root_brightness": 0.9,
+        "upward_flow_speed": 1.8,
+        "ember_behavior": "rising_sparks",
+        "smoke_afterburn": "soft_residue"
+      },
+      "evaluation_metrics": ["turbulence", "root_brightness", "edge_breakup", "heat_layering"]
+    },
+    "lightning": {
+      "name": "lightning.adapter",
+      "version": "0.1.0",
+      "schema_ref": "schemas/adapters/lightning_adapter.schema.json",
+      "generator_family": "branch_path",
+      "path": {
+        "path_mode": "branching",
+        "branch_count": 9,
+        "jitter_strength": 0.76,
+        "main_path_bias": 0.82,
+        "contact_points": 2
+      },
+      "flash": {
+        "instant_peak": 0.94,
+        "afterimage_duration": 0.16,
+        "flicker_count": 3,
+        "contact_arc_strength": 0.7
+      },
+      "evaluation_metrics": ["branch_readability", "instant_peak", "path_energy", "randomness_control"]
+    },
+    "shield": {
+      "name": "shield.adapter",
+      "version": "0.1.0",
+      "schema_ref": "schemas/adapters/shield_adapter.schema.json",
+      "generator_family": "sphere_surface",
+      "volume": {
+        "volume_shape": "dome",
+        "wrap_ratio": 0.68,
+        "surface_thickness": 0.08,
+        "ground_intersection": "ground_ring"
+      },
+      "surface": {
+        "surface_pattern": "hex",
+        "pattern_density": 0.45,
+        "transparency_mode": "transparent_shell",
+        "rim_strength": 1.4
+      },
+      "impact_response": {
+        "impact_point_mode": "single_point",
+        "ripple_behavior": "radial",
+        "ripple_count": 3,
+        "impact_decay": 0.42
+      },
+      "evaluation_metrics": ["wrap_volume", "impact_response", "surface_readability", "transparent_sorting"]
+    },
+    "magic_circle": {
+      "name": "magic_circle.adapter",
+      "version": "0.1.0",
+      "schema_ref": "schemas/adapters/magic_circle_adapter.schema.json",
+      "generator_family": "ground_ring",
+      "layout": {
+        "ring_count": 4,
+        "rune_density": 0.58,
+        "radial_segments": 16,
+        "symmetry": "broken_radial",
+        "ground_attachment": "flat_ground"
+      },
+      "reveal": {
+        "reveal_timing": "center_out",
+        "rotation_layers": 2,
+        "rotation_speed": 0.35,
+        "pulse_count": 2,
+        "warning_duration": 0.45
+      },
+      "evaluation_metrics": ["symbol_density", "ground_attachment", "reveal_timing", "layer_clarity"]
+    }
+  }
+}

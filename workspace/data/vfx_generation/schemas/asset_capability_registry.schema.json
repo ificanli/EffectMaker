@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "asset_capability_registry.schema.json",
+  "title": "VFX Asset Capability Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "registry_id", "target_unity_version", "target_render_pipeline", "counts", "files", "quality_gates", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_asset_capability_registry.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "registry_id": { "type": "string", "minLength": 1 },
+    "target_unity_version": { "const": "2022.3.16f1c1" },
+    "target_render_pipeline": { "const": "urp14" },
+    "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["textures", "shaders", "materials"],
+      "properties": {
+        "textures": { "type": "string", "minLength": 1 },
+        "shaders": { "type": "string", "minLength": 1 },
+        "materials": { "type": "string", "minLength": 1 }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_errors", "duplicate_texture_ids", "duplicate_shader_ids", "duplicate_material_ids", "project_texture_missing_files", "project_shader_missing_files", "reference_assets_marked_bindable", "compiler_error_assets_marked_bindable", "invalid_materials_marked_usable"],
+      "properties": {
+        "schema_errors": { "const": 0 },
+        "duplicate_texture_ids": { "const": 0 },
+        "duplicate_shader_ids": { "const": 0 },
+        "duplicate_material_ids": { "const": 0 },
+        "project_texture_missing_files": { "const": 0 },
+        "project_shader_missing_files": { "const": 0 },
+        "reference_assets_marked_bindable": { "const": 0 },
+        "compiler_error_assets_marked_bindable": { "const": 0 },
+        "invalid_materials_marked_usable": { "const": 0 }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

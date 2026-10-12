@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_human_feedback.schema.json",
+  "title": "Prefab Human Style and Quality Feedback",
+  "type": "object",
+  "required": [
+    "schema_version", "batch_id", "candidate_id", "reviewed_at", "reviewer", "decision",
+    "style_family", "style_keywords", "quality_score", "scores", "layer_roles",
+    "reusable_layers", "issues", "summary", "trace", "confirmation_mode"
+  ],
+  "properties": {
+    "schema_version": { "const": "prefab_human_feedback.v1" },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "candidate_id": { "type": "string", "minLength": 1 },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "reviewer": { "type": "string", "minLength": 1 },
+    "decision": { "enum": ["accept_reference", "partial", "reject", "not_visible"] },
+    "style_family": { "enum": ["realistic", "stylized", "cartoon", "anime", "fantasy_painterly", "ui_graphic", "mixed", "unknown"] },
+    "style_keywords": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "quality_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "scores": {
+      "type": "object",
+      "required": ["core_readability", "layer_separation", "rhythm", "material", "composition"],
+      "properties": {
+        "core_readability": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "layer_separation": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "rhythm": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "material": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "composition": { "type": "integer", "minimum": 0, "maximum": 5 }
+      },
+      "additionalProperties": false
+    },
+    "layer_roles": {
+      "type": "object",
+      "required": ["core", "support", "hit", "residual"],
+      "properties": {
+        "core": { "type": "string" },
+        "support": { "type": "string" },
+        "hit": { "type": "string" },
+        "residual": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "reusable_layers": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "issues": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "summary": { "type": "string", "minLength": 1 },
+    "notes": { "type": "string" },
+    "confirmation_mode": { "enum": ["human_accepted_ai_draft", "human_corrected_ai_draft"] },
+    "trace": {
+      "type": "object",
+      "required": ["prefab_path", "render_candidate_id", "render_paths", "auto_eval_status"],
+      "properties": {
+        "prefab_path": { "type": "string" },
+        "render_candidate_id": { "type": "string" },
+        "render_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "auto_eval_status": { "enum": ["pass", "warn", "reject", "unknown"] }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

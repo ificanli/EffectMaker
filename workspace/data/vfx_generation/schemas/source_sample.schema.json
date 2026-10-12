@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source_sample.schema.json",
+  "title": "VFXSourceSample",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "sample_id",
+    "source_id",
+    "purpose",
+    "readiness",
+    "inputs",
+    "extracted",
+    "derived",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "source_sample.v1"
+    },
+    "sample_id": { "type": "string" },
+    "source_id": { "type": "string" },
+    "purpose": {
+      "type": "string",
+      "enum": [
+        "context_only",
+        "source_to_vfxspec_seed",
+        "positive_training_example",
+        "negative_training_example",
+        "paired_preference_source",
+        "debug_case"
+      ]
+    },
+    "readiness": {
+      "type": "string",
+      "enum": [
+        "context_only",
+        "needs_render",
+        "needs_feedback",
+        "trainable_internal",
+        "trainable_public",
+        "blocked"
+      ]
+    },
+    "style": {
+      "type": "object",
+      "properties": {
+        "target_style_profile": { "$ref": "style_profile.schema.json" },
+        "observed_style_profile": { "$ref": "style_profile.schema.json" }
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "object",
+      "required": ["source_manifest_path"],
+      "properties": {
+        "source_manifest_path": { "type": "string" },
+        "selected_files": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "prompt_path": { "type": ["string", "null"] },
+        "manual_notes_path": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "extracted": {
+      "type": "object",
+      "properties": {
+        "effect_family": { "type": "string" },
+        "component_summary": {
+          "type": "object",
+          "additionalProperties": { "type": ["integer", "number", "string", "boolean", "null"] }
+        },
+        "layers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["role", "source_files"],
+            "properties": {
+              "role": { "type": "string" },
+              "source_files": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "status": {
+                "type": "string",
+                "enum": ["candidate", "confirmed", "rejected", "unknown"]
+              },
+              "observations": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "timing": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "shape_parameters": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "material_parameters": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "material_selection": {
+          "type": "object",
+          "properties": {
+            "texture_tag_index_path": { "type": ["string", "null"] },
+            "texture_tag_index_status": {
+              "type": ["string", "null"],
+              "enum": ["loaded", "missing", "unavailable", null]
+            },
+            "texture_tag_index_record_count": { "type": ["integer", "null"] },
+            "shader_candidates": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "texture_candidates": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "materials": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "selection_basis": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": true
+        },
+        "performance_hints": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "derived": {
+      "type": "object",
+      "properties": {
+        "vfxspec_path": { "type": ["string", "null"] },
+        "render_run_id": { "type": ["string", "null"] },
+        "candidate_id": { "type": ["string", "null"] },
+        "training_example_path": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "capture_manifest_path": { "type": ["string", "null"] },
+        "contact_sheet_path": { "type": ["string", "null"] },
+        "render_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "human_feedback_path": { "type": ["string", "null"] },
+        "quality_gate": {
+          "type": "object",
+          "properties": {
+            "unity_verified": { "type": ["boolean", "null"] },
+            "visual_reviewed": { "type": ["boolean", "null"] },
+            "license_checked": { "type": ["boolean", "null"] }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "boundaries": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

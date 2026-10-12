@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adapters/magic_circle_adapter.schema.json",
+  "title": "MagicCircleAdapter",
+  "type": "object",
+  "required": ["name", "version", "generator_family", "layout", "reveal", "evaluation_metrics"],
+  "properties": {
+    "name": { "type": "string", "const": "magic_circle.adapter" },
+    "version": { "type": "string" },
+    "generator_family": {
+      "type": "string",
+      "enum": ["ground_ring", "rune_layer", "radial_mask", "warning_pulse"]
+    },
+    "layout": {
+      "type": "object",
+      "required": ["ring_count", "ground_attachment"],
+      "properties": {
+        "ring_count": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "rune_density": { "type": "number", "minimum": 0, "maximum": 1 },
+        "radial_segments": { "type": "integer", "minimum": 0, "maximum": 64 },
+        "symmetry": {
+          "type": "string",
+          "enum": ["radial", "broken_radial", "quadrant", "asymmetric"]
+        },
+        "ground_attachment": {
+          "type": "string",
+          "enum": ["flat_ground", "slight_float", "projected", "vertical_portal"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "reveal": {
+      "type": "object",
+      "properties": {
+        "reveal_timing": {
+          "type": "string",
+          "enum": ["instant", "center_out", "outside_in", "clockwise", "layered", "pulse"]
+        },
+        "rotation_layers": { "type": "integer", "minimum": 0, "maximum": 8 },
+        "rotation_speed": { "type": "number" },
+        "pulse_count": { "type": "integer", "minimum": 0, "maximum": 16 },
+        "warning_duration": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "evaluation_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["symbol_density", "ground_attachment", "reveal_timing", "layer_clarity", "radial_readability"]
+      }
+    }
+  },
+  "additionalProperties": true
+}

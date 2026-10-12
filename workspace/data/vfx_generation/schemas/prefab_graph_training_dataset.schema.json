@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_graph_training_dataset.schema.json",
+  "title": "PrefabGraph Training Dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "dataset_id", "source_dataset_id", "example_count", "reconstruction_status_counts", "token_count", "files", "quality_gates", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_graph_training_dataset.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source_dataset_id": { "type": "string", "minLength": 1 },
+    "example_count": { "type": "integer", "minimum": 1 },
+    "reconstruction_status_counts": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "token_count": { "type": "integer", "minimum": 1 },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["examples", "graphs", "vocabulary"],
+      "properties": {
+        "examples": { "type": "string", "minLength": 1 },
+        "graphs": { "type": "string", "minLength": 1 },
+        "vocabulary": { "type": "string", "minLength": 1 }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_example_count", "graph_schema_errors", "duplicate_graph_ids", "aesthetic_labels_consumed"],
+      "properties": {
+        "source_example_count": { "type": "integer", "minimum": 1 },
+        "graph_schema_errors": { "const": 0 },
+        "duplicate_graph_ids": { "const": 0 },
+        "aesthetic_labels_consumed": { "const": 0 }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

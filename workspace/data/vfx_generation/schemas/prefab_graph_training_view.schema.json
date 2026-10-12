@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_graph_training_view.schema.json",
+  "title": "PrefabGraph Training View Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "view_schema_version",
+    "created_at",
+    "dataset_id",
+    "source_dataset_id",
+    "example_count",
+    "reconstruction_status_counts",
+    "token_count",
+    "files",
+    "quality_gates",
+    "split_example_counts",
+    "split_cluster_counts",
+    "fingerprint_policy",
+    "vocabulary_fit_split",
+    "source_group_note",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_graph_training_dataset.v1" },
+    "view_schema_version": { "const": "vfx_prefab_graph_training_view.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source_dataset_id": { "type": "string", "minLength": 1 },
+    "example_count": { "type": "integer", "minimum": 1 },
+    "reconstruction_status_counts": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "token_count": { "type": "integer", "minimum": 1 },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["examples", "graphs", "vocabulary", "structure_clusters"],
+      "properties": {
+        "examples": { "type": "string", "minLength": 1 },
+        "graphs": { "type": "string", "minLength": 1 },
+        "vocabulary": { "type": "string", "minLength": 1 },
+        "structure_clusters": { "type": "string", "minLength": 1 }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_example_count",
+        "graph_schema_errors",
+        "duplicate_graph_ids",
+        "aesthetic_labels_consumed",
+        "duplicate_example_ids",
+        "cluster_split_leakage",
+        "parameter_agnostic_duplicate_group_count",
+        "component_topology_duplicate_group_count",
+        "train_validation_test_nonempty",
+        "train_source_group_count",
+        "validation_source_group_count",
+        "test_source_group_count"
+      ],
+      "properties": {
+        "source_example_count": { "type": "integer", "minimum": 1 },
+        "graph_schema_errors": { "const": 0 },
+        "duplicate_graph_ids": { "const": 0 },
+        "aesthetic_labels_consumed": { "const": 0 },
+        "duplicate_example_ids": { "const": 0 },
+        "cluster_split_leakage": { "const": 0 },
+        "parameter_agnostic_duplicate_group_count": { "type": "integer", "minimum": 0 },
+        "component_topology_duplicate_group_count": { "type": "integer", "minimum": 0 },
+        "train_validation_test_nonempty": { "const": 1 },
+        "train_source_group_count": { "type": "integer", "minimum": 1 },
+        "validation_source_group_count": { "type": "integer", "minimum": 1 },
+        "test_source_group_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "split_example_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["train", "validation", "test"],
+      "properties": {
+        "train": { "type": "integer", "minimum": 1 },
+        "validation": { "type": "integer", "minimum": 1 },
+        "test": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "split_cluster_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["train", "validation", "test"],
+      "properties": {
+        "train": { "type": "integer", "minimum": 1 },
+        "validation": { "type": "integer", "minimum": 1 },
+        "test": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "fingerprint_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "parameter_agnostic_sequence_ignored_prefixes",
+        "component_topology_ignored_prefixes",
+        "cluster_rule"
+      ],
+      "properties": {
+        "parameter_agnostic_sequence_ignored_prefixes": { "type": "array", "items": { "type": "string" } },
+        "component_topology_ignored_prefixes": { "type": "array", "items": { "type": "string" } },
+        "cluster_rule": { "type": "string", "minLength": 1 }
+      }
+    },
+    "vocabulary_fit_split": { "const": "train" },
+    "source_group_note": { "type": "string", "minLength": 1 },
+    "status": { "const": "pass" }
+  }
+}

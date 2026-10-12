@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_ai_review_draft.schema.json",
+  "title": "Prefab AI Review Draft",
+  "type": "object",
+  "required": ["schema_version", "batch_id", "candidate_id", "status", "confidence", "suggested_feedback", "evidence"],
+  "properties": {
+    "schema_version": { "const": "prefab_ai_review_draft.v1" },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "candidate_id": { "type": "string", "minLength": 1 },
+    "status": { "const": "ai_draft_not_human_label" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "suggested_feedback": {
+      "type": "object",
+      "required": ["decision", "style_family", "style_keywords", "quality_score", "scores", "layer_roles", "reusable_layers", "issues", "summary"],
+      "properties": {
+        "decision": { "enum": ["accept_reference", "partial", "reject", "not_visible"] },
+        "style_family": { "enum": ["realistic", "stylized", "cartoon", "anime", "fantasy_painterly", "ui_graphic", "mixed", "unknown"] },
+        "style_keywords": { "type": "array", "items": { "type": "string" } },
+        "quality_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "scores": { "type": "object" },
+        "layer_roles": { "type": "object" },
+        "reusable_layers": { "type": "array", "items": { "type": "string" } },
+        "issues": { "type": "array", "items": { "type": "string" } },
+        "summary": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["review_route", "technical_status", "rendered", "reason_codes"],
+      "properties": {
+        "review_route": { "type": "string" },
+        "technical_status": { "type": "string" },
+        "rendered": { "type": "boolean" },
+        "reason_codes": { "type": "array", "items": { "type": "string" } },
+        "pixel_metrics": { "type": "object" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

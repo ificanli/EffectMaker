@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "shader_capability.schema.json",
+  "title": "VFX Shader Capability",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "asset_id", "content_sha256", "shader_name", "path", "source_kind", "binding_status", "license_status", "source_repository", "target_unity_version", "pipeline_tags", "property_names", "keywords", "includes", "dependencies", "compiler", "provenance"],
+  "properties": {
+    "schema_version": { "const": "vfx_shader_capability.v1" },
+    "asset_id": { "type": "string", "pattern": "^shader_[0-9a-f]{20}$" },
+    "content_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+    "shader_name": { "type": ["string", "null"] },
+    "path": { "type": "string", "minLength": 1 },
+    "source_kind": { "enum": ["project_bindable", "package_reference", "github_reference"] },
+    "binding_status": { "enum": ["project_bindable", "reference_only", "blocked_compile_error", "blocked_unsupported", "blocked_missing_file"] },
+    "license_status": { "type": "string", "minLength": 1 },
+    "source_repository": { "type": ["string", "null"] },
+    "target_unity_version": { "type": ["string", "null"] },
+    "pipeline_tags": { "type": "array", "items": { "enum": ["builtin", "urp", "hdrp", "unknown"] }, "uniqueItems": true },
+    "property_names": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "keywords": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "includes": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "dependencies": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "compiler": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unity_api_audited", "unity_version", "is_supported", "error_count", "warning_count", "messages"],
+      "properties": {
+        "unity_api_audited": { "type": "boolean" },
+        "unity_version": { "type": ["string", "null"] },
+        "is_supported": { "type": ["boolean", "null"] },
+        "error_count": { "type": "integer", "minimum": 0 },
+        "warning_count": { "type": "integer", "minimum": 0 },
+        "messages": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "provenance": { "type": "object" }
+  }
+}

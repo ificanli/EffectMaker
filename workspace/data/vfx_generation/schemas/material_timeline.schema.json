@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_timeline.schema.json",
+  "title": "Runtime VFX Material State Timeline",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "prefab_path",
+    "capture_mode",
+    "capture_order",
+    "source_script_fidelity",
+    "frames",
+    "summary",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": { "const": "vfx_material_timeline.v1" },
+    "created_at": { "type": "string" },
+    "candidate_id": { "type": "string", "minLength": 1 },
+    "prefab_path": { "type": "string", "minLength": 1 },
+    "capture_mode": { "const": "play_mode_runtime" },
+    "capture_order": {
+      "enum": [
+        "late_update_barrier -> material_snapshot -> camera_render",
+        "trajectory_apply_at_late_update -> material_snapshot -> camera_render"
+      ]
+    },
+    "primary_training_signal": { "const": "runtime_material_state" },
+    "visual_evidence_role": { "const": "frame_alignment_only" },
+    "source_script_fidelity": { "type": "string", "minLength": 1 },
+    "ignored_script_dependency_count": { "type": "integer", "minimum": 0 },
+    "capture_error": { "type": ["string", "null"] },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "summary": {
+      "type": "object",
+      "required": ["frame_count", "delta_count", "changed_frame_count", "has_dynamic_material_state", "key_material_change_times", "signal_counts"],
+      "properties": {
+        "frame_count": { "type": "integer", "minimum": 0 },
+        "renderer_count_peak": { "type": "integer", "minimum": 0 },
+        "material_slot_count_peak": { "type": "integer", "minimum": 0 },
+        "delta_count": { "type": "integer", "minimum": 0 },
+        "changed_frame_count": { "type": "integer", "minimum": 0 },
+        "has_dynamic_material_state": { "type": "boolean" },
+        "has_unenumerated_property_block_values": { "type": "boolean" },
+        "global_shader_state_status": { "type": "string" },
+        "global_shader_value_count": { "type": "integer", "minimum": 0 },
+        "global_shader_delta_count": { "type": "integer", "minimum": 0 },
+        "key_material_change_times": { "type": "array", "items": { "type": "number", "minimum": 0 } },
+        "signal_counts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["signal", "count"],
+            "properties": {
+              "signal": { "type": "string" },
+              "count": { "type": "integer", "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["frame_index", "requested_time_seconds", "capture_time_seconds", "image_path", "renderers", "deltas_from_previous"],
+        "properties": {
+          "frame_index": { "type": "integer", "minimum": 0 },
+          "unity_frame_count": { "type": "integer", "minimum": 0 },
+          "requested_time_seconds": { "type": "number", "minimum": 0 },
+          "capture_time_seconds": { "type": "number", "minimum": 0 },
+          "image_path": { "type": "string" },
+          "global_shader_state_status": { "type": "string" },
+          "global_shader_values": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["property_name", "property_id", "value_kind", "numeric_value", "canonical_value", "revision", "writer"],
+              "properties": {
+                "property_name": { "type": "string", "minLength": 1 },
+                "property_id": { "type": "integer" },
+                "value_kind": { "const": "float" },
+                "numeric_value": { "type": "array", "minItems": 1, "items": { "type": "number" } },
+                "canonical_value": { "type": "string" },
+                "revision": { "type": "integer", "minimum": 1 },
+                "writer": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "renderers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["hierarchy_path", "renderer_type", "renderer_instance_id", "material_slots"],
+              "properties": {
+                "hierarchy_path": { "type": "string" },
+                "renderer_type": { "type": "string" },
+                "renderer_instance_id": { "type": "integer" },
+                "enabled": { "type": "boolean" },
+                "active_in_hierarchy": { "type": "boolean" },
+                "material_slots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["slot_index", "material_missing", "shader_keywords", "material_properties"],
+                    "properties": {
+                      "slot_index": { "type": "integer", "minimum": 0 },
+                      "material_missing": { "type": "boolean" },
+                      "material_instance_id": { "type": "integer" },
+                      "material_name": { "type": ["string", "null"] },
+                      "material_asset_path": { "type": ["string", "null"] },
+                      "shader_name": { "type": ["string", "null"] },
+                      "shader_asset_path": { "type": ["string", "null"] },
+                      "render_queue": { "type": "integer" },
+                      "shader_keywords": { "type": "array", "items": { "type": "string" } },
+                      "material_properties": { "$ref": "#/$defs/propertyArray" },
+                      "renderer_property_block": { "$ref": "#/$defs/propertyBlock" },
+                      "slot_property_block": { "$ref": "#/$defs/propertyBlock" },
+                      "active_property_block_scope": { "enum": ["", "material", "renderer", "slot", null] }
+                    },
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "deltas_from_previous": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["categories", "renderer_path", "material_slot", "semantic_tags", "before_value", "after_value"],
+              "properties": {
+                "categories": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+                "renderer_path": { "type": "string" },
+                "material_slot": { "type": "integer" },
+                "property_name": { "type": ["string", "null"] },
+                "semantic_tags": { "type": "array", "items": { "type": "string" } },
+                "before_value": { "type": ["string", "null"] },
+                "after_value": { "type": ["string", "null"] }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "propertyArray": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["property_name", "property_id", "property_type", "semantic_tags", "source", "value_kind", "canonical_value"],
+        "properties": {
+          "property_name": { "type": "string" },
+          "property_id": { "type": "integer" },
+          "display_name": { "type": ["string", "null"] },
+          "property_type": { "type": "string" },
+          "flags": { "type": "array", "items": { "type": "string" } },
+          "semantic_tags": { "type": "array", "items": { "type": "string" } },
+          "source": { "enum": ["material", "renderer_property_block", "slot_property_block"] },
+          "value_kind": { "enum": ["float", "int", "color", "vector", "texture"] },
+          "numeric_value": { "type": ["array", "null"], "items": { "type": "number" } },
+          "texture_value": { "type": ["object", "null"], "additionalProperties": true },
+          "texture_scale": { "type": ["array", "null"], "items": { "type": "number" } },
+          "texture_offset": { "type": ["array", "null"], "items": { "type": "number" } },
+          "canonical_value": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "propertyBlock": {
+      "type": ["object", "null"],
+      "properties": {
+        "is_empty": { "type": "boolean" },
+        "has_unenumerated_values": { "type": "boolean" },
+        "properties": { "$ref": "#/$defs/propertyArray" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

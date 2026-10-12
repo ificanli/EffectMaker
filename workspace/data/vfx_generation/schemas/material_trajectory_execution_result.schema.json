@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_trajectory_execution_result.schema.json",
+  "title": "Material Trajectory Unity Execution Result",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_at",
+    "trajectory_id",
+    "spec_path",
+    "category",
+    "label",
+    "control_scope",
+    "status",
+    "duration_seconds",
+    "material_timeline_path",
+    "frames",
+    "valid_frame_count",
+    "expected_signals",
+    "actual_signals",
+    "raw_timeline_signals",
+    "missing_signals",
+    "unexpected_signals",
+    "incidental_timeline_signals",
+    "curves_executed",
+    "parameter_track_count",
+    "keyword_event_count",
+    "texture_swap_event_count",
+    "material_replace_event_count",
+    "negative_mutation_executed",
+    "invariant_errors",
+    "resource_audit"
+  ],
+  "properties": {
+    "schema_version": { "const": "material_trajectory_execution_result.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "trajectory_id": { "type": "string", "minLength": 1 },
+    "curriculum_id": { "type": ["string", "null"] },
+    "spec_path": { "type": "string", "minLength": 1 },
+    "category": { "enum": ["dissolve", "flow_distortion", "emission_alpha", "mpb", "texture_swap", "keyword_material", "negative"] },
+    "label": { "enum": ["positive", "negative"] },
+    "control_scope": { "enum": ["material", "renderer_mpb", "slot_mpb"] },
+    "status": { "enum": ["pass", "fail", "error"] },
+    "duration_seconds": { "type": "number", "minimum": 0, "maximum": 8 },
+    "sample_interval_seconds": { "type": "number", "minimum": 0 },
+    "prefab_path": { "type": ["string", "null"] },
+    "context_renderer_status": { "type": ["string", "null"] },
+    "context_renderer_reason": { "type": ["string", "null"] },
+    "effective_control_scope": { "enum": ["material", "renderer_mpb", "slot_mpb"] },
+    "material_path": { "type": ["string", "null"] },
+    "shader_name": { "type": ["string", "null"] },
+    "material_timeline_path": { "type": "string", "minLength": 1 },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["frame_index", "requested_time_seconds", "path", "valid", "file_size"],
+        "properties": {
+          "frame_index": { "type": "integer", "minimum": 0 },
+          "requested_time_seconds": { "type": "number", "minimum": 0 },
+          "path": { "type": "string", "minLength": 1 },
+          "valid": { "type": "boolean" },
+          "file_size": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "valid_frame_count": { "type": "integer", "minimum": 0 },
+    "expected_signals": { "$ref": "#/$defs/stringArray" },
+    "actual_signals": { "$ref": "#/$defs/stringArray" },
+    "raw_timeline_signals": { "$ref": "#/$defs/stringArray" },
+    "missing_signals": { "$ref": "#/$defs/stringArray" },
+    "unexpected_signals": { "$ref": "#/$defs/stringArray" },
+    "incidental_timeline_signals": { "$ref": "#/$defs/stringArray" },
+    "curves_executed": {
+      "type": "array",
+      "items": { "enum": ["linear", "ease_in", "ease_out", "smoothstep", "step", "pulse"] }
+    },
+    "parameter_track_count": { "type": "integer", "minimum": 0 },
+    "keyword_event_count": { "type": "integer", "minimum": 0 },
+    "texture_swap_event_count": { "type": "integer", "minimum": 0 },
+    "material_replace_event_count": { "type": "integer", "minimum": 0 },
+    "particle_color_target_count": { "type": "integer", "minimum": 0 },
+    "negative_mutation_executed": { "type": "boolean" },
+    "invariant_errors": { "$ref": "#/$defs/stringArray" },
+    "resource_audit": {
+      "type": "object",
+      "required": [
+        "runtime_materials_created",
+        "runtime_materials_destroyed",
+        "runtime_materials_live",
+        "runtime_textures_created",
+        "runtime_textures_destroyed",
+        "runtime_textures_live",
+        "destruction_mode"
+      ],
+      "properties": {
+        "runtime_materials_created": { "type": "integer", "minimum": 0 },
+        "runtime_materials_destroyed": { "type": "integer", "minimum": 0 },
+        "runtime_materials_live": { "type": "integer", "minimum": 0 },
+        "runtime_textures_created": { "type": "integer", "minimum": 0 },
+        "runtime_textures_destroyed": { "type": "integer", "minimum": 0 },
+        "runtime_textures_live": { "type": "integer", "minimum": 0 },
+        "destruction_mode": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "error": { "type": ["string", "null"] }
+  },
+  "$defs": {
+    "stringArray": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

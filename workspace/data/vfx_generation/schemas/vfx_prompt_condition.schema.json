@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_prompt_condition.schema.json",
+  "title": "VFX Prompt Condition",
+  "type": "object",
+  "required": ["schema_version", "prompt_id", "text", "style_family", "color_keywords", "effect_families", "source_categories", "motion_keywords", "timing_profile", "negative_constraints", "candidate_count", "seed"],
+  "properties": {
+    "schema_version": { "const": "vfx_prompt_condition.v1" },
+    "prompt_id": { "type": "string", "minLength": 1 },
+    "text": { "type": "string", "minLength": 1 },
+    "style_family": { "enum": ["unknown", "realistic", "stylized", "cartoon", "anime", "fantasy_painterly", "ui_graphic", "mixed"] },
+    "color_keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "effect_families": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "source_categories": { "type": "array", "items": { "enum": ["battle", "character", "ui", "scene", "enemy", "unclassified"] }, "uniqueItems": true },
+    "motion_keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "timing_profile": { "enum": ["fast_impact", "short", "medium", "long", "loop", "unknown"] },
+    "negative_constraints": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "candidate_count": { "type": "integer", "minimum": 4, "maximum": 8 },
+    "seed": { "type": "integer", "minimum": 0 },
+    "performance_tier": { "enum": ["mobile", "standard"] }
+  },
+  "additionalProperties": false
+}

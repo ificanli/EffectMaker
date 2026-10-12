@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_trajectory_training_dataset.schema.json",
+  "title": "MaterialTrajectory Training Dataset Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_at",
+    "dataset_id",
+    "curriculum_id",
+    "source",
+    "example_count",
+    "material_state_example_count",
+    "image_conditioned_example_count",
+    "aesthetic_preference_example_count",
+    "label_counts",
+    "category_counts",
+    "split_strategy",
+    "splits",
+    "leakage_checks",
+    "training_eligibility",
+    "files",
+    "quality_gates",
+    "limitations",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "material_trajectory_training_dataset.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "curriculum_id": { "type": "string", "minLength": 1 },
+    "source": { "type": "object" },
+    "example_count": { "type": "integer", "minimum": 1 },
+    "material_state_example_count": { "type": "integer", "minimum": 1 },
+    "image_conditioned_example_count": { "type": "integer", "minimum": 0 },
+    "aesthetic_preference_example_count": { "const": 0 },
+    "label_counts": { "$ref": "#/$defs/countMap" },
+    "category_counts": { "$ref": "#/$defs/countMap" },
+    "split_strategy": {
+      "type": "object",
+      "required": ["name", "seed", "target_ratios", "component_count", "shader_group_sizes", "imbalance_warning"],
+      "properties": {
+        "name": { "const": "strict_shader_material_components.v1" },
+        "seed": { "type": "integer", "minimum": 0 },
+        "target_ratios": { "type": "object" },
+        "component_count": { "type": "integer", "minimum": 3 },
+        "shader_group_sizes": { "$ref": "#/$defs/countMap" },
+        "imbalance_warning": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "splits": {
+      "type": "object",
+      "required": ["train", "validation", "test"],
+      "properties": {
+        "train": { "$ref": "#/$defs/splitSummary" },
+        "validation": { "$ref": "#/$defs/splitSummary" },
+        "test": { "$ref": "#/$defs/splitSummary" }
+      },
+      "additionalProperties": false
+    },
+    "leakage_checks": {
+      "type": "object",
+      "required": ["material_group_overlap_count", "shader_group_overlap_count", "passed"],
+      "properties": {
+        "material_group_overlap_count": { "const": 0 },
+        "shader_group_overlap_count": { "const": 0 },
+        "passed": { "const": true }
+      },
+      "additionalProperties": false
+    },
+    "training_eligibility": {
+      "type": "object",
+      "required": ["material_state", "image_conditioned", "aesthetic_preference", "image_validation_split_empty"],
+      "properties": {
+        "material_state": { "const": "ready" },
+        "image_conditioned": { "enum": ["feature_only", "ready"] },
+        "aesthetic_preference": { "const": "not_ready_no_human_labels" },
+        "image_validation_split_empty": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "files": { "type": "object" },
+    "quality_gates": { "type": "object" },
+    "limitations": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "splitSummary": {
+      "type": "object",
+      "required": ["example_count", "material_state_count", "image_conditioned_count", "shader_group_count", "material_group_count"],
+      "properties": {
+        "example_count": { "type": "integer", "minimum": 0 },
+        "material_state_count": { "type": "integer", "minimum": 0 },
+        "image_conditioned_count": { "type": "integer", "minimum": 0 },
+        "shader_group_count": { "type": "integer", "minimum": 0 },
+        "material_group_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

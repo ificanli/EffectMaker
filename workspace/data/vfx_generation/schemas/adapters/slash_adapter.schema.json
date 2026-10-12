@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adapters/slash_adapter.schema.json",
+  "title": "SlashAdapter",
+  "type": "object",
+  "required": ["name", "version", "generator_family", "topology", "shape", "evaluation_metrics"],
+  "properties": {
+    "name": { "type": "string", "const": "slash.adapter" },
+    "version": { "type": "string" },
+    "generator_family": {
+      "type": "string",
+      "enum": ["curve_mesh", "blade_band", "trail_residual", "impact_shards"]
+    },
+    "topology": {
+      "type": "object",
+      "required": ["arc_topology", "attack_direction"],
+      "properties": {
+        "arc_topology": {
+          "type": "string",
+          "enum": ["single_sweep", "broken_sweep", "crescent", "hooked_slash", "double_echo"]
+        },
+        "attack_direction": {
+          "type": "string",
+          "enum": ["left_to_right", "right_to_left", "front_to_back", "back_to_front", "diagonal", "radial"]
+        },
+        "control_point_count": { "type": "integer", "minimum": 3, "maximum": 12 },
+        "asymmetry": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": true
+    },
+    "shape": {
+      "type": "object",
+      "properties": {
+        "arc_length": { "type": "number", "minimum": 0 },
+        "arc_width": { "type": "number", "minimum": 0 },
+        "width_profile": {
+          "type": "string",
+          "enum": ["root_heavy", "center_heavy", "tip_heavy", "tapered", "broken"]
+        },
+        "tip_shape": {
+          "type": "string",
+          "enum": ["sharp", "needle", "torn", "rounded", "forked"]
+        },
+        "curvature": { "type": "number" },
+        "edge_breakup": { "type": "number", "minimum": 0, "maximum": 1 },
+        "residual_flow": {
+          "type": "string",
+          "enum": ["none", "along_attack", "opposite_attack", "outward", "fragmented"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "evaluation_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["sharpness", "attack_direction", "width_profile", "tip_quality", "residual_flow", "silhouette_readability"]
+      }
+    }
+  },
+  "additionalProperties": true
+}

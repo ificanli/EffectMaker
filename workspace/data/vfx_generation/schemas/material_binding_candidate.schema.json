@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_binding_candidate.schema.json",
+  "title": "VFX Material Binding Candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "material_id", "material_path", "material_guid", "source_group", "binding_status", "exclusion_reasons", "shader_asset_id", "shader_name", "shader_path", "render_queue", "keywords", "property_names", "texture_bindings", "provenance"],
+  "properties": {
+    "schema_version": { "const": "vfx_material_binding_candidate.v1" },
+    "material_id": { "type": "string", "pattern": "^material_[0-9a-f]{20}$" },
+    "material_path": { "type": "string", "pattern": "^Assets/.+" },
+    "material_guid": { "type": ["string", "null"] },
+    "source_group": { "type": "string", "minLength": 1 },
+    "binding_status": { "enum": ["usable", "blocked_shader", "blocked_texture_reference"] },
+    "exclusion_reasons": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "shader_asset_id": { "type": ["string", "null"] },
+    "shader_name": { "type": ["string", "null"] },
+    "shader_path": { "type": ["string", "null"] },
+    "render_queue": { "type": "integer" },
+    "keywords": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "property_names": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "texture_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["property_name", "is_bound", "texture_asset_id", "texture_path"],
+        "properties": {
+          "property_name": { "type": "string", "minLength": 1 },
+          "is_bound": { "type": "boolean" },
+          "texture_asset_id": { "type": ["string", "null"] },
+          "texture_path": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "provenance": { "type": "object" }
+  }
+}

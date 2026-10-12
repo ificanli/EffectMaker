@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "full_prefab_technical_baseline.schema.json",
+  "title": "Full Prefab Technical Baseline",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "baseline_id", "source_audit", "unity_project", "disk_prefab_count", "audit_prefab_count", "technical_record_count", "graph_count", "graph_exclusion_count", "source_group_counts", "technical_status_counts", "dependency_totals", "files", "quality_gates", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_full_prefab_technical_baseline.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "baseline_id": { "type": "string", "minLength": 1 },
+    "source_audit": { "type": "string", "minLength": 1 },
+    "unity_project": { "type": "string", "minLength": 1 },
+    "disk_prefab_count": { "type": "integer", "minimum": 1 },
+    "audit_prefab_count": { "type": "integer", "minimum": 1 },
+    "technical_record_count": { "type": "integer", "minimum": 1 },
+    "graph_count": { "type": "integer", "minimum": 1 },
+    "graph_exclusion_count": { "type": "integer", "minimum": 0 },
+    "source_group_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "technical_status_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "dependency_totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["material_references", "mesh_references", "missing_scripts", "missing_material_slots", "missing_shaders"],
+      "properties": {
+        "material_references": { "type": "integer", "minimum": 0 },
+        "mesh_references": { "type": "integer", "minimum": 0 },
+        "missing_scripts": { "type": "integer", "minimum": 0 },
+        "missing_material_slots": { "type": "integer", "minimum": 0 },
+        "missing_shaders": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["technical_records", "graph_exclusions", "prefab_graph_manifest"],
+      "properties": {
+        "technical_records": { "type": "string", "minLength": 1 },
+        "graph_exclusions": { "type": "string", "minLength": 1 },
+        "prefab_graph_manifest": { "type": "string", "minLength": 1 }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["audit_schema_errors", "disk_audit_count_mismatch", "technical_coverage", "graph_schema_errors", "duplicate_prefab_paths", "duplicate_graph_ids", "aesthetic_labels_consumed"],
+      "properties": {
+        "audit_schema_errors": { "const": 0 },
+        "disk_audit_count_mismatch": { "const": 0 },
+        "technical_coverage": { "const": 1.0 },
+        "graph_schema_errors": { "const": 0 },
+        "duplicate_prefab_paths": { "const": 0 },
+        "duplicate_graph_ids": { "const": 0 },
+        "aesthetic_labels_consumed": { "const": 0 }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_graph_source_export.schema.json",
+  "title": "Unity Source PrefabGraph Export",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "source_project", "candidate_count", "candidates", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_graph_source_export.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "source_project": { "type": "string", "minLength": 1 },
+    "candidate_count": { "type": "integer", "minimum": 1 },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_id", "prefab_path", "graph_path", "report_path", "status", "reconstruction_status", "missing_fields", "unsupported_components"],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "prefab_path": { "type": "string", "minLength": 1 },
+          "graph_path": { "type": "string", "minLength": 1 },
+          "report_path": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["pass", "error"] },
+          "reconstruction_status": { "enum": ["structure_only", "reconstructable"] },
+          "missing_fields": { "type": "array", "items": { "type": "string" } },
+          "unsupported_components": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

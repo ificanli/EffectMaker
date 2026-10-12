@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aesthetic_preference_review_batch.schema.json",
+  "title": "VFX Aesthetic Preference Review Batch",
+  "type": "object",
+  "required": ["schema_version", "batch_id", "created_at", "prompt", "effect_family", "candidate_count", "pair_count", "candidates", "pairs", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_preference_review_batch.v1" },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "minLength": 1 },
+    "prompt": { "type": "object", "required": ["prompt_id", "text", "style_family"], "additionalProperties": true },
+    "effect_family": { "type": "string", "minLength": 1 },
+    "candidate_count": { "type": "integer", "minimum": 4, "maximum": 8 },
+    "pair_count": { "type": "integer", "minimum": 1 },
+    "excluded_count": { "type": "integer", "minimum": 0 },
+    "candidates": { "type": "array", "minItems": 4, "maxItems": 8, "items": { "$ref": "#/$defs/candidate" } },
+    "pairs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/pair" } },
+    "status": { "const": "pending_human_preference" }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": ["candidate_id", "source_candidate_id", "run_id", "prefab_path", "frames", "technical_status", "human_preference_status"],
+      "properties": {
+        "candidate_id": { "type": "string", "minLength": 1 },
+        "source_candidate_id": { "type": "string", "minLength": 1 },
+        "run_id": { "type": "string", "minLength": 1 },
+        "prefab_path": { "type": "string", "minLength": 1 },
+        "spec_path": { "type": ["string", "null"] },
+        "frames": { "type": "array", "minItems": 2, "items": { "type": "object", "required": ["path", "time_seconds"], "properties": { "path": { "type": "string", "minLength": 1 }, "time_seconds": { "type": "number", "minimum": 0 } }, "additionalProperties": false } },
+        "technical_status": { "const": "pass" },
+        "human_preference_status": { "const": "pending" }
+      },
+      "additionalProperties": false
+    },
+    "pair": {
+      "type": "object",
+      "required": ["pair_id", "candidate_a", "candidate_b", "same_prompt", "same_effect_family", "same_prefab", "preference", "reason_codes", "human_note", "status"],
+      "properties": {
+        "pair_id": { "type": "string", "minLength": 1 },
+        "candidate_a": { "type": "string", "minLength": 1 },
+        "candidate_b": { "type": "string", "minLength": 1 },
+        "same_prompt": { "const": true },
+        "same_effect_family": { "const": true },
+        "same_prefab": { "type": "boolean" },
+        "preference": { "type": ["string", "null"], "enum": ["a", "b", "tie", "not_comparable", null] },
+        "reason_codes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "human_note": { "type": "string" },
+        "status": { "enum": ["pending", "human_finalized"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

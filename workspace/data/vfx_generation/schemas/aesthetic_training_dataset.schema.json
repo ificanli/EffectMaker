@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aesthetic_training_dataset.schema.json",
+  "title": "VFX Aesthetic Training Dataset Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_at",
+    "dataset_id",
+    "source_count",
+    "record_count",
+    "judge_candidate_count",
+    "judge_training_count",
+    "preference_candidate_count",
+    "preference_training_count",
+    "excluded_count",
+    "exclusion_counts",
+    "split_counts",
+    "training_gate",
+    "files",
+    "policy",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_training_dataset.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source_count": { "type": "integer", "minimum": 0 },
+    "record_count": { "type": "integer", "minimum": 0 },
+    "judge_candidate_count": { "type": "integer", "minimum": 0 },
+    "judge_training_count": { "type": "integer", "minimum": 0 },
+    "preference_candidate_count": { "type": "integer", "minimum": 0 },
+    "preference_training_count": { "type": "integer", "minimum": 0 },
+    "excluded_count": { "type": "integer", "minimum": 0 },
+    "exclusion_counts": { "$ref": "#/$defs/countMap" },
+    "split_counts": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/countMap" }
+    },
+    "split_group_counts": { "$ref": "#/$defs/countMap" },
+    "training_gate": {
+      "type": "object",
+      "required": ["status", "reason", "judge_ready", "preference_ready"],
+      "properties": {
+        "status": { "enum": ["ready", "blocked_no_feature_vectors", "blocked_insufficient_labels", "no_eligible_examples"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "judge_ready": { "type": "boolean" },
+        "preference_ready": { "type": "boolean" },
+        "minimum_judge_examples": { "type": "integer", "minimum": 1 },
+        "minimum_preference_pairs": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "files": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+    "policy": { "type": "object", "additionalProperties": { "type": ["string", "boolean", "integer"] } },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

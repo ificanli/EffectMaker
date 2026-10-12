@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "material_trajectory_training_example.schema.json",
+  "title": "MaterialTrajectory TrainingExample",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "example_id",
+    "run_id",
+    "candidate_id",
+    "inputs",
+    "outputs",
+    "label",
+    "task_membership",
+    "split",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": { "const": "training_example.v1" },
+    "example_id": { "type": "string", "minLength": 1 },
+    "run_id": { "type": "string", "minLength": 1 },
+    "candidate_id": { "type": "string", "minLength": 1 },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "prompt",
+        "negative_prompt",
+        "target_style_profile",
+        "spec_path",
+        "execution_result_path",
+        "material_timeline_path",
+        "source_asset",
+        "material_selection",
+        "trajectory_category",
+        "control_scope",
+        "duration_seconds",
+        "parameter_tracks",
+        "events",
+        "expected_signals",
+        "split_group"
+      ],
+      "properties": {
+        "prompt": { "type": "string" },
+        "negative_prompt": { "type": "string" },
+        "target_style_profile": { "type": "object" },
+        "spec_path": { "type": "string", "minLength": 1 },
+        "execution_result_path": { "type": "string", "minLength": 1 },
+        "material_timeline_path": { "type": "string", "minLength": 1 },
+        "source_asset": { "type": "object" },
+        "material_selection": { "type": "object" },
+        "trajectory_category": { "enum": ["dissolve", "flow_distortion", "emission_alpha", "mpb", "texture_swap", "keyword_material", "negative"] },
+        "control_scope": { "enum": ["material", "renderer_mpb", "slot_mpb"] },
+        "duration_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "parameter_tracks": { "type": "array" },
+        "events": {
+          "type": "object",
+          "required": ["keyword", "texture_swap", "material_replace"],
+          "properties": {
+            "keyword": { "type": "array" },
+            "texture_swap": { "type": "array" },
+            "material_replace": { "type": "array" }
+          },
+          "additionalProperties": false
+        },
+        "expected_signals": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+        "split_group": {
+          "type": "object",
+          "required": ["shader_group", "material_group"],
+          "properties": {
+            "shader_group": { "type": "string", "minLength": 1 },
+            "material_group": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "outputs": {
+      "type": "object",
+      "required": [
+        "render_paths",
+        "diagnostic_render_paths",
+        "contact_sheet_path",
+        "actual_signals",
+        "raw_timeline_signals",
+        "visual_evidence",
+        "resource_audit",
+        "observed_style_profile"
+      ],
+      "properties": {
+        "render_paths": { "type": "array", "items": { "type": "string" } },
+        "diagnostic_render_paths": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "contact_sheet_path": { "type": "string", "minLength": 1 },
+        "actual_signals": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+        "raw_timeline_signals": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "visual_evidence": {
+          "type": "object",
+          "required": ["status", "image_training_eligible", "max_visible_area_ratio", "mean_visible_area_ratio"],
+          "properties": {
+            "status": { "enum": ["visible", "near_blank"] },
+            "image_training_eligible": { "type": "boolean" },
+            "max_visible_area_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+            "mean_visible_area_ratio": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "additionalProperties": false
+        },
+        "resource_audit": { "type": "object" },
+        "observed_style_profile": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "label": {
+      "type": "object",
+      "required": [
+        "decision",
+        "trajectory_label",
+        "technical_execution",
+        "aesthetic_quality",
+        "negative_mutation",
+        "rank",
+        "style_match_decision"
+      ],
+      "properties": {
+        "decision": { "enum": ["execution_pass_unlabeled_aesthetic", "controlled_negative_trajectory"] },
+        "trajectory_label": { "enum": ["positive", "negative"] },
+        "technical_execution": { "const": "pass" },
+        "aesthetic_quality": { "const": "unlabeled" },
+        "negative_mutation": { "type": ["object", "null"] },
+        "rank": { "type": "null" },
+        "style_match_decision": { "const": "unlabeled" }
+      },
+      "additionalProperties": true
+    },
+    "task_membership": {
+      "type": "object",
+      "required": ["material_state", "image_conditioned", "aesthetic_preference"],
+      "properties": {
+        "material_state": { "const": true },
+        "image_conditioned": { "type": "boolean" },
+        "aesthetic_preference": { "const": false }
+      },
+      "additionalProperties": false
+    },
+    "split": {
+      "type": "object",
+      "required": ["name", "strategy", "shader_group", "material_group"],
+      "properties": {
+        "name": { "enum": ["train", "validation", "test"] },
+        "strategy": { "const": "strict_shader_material_components.v1" },
+        "shader_group": { "type": "string", "minLength": 1 },
+        "material_group": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["curriculum_id", "curriculum_manifest_path", "run_manifest_path", "generator", "seed"],
+      "properties": {
+        "curriculum_id": { "type": "string", "minLength": 1 },
+        "curriculum_manifest_path": { "type": "string", "minLength": 1 },
+        "run_manifest_path": { "type": "string", "minLength": 1 },
+        "generator": { "const": "material_trajectory_dataset.v1" },
+        "seed": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

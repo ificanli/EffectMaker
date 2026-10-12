@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "procedure_spec.schema.json",
+  "title": "VFX Tutorial Procedure Specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "procedure_id", "title", "source", "applicability", "prerequisites", "steps", "output_contract", "validation", "training_eligibility"],
+  "properties": {
+    "schema_version": { "const": "vfx_procedure_spec.v1" },
+    "procedure_id": { "type": "string", "pattern": "^procedure_[a-z0-9_]+_r[0-9]{3}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_type", "source_path", "source_status", "timecodes", "frame_paths"],
+      "properties": {
+        "source_type": { "enum": ["production_tutorial", "tutorial_reproduction", "expert_demonstration"] },
+        "source_path": { "type": "string", "minLength": 1 },
+        "source_status": { "enum": ["verified", "partially_verified", "unverified"] },
+        "timecodes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "frame_paths": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "applicability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["effect_families", "effect_types", "style_families", "elements"],
+      "properties": {
+        "effect_families": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+        "effect_types": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "style_families": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "elements": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "prerequisites": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unity_versions", "render_pipelines", "required_capabilities", "required_assets"],
+      "properties": {
+        "unity_versions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "render_pipelines": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "required_capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "required_assets": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["step_id", "order", "action", "target_role", "target_layer", "instruction", "parameter_ranges", "required_shader_features", "required_texture_tags", "evidence_status", "evidence_refs"],
+        "properties": {
+          "step_id": { "type": "string", "pattern": "^step_[0-9]{3}$" },
+          "order": { "type": "integer", "minimum": 1 },
+          "action": { "enum": ["create_layer", "configure_particle", "configure_shader", "bind_texture", "configure_timing", "compose_layers", "validate_runtime", "validate_visual", "performance_check"] },
+          "authoring_stage": { "enum": ["texture_authoring", "unity_setup", "material_setup", "runtime_validation"] },
+          "target_role": { "enum": ["root", "core", "support", "hit", "residual", "composition"] },
+          "target_layer": { "type": "string", "minLength": 1 },
+          "instruction": { "type": "string", "minLength": 1 },
+          "parameter_ranges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "unit", "minimum", "maximum", "value"],
+              "properties": {
+                "name": { "type": "string", "minLength": 1 },
+                "unit": { "type": "string" },
+                "minimum": { "type": ["number", "null"] },
+                "maximum": { "type": ["number", "null"] },
+                "value": { "type": ["number", "string", "boolean", "null", "object"] }
+              }
+            }
+          },
+          "required_shader_features": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "required_texture_tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "evidence_status": { "enum": ["tutorial_fact", "unity_verified", "inferred"] },
+          "evidence_refs": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true }
+        }
+      }
+    },
+    "output_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_roles", "layer_sequence", "layer_roles", "timing_relationships", "quality_signals"],
+      "properties": {
+        "required_roles": { "type": "array", "minItems": 1, "items": { "enum": ["core", "support", "hit", "residual"] }, "uniqueItems": true },
+        "layer_sequence": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "layer_roles": { "type": "object", "minProperties": 1, "additionalProperties": { "enum": ["core", "support", "hit", "residual"] } },
+        "timing_relationships": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "quality_signals": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_reproduction_status", "target_project_reproduction_status", "runtime_evidence_paths", "visual_quality_status", "known_limits"],
+      "properties": {
+        "source_reproduction_status": { "enum": ["verified", "partial", "pending"] },
+        "target_project_reproduction_status": { "enum": ["verified", "partial", "pending"] },
+        "runtime_evidence_paths": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "visual_quality_status": { "enum": ["professionally_verified", "technically_visible", "pending"] },
+        "known_limits": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "training_eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["procedure_retrieval", "planner_constraint", "controller_sft", "positive_generation_supervision", "reason"],
+      "properties": {
+        "procedure_retrieval": { "type": "boolean" },
+        "planner_constraint": { "type": "boolean" },
+        "controller_sft": { "type": "boolean" },
+        "positive_generation_supervision": { "type": "boolean" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

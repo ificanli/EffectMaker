@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_controller_aesthetic_guidance.schema.json",
+  "title": "VFX Controller Aesthetic Guidance",
+  "type": "object",
+  "required": ["schema_version", "guidance_id", "created_at", "input", "evidence", "mutation_plan", "training_eligibility", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_controller_aesthetic_guidance.v1" },
+    "guidance_id": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "minLength": 1 },
+    "input": {
+      "type": "object",
+      "required": ["prompt", "effect_family", "target_style_profile", "source_context"],
+      "properties": {
+        "prompt": { "type": "string", "minLength": 1 },
+        "effect_family": { "type": "string", "minLength": 1 },
+        "target_style_profile": { "type": "object" },
+        "source_context": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["judge", "preference", "human_feedback"],
+      "properties": {
+        "judge": {
+          "type": "object",
+          "required": ["status", "model_path", "candidate_id", "predictions"],
+          "properties": {
+            "status": { "enum": ["available", "unavailable", "not_trained"] },
+            "model_path": { "type": ["string", "null"] },
+            "candidate_id": { "type": ["string", "null"] },
+            "predictions": { "type": "object", "additionalProperties": true }
+          },
+          "additionalProperties": false
+        },
+        "preference": {
+          "type": "object",
+          "required": ["status", "model_path", "ranking_path", "top_candidate_id"],
+          "properties": {
+            "status": { "enum": ["available", "unavailable", "not_trained"] },
+            "model_path": { "type": ["string", "null"] },
+            "ranking_path": { "type": ["string", "null"] },
+            "top_candidate_id": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "human_feedback": {
+          "type": "object",
+          "required": ["status", "record_ids", "issues", "next_mutation"],
+          "properties": {
+            "status": { "enum": ["available", "unavailable"] },
+            "record_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "issues": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "next_mutation": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "mutation_plan": {
+      "type": "object",
+      "required": ["goals", "preserve", "change", "rationale", "approval_required"],
+      "properties": {
+        "goals": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "preserve": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "change": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "rationale": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "approval_required": { "const": true }
+      },
+      "additionalProperties": false
+    },
+    "training_eligibility": {
+      "type": "object",
+      "required": ["controller_sft", "preference_training", "positive_generation_supervision", "excluded_reasons"],
+      "properties": {
+        "controller_sft": { "type": "boolean" },
+        "preference_training": { "type": "boolean" },
+        "positive_generation_supervision": { "type": "boolean" },
+        "excluded_reasons": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "status": { "const": "guidance_only" }
+  },
+  "additionalProperties": false
+}

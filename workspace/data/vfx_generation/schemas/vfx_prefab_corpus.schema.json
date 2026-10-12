@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_prefab_corpus.schema.json",
+  "title": "VFX Prefab Corpus Manifest",
+  "type": "object",
+  "required": ["schema_version", "created_at", "corpus_id", "source_count", "prefab_count", "record_count", "split_counts", "delta", "files", "quality_gates", "training_policy", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_corpus.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "corpus_id": { "type": "string", "minLength": 1 },
+    "source_count": { "type": "integer", "minimum": 0 },
+    "prefab_count": { "type": "integer", "minimum": 0 },
+    "record_count": { "type": "integer", "minimum": 0 },
+    "split_counts": { "$ref": "#/$defs/countMap" },
+    "delta": {
+      "type": "object",
+      "required": ["new_count", "unchanged_count", "changed_count", "removed_count"],
+      "properties": {
+        "new_count": { "type": "integer", "minimum": 0 },
+        "unchanged_count": { "type": "integer", "minimum": 0 },
+        "changed_count": { "type": "integer", "minimum": 0 },
+        "removed_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "files": { "type": "object" },
+    "quality_gates": {
+      "type": "object",
+      "required": ["source_manifests_readable", "prefab_paths_present", "split_groups_disjoint", "duplicate_source_keys", "license_review_required_count"],
+      "properties": {
+        "source_manifests_readable": { "const": true },
+        "prefab_paths_present": { "const": true },
+        "split_groups_disjoint": { "const": true },
+        "duplicate_source_keys": { "type": "integer", "minimum": 0 },
+        "license_review_required_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "training_policy": { "type": "object" },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

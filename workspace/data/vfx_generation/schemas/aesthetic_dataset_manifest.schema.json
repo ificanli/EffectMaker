@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aesthetic_dataset_manifest.schema.json",
+  "title": "VFX Aesthetic Dataset Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_at",
+    "dataset_id",
+    "source_count",
+    "record_count",
+    "record_kind_counts",
+    "judge_eligible_count",
+    "preference_eligible_count",
+    "technical_exclusion_count",
+    "files",
+    "policy",
+    "status"
+  ],
+  "properties": {
+    "schema_version": { "const": "vfx_aesthetic_dataset.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source_count": { "type": "integer", "minimum": 0 },
+    "record_count": { "type": "integer", "minimum": 0 },
+    "record_kind_counts": { "$ref": "#/$defs/countMap" },
+    "judge_eligible_count": { "type": "integer", "minimum": 0 },
+    "preference_eligible_count": { "type": "integer", "minimum": 0 },
+    "technical_exclusion_count": { "type": "integer", "minimum": 0 },
+    "files": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+    "policy": { "type": "object", "additionalProperties": { "type": ["string", "boolean", "integer"] } },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adapters/shield_adapter.schema.json",
+  "title": "ShieldAdapter",
+  "type": "object",
+  "required": ["name", "version", "generator_family", "volume", "impact_response", "evaluation_metrics"],
+  "properties": {
+    "name": { "type": "string", "const": "shield.adapter" },
+    "version": { "type": "string" },
+    "generator_family": {
+      "type": "string",
+      "enum": ["sphere_surface", "ring_shell", "hex_pattern", "impact_ripple"]
+    },
+    "volume": {
+      "type": "object",
+      "required": ["volume_shape"],
+      "properties": {
+        "volume_shape": {
+          "type": "string",
+          "enum": ["sphere", "dome", "front_arc", "capsule", "ring_wall"]
+        },
+        "wrap_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "surface_thickness": { "type": "number", "minimum": 0 },
+        "ground_intersection": {
+          "type": "string",
+          "enum": ["none", "soft_clip", "hard_clip", "ground_ring"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "surface": {
+      "type": "object",
+      "properties": {
+        "surface_pattern": {
+          "type": "string",
+          "enum": ["plain", "hex", "runes", "circuit", "fracture", "wave"]
+        },
+        "pattern_density": { "type": "number", "minimum": 0, "maximum": 1 },
+        "transparency_mode": {
+          "type": "string",
+          "enum": ["soft_additive", "transparent_shell", "opaque_energy", "rim_only"]
+        },
+        "rim_strength": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "impact_response": {
+      "type": "object",
+      "properties": {
+        "impact_point_mode": {
+          "type": "string",
+          "enum": ["none", "single_point", "multi_point", "directional_front"]
+        },
+        "ripple_behavior": {
+          "type": "string",
+          "enum": ["none", "radial", "horizontal_ring", "fracture_wave", "pulse"]
+        },
+        "ripple_count": { "type": "integer", "minimum": 0, "maximum": 16 },
+        "impact_decay": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "evaluation_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["wrap_volume", "impact_response", "surface_readability", "transparent_sorting", "ground_attachment"]
+      }
+    }
+  },
+  "additionalProperties": true
+}

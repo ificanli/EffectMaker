@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_active_review_semantic_options.schema.json",
+  "title": "Prefab Active Review Custom Semantic Options",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "batch_id", "updated_at", "options"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_custom_semantic_options.v2" },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "options": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["value", "label", "dimension"],
+        "properties": {
+          "value": { "type": "string", "pattern": "^custom_[0-9a-f]{16}$" },
+          "label": { "type": "string", "minLength": 1, "maxLength": 24 },
+          "dimension": { "enum": ["effect_element", "effect_type"] }
+        }
+      }
+    }
+  }
+}

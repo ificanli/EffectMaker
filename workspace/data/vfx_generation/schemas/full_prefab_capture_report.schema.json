@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "full_prefab_capture_report.schema.json",
+  "title": "Full Prefab Capture v2 Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "batch_id", "selected_count", "capture_count", "valid_frame_count", "invalid_frame_count", "visual_feature_ready_count", "technical_only_count", "full_visual_ready_count", "near_blank_count", "cropped_capture_count", "material_render_error_count", "effect_family_counts", "status_counts", "files", "quality_gates", "limitations", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_full_prefab_capture_report.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "batch_id": { "type": "string", "minLength": 1 },
+    "selected_count": { "type": "integer", "minimum": 1 },
+    "capture_count": { "type": "integer", "minimum": 1 },
+    "valid_frame_count": { "type": "integer", "minimum": 0 },
+    "invalid_frame_count": { "type": "integer", "minimum": 0 },
+    "visual_feature_ready_count": { "type": "integer", "minimum": 0 },
+    "technical_only_count": { "type": "integer", "minimum": 0 },
+    "full_visual_ready_count": { "type": "integer", "minimum": 0 },
+    "near_blank_count": { "type": "integer", "minimum": 0 },
+    "cropped_capture_count": { "type": "integer", "minimum": 0 },
+    "material_render_error_count": { "type": "integer", "minimum": 0 },
+    "effect_family_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "status_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records", "visual_feature_ready", "technical_only"],
+      "properties": {
+        "records": { "type": "string" },
+        "visual_feature_ready": { "type": "string" },
+        "technical_only": { "type": "string" }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["missing_capture_outputs", "duplicate_candidates", "capture_v2_mismatch", "invalid_frames", "technical_failure_as_aesthetic_label"],
+      "properties": {
+        "missing_capture_outputs": { "const": 0 },
+        "duplicate_candidates": { "const": 0 },
+        "capture_v2_mismatch": { "const": 0 },
+        "invalid_frames": { "const": 0 },
+        "technical_failure_as_aesthetic_label": { "const": 0 }
+      }
+    },
+    "limitations": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "status": { "const": "pass" }
+  }
+}

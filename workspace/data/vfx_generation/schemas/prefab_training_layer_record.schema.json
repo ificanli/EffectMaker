@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_training_layer_record.schema.json",
+  "title": "Prefab Five-Layer Training Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_id", "sample_id", "tier", "source", "evidence", "observations", "labels", "label_provenance", "grouping", "training", "status", "limitations"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_training_layer_record.v1" },
+    "record_id": { "type": "string", "minLength": 1 },
+    "sample_id": { "type": "string", "minLength": 1 },
+    "tier": { "enum": ["technical_corpus", "visual_feature_only", "ai_pseudo_label", "human_gold", "regression_gold"] },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prefab_path", "graph_id", "source_project", "source_dataset_id"],
+      "properties": {
+        "prefab_path": { "type": ["string", "null"] },
+        "graph_id": { "type": ["string", "null"] },
+        "source_project": { "type": "string", "minLength": 1 },
+        "source_dataset_id": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["graph_path", "capture_manifest_path", "material_timeline_path", "human_record_id", "parent_record_ids"],
+      "properties": {
+        "graph_path": { "type": ["string", "null"] },
+        "capture_manifest_path": { "type": ["string", "null"] },
+        "material_timeline_path": { "type": ["string", "null"] },
+        "human_record_id": { "type": ["string", "null"] },
+        "parent_record_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      }
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "source_hints": { "type": "object" },
+        "technical": { "type": "object" },
+        "visual": { "type": "object" },
+        "measured_color": { "type": "object" }
+      }
+    },
+    "labels": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "target_effect_family": { "type": ["string", "null"] },
+        "effect_type": { "type": ["string", "null"] },
+        "target_color_tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "observed_element_tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "observed_color_tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "quality_score": { "type": ["number", "null"], "minimum": 0, "maximum": 5 },
+        "scores": { "type": "object" },
+        "issues": { "type": "array", "items": { "type": "string" } },
+        "decision": { "type": ["string", "null"] }
+      }
+    },
+    "label_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label_source", "confidence", "model_version", "reviewer", "parent_human_record_id", "distance", "created_at"],
+      "properties": {
+        "label_source": { "enum": ["none", "source_hint", "measured_visual", "ai_pseudo_label", "cluster_propagated", "human", "regression_frozen"] },
+        "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "model_version": { "type": ["string", "null"] },
+        "reviewer": { "type": ["string", "null"] },
+        "parent_human_record_id": { "type": ["string", "null"] },
+        "distance": { "type": ["number", "null"], "minimum": 0 },
+        "created_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "grouping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prefab_group", "source_group", "cluster_id", "prompt_group"],
+      "properties": {
+        "prefab_group": { "type": "string", "minLength": 1 },
+        "source_group": { "type": "string", "minLength": 1 },
+        "cluster_id": { "type": ["string", "null"] },
+        "prompt_group": { "type": ["string", "null"] }
+      }
+    },
+    "training": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["weight", "eligible_tasks", "excluded_tasks", "split", "frozen", "expires_with_model_version"],
+      "properties": {
+        "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "eligible_tasks": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "excluded_tasks": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "split": { "enum": ["train", "validation", "test", "regression", "excluded"] },
+        "frozen": { "type": "boolean" },
+        "expires_with_model_version": { "type": "boolean" }
+      }
+    },
+    "status": { "enum": ["ready", "pending_revalidation", "excluded", "frozen"] },
+    "limitations": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+  }
+}

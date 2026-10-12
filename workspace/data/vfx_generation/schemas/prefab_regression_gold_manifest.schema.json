@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_regression_gold_manifest.schema.json",
+  "title": "Prefab Regression Gold Freeze Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "freeze_id", "source_dataset", "source_assignments", "target_size", "minimum_recommended_size", "eligible_count", "frozen_count", "status", "regression_sample_ids", "regression_cluster_ids", "held_out_prefab_paths", "historical_training_audit", "files", "quality_gates"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_regression_gold_manifest.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "freeze_id": { "type": "string", "minLength": 1 },
+    "source_dataset": { "type": "string", "minLength": 1 },
+    "source_assignments": { "type": "string", "minLength": 1 },
+    "target_size": { "type": "integer", "minimum": 1 },
+    "minimum_recommended_size": { "type": "integer", "minimum": 1 },
+    "eligible_count": { "type": "integer", "minimum": 0 },
+    "frozen_count": { "type": "integer", "minimum": 0 },
+    "status": { "enum": ["pass", "underfilled", "no_eligible_samples"] },
+    "regression_sample_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "regression_cluster_ids": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "held_out_prefab_paths": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "historical_training_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_path", "input_count", "direct_regression_overlap_count", "heldout_cluster_overlap_count", "filtered_count", "affected_existing_models_must_not_use_this_regression_set"],
+      "properties": {
+        "input_path": { "type": ["string", "null"] },
+        "input_count": { "type": "integer", "minimum": 0 },
+        "direct_regression_overlap_count": { "type": "integer", "minimum": 0 },
+        "heldout_cluster_overlap_count": { "type": "integer", "minimum": 0 },
+        "filtered_count": { "type": "integer", "minimum": 0 },
+        "affected_existing_models_must_not_use_this_regression_set": { "type": "boolean" }
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["regression_gold", "training_records", "pseudo_propagation_records", "judge_training_excluding_regression", "judge_regression_rows"],
+      "properties": {
+        "regression_gold": { "type": "string", "minLength": 1 },
+        "training_records": { "type": "string", "minLength": 1 },
+        "pseudo_propagation_records": { "type": "string", "minLength": 1 },
+        "judge_training_excluding_regression": { "type": ["string", "null"] },
+        "judge_regression_rows": { "type": ["string", "null"] }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_errors", "regression_records_trainable", "regression_samples_in_training", "regression_clusters_in_training", "heldout_prefabs_in_pseudo_propagation", "regression_prefabs_in_filtered_judge"],
+      "properties": {
+        "schema_errors": { "const": 0 },
+        "regression_records_trainable": { "const": 0 },
+        "regression_samples_in_training": { "const": 0 },
+        "regression_clusters_in_training": { "const": 0 },
+        "heldout_prefabs_in_pseudo_propagation": { "const": 0 },
+        "regression_prefabs_in_filtered_judge": { "const": 0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adapters/fire_adapter.schema.json",
+  "title": "FireAdapter",
+  "type": "object",
+  "required": ["name", "version", "generator_family", "topology", "behavior", "evaluation_metrics"],
+  "properties": {
+    "name": { "type": "string", "const": "fire.adapter" },
+    "version": { "type": "string" },
+    "generator_family": {
+      "type": "string",
+      "enum": ["flame_blob", "tongue_particles", "ember_sparks", "smoke_afterburn"]
+    },
+    "topology": {
+      "type": "object",
+      "required": ["flame_shape"],
+      "properties": {
+        "flame_shape": {
+          "type": "string",
+          "enum": ["cone", "fan", "wave", "pillar", "burst", "trail"]
+        },
+        "tongue_count": { "type": "integer", "minimum": 0, "maximum": 64 },
+        "root_width": { "type": "number", "minimum": 0 },
+        "height_bias": { "type": "number", "minimum": 0, "maximum": 1 },
+        "edge_breakup": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": true
+    },
+    "behavior": {
+      "type": "object",
+      "properties": {
+        "turbulence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "root_brightness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "upward_flow_speed": { "type": "number" },
+        "ember_behavior": {
+          "type": "string",
+          "enum": ["none", "short_sparks", "rising_sparks", "burst_sparks", "residual_sparks"]
+        },
+        "smoke_afterburn": {
+          "type": "string",
+          "enum": ["none", "soft_residue", "dark_plume", "thin_wisp"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "evaluation_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["turbulence", "root_brightness", "edge_breakup", "heat_layering", "afterburn_quality"]
+      }
+    }
+  },
+  "additionalProperties": true
+}

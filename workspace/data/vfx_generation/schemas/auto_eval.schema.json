@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "auto_eval.schema.json",
+  "title": "AutoEval",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "candidate_id",
+    "seed",
+    "status",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "auto_eval.v1"
+    },
+    "run_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "seed": { "type": "integer" },
+    "status": {
+      "type": "string",
+      "enum": ["pass", "warn", "reject"]
+    },
+    "hard_reject_reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rank_hint": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "unity_error_count": { "type": "integer", "minimum": 0 },
+        "missing_asset_count": { "type": "integer", "minimum": 0 },
+        "missing_frame_count": { "type": "integer", "minimum": 0 },
+        "visible_area_ratio_peak": { "type": "number", "minimum": 0, "maximum": 1 },
+        "mean_luminance_peak": { "type": "number", "minimum": 0, "maximum": 1 },
+        "overexposed_ratio_peak": { "type": "number", "minimum": 0, "maximum": 1 },
+        "underexposed_ratio_peak": { "type": "number", "minimum": 0, "maximum": 1 },
+        "frame_delta_mean": { "type": "number", "minimum": 0 },
+        "particle_count_peak": { "type": ["integer", "null"], "minimum": 0 },
+        "draw_call_count": { "type": ["integer", "null"], "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "candidate_score": {
+      "type": "object",
+      "required": ["schema_version", "effect_family", "provenance", "common_scores", "specialized_scores"],
+      "properties": {
+        "schema_version": { "type": "string", "const": "candidate_score.v1" },
+        "effect_family": { "type": "string" },
+        "provenance": { "type": "object", "additionalProperties": true },
+        "common_scores": { "type": "object", "additionalProperties": { "type": ["number", "null"] } },
+        "specialized_scores": { "type": "object", "additionalProperties": { "type": ["number", "null"] } },
+        "spec_prior_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+        "render_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+        "overall_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+        "unscored_dimensions": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}

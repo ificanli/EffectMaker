@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "visual_dynamics_training_view.schema.json",
+  "title": "Technical Visual Dynamics Training View",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "view_id", "source_material_dataset_id", "source_generated_manifest_ids", "source_capture_roots", "teacher_readiness_manifest", "record_count", "split_counts", "sample_kind_counts", "effect_type_counts", "style_family_counts", "teacher_ready_count", "files", "quality_gates", "training_policy", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_visual_dynamics_training_view.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "view_id": { "type": "string", "minLength": 1 },
+    "source_material_dataset_id": { "type": "string", "minLength": 1 },
+    "source_generated_manifest_ids": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "source_capture_roots": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "teacher_readiness_manifest": { "type": "string", "minLength": 1 },
+    "record_count": { "type": "integer", "minimum": 1 },
+    "split_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "sample_kind_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "effect_type_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "style_family_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "teacher_ready_count": { "type": "integer", "minimum": 0 },
+    "files": { "type": "object", "additionalProperties": false, "required": ["records"], "properties": { "records": { "type": "string", "minLength": 1 } } },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["missing_frame_count", "technical_exclusion_count", "group_split_overlap_count", "professional_quality_labels_consumed", "aesthetic_quality_training_status_blocked", "all_capture_v2_generated_rows"],
+      "properties": {
+        "missing_frame_count": { "const": 0 },
+        "technical_exclusion_count": { "const": 0 },
+        "group_split_overlap_count": { "const": 0 },
+        "professional_quality_labels_consumed": { "const": 0 },
+        "aesthetic_quality_training_status_blocked": { "type": "boolean" },
+        "all_capture_v2_generated_rows": { "const": true }
+      }
+    },
+    "training_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["technical_dynamic_self_supervision", "image_feature_self_supervision", "professional_teacher_required_for_quality_head", "nonexpert_aesthetic_feedback_consumed", "visible_is_not_quality"],
+      "properties": {
+        "technical_dynamic_self_supervision": { "const": true },
+        "image_feature_self_supervision": { "const": true },
+        "professional_teacher_required_for_quality_head": { "const": true },
+        "nonexpert_aesthetic_feedback_consumed": { "const": false },
+        "visible_is_not_quality": { "const": true }
+      }
+    },
+    "status": { "enum": ["pass_technical_self_supervision_quality_head_blocked", "pass"] }
+  }
+}

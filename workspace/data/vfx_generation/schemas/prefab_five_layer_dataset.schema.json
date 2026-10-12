@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_five_layer_dataset.schema.json",
+  "title": "Prefab Five-Layer Dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "created_at", "dataset_id", "source_dataset_ids", "sample_count", "record_count", "tier_counts", "status_counts", "files", "quality_gates", "human_budget", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_prefab_five_layer_dataset.v1" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source_dataset_ids": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+    "sample_count": { "type": "integer", "minimum": 1 },
+    "record_count": { "type": "integer", "minimum": 1 },
+    "tier_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "status_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records", "technical", "visual", "pseudo", "human_gold", "regression_gold", "exclusions"],
+      "properties": {
+        "records": { "type": "string" },
+        "technical": { "type": "string" },
+        "visual": { "type": "string" },
+        "pseudo": { "type": "string" },
+        "human_gold": { "type": "string" },
+        "regression_gold": { "type": "string" },
+        "exclusions": { "type": "string" }
+      }
+    },
+    "quality_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_errors", "duplicate_record_ids", "duplicate_sample_tiers", "ai_labels_in_human_gold", "regression_records_trainable", "technical_sample_coverage", "human_labels_overwritten"],
+      "properties": {
+        "schema_errors": { "const": 0 },
+        "duplicate_record_ids": { "const": 0 },
+        "duplicate_sample_tiers": { "const": 0 },
+        "ai_labels_in_human_gold": { "const": 0 },
+        "regression_records_trainable": { "const": 0 },
+        "technical_sample_coverage": { "const": 1 },
+        "human_labels_overwritten": { "const": 0 }
+      }
+    },
+    "human_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["initial_review_rate", "stable_review_rate", "minimum_queue_size", "current_recommended_count"],
+      "properties": {
+        "initial_review_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+        "stable_review_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+        "minimum_queue_size": { "type": "integer", "minimum": 0 },
+        "current_recommended_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "status": { "const": "pass" }
+  }
+}

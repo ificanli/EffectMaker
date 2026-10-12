@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prefab_structure_audit.schema.json",
+  "title": "EffectDemo Prefab Structure Audit",
+  "type": "object",
+  "required": [
+    "schema_version", "created_at", "audit_revision", "unity_version", "import_root",
+    "sample_times_seconds", "prefab_count", "particle_structure_count", "particle_playable_count",
+    "particle_context_required_count", "static_or_contextual_count", "empty_or_invalid_count",
+    "total_particle_system_count", "total_renderer_count", "total_missing_script_count", "prefabs"
+  ],
+  "properties": {
+    "schema_version": { "enum": ["effectdemo_prefab_structure_audit.v2", "effectdemo_prefab_structure_audit.v3"] },
+    "created_at": { "type": "string", "minLength": 1 },
+    "audit_revision": { "type": "integer", "minimum": 2 },
+    "unity_version": { "const": "2022.3.16f1c1" },
+    "import_root": { "type": "string", "minLength": 1 },
+    "sample_times_seconds": { "type": "array", "minItems": 1, "items": { "type": "number", "minimum": 0 } },
+    "prefab_count": { "type": "integer", "minimum": 1 },
+    "particle_structure_count": { "type": "integer", "minimum": 0 },
+    "particle_playable_count": { "type": "integer", "minimum": 0 },
+    "particle_context_required_count": { "type": "integer", "minimum": 0 },
+    "static_or_contextual_count": { "type": "integer", "minimum": 0 },
+    "empty_or_invalid_count": { "type": "integer", "minimum": 0 },
+    "total_particle_system_count": { "type": "integer", "minimum": 0 },
+    "total_renderer_count": { "type": "integer", "minimum": 0 },
+    "total_missing_material_slot_count": { "type": "integer", "minimum": 0 },
+    "total_serialized_empty_material_slot_count": { "type": "integer", "minimum": 0 },
+    "total_missing_shader_count": { "type": "integer", "minimum": 0 },
+    "total_missing_script_count": { "type": "integer", "minimum": 0 },
+    "prefabs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "prefab_path", "status", "reasons", "node_count", "particle_system_count",
+          "renderer_count", "material_slot_count", "missing_material_slot_count", "missing_script_count",
+          "max_particle_count", "estimated_duration_seconds", "looping", "nodes", "particle_systems",
+          "renderers", "animations"
+        ],
+        "properties": {
+          "prefab_path": { "type": "string", "pattern": "^Assets/.+\\.prefab$" },
+          "status": { "enum": ["particle_playable", "particle_context_required", "static_or_contextual", "empty_or_invalid", "audit_error"] },
+          "reasons": { "type": "array", "items": { "type": "string" } },
+          "node_count": { "type": "integer", "minimum": 0 },
+          "particle_system_count": { "type": "integer", "minimum": 0 },
+          "renderer_count": { "type": "integer", "minimum": 0 },
+          "material_slot_count": { "type": "integer", "minimum": 0 },
+          "missing_material_slot_count": { "type": "integer", "minimum": 0 },
+          "serialized_empty_material_slot_count": { "type": "integer", "minimum": 0 },
+          "missing_shader_count": { "type": "integer", "minimum": 0 },
+          "missing_script_count": { "type": "integer", "minimum": 0 },
+          "max_particle_count": { "type": "integer", "minimum": 0 },
+          "estimated_duration_seconds": { "type": "number", "minimum": 0 },
+          "looping": { "type": "boolean" },
+          "nodes": { "type": "array", "items": { "$ref": "#/$defs/node" } },
+          "particle_systems": { "type": "array", "items": { "$ref": "#/$defs/particle" } },
+          "renderers": { "type": "array", "items": { "$ref": "#/$defs/renderer" } },
+          "animations": { "type": "array", "items": { "$ref": "#/$defs/animation" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": ["hierarchy_path", "active_self", "component_types"],
+      "properties": {
+        "hierarchy_path": { "type": "string", "minLength": 1 },
+        "active_self": { "type": "boolean" },
+        "component_types": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "particle": {
+      "type": "object",
+      "required": [
+        "hierarchy_path", "duration_seconds", "looping", "max_particles", "simulation_space",
+        "start_lifetime_max", "start_speed_max", "start_size_max", "emission_enabled",
+        "emission_rate_over_time_max", "burst_count", "shape_enabled", "enabled_modules",
+        "renderer_mode", "material_paths", "mesh_paths"
+      ],
+      "properties": {
+        "hierarchy_path": { "type": "string", "minLength": 1 },
+        "duration_seconds": { "type": "number", "minimum": 0 },
+        "looping": { "type": "boolean" },
+        "max_particles": { "type": "integer", "minimum": 0 },
+        "simulation_space": { "type": "string" },
+        "start_lifetime_max": { "type": "number" },
+        "start_speed_max": { "type": "number" },
+        "start_size_max": { "type": "number" },
+        "emission_enabled": { "type": "boolean" },
+        "emission_rate_over_time_max": { "type": "number" },
+        "burst_count": { "type": "integer", "minimum": 0 },
+        "shape_enabled": { "type": "boolean" },
+        "enabled_modules": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "renderer_mode": { "type": "string" },
+        "material_paths": { "type": "array", "items": { "type": "string" } },
+        "mesh_paths": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "renderer": {
+      "type": "object",
+      "required": ["hierarchy_path", "renderer_type", "enabled", "material_slot_count", "missing_material_slot_count", "material_paths", "mesh_paths"],
+      "properties": {
+        "hierarchy_path": { "type": "string" },
+        "renderer_type": { "type": "string" },
+        "enabled": { "type": "boolean" },
+        "material_slot_count": { "type": "integer", "minimum": 0 },
+        "missing_material_slot_count": { "type": "integer", "minimum": 0 },
+        "serialized_empty_material_slot_count": { "type": "integer", "minimum": 0 },
+        "missing_shader_count": { "type": "integer", "minimum": 0 },
+        "material_paths": { "type": "array", "items": { "type": "string" } },
+        "mesh_paths": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "animation": {
+      "type": "object",
+      "required": ["hierarchy_path", "source_type", "clip_name", "duration_seconds", "looping"],
+      "properties": {
+        "hierarchy_path": { "type": "string" },
+        "source_type": { "type": "string" },
+        "clip_name": { "type": "string" },
+        "duration_seconds": { "type": "number", "minimum": 0 },
+        "looping": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx_controller_dataset.schema.json",
+  "title": "VFX Controller Dataset Manifest",
+  "type": "object",
+  "required": ["schema_version", "created_at", "dataset_id", "source_count", "candidate_count", "controller_example_count", "sft_example_count", "excluded_count", "exclusion_counts", "files", "training_gate", "status"],
+  "properties": {
+    "schema_version": { "const": "vfx_controller_dataset.v1" },
+    "created_at": { "type": "string", "minLength": 1 },
+    "dataset_id": { "type": "string", "minLength": 1 },
+    "source_count": { "type": "integer", "minimum": 0 },
+    "candidate_count": { "type": "integer", "minimum": 0 },
+    "course_prior_count": { "type": "integer", "minimum": 0 },
+    "controller_example_count": { "type": "integer", "minimum": 0 },
+    "sft_example_count": { "type": "integer", "minimum": 0 },
+    "excluded_count": { "type": "integer", "minimum": 0 },
+    "exclusion_counts": { "$ref": "#/$defs/countMap" },
+    "family_counts": { "$ref": "#/$defs/countMap" },
+    "sft_family_counts": { "$ref": "#/$defs/countMap" },
+    "source_kind_counts": { "$ref": "#/$defs/countMap" },
+    "files": { "type": "object" },
+    "training_gate": {
+      "type": "object",
+      "required": ["status", "reason", "positive_sft_ready"],
+      "properties": {
+        "status": { "enum": ["ready", "insufficient_labels", "no_eligible_examples"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "positive_sft_ready": { "type": "boolean" },
+        "minimum_sft_examples": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "policy": { "type": "object" },
+    "status": { "const": "pass" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+  },
+  "additionalProperties": false
+}
